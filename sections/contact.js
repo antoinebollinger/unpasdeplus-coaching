@@ -4,7 +4,7 @@ export default function Contact() {
     return (
         <section className="container mx-auto text-center mb-12" id="contact">
             <div className="flex flex-wrap">
-                <div className="w-5/6 sm:w-1/2 p-6">
+                <div className="w-full sm:w-1/2 p-6">
                     <h1 className="w-full my-2 text-5xl font-bold leading-tight text-center text-white">
                         Contact
                     </h1>
