@@ -43,6 +43,9 @@ class Navbar extends Component {
         document.getElementById('nav-toggle').addEventListener('click', this.toggleNavContent);
         Array.from(document.querySelectorAll('nav ul a')).forEach(ele => {
             ele.addEventListener('click', this.toggleNavContent);
+        });
+        document.getElementById('reload').addEventListener('click', () => {
+            location.reload();
         })
     }
 
@@ -52,7 +55,7 @@ class Navbar extends Component {
                 <nav id="header" className="fixed w-full z-30 top-0">
                     <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
                         <div className="pl-4 flex items-center">
-                            <a className="toggleColour transition no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href=".">
+                            <a className="toggleColour transition no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="." id="reload">
                                 UNPASDEPLUS
                             </a>
                         </div>
@@ -67,16 +70,16 @@ class Navbar extends Component {
                         <div className="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 lg:bg-transparent p-4 lg:p-0 z-20" id="nav-content">
                             <ul className="list-reset lg:flex justify-end flex-1 items-center">
                                 <li className="mr-3">
-                                    <a className="toggleColour inline-block py-2 px-4 hover:underline" href="#home">Accueil</a>
+                                    <a className="toggleColour inline-block py-2 px-4 hover:underline" href="/">Accueil</a>
                                 </li>
                                 <li className="mr-3">
-                                    <a className="toggleColour inline-block py-2 px-4 hover:underline js-scroll-trigger" href="#about">Qui je suis</a>
+                                    <a className="toggleColour inline-block py-2 px-4 hover:underline" href="#about">Qui je suis</a>
                                 </li>
                                 <li className="mr-3">
-                                    <a className="toggleColour inline-block py-2 px-4 hover:underline js-scroll-trigger" href="#programs">Offres de coaching</a>
+                                    <a className="toggleColour inline-block py-2 px-4 hover:underline" href="#programs">Offres de coaching</a>
                                 </li>
                                 <li className="mr-3">
-                                    <a className="toggleColour inline-block py-2 px-4 hover:underline js-scroll-trigger" href="#contact">Contact</a>
+                                    <a className="toggleColour inline-block py-2 px-4 hover:underline" href="#contact">Contact</a>
                                 </li>
                             </ul>
                         </div>
