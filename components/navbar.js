@@ -41,6 +41,9 @@ class Navbar extends Component {
         this.toggleColor();
         document.addEventListener("scroll", this.toggleColor);
         document.getElementById('nav-toggle').addEventListener('click', this.toggleNavContent);
+        Array.from(document.querySelectorAll('nav ul a')).forEach(ele => {
+            ele.addEventListener('click', this.toggleNavContent);
+        })
     }
 
     render() {
