@@ -46,6 +46,8 @@ class Navbar extends Component {
             ele.addEventListener('click', this.toggleNavContent);
         });
         document.getElementById('reload').addEventListener('click', () => {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0;
             location.reload();
         })
     }
@@ -56,12 +58,12 @@ class Navbar extends Component {
             <ScrollspyNav scrollTargetIds={['home', 'about', 'programs', 'contact']} activeNavClass="underline" scrollDuration="400">
                 <nav id="header" className="fixed w-full z-30 top-0">
                     <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
-                        <div className="pl-4 flex items-center">
+                        <div className="lg:pl-0 pl-6 flex items-center">
                             <a className="toggleColour transition no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="." id="reload">
                                 UN PAS DE PLUS
                             </a>
                         </div>
-                        <div className="block lg:hidden pr-4">
+                        <div className="block lg:hidden lg:pr-0 pr-6">
                             <button id="nav-toggle" className="toggleColour flex items-center p-1 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
                                 <svg className="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                     <title>Menu</title>
@@ -69,19 +71,19 @@ class Navbar extends Component {
                                 </svg>
                             </button>
                         </div>
-                        <div className="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 lg:bg-transparent p-4 lg:p-0 z-20" id="nav-content">
+                        <div className="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 lg:bg-transparent p-6 lg:p-0 z-20" id="nav-content">
                             <ul className="list-reset lg:flex justify-end flex-1 items-center">
-                                <li className="mr-3">
-                                    <a className="toggleColour transition inline-block py-2 px-4 hover:underline" href="#home">Accueil</a>
+                                <li>
+                                    <a className="toggleColour transition inline-block py-2 px-0 lg:px-4 hover:underline" href="#home">Accueil</a>
                                 </li>
-                                <li className="mr-3">
-                                    <a className="toggleColour transition inline-block py-2 px-4 hover:underline" href="#about">Qui je suis</a>
+                                <li>
+                                    <a className="toggleColour transition inline-block py-2 px-0 lg:px-4 hover:underline" href="#about">Qui je suis</a>
                                 </li>
-                                <li className="mr-3">
-                                    <a className="toggleColour transition inline-block py-2 px-4 hover:underline" href="#programs">Offres de coaching</a>
+                                <li>
+                                    <a className="toggleColour transition inline-block py-2 px-0 lg:px-4 hover:underline" href="#programs">Offres de coaching</a>
                                 </li>
-                                <li className="mr-3">
-                                    <a className="toggleColour transition inline-block py-2 px-4 hover:underline" href="#contact">Contact</a>
+                                <li>
+                                    <a className="toggleColour transition inline-block py-2 px-0 lg:px-4 hover:underline" href="#contact">Contact</a>
                                 </li>
                             </ul>
                         </div>
