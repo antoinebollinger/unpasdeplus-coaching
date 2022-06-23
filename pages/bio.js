@@ -13,8 +13,9 @@ export default function Bio() {
             entries.forEach(entry => {
                 if (!entry.isIntersecting) return;
                 setTimeout(() => {
-                    entry.target.classList.remove('translate-x-full');
-                    entry.target.classList.remove('-translate-x-full');
+                    entry.target.classList.remove('translate-x-3/4');
+                    entry.target.classList.remove('-translate-x-3/4');
+                    entry.target.classList.remove('opacity-0');
                     entry.target.classList.add('translate-x-0');
                     observer.unobserve(entry.target);
                 }, 100);
@@ -97,7 +98,7 @@ export default function Bio() {
                     <div className="w-full mb-4">
                         <div className="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
                     </div>
-                    <div className="slide-in transition duration-300 translate-x-full p-6">
+                    <div className="slide-in transition duration-300 opacity-0 translate-x-3/4 p-6">
                         <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3 text-center">
                             L'entreprise
                         </h3>
@@ -113,7 +114,7 @@ export default function Bio() {
                             </p>
                         </div>
                     </div>
-                    <div className="slide-in transition duration-300 -translate-x-full p-6">
+                    <div className="slide-in transition duration-300 opacity-0 -translate-x-3/4 p-6">
                         <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3 text-center">
                             Vie pro / vie perso
                         </h3>
@@ -132,7 +133,7 @@ export default function Bio() {
                             </p>
                         </div>
                     </div>
-                    <div className="slide-in transition duration-300 translate-x-full p-6">
+                    <div className="slide-in transition duration-300 opacity-0 translate-x-3/4 p-6">
                         <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3 text-center">
                             La trentaine
                         </h3>
@@ -151,7 +152,7 @@ export default function Bio() {
                             </p>
                         </div>
                     </div>
-                    <div className="slide-in transition duration-300 -translate-x-full p-6">
+                    <div className="slide-in transition duration-300 opacity-0 -translate-x-3/4 p-6">
                         <h4 className="text-2xl text-gray-800 font-bold leading-none mb-6 text-center">
                             Ma quête de sens
                         </h4>
@@ -168,7 +169,7 @@ export default function Bio() {
                             </p>
                         </div>
                     </div>
-                    <div className="slide-in transition duration-300 translate-x-full p-6">
+                    <div className="slide-in transition duration-300 opacity-0 translate-x-3/4 p-6">
                         <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3 text-center">
                             Concrétisation de mon projet
                         </h3>
