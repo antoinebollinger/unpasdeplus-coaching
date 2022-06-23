@@ -49,7 +49,7 @@ export default function EmblaCarousel({ slides, className }) {
                                     </div>
                                     <div className="embla__slide__inner">
                                         <img
-                                            className="embla__slide__img"
+                                            className="embla__slide__img grayscale"
                                             src={img.src}
                                             alt="A cool cat."
                                         />
