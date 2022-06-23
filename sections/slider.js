@@ -1,0 +1,19 @@
+import EmblaCarousel from '../components/Slider/EmblaCarousel'
+
+import media1 from "../public/caroussel/1.webp";
+import media2 from "../public/caroussel/2.webp";
+import media3 from "../public/caroussel/3.webp";
+import media4 from "../public/caroussel/4.webp";
+
+export default function Slider() {
+    const slides = [
+        Object.assign(media1, { title: 'Changement & transition', content: 'Vers un pas de plus vers la quête de soi pour une vie harmonieuse' }),
+        Object.assign(media2, { title: 'Image de soi', content: 'Développer & cultiver de la bienveillance envers soi' }),
+        Object.assign(media3, { title: 'Communication & relationnel', content: ' Oser s’affirmer par la parole' }),
+        Object.assign(media4, { title: 'Evolution sur les choix professionnels', content: 'Gagner en sérénité en étant aligné avec ses valeurs, son identité, sa personnalité, ses besoins, ses aspirations…' })
+    ];
+
+    return (
+        <EmblaCarousel slides={slides} className="pt-8 text-white overflow-hidden" />
+    )
+}

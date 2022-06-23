@@ -2,6 +2,7 @@ import React from "react";
 
 export const DotButton = ({ selected, onClick }) => (
     <button
+        name="Aller à cette image"
         className={`embla__dot ${selected ? "is-selected" : ""}`}
         type="button"
         onClick={onClick}
@@ -10,6 +11,7 @@ export const DotButton = ({ selected, onClick }) => (
 
 export const PrevButton = ({ enabled, onClick }) => (
     <button
+        name="Précédent"
         className="embla__button embla__button--prev"
         onClick={onClick}
         disabled={!enabled}
@@ -22,6 +24,7 @@ export const PrevButton = ({ enabled, onClick }) => (
 
 export const NextButton = ({ enabled, onClick }) => (
     <button
+        name="Suivant"
         className="embla__button embla__button--next"
         onClick={onClick}
         disabled={!enabled}

@@ -3,7 +3,7 @@ import { DotButton, PrevButton, NextButton } from "./EmblaCarouselButtons";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 
-export default function EmblaCarousel({ slides }) {
+export default function EmblaCarousel({ slides, className }) {
     const options = { skipSnaps: false, loop: true }
     const plugins = [Autoplay()] // Plugins
 
@@ -35,12 +35,18 @@ export default function EmblaCarousel({ slides }) {
 
     return (
         <>
-            <div className="embla">
+            <div className={`embla ${className}`}>
                 <div className="embla__viewport" ref={viewportRef}>
                     <div className="embla__container">
                         {slides.map((img, index) => {
                             return (
                                 <div className="embla__slide" key={index}>
+                                    <div className="embla__slide__title text-2xl text-center">
+                                        <h2>{img.title}</h2>
+                                    </div>
+                                    <div className="embla__slide__content text-xl text-center">
+                                        <h3>{img.content}</h3>
+                                    </div>
                                     <div className="embla__slide__inner">
                                         <img
                                             className="embla__slide__img"

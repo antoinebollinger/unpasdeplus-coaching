@@ -5,12 +5,31 @@ import Image from "next/image"
 import sabrina from '../public/images/sabrina.webp'
 import running from '../public/images/running.jpg'
 import nature from '../public/images/nature.jpg'
+import { useEffect } from "react"
 
 export default function Bio() {
+    useEffect(() => {
+        const reveal = function (entries, observer) {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) return;
+                setTimeout(() => {
+                    entry.target.classList.remove('translate-x-full');
+                    entry.target.classList.remove('-translate-x-full');
+                    entry.target.classList.add('translate-x-0');
+                    observer.unobserve(entry.target);
+                }, 100);
+            });
+        };
+        const timelineObserver = new IntersectionObserver(reveal, { root: null, threshold: 0.1 });
+        document.querySelectorAll('.slide-in')?.forEach(function (li) {
+            timelineObserver.observe(li);
+        });
+    })
+
     return (
         <Layout home={false} title={"Ma bio"}>
             <Intro className="" />
-            <article className="pt-24 bg-white">
+            <article className="pt-24 bg-white overflow-x-hidden">
                 <div className="container max-w-5xl mx-auto text-gray-800">
                     <h1 className="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
                         Ma bio
@@ -78,7 +97,7 @@ export default function Bio() {
                     <div className="w-full mb-4">
                         <div className="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
                     </div>
-                    <div className="p-6">
+                    <div className="slide-in transition duration-300 translate-x-full p-6">
                         <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3 text-center">
                             L'entreprise
                         </h3>
@@ -94,7 +113,7 @@ export default function Bio() {
                             </p>
                         </div>
                     </div>
-                    <div className="p-6">
+                    <div className="slide-in transition duration-300 -translate-x-full p-6">
                         <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3 text-center">
                             Vie pro / vie perso
                         </h3>
@@ -113,7 +132,7 @@ export default function Bio() {
                             </p>
                         </div>
                     </div>
-                    <div className="p-6">
+                    <div className="slide-in transition duration-300 translate-x-full p-6">
                         <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3 text-center">
                             La trentaine
                         </h3>
@@ -132,7 +151,7 @@ export default function Bio() {
                             </p>
                         </div>
                     </div>
-                    <div className="p-6">
+                    <div className="slide-in transition duration-300 -translate-x-full p-6">
                         <h4 className="text-2xl text-gray-800 font-bold leading-none mb-6 text-center">
                             Ma quête de sens
                         </h4>
@@ -149,7 +168,7 @@ export default function Bio() {
                             </p>
                         </div>
                     </div>
-                    <div className="p-6">
+                    <div className="slide-in transition duration-300 translate-x-full p-6">
                         <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3 text-center">
                             Concrétisation de mon projet
                         </h3>
