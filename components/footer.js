@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
     return (
         <footer className="bg-white">
@@ -13,10 +15,14 @@ export default function Footer() {
                         <p className="uppercase text-gray-500 md:mb-6">Partie légale</p>
                         <ul className="list-reset mb-6">
                             <li className="mt-2 inline-block mr-2 md:block md:mr-0">
-                                <a href="/terms" className="no-underline hover:underline text-primary-800 hover:text-primary-700">Conditions d'utilisation</a>
+                                <Link href="/terms">
+                                    <a className="no-underline hover:underline text-primary-800 hover:text-primary-700">Conditions d'utilisation</a>
+                                </Link>
                             </li>
                             <li className="mt-2 inline-block mr-2 md:block md:mr-0">
-                                <a href="/privacy" className="no-underline hover:underline text-primary-800 hover:text-primary-700">Politique de confidentialité</a>
+                                <Link href="/privacy">
+                                    <a className="no-underline hover:underline text-primary-800 hover:text-primary-700">Politique de confidentialité</a>
+                                </Link>
                             </li>
                             <li className="mt-2 inline-block mr-2 md:block md:mr-0">
                                 <p className="text-primary-900">Copyright © unpasdeplus.com 2022</p>
