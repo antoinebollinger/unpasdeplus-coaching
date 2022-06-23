@@ -10,7 +10,7 @@ export default function Home() {
     return (
         <Layout home={true}>
             <Header />
-            <Intro />
+            <Intro className="" />
             <About />
             <Programs />
             <Outro />
