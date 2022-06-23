@@ -14,7 +14,7 @@ export default function Bio() {
                 if (!entry.isIntersecting) return;
                 setTimeout(() => {
                     entry.target.classList.remove('translate-x-3/4');
-                    entry.target.classList.remove('-translate-x-3/4');
+                    entry.target.classList.remove('lg:-translate-x-3/4');
                     entry.target.classList.remove('opacity-0');
                     entry.target.classList.add('translate-x-0');
                     observer.unobserve(entry.target);
@@ -114,7 +114,7 @@ export default function Bio() {
                             </p>
                         </div>
                     </div>
-                    <div className="slide-in transition duration-300 opacity-0 -translate-x-3/4 p-6">
+                    <div className="slide-in transition duration-300 opacity-0 translate-x-3/4 lg:-translate-x-3/4 p-6">
                         <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3 text-center">
                             Vie pro / vie perso
                         </h3>
@@ -152,7 +152,7 @@ export default function Bio() {
                             </p>
                         </div>
                     </div>
-                    <div className="slide-in transition duration-300 opacity-0 -translate-x-3/4 p-6">
+                    <div className="slide-in transition duration-300 opacity-0 translate-x-3/4 lg:-translate-x-3/4 p-6">
                         <h4 className="text-2xl text-gray-800 font-bold leading-none mb-6 text-center">
                             Ma quête de sens
                         </h4>
