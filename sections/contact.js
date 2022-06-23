@@ -5,9 +5,9 @@ export default function Contact() {
         <section className="container mx-auto text-center mb-12" id="contact">
             <div className="flex flex-wrap">
                 <div className="w-full sm:w-1/2 p-6">
-                    <h1 className="w-full my-2 text-5xl font-bold leading-tight text-center text-white">
+                    <h2 className="w-full my-2 text-5xl font-bold leading-tight text-center text-white">
                         Contact
-                    </h1>
+                    </h2>
                     <div className="w-full mb-4">
                         <div className="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t"></div>
                     </div>

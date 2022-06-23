@@ -1,5 +1,3 @@
-import Head from "next/head"
-import { useEffect } from "react";
 import Intro from "../components/intro";
 import Layout from "../components/layout"
 import Outro from "../components/outro";
@@ -23,13 +21,6 @@ export async function getStaticPaths() {
 }
 
 export default function Post({ postData }) {
-    useEffect(() => {
-        const images = Array.from(document.querySelectorAll('img'));
-        images.forEach(img => {
-            img.className = img.alt;
-        });
-    });
-
     return (
         <Layout home={false} title={postData.title}>
             <Intro className="" />

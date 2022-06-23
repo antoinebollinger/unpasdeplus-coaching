@@ -13,7 +13,7 @@ export default function Header() {
 
                 </div>
                 <div className="w-full md:w-3/5 py-6 text-center">
-                    <img src="/images/stepbystep.png" className="w-full md:w-4/5 z-50 mx-auto" />
+                    <img src="/images/stepbystep.png" className="w-full md:w-4/5 z-50 mx-auto" alt="Step by Step" />
                 </div>
             </div>
         </header>
