@@ -9,14 +9,13 @@ import About from '../sections/about'
 
 export default function Home() {
     return (
-        <Layout>
+        <Layout home={true}>
             <Header />
             <Intro />
             <About />
             <Programs />
             <Outro />
             <Contact />
-            <Footer />
         </Layout>
     )
 }

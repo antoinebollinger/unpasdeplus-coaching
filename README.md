@@ -1,34 +1,56 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<!-- PROJECT LOGO -->
+<p align="center">
+  <a href="https://lameilleureversiondemoi.netlify.app/">
+    <img src="assets/img/logos/v4/purpleText/pinkLeaf/LMVDM.svg" alt="Logo" height="50">
+  </a>
 
-## Getting Started
+  <h3 align="center">UN PAS DE PLUS website project</h3>
 
-First, run the development server:
+  <p align="center">
+    A website that presents the activity of Sabrina Appriou, personal development coach, founder of Un Pas De Plus.
+    <br />
+    <a href="https://github.com/antoinebollinger/lameilleureversiondemoi/issues">🐛 Report Bug</a>
+  </p>
+</p>
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+<!-- TABLE OF CONTENTS -->
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<details open="open">
+  <summary>Table of Contents</summary>
+  <ul>
+    <li>
+      <a href="#about-the-project-">About The Project 👈</a>
+      <ul>
+        <li><a href="#preview">Preview</a></li>
+        <li><a href="#build-with">Build with</a></li>
+      </ul>
+    </li>
+    <li><a href="#contact-">Contact 📧</a></li>
+  </ul>
+</details>
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+<!-- ABOUT THE PROJECT -->
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## About The Project 👈
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### Preview
 
-## Learn More
+![Preview](assets/img/preview/preview.webp)
 
-To learn more about Next.js, take a look at the following resources:
+### Build with
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The project is based on a free template from [Start Boostrap](https://startbootstrap.com/), which use the CSS framework [Bootstrap v5](https://getbootstrap.com/docs/5.0/getting-started/introduction/). The **CSS** has been customized with the help of [SASS](https://sass-lang.com/).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+I used the [Webpack](https://webpack.js.org/) package to manage my **JS** code. This allowed me to work with modules which make it easier to maintain.
 
-## Deploy on Vercel
+The website is currently tested on a [Netlify](https://www.netlify.com/) deployment. You can see the result at [LaMeilleureVersionDeMoi](https://lameilleureversiondemoi.netlify.app/).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f49d62bd-6859-4abe-a465-306d84627c4a/deploy-status)](https://lameilleureversiondemoi.netlify.app/)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Soon it will have its own domain 😎 !
+
+<!-- CONTACT -->
+
+## Contact 📧
+
+Antoine Bollinger - [LinkedIn](https://www.linkedin.com/in/antoinebollinger/) - antoine.bollinger@gmail.fr

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function About() {
     return (
         <section className="bg-white" id="about">
@@ -8,10 +10,9 @@ export default function About() {
                 <div className="w-full mb-4">
                     <div className="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
                 </div>
-
-                <div className="flex flex-wrap flex-col-reverse sm:flex-row">
-                    <div className="w-full md:w-1/4 p-6 mt-6">
-                        <img src="/images/01.webp" className="w-full mx-auto rounded-full" />
+                <div className="flex flex-wrap flex-col sm:flex-row">
+                    <div className="w-full w-1/2 mx-auto md:w-1/4 p-6 mt-6">
+                        <img src="/images/sabrina.webp" className="w-full mx-auto rounded-full" />
                     </div>
                     <div className="w-full sm:w-3/4 p-6 mt-6">
                         <div className="align-middle">
@@ -27,10 +28,16 @@ export default function About() {
                             <p className="text-gray-600 mb-8">
                                 J'accompagne les personnes à faire UN PAS DE PLUS pour un changement profond et durable dans leur vie personnelle et/ou professionnelle.
                             </p>
+                            <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
+                                Ma bio
+                            </h3>
+                            <Link href="/bio">
+                                <a className="text-primary-800 hover:text-primary-700">Découvrir mon parcours</a>
+                            </Link>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </section >
     )
 }
