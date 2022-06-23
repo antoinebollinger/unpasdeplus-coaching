@@ -1,10 +1,9 @@
 import Head from "next/head";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "./navbar";
 import BodyClass from "./body";
 import Footer from "./footer";
 
-export const siteUrl = window.location.origin;
 export const siteTitle = 'UnPasDePlus';
 export const siteDescription = "Le site de votre coach en développement personnel Sabrina Appriou, fondatrice d'Un Pas De Plus.";
 export const siteAuthor = "Antoine Bollinger";
@@ -12,6 +11,11 @@ export const siteOwner = "Sabrina Appriou";
 
 
 export default function Layout({ children, home, title }) {
+    const [siteUrl, setSiteUrl] = useState('');
+    useEffect(() => {
+        setSiteUrl(window.location.origin);
+    })
+
     return (
         <React.Fragment>
             <BodyClass />
