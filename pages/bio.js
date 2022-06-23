@@ -1,6 +1,10 @@
 import Intro from "../components/intro"
 import Layout from "../components/layout"
 import Outro from '../components/outro'
+import Image from "next/image"
+import sabrina from '../public/images/sabrina.webp'
+import running from '../public/images/running.jpg'
+import nature from '../public/images/nature.jpg'
 
 export default function Bio() {
     return (
@@ -16,7 +20,11 @@ export default function Bio() {
                     </div>
                     <div className="flex flex-wrap flex-col sm:flex-row content-center">
                         <div className="w-full w-1/2 mx-auto md:w-1/4 p-6">
-                            <img src="/images/sabrina.webp" className="w-full mx-auto rounded-full" alt="Sabrina Appriou" />
+                            <Image
+                                src={sabrina}
+                                className="w-full mx-auto rounded-full"
+                                alt="Sabrina Appriou"
+                            />
                         </div>
                         <div className="w-full sm:w-3/4 p-6">
                             <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
@@ -42,7 +50,7 @@ export default function Bio() {
                     <hr className="border-b border-gray-100 opacity-25 my-0 py-0" />
                     <div className="flex flex-wrap sm:flex-row-reverse">
                         <div className="w-full sm:w-1/2 p-6">
-                            <img src="/images/running.jpg" className="w-full mx-auto" alt="Personne qui fait du running" />
+                            <Image src={running} className="w-full mx-auto" alt="Personne qui fait du running" />
                         </div>
                         <div className="w-5/6 sm:w-1/2 p-6 flex flex-col justify-center">
                             <p className="text-gray-600 mb-8">
@@ -54,7 +62,7 @@ export default function Bio() {
                     <hr className="border-b border-gray-100 opacity-25 my-0 py-0" />
                     <div className="flex flex-wrap">
                         <div className="w-full sm:w-1/2 p-6">
-                            <img src="/images/nature.jpg" className="w-full mx-auto" alt="Représentation de la nature" />
+                            <Image src={nature} className="w-full mx-auto" alt="Représentation de la nature" />
                         </div>
                         <div className="w-5/6 sm:w-1/2 p-6 flex flex-col justify-center">
                             <p className="text-gray-600 mb-8">

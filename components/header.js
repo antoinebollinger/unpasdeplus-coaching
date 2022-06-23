@@ -1,3 +1,6 @@
+import Image from 'next/image'
+import stepByStep from '../public/images/stepbystep.png'
+
 export default function Header() {
     return (
         <header className="pt-24" id="home">
@@ -13,7 +16,10 @@ export default function Header() {
 
                 </div>
                 <div className="w-full md:w-3/5 py-6 text-center">
-                    <img src="/images/stepbystep.png" className="w-full md:w-4/5 z-50 mx-auto" alt="Step by Step" />
+                    <Image
+                        src={stepByStep}
+                        className="w-full md:w-4/5 z-50 mx-auto z-0"
+                        alt="Step by Step" />
                 </div>
             </div>
         </header>

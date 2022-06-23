@@ -1,4 +1,6 @@
-import Link from "next/link";
+import Link from "next/link"
+import Image from "next/image"
+import sabrina from '../public/images/sabrina.webp'
 
 export default function About() {
     return (
@@ -12,7 +14,11 @@ export default function About() {
                 </div>
                 <div className="flex flex-wrap flex-col sm:flex-row content-center">
                     <div className="w-full w-1/2 mx-auto md:w-1/4 p-6">
-                        <img src="/images/sabrina.webp" className="w-full mx-auto rounded-full" alt="Sabrina Appriou" />
+                        <Image
+                            src={sabrina}
+                            className="w-full mx-auto rounded-full"
+                            alt="Sabrina Appriou"
+                        />
                     </div>
                     <div className="w-full sm:w-3/4 p-6">
                         <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
