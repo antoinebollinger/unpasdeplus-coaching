@@ -41,7 +41,7 @@ export default function Coaching({ coachingData }) {
                 <h3 className="italic text-xl text-gray-500 font-bold leading-none text-center mb-8">
                     <q> Écoute ta propre voix et libère ton plein potentiel </q>
                 </h3>
-                <div class="lg:max-w-2xl mx-auto">
+                <div className="lg:max-w-2xl mx-auto">
                     <div>
                         {coachingData.map(({ id, contentHtml }) => (
                             <div className="flex flex-wrap flex-col sm:flex-row justify-center items-center mb-8" key={id}>
