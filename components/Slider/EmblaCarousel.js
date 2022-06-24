@@ -48,6 +48,8 @@ export default function EmblaCarousel({ children, slides, className, id }) {
                                             className="embla__slide__img grayscale opacity-[70%]"
                                             src={img}
                                             alt={img.title}
+                                            layout="fill"
+                                            objectFit="cover"
                                         />
                                     </div>
                                     <div className="absolute inset-0 z-20 hidden lg:flex flex-col justify-end opacity pb-4">
