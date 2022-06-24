@@ -5,9 +5,6 @@ const nextConfig = {
     locales: ["fr"],
     defaultLocale: "fr",
   },
-  experimental: {
-    nftTracing: true
-  }
 }
 
 module.exports = nextConfig
