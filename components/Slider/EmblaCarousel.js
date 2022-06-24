@@ -37,7 +37,7 @@ export default function EmblaCarousel({ slides, className }) {
     return (
         <>
             <div className={`embla ${className}`}>
-                <div className="embla__viewport" ref={viewportRef}>
+                <div className="embla__viewport opacity-[80%]" ref={viewportRef}>
                     <div className="embla__container">
                         {slides.map((img, index) => {
                             return (
