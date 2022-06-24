@@ -86,16 +86,16 @@ class Navbar extends Component {
                             <div className="w-full lg:w-auto lg:flex lg:items-center hidden z-20" id="nav-content">
                                 <ScrollspyNav scrollTargetIds={['home', 'about', 'programs', 'contact']} activeNavClass="active" scrollDuration="400">
                                     <ul className="list-reset lg:flex justify-end flex-1 items-center lg:text-end font-bold">
-                                        <li className="h-[40px] lg:pl-8">
+                                        <li className="h-[40px] leading-[40px] lg:pl-8">
                                             <a className="toggleColour transition opacity-70 hover:opacity-100" href="#home">Accueil</a>
                                         </li>
-                                        <li className="h-[40px] lg:pl-8">
+                                        <li className="h-[40px] leading-[40px] lg:pl-8">
                                             <a className="toggleColour transition opacity-70 hover:opacity-100" href="#about">Qui je suis</a>
                                         </li>
-                                        <li className="h-[40px] lg:pl-8">
+                                        <li className="h-[40px] leading-[40px] lg:pl-8">
                                             <a className="toggleColour transition opacity-70 hover:opacity-100" href="#programs">Offres de coaching</a>
                                         </li>
-                                        <li className="h-[40px] lg:pl-8">
+                                        <li className="h-[40px] leading-[40px] lg:pl-8">
                                             <a className="toggleColour transition opacity-70 hover:opacity-100" href="#contact">Contact</a>
                                         </li>
                                     </ul>
