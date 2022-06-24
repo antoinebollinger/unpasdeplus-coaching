@@ -66,11 +66,11 @@ export default function AboutMe({ allPostsData }) {
                     </div>
                     <Bio />
                     <hr className="border-b border-gray-100 opacity-25 my-0 py-0" />
-                    <div className="flex flex-wrap sm:flex-row-reverse">
-                        <div className="w-full sm:w-1/3 pl-6">
+                    <div className="flex flex-wrap md:flex-row-reverse">
+                        <div className="w-full md:w-1/3 md:pl-6">
                             <Image src={running} className="w-full mx-auto" alt="Personne qui fait du running" />
                         </div>
-                        <div className="w-5/6 sm:w-2/3 pr-6 flex flex-col justify-center">
+                        <div className="w-5/6 md:w-2/3 md:pr-6 flex flex-col justify-center">
                             <p className="text-gray-600 mb-8">
                                 Passionnée de course à pied, sport que je pratique depuis 20 ans déjà, j’aime les challenges.Que ce soit dans le domaine sportif, professionnel ou personnel.Selon moi, les challenges sont source de motivation et permettent de nous dépasser.
                             </p>
@@ -79,10 +79,10 @@ export default function AboutMe({ allPostsData }) {
                     </div>
                     <hr className="border-b border-gray-100 opacity-25 my-0 py-0" />
                     <div className="flex flex-wrap">
-                        <div className="w-full sm:w-1/3 pr-6">
+                        <div className="w-full md:w-1/3 md:pr-6">
                             <Image src={nature} className="w-full mx-auto" alt="Représentation de la nature" />
                         </div>
-                        <div className="w-5/6 sm:w-2/3 pl-6 flex flex-col justify-center">
+                        <div className="w-full md:w-2/3 md:pl-6 flex flex-col justify-center">
                             <p className="text-gray-600 mb-8">
                                 Connectée à la nature, aux paysages.Cela m’aide à me ressourcer et à nourrir mon intérieur.Je pratique la marche active et suis adepte des trails, c’est-à-dire des courses en sentier, en milieu naturel.J’accorde également une grande importance à une alimentation saine.
                             </p>
@@ -97,12 +97,12 @@ export default function AboutMe({ allPostsData }) {
                         <div className="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
                     </div>
                     {allPostsData.map(({ id, title, subtitle, contentHtml }) => (
-                        <div className="p-6" key={id} id={`id_${slides[+id - 1].src}`}>
-                            <div className="flex flex-column lg:flex-row">
-                                <div className="w-1/3 pr-6">
+                        <div key={id} id={`id_${slides[+id - 1].src}`}>
+                            <div className="flex flex-wrap">
+                                <div className="w-full md:w-1/3 md:pr-6">
                                     <Image src={slides[+id - 1]} className="w-full mx-auto" alt={title} />
                                 </div>
-                                <div className="w-2/3 pl-6 text-gray-600 ">
+                                <div className="w-full md:w-2/3 md:pl-6 text-gray-600 ">
                                     <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
                                         {title}
                                     </h3>
