@@ -5,7 +5,7 @@ import Outro from '../components/outro'
 import Image from "next/image"
 import running from '../public/images/running.jpg'
 import nature from '../public/images/nature.jpg'
-import { useEffect, useState } from "react"
+import { useEffect } from "react"
 
 import { getSortedBioData } from "../lib/bio"
 
@@ -25,7 +25,6 @@ export async function getStaticProps() {
 }
 
 export default function AboutMe({ allPostsData }) {
-
     const slides = [bio1, bio2, bio3, bio4, bio5];
 
     useEffect(() => {
