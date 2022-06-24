@@ -66,7 +66,7 @@ class Navbar extends Component {
 
             <nav id="header" className="fixed w-full z-30 top-0">
                 <div className="container w-full mx-auto flex flex-wrap items-center justify-between px-8">
-                    <div className="h-[60px] flex items-center">
+                    <div className="h-[100px] flex items-center">
                         <Link href="/">
                             <a className="toggleColour transition no-underline hover:no-underline font-bold text-2xl lg:text-4xl">
                                 UN PAS DE PLUS
@@ -85,8 +85,8 @@ class Navbar extends Component {
                             </div>
                             <div className="w-full lg:w-auto lg:flex lg:items-center hidden z-20" id="nav-content">
                                 <ScrollspyNav scrollTargetIds={['home', 'about', 'programs', 'contact']} activeNavClass="active" scrollDuration="400">
-                                    <ul className="list-reset lg:flex justify-end flex-1 items-center lg:text-end font-bold">
-                                        <li className="h-[40px] leading-[40px] lg:pl-8">
+                                    <ul className="list-reset lg:flex justify-end flex-1 items-center lg:text-end uppercase text-xl">
+                                        <li className="h-[40px] leading-[40px] lg:pl-8 ">
                                             <a className="toggleColour transition opacity-70 hover:opacity-100" href="#home">Accueil</a>
                                         </li>
                                         <li className="h-[40px] leading-[40px] lg:pl-8">
@@ -104,7 +104,7 @@ class Navbar extends Component {
                         </>
                     ) : (<></>)}
                 </div>
-                <hr className="border-b border-gray-100 opacity-25 my-0 py-0" />
+                {/* <hr className="border-b border-gray-100 opacity-25 my-0 py-0" /> */}
             </nav>
 
         )

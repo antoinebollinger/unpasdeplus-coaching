@@ -1,4 +1,5 @@
 import EmblaCarousel from '../components/Slider/EmblaCarousel'
+import Header from '../components/header';
 
 import media1 from "../public/caroussel/1.webp";
 import media2 from "../public/caroussel/2.webp";
@@ -14,6 +15,10 @@ export default function Slider({ id }) {
     ];
 
     return (
-        <EmblaCarousel slides={slides} className="text-white overflow-hidden" id={id} />
+        <EmblaCarousel slides={slides} className="text-white overflow-hidden" id={id}>
+            <div className="absolute inset-0 z-30 flex justify-center items-center">
+                <Header />
+            </div>
+        </EmblaCarousel>
     )
 }
