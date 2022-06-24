@@ -23,7 +23,7 @@ export default function Coaching({ coachingData }) {
                 }, 100);
             });
         };
-        const timelineObserver = new IntersectionObserver(reveal, { root: null, threshold: 0.1 });
+        const timelineObserver = new IntersectionObserver(reveal, { root: null, threshold: 0.25 });
         document.querySelectorAll('.slide-in')?.forEach(function (li) {
             timelineObserver.observe(li);
         });
@@ -32,7 +32,7 @@ export default function Coaching({ coachingData }) {
     return (
         <section className="bg-white overflow-x-hidden" id="coaching">
             <div className="container mx-auto px-8 text-gray-800">
-                <h2 className="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
+                <h2 className="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800 sticky">
                     Le coaching, c'est quoi ?
                 </h2>
                 <div className="w-full mb-4">

@@ -16,11 +16,9 @@ import bio5 from "../public/bio/5.jpg";
 
 export async function getStaticProps() {
     const bioData = await getData('bio');
-    const coachingData = await getData('coaching');
     return {
         props: {
             bioData,
-            coachingData
         },
     };
 }
@@ -41,12 +39,10 @@ export default function AboutMe({ bioData, coachingData }) {
                 }, 100);
             });
         };
-        const timelineObserver = new IntersectionObserver(reveal, { root: null, threshold: 0.1 });
+        const timelineObserver = new IntersectionObserver(reveal, { root: null, threshold: 0.25 });
         document.querySelectorAll('.slide-in')?.forEach(function (li) {
             timelineObserver.observe(li);
         });
-
-        console.log(coachingData);
     })
 
     return (

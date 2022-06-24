@@ -25,7 +25,7 @@ export default function Bio({ className }) {
                     J'accompagne les personnes à faire UN PAS DE PLUS pour un changement profond et durable dans leur vie personnelle et/ou professionnelle.
                 </p>
                 <p className="text-3xl text-gray-800 font-bold leading-none mb-3">
-                    à propos de moi
+                    À propos de moi
                 </p>
                 <p className="text-gray-600 mb-4">
                     Cela fait plus de dix ans que je veille à manger bio, local et éthique. Je me sens en adéquation avec ces choix de vie qui font mon identité : une personne en mouvement, spirituellement et physiquement !<br />Ainsi, au fil des années, j’ai gagné en sérénité en prenant soin de mon corps et de ma tête.<br />Cela n’a pas toujours été le cas ! Découvrez mon parcours pour comprendre comment je suis parvenue à m’épanouir et à devenir la personne que je suis aujourd’hui.
