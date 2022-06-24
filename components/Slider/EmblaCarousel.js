@@ -2,6 +2,7 @@ import { useState, useEffect, useCallback } from "react";
 import { DotButton, PrevButton, NextButton } from "./EmblaCarouselButtons";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
+import Image from "next/image";
 
 export default function EmblaCarousel({ slides, className }) {
     const options = { skipSnaps: false, loop: true }
@@ -48,10 +49,10 @@ export default function EmblaCarousel({ slides, className }) {
                                         <h3>{img.content}</h3>
                                     </div>
                                     <div className="embla__slide__inner">
-                                        <img
+                                        <Image
                                             className="embla__slide__img grayscale"
-                                            src={img.src}
-                                            alt="A cool cat."
+                                            src={img}
+                                            alt={img.title}
                                         />
                                     </div>
                                 </div>
