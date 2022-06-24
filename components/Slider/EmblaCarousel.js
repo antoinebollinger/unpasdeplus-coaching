@@ -38,19 +38,19 @@ export default function EmblaCarousel({ children, slides, className, id }) {
         <>
             <div className={`embla ${className}`} id={id}>
                 {children}
-                <div className="embla__viewport opacity-[80%]" ref={viewportRef}>
+                <div className="embla__viewport" ref={viewportRef}>
                     <div className="embla__container">
                         {slides.map((img, index) => {
                             return (
                                 <div className="embla__slide" key={index}>
                                     <div className="embla__slide__inner">
                                         <Image
-                                            className="embla__slide__img grayscale"
+                                            className="embla__slide__img grayscale opacity-[70%]"
                                             src={img}
                                             alt={img.title}
                                         />
                                     </div>
-                                    <div className="embla__slide__text hidden lg:block">
+                                    <div className="absolute inset-0 z-20 hidden lg:flex flex-col justify-end opacity pb-4">
                                         <h2 className="text-2xl text-center">{img.title}</h2>
                                         <h3 className="text-xl text-center">{img.content}</h3>
                                     </div>

@@ -12,7 +12,7 @@ export const DotButton = ({ selected, onClick }) => (
 export const PrevButton = ({ enabled, onClick }) => (
     <button
         aria-label="Précédent"
-        className="embla__button embla__button--prev"
+        className="embla__button embla__button--prev z-25 hidden lg:block"
         onClick={onClick}
         disabled={!enabled}
     >
@@ -25,7 +25,7 @@ export const PrevButton = ({ enabled, onClick }) => (
 export const NextButton = ({ enabled, onClick }) => (
     <button
         aria-label="Suivant"
-        className="embla__button embla__button--next"
+        className="embla__button embla__button--next z-25 hidden lg:block"
         onClick={onClick}
         disabled={!enabled}
     >
