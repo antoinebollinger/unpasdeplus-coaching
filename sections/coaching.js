@@ -30,7 +30,7 @@ export default function Coaching({ coachingData }) {
     });
 
     return (
-        <section className="bg-white" id="coaching">
+        <section className="bg-white overflow-x-hidden" id="coaching">
             <div className="container mx-auto px-8 text-gray-800">
                 <h2 className="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
                     Le coaching, c'est quoi ?
