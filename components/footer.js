@@ -4,7 +4,7 @@ export default function Footer() {
     return (
         <footer className="bg-white">
             <hr className="border-b border-gray-100 opacity-25 my-0 py-0" />
-            <div className="container mx-auto lg:px-2 px-6">
+            <div className="container mx-auto px-8">
                 <div className="w-full flex flex-col md:flex-row py-6">
                     <div className="flex-1 mb-6 text-black">
                         <a className="text-primary no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href=".">

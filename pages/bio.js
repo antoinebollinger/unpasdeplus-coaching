@@ -29,24 +29,24 @@ export default function Bio() {
 
     return (
         <Layout home={false} title={"Ma bio"}>
-            <Intro className="" />
-            <article className="pt-24 bg-white overflow-x-hidden">
-                <div className="container max-w-5xl mx-auto text-gray-800">
+            <Intro />
+            <section className="bg-white overflow-x-hidden">
+                <div className="container px-8 mx-auto text-gray-800">
                     <h1 className="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
                         Ma bio
                     </h1>
                     <div className="w-full mb-4">
                         <div className="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
                     </div>
-                    <div className="flex flex-wrap flex-col sm:flex-row content-center">
-                        <div className="w-full w-1/2 mx-auto md:w-1/4 p-6">
+                    <div className="flex flex-wrap flex-col sm:flex-row justify-center ">
+                        <div className="w-1/2 md:w-1/4 md:pr-6 mx-auto">
                             <Image
                                 src={sabrina}
-                                className="w-full mx-auto rounded-full"
+                                className="w-full rounded-full"
                                 alt="Sabrina Appriou"
                             />
                         </div>
-                        <div className="w-full sm:w-3/4 p-6">
+                        <div className="w-full md:w-3/4 md:pl-6">
                             <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
                                 Sabrina Appriou
                             </h3>
@@ -63,7 +63,7 @@ export default function Bio() {
                                 Ma bio
                             </h3>
                             <p className="text-gray-600 mb-4">
-                                Cela fait plus de dix ans que je veille à manger bio, local et éthique.Je me sens en adéquation avec ces choix de vie qui font mon identité: une personne en mouvement, spirituellement et physiquement !<br />Ainsi, au fil des années, j’ai gagné en sérénité en prenant soin de mon corps et de ma tête.<br />Cela n’a pas toujours été le cas !Découvrez mon parcours pour comprendre comment je suis parvenue à m’épanouir et à devenir la personne que je suis aujourd’hui.
+                                Cela fait plus de dix ans que je veille à manger bio, local et éthique. Je me sens en adéquation avec ces choix de vie qui font mon identité : une personne en mouvement, spirituellement et physiquement !<br />Ainsi, au fil des années, j’ai gagné en sérénité en prenant soin de mon corps et de ma tête.<br />Cela n’a pas toujours été le cas ! Découvrez mon parcours pour comprendre comment je suis parvenue à m’épanouir et à devenir la personne que je suis aujourd’hui.
                             </p>
                         </div>
                     </div>
@@ -204,7 +204,7 @@ export default function Bio() {
                         </div>
                     </div>
                 </div>
-            </article>
+            </section>
             <Outro />
         </Layout >
     )

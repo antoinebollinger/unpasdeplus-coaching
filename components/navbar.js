@@ -22,9 +22,9 @@ class Navbar extends Component {
             header.classList.add("shadow");
             toToggle.forEach(ele => {
                 ele.classList.add("text-primary-800");
-                ele.classList.add("hover:text-primary-700");
+                // ele.classList.add("hover:text-primary-700");
                 ele.classList.remove("text-white");
-                ele.classList.remove("hover:text-secondary-200");
+                // ele.classList.remove("hover:text-secondary-200");
             })
         } else {
             header.classList.add("gradient");
@@ -32,9 +32,9 @@ class Navbar extends Component {
             header.classList.remove("shadow");
             toToggle.forEach(ele => {
                 ele.classList.remove("text-primary-800");
-                ele.classList.remove("hover:text-primary-700");
+                // ele.classList.remove("hover:text-primary-700");
                 ele.classList.add("text-white");
-                ele.classList.add("hover:text-secondary-200");
+                // ele.classList.add("hover:text-secondary-200");
             })
         }
     }
@@ -65,8 +65,8 @@ class Navbar extends Component {
         return (
 
             <nav id="header" className="fixed w-full z-30 top-0">
-                <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
-                    <div className="lg:pl-2 pl-6 flex items-center">
+                <div className="container w-full mx-auto flex flex-wrap items-center justify-between px-8">
+                    <div className="h-[60px] flex items-center">
                         <Link href="/">
                             <a className="toggleColour transition no-underline hover:no-underline font-bold text-2xl lg:text-4xl">
                                 UN PAS DE PLUS
@@ -75,7 +75,7 @@ class Navbar extends Component {
                     </div>
                     {this.props.home ? (
                         <>
-                            <div className="block lg:hidden lg:pr-2 pr-6">
+                            <div className="block lg:hidden">
                                 <button id="nav-toggle" className="toggleColour flex items-center p-1 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
                                     <svg className="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                         <title>Menu</title>
@@ -83,20 +83,20 @@ class Navbar extends Component {
                                     </svg>
                                 </button>
                             </div>
-                            <div className="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 lg:bg-transparent p-6 lg:p-0 z-20 lg:pr-2 pr-6" id="nav-content">
-                                <ScrollspyNav scrollTargetIds={['home', 'about', 'programs', 'contact']} activeNavClass="underline" scrollDuration="400">
-                                    <ul className="list-reset lg:flex justify-end flex-1 items-center">
-                                        <li>
-                                            <a className="toggleColour transition inline-block py-2 px-0 lg:pl-6 hover:underline" href="#home">Accueil</a>
+                            <div className="w-full lg:w-auto lg:flex lg:items-center hidden z-20" id="nav-content">
+                                <ScrollspyNav scrollTargetIds={['home', 'about', 'programs', 'contact']} activeNavClass="active" scrollDuration="400">
+                                    <ul className="list-reset lg:flex justify-end flex-1 items-center lg:text-end font-bold">
+                                        <li className="h-[40px] lg:pl-8">
+                                            <a className="toggleColour transition opacity-70 hover:opacity-100" href="#home">Accueil</a>
                                         </li>
-                                        <li>
-                                            <a className="toggleColour transition inline-block py-2 px-0 lg:pl-6 hover:underline" href="#about">Qui je suis</a>
+                                        <li className="h-[40px] lg:pl-8">
+                                            <a className="toggleColour transition opacity-70 hover:opacity-100" href="#about">Qui je suis</a>
                                         </li>
-                                        <li>
-                                            <a className="toggleColour transition inline-block py-2 px-0 lg:pl-6 hover:underline" href="#programs">Offres de coaching</a>
+                                        <li className="h-[40px] lg:pl-8">
+                                            <a className="toggleColour transition opacity-70 hover:opacity-100" href="#programs">Offres de coaching</a>
                                         </li>
-                                        <li>
-                                            <a className="toggleColour transition inline-block py-2 px-0 lg:pl-6 hover:underline" href="#contact">Contact</a>
+                                        <li className="h-[40px] lg:pl-8">
+                                            <a className="toggleColour transition opacity-70 hover:opacity-100" href="#contact">Contact</a>
                                         </li>
                                     </ul>
                                 </ScrollspyNav >

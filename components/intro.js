@@ -1,6 +1,6 @@
 export default function Intro({ className }) {
     return (
-        <div className={`${className ?? 'relative -mt-12 lg:-mt-24'}`}>
+        <div className={className} aria-label="intro">
             <svg viewBox="0 0 1428 174" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
                 <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
                     <g transform="translate(-2.000000, 44.000000)" fill="#FFFFFF" fillRule="nonzero">

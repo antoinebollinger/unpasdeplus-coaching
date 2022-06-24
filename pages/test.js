@@ -10,13 +10,8 @@ import Slider from '../sections/slider'
 export default function Home() {
     return (
         <Layout home={true}>
-            <Header />
-            <Intro />
-            <Slider />
-            <About />
-            <Programs />
-            <Outro />
-            <Contact />
+            <Intro className="flex-1" />
+            <Outro className="flex-1" />
         </Layout>
     )
 }

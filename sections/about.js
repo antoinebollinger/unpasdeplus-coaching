@@ -5,22 +5,22 @@ import sabrina from '../public/images/sabrina.webp'
 export default function About() {
     return (
         <section className="bg-white" id="about">
-            <div className="container max-w-5xl mx-auto m-8">
+            <div className="container px-8 mx-auto">
                 <h2 className="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
                     Qui je suis
                 </h2>
                 <div className="w-full mb-4">
                     <div className="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
                 </div>
-                <div className="flex flex-wrap flex-col sm:flex-row content-center">
-                    <div className="w-full w-1/2 mx-auto md:w-1/4 p-6">
+                <div className="flex flex-wrap flex-col sm:flex-row justify-center ">
+                    <div className="w-1/2 md:w-1/4 md:pr-6 mx-auto">
                         <Image
                             src={sabrina}
-                            className="w-full mx-auto rounded-full"
+                            className="w-full rounded-full"
                             alt="Sabrina Appriou"
                         />
                     </div>
-                    <div className="w-full sm:w-3/4 p-6">
+                    <div className="w-full md:w-3/4 md:pl-6">
                         <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
                             Sabrina Appriou
                         </h3>

@@ -14,6 +14,6 @@ export default function Slider() {
     ];
 
     return (
-        <EmblaCarousel slides={slides} className="pt-8 text-white overflow-hidden" />
+        <EmblaCarousel slides={slides} className="pt-8 bg-white text-primary-900 overflow-hidden" />
     )
 }

@@ -1,6 +1,6 @@
 export default function Form() {
     return (
-        <div className="mt-8 max-w-md text-primary-900">
+        <div className="w-full text-primary-900">
             <div className="grid grid-cols-1 gap-6">
                 <label className="block">
                     <input

@@ -1,7 +1,7 @@
 export default function Programs() {
     return (
         <section className="bg-white" id="programs">
-            <div className="container mx-auto lg:px-2 px-6 pt-4 pb-12 text-gray-800">
+            <div className="container mx-auto px-8 text-gray-800">
                 <h2 className="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
                     Offres de coaching
                 </h2>

@@ -4,8 +4,8 @@ import stepByStep from '../public/images/stepbystep.png'
 export default function Header() {
 
     return (
-        <header className="pt-24" id="home">
-            <div className="container lg:px-2 px-6 mx-auto flex flex-wrap flex-col md:flex-row items-center">
+        <header id="home">
+            <div className="container px-8 mx-auto flex flex-wrap flex-col md:flex-row items-center">
                 <div className="flex flex-col w-full md:w-1/2 justify-center items-start text-center md:text-left">
                     <p className="uppercase tracking-loose w-full">Pour un changement profond et durable</p>
                     <h1 className="my-4 text-5xl font-bold leading-tight">
