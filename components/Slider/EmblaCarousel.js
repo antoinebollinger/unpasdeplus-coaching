@@ -4,7 +4,7 @@ import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
 
-export default function EmblaCarousel({ slides, className }) {
+export default function EmblaCarousel({ slides, className, id }) {
     const options = { skipSnaps: false, loop: true }
     const plugins = [Autoplay()] // Plugins
 
@@ -36,24 +36,22 @@ export default function EmblaCarousel({ slides, className }) {
 
     return (
         <>
-            <div className={`embla ${className}`}>
+            <div className={`embla ${className}`} id={id}>
                 <div className="embla__viewport opacity-[80%]" ref={viewportRef}>
                     <div className="embla__container">
                         {slides.map((img, index) => {
                             return (
                                 <div className="embla__slide" key={index}>
-                                    <div className="embla__slide__title text-2xl text-center">
-                                        <h2>{img.title}</h2>
-                                    </div>
-                                    <div className="embla__slide__content text-xl text-center">
-                                        <h3>{img.content}</h3>
-                                    </div>
                                     <div className="embla__slide__inner">
                                         <Image
                                             className="embla__slide__img grayscale"
                                             src={img}
                                             alt={img.title}
                                         />
+                                    </div>
+                                    <div className="embla__slide__text">
+                                        <h2 className="text-2xl text-center">{img.title}</h2>
+                                        <h3 className="text-xl text-center">{img.content}</h3>
                                     </div>
                                 </div>
                             )

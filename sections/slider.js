@@ -5,7 +5,7 @@ import media2 from "../public/caroussel/2.webp";
 import media3 from "../public/caroussel/3.webp";
 import media4 from "../public/caroussel/4.webp";
 
-export default function Slider() {
+export default function Slider({ id }) {
     const slides = [
         Object.assign(media1, { title: 'Changement & transition', content: 'Vers un pas de plus vers la quête de soi pour une vie harmonieuse' }),
         Object.assign(media2, { title: 'Image de soi', content: 'Développer & cultiver de la bienveillance envers soi' }),
@@ -14,6 +14,6 @@ export default function Slider() {
     ];
 
     return (
-        <EmblaCarousel slides={slides} className="pt-8 bg-white text-primary-900 overflow-hidden" />
+        <EmblaCarousel slides={slides} className="text-white overflow-hidden" id={id} />
     )
 }
