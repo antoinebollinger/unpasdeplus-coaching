@@ -50,7 +50,7 @@ export default function EmblaCarousel({ children, slides, className, id }) {
                                             alt={img.title}
                                         />
                                     </div>
-                                    <div className="embla__slide__text">
+                                    <div className="embla__slide__text hidden lg:block">
                                         <h2 className="text-2xl text-center">{img.title}</h2>
                                         <h3 className="text-xl text-center">{img.content}</h3>
                                     </div>
