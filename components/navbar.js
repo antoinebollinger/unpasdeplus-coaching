@@ -90,10 +90,13 @@ class Navbar extends Component {
                                             <a className="toggleColour transition opacity-70 hover:opacity-100" href="#home">Accueil</a>
                                         </li>
                                         <li className="h-[40px] leading-[40px] lg:pl-8">
-                                            <a className="toggleColour transition opacity-70 hover:opacity-100" href="#about">Qui je suis</a>
+                                            <a className="toggleColour transition opacity-70 hover:opacity-100" href="#coaching">Le coaching</a>
                                         </li>
                                         <li className="h-[40px] leading-[40px] lg:pl-8">
-                                            <a className="toggleColour transition opacity-70 hover:opacity-100" href="#programs">Offres de coaching</a>
+                                            <a className="toggleColour transition opacity-70 hover:opacity-100" href="#programs">Mes offres</a>
+                                        </li>
+                                        <li className="h-[40px] leading-[40px] lg:pl-8">
+                                            <a className="toggleColour transition opacity-70 hover:opacity-100" href="#about">Qui je suis</a>
                                         </li>
                                         <li className="h-[40px] leading-[40px] lg:pl-8">
                                             <a className="toggleColour transition opacity-70 hover:opacity-100" href="#contact">Contact</a>

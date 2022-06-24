@@ -6,8 +6,7 @@ import Image from "next/image"
 import running from '../public/images/running.jpg'
 import nature from '../public/images/nature.jpg'
 import { useEffect } from "react"
-
-import { getSortedBioData } from "../lib/bio"
+import { getData } from "../lib/getData"
 
 import bio1 from "../public/bio/1.jpg";
 import bio2 from "../public/bio/2.jpg";
@@ -16,15 +15,17 @@ import bio4 from "../public/bio/4.jpg";
 import bio5 from "../public/bio/5.jpg";
 
 export async function getStaticProps() {
-    const allPostsData = await getSortedBioData();
+    const bioData = await getData('bio');
+    const coachingData = await getData('coaching');
     return {
         props: {
-            allPostsData,
+            bioData,
+            coachingData
         },
     };
 }
 
-export default function AboutMe({ allPostsData }) {
+export default function AboutMe({ bioData, coachingData }) {
     const slides = [bio1, bio2, bio3, bio4, bio5];
 
     useEffect(() => {
@@ -44,6 +45,8 @@ export default function AboutMe({ allPostsData }) {
         document.querySelectorAll('.slide-in')?.forEach(function (li) {
             timelineObserver.observe(li);
         });
+
+        console.log(coachingData);
     })
 
     return (
@@ -86,7 +89,7 @@ export default function AboutMe({ allPostsData }) {
                     <div className="w-full mb-8">
                         <div className="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
                     </div>
-                    {allPostsData.map(({ id, title, subtitle, contentHtml }) => (
+                    {bioData.map(({ id, title, subtitle, contentHtml }) => (
                         <div key={id} className="mb-8">
                             <div className="flex flex-wrap">
                                 <div className="w-full md:w-1/3 md:pr-6 slide-in transition duration-300 opacity-0 -translate-x-3/4">
