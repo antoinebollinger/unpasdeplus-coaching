@@ -14,7 +14,7 @@ import bio3 from "../public/bio/3.jpg";
 import bio4 from "../public/bio/4.jpg";
 import bio5 from "../public/bio/5.jpg";
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
     const bioData = await getData('bio');
     return {
         props: {

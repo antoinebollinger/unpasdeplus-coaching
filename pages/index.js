@@ -10,7 +10,7 @@ import Contact from '../sections/contact'
 import { getData } from "../lib/getData"
 import { useEffect } from 'react'
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
     const coachingData = await getData('coaching');
     return {
         props: {

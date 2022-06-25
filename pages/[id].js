@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import Outro from "../components/outro";
 import { getAllPostIds, getPostData } from '../lib/getData'
 
-export async function getStaticProps({ params }) {
+export async function getServerSideProps({ params }) {
     const postData = await getPostData(params.id, 'posts');
     return {
         props: {
