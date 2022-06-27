@@ -49,7 +49,7 @@ export default function Footer() {
                                     href="https://www.instagram.com/sabs.app/"
                                     className="no-underline hover:underline text-primary-800 hover:text-primary-700"
                                 >
-                                    <FontAwesomeIcon icon={faInstagram} />
+                                    Instagram <FontAwesomeIcon icon={faInstagram} />
                                 </a>
                             </li>
                             <li className="mt-2 inline-block mr-2 md:block md:mr-0">
@@ -57,7 +57,7 @@ export default function Footer() {
                                     href="https://www.facebook.com/sabrina.appriou"
                                     className="no-underline hover:underline text-primary-800 hover:text-primary-700"
                                 >
-                                    <FontAwesomeIcon icon={faFacebook} />
+                                    Facebook <FontAwesomeIcon icon={faFacebook} />
                                 </a>
                             </li>
                             <li className="mt-2 inline-block mr-2 md:block md:mr-0">
@@ -65,7 +65,7 @@ export default function Footer() {
                                     href="https://www.linkedin.com/in/sabrina-appriou-0138a8122/"
                                     className="no-underline hover:underline text-primary-800 hover:text-primary-700"
                                 >
-                                    <FontAwesomeIcon icon={faLinkedin} />
+                                    LinkedIn <FontAwesomeIcon icon={faLinkedin} />
                                 </a>
                             </li>
                         </ul>

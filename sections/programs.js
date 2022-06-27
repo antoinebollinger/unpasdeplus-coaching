@@ -7,11 +7,7 @@ export default function Programs() {
             <div className="absolute inset-0 flex items-center justify-center">
                 <Image
                     src={steps}
-                    layout="fill"
-                    objectFit="contain"
-                />
-                <Image
-                    src={steps}
+                    alt="Steps"
                     layout="fill"
                     objectFit="contain"
                 />

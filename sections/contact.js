@@ -18,11 +18,11 @@ export default function Contact() {
                     <p className="font-bold">Plusieurs moyens vous sont proposés pour me contacter : email, téléphone, ou bien remplissez le formulaire.</p>
                     <br />
                     <p>
-                        <FontAwesomeIcon icon={faEnvelope} /> <a href="mailto:sabrina.appriou@hotmail.fr" title="Envoyer un mail à Sabrina" className="text-2xl text-secondary-500 hover:text-secondary-100 transition">sabrina.appriou@hotmail.fr</a>
+                        <FontAwesomeIcon icon={faEnvelope} /> <a href="mailto:sabrina.appriou@hotmail.fr" title="Envoyer un mail à Sabrina" className="text-2xl hover:text-secondary-200 transition">sabrina.appriou@hotmail.fr</a>
                     </p>
                     <br />
                     <p>
-                        <FontAwesomeIcon icon={faPhone} /> <a href="tel:+33661794699" title="Téléphoner à Sabrina" className="text-2xl text-secondary-500 hover:text-secondary-100 transition">06 61 79 46 99</a>
+                        <FontAwesomeIcon icon={faPhone} /> <a href="tel:+33661794699" title="Téléphoner à Sabrina" className="text-2xl hover:text-secondary-200 transition">06 61 79 46 99</a>
                     </p>
                 </div>
                 <div className="w-full md:w-1/2">
