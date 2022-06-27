@@ -10,7 +10,7 @@ export default function Footer() {
                 <div className="w-full flex flex-col md:flex-row py-6">
                     <div className="flex-1 mb-6 text-black">
                         <Link href="/">
-                            <a className="opacity-80 hover:opacity-100" href="/">
+                            <a className="opacity-80 hover:opacity-100">
                                 <Image
                                     src={logo}
                                     width="150"
