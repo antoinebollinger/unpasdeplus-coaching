@@ -84,7 +84,7 @@ class Navbar extends Component {
                                 </button>
                             </div>
                             <div className="w-full lg:w-auto lg:flex lg:items-center hidden z-20" id="nav-content">
-                                <ScrollspyNav scrollTargetIds={['home', 'about', 'programs', 'contact']} activeNavClass="active" scrollDuration="400">
+                                <ScrollspyNav scrollTargetIds={['home', 'coaching', 'about', 'programs', 'contact']} activeNavClass="active" scrollDuration="400">
                                     <ul className="list-reset lg:flex justify-end flex-1 items-center lg:text-end uppercase text-xl">
                                         <li className="h-[40px] leading-[40px] lg:pl-8 ">
                                             <a className="toggleColour transition opacity-70 hover:opacity-100" href="#home">Accueil</a>
