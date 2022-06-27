@@ -1,15 +1,15 @@
 <!-- PROJECT LOGO -->
 <p align="center">
-  <a href="https://lameilleureversiondemoi.netlify.app/">
+  <!-- <a href="https://lameilleureversiondemoi.netlify.app/">
     <img src="assets/img/logos/v4/purpleText/pinkLeaf/LMVDM.svg" alt="Logo" height="50">
-  </a>
+  </a> -->
 
   <h3 align="center">UN PAS DE PLUS website project</h3>
 
   <p align="center">
     A website that presents the activity of Sabrina Appriou, personal development coach, founder of Un Pas De Plus.
     <br />
-    <a href="https://github.com/antoinebollinger/lameilleureversiondemoi/issues">🐛 Report Bug</a>
+    <a href="https://github.com/sabrinaappriou/unpasdeplus/issues">🐛 Report Bug</a>
   </p>
 </p>
 
@@ -35,17 +35,15 @@
 
 ### Preview
 
-![Preview](assets/img/preview/preview.webp)
+![Preview](public/images/preview.jpg)
 
 ### Build with
 
-The project is based on a free template from [Start Boostrap](https://startbootstrap.com/), which use the CSS framework [Bootstrap v5](https://getbootstrap.com/docs/5.0/getting-started/introduction/). The **CSS** has been customized with the help of [SASS](https://sass-lang.com/).
+The main structure of this project is built with [Next.js](https://nextjs.org/), a React framework.
 
-I used the [Webpack](https://webpack.js.org/) package to manage my **JS** code. This allowed me to work with modules which make it easier to maintain.
+The layout is based on a free template from [Tailwind Awesome](https://www.tailwindawesome.com/resources/landing-page), which use the CSS framework [Tailwind CSS](https://tailwindcss.com/). The **CSS** has been customized with the help of [SASS](https://sass-lang.com/).
 
-The website is currently tested on a [Netlify](https://www.netlify.com/) deployment. You can see the result at [LaMeilleureVersionDeMoi](https://lameilleureversiondemoi.netlify.app/).
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/f49d62bd-6859-4abe-a465-306d84627c4a/deploy-status)](https://lameilleureversiondemoi.netlify.app/)
+The website is currently tested on a [Vercel](https://vercel.com/) deployment. You can see the result at [UN PAS DE PLUS](https://unpasdeplus.vercel.app/).
 
 Soon it will have its own domain 😎 !
 
