@@ -1,7 +1,22 @@
+import Image from "next/image"
+import steps from '../public/images/steps.png'
+
 export default function Programs() {
     return (
-        <section className="bg-white" id="programs">
-            <div className="container mx-auto px-8 text-gray-800">
+        <section className="bg-white relative" id="programs">
+            <div className="absolute inset-0 flex items-center justify-center">
+                <Image
+                    src={steps}
+                    layout="fill"
+                    objectFit="contain"
+                />
+                <Image
+                    src={steps}
+                    layout="fill"
+                    objectFit="contain"
+                />
+            </div>
+            <div className="container mx-auto px-8 text-gray-800 relative">
                 <h2 className="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800 sticky">
                     Mes offres de coaching
                 </h2>

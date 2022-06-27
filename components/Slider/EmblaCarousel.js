@@ -4,7 +4,7 @@ import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
 
-export default function EmblaCarousel({ children, slides, className, id }) {
+export default function EmblaCarousel({ children, slides, className }) {
     const options = { skipSnaps: false, loop: true }
     const plugins = [Autoplay()] // Plugins
 
@@ -36,7 +36,7 @@ export default function EmblaCarousel({ children, slides, className, id }) {
 
     return (
         <>
-            <div className={`embla ${className}`} id={id}>
+            <div className={`embla ${className}`}>
                 {children}
                 <div className="embla__viewport" ref={viewportRef}>
                     <div className="embla__container">

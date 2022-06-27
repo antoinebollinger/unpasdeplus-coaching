@@ -15,10 +15,12 @@ export default function Slider({ id }) {
     ];
 
     return (
-        <EmblaCarousel slides={slides} className="text-white overflow-hidden" id={id}>
-            <div className="absolute inset-0 z-20 flex justify-center items-center pointer-events-none	">
-                <Header />
-            </div>
-        </EmblaCarousel>
+        <header id={id}>
+            <EmblaCarousel slides={slides} className="text-white overflow-hidden">
+                <div className="absolute inset-0 z-20 flex justify-center items-center pointer-events-none	">
+                    <Header />
+                </div>
+            </EmblaCarousel>
+        </header>
     )
 }

@@ -1,4 +1,5 @@
 import Form from "../components/form"
+import { PhoneIcon, MailIcon } from '@heroicons/react/outline'
 
 export default function Contact() {
     return (
@@ -15,9 +16,13 @@ export default function Contact() {
                     <br />
                     <p className="font-bold">Plusieurs moyens vous sont proposés pour me contacter : email, téléphone, ou bien remplissez le formulaire.</p>
                     <br />
-                    <a href="mailto:sabrina.appriou@hotmail.fr" title="Envoyer un mail à Sabrina" className="text-2xl">sabrina.appriou@hotmail.fr</a>
+                    <p>
+                        <MailIcon className="h-5 w-5 inline-block" /> | <a href="mailto:sabrina.appriou@hotmail.fr" title="Envoyer un mail à Sabrina" className="text-2xl">sabrina.appriou@hotmail.fr</a>
+                    </p>
                     <br />
-                    <a href="tel:+33661794699" title="Téléphoner à Sabrina" className="text-2xl">06 61 79 46 99</a>
+                    <p>
+                        <PhoneIcon className="h-5 w-5 inline-block" /> | <a href="tel:+33661794699" title="Téléphoner à Sabrina" className="text-2xl">06 61 79 46 99</a>
+                    </p>
                 </div>
                 <div className="w-full md:w-1/2">
                     <Form />

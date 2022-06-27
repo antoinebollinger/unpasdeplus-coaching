@@ -1,15 +1,19 @@
+import { UserIcon, PhoneIcon, MailIcon } from '@heroicons/react/outline'
+
 export default function Form() {
     return (
         <div className="w-full text-primary-900">
             <div className="grid grid-cols-1 gap-6">
-                <label className="block">
+                <label className="flex">
+                    <div className="flex items-center justify-center bg-gray-200 rounded-l-md px-3">
+                        <UserIcon className="h-5 w-5 inline-block" />
+                    </div>
                     <input
                         type="text"
                         className="
-                            mt-1
                             block
                             w-full
-                            rounded-md
+                            rounded-r-md
                             bg-gray-100
                             border-transparent
                             focus:border-gray-500 focus:bg-white focus:ring-0
@@ -17,14 +21,16 @@ export default function Form() {
                         placeholder="Votre nom"
                     />
                 </label>
-                <label className="block">
+                <label className="flex">
+                    <div className="flex items-center justify-center bg-gray-200 rounded-l-md px-3">
+                        <PhoneIcon className="h-5 w-5 inline-block" />
+                    </div>
                     <input
                         type="text"
                         className="
-                            mt-1
                             block
                             w-full
-                            rounded-md
+                            rounded-r-md
                             bg-gray-100
                             border-transparent
                             focus:border-gray-500 focus:bg-white focus:ring-0
@@ -32,14 +38,16 @@ export default function Form() {
                         placeholder="Votre téléphone"
                     />
                 </label>
-                <label className="block">
+                <label className="flex">
+                    <div className="flex items-center justify-center bg-gray-200 rounded-l-md px-3">
+                        <MailIcon className="h-5 w-5 inline-block" />
+                    </div>
                     <input
                         type="email"
                         className="
-                            mt-1
                             block
                             w-full
-                            rounded-md
+                            rounded-r-md
                             bg-gray-100
                             border-transparent
                             focus:border-gray-500 focus:bg-white focus:ring-0
