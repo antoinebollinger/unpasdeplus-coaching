@@ -1,4 +1,5 @@
-import { UserIcon, PhoneIcon, MailIcon } from '@heroicons/react/outline'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faUser, faEnvelope, faPhone, faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 
 export default function Form() {
     return (
@@ -6,7 +7,7 @@ export default function Form() {
             <div className="grid grid-cols-1 gap-6">
                 <label className="flex">
                     <div className="flex items-center justify-center bg-gray-200 rounded-l-md px-3">
-                        <UserIcon className="h-5 w-5 inline-block" />
+                        <FontAwesomeIcon icon={faUser} />
                     </div>
                     <input
                         type="text"
@@ -23,7 +24,7 @@ export default function Form() {
                 </label>
                 <label className="flex">
                     <div className="flex items-center justify-center bg-gray-200 rounded-l-md px-3">
-                        <PhoneIcon className="h-5 w-5 inline-block" />
+                        <FontAwesomeIcon icon={faPhone} />
                     </div>
                     <input
                         type="text"
@@ -40,7 +41,7 @@ export default function Form() {
                 </label>
                 <label className="flex">
                     <div className="flex items-center justify-center bg-gray-200 rounded-l-md px-3">
-                        <MailIcon className="h-5 w-5 inline-block" />
+                        <FontAwesomeIcon icon={faEnvelope} />
                     </div>
                     <input
                         type="email"
@@ -72,9 +73,9 @@ export default function Form() {
                 </label>
                 <button
                     type="submit"
-                    className="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+                    className="mx-auto lg:mx-0 bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
                 >
-                    Envoyer
+                    <FontAwesomeIcon icon={faPaperPlane} /> Envoyer
                 </button>
             </div>
         </div>

@@ -1,6 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import logo from '../public/images/logo_violet.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 export default function Footer() {
     return (
@@ -46,19 +48,25 @@ export default function Footer() {
                                 <a
                                     href="https://www.instagram.com/sabs.app/"
                                     className="no-underline hover:underline text-primary-800 hover:text-primary-700"
-                                >Instagram</a>
+                                >
+                                    <FontAwesomeIcon icon={faInstagram} />
+                                </a>
                             </li>
                             <li className="mt-2 inline-block mr-2 md:block md:mr-0">
                                 <a
                                     href="https://www.facebook.com/sabrina.appriou"
                                     className="no-underline hover:underline text-primary-800 hover:text-primary-700"
-                                >Facebook</a>
+                                >
+                                    <FontAwesomeIcon icon={faFacebook} />
+                                </a>
                             </li>
                             <li className="mt-2 inline-block mr-2 md:block md:mr-0">
                                 <a
                                     href="https://www.linkedin.com/in/sabrina-appriou-0138a8122/"
                                     className="no-underline hover:underline text-primary-800 hover:text-primary-700"
-                                >LinkedIn</a>
+                                >
+                                    <FontAwesomeIcon icon={faLinkedin} />
+                                </a>
                             </li>
                         </ul>
                     </div>
