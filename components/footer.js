@@ -1,4 +1,6 @@
 import Link from "next/link";
+import Image from "next/image";
+import logo from '../public/images/logo_violet.png'
 
 export default function Footer() {
     return (
@@ -7,9 +9,17 @@ export default function Footer() {
             <div className="container mx-auto px-8">
                 <div className="w-full flex flex-col md:flex-row py-6">
                     <div className="flex-1 mb-6 text-black">
-                        <a className="text-primary no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href=".">
-                            UNPASDEPLUS
-                        </a>
+                        <Link href="/">
+                            <a className="opacity-80 hover:opacity-100" href="/">
+                                <Image
+                                    src={logo}
+                                    width="150"
+                                    height="150"
+                                    alt="Step by Step" />
+                                <br />
+                                {/* UNPASDEPLUS */}
+                            </a>
+                        </Link>
                     </div>
                     <div className="flex-1 lg:text-end">
                         <p className="uppercase text-gray-500 md:mb-6">Partie légale</p>

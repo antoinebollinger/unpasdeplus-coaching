@@ -65,7 +65,7 @@ export default function EmblaCarousel({ children, slides, className, id }) {
                 <PrevButton onClick={scrollPrev} enabled={prevBtnEnabled} />
                 <NextButton onClick={scrollNext} enabled={nextBtnEnabled} />
             </div>
-            <div className="embla__dots">
+            <div className="embla__dots hidden lg:flex">
                 {scrollSnaps.map((_, index) => (
                     <DotButton
                         key={index}

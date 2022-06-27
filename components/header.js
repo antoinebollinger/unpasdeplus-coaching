@@ -1,25 +1,16 @@
-// import Image from 'next/image'
-// import stepByStep from '../public/images/stepbystep.png'
+import Image from 'next/image'
+import logo from '../public/images/logo_blanc.png'
 
 export default function Header() {
 
     return (
         <header className="container px-8 mx-auto flex flex-wrap flex-col md:flex-row items-center">
-            <div className="flex flex-col w-full md:w-1/2 justify-center items-start text-center md:text-left">
-                <p className="uppercase tracking-loose w-full">Pour un changement profond et durable</p>
-                <h1 className="my-4 text-5xl font-bold leading-tight">
-                    UN PAS DE PLUS
-                </h1>
-                <p className="leading-normal text-2xl mb-8">
-                    Coaching professionnel & particulier
-                </p>
-
-            </div>
-            <div className="w-full md:w-1/2 py-6 text-center">
-                {/* <Image
-                    src={stepByStep}
+            <div className="w-full md:w-1/2 py-6 text-center mx-auto">
+                <Image
+                    src={logo}
                     className="w-full md:w-4/5 z-50 mx-auto z-0"
-                    alt="Step by Step" /> */}
+                    alt="Step by Step" />
+                <p className="uppercase text-2xl tracking-loose w-full">Pour un changement profond et durable</p>
             </div>
         </header>
     )
