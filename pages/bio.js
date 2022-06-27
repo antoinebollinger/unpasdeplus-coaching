@@ -32,7 +32,7 @@ export default function AboutMe({ bioData, coachingData }) {
                 if (!entry.isIntersecting) return;
                 setTimeout(() => {
                     entry.target.classList.remove('translate-x-3/4');
-                    entry.target.classList.remove('-translate-x-3/4');
+                    entry.target.classList.remove('-scale-0');
                     entry.target.classList.remove('opacity-0');
                     entry.target.classList.add('translate-x-0');
                     observer.unobserve(entry.target);
@@ -88,7 +88,7 @@ export default function AboutMe({ bioData, coachingData }) {
                     {bioData.map(({ id, title, subtitle, contentHtml }) => (
                         <div key={id} className="mb-8">
                             <div className="flex flex-wrap">
-                                <div className="w-full md:w-1/3 md:pr-6 slide-in transition duration-300 opacity-0 -translate-x-3/4">
+                                <div className="w-full md:w-1/3 md:pr-6 slide-in transition duration-300 opacity-0 -scale-0">
                                     <Image src={slides[+id - 1]} className="w-full mx-auto" alt={title} />
                                 </div>
                                 <div className="w-full md:w-2/3 md:pl-6 text-gray-600 slide-in transition duration-300 opacity-0 translate-x-3/4">

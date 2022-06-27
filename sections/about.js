@@ -14,7 +14,7 @@ export default function About() {
                 <Bio className="mb-4" />
                 <div className="w-full text-center">
                     <Link href="/bio">
-                        <button class="rounded-full gradient px-8 py-4 shadow-lg">
+                        <button className="rounded-full gradient px-8 py-4 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out opacity-90 hover:opacity-100">
                             Découvrir mon parcours
                         </button>
                     </Link>

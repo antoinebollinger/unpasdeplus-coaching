@@ -20,10 +20,6 @@ export async function getServerSideProps() {
 }
 
 export default function Home({ coachingData }) {
-    useEffect(() => {
-
-    });
-
     return (
         <Layout home={true}>
             <Slider id="home" />

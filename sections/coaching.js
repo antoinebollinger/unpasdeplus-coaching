@@ -16,7 +16,7 @@ export default function Coaching({ coachingData }) {
                 if (!entry.isIntersecting) return;
                 setTimeout(() => {
                     entry.target.classList.remove('translate-x-3/4');
-                    entry.target.classList.remove('-translate-x-3/4');
+                    entry.target.classList.remove('-scale-0');
                     entry.target.classList.remove('opacity-0');
                     entry.target.classList.add('translate-x-0');
                     observer.unobserve(entry.target);
@@ -45,7 +45,7 @@ export default function Coaching({ coachingData }) {
                     <div>
                         {coachingData.map(({ id, contentHtml }) => (
                             <div className="flex flex-wrap flex-col sm:flex-row justify-center items-center mb-8" key={id}>
-                                <div className="w-1/2 md:w-1/4 md:pr-6 mx-auto slide-in transition duration-300 opacity-0 -translate-x-3/4">
+                                <div className="w-1/2 md:w-1/4 md:pr-6 mx-auto slide-in transition duration-300 opacity-0 -scale-0">
                                     <Image
                                         src={slides[+id - 1]}
                                         className="w-full rounded-full"
