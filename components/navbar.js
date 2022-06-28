@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { Component } from "react"
 import ScrollspyNav from 'react-scrollspy-nav'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowCircleLeft } from "@fortawesome/free-solid-svg-icons";
 
 class Navbar extends Component {
     navMenuDiv;
@@ -14,27 +16,32 @@ class Navbar extends Component {
 
     toggleColor() {
         let scrollpos = window.scrollY;
-        const header = document.getElementById("header");
+        const header = document.getElementById("nav-menu");
+        const contact = document.getElementById("contact__btn");
         const toToggle = Array.from(document.querySelectorAll(".toggleColour"));
         if (scrollpos > 10) {
             header.classList.remove("gradient");
             header.classList.add("bg-white");
             header.classList.add("shadow");
+            contact?.classList.remove('bg-white');
+            contact?.classList.remove('text-primary-800');
+            contact?.classList.add('gradient');
+            contact?.classList.add('text-white');
             toToggle.forEach(ele => {
                 ele.classList.add("text-primary-800");
-                // ele.classList.add("hover:text-primary-700");
                 ele.classList.remove("text-white");
-                // ele.classList.remove("hover:text-secondary-200");
             })
         } else {
             header.classList.add("gradient");
             header.classList.remove("bg-white");
             header.classList.remove("shadow");
+            contact?.classList.add('bg-white');
+            contact?.classList.add('text-primary-800');
+            contact?.classList.remove('gradient');
+            contact?.classList.remove('text-white');
             toToggle.forEach(ele => {
                 ele.classList.remove("text-primary-800");
-                // ele.classList.remove("hover:text-primary-700");
                 ele.classList.add("text-white");
-                // ele.classList.add("hover:text-secondary-200");
             })
         }
     }
@@ -63,10 +70,9 @@ class Navbar extends Component {
 
     render() {
         return (
-
-            <nav id="header" className="fixed w-full z-30 top-0">
+            <nav id="nav-menu" className="fixed w-full z-30 top-0">
                 <div className="container w-full mx-auto flex flex-wrap items-center justify-between px-8">
-                    <div className="h-[100px] flex items-center">
+                    <div className="h-[100px] flex items-center" id="nav-logo">
                         <Link href="/">
                             <a className="toggleColour transition no-underline hover:no-underline font-bold text-2xl lg:text-4xl">
                                 UN PAS DE PLUS
@@ -86,7 +92,7 @@ class Navbar extends Component {
                             <div className="w-full lg:w-auto lg:flex lg:items-center hidden z-20" id="nav-content">
                                 <ScrollspyNav scrollTargetIds={['home', 'coaching', 'about', 'programs', 'contact']} activeNavClass="active" scrollDuration="400">
                                     <ul className="list-reset lg:flex justify-end flex-1 items-center lg:text-end uppercase text-xl">
-                                        <li className="h-[40px] leading-[40px] lg:pl-8 ">
+                                        <li className="h-[40px] leading-[40px] lg:pl-8">
                                             <a className="toggleColour transition opacity-70 hover:opacity-100" href="#home">Accueil</a>
                                         </li>
                                         <li className="h-[40px] leading-[40px] lg:pl-8">
@@ -98,18 +104,29 @@ class Navbar extends Component {
                                         <li className="h-[40px] leading-[40px] lg:pl-8">
                                             <a className="toggleColour transition opacity-70 hover:opacity-100" href="#about">Qui je suis</a>
                                         </li>
-                                        <li className="h-[40px] leading-[40px] lg:pl-8">
+                                        <li className="h-[40px] leading-[40px] lg:pl-8 lg:hidden">
                                             <a className="toggleColour transition opacity-70 hover:opacity-100" href="#contact">Contact</a>
+                                        </li>
+                                        <li className="lg:pl-8 hidden lg:list-item">
+                                            <a href="#contact">
+                                                <button className="rounded-full px-8 py-4 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out opacity-90 hover:opacity-100" id="contact__btn">
+                                                    Contact
+                                                </button>
+                                            </a>
                                         </li>
                                     </ul>
                                 </ScrollspyNav >
                             </div>
                         </>
-                    ) : (<></>)}
+                    ) : (
+                        <Link href="/">
+                            <button className="toggleColour flex items-center p-1 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                                <FontAwesomeIcon icon={faArrowCircleLeft} className="h-6 w-6" />
+                            </button>
+                        </Link>
+                    )}
                 </div>
-                {/* <hr className="border-b border-gray-100 opacity-25 my-0 py-0" /> */}
             </nav>
-
         )
     }
 }
