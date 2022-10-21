@@ -1,0 +1,22 @@
+.main-btn {
+    @apply inline-block px-8 py-4 font-bold text-white duration-300 bg-primary-700 rounded-full;
+    &:hover {
+        @apply bg-primary-500;
+    }
+    &.video-popup {
+        @apply text-primary-600 bg-white;
+        &:hover {
+            @apply bg-white shadow-xl;
+        }
+    }
+}
+
+.gradient-btn {
+    background-image: linear-gradient(to right, theme('colors.primary.800') 0%, theme('colors.primary.400') 50%, theme('colors.primary.800') 100%);
+    background-size: 200% auto;
+    overflow: hidden;
+    &:hover {
+        background-position: right center;
+        @apply shadow-xl;    
+    }
+}

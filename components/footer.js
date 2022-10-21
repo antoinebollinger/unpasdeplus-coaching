@@ -1,77 +1,128 @@
 import Link from "next/link";
 import Image from "next/image";
-import logo from '../public/images/logo_violet.png'
+import Logo from '../public/unpasdeplus.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons'
 
-export default function Footer() {
+Footer.defaultProps = {
+    onThisPage: [
+        {
+            title: "Haut de page",
+            link: "#"
+        },
+        {
+            title: "Contact",
+            link: "#contact"
+        }
+    ]
+}
+export default function Footer({ onThisPage }) {
     return (
-        <footer className="bg-white">
-            <hr className="border-b border-gray-100 opacity-25 my-0 py-0" />
-            <div className="container mx-auto px-8">
-                <div className="w-full flex flex-col md:flex-row py-6">
-                    <div className="flex-1 mb-6 text-black">
-                        <Link href="/">
-                            <a className="opacity-80 hover:opacity-100">
-                                <Image
-                                    src={logo}
-                                    width="150"
-                                    height="150"
-                                    alt="Step by Step" />
-                                <br />
-                                {/* UNPASDEPLUS */}
-                            </a>
-                        </Link>
+        <footer id="footer" className="footer-area">
+            <div className="mb-16 footer-widget">
+                <div className="container">
+                    <div className="row">
+                        <div className="w-full">
+                            <div className="items-end justify-between block mb-8 footer-logo-support md:flex">
+                                <div className="flex items-end footer-logo">
+                                    <a className="mt-8" href="index.html">
+                                        <Image
+                                            src={Logo}
+                                            alt="Logo"
+                                            width="50px"
+                                            height="50px"
+                                        />
+                                    </a>
+                                    <ul className="flex mt-8 ml-8 footer-social">
+                                        <li><a href="#"><FontAwesomeIcon icon={faFacebook} /></a></li>
+                                        <li><a href="#"><FontAwesomeIcon icon={faInstagram} /></a></li>
+                                        <li><a href="#"><FontAwesomeIcon icon={faLinkedin} /></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div className="flex-1 lg:text-end">
-                        <p className="uppercase text-gray-500 md:mb-6">Partie légale</p>
-                        <ul className="list-reset mb-6">
-                            <li className="mt-2 inline-block mr-2 md:block md:mr-0">
-                                <Link href="/terms">
-                                    <a className="no-underline hover:underline text-primary-800 hover:text-primary-700">Conditions d'utilisation</a>
-                                </Link>
-                            </li>
-                            <li className="mt-2 inline-block mr-2 md:block md:mr-0">
-                                <Link href="/privacy">
-                                    <a className="no-underline hover:underline text-primary-800 hover:text-primary-700">Politique de confidentialité</a>
-                                </Link>
-                            </li>
-                            <li className="mt-2 inline-block mr-2 md:block md:mr-0">
-                                <p className="text-primary-900">Copyright © unpasdeplus.com 2022</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div className="flex-1 lg:text-end">
-                        <p className="uppercase text-gray-500 md:mb-6">Réseaux sociaux</p>
-                        <ul className="list-reset mb-6">
-                            <li className="mt-2 inline-block mr-2 md:block md:mr-0">
-                                <a
-                                    href="https://www.instagram.com/sabs.app/"
-                                    className="no-underline hover:underline text-primary-800 hover:text-primary-700"
-                                >
-                                    Instagram <FontAwesomeIcon icon={faInstagram} />
-                                </a>
-                            </li>
-                            <li className="mt-2 inline-block mr-2 md:block md:mr-0">
-                                <a
-                                    href="https://www.facebook.com/sabrina.appriou"
-                                    className="no-underline hover:underline text-primary-800 hover:text-primary-700"
-                                >
-                                    Facebook <FontAwesomeIcon icon={faFacebook} />
-                                </a>
-                            </li>
-                            <li className="mt-2 inline-block mr-2 md:block md:mr-0">
-                                <a
-                                    href="https://www.linkedin.com/in/sabrina-appriou-0138a8122/"
-                                    className="no-underline hover:underline text-primary-800 hover:text-primary-700"
-                                >
-                                    LinkedIn <FontAwesomeIcon icon={faLinkedin} />
-                                </a>
-                            </li>
-                        </ul>
+                    <div className="row">
+                        <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/6">
+                            <div className="mb-8 footer-link">
+                                <h6 className="footer-title uppercase">Un pas de plus</h6>
+                                <ul>
+                                    <li>
+                                        <Link href="/bio">
+                                            <a>Qui je suis</a>
+                                        </Link>
+                                    </li>
+                                    <li><a href="#contact">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
+                            <div className="mb-8 footer-link">
+                                <h6 className="footer-title">Mes accompagnements</h6>
+                                <ul>
+                                    <li>
+                                        <Link href="/coaching-image-soi">
+                                            <a>Coaching de l'image de soi</a>
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href="/coaching-parentalite">
+                                            <a>Coaching de la parentalité</a>
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href="/coaching-outdoor">
+                                            <a>Coaching Outdoor</a>
+                                        </Link>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className="w-full sm:w-5/12 md:w-1/3 lg:w-1/4">
+                            <div className="mb-8 footer-link">
+                                <h6 className="footer-title">Sur cette page</h6>
+                                <ul>
+                                    {
+                                        onThisPage?.map((e, i) => {
+                                            return (
+                                                <li key={i}><a href={e.link}>{e.title}</a></li>
+                                            );
+                                        })
+                                    }
+                                </ul>
+                            </div>
+                        </div>
+                        <div className="w-full sm:w-7/12 md:w-1/2 lg:w-1/3">
+                            <div className="mb-8 footer-newsletter">
+                                <h6 className="footer-title">Vous souhaitez que je vous contacte ?</h6>
+                                <div className="newsletter">
+                                    <form action="#" className="relative mb-4">
+                                        <input type="text" placeholder="Téléphone ou email" className="w-full py-3 pl-6 pr-12 duration-300 bg-gray-200 border border-gray-200 rounded-full focus:border-blue-600 focus:outline-none" />
+                                        <button type="submit" className="absolute top-0 right-0 mt-3 mr-6 text-xl text-primary-600">
+                                            <FontAwesomeIcon icon={faAngleDoubleRight} />
+                                        </button>
+                                    </form>
+                                </div>
+                                <p className="font-medium text-gray-900">Indiquez un n° de téléphone ou une adresse email et je vous recontacterai rapidement !</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </footer>
+            <div className="bg-primary-900 footer-copyright">
+                <div className="container">
+                    <div className="row">
+                        <div className="w-full">
+                            <div className="py-6 text-center">
+                                <p className="text-white">
+                                    Copyright © unpasdeplus 2022 - Site réalisé par <a className="text-primary-500 duration-300 hover:text-primary-700" rel="nofollow" href="https://antoinebollinger.fr">Antoine Bollinger</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer >
     )
 }

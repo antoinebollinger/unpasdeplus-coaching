@@ -1,52 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@import './buttons';
 @import './emba';
 @import './bio';
+@import './external';
+@import './header';
+@import './navbar';
+@import './footer';
 
-html, body, #__next {
-    height: 100%;
-    width: 100%;
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
-nav {
-    #nav-content {
-        > div {
-            width: 100%;
-        }
-    }
-    a.active {
-        opacity: 1 !important;
-    }
+p {
+    font-size: 16px;
+    line-height: 24px;
+    @apply text-gray-700;
 }
 
-section {
-    padding-top: 100px;
-    padding-bottom: 100px;
+.container {
+    @apply px-5 mx-auto;
 }
 
-.gradient {
-    background: linear-gradient(90deg, #421556 0%, #b07d92 100%);
+.row {
+    @apply flex flex-wrap;
 }
 
-#posts {
-    p {
-        margin-bottom: 1rem;
-    }
-    ul {
-        list-style: circle;
-        margin-block-start: 1em;
-        margin-block-end: 1em;
-        padding-inline-start: 40px;
-    }
-    img {
-        margin: 0 auto;
-    }
+.sticky {
+    @apply fixed py-4 bg-white shadow;
 }
+
+
+.back-to-top {
+    @apply fixed bottom-0 right-0 z-20 flex items-center justify-center w-10 h-10 mb-8 mr-8 text-white duration-300 bg-primary-600 rounded;
+}
+
+// html, body, #__next {
+//     height: 100%;
+//     width: 100%;
+// }
+
+// body {
+//     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+//     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+//     font-family: 'Source Sans Pro', sans-serif;
+// }
+
+// nav {
+//     #nav-content {
+//         > div {
+//             width: 100%;
+//         }
+//     }
+//     a.active {
+//         opacity: 1 !important;
+//     }
+// }
+
+// section {
+//     padding-top: 100px;
+//     padding-bottom: 100px;
+// }
+
+// .gradient {
+//     background: linear-gradient(90deg, #421556 0%, #b07d92 100%);
+// }
+
+// #posts {
+//     p {
+//         margin-bottom: 1rem;
+//     }
+//     ul {
+//         list-style: circle;
+//         margin-block-start: 1em;
+//         margin-block-end: 1em;
+//         padding-inline-start: 40px;
+//     }
+//     img {
+//         margin: 0 auto;
+//     }
+// }

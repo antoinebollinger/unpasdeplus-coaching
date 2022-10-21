@@ -1,0 +1,27 @@
+.footer-social {
+    li {
+        a {
+            @apply inline-block mr-2 text-2xl text-gray-800 duration-300;
+            &:hover {
+                @apply text-primary-600;
+            }
+        }
+    }
+}
+
+.footer-title {
+    @apply mb-5 text-sm font-bold text-gray-700;
+}
+
+.footer-link {
+    ul {
+        li {
+            a {
+                @apply inline-block mb-3 font-medium text-gray-900 duration-300;
+                &:hover {
+                    @apply text-primary-600;
+                }
+            }
+        }
+    }
+}

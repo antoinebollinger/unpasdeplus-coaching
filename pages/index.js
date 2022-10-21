@@ -1,33 +1,33 @@
-import Layout from '../components/layout'
-import Slider from '../sections/slider'
-import Intro from '../components/intro'
-import Coaching from '../sections/coaching'
-import Programs from '../sections/programs'
-import About from '../sections/about'
-import Outro from '../components/outro'
-import Contact from '../sections/contact'
+import Layout from '../components/layout';
+import Service from '../sections/service';
+import Coaching from '../sections/coaching';
+import Contact from '../sections/contact';
+import About from '../sections/about';
 
-import { getData } from "../lib/getData"
-import { useEffect } from 'react'
-
-export async function getServerSideProps() {
-    const coachingData = await getData('coaching');
-    return {
-        props: {
-            coachingData,
+export default function Home() {
+    const onThisPage = [
+        {
+            title: "Le coaching",
+            link: "#service"
         },
-    };
-}
-
-export default function Home({ coachingData }) {
+        {
+            title: "Mes accompagnements",
+            link: "#coaching"
+        },
+        {
+            title: "Qui je suis",
+            link: "#about"
+        },
+        {
+            title: "Contact",
+            link: "#contact"
+        }
+    ]
     return (
-        <Layout home={true}>
-            <Slider id="home" />
-            <Intro />
-            <Coaching coachingData={coachingData} />
-            <Programs />
+        <Layout title="Accueil" onThisPage={onThisPage}>
+            <Service />
+            <Coaching />
             <About />
-            <Outro />
             <Contact />
         </Layout>
     )

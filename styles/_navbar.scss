@@ -1,0 +1,50 @@
+.navbar-nav {
+    .nav-item {
+        a {
+            @apply relative inline-block px-8 py-3 font-bold text-gray-900 uppercase duration-300;
+            &::before, &::after {
+                content: '';
+                @apply absolute bottom-0 w-2 h-1 duration-300 bg-primary-600 opacity-0;
+            }
+            &::before {
+                left: calc(50% - 15px);
+            }
+            &::after {
+                left: calc(50% + 5px);
+            }
+        }
+        &.active, &:hover {
+            a {
+                @apply text-primary-600;
+                &::before, &::after {
+                    @apply opacity-100;
+                }
+            }
+        }
+    }
+}
+
+.collapse.show {
+    @apply block;
+}
+
+.toggler-icon {
+    @apply relative block duration-300 bg-gray-700;
+    height: 2px;
+    width: 30px;
+    margin: 6px 0;
+}
+
+.active>.toggler-icon:nth-child(1) {
+    @apply transform rotate-45;
+    top: 7px;
+}
+
+.active>.toggler-icon:nth-child(2) {
+    @apply opacity-0;
+}
+
+.active>.toggler-icon:nth-child(3) {
+    top: -8px;
+    transform: rotate(135deg);
+}

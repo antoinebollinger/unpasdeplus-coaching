@@ -1,8 +1,10 @@
 import Head from "next/head";
 import React, { useEffect, useState } from "react";
-import Navbar from "./navbar";
-import BodyClass from "./body";
+import Header from "./header";
 import Footer from "./footer";
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 
 export const siteTitle = 'UnPasDePlus';
 export const siteDescription = "Le site de votre coach en développement personnel Sabrina Appriou, fondatrice d'Un Pas De Plus.";
@@ -10,15 +12,15 @@ export const siteAuthor = "Antoine Bollinger";
 export const siteOwner = "Sabrina Appriou";
 
 
-export default function Layout({ children, home, title }) {
+export default function Layout({ children, title, props, background, onThisPage }) {
     const [siteUrl, setSiteUrl] = useState('');
+
     useEffect(() => {
         setSiteUrl(window.location.origin);
     })
 
     return (
         <React.Fragment>
-            <BodyClass />
             <Head>
                 <title>{`${siteTitle}${title ? ` | ${title}` : ''}`}</title>
                 <meta name="description" content={siteDescription} />
@@ -40,9 +42,12 @@ export default function Layout({ children, home, title }) {
                 <meta property="og:description" content={siteDescription} />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <Navbar home={home} />
+            <Header props={props} background={background} />
             {children}
-            <Footer />
+            < Footer onThisPage={onThisPage} />
+            <a className="back-to-top" href="#">
+                <FontAwesomeIcon icon={faChevronUp} />
+            </a>
         </React.Fragment>
     )
 }
