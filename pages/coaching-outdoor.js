@@ -1,4 +1,5 @@
 import Layout from '../components/layout';
+import Steps from '../sections/steps';
 import Contact from '../sections/contact';
 
 import Outdoor from '../public/images/outdoor.jpg';
@@ -14,6 +15,7 @@ export default function Bio() {
 
     return (
         <Layout title="Coaching Outdoor" props={props} background={background}>
+            <Steps />
             <Contact />
         </Layout>
     )

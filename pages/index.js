@@ -1,6 +1,7 @@
 import Layout from '../components/layout';
 import Service from '../sections/service';
 import Coaching from '../sections/coaching';
+import How from '../sections/how';
 import Contact from '../sections/contact';
 import About from '../sections/about';
 
@@ -27,6 +28,7 @@ export default function Home() {
         <Layout title="Accueil" onThisPage={onThisPage}>
             <Service />
             <Coaching />
+            <How />
             <About />
             <Contact />
         </Layout>

@@ -13,9 +13,6 @@ export default function About() {
                         </div>
                     </div>
                 </div>
-                <div className="w-full mb-4">
-                    <div className="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
-                </div>
                 <div className="flex flex-wrap flex-col sm:flex-row justify-center">
                     <div className="w-1/2 md:w-1/4 md:pr-6 mx-auto">
                         <Image
@@ -40,7 +37,7 @@ export default function About() {
                         <p className="text-3xl text-gray-800 font-bold leading-none mb-3">
                             À propos de moi
                         </p>
-                        <p className="text-gray-600 mb-4">
+                        <p className="text-gray-600 mb-8">
                             Cela fait plus de dix ans que je veille à manger bio, local et éthique. Je me sens en adéquation avec ces choix de vie qui font mon identité : une personne en mouvement, spirituellement et physiquement !<br />Ainsi, au fil des années, j’ai gagné en sérénité en prenant soin de mon corps et de ma tête.<br />Cela n’a pas toujours été le cas ! Découvrez mon parcours pour comprendre comment je suis parvenue à m’épanouir et à devenir la personne que je suis aujourd’hui.
                         </p>
                     </div>

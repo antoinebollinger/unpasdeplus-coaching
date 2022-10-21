@@ -1,4 +1,5 @@
 import Layout from '../components/layout';
+import Steps from '../sections/steps';
 import Contact from '../sections/contact';
 
 import Parentalite from '../public/images/parents.jpg';
@@ -14,6 +15,7 @@ export default function Parents() {
 
     return (
         <Layout title="Coaching Parentalité" props={props} background={background}>
+            <Steps />
             <Contact />
         </Layout>
     )
