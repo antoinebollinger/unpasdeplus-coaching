@@ -5,7 +5,7 @@ import Sabrina from "../public/images/sabrina.webp";
 export default function About() {
     return (
         <section id="about" className="relative py-120">
-            <div className="container px-8 mx-auto">
+            <div className="container">
                 <div className="justify-center row">
                     <div className="w-full mx-4 lg:w-1/2">
                         <div className="pb-10 text-center section-title">
