@@ -51,15 +51,15 @@ module.exports = {
         '120': '120px',
       },
       animation: {
-        piscaL: 'pisca 1s infinite .25s forwards',
-        piscaR: 'pisca 1s infinite .75s forwards'
+        piscaL: 'pisca 1s infinite .75s forwards',
+        piscaR: 'pisca 1s infinite .25s forwards'
       },
       keyframes: {
         pisca: {
-          '0%': { opacity: 0 },
-          '25%': { opacity: 1 },
-          '75%': { opacity: 1 },
-          '100%': { opacity: 0 },
+          '0%': { opacity: 1 },
+          '25%': { opacity: 0 },
+          '75%': { opacity: 0 },
+          '100%': { opacity: 1 },
         }
       }
     }
