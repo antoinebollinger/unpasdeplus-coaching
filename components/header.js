@@ -77,12 +77,12 @@ export default function Header({ props, background }) {
                     />
                 </div>
                 <div className="absolute inset-0 flex flex-col justify-end z-20">
-                    <div className="left_foot w-[150px] ml-[-150px] foot">
+                    <div className="left_foot w-[100px] lg:w-[150px] ml-[-150px] foot">
                         <Image
                             src={LeftFoot}
                         />
                     </div>
-                    <div className="right_foot w-[150px] ml-[-150px] foot">
+                    <div className="right_foot w-[100px] lg:w-[150px] ml-[-150px] foot">
                         <Image
                             src={RightFoot}
                         />

@@ -28,7 +28,20 @@ export default function Navbar() {
 
     useEffect(() => {
         document.addEventListener("scroll", stickyNavBar);
-    });
+
+        const navtoggler = document.querySelector('.navbar-toggler');
+        const navcollapse = document.querySelector('.navbar-collapse');
+        const navlinks = document.querySelectorAll('.navbar-nav a');
+
+        navtoggler?.addEventListener('click', (e) => {
+            navtoggler.classList.toggle('active');
+            navcollapse.classList.toggle('show');
+        })
+        navlinks?.forEach(link => link.addEventListener('click', (e) => {
+            navtoggler.classList.remove('active');
+            navcollapse.classList.remove('show');
+        }))
+    }, []);
 
     return (
         <nav className="flex items-center justify-between navbar navbar-expand-md" >
