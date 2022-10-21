@@ -78,13 +78,13 @@ export default function Header({ props, background }) {
                         objectFit="fill"
                     />
                 </div>
-                <div className="absolute inset-0 flex flex-col justify-end z-20">
-                    <div className="left_foot w-[100px] lg:w-[150px] absolute left-[-150px] bottom-0">
+                <div className="absolute inset-0 flex flex-col justify-end z-30">
+                    <div className="foot left_foot w-[100px] lg:w-[150px] absolute left-[-150px] bottom-0">
                         <Image
                             src={LeftFoot}
                         />
                     </div>
-                    <div className="right_foot w-[100px] lg:w-[150px] absolute left-[-150px] bottom-0">
+                    <div className="foot right_foot w-[100px] lg:w-[150px] absolute left-[-150px] bottom-0">
                         <Image
                             src={RightFoot}
                         />

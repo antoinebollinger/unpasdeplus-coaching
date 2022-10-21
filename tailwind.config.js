@@ -49,6 +49,18 @@ module.exports = {
       },
       padding: {
         '120': '120px',
+      },
+      animation: {
+        piscaL: 'pisca 1s infinite .25s',
+        piscaR: 'pisca 1s infinite .75s'
+      },
+      keyframes: {
+        pisca: {
+          '0%': { opacity: 0 },
+          '25%': { opacity: 1 },
+          '75%': { opacity: 1 },
+          '100%': { opacity: 0 },
+        }
       }
     }
   },
