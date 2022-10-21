@@ -41,7 +41,7 @@
 
 The main structure of this project is built with [Next.js](https://nextjs.org/), a React framework.
 
-The layout is based on a free template from [Tailwind Awesome](https://www.tailwindawesome.com/resources/landing-page), which use the CSS framework [Tailwind CSS](https://tailwindcss.com/). The **CSS** has been customized with the help of [SASS](https://sass-lang.com/).
+The layout is based on a free template from [Tailwind Templates](https://preview.tailwindtemplates.co/start/), which use the CSS framework [Tailwind CSS](https://tailwindcss.com/). The **CSS** has been customized with the help of [SASS](https://sass-lang.com/).
 
 The website is currently tested on a [Vercel](https://vercel.com/) deployment. You can see the result at [UN PAS DE PLUS](https://unpasdeplus.vercel.app/).
 
