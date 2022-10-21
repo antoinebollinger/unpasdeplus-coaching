@@ -19,24 +19,26 @@ export default function Header({ props, background }) {
         const rightFoot = document.querySelector('.right_foot');
         const leftFoot = document.querySelector('.left_foot');
         const totalWidth = document.getElementById('home').getBoundingClientRect().width;
-        const step = rightFoot.getBoundingClientRect().width;
+        const stepW = rightFoot.getBoundingClientRect().width;
+        const stepH = rightFoot.getBoundingClientRect().height / 2;
 
-        let marginLeft = - step;
-        let marginRight = - step / 2;
+        let marginLeft = - stepW;
+        let marginRight = - stepW / 2;
+        let marginTop = 0;
         setInterval(() => {
-            marginLeft += step;
-            marginRight += step;
-            leftFoot.style.marginLeft = `${marginLeft}px`;
-            // leftFoot.style.transition = "margin 0.5s"
+            marginLeft += stepW;
+            marginRight += stepW;
+            marginTop += stepH;
+            leftFoot.style.left = `${marginLeft}px`;
+            leftFoot.style.bottom = `${marginTop + stepH}px`;
             setTimeout(() => {
-                rightFoot.style.marginLeft = `${marginRight}px`;
-                // rightFoot.style.transition = "margin 0.5s"
+                rightFoot.style.left = `${marginRight}px`;
+                rightFoot.style.bottom = `${marginTop}px`;
             }, 500);
             if (marginLeft > totalWidth) {
-                // rightFoot.style.transition = "margin 0s"
-                // leftFoot.style.transition = "margin 0s"
-                marginLeft = - step;
-                marginRight = - step / 2;
+                marginLeft = - stepW;
+                marginRight = - stepW / 2;
+                marginTop = 0;
             }
         }, 1000);
     }
@@ -77,12 +79,12 @@ export default function Header({ props, background }) {
                     />
                 </div>
                 <div className="absolute inset-0 flex flex-col justify-end z-20">
-                    <div className="left_foot w-[100px] lg:w-[150px] ml-[-150px] foot">
+                    <div className="left_foot w-[100px] lg:w-[150px] absolute left-[-150px] bottom-0">
                         <Image
                             src={LeftFoot}
                         />
                     </div>
-                    <div className="right_foot w-[100px] lg:w-[150px] ml-[-150px] foot">
+                    <div className="right_foot w-[100px] lg:w-[150px] absolute left-[-150px] bottom-0">
                         <Image
                             src={RightFoot}
                         />

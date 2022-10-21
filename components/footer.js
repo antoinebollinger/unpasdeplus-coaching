@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import Logo from '../public/unpasdeplus.png';
+import Logo from '../public/logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons'
@@ -25,7 +25,7 @@ export default function Footer({ onThisPage }) {
                     <div className="row">
                         <div className="w-full">
                             <div className="items-end justify-between block mb-8 footer-logo-support md:flex">
-                                <div className="flex items-end footer-logo">
+                                <div className="flex items-center footer-logo">
                                     <a className="mt-8" href="index.html">
                                         <Image
                                             src={Logo}
