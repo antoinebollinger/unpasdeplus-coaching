@@ -22,7 +22,7 @@ export default function How() {
                         <div className="row testimonial-active">
                             <div className="w-full lg:w-1/3">
                                 <div className="text-center single-testimonial">
-                                    <div className="testimonial-image">
+                                    <div className="testimonial-image scale-0">
                                         <Image
                                             src={How_2}
                                             alt="How 1"

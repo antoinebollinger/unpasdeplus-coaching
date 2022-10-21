@@ -1,8 +1,8 @@
 .header-hero::before {
     content: '';
-    z-index: -1;
-    opacity: .5;
-    @apply absolute top-0 left-0 w-full h-full bg-primary-200;
+    z-index: 11;
+    opacity: .75;
+    @apply absolute top-0 left-0 w-full h-full bg-white;
     // background-image: url(../public/images/header.jpeg)
 }
 .navigation {

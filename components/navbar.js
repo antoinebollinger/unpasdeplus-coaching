@@ -1,10 +1,12 @@
 import { useEffect } from "react";
+import Link from "next/link";
 import Image from 'next/image';
-import Logo from '../public/unpasdeplus.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import Link from "next/link";
+import { faHome } from "@fortawesome/free-solid-svg-icons";
 import { useRouter } from "next/router";
+
+import Logo from '../public/logo.png';
 
 export default function Navbar() {
     const router = useRouter();
@@ -35,8 +37,8 @@ export default function Navbar() {
                     <Image
                         src={Logo}
                         alt="Logo"
-                        width="50px"
-                        height="50px"
+                        width="100px"
+                        height="100px"
                     />
                 </a>
             </Link>
@@ -49,7 +51,9 @@ export default function Navbar() {
                 <ul className="items-center content-start mr-auto lg:justify-center md:justify-end navbar-nav md:flex uppercase">
                     <li className={`nav-item ${router.pathname == "/" ? "active" : ""}`}>
                         <Link href="/">
-                            <a className="page-scroll">Accueil</a>
+                            <a className="page-scroll text-2xl">
+                                <FontAwesomeIcon icon={faHome} />
+                            </a>
                         </Link>
                     </li>
                     <li className={`nav-item ${router.pathname == "/coaching-image-soi" ? "active" : ""}`}>
