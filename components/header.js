@@ -79,12 +79,12 @@ export default function Header({ props, background }) {
                     />
                 </div>
                 <div className="absolute inset-0 flex flex-col justify-end z-30">
-                    <div className="foot left_foot w-[100px] lg:w-[150px] absolute left-[-150px] bottom-0">
+                    <div className="foot left_foot w-[100px] lg:w-[150px] absolute left-[-150px] bottom-0 opacity-0 animate-piscaL">
                         <Image
                             src={LeftFoot}
                         />
                     </div>
-                    <div className="foot right_foot w-[100px] lg:w-[150px] absolute left-[-150px] bottom-0">
+                    <div className="foot right_foot w-[100px] lg:w-[150px] absolute left-[-150px] bottom-0 opacity-0 animate-piscaR">
                         <Image
                             src={RightFoot}
                         />

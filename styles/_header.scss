@@ -8,12 +8,3 @@
 .navigation {
     @apply absolute top-0 left-0 z-20 w-full py-5 duration-300 bg-transparent;
 }
-
-.left_foot {
-    @apply animate-piscaL
-}
-
-.right_foot {
-    @apply animate-piscaR
-}
-
