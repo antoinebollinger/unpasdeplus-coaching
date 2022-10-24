@@ -49,7 +49,7 @@ export default function Header({ props, background }) {
     }, []);
 
     return (
-        <header className="header-area">
+        <header className="header-area" id="header">
             <div className="navigation">
                 <div className="container">
                     <div className="row">
@@ -82,11 +82,13 @@ export default function Header({ props, background }) {
                     <div className="foot left_foot w-[100px] lg:w-[150px] absolute left-[-150px] bottom-0 animate-piscaL">
                         <Image
                             src={LeftFoot}
+                            alt="Left foot"
                         />
                     </div>
                     <div className="foot right_foot w-[100px] lg:w-[150px] absolute left-[-150px] bottom-0 animate-piscaR">
                         <Image
                             src={RightFoot}
+                            alt="Right foot"
                         />
                     </div>
                 </div>

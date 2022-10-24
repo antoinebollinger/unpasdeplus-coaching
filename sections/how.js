@@ -53,8 +53,8 @@ export default function How({ className }) {
                                 <h6 className="text-xl font-semibold text-gray-900">Entretien préalable</h6>
                                 <span className="text-lg text-gray-700">Gratuit et sans engagement</span>
                                 <ul className="pt-5 text-left">
-                                    <li><FontAwesomeIcon icon={faCircleCheck} /> Un premier RDV pour faire connaissance</li>
-                                    <li><FontAwesomeIcon icon={faCircleCheck} /> Aborder votre demande, expliquer le coaching, ma méthodologie et les principes d'actions</li>
+                                    <li><FontAwesomeIcon icon={faCircleCheck} className="text-primary-900" /> Un premier RDV pour faire connaissance</li>
+                                    <li><FontAwesomeIcon icon={faCircleCheck} className="text-primary-900" /> Aborder votre demande, expliquer le coaching, ma méthodologie et les principes d'actions</li>
                                 </ul>
                             </div>
                         </div>
@@ -71,9 +71,9 @@ export default function How({ className }) {
                                 <h6 className="text-xl font-semibold text-gray-900">Les séances</h6>
                                 <span className="text-lg text-gray-700">Plusieurs possibilités selon vos dispos et envies</span>
                                 <ul className="pt-5 text-left">
-                                    <li><FontAwesomeIcon icon={faCircleCheck} /> Présentiel</li>
-                                    <li><FontAwesomeIcon icon={faCircleCheck} /> Visio</li>
-                                    <li><FontAwesomeIcon icon={faCircleCheck} /> Téléphone</li>
+                                    <li><FontAwesomeIcon icon={faCircleCheck} className="text-primary-900" /> Présentiel</li>
+                                    <li><FontAwesomeIcon icon={faCircleCheck} className="text-primary-900" /> Visio</li>
+                                    <li><FontAwesomeIcon icon={faCircleCheck} className="text-primary-900" /> Téléphone</li>
                                 </ul>
                             </div>
                         </div>

@@ -45,7 +45,7 @@ export default function Layout({ children, title, props, background, onThisPage 
             <Header props={props} background={background} />
             {children}
             < Footer onThisPage={onThisPage} />
-            <a className="back-to-top" href="#">
+            <a className="back-to-top" href="#header">
                 <FontAwesomeIcon icon={faChevronUp} />
             </a>
         </React.Fragment>

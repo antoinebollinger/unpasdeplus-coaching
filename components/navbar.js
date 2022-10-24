@@ -95,9 +95,9 @@ export default function Navbar() {
             <div className="items-center justify-end hidden navbar-social lg:flex">
                 <span className="mr-4 font-bold text-gray-900 uppercase">Suivez-moi</span>
                 <ul className="flex footer-social">
-                    <li><a href="#"><FontAwesomeIcon icon={faInstagram} /></a></li>
-                    <li><a href="#"><FontAwesomeIcon icon={faFacebook} /></a></li>
-                    <li><a href="#"><FontAwesomeIcon icon={faLinkedin} /></a></li>
+                    <li><a href="https://www.facebook.com/sabrina.appriou"><FontAwesomeIcon icon={faFacebook} /></a></li>
+                    <li><a href="https://www.instagram.com/sabs.app/"><FontAwesomeIcon icon={faInstagram} /></a></li>
+                    <li><a href="https://www.linkedin.com/in/sabrina-appriou-0138a8122/"><FontAwesomeIcon icon={faLinkedin} /></a></li>
                 </ul>
             </div>
         </nav>

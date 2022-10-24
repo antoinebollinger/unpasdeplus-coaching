@@ -29,29 +29,29 @@ export default function Contact() {
                                 <div className="row">
                                     <div className="w-full">
                                         <div className="mx-4 mb-6 single-form form-group">
-                                            <label>Votre nom *</label>
-                                            <input type="text" name="name" data-error="Votre nom s'il vous plait." required />
+                                            <label>Votre nom *
+                                                <input type="text" name="name" data-error="Votre nom s'il vous plait." required /></label>
                                             <div className="help-block with-errors"></div>
                                         </div>
                                     </div>
                                     <div className="w-full md:w-1/2">
                                         <div className="mx-4 mb-6 single-form form-group">
-                                            <label>Votre email *</label>
-                                            <input type="email" name="email" data-error="Veuillez indiquer une adresse email valide." required />
+                                            <label>Votre email *
+                                                <input type="email" name="email" data-error="Veuillez indiquer une adresse email valide." required /></label>
                                             <div className="help-block with-errors"></div>
                                         </div>
                                     </div>
                                     <div className="w-full md:w-1/2">
                                         <div className="mx-4 mb-6 single-form form-group">
-                                            <label>Votre numéro de téléphone</label>
-                                            <input type="text" name="phone" />
+                                            <label>Votre numéro de téléphone
+                                                <input type="text" name="phone" /></label>
                                             <div className="help-block with-errors"></div>
                                         </div>
                                     </div>
                                     <div className="w-full">
                                         <div className="mx-4 mb-6 single-form form-group">
-                                            <label>Votre message *</label>
-                                            <textarea rows="5" name="message" data-error="Laissez-moi un message" required></textarea>
+                                            <label>Votre message *
+                                                <textarea rows="5" name="message" data-error="Laissez-moi un message" required></textarea></label>
                                             <div className="help-block with-errors"></div>
                                         </div>
                                     </div>

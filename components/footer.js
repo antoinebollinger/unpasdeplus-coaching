@@ -35,9 +35,9 @@ export default function Footer({ onThisPage }) {
                                         />
                                     </a>
                                     <ul className="flex mt-8 ml-8 footer-social">
-                                        <li><a href="#"><FontAwesomeIcon icon={faFacebook} /></a></li>
-                                        <li><a href="#"><FontAwesomeIcon icon={faInstagram} /></a></li>
-                                        <li><a href="#"><FontAwesomeIcon icon={faLinkedin} /></a></li>
+                                        <li><a href="https://www.facebook.com/sabrina.appriou"><FontAwesomeIcon icon={faFacebook} /></a></li>
+                                        <li><a href="https://www.instagram.com/sabs.app/"><FontAwesomeIcon icon={faInstagram} /></a></li>
+                                        <li><a href="https://www.linkedin.com/in/sabrina-appriou-0138a8122/"><FontAwesomeIcon icon={faLinkedin} /></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -46,7 +46,7 @@ export default function Footer({ onThisPage }) {
                     <div className="row">
                         <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/6">
                             <div className="mb-8 footer-link">
-                                <h6 className="footer-title uppercase">Un pas de plus</h6>
+                                <p className="footer-title uppercase">Un pas de plus</p>
                                 <ul>
                                     <li>
                                         <Link href="/bio">
@@ -59,7 +59,7 @@ export default function Footer({ onThisPage }) {
                         </div>
                         <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
                             <div className="mb-8 footer-link">
-                                <h6 className="footer-title">Mes accompagnements</h6>
+                                <p className="footer-title">Mes accompagnements</p>
                                 <ul>
                                     <li>
                                         <Link href="/coaching-image-soi">
@@ -81,7 +81,7 @@ export default function Footer({ onThisPage }) {
                         </div>
                         <div className="w-full sm:w-5/12 md:w-1/3 lg:w-1/4">
                             <div className="mb-8 footer-link">
-                                <h6 className="footer-title">Sur cette page</h6>
+                                <p className="footer-title">Sur cette page</p>
                                 <ul>
                                     {
                                         onThisPage?.map((e, i) => {
@@ -95,7 +95,7 @@ export default function Footer({ onThisPage }) {
                         </div>
                         <div className="w-full sm:w-7/12 md:w-1/2 lg:w-1/3">
                             <div className="mb-8 footer-newsletter">
-                                <h6 className="footer-title">Vous souhaitez que je vous contacte ?</h6>
+                                <p className="footer-title">Vous souhaitez que je vous contacte ?</p>
                                 <div className="newsletter">
                                     <form action="#" className="relative mb-4">
                                         <input type="text" placeholder="Téléphone ou email" className="w-full py-3 pl-6 pr-12 duration-300 bg-gray-200 border border-gray-200 rounded-full focus:border-blue-600 focus:outline-none" />
@@ -116,7 +116,7 @@ export default function Footer({ onThisPage }) {
                         <div className="w-full">
                             <div className="py-6 text-center">
                                 <p className="text-white">
-                                    Copyright © unpasdeplus 2022 - Site réalisé par <a className="text-primary-500 duration-300 hover:text-primary-700" rel="nofollow" href="https://antoinebollinger.fr">Antoine Bollinger</a>
+                                    Copyright © unpasdeplus 2022 - Site réalisé par <a className="text-primary-100 duration-300 hover:text-primary-300" rel="nofollow" href="https://antoinebollinger.fr">Antoine Bollinger</a>
                                 </p>
                             </div>
                         </div>

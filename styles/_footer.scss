@@ -3,7 +3,7 @@
         a {
             @apply inline-block mr-2 text-2xl text-gray-800 duration-300;
             &:hover {
-                @apply text-primary-600;
+                @apply text-tertary-900;
             }
         }
     }
@@ -19,7 +19,7 @@
             a {
                 @apply inline-block mb-3 font-medium text-gray-900 duration-300;
                 &:hover {
-                    @apply text-primary-600;
+                    @apply text-tertary-900;
                 }
             }
         }

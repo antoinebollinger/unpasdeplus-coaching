@@ -60,6 +60,7 @@ export default function Coaching({ className }) {
                                 <div className="flex-1">
                                     <Image
                                         src={SelfEstime}
+                                        alt="Coaching de l'image de soi"
                                     />
                                     <div className="text-center pricing-header">
                                         <h5 className="sub-title">Coaching de l'image du corps à l'image de soi</h5>
@@ -83,6 +84,7 @@ export default function Coaching({ className }) {
                                 <div className="flex-1">
                                     <Image
                                         src={Parents}
+                                        alt="Parentalité"
                                     />
                                     <div className="text-center pricing-header">
                                         <h5 className="sub-title">Coaching de parentalité</h5>
@@ -106,6 +108,7 @@ export default function Coaching({ className }) {
                                 <div className="flex-1">
                                     <Image
                                         src={Outdoor}
+                                        alt="Coaching outdoor"
                                     />
                                     <div className="text-center pricing-header">
                                         <h5 className="sub-title">Coaching outdoor</h5>
