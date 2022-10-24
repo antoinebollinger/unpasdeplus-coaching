@@ -35,9 +35,9 @@ export default function Footer({ onThisPage }) {
                                         />
                                     </a>
                                     <ul className="flex mt-8 ml-8 footer-social">
-                                        <li><a href="https://www.facebook.com/sabrina.appriou"><FontAwesomeIcon icon={faFacebook} /></a></li>
-                                        <li><a href="https://www.instagram.com/sabs.app/"><FontAwesomeIcon icon={faInstagram} /></a></li>
-                                        <li><a href="https://www.linkedin.com/in/sabrina-appriou-0138a8122/"><FontAwesomeIcon icon={faLinkedin} /></a></li>
+                                        <li><a href="https://www.facebook.com/sabrina.appriou"><FontAwesomeIcon icon={faFacebook} alt="Facebook" /></a></li>
+                                        <li><a href="https://www.instagram.com/sabs.app/"><FontAwesomeIcon icon={faInstagram} alt="Instagram" /></a></li>
+                                        <li><a href="https://www.linkedin.com/in/sabrina-appriou-0138a8122/"><FontAwesomeIcon icon={faLinkedin} alt="LinkedIn" /></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -100,7 +100,7 @@ export default function Footer({ onThisPage }) {
                                     <form action="#" className="relative mb-4">
                                         <input type="text" placeholder="Téléphone ou email" className="w-full py-3 pl-6 pr-12 duration-300 bg-gray-200 border border-gray-200 rounded-full focus:border-blue-600 focus:outline-none" />
                                         <button type="submit" className="absolute top-0 right-0 mt-3 mr-6 text-xl text-primary-600">
-                                            <FontAwesomeIcon icon={faAngleDoubleRight} />
+                                            <FontAwesomeIcon icon={faAngleDoubleRight} alt="Submit" />
                                         </button>
                                     </form>
                                 </div>

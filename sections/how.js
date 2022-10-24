@@ -50,7 +50,7 @@ export default function How({ className }) {
                                 />
                             </div>
                             <div className="single-how slide-in transition duration-300 opacity-0 translate-x-3/4">
-                                <h6 className="text-xl font-semibold text-gray-900">Entretien préalable</h6>
+                                <p className="text-xl font-semibold text-gray-900">Entretien préalable</p>
                                 <span className="text-lg text-gray-700">Gratuit et sans engagement</span>
                                 <ul className="pt-5 text-left">
                                     <li><FontAwesomeIcon icon={faCircleCheck} className="text-primary-900" /> Un premier RDV pour faire connaissance</li>
@@ -68,7 +68,7 @@ export default function How({ className }) {
                                 />
                             </div>
                             <div className="single-how slide-in transition duration-300 opacity-0 translate-x-3/4">
-                                <h6 className="text-xl font-semibold text-gray-900">Les séances</h6>
+                                <p className="text-xl font-semibold text-gray-900">Les séances</p>
                                 <span className="text-lg text-gray-700">Plusieurs possibilités selon vos dispos et envies</span>
                                 <ul className="pt-5 text-left">
                                     <li><FontAwesomeIcon icon={faCircleCheck} className="text-primary-900" /> Présentiel</li>
@@ -87,7 +87,7 @@ export default function How({ className }) {
                                 />
                             </div>
                             <div className="single-how slide-in transition duration-300 opacity-0 translate-x-3/4">
-                                <h6 className="text-xl font-semibold text-gray-900">Le +</h6>
+                                <p className="text-xl font-semibold text-gray-900">Le +</p>
                                 <span className="text-lg text-gray-700">Coaching Outdoor</span>
                                 <p className="pt-5 text-left">
                                     Des séances de coaching outdoor pendant le parcours de coaching. A l'extérieur de votre cadre habituel, en pleine nature, pour cultiver la mise en mouvement.
