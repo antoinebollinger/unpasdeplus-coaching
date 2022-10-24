@@ -1,9 +1,9 @@
+
 .header-hero::before {
     content: '';
     z-index: 11;
     opacity: .75;
     @apply absolute top-0 left-0 w-full h-full bg-white;
-    // background-image: url(../public/images/header.jpeg)
 }
 .navigation {
     @apply absolute top-0 left-0 z-20 w-full py-5 duration-300 bg-transparent;
