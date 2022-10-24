@@ -7,7 +7,7 @@ import How_3 from '../public/images/how_3.jpg';
 import Image from "next/image";
 import { useEffect } from "react";
 
-export default function How() {
+export default function How({ className }) {
     useEffect(() => {
         let delay = 100;
         const reveal = (entries, observer) => {
@@ -29,8 +29,8 @@ export default function How() {
     }, []);
 
     return (
-        <section id="testimonial" className="bg-gray-100 testimonial-area pb-120">
-            <div className="container">
+        <section id="how" className={`bg-gray-100 testimonial-area ${className}`}>
+            <div className="container pb-120">
                 <div className="justify-center row">
                     <div className="w-full mx-4 lg:w-1/2">
                         <div className="pb-10 text-center section-title">

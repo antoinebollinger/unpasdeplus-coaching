@@ -40,11 +40,19 @@
 
 .sub-title::after {
   content: '';
-  @apply absolute bottom-0 left-0 right-0 w-20 h-1 m-auto bg-primary-300;
+  @apply absolute bottom-0 left-0 right-0 w-20 h-1 m-auto;
 }
 
-.pro .sub-title::after {
+.one .sub-title::after {
+  @apply bg-primary-300;
+}
+
+.two .sub-title::after {
   @apply bg-primary-600;
+}
+
+.three .sub-title::after {
+  @apply bg-tertary-900;
 }
 
 .enterprise .sub-title::after {

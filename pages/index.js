@@ -28,7 +28,7 @@ export default function Home() {
         <Layout title="Accueil" onThisPage={onThisPage}>
             <Service />
             <Coaching />
-            <How />
+            <How className="pt-0" />
             <About />
             <Contact />
         </Layout>

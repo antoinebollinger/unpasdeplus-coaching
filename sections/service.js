@@ -4,10 +4,10 @@ import Coaching from '../public/images/service.jpeg';
 import Change from '../public/images/change.jpg';
 import Image from 'next/image';
 
-export default function Service() {
+export default function Service({ className }) {
     return (
-        <section id="service" className="relative services-area">
-            <div className="py-120">
+        <section id="service" className={`relative services-area ${className}`}>
+            <div className="pb-120">
                 <div className="container">
                     <div className="justify-center row">
                         <div className="w-full mx-4 lg:w-1/2">
