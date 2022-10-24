@@ -60,13 +60,14 @@ export default function Header({ props, background }) {
                 </div>
             </div>
             <div id="home" className="relative z-10 header-hero">
-                <div className="absolute inset-0 z-0">
+                <div className="absolute inset-0 z-0 h-full">
                     <Image
                         src={background.img.src}
                         alt="background"
                         layout="fill"
                         objectFit="cover"
                         objectPosition="bottom"
+                        loading="lazy"
                     />
                 </div>
                 <Headline props={props} />
@@ -76,6 +77,7 @@ export default function Header({ props, background }) {
                         alt="wave"
                         layout="responsive"
                         objectFit="fill"
+                        loading="lazy"
                     />
                 </div>
                 <div className="absolute inset-0 flex flex-col justify-end z-30">
@@ -83,12 +85,14 @@ export default function Header({ props, background }) {
                         <Image
                             src={LeftFoot}
                             alt="Left foot"
+                            loading="lazy"
                         />
                     </div>
                     <div className="foot right_foot w-[100px] lg:w-[150px] absolute left-[-150px] bottom-0 animate-piscaR">
                         <Image
                             src={RightFoot}
                             alt="Right foot"
+                            loading="lazy"
                         />
                     </div>
                 </div>

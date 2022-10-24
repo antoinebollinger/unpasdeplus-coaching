@@ -15,13 +15,13 @@ export default function How({ className }) {
                 if (!entry.isIntersecting) return;
                 setTimeout(() => {
                     entry.target.classList.remove('translate-x-3/4');
-                    entry.target.classList.remove('-scale-0');
+                    entry.target.classList.remove('scale-0');
                     entry.target.classList.remove('opacity-0');
                     entry.target.classList.add('translate-x-0');
                     // entry.target.classList.add('delay-' + delay);
                     observer.unobserve(entry.target);
                 }, delay);
-                delay += 400;
+                delay += 200;
             });
         };
         const timelineObserver = new IntersectionObserver(reveal, { root: null, threshold: 0.25 });
@@ -42,7 +42,7 @@ export default function How({ className }) {
                     <div>
 
                         <div className="flex flex-wrap flex-col sm:flex-row justify-center items-center mb-8">
-                            <div className="w-1/2 md:w-1/4 md:pr-6 mx-auto slide-in transition duration-300 opacity-0 -scale-0">
+                            <div className="w-1/2 md:w-1/4 md:pr-6 mx-auto slide-in transition duration-300 opacity-0 scale-0">
                                 <Image
                                     src={How_2}
                                     className="w-full rounded-full"
@@ -60,7 +60,7 @@ export default function How({ className }) {
                         </div>
 
                         <div className="flex flex-wrap flex-col sm:flex-row justify-center items-center mb-8">
-                            <div className="w-1/2 md:w-1/4 md:pr-6 mx-auto slide-in transition duration-300 opacity-0 -scale-0">
+                            <div className="w-1/2 md:w-1/4 md:pr-6 mx-auto slide-in transition duration-300 opacity-0 scale-0">
                                 <Image
                                     src={How_1}
                                     className="w-full rounded-full"
@@ -79,7 +79,7 @@ export default function How({ className }) {
                         </div>
 
                         <div className="flex flex-wrap flex-col sm:flex-row justify-center items-center mb-8">
-                            <div className="w-1/2 md:w-1/4 md:pr-6 mx-auto slide-in transition duration-300 opacity-0 -scale-0">
+                            <div className="w-1/2 md:w-1/4 md:pr-6 mx-auto slide-in transition duration-300 opacity-0 scale-0">
                                 <Image
                                     src={How_3}
                                     className="w-full rounded-full"

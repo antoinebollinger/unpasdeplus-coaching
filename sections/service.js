@@ -84,7 +84,8 @@ export default function Service({ className }) {
                             <Image
                                 src={Change}
                                 className="w-full"
-                                alt="Sabrina Appriou"
+                                alt="Change"
+                                loading="lazy"
                             />
                         </div>
                         <div className="w-full md:w-3/4 md:pl-6">

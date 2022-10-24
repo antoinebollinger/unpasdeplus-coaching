@@ -33,13 +33,14 @@ export default function Coaching({ className }) {
                 if (!entry.isIntersecting) return;
                 setTimeout(() => {
                     entry.target.classList.remove('opacity-0');
-                    entry.target.classList.remove('translate-y-1/2');
+                    entry.target.classList.remove('translate-x-1/2');
+                    entry.target.classList.remove('-translate-x-1/2');
                     observer.unobserve(entry.target);
                 }, delay_2);
                 delay_2 += 400;
             });
         };
-        const timelineObserver_2 = new IntersectionObserver(reveal_2, { root: null, threshold: [0, 0.25] });
+        const timelineObserver_2 = new IntersectionObserver(reveal_2, { root: null, threshold: 0.25 });
         document.querySelectorAll('.single-pricing')?.forEach(li => timelineObserver_2.observe(li));
     }, []);
 
@@ -56,7 +57,7 @@ export default function Coaching({ className }) {
                     </div>
                     <div className="justify-center items-stretch row">
                         <div className="flex-1 w-full sm:w-3/4 md:w-3/4 lg:w-1/3">
-                            <div className="single-pricing one flex flex-col transition duration-300 translate-y-1/2 opacity-0">
+                            <div className="single-pricing one flex flex-col transition duration-300 -translate-x-1/2 opacity-0">
                                 <div className="flex-1">
                                     <Image
                                         src={SelfEstime}
@@ -80,7 +81,7 @@ export default function Coaching({ className }) {
                         </div>
 
                         <div className="flex-1 w-full sm:w-3/4 md:w-3/4 lg:w-1/3">
-                            <div className="single-pricing two flex flex-col transition duration-300 translate-y-1/2 opacity-0">
+                            <div className="single-pricing two flex flex-col transition duration-300 opacity-0">
                                 <div className="flex-1">
                                     <Image
                                         src={Parents}
@@ -104,7 +105,7 @@ export default function Coaching({ className }) {
                         </div>
 
                         <div className="flex-1 w-full sm:w-3/4 md:w-3/4 lg:w-1/3">
-                            <div className="single-pricing three flex flex-col transition duration-300 translate-y-1/2 opacity-0">
+                            <div className="single-pricing three flex flex-col transition duration-300 translate-x-1/2 opacity-0">
                                 <div className="flex-1">
                                     <Image
                                         src={Outdoor}

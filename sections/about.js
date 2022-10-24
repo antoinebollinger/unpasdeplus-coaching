@@ -1,8 +1,25 @@
+import { useEffect } from 'react';
 import Image from "next/image";
 import Link from "next/link";
 import Sabrina from "../public/images/sabrina.webp";
 
 export default function About() {
+    useEffect(() => {
+        let delay = 100;
+        const reveal = (entries, observer) => {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) return;
+                setTimeout(() => {
+                    entry.target.classList.remove('scale-0');
+                    observer.unobserve(entry.target);
+                }, delay);
+                delay += 400;
+            });
+        };
+        const timelineObserver = new IntersectionObserver(reveal, { root: null, threshold: 0.25 });
+        document.querySelectorAll('.about-img')?.forEach(li => timelineObserver.observe(li));
+    }, []);
+
     return (
         <section id="about" className="relative py-120">
             <div className="container">
@@ -14,7 +31,7 @@ export default function About() {
                     </div>
                 </div>
                 <div className="flex flex-wrap flex-col sm:flex-row justify-center">
-                    <div className="w-1/2 md:w-1/4 md:pr-6 mx-auto">
+                    <div className="w-1/2 md:w-1/4 md:pr-6 mx-auto transition duration-200 scale-0 about-img">
                         <Image
                             src={Sabrina}
                             className="w-full rounded-full"
