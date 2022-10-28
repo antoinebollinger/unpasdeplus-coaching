@@ -5,8 +5,12 @@ import Headline from "./headline";
 import Wave from "../public/images/header-shape.svg";
 import Back from "../public/images/bg.jpg";
 import RightFoot from "../public/images/foot_right.png";
+import RightFootWhite from "../public/images/foot_right_white.png";
+import RightFootBlack from "../public/images/foot_right_black.png";
 import LeftFoot from "../public/images/foot_left.png";
-import { useEffect } from "react";
+import LeftFootWhite from "../public/images/foot_left_white.png";
+import LeftFootBlack from "../public/images/foot_left_black.png";
+import { useEffect, useState } from "react";
 
 Header.defaultProps = {
     background: {
@@ -14,7 +18,27 @@ Header.defaultProps = {
     }
 }
 
+const rightFootSrc = [
+    RightFoot,
+    RightFootBlack,
+    RightFootWhite,
+];
+
+const leftFootSrc = [
+    LeftFoot,
+    LeftFootBlack,
+    LeftFootWhite,
+];
+
 export default function Header({ props, background }) {
+    const [imageIndex, setImageIndex] = useState(0);
+
+    function changeFoot(e, color) {
+        document.querySelectorAll('.choice-ul li button').forEach(li => li.classList.remove('active'));
+        e.target.classList.add('active');
+        setImageIndex(color);
+    }
+
     const steps = () => {
         const rightFoot = document.querySelector('.right_foot');
         const leftFoot = document.querySelector('.left_foot');
@@ -45,7 +69,6 @@ export default function Header({ props, background }) {
 
     useEffect(() => {
         steps();
-
     }, []);
 
     return (
@@ -67,7 +90,7 @@ export default function Header({ props, background }) {
                         layout="fill"
                         objectFit="cover"
                         objectPosition="bottom"
-                        loading="lazy"
+                        priority
                     />
                 </div>
                 <Headline props={props} />
@@ -77,26 +100,30 @@ export default function Header({ props, background }) {
                         alt="wave"
                         layout="responsive"
                         objectFit="fill"
-                        loading="lazy"
                     />
                 </div>
                 <div className="absolute inset-0 flex flex-col justify-end z-30">
                     <div className="foot left_foot w-[50px] lg:w-[80px] absolute left-[-150px] bottom-0 animate-piscaL">
                         <Image
-                            src={LeftFoot}
+                            src={leftFootSrc[imageIndex]}
                             alt="Left foot"
-                            loading="lazy"
+
                         />
                     </div>
                     <div className="foot right_foot w-[50px] lg:w-[80px] absolute left-[-150px] bottom-0 animate-piscaR">
                         <Image
-                            src={RightFoot}
+                            src={rightFootSrc[imageIndex]}
                             alt="Right foot"
-                            loading="lazy"
+
                         />
                     </div>
                 </div>
             </div>
+            <ul className="flex flex-col lg:flex-row justify-around choice-ul">
+                <li><button className="vert active" onClick={(e) => changeFoot(e, 0)}>Vert</button></li>
+                <li><button className="noir" onClick={(e) => changeFoot(e, 1)}>Noir</button></li>
+                <li><button className="blanc" onClick={(e) => changeFoot(e, 2)}>Blanc</button></li>
+            </ul>
         </header>
     )
 }
