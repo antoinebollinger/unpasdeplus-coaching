@@ -31,13 +31,7 @@ const leftFootSrc = [
 ];
 
 export default function Header({ props, background }) {
-    const [imageIndex, setImageIndex] = useState(0);
-
-    function changeFoot(e, color) {
-        document.querySelectorAll('.choice-ul li button').forEach(li => li.classList.remove('active'));
-        e.target.classList.add('active');
-        setImageIndex(color);
-    }
+    const [imageIndex, setImageIndex] = useState(1);
 
     const steps = () => {
         const rightFoot = document.querySelector('.right_foot');
@@ -119,11 +113,6 @@ export default function Header({ props, background }) {
                     </div>
                 </div>
             </div>
-            <ul className="flex flex-col lg:flex-row justify-around choice-ul">
-                <li><button className="vert active" onClick={(e) => changeFoot(e, 0)}>Vert</button></li>
-                <li><button className="noir" onClick={(e) => changeFoot(e, 1)}>Noir</button></li>
-                <li><button className="blanc" onClick={(e) => changeFoot(e, 2)}>Blanc</button></li>
-            </ul>
         </header>
     )
 }
