@@ -73,7 +73,7 @@ export default function Coaching({ className }) {
                         </div>
                     </div>
                     <div className="justify-center items-stretch row">
-                        <div className="flex-1 w-full sm:w-3/4 md:w-3/4 lg:w-1/3">
+                        <div className="single-program">
                             <div className="single-pricing one flex flex-col transition duration-300 -translate-x-1/2 opacity-0">
                                 <div className="flex-1">
                                     <Image
@@ -97,7 +97,7 @@ export default function Coaching({ className }) {
                             </div>
                         </div>
 
-                        <div className="flex-1 w-full sm:w-3/4 md:w-3/4 lg:w-1/3">
+                        <div className="single-program">
                             <div className="single-pricing two flex flex-col transition duration-300 opacity-0">
                                 <div className="flex-1">
                                     <Image
@@ -121,7 +121,7 @@ export default function Coaching({ className }) {
                             </div>
                         </div>
 
-                        <div className="flex-1 w-full sm:w-3/4 md:w-3/4 lg:w-1/3">
+                        <div className="single-program">
                             <div className="single-pricing three flex flex-col transition duration-300 translate-x-1/2 opacity-0">
                                 <div className="flex-1">
                                     <Image
