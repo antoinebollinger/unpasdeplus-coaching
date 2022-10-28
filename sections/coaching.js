@@ -3,12 +3,9 @@ import Parents from '../public/images/parents.jpg';
 import Outdoor from '../public/images/outdoor.jpg';
 import EMCC from '../public/images/emcc.jpg';
 import FranceCompetences from '../public/images/france_competences.jpg';
-import Tools from '../public/images/outils.jpg';
+import Tools from '../public/images/tools.jpg';
 import Ethics from '../public/images/ethics.jpg';
 import Image from 'next/image';
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
 import Link from 'next/link';
 import { useEffect } from 'react';
 
