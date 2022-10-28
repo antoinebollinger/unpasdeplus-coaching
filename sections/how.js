@@ -9,7 +9,7 @@ import { useEffect } from "react";
 
 export default function How({ className }) {
     useEffect(() => {
-        let delay = 100;
+        let delay = 0;
         const reveal = (entries, observer) => {
             entries.forEach(entry => {
                 if (!entry.isIntersecting) return;
@@ -18,7 +18,6 @@ export default function How({ className }) {
                     entry.target.classList.remove('scale-0');
                     entry.target.classList.remove('opacity-0');
                     entry.target.classList.add('translate-x-0');
-                    // entry.target.classList.add('delay-' + delay);
                     observer.unobserve(entry.target);
                 }, delay);
                 delay += 200;

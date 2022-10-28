@@ -2,8 +2,9 @@ import SelfEstime from '../public/images/self_estime.jpeg';
 import Parents from '../public/images/parents.jpg';
 import Outdoor from '../public/images/outdoor.jpg';
 import EMCC from '../public/images/emcc.jpg';
-import FranceCompetences from '../public/images/france_competences.png';
-import Diplome from '../public/images/diplome.png';
+import FranceCompetences from '../public/images/france_competences.jpg';
+import Tools from '../public/images/outils.jpg';
+import Ethics from '../public/images/ethics.jpg';
 import Image from 'next/image';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -13,7 +14,7 @@ import { useEffect } from 'react';
 
 export default function Coaching({ className }) {
     useEffect(() => {
-        let delay_1 = 100;
+        let delay_1 = 0;
         const reveal_1 = (entries, observer) => {
             entries.forEach(entry => {
                 if (!entry.isIntersecting) return;
@@ -22,12 +23,13 @@ export default function Coaching({ className }) {
                     entry.target.classList.remove('scale-0');
                     observer.unobserve(entry.target);
                 }, delay_1);
-                delay_1 += 800;
+                delay_1 += 200;
             });
         };
         const timelineObserver_1 = new IntersectionObserver(reveal_1, { root: null, threshold: 0.25 });
         document.querySelectorAll('.single-suivi')?.forEach(li => timelineObserver_1.observe(li));
-        let delay_2 = 100;
+
+        let delay_2 = 0;
         const reveal_2 = (entries, observer) => {
             entries.forEach(entry => {
                 if (!entry.isIntersecting) return;
@@ -37,11 +39,26 @@ export default function Coaching({ className }) {
                     entry.target.classList.remove('-translate-x-1/2');
                     observer.unobserve(entry.target);
                 }, delay_2);
-                delay_2 += 400;
+                delay_2 += 200;
             });
         };
         const timelineObserver_2 = new IntersectionObserver(reveal_2, { root: null, threshold: 0.25 });
         document.querySelectorAll('.single-pricing')?.forEach(li => timelineObserver_2.observe(li));
+
+        let delay_3 = 0;
+        const reveal_3 = (entries, observer) => {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) return;
+                setTimeout(() => {
+                    entry.target.classList.remove('opacity-0');
+                    entry.target.classList.remove('scale-0');
+                    observer.unobserve(entry.target);
+                }, delay_3);
+                delay_3 += 200;
+            });
+        };
+        const timelineObserver_3 = new IntersectionObserver(reveal_3, { root: null, threshold: 0.25 });
+        document.querySelectorAll('.single-ref')?.forEach(li => timelineObserver_3.observe(li));
     }, []);
 
     return (
@@ -140,47 +157,69 @@ export default function Coaching({ className }) {
                             </div>
                         </div>
                     </div>
-                    <div className="flex flex-wrap flex-col sm:flex-row justify-center items-start">
-                        <div className="w-1/2 md:w-1/4 md:pr-6 mx-auto mb-10">
-                            <Image
-                                src={EMCC}
-                                className="w-full rounded"
-                                alt="EMCC"
-                            />
-                            <Image
-                                src={FranceCompetences}
-                                className="w-full rounded"
-                                alt="France compétences"
-                            />
+                    <div className="pb-10 text-center section-title">
+                        <h4 className="services-title">Des références reconnues :</h4>
+                    </div>
+                    <div className="flex flex-wrap flex-col sm:flex-row justify-center items-start pb-20">
+                        <div className="w-full md:w-1/4 md:pl-6 flex flex-col items-center">
+                            <div className="single-ref transition duration-300 opacity-0 scale-0">
+                                <Image
+                                    src={EMCC}
+                                    className="w-3/4 rounded-full"
+                                    alt="EMCC"
+                                />
+                            </div>
+                            <h5 className="text-center">Accréditation EMCC – labélisation EMCC (European Mentoring Coaching Council)</h5>
                         </div>
-                        <div className="w-full md:w-3/4 md:pl-6">
-                            <div className="pb-10 text-left section-title">
-                                <h4 className="services-title">Des références reconnues</h4>
+                        <div className="w-full md:w-1/4 md:pl-6 flex flex-col items-center">
+                            <div className="single-ref transition duration-300 opacity-0 scale-0">
+                                <Image
+                                    src={FranceCompetences}
+                                    className="w-3/4 rounded-full"
+                                    alt="EMCC"
+                                />
                             </div>
-                            <ul className="pb-10">
-                                <li><FontAwesomeIcon icon={faCircleCheck} /> Coach professionnel certifié RNCP 7 - Linkup Coaching</li>
-                                <li><FontAwesomeIcon icon={faCircleCheck} /> Accréditation EMCC – labélisation EMCC (European Mentoring Coaching Council)</li>
-                                <li><FontAwesomeIcon icon={faCircleCheck} /> Outils & méthodes de coaching</li>
-                                <li><FontAwesomeIcon icon={faCircleCheck} /> Charte déontologique du coach</li>
-                            </ul>
-                            <div className="pb-10 text-left section-title">
-                                <h4 className="services-title">Un accompagnement et un suivi personnalisé</h4>
+                            <h5 className="text-center">Coach professionnel certifié RNCP 7 - Linkup Coaching</h5>
+                        </div>
+                        <div className="w-full md:w-1/4 md:pl-6 flex flex-col items-center">
+                            <div className="single-ref transition duration-300 opacity-0 scale-0">
+                                <Image
+                                    src={Tools}
+                                    className="w-3/4 rounded-full"
+                                    alt="EMCC"
+                                />
                             </div>
-                            <div className="flex gap-5 items-center justify-center mb-10">
-                                <div className="single-suivi transition duration-300 opacity-0 scale-0">
-                                    Séances individuelles<br />de 1h-1h15
-                                </div>
-                                <div className="single-suivi transition duration-300 opacity-0 scale-0">
-                                    Bilan<br />à mi-parcours
-                                </div>
-                                <div className="single-suivi transition duration-300 opacity-0 scale-0">
-                                    Bilan<br />en fin de parcours
-                                </div>
+                            <h5 className="text-center">Outils & méthodes de coaching</h5>
+                        </div>
+                        <div className="w-full md:w-1/4 md:pl-6 flex flex-col items-center">
+                            <div className="single-ref transition duration-300 opacity-0 scale-0">
+                                <Image
+                                    src={Ethics}
+                                    className="w-3/4 rounded-full"
+                                    alt="EMCC"
+                                />
                             </div>
+                            <h5 className="text-center">Charte déontologique du coach</h5>
                         </div>
                     </div>
+                    <div className="pb-10 text-center section-title">
+                        <h4 className="services-title">Un accompagnement et un suivi personnalisé :</h4>
+                    </div>
+                    <div className="flex gap-5 items-center justify-center mb-10">
+                        <div className="single-suivi transition duration-300 opacity-0 scale-0">
+                            Séances individuelles<br />de 1h-1h15
+                        </div>
+                        <div className="single-suivi transition duration-300 opacity-0 scale-0">
+                            Bilan<br />à mi-parcours
+                        </div>
+                        <div className="single-suivi transition duration-300 opacity-0 scale-0">
+                            Bilan<br />en fin de parcours
+                        </div>
+                    </div>
+
                 </div>
+
             </div>
-        </section>
+        </section >
     )
 }

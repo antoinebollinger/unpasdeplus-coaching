@@ -130,3 +130,7 @@
 .form-message.success {
   @apply text-green-400;
 }
+
+.single-ref {
+  @apply w-1/2 sm:w-3/4 pb-4;
+}
