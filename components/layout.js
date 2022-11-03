@@ -12,7 +12,7 @@ export const siteAuthor = "Antoine Bollinger";
 export const siteOwner = "Sabrina Appriou";
 
 
-export default function Layout({ children, title, props, background, onThisPage }) {
+export default function Layout({ children, title, props, background, foot, onThisPage }) {
     const [siteUrl, setSiteUrl] = useState('');
 
     useEffect(() => {
@@ -42,7 +42,7 @@ export default function Layout({ children, title, props, background, onThisPage 
                 <meta property="og:description" content={siteDescription} />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <Header props={props} background={background} />
+            <Header props={props} background={background} foot={foot} />
             {children}
             < Footer onThisPage={onThisPage} />
             <a className="back-to-top" href="#header">
