@@ -5,6 +5,7 @@ import Foot from "./foot";
 
 import Wave from "../public/images/header-shape.svg";
 import Back from "../public/images/bg.jpg";
+import Logo from "./logo";
 
 Header.defaultProps = {
     background: {
@@ -36,7 +37,7 @@ export default function Header({ props, background, foot }) {
                         priority
                     />
                 </div>
-                <Headline props={props} />
+                <Headline props={props} foot={foot} />
                 <div className="absolute bottom-0 z-20 w-full h-auto -mb-1 header-shape">
                     <Image
                         src={Wave}
@@ -45,7 +46,7 @@ export default function Header({ props, background, foot }) {
                         objectFit="fill"
                     />
                 </div>
-                {foot && <Foot className="absolute inset-0 flex flex-col justify-end z-30" />}
+                {/* {foot && <Foot className="absolute inset-0 flex flex-col justify-end z-30" />} */}
             </div>
         </header>
     )

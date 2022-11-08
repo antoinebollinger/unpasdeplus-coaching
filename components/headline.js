@@ -1,3 +1,5 @@
+import Logo from "./logo"
+
 Headline.defaultProps = {
     props: {
         pretitle: "Coaching",
@@ -6,12 +8,15 @@ Headline.defaultProps = {
     }
 }
 
-export default function Headline({ props }) {
+export default function Headline({ props, foot }) {
     return (
         <div className="container relative z-20">
             <div className="justify-center row">
                 <div className="w-full lg:w-5/6 xl:w-2/3">
                     <div className="pt-48 pb-64 text-center header-content uppercase">
+                        <div className="w-full flex justify-center">
+                            {foot && <Logo />}
+                        </div>
                         <h3 className="mb-5 text-3xl font-semibold leading-tight text-primary-900 md:text-5xl">
                             <small>{props.pretitle}</small>
                             <br />

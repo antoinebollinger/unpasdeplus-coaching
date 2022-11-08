@@ -4,6 +4,10 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
     "./sections/**/*.{js,ts,jsx,tsx}",
   ],
+  safelist: [
+    'h-24',
+    'w-24'
+  ],
   theme: {
     extend: {
       colors: {
