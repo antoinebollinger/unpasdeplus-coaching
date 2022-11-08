@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
-import Image from "next/image";
 import Link from "next/link";
+import Image from "next/image";
 import Sabrina from "../public/images/sabrina.webp";
 
 export default function About() {

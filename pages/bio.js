@@ -2,6 +2,7 @@ import Layout from '../components/layout';
 import Contact from '../sections/contact';
 
 import AboutImg from '../public/images/about.jpg';
+import LongBio from '../sections/longbio';
 
 export default function Bio() {
     const background = {
@@ -14,7 +15,8 @@ export default function Bio() {
     }
 
     return (
-        <Layout title="Ma bio" props={props} background={background}>
+        <Layout title="Ma bio" props={props} background={background} foot={false}>
+            <LongBio />
             <Contact />
         </Layout>
     )

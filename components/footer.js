@@ -26,14 +26,16 @@ export default function Footer({ onThisPage }) {
                         <div className="w-full">
                             <div className="items-end justify-between block mb-8 footer-logo-support md:flex">
                                 <div className="flex items-center footer-logo">
-                                    <a className="mt-8" href="index.html">
-                                        <Image
-                                            src={Logo}
-                                            alt="Logo"
-                                            width="50px"
-                                            height="50px"
-                                        />
-                                    </a>
+                                    <Link href="/">
+                                        <a className="mt-8">
+                                            <Image
+                                                src={Logo}
+                                                alt="Logo"
+                                                width="50px"
+                                                height="50px"
+                                            />
+                                        </a>
+                                    </Link>
                                     <ul className="flex mt-8 ml-8 footer-social">
                                         <li><a href="https://www.facebook.com/sabrina.appriou"><FontAwesomeIcon icon={faFacebook} alt="Facebook" /></a></li>
                                         <li><a href="https://www.instagram.com/sabs.app/"><FontAwesomeIcon icon={faInstagram} alt="Instagram" /></a></li>

@@ -1,5 +1,5 @@
-.bio__content {
-    p {
-        margin-bottom: 1rem;
+.bio {
+    p, q {
+        @apply text-gray-600 mb-2;
     }
 }

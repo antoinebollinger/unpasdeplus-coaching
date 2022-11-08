@@ -60,7 +60,7 @@ export default function Service({ className }) {
                                 </div>
                             </div>
                         </div>
-                        <div className="w-1/2 md:w-1/4 md:pr-6 mx-auto order-1 lg-order-2">
+                        <div className="w-full md:w-1/4 md:pr-6 mx-auto order-1 lg-order-2">
                             <Image
                                 src={Coaching}
                                 className="w-full"
@@ -80,7 +80,7 @@ export default function Service({ className }) {
                         </div>
                     </div>
                     <div className="flex flex-wrap flex-col sm:flex-row justify-center">
-                        <div className="w-1/2 md:w-1/4 md:pr-6 mx-auto">
+                        <div className="w-full md:w-1/4 md:pr-6 mx-auto">
                             <Image
                                 src={Change}
                                 className="w-full"

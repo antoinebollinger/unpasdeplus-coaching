@@ -1,11 +1,9 @@
 import Image from "next/image";
 import Navbar from "./navbar";
 import Headline from "./headline";
-import Foot from "./foot";
 
 import Wave from "../public/images/header-shape.svg";
 import Back from "../public/images/bg.jpg";
-import Logo from "./logo";
 
 Header.defaultProps = {
     background: {
@@ -46,7 +44,6 @@ export default function Header({ props, background, foot }) {
                         objectFit="fill"
                     />
                 </div>
-                {/* {foot && <Foot className="absolute inset-0 flex flex-col justify-end z-30" />} */}
             </div>
         </header>
     )
