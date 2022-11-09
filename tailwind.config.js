@@ -56,8 +56,8 @@ module.exports = {
         '120': '120px',
       },
       animation: {
-        piscaL: 'pisca 1s infinite .75s forwards',
-        piscaR: 'pisca 1s infinite .25s forwards'
+        piscaL: 'pisca 2s infinite 1.5s forwards',
+        piscaR: 'pisca 2s infinite .5s forwards'
       },
       keyframes: {
         pisca: {

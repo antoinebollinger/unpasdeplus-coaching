@@ -1,7 +1,7 @@
 .navbar-nav {
     .nav-item {
         a {
-            @apply relative inline-block px-8 py-3 font-bold text-gray-900 uppercase duration-300 text-center;
+            @apply relative inline-block px-8 py-3 font-bold text-gray-900 uppercase duration-300 text-left md:text-center;
             // &::before, &::after {
             //     content: '';
             //     @apply absolute bottom-0 w-2 h-1 duration-300 bg-primary-600 opacity-0;
