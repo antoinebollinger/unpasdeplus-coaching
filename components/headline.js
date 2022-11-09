@@ -13,7 +13,7 @@ export default function Headline({ props, foot }) {
         <div className="container relative z-20">
             <div className="justify-center row">
                 <div className="w-full lg:w-5/6 xl:w-2/3">
-                    <div className="pt-48 pb-64 text-center header-content uppercase">
+                    <div className="py-24 md:py-48 text-center header-content uppercase">
                         <div className="w-full flex justify-center">
                             {foot && <Logo />}
                         </div>

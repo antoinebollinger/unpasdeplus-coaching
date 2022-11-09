@@ -56,6 +56,11 @@ export default function Footer({ onThisPage }) {
                                         </Link>
                                     </li>
                                     <li><a href="#contact">Contact</a></li>
+                                    <li>
+                                        <Link href="/mentions-legales">
+                                            <a>Mentions légales</a>
+                                        </Link>
+                                    </li>
                                 </ul>
                             </div>
                         </div>

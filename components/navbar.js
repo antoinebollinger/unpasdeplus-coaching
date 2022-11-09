@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import { faHome } from "@fortawesome/free-solid-svg-icons";
+import { faHome, faChevronDown, faC } from "@fortawesome/free-solid-svg-icons";
 import { useRouter } from "next/router";
 
 import Logo from '../public/logo.png';
@@ -31,7 +31,7 @@ export default function Navbar() {
 
         const navtoggler = document.querySelector('.navbar-toggler');
         const navcollapse = document.querySelector('.navbar-collapse');
-        const navlinks = document.querySelectorAll('.navbar-nav a');
+        const navlinks = document.querySelectorAll('.page-scroll');
 
         navtoggler?.addEventListener('click', (e) => {
             navtoggler.classList.toggle('active');
@@ -64,8 +64,8 @@ export default function Navbar() {
                 <ul className="items-center content-start mr-auto lg:justify-center md:justify-end navbar-nav md:flex uppercase">
                     <li className={`nav-item ${router.pathname == "/" ? "active" : ""}`}>
                         <Link href="/">
-                            <a className="page-scroll text-2xl">
-                                <FontAwesomeIcon icon={faHome} />
+                            <a className="dropdown">
+                                <FontAwesomeIcon icon={faHome} className="text-2xl" />
                             </a>
                         </Link>
                     </li>
