@@ -15,7 +15,7 @@ export default function Bio() {
 
     return (
         <Layout title="Coaching Outdoor" props={props} background={background} foot={false}>
-            <Steps />
+            {/* <Steps /> */}
             <Contact />
         </Layout>
     )

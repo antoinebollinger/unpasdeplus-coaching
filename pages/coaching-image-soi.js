@@ -18,7 +18,7 @@ export default function Selfestime() {
     return (
         <Layout title="Coaching Image de soi" props={props} background={background} foot={false}>
             <ImageSoi />
-            <Steps />
+            {/* <Steps /> */}
             <Contact />
         </Layout>
     )

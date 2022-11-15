@@ -15,7 +15,7 @@ export default function Parents() {
 
     return (
         <Layout title="Coaching Parentalité" props={props} background={background} foot={false}>
-            <Steps />
+            {/* <Steps /> */}
             <Contact />
         </Layout>
     )
