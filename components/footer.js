@@ -102,16 +102,16 @@ export default function Footer({ onThisPage }) {
                         </div>
                         <div className="w-full sm:w-7/12 md:w-1/2 lg:w-1/3">
                             <div className="mb-8 footer-newsletter">
-                                <p className="footer-title">Vous souhaitez que je vous contacte ?</p>
+                                <p className="footer-title">Inscription à ma newsletter</p>
                                 <div className="newsletter">
                                     <form action="#" className="relative mb-4">
-                                        <input type="text" placeholder="Téléphone ou email" className="w-full py-3 pl-6 pr-12 duration-300 bg-gray-200 border border-gray-200 rounded-full focus:border-blue-600 focus:outline-none" />
+                                        <input type="text" placeholder="Je m'inscris" className="w-full py-3 pl-6 pr-12 duration-300 bg-gray-200 border border-gray-200 rounded-full focus:border-blue-600 focus:outline-none" />
                                         <button type="submit" className="absolute top-0 right-0 mt-3 mr-6 text-xl text-primary-600">
                                             <FontAwesomeIcon icon={faAngleDoubleRight} alt="Submit" />
                                         </button>
                                     </form>
                                 </div>
-                                <p className="font-medium text-gray-900">Indiquez un n° de téléphone ou une adresse email et je vous recontacterai rapidement !</p>
+                                <p className="font-medium text-gray-900 hidden">Indiquez un n° de téléphone ou une adresse email et je vous recontacterai rapidement !</p>
                             </div>
                         </div>
                     </div>

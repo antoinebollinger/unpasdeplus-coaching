@@ -13,6 +13,7 @@
 @import './header';
 @import './navbar';
 @import './footer';
+@import './coaching';
 
 html {
     scroll-behavior: smooth;
@@ -50,8 +51,15 @@ a {
 }
 
 section {
-    padding-top: 150px;
+    padding-top: 120px;
+    &:first-of-type {
+        padding-top: 60px;
+    }
     > div {
         min-height: 80vh;
     }
+}
+
+section:first-child {
+    font: optional;
 }

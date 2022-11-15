@@ -29,7 +29,7 @@ export default function Steps() {
 
     return (
         <section className="relative services-area">
-            <div className="py-120">
+            <div className="pb-120">
                 <div className="container">
                     <div className="justify-center row">
                         <div className="w-full mx-4 lg:w-1/2">
