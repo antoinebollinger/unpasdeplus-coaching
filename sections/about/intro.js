@@ -26,7 +26,7 @@ export default function Intro() {
                         />
                     </div>
                     <div className="w-full md:w-3/4 md:pl-6">
-                        <div className="handwrite mb-8 text-center text-md-left">
+                        <div className="handwrite mb-8 text-center md:text-start">
                             <h4 className="title uppercase">Sabrina Appriou</h4>
                             <h5 className="text-3xl text-md-5xl">
                                 Fondatrice d'UN PAS DE PLUS
