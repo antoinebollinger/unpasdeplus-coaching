@@ -87,8 +87,8 @@ export default function Coaching({ className }) {
                                     </div>
                                 </div>
                                 <div className="text-center pricing-btn">
-                                    <Link href="/coaching-image-soi">
-                                        <a className="main-btn">EN SAVOIR PLUS</a>
+                                    <Link href="/coaching-image-soi" className="main-btn">
+                                        EN SAVOIR PLUS
                                     </Link>
                                 </div>
                             </div>
@@ -111,8 +111,8 @@ export default function Coaching({ className }) {
                                     </div>
                                 </div>
                                 <div className="text-center pricing-btn">
-                                    <Link href="/coaching-parentalite">
-                                        <a className="main-btn">EN SAVOIR PLUS</a>
+                                    <Link href="/coaching-parentalite" className="main-btn">
+                                        EN SAVOIR PLUS
                                     </Link>
                                 </div>
                             </div>
@@ -135,8 +135,8 @@ export default function Coaching({ className }) {
                                     </div>
                                 </div>
                                 <div className="text-center pricing-btn">
-                                    <Link href="/coaching-outdoor">
-                                        <a className="main-btn">EN SAVOIR PLUS</a>
+                                    <Link href="/coaching-outdoor" className="main-btn">
+                                        EN SAVOIR PLUS
                                     </Link>
                                 </div>
                             </div>
@@ -144,7 +144,7 @@ export default function Coaching({ className }) {
                     </div>
                 </div>
             </div>
-            <div className="pb-120">
+            <div className="pb-120 bg-white">
                 <div className="container">
                     <div className="justify-center row">
                         <div className="w-full mx-4 lg:w-1/2">

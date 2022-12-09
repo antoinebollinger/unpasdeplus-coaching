@@ -1,22 +1,27 @@
 import Layout from '../components/layout';
-import Service from '../sections/service';
-import Coaching from '../sections/coaching';
-import How from '../sections/how';
+import Intro from '../sections/main/intro';
+import Quality from '../sections/main/quality';
+import Coaching from '../sections/main/coaching';
+import How from '../sections/main/how';
+import About from '../sections/main/about';
 import Contact from '../sections/contact';
-import About from '../sections/about';
 
 export default function Home() {
     const onThisPage = [
         {
-            title: "Le coaching",
-            link: "#service"
+            title: "C'est quoi, le coaching ?",
+            link: "#intro"
         },
         {
             title: "Mes accompagnements",
             link: "#coaching"
         },
         {
-            title: "Qui je suis",
+            title: "Comment ça se passe ?",
+            link: "#how"
+        },
+        {
+            title: "Qui je suis ?",
             link: "#about"
         },
         {
@@ -26,9 +31,10 @@ export default function Home() {
     ]
     return (
         <Layout title="Accueil" onThisPage={onThisPage}>
-            <Service />
+            <Intro />
+            <Quality />
             <Coaching />
-            <How className="pt-0" />
+            <How />
             <About />
             <Contact />
         </Layout>

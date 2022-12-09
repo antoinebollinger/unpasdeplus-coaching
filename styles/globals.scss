@@ -9,11 +9,11 @@
 @import './emba';
 @import './bio';
 @import './legals';
-@import './external';
+@import './forms';
 @import './header';
 @import './navbar';
 @import './footer';
-@import './coaching';
+// @import './coaching';
 
 html {
     scroll-behavior: smooth;
@@ -52,6 +52,7 @@ a {
 
 section {
     padding-top: 120px;
+    padding-bottom: 120px;
     &:first-of-type {
         padding-top: 60px;
     }
@@ -63,3 +64,13 @@ section {
 section:first-child {
     font: optional;
 }
+
+.title {
+    line-height: 55px;
+    @apply mb-4 text-2xl lg:text-5xl font-semibold text-gray-900;
+}
+
+.subtitle {
+    @apply mb-2 text-xl lg:text-2xl font-medium text-gray-900;
+}
+  

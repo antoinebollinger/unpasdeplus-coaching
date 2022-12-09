@@ -26,15 +26,13 @@ export default function Footer({ onThisPage }) {
                         <div className="w-full">
                             <div className="items-end justify-between block mb-8 footer-logo-support md:flex">
                                 <div className="flex items-center footer-logo">
-                                    <Link href="/">
-                                        <a className="mt-8">
-                                            <Image
-                                                src={Logo}
-                                                alt="Logo"
-                                                width="50px"
-                                                height="50px"
-                                            />
-                                        </a>
+                                    <Link href="/" className="mt-8">
+                                        <Image
+                                            src={Logo}
+                                            alt="Logo"
+                                            width="50"
+                                            height="50"
+                                        />
                                     </Link>
                                     <ul className="flex mt-8 ml-8 footer-social">
                                         <li><a href="https://www.facebook.com/sabrina.appriou"><FontAwesomeIcon icon={faFacebook} alt="Facebook" /></a></li>
@@ -52,13 +50,13 @@ export default function Footer({ onThisPage }) {
                                 <ul>
                                     <li>
                                         <Link href="/bio">
-                                            <a>Qui je suis</a>
+                                            Qui je suis
                                         </Link>
                                     </li>
                                     <li><a href="#contact">Contact</a></li>
                                     <li>
                                         <Link href="/mentions-legales">
-                                            <a>Mentions légales</a>
+                                            Mentions légales
                                         </Link>
                                     </li>
                                 </ul>
@@ -70,17 +68,17 @@ export default function Footer({ onThisPage }) {
                                 <ul>
                                     <li>
                                         <Link href="/coaching-image-soi">
-                                            <a>Coaching de l'image de soi</a>
+                                            Coaching de l'image de soi
                                         </Link>
                                     </li>
                                     <li>
                                         <Link href="/coaching-parentalite">
-                                            <a>Coaching de la parentalité</a>
+                                            Coaching de la parentalité
                                         </Link>
                                     </li>
                                     <li>
                                         <Link href="/coaching-outdoor">
-                                            <a>Coaching Outdoor</a>
+                                            Coaching Outdoor
                                         </Link>
                                     </li>
                                 </ul>

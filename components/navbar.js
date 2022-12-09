@@ -45,48 +45,44 @@ export default function Navbar() {
 
     return (
         <nav className="flex items-center justify-between navbar navbar-expand-md" >
-            <Link href="/">
-                <a className="mr-4 navbar-brand">
-                    <Image
-                        src={Logo}
-                        alt="Logo"
-                        width="60px"
-                        height="60px"
-                    />
-                </a>
+            <Link href="/" className="mr-4 navbar-brand">
+                <Image
+                    src={Logo}
+                    alt="Logo"
+                    height="60"
+                    width="60"
+                />
             </Link>
             <button className="block navbar-toggler focus:outline-none md:hidden" type="button" data-toggle="collapse" data-target="#navbarOne" aria-controls="navbarOne" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="toggler-icon"></span>
                 <span className="toggler-icon"></span>
                 <span className="toggler-icon"></span>
             </button>
-            <div className="absolute left-0 z-30 hidden w-full px-5 py-3 duration-300 bg-white shadow md:opacity-100 md:w-auto collapse navbar-collapse md:block top-100 mt-full md:static md:bg-transparent md:shadow-none" id="navbarOne">
+            <div className="absolute left-0 z-30 hidden w-full px-5 py-3 duration-300 bg-white shadow md:opacity-100 md:w-auto navbar-collapse md:block top-100 mt-full md:static md:bg-transparent md:shadow-none" id="navbarOne">
                 <ul className="items-center content-start mr-auto lg:justify-center md:justify-end navbar-nav md:flex uppercase">
                     <li className={`nav-item ${router.pathname == "/" ? "active" : ""}`}>
-                        <Link href="/">
-                            <a className="dropdown">
-                                <FontAwesomeIcon icon={faHome} className="text-2xl" />
-                            </a>
+                        <Link href="/" className="dropdown">
+                            <FontAwesomeIcon icon={faHome} className="text-2xl" />
                         </Link>
                     </li>
                     <li className={`nav-item ${router.pathname == "/bio" ? "active" : ""}`}>
-                        <Link href="/bio">
-                            <a className="page-scroll">Qui<br />je suis</a>
+                        <Link href="/bio" className="page-scroll">
+                            Qui<br />je suis
                         </Link>
                     </li>
                     <li className={`nav-item ${router.pathname == "/coaching-image-soi" ? "active" : ""}`}>
-                        <Link href="/coaching-image-soi">
-                            <a className="page-scroll">Coaching<br />l'image de soi</a>
+                        <Link href="/coaching-image-soi" className="page-scroll">
+                            Coaching<br />mieux être
                         </Link>
                     </li>
                     <li className={`nav-item ${router.pathname == "/coaching-parentalite" ? "active" : ""}`}>
-                        <Link href="/coaching-parentalite">
-                            <a className="page-scroll">Coaching<br />parentalité</a>
+                        <Link href="/coaching-parentalite" className="page-scroll">
+                            Coaching<br />parentalité
                         </Link>
                     </li>
                     <li className={`nav-item ${router.pathname == "/coaching-outdoor" ? "active" : ""}`}>
-                        <Link href="/coaching-outdoor">
-                            <a className="page-scroll">Coaching<br />outdoor</a>
+                        <Link href="/coaching-outdoor" className="page-scroll">
+                            Coaching<br />outdoor
                         </Link>
                     </li>
                 </ul>

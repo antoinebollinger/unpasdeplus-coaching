@@ -1,34 +1,23 @@
-import { useEffect } from 'react';
-import Link from "next/link";
 import Image from "next/image";
-import Sabrina from "../public/images/sabrina.webp";
+import Sabrina from "../../public/images/sabrina.webp";
+
+import Link from "next/link";
+import { useEffect } from 'react';
+import { reveal } from '../../components/reveal';
 
 export default function About() {
     useEffect(() => {
-        let delay = 100;
-        const reveal = (entries, observer) => {
-            entries.forEach(entry => {
-                if (!entry.isIntersecting) return;
-                setTimeout(() => {
-                    entry.target.classList.remove('scale-0');
-                    observer.unobserve(entry.target);
-                }, delay);
-                delay += 400;
-            });
-        };
-        const timelineObserver = new IntersectionObserver(reveal, { root: null, threshold: 0.25 });
-        document.querySelectorAll('.about-img')?.forEach(li => timelineObserver.observe(li));
+        reveal({
+            collection: document.querySelectorAll(".about-img"),
+            classesToRemove: ["scale-0"]
+        });
     }, []);
 
     return (
-        <section id="about" className="relative py-120">
+        <section id="about">
             <div className="container">
-                <div className="justify-center row">
-                    <div className="w-full mx-4 lg:w-1/2">
-                        <div className="pb-10 text-center section-title">
-                            <h4 className="title">Qui je suis</h4>
-                        </div>
-                    </div>
+                <div className="text-center pb-10">
+                    <h4 className="title">Qui je suis ?</h4>
                 </div>
                 <div className="flex flex-wrap flex-col sm:flex-row justify-center">
                     <div className="w-1/2 md:w-1/4 md:pr-6 mx-auto transition duration-200 scale-0 about-img">
