@@ -43,7 +43,7 @@ export default function Quality() {
                     <h4 className="title">Un accompagnement de qualité</h4>
                     <q className="text-lg italic">Avec professionnalisme, éthique et bienveillance</q>
                 </div>
-                <div className="pb-10 text-center section-title">
+                <div className="pb-10 text-center">
                     <h4 className="subtitle">Des références reconnues :</h4>
                 </div>
                 <div className="flex flex-wrap flex-col sm:flex-row justify-center items-start pb-20">
@@ -64,7 +64,7 @@ export default function Quality() {
                         "Charte déontologique du coach"
                     )}
                 </div>
-                <div className="pb-10 text-center section-title">
+                <div className="pb-10 text-center">
                     <h4 className="subtitle">Un accompagnement et un suivi personnalisé :</h4>
                 </div>
                 <div className="flex gap-5 items-stretch justify-center mb-10">
