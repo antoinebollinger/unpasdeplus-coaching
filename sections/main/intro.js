@@ -23,6 +23,8 @@ export default function Intro() {
                 <div className="intro-step w-1/2 md:w-1/4 md:pr-6 mx-auto transition duration-300 opacity-0 scale-0">
                     <Image
                         src={img}
+                        width={img.width}
+                        height={img.height}
                         className="w-full rounded-full"
                         alt="Illustration"
                     />

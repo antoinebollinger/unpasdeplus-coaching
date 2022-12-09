@@ -70,7 +70,7 @@ export default function Navbar() {
                             Qui<br />je suis
                         </Link>
                     </li>
-                    <li className={`nav-item ${router.pathname == "/coaching-image-soi" ? "active" : ""}`}>
+                    <li className={`nav-item ${router.pathname == "/coaching-mieux-etre" ? "active" : ""}`}>
                         <Link href="/coaching-mieux-etre" className="page-scroll">
                             Coaching<br />Mieux-être
                         </Link>

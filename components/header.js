@@ -29,10 +29,9 @@ export default function Header({ props, background, foot }) {
                     <Image
                         src={background.img.src}
                         alt="background"
-                        layout="fill"
-                        objectFit="cover"
-                        objectPosition="bottom"
-                        priority
+                        width={background.img.width}
+                        height={background.img.height}
+                        className="object-cover w-full h-full"
                     />
                 </div>
                 <Headline props={props} foot={foot} />
@@ -40,8 +39,9 @@ export default function Header({ props, background, foot }) {
                     <Image
                         src={Wave}
                         alt="wave"
-                        layout="responsive"
-                        objectFit="fill"
+                        width={background.img.width}
+                        height={background.img.height}
+                        className="object-cover w-full h-full"
                     />
                 </div>
             </div>
