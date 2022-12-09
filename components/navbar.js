@@ -72,17 +72,17 @@ export default function Navbar() {
                     </li>
                     <li className={`nav-item ${router.pathname == "/coaching-image-soi" ? "active" : ""}`}>
                         <Link href="/coaching-mieux-etre" className="page-scroll">
-                            Coaching<br />mieux être
+                            Coaching<br />Mieux-être
                         </Link>
                     </li>
                     <li className={`nav-item ${router.pathname == "/coaching-parentalite" ? "active" : ""}`}>
                         <Link href="/coaching-parentalite" className="page-scroll">
-                            Coaching<br />parentalité
+                            Coaching<br />Parentalité
                         </Link>
                     </li>
                     <li className={`nav-item ${router.pathname == "/coaching-outdoor" ? "active" : ""}`}>
                         <Link href="/coaching-outdoor" className="page-scroll">
-                            Coaching<br />outdoor
+                            Coaching<br />Outdoor
                         </Link>
                     </li>
                 </ul>

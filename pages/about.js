@@ -11,7 +11,7 @@ export default function Bio() {
 
     const props = {
         title: "Qui je suis",
-        subtitle: "Envie de me connaitre un peu ?"
+        pretitle: "Envie de me connaitre un peu ?"
     }
 
     return (

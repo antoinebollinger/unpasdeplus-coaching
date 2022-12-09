@@ -10,7 +10,7 @@ export default function Parents() {
     }
 
     const props = {
-        title: "Coaching de la parentalité"
+        title: "Coaching Parentalité"
     }
 
     return (

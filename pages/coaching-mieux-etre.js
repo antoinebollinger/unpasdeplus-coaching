@@ -11,7 +11,8 @@ export default function Selfestime() {
     }
 
     const props = {
-        title: "Coaching mieux-être"
+        title: "Coaching Mieux-être",
+        pretitle: "De l'image du corps à l'image de soi"
     }
 
     return (

@@ -49,7 +49,7 @@ export default function Footer({ onThisPage }) {
                                 <p className="footer-title uppercase">Un pas de plus</p>
                                 <ul>
                                     <li>
-                                        <Link href="/bio">
+                                        <Link href="/about">
                                             Qui je suis
                                         </Link>
                                     </li>
@@ -67,13 +67,13 @@ export default function Footer({ onThisPage }) {
                                 <p className="footer-title">Mes accompagnements</p>
                                 <ul>
                                     <li>
-                                        <Link href="/coaching-image-soi">
-                                            Coaching de l'image de soi
+                                        <Link href="/coaching-mieux-etre">
+                                            Coaching Mieux-être
                                         </Link>
                                     </li>
                                     <li>
                                         <Link href="/coaching-parentalite">
-                                            Coaching de la parentalité
+                                            Coaching Parentalité
                                         </Link>
                                     </li>
                                     <li>

@@ -10,7 +10,7 @@ export default function Bio() {
     }
 
     const props = {
-        title: "Coaching outdoor"
+        title: "Coaching Outdoor"
     }
 
     return (
