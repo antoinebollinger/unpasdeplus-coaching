@@ -2,7 +2,7 @@ import Layout from '../components/layout';
 import Contact from '../sections/contact';
 
 import AboutImg from '../public/images/about.jpg';
-import LongBio from '../sections/longbio';
+import LongBio from '../sections/about';
 
 export default function Bio() {
     const background = {

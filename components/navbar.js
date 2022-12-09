@@ -65,13 +65,13 @@ export default function Navbar() {
                             <FontAwesomeIcon icon={faHome} className="text-2xl" />
                         </Link>
                     </li>
-                    <li className={`nav-item ${router.pathname == "/bio" ? "active" : ""}`}>
-                        <Link href="/bio" className="page-scroll">
+                    <li className={`nav-item ${router.pathname == "/about" ? "active" : ""}`}>
+                        <Link href="/about" className="page-scroll">
                             Qui<br />je suis
                         </Link>
                     </li>
                     <li className={`nav-item ${router.pathname == "/coaching-image-soi" ? "active" : ""}`}>
-                        <Link href="/coaching-image-soi" className="page-scroll">
+                        <Link href="/coaching-mieux-etre" className="page-scroll">
                             Coaching<br />mieux être
                         </Link>
                     </li>

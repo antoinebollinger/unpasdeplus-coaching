@@ -1,5 +1,5 @@
 import Layout from '../components/layout';
-import Steps from '../sections/steps';
+import Steps from '../sections/coachings/steps';
 import Contact from '../sections/contact';
 
 import Parentalite from '../public/images/parents.jpg';

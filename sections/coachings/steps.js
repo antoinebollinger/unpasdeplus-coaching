@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import Image from "next/image";
 
-import rightFoot from "../public/images/foot_right.png";
-import leftFoot from "../public/images/foot_left.png";
+import rightFoot from "../../public/images/foot_right.png";
+import leftFoot from "../../public/images/foot_left.png";
 
 export default function Steps() {
     useEffect(() => {

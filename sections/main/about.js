@@ -49,7 +49,7 @@ export default function About() {
                     </div>
                 </div>
                 <div className="w-full text-center">
-                    <Link href="/bio">
+                    <Link href="/about">
                         <button className="main-btn">
                             Découvrir mon parcours
                         </button>
