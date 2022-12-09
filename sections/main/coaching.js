@@ -26,9 +26,10 @@ export default function Coaching() {
                         <Image
                             src={img}
                             alt="Illustration"
+                            className="mb-2"
                         />
                         <div className="text-center">
-                            <h5 className="sub-title">{title}</h5>
+                            <h5 className="subtitle">{title}</h5>
                         </div>
                         <div className="mb-8">
                             <p dangerouslySetInnerHTML={{ __html: text }} />

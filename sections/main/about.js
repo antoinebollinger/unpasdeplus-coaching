@@ -20,7 +20,7 @@ export default function About() {
                     <h4 className="title">Qui je suis ?</h4>
                 </div>
                 <div className="flex flex-wrap flex-col sm:flex-row justify-center">
-                    <div className="w-1/2 md:w-1/4 md:pr-6 mx-auto transition duration-200 scale-0 about-img">
+                    <div className="w-1/2 md:w-1/4 pb-6 md:pb-0 md:pr-6 mx-auto transition duration-200 scale-0 about-img">
                         <Image
                             src={Sabrina}
                             className="w-full rounded-full"

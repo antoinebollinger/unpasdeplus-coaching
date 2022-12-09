@@ -23,7 +23,7 @@ export default function Quality() {
 
     const ref = (img, text) => {
         return (
-            <div className="w-full md:w-1/4 md:pl-6 flex flex-col items-center ">
+            <div className="w-full md:w-1/4 pb-6 md:pb-0 flex flex-col items-center ">
                 <div className="quality-ref w-1/2 sm:w-3/4 pb-4 flex justify-center transition duration-300 opacity-0 scale-0">
                     <Image
                         src={img}

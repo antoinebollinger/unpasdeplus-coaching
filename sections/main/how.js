@@ -18,7 +18,7 @@ export default function How() {
     const howStep = (img, title, subtitle, text) => {
         return (
             <div className="flex flex-wrap flex-col sm:flex-row justify-center items-center mt-8">
-                <div className="how-step w-1/2 md:w-1/4 md:pr-6 mx-auto transition duration-300 opacity-0 scale-0">
+                <div className="how-step w-1/2 md:w-1/4 md:pr-6 pb-6 md:pb-0 mx-auto transition duration-300 opacity-0 scale-0">
                     <Image
                         src={img}
                         className="w-full rounded-full"
