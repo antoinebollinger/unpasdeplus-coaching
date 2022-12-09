@@ -16,7 +16,7 @@ export default function Intro() {
         <section id="bio">
             <div className="container">
                 <div className="flex flex-wrap flex-col sm:flex-row justify-center">
-                    <div className="w-1/2 md:w-1/4 md:pr-6 mx-auto transition duration-200 scale-0 opacity-0 about-img">
+                    <div className="w-1/2 md:w-1/4 md:pr-6 pb-6 md:pb-0 mx-auto transition duration-200 scale-0 opacity-0 about-img">
                         <Image
                             src={Sabrina}
                             width={Sabrina.width}
@@ -26,10 +26,12 @@ export default function Intro() {
                         />
                     </div>
                     <div className="w-full md:w-3/4 md:pl-6">
-                        <h4 className="title">Sabrina Appriou</h4>
-                        <h5 className="text-3xl text-gray-800 font-bold leading-none mb-12">
-                            Fondatrice d'UN PAS DE PLUS
-                        </h5>
+                        <div className="handwrite mb-8 text-center text-md-left">
+                            <h4 className="title uppercase">Sabrina Appriou</h4>
+                            <h5 className="text-3xl text-md-5xl">
+                                Fondatrice d'UN PAS DE PLUS
+                            </h5>
+                        </div>
                         <p>
                             J'ai 38 ans, <strong>maman de 3 enfants</strong> (13, 11 et 3 ans).
                         </p>
