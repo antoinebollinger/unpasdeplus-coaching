@@ -53,6 +53,11 @@ export default function Footer({ onThisPage }) {
                                             Qui je suis
                                         </Link>
                                     </li>
+                                    <li>
+                                        <Link href="/comment-ca-marche">
+                                            Comment ça marche ?
+                                        </Link>
+                                    </li>
                                     <li><a href="#contact">Contact</a></li>
                                     <li>
                                         <Link href="/mentions-legales">
