@@ -54,7 +54,7 @@ export default function How() {
                         {howStep(
                             How2,
                             "Les séances",
-                            "Plusieurs possibilités selon vos dispos et envie",
+                            "Plusieurs possibilités selon vos dispos et envies",
                             `<ul class="list-disc list-inside">
                                 <li>Présentiel</li>
                                 <li>Visio</li>

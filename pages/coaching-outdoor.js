@@ -1,5 +1,6 @@
 import Layout from '../components/layout';
 import Outdoor from '../sections/coachings/outdoor';
+import How from '../sections/main/how';
 import Steps from '../sections/coachings/steps';
 import Contact from '../sections/contact';
 
@@ -17,7 +18,8 @@ export default function Bio() {
     return (
         <Layout title="Coaching Outdoor" props={props} background={background} foot={false}>
             <Outdoor />
-            {/* <Steps /> */}
+            <How />
+            <Steps />
             <Contact />
         </Layout>
     )

@@ -1,5 +1,6 @@
 import Layout from '../components/layout';
 import MieuxEtre from '../sections/coachings/mieux-etre';
+import How from '../sections/main/how';
 import Steps from '../sections/coachings/steps';
 import Contact from '../sections/contact';
 
@@ -18,7 +19,8 @@ export default function Selfestime() {
     return (
         <Layout title="Coaching Image de soi" props={props} background={background} foot={false}>
             <MieuxEtre />
-            {/* <Steps /> */}
+            <How />
+            <Steps />
             <Contact />
         </Layout>
     )

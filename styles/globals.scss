@@ -29,6 +29,7 @@ body {
 
 h1, h2, h3, h4 {
     font-family: "Poppins", sans-serif;
+    @apply text-gray-900;
 }
 
 .handwrite {
@@ -70,10 +71,10 @@ section:first-child {
 
 .title {
     line-height: 55px;
-    @apply mb-4 text-2xl lg:text-5xl font-semibold text-gray-900;
+    @apply mb-4 text-2xl lg:text-5xl font-semibold;
 }
 
 .subtitle {
-    @apply mb-2 text-xl lg:text-3xl font-medium text-gray-900;
+    @apply mb-2 text-xl lg:text-3xl font-medium;
 }
   
