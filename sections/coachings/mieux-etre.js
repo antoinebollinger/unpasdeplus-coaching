@@ -51,7 +51,7 @@ export default function MieuxEtre() {
     return (
         <section className="relative pb-120 coaching">
             <div className="container">
-                <div className="text-center pb-120">
+                <div className="text-center pb-16 lg:pb-120">
                     <h4 className="title text-tertary-900">
                         <span>Une meilleure connaissance de soi</span>
                     </h4>
@@ -60,7 +60,7 @@ export default function MieuxEtre() {
                     </h4>
                 </div>
 
-                <div className="lg:max-w-4xl mx-auto pb-120">
+                <div className="lg:max-w-4xl mx-auto pb-16 lg:pb-120">
                     <div className="flex flex-col md:flex-row gap-5 items-center pb-10">
                         <div className="animated-img w-1/2 md:w-1/4 transition duration-300 opacity-0 scale-0">
                             <Image
@@ -71,7 +71,7 @@ export default function MieuxEtre() {
                                 alt="Illustration"
                             />
                         </div>
-                        <div className="w-1/2 md:w-3/4">
+                        <div className="w-3/4">
                             <p className="text-xl mb-2">
                                 Vous avez un <strong>rapport difficile avec votre corps</strong> et cela a un fort impact sur votre image & estime de soi ?
                             </p>
@@ -83,14 +83,14 @@ export default function MieuxEtre() {
                             </p>
                         </div>
                     </div>
-                    <div className="text-center pb-10">
+                    <div className="text-center">
                         <h4 className="subtitle text-primary-600">
-                            Avec ce coaching, vous allez retrouver du sens dans vos actions, vous réconciliez et vivre une vie harmonieuse en adéquation avec votre tête et votre corps.
+                            Avec ce coaching, vous allez retrouver du sens dans vos actions, vous réconciliez et vivre une vie harmonieuse en adéquation avec votre tête et votre corps !
                         </h4>
                     </div>
                 </div>
 
-                <div className="text-center pb-120">
+                <div className="text-center pb-16 lg:pb-120">
                     <h4 className="title text-tertary-900">
                         <span>Ma transition dans le mieux-être</span>
                     </h4>
@@ -99,7 +99,7 @@ export default function MieuxEtre() {
                     </h4>
                 </div>
 
-                <div className="flex flex-col md:flex-row gap-5 justify-center items-stretch pb-120">
+                <div className="flex flex-col md:flex-row gap-5 justify-center items-stretch pb-16 lg:pb-120">
                     {mySteps(
                         Step1,
                         "1. Développer son unicité",
@@ -142,7 +142,7 @@ export default function MieuxEtre() {
                                 alt="Illustration"
                             />
                         </div>
-                        <div className="w-1/2 md:w-3/4">
+                        <div className="w-full md:w-3/4">
                             <ul className="list-disc list-inside">
                                 <li>
                                     10 sessions de coaching de 1h – 1h15 avec tous les outils & méthodes de coaching en présentiel, visio, téléphone selon votre choix.
