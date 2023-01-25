@@ -6,7 +6,7 @@ import Footer from "./footer";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 
-export const siteTitle = 'UnPasDePlus';
+export const siteTitle = 'Un Pas De Plus';
 export const siteDescription = "Le site de votre coach en développement personnel Sabrina Appriou, fondatrice d'Un Pas De Plus.";
 export const siteAuthor = "Antoine Bollinger";
 export const siteOwner = "Sabrina Appriou";
