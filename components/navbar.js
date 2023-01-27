@@ -70,6 +70,11 @@ export default function Navbar() {
                             Qui<br />je suis
                         </Link>
                     </li>
+                    <li className={`nav-item ${router.pathname == "/comment-ca-marche" ? "active" : ""}`}>
+                        <Link href="/comment-ca-marche" className="page-scroll">
+                            Comment<br />ça marche
+                        </Link>
+                    </li>
                     <li className={`nav-item ${router.pathname == "/coaching-mieux-etre" ? "active" : ""}`}>
                         <Link href="/coaching-mieux-etre" className="page-scroll">
                             Coaching<br />Mieux-être
