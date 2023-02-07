@@ -3,8 +3,17 @@
         a {
             @apply relative inline-block px-8 py-2 font-bold text-gray-900 uppercase duration-300 text-left md:text-center;
         }
+        > ul {
+            @apply max-h-0 md:absolute overflow-hidden transition md:px-0 px-8;
+            &:hover {
+                @apply max-h-max;
+            }
+        }
+        .nav-dropdown:hover ~ ul {
+            @apply max-h-max;
+        }
         &.active, &:hover {
-            a {
+            > a {
                 @apply text-tertary-900;
             }
         }

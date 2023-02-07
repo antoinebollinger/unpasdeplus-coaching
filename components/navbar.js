@@ -40,7 +40,7 @@ export default function Navbar() {
         navlinks?.forEach(link => link.addEventListener('click', (e) => {
             navtoggler.classList.remove('active');
             navcollapse.classList.remove('show');
-        }))
+        }));
     }, []);
 
     return (
@@ -70,7 +70,24 @@ export default function Navbar() {
                             Le<br />coaching
                         </Link>
                     </li>
-                    <li className={`nav-item ${router.pathname == "/offres-particuliers" ? "active" : ""}`}>
+                    <li className={`relative nav-item ${["/offres-particuliers", "/offres-entreprises"].indexOf(router.pathname) !== -1 ? "active" : ""}`}>
+                        <a className="nav-dropdown" href="#" data-target="#offres-dropdown">
+                            Offres<br />de coaching
+                        </a>
+                        <ul>
+                            <li className={`nav-item ${router.pathname == "/offres-particuliers" ? "active" : ""}`}>
+                                <Link href="/offres-particuliers" className="page-scroll">
+                                    Particuliers
+                                </Link>
+                            </li>
+                            <li className={`nav-item ${router.pathname == "/offres-entreprises" ? "active" : ""}`}>
+                                <Link href="/offres-entreprises" className="page-scroll">
+                                    Entreprises
+                                </Link>
+                            </li>
+                        </ul>
+                    </li>
+                    {/* <li className={`nav-item ${router.pathname == "/offres-particuliers" ? "active" : ""}`}>
                         <Link href="/offres-particuliers" className="page-scroll">
                             Offres<br />particuliers
                         </Link>
@@ -79,7 +96,7 @@ export default function Navbar() {
                         <Link href="/offres-entreprises" className="page-scroll">
                             Offres<br />entreprises
                         </Link>
-                    </li>
+                    </li> */}
                     <li className={`nav-item ${router.pathname == "/qui-je-suis" ? "active" : ""}`}>
                         <Link href="/qui-je-suis" className="page-scroll">
                             Qui<br />je suis
