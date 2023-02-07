@@ -71,7 +71,7 @@ export default function Navbar() {
                         </Link>
                     </li>
                     <li className={`relative nav-item ${["/offres-particuliers", "/offres-entreprises"].indexOf(router.pathname) !== -1 ? "active" : ""}`}>
-                        <a className="nav-dropdown" href="#" data-target="#offres-dropdown">
+                        <a>
                             Offres<br />de coaching
                         </a>
                         <ul>
