@@ -37,7 +37,7 @@ export default function Quality() {
     }
 
     return (
-        <section id="quality" className="bg-gray-200">
+        <section id="un-accompagnement-de-qualite" className="bg-gray-100">
             <div className="container">
                 <div className="text-center pb-10">
                     <h4 className="title">Un accompagnement de qualité</h4>

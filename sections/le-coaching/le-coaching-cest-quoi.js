@@ -37,7 +37,7 @@ export default function WhatIsCoaching() {
     }
 
     return (
-        <section id="intro">
+        <section id="le-coaching-cest-quoi">
             <div className="container">
                 <div className="text-center pb-10">
                     <h4 className="title">C'est quoi, le coaching ?</h4>

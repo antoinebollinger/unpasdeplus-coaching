@@ -5,7 +5,7 @@ import Outdoor from '../../public/images/outdoor.jpg';
 
 import Link from 'next/link';
 import { useEffect } from 'react';
-import { reveal } from '../../components/reveal';
+import { reveal } from '../components/reveal';
 
 export default function Coaching() {
     useEffect(() => {

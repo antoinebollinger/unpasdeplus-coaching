@@ -1,7 +1,7 @@
 import Layout from '../components/layout';
-import WhatIsCoaching from '../sections/main/what-is-coaching';
-import AccompagnementQualite from '../sections/main/accompagnement-qualite';
-import CommentCaMarche from '../sections/main/comment-ca-marche';
+import WhatIsCoaching from '../sections/le-coaching/le-coaching-cest-quoi';
+import AccompagnementQualite from '../sections/le-coaching/accompagnement-qualite';
+import CommentCaMarche from '../sections/le-coaching/comment-ca-marche';
 import Contact from '../sections/contact';
 
 import CoachingIllustration from '../public/images/coaching.jpeg';
@@ -14,11 +14,15 @@ export default function LeCoaching() {
     const onThisPage = [
         {
             title: "C'est quoi, le coaching ?",
-            link: "#intro"
+            link: "#le-coaching-cest-quoi"
+        },
+        {
+            title: "Un accompagnement de qualité",
+            link: "#un-accompagnement-de-qualite"
         },
         {
             title: "Comment ça se passe ?",
-            link: "#how"
+            link: "#comment-ca-marche"
         }
     ]
     return (

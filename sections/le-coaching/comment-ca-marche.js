@@ -35,7 +35,7 @@ export default function How() {
     }
 
     return (
-        <section id="how" className="bg-gray-100">
+        <section id="comment-ca-marche">
             <div className="container">
                 <div className="text-center pb-10">
                     <h4 className="title">Comment ça se passe ?</h4>

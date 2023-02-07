@@ -60,7 +60,7 @@ export default function Footer({ onThisPage }) {
                                     </li>
                                     <li>
                                         <Link href="/qui-je-suis">
-                                            Qui je suis ça marche ?
+                                            Qui je suis
                                         </Link>
                                     </li>
                                     <li><a href="#contact">Contact</a></li>
