@@ -1,6 +1,6 @@
 header {
     .header-hero {
-        // min-height: 60vh;
+        min-height: 60vh;
         &::before {
             content: '';
             z-index: 11;
@@ -9,9 +9,9 @@ header {
         }
     }
     .navigation {
-        @apply absolute top-0 left-0 z-20 w-full py-5 duration-300 bg-transparent;
+        @apply absolute top-0 left-0 z-20 w-full py-1 duration-300 bg-transparent;
         &.sticky {
-            @apply fixed py-4 bg-white shadow;
+            @apply fixed py-0 bg-white shadow;
         }
     }
     .choice-ul {

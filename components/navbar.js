@@ -58,36 +58,31 @@ export default function Navbar() {
                 <span className="toggler-icon"></span>
                 <span className="toggler-icon"></span>
             </button>
-            <div className="absolute left-0 z-30 hidden w-full px-5 py-3 duration-300 bg-white shadow md:opacity-100 md:w-auto navbar-collapse md:block top-100 mt-full md:static md:bg-transparent md:shadow-none" id="navbarOne">
+            <div className="absolute left-0 z-30 hidden w-full px-5 py-2 duration-300 bg-white shadow md:opacity-100 md:w-auto navbar-collapse md:block top-100 mt-full md:static md:bg-transparent md:shadow-none" id="navbarOne">
                 <ul className="items-center content-start mr-auto lg:justify-center md:justify-end navbar-nav md:flex uppercase">
                     <li className={`nav-item ${router.pathname == "/" ? "active" : ""}`}>
                         <Link href="/" className="dropdown">
                             <FontAwesomeIcon icon={faHome} className="text-2xl" />
                         </Link>
                     </li>
-                    <li className={`nav-item ${router.pathname == "/about" ? "active" : ""}`}>
-                        <Link href="/about" className="page-scroll">
+                    <li className={`nav-item ${router.pathname == "/le-coaching" ? "active" : ""}`}>
+                        <Link href="/le-coaching" className="page-scroll">
+                            Le<br />coaching
+                        </Link>
+                    </li>
+                    <li className={`nav-item ${router.pathname == "/offres-particulier" ? "active" : ""}`}>
+                        <Link href="/offres-particulier" className="page-scroll">
+                            Offres<br />particulier
+                        </Link>
+                    </li>
+                    <li className={`nav-item ${router.pathname == "/offres-entreprises" ? "active" : ""}`}>
+                        <Link href="/offres-entreprises" className="page-scroll">
+                            Offres<br />entreprises
+                        </Link>
+                    </li>
+                    <li className={`nav-item ${router.pathname == "/qui-je-suis" ? "active" : ""}`}>
+                        <Link href="/qui-je-suis" className="page-scroll">
                             Qui<br />je suis
-                        </Link>
-                    </li>
-                    <li className={`nav-item ${router.pathname == "/comment-ca-marche" ? "active" : ""}`}>
-                        <Link href="/comment-ca-marche" className="page-scroll">
-                            Comment<br />ça marche
-                        </Link>
-                    </li>
-                    <li className={`nav-item ${router.pathname == "/coaching-mieux-etre" ? "active" : ""}`}>
-                        <Link href="/coaching-mieux-etre" className="page-scroll">
-                            Coaching<br />Mieux-être
-                        </Link>
-                    </li>
-                    <li className={`nav-item ${router.pathname == "/coaching-parentalite" ? "active" : ""}`}>
-                        <Link href="/coaching-parentalite" className="page-scroll">
-                            Coaching<br />Parentalité
-                        </Link>
-                    </li>
-                    <li className={`nav-item ${router.pathname == "/coaching-outdoor" ? "active" : ""}`}>
-                        <Link href="/coaching-outdoor" className="page-scroll">
-                            Coaching<br />Outdoor
                         </Link>
                     </li>
                 </ul>

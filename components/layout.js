@@ -22,7 +22,7 @@ export default function Layout({ children, title, props, background, foot, onThi
     return (
         <React.Fragment>
             <Head>
-                <title>{`${siteTitle}${title ? ` | ${title}` : ''}`}</title>
+                <title>{`${title ? `${title} | ` : ''}${siteTitle}`}</title>
                 <meta name="description" content={siteDescription} />
                 <meta name="author" content={siteAuthor} />
                 <link rel="icon" type="image/png" href="/favicon.png" />

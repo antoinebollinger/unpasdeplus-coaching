@@ -1,28 +1,19 @@
 import Layout from '../components/layout';
-import Intro from '../sections/main/intro';
-import Quality from '../sections/main/quality';
-import Coaching from '../sections/main/coaching';
-import How from '../sections/main/how';
-import About from '../sections/main/about';
+import MaMission from '../sections/index/ma-mission';
+import Break from '../components/break';
+import Intro from '../sections/index/intro';
+import QuiJeSuis from '../sections/index/qui-je-suis';
 import Contact from '../sections/contact';
 
 export default function Home() {
     const onThisPage = [
         {
-            title: "C'est quoi, le coaching ?",
-            link: "#intro"
+            title: "Ma mission",
+            link: "#mamission"
         },
         {
-            title: "Mes accompagnements",
-            link: "#coaching"
-        },
-        {
-            title: "Comment ça se passe ?",
-            link: "#how"
-        },
-        {
-            title: "Qui je suis ?",
-            link: "#about"
+            title: "Qui je suis",
+            link: "#quijesuis"
         },
         {
             title: "Contact",
@@ -30,12 +21,11 @@ export default function Home() {
         }
     ]
     return (
-        <Layout title="Accueil" onThisPage={onThisPage}>
+        <Layout onThisPage={onThisPage}>
+            <MaMission />
+            <Break />
             <Intro />
-            <Quality />
-            <Coaching />
-            <How />
-            <About />
+            <QuiJeSuis />
             <Contact />
         </Layout>
     )

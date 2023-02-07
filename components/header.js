@@ -3,13 +3,13 @@ import Navbar from "./navbar";
 import Headline from "./headline";
 
 import Wave from "../public/images/header-shape.svg";
-import Back from "../public/images/bg.jpg";
+import Back from "../public/images/home.jpg";
 
 Header.defaultProps = {
     background: {
         img: Back
     },
-    foot: true
+    foot: false
 }
 
 export default function Header({ props, background, foot }) {

@@ -2,9 +2,9 @@ import Logo from "./logo"
 
 Headline.defaultProps = {
     props: {
-        pretitle: "Coaching",
-        title: "Un pas de plus",
-        subtitle: "Pour un changement profond et durable"
+        pretitle: "",
+        title: "",
+        subtitle: ""
     }
 }
 

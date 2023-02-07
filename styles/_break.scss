@@ -1,0 +1,6 @@
+.break {
+    &:before {
+        content:"";
+        @apply absolute inset-0 z-10 bg-white opacity-80;
+    }
+}
