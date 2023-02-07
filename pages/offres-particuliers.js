@@ -2,6 +2,7 @@ import Layout from '../components/layout';
 import Parentalite from '../sections/offres-particuliers/parentalite';
 import MieuxEtre from '../sections/offres-particuliers/mieux-etre';
 import Outdoor from '../sections/offres-particuliers/outdoor';
+import Steps from '../sections/steps';
 import Contact from '../sections/contact';
 
 import ParticuliersIllustration from '../public/images/particuliers.jpg';
@@ -36,6 +37,7 @@ export default function OffresParticuliers() {
             <Parentalite />
             <MieuxEtre />
             <Outdoor />
+            <Steps />
             <Contact />
         </Layout>
     )
