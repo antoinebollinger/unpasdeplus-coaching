@@ -7,11 +7,11 @@ header {
         @apply absolute top-0 left-0 z-20 w-full py-3 md:py-1 duration-300 bg-transparent;
         &.sticky {
             @apply fixed py-2 md:py-0 bg-white shadow;
-            .dropdown {
+            ul {
                 @apply bg-white;
             }
         }
-        .dropdown {
+        ul {
             @apply duration-300 bg-transparent;
         }
     }
