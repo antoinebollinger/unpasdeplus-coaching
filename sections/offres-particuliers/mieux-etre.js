@@ -88,10 +88,16 @@ export default function MieuxEtre() {
                     </div>
                 </div>
 
-                <div className="text-center">
+                <div className="text-center mb-10">
                     <h4 className="subtitle text-primary-600">
                         Cet accompagnement vous permettra d'être plus à l'écoute de vos besoins, émotions, sensations. Il vous donnera toutes les clés nécessaires pour lever freins & blocages pour une vie harmonieuse en adéquation avec votre tête & votre corps.
                     </h4>
+                </div>
+
+                <div className="text-center">
+                    <a href="#contact">
+                        <button type="submit" className="main-btn gradient-btn focus:outline-none uppercase">Je prends contact pour en savoir plus !<br />Gratuit et sans engagement</button>
+                    </a>
                 </div>
             </div>
         </section>

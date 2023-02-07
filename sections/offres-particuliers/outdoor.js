@@ -41,7 +41,7 @@ export default function Outdoor() {
                     </div>
                 </div>
 
-                <div className="flex flex-wrap flex-col sm:flex-row justify-center items-center">
+                <div className="flex flex-wrap flex-col sm:flex-row justify-center items-center mb-10">
                     <div className="w-full md:w-3/4 md:pl-6 paragraph">
                         <h4 className="subtitle">Cet accompagnement est fait pour vous :</h4>
                         <p>
@@ -75,6 +75,12 @@ export default function Outdoor() {
                             alt="Coaching Outdoor"
                         />
                     </div>
+                </div>
+
+                <div className="text-center">
+                    <a href="#contact">
+                        <button type="submit" className="main-btn gradient-btn focus:outline-none uppercase">Je prends contact pour en savoir plus !<br />Gratuit et sans engagement</button>
+                    </a>
                 </div>
             </div>
         </section>

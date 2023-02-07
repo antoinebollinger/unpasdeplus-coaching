@@ -91,10 +91,16 @@ export default function Parentalite() {
                     </div>
                 </div>
 
-                <div className="text-center">
+                <div className="text-center mb-10">
                     <h4 className="subtitle text-primary-600">
                         Cet accompagnement vous permettra d'avancer à votre rythme,d'échanger en toute bienveillance, librement & sans jugement, vous donner toutes les clés pour avancer sereinement dans votre vie de parents & femme/homme.
                     </h4>
+                </div>
+
+                <div className="text-center">
+                    <a href="#contact">
+                        <button type="submit" className="main-btn gradient-btn focus:outline-none uppercase">Je prends contact pour en savoir plus !<br />Gratuit et sans engagement</button>
+                    </a>
                 </div>
             </div>
         </section>
