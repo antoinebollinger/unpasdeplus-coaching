@@ -14,16 +14,16 @@ Break.defaultProps = {
 export default function Break({ background }) {
     return (
         <div className="relative break">
-            <div className="absolute inset-0 z-0">
+            <div className="absolute inset-0 z-0 bg-primary-100">
                 <Image
                     src={background.img.src}
                     alt="background"
                     width={background.img.width}
                     height={background.img.height}
-                    className="object-cover w-full h-full"
+                    className="object-cover w-full h-full hidden"
                 />
             </div>
-            <div className="relative z-10 w-full h-auto -mb-1 rotate-180 ">
+            <div className="relative z-10 w-full h-auto -mb-1 rotate-180">
                 <Image
                     src={Wave}
                     alt="Wave"
@@ -32,7 +32,7 @@ export default function Break({ background }) {
                     className="object-cover w-full h-full"
                 />
             </div>
-            <div className="relative z-10 flex justify-center">
+            <div className="absolute inset-0 z-20 flex justify-center items-center">
                 <Logo />
             </div>
             <div className="relative z-10 w-full h-auto -mb-1">
