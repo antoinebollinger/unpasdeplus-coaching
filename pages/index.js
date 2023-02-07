@@ -21,7 +21,7 @@ export default function Home() {
         }
     ]
     return (
-        <Layout onThisPage={onThisPage}>
+        <Layout onThisPage={onThisPage} logo>
             <MaMission />
             <Break />
             <Intro />

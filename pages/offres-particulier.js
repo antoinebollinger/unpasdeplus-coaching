@@ -8,8 +8,13 @@ export default function OffresParticulier() {
         img: ParticulierIllustration
     }
 
+    const props = {
+        title: "Pour les particuliers",
+        pretitle: "Mes accompagnements"
+    }
+
     return (
-        <Layout title="Offres Particulier" background={background}>
+        <Layout title="Offres Particulier" props={props} background={background}>
             <Contact />
         </Layout>
     )

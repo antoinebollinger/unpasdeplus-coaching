@@ -26,11 +26,11 @@ export default function LeCoaching() {
         }
     ]
     return (
-        <Layout title="Le coaching" background={background} onThisPage={onThisPage}>
+        <Layout title="Le coaching" background={background} onThisPage={onThisPage} logo>
             <WhatIsCoaching />
             <AccompagnementQualite />
             <CommentCaMarche />
             <Contact />
-        </Layout>
+        </Layout >
     )
 }

@@ -1,14 +1,15 @@
 import Layout from '../components/layout';
-import Intro from '../sections/about/intro';
-import Career from '../sections/about/career';
-import Outro from '../sections/about/outro';
+import Intro from '../sections/qui-je-suis/intro';
+import Career from '../sections/qui-je-suis/career';
+import Outro from '../sections/qui-je-suis/outro';
 import Contact from '../sections/contact';
 
-import AboutImg from '../public/images/about.jpg';
+import QuiJeSuisIllustration
+    from '../public/images/quijesuis.jpg';
 
 export default function QuiJeSuis() {
     const background = {
-        img: AboutImg
+        img: QuiJeSuisIllustration
     }
 
     const props = {
@@ -17,7 +18,7 @@ export default function QuiJeSuis() {
     }
 
     return (
-        <Layout title="Qui je suis" props={props} background={background} foot={false}>
+        <Layout title="Qui je suis" props={props} background={background}>
             <Intro />
             <Career />
             <Outro />

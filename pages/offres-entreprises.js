@@ -8,8 +8,13 @@ export default function OffresEntreprises() {
         img: EntrepriseIllustration
     }
 
+    const props = {
+        title: "Pour les entreprises",
+        pretitle: "Mes accompagnements"
+    }
+
     return (
-        <Layout title="Offres Entreprises" background={background}>
+        <Layout title="Offres Entreprises" props={props} background={background}>
             <Contact />
         </Layout>
     )

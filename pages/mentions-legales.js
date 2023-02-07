@@ -14,7 +14,7 @@ export default function Legals() {
     }
 
     return (
-        <Layout title="Mentions légales" props={props} background={background} foot={false}>
+        <Layout title="Mentions légales" props={props} background={background}>
             <LegalsSection />
             <Contact />
         </Layout>

@@ -14,7 +14,7 @@ Break.defaultProps = {
 export default function Break({ background }) {
     return (
         <div className="relative break">
-            <div className="z-0 absolute inset-0 h-full">
+            <div className="absolute inset-0 z-0">
                 <Image
                     src={background.img.src}
                     alt="background"

@@ -1,12 +1,7 @@
 header {
-    .header-hero {
-        min-height: 60vh;
-        &::before {
-            content: '';
-            z-index: 11;
-            // opacity: .75;
-            @apply absolute top-0 left-0 w-full h-full bg-gradient-to-b from-white via-light-white;
-        }
+    &::before {
+        content: '';
+        @apply absolute inset-0 z-10 bg-gradient-to-b from-white via-light-white;
     }
     .navigation {
         @apply absolute top-0 left-0 z-20 w-full py-3 md:py-1 duration-300 bg-transparent;

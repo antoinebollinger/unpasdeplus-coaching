@@ -9,12 +9,12 @@ Header.defaultProps = {
     background: {
         img: Back
     },
-    foot: false
+    logo: false
 }
 
-export default function Header({ props, background, foot }) {
+export default function Header({ props, background, logo }) {
     return (
-        <header className="header-area" id="header">
+        <header className="relative min-h-[60vh]">
             <div className="navigation">
                 <div className="container">
                     <div className="row">
@@ -24,26 +24,26 @@ export default function Header({ props, background, foot }) {
                     </div>
                 </div>
             </div>
-            <div id="home" className="relative z-10 header-hero">
-                <div className="absolute inset-0 z-0 h-full">
-                    <Image
-                        src={background.img.src}
-                        alt="background"
-                        width={background.img.width}
-                        height={background.img.height}
-                        className="object-cover w-full h-full"
-                    />
-                </div>
-                <Headline props={props} foot={foot} />
-                <div className="absolute bottom-0 z-20 w-full h-auto -mb-1 header-shape">
-                    <Image
-                        src={Wave}
-                        alt="wave"
-                        width={background.img.width}
-                        height={background.img.height}
-                        className="object-cover w-full h-full"
-                    />
-                </div>
+            <div className="absolute inset-0 z-0">
+                <Image
+                    src={background.img.src}
+                    alt="background"
+                    width={background.img.width}
+                    height={background.img.height}
+                    className="object-cover w-full h-full"
+                />
+            </div>
+            <div className="absolute inset-0 z-10 flex justify-center items-center">
+                <Headline props={props} logo={logo} />
+            </div>
+            <div className="absolute bottom-0 z-10 w-full h-auto -mb-1 header-shape">
+                <Image
+                    src={Wave}
+                    alt="wave"
+                    width={background.img.width}
+                    height={background.img.height}
+                    className="object-cover w-full h-full"
+                />
             </div>
         </header>
     )
