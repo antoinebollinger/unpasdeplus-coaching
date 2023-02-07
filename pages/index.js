@@ -23,7 +23,7 @@ export default function Home() {
     return (
         <Layout onThisPage={onThisPage}>
             <MaMission />
-            <Break />
+            <Break last="gray" logo />
             <Intro />
             <QuiJeSuis />
             <Contact />

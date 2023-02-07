@@ -4,14 +4,18 @@ import Logo from "./logo";
 import Back from "../public/images/break.jpg";
 import Wave from "../public/images/header-shape.svg";
 import WaveGray from "../public/images/header-shape-gray.svg";
+import { withRouter } from "next/router";
 
 Break.defaultProps = {
     background: {
         img: Back
-    }
+    },
+    logo: false,
+    first: "white",
+    last: "white"
 }
 
-export default function Break({ background }) {
+export default function Break({ background, logo, first, last }) {
     return (
         <div className="relative break">
             <div className="absolute inset-0 z-0 bg-primary-100">
@@ -25,22 +29,24 @@ export default function Break({ background }) {
             </div>
             <div className="relative z-10 w-full h-auto -mb-1 rotate-180">
                 <Image
-                    src={Wave}
+                    src={first == "white" ? Wave : WaveGray}
                     alt="Wave"
-                    width={Wave.width}
-                    height={Wave.height}
+                    width={(first == "white" ? Wave : WaveGray).width}
+                    height={(first == "white" ? Wave : WaveGray).height}
                     className="object-cover w-full h-full"
                 />
             </div>
-            <div className="absolute inset-0 z-20 flex justify-center items-center">
+            {logo && <div className="absolute inset-0 z-20 flex justify-center items-center">
                 <Logo />
             </div>
+            }
+
             <div className="relative z-10 w-full h-auto -mb-1">
                 <Image
-                    src={WaveGray}
+                    src={last == "white" ? Wave : WaveGray}
                     alt="wave"
-                    width={WaveGray.width}
-                    height={WaveGray.height}
+                    width={(last == "white" ? Wave : WaveGray).width}
+                    height={(last == "white" ? Wave : WaveGray).height}
                     className="object-cover w-full h-full"
                 />
             </div>

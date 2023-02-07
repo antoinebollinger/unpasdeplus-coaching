@@ -6,6 +6,7 @@ import Steps from '../sections/steps';
 import Contact from '../sections/contact';
 
 import ParticuliersIllustration from '../public/images/particuliers.jpg';
+import Break from '../components/break';
 
 export default function OffresParticuliers() {
     const background = {
@@ -35,8 +36,11 @@ export default function OffresParticuliers() {
     return (
         <Layout title="Offres Particuliers" props={props} background={background} onThisPage={onThisPage}>
             <Parentalite />
+            <Break />
             <MieuxEtre />
+            <Break />
             <Outdoor />
+            <Break />
             <Steps />
             <Contact />
         </Layout>

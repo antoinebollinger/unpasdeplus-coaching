@@ -14,7 +14,7 @@ Header.defaultProps = {
 
 export default function Header({ props, background, logo }) {
     return (
-        <header className="relative min-h-[60vh]">
+        <header className="relative min-h-[60vh]" id="header">
             <div className="navigation">
                 <div className="container">
                     <div className="row">

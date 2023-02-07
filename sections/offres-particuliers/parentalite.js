@@ -19,7 +19,7 @@ export default function Parentalite() {
                     <h4 className="subtitle">Accompagnement</h4>
                     <h4 className="title">Parents : Bien dans sa tête, bien dans ses baskets</h4>
                 </div>
-                <div className="flex flex-wrap flex-col sm:flex-row justify-center items-center">
+                <div className="flex flex-wrap flex-col sm:flex-row justify-center items-center mb-10">
                     <div className="w-1/2 md:w-1/4 md:pr-6 pb-6 md:pb-0 mx-auto transition duration-200 scale-0 opacity-0 about-img">
                         <Image
                             src={IntroIllustration}
@@ -44,6 +44,57 @@ export default function Parentalite() {
                         </p>
 
                     </div>
+                </div>
+
+                <div className="flex flex-wrap flex-col sm:flex-row justify-center items-start mb-10">
+                    <div className="w-full md:w-1/2 md:pl-6 paragraph">
+                        <h4 className="subtitle">Aujourd'hui :</h4>
+                        <p>
+                            Vous êtes (jeunes) parents, parents d'un ou plusieurs enfants
+                        </p>
+                        <p>
+                            OU vous avez repris le travail après un congé maternité, parental,
+                        </p>
+                        <p>
+                            Vous êtes surchargés, épuisés, débordés, fatigués physiquement, moralement, de devoir être sur tous les fronts, aussi bien à la maison qu'au travail,
+                        </p>
+                        <p>
+                            Vous avez le sentiment de ne pas avoir du temps pour vous, pour votre famille, et remettez en question vos choix de vie,
+                        </p>
+                        <p>
+                            Vous n'arrivez plus à trouver le juste équilibre dans votre vie,
+                        </p>
+                        <p>
+                            Vous passez votre temps à courir après le temps,
+                        </p>
+                        <p>
+                            Vous êtes épuisés de tenter de concilier vos différents rôles (mère, femme, professionnelle...).
+                        </p>
+                    </div>
+                    <div className="w-full md:w-1/2 md:pl-6 paragraph">
+                        <h4 className="subtitle">Vous souhaitez :</h4>
+                        <p>
+                            Vous retrouver en tant que femme, homme, en étant plus à votre écoute,
+                        </p>
+                        <p>
+                            Vous recentrer pour retrouver une vie plus saine et plus sereine,
+                        </p>
+                        <p>
+                            Retrouver confiance en vous pour faire des choix alignés avec votre identité,
+                        </p>
+                        <p>
+                            Retrouver de l'énergie en prenant soin de sa tête & de son corps,
+                        </p>
+                        <p>
+                            Oser être VOUS.
+                        </p>
+                    </div>
+                </div>
+
+                <div className="text-center">
+                    <h4 className="subtitle text-primary-600">
+                        Cet accompagnement vous permettra d'avancer à votre rythme,d'échanger en toute bienveillance, librement & sans jugement, vous donner toutes les clés pour avancer sereinement dans votre vie de parents & femme/homme.
+                    </h4>
                 </div>
             </div>
         </section>
