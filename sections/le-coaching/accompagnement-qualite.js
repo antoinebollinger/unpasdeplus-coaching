@@ -7,7 +7,7 @@ import Ethics from '../../public/images/ethics.jpg';
 import { useEffect } from 'react';
 import { reveal } from '../../components/reveal';
 
-export default function Quality() {
+export default function AccompagnementQualite() {
     useEffect(() => {
         reveal({
             collection: document.querySelectorAll(".quality-ref"),

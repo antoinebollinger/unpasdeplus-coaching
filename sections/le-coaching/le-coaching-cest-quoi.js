@@ -8,7 +8,7 @@ import Intro5 from "../../public/images/intro/5.webp";
 import { useEffect } from 'react';
 import { reveal } from '../../components/reveal';
 
-export default function WhatIsCoaching() {
+export default function LeCoachingCestQuoi() {
     useEffect(() => {
         reveal({
             collection: document.querySelectorAll(".intro-step"),

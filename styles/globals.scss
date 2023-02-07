@@ -79,3 +79,6 @@ section:first-child {
     @apply mb-2 text-xl lg:text-3xl font-medium;
 }
   
+.paragraph, .paragraph p {
+    @apply text-xl mb-4;
+}

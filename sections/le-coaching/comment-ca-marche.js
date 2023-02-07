@@ -6,7 +6,7 @@ import How3 from '../../public/images/how/3.jpg';
 import { useEffect } from "react";
 import { reveal } from "../../components/reveal";
 
-export default function How() {
+export default function CommentCaMarche() {
     useEffect(() => {
         reveal({
             collection: document.querySelectorAll('.how-step'),

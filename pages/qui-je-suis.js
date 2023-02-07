@@ -1,6 +1,6 @@
 import Layout from '../components/layout';
 import Intro from '../sections/qui-je-suis/intro';
-import Career from '../sections/qui-je-suis/career';
+import MonParcours from '../sections/qui-je-suis/mon-parcours';
 import Outro from '../sections/qui-je-suis/outro';
 import Contact from '../sections/contact';
 
@@ -20,7 +20,7 @@ export default function QuiJeSuis() {
     return (
         <Layout title="Qui je suis" props={props} background={background}>
             <Intro />
-            <Career />
+            <MonParcours />
             <Outro />
             <Contact />
         </Layout>

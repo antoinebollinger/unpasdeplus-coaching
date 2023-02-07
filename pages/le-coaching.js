@@ -1,5 +1,5 @@
 import Layout from '../components/layout';
-import WhatIsCoaching from '../sections/le-coaching/le-coaching-cest-quoi';
+import LeCoachingCestQuoi from '../sections/le-coaching/le-coaching-cest-quoi';
 import AccompagnementQualite from '../sections/le-coaching/accompagnement-qualite';
 import CommentCaMarche from '../sections/le-coaching/comment-ca-marche';
 import Contact from '../sections/contact';
@@ -26,8 +26,8 @@ export default function LeCoaching() {
         }
     ]
     return (
-        <Layout title="Le coaching" background={background} onThisPage={onThisPage} logo>
-            <WhatIsCoaching />
+        <Layout title="Le coaching" background={background} onThisPage={onThisPage}>
+            <LeCoachingCestQuoi />
             <AccompagnementQualite />
             <CommentCaMarche />
             <Contact />

@@ -70,9 +70,9 @@ export default function Navbar() {
                             Le<br />coaching
                         </Link>
                     </li>
-                    <li className={`nav-item ${router.pathname == "/offres-particulier" ? "active" : ""}`}>
-                        <Link href="/offres-particulier" className="page-scroll">
-                            Offres<br />particulier
+                    <li className={`nav-item ${router.pathname == "/offres-particuliers" ? "active" : ""}`}>
+                        <Link href="/offres-particuliers" className="page-scroll">
+                            Offres<br />particuliers
                         </Link>
                     </li>
                     <li className={`nav-item ${router.pathname == "/offres-entreprises" ? "active" : ""}`}>

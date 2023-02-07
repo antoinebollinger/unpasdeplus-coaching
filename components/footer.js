@@ -77,8 +77,8 @@ export default function Footer({ onThisPage }) {
                                 <p className="footer-title">Mes accompagnements</p>
                                 <ul>
                                     <li>
-                                        <Link href="/offres-particulier">
-                                            Offres Particulier
+                                        <Link href="/offres-particuliers">
+                                            Offres Particuliers
                                         </Link>
                                     </li>
                                     <li>

@@ -20,8 +20,12 @@ export default function MaMission() {
                 </div>
                 <div className="flex flex-wrap flex-col sm:flex-row justify-center items-center">
                     <div className="w-full md:w-1/2 md:pl-6 md:order-first order-last">
-                        <p className="text-2xl leading-10 mb-2 text-center md:text-start">
-                            Accompagner les <strong>parents surchargés</strong>, <strong>débordés</strong> & les personnes qui ont un <strong>rapport difficile avec leur corps</strong> à (re)prendre soin de leur santé mentale & physique pour un <strong>changement profond & durable</strong>.
+                        <p className="text-2xl leading-[3rem] mb-2 text-center md:text-start">
+                            Accompagner les <strong>parents surchargés</strong>, <strong>débordés</strong>
+                            <br /><strong>&</strong>
+                            <br />
+                            les personnes qui ont un <strong>rapport difficile avec leur corps</strong>
+                            <br />à (re)prendre soin de leur santé mentale & physique pour un <strong>changement profond & durable</strong>.
                         </p>
                     </div>
                     <div className="w-full md:w-1/2 pb-6 md:pb-0 md:pr-6 mx-auto transition duration-200 scale-0 about-img">
