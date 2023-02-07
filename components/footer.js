@@ -49,13 +49,18 @@ export default function Footer({ onThisPage }) {
                                 <p className="footer-title uppercase">Un pas de plus</p>
                                 <ul>
                                     <li>
-                                        <Link href="/about">
-                                            Qui je suis
+                                        <Link href="/">
+                                            Accueil
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="/comment-ca-marche">
-                                            Comment ça marche ?
+                                        <Link href="/le-coaching">
+                                            Le coaching
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href="/qui-je-suis">
+                                            Qui je suis ça marche ?
                                         </Link>
                                     </li>
                                     <li><a href="#contact">Contact</a></li>
@@ -72,18 +77,13 @@ export default function Footer({ onThisPage }) {
                                 <p className="footer-title">Mes accompagnements</p>
                                 <ul>
                                     <li>
-                                        <Link href="/coaching-mieux-etre">
-                                            Coaching Mieux-être
+                                        <Link href="/offres-particulier">
+                                            Offres Particulier
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="/coaching-parentalite">
-                                            Coaching Parentalité
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link href="/coaching-outdoor">
-                                            Coaching Outdoor
+                                        <Link href="/offres-entreprises">
+                                            Offres Entreprises
                                         </Link>
                                     </li>
                                 </ul>
