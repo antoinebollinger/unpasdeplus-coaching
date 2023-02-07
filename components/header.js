@@ -3,11 +3,11 @@ import Navbar from "./navbar";
 import Headline from "./headline";
 
 import Wave from "../public/images/header-shape.svg";
-import Back from "../public/images/home.jpg";
+import Home from "../public/images/home_purple.jpg";
 
 Header.defaultProps = {
     background: {
-        img: Back
+        img: Home
     },
     logo: false
 }
@@ -40,8 +40,8 @@ export default function Header({ props, background, logo }) {
                 <Image
                     src={Wave}
                     alt="wave"
-                    width={background.img.width}
-                    height={background.img.height}
+                    width={Wave.width}
+                    height={Wave.height}
                     className="object-cover w-full h-full"
                 />
             </div>

@@ -4,8 +4,7 @@ import MonParcours from '../sections/qui-je-suis/mon-parcours';
 import Outro from '../sections/qui-je-suis/outro';
 import Contact from '../sections/contact';
 
-import QuiJeSuisIllustration
-    from '../public/images/quijesuis.jpg';
+import QuiJeSuisIllustration from '../public/images/quijesuis_purple.jpg';
 
 export default function QuiJeSuis() {
     const background = {

@@ -2,7 +2,7 @@ import Layout from '../components/layout';
 import LegalsSection from '../sections/legals';
 import Contact from '../sections/contact';
 
-import legals from '../public/images/legals.jpg';
+import legals from '../public/images/legals_purple.jpg';
 
 export default function Legals() {
     const background = {

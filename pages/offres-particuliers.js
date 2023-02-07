@@ -5,7 +5,7 @@ import Outdoor from '../sections/offres-particuliers/outdoor';
 import Steps from '../sections/steps';
 import Contact from '../sections/contact';
 
-import ParticuliersIllustration from '../public/images/particuliers.jpg';
+import ParticuliersIllustration from '../public/images/particuliers_purple.jpg';
 import Break from '../components/break';
 
 export default function OffresParticuliers() {
