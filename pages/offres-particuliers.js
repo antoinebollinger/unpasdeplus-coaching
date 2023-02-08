@@ -36,11 +36,11 @@ export default function OffresParticuliers() {
     return (
         <Layout title="Offres Particuliers" props={props} background={background} onThisPage={onThisPage}>
             <Parentalite />
-            <Break />
+            <Break displayBg={false} />
             <MieuxEtre />
-            <Break />
+            <Break displayBg={false} />
             <Outdoor />
-            <Break />
+            <Break displayBg={false} />
             <Steps />
             <Contact />
         </Layout>
