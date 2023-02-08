@@ -19,15 +19,15 @@ export default function QuiJeSuis() {
                 <div className="text-center pb-10">
                     <h4 className="title">Qui je suis ?</h4>
                 </div>
-                <div className="flex flex-wrap flex-col sm:flex-row justify-center">
-                    <div className="w-1/2 md:w-1/4 pb-6 md:pb-0 md:pr-6 mx-auto transition duration-200 scale-0 about-img">
+                <div className="flex flex-col gap-6 sm:flex-row justify-center">
+                    <div className="w-1/2 md:w-1/4 pb-6 md:pb-0 mx-auto transition duration-200 scale-0 about-img">
                         <Image
                             src={Sabrina}
                             className="w-full rounded-full"
                             alt="Sabrina Appriou"
                         />
                     </div>
-                    <div className="w-full md:w-3/4 md:pl-6">
+                    <div className="w-full md:w-3/4">
                         <p className="text-3xl text-gray-800 font-bold leading-none mb-3">
                             Sabrina Appriou
                         </p>

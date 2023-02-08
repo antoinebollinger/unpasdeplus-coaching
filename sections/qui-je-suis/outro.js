@@ -39,7 +39,7 @@ export default function Outro({ first, last, background }) {
                     />
                 </div>
                 <div className="relative z-10 max-w-2xl mx-auto">
-                    <h4 className="text-center text-primary-200 uppercase text-3xl"> En tant que <strong>coach</strong>, j’accompagne aujourd'hui les personnes à faire <strong>UN PAS DE PLUS</strong> dans leur <strong>épanouissement personnel et/ou professionnel</strong> pour un changement profond & durable !</h4>
+                    <h4 className="text-center text-primary-100 uppercase text-3xl"> En tant que <strong>coach</strong>, j’accompagne aujourd'hui les personnes à faire <strong>UN PAS DE PLUS</strong> dans leur <strong>épanouissement personnel et/ou professionnel</strong> pour un changement profond & durable !</h4>
                 </div>
                 <div className="relative z-10 w-full h-auto -mb-1">
                     <Image

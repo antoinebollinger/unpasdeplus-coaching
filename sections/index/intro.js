@@ -15,8 +15,15 @@ export default function Intro() {
     return (
         <section id="intro" className="bg-gray-100">
             <div className="container">
-                <div className="flex flex-col sm:flex-row justify-center items-center gap-2">
-                    <div className="w-full md:w-2/3 md:pl-6 md:order-first order-last">
+                <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+                    <div className="w-full md:w-1/3 pb-6 md:pb-0 mx-auto transition duration-200 scale-0 about-img">
+                        <Image
+                            src={Epanouissement}
+                            className="w-full rounded-xl"
+                            alt="Femme épanouie"
+                        />
+                    </div>
+                    <div className="w-full md:w-2/3">
                         <p>
                             Commencer à faire <strong>UN PAS</strong>, enclencher la mise ne mouvement, <strong>le premier PAS</strong>, peut parfois être difficile voire compliqué.
                         </p>
@@ -32,13 +39,6 @@ export default function Intro() {
                         <p className="font-bold text-tertary-900">
                             Je vous accompagne à faire UN PAS vers une meilleure connaissance de soi, une meilleure conscience de SOI pour être plus aligné avec votre identité & confiant dans vos choix de vie.
                         </p>
-                    </div>
-                    <div className="w-full md:w-1/3 pb-6 md:pb-0 md:pr-6 mx-auto transition duration-200 scale-0 about-img">
-                        <Image
-                            src={Epanouissement}
-                            className="w-full rounded-xl"
-                            alt="Femme épanouie"
-                        />
                     </div>
                 </div>
             </div>
