@@ -18,10 +18,12 @@ export default function Layout({ children, title, props, background, logo, onThi
     useEffect(() => {
         setSiteUrl(window.location.origin);
 
-        const backToTop = document.querySelector(".back-to-top");
-        backToTop?.addEventListener("click", e => {
-            document.querySelector("html").style.scrollBehavior = "smooth";
-        });
+        document.querySelector("html").style.scrollBehavior = "auto";
+
+        const anchors = [...document.querySelectorAll("a")];
+        anchors?.forEach(anchor => anchor.addEventListener("click", e => {
+            document.querySelector("html").style.scrollBehavior = anchor.href.includes("#") ? "smooth" : "auto";
+        }));
     }, [])
 
     return (

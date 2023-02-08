@@ -24,7 +24,6 @@ export default function Navbar() {
             backToTop.style.opacity = 1;
         else
             backToTop.style.opacity = 0;
-        document.querySelector("html").style.scrollBehavior = "auto";
     };
 
     useEffect(() => {
