@@ -1,11 +1,11 @@
 import Layout from '../components/layout';
+import Break from '../components/break';
 import Intro from '../sections/qui-je-suis/intro';
 import MonParcours from '../sections/qui-je-suis/mon-parcours';
-import Break from '../components/break';
 import Contact from '../sections/contact';
 
-import QuiJeSuisIntro from '../public/images/quijesuis_purple.jpg';
-import QuijesuisOutro from "../public/images/quijesuis_outro_purple.jpg";
+import QuiJeSuisIntro from '../public/images/banners/quijesuis-intro.jpg';
+import QuijesuisOutro from "../public/images/banners/quijesuis-outro.jpg";
 
 export default function QuiJeSuis() {
     const introBackground = {

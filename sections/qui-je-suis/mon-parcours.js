@@ -1,8 +1,8 @@
 import Image from 'next/image';
-import Career1 from "../../public/images/career/1.webp";
-import Career2 from "../../public/images/career/2.webp";
-import Career3 from "../../public/images/career/3.webp";
-import Career4 from "../../public/images/career/4.webp";
+import Career1 from "../../public/images/qui-je-suis/1.webp";
+import Career2 from "../../public/images/qui-je-suis/2.webp";
+import Career3 from "../../public/images/qui-je-suis/3.webp";
+import Career4 from "../../public/images/qui-je-suis/4.webp";
 
 import { useEffect } from 'react';
 import { reveal } from '../../components/reveal';
@@ -18,8 +18,8 @@ export default function Career() {
 
     const list = (img, text) => {
         return (
-            <div className="flex flex-wrap flex-col sm:flex-row justify-center items-center mb-8">
-                <div className="career-step w-1/2 md:w-1/5 md:pr-6 mx-auto transition duration-300 opacity-0 scale-0">
+            <div className="flex flex-col md:flex-row gap-6 justify-center items-center mb-8">
+                <div className="w-1/2 md:w-1/5 mx-auto transition duration-300 opacity-0 scale-0 career-step">
                     <Image
                         src={img}
                         width={img.width}
@@ -28,7 +28,7 @@ export default function Career() {
                         alt="Illustration"
                     />
                 </div>
-                <div className="career-step w-full md:w-3/4 md:pl-6 p-2 transition duration-300 opacity-0 translate-x-3/4">
+                <div className="w-full md:w-3/4 transition duration-300 opacity-0 translate-x-3/4 career-step">
                     <p className="text-lg text-gray-900" dangerouslySetInnerHTML={{ __html: text }} />
                 </div>
             </div>

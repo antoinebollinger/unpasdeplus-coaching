@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Logo from "./logo";
-import Wave from "../public/images/header-shape.svg";
-import WaveGray from "../public/images/header-shape-gray.svg";
-import Background from "../public/images/break.jpg";
+import Wave from "../public/images/svg/wave-white.svg";
+import WaveGray from "../public/images/svg/wave-gray.svg";
+import Background from "../public/images/banners/break.jpg";
 
 Break.defaultProps = {
     background: {

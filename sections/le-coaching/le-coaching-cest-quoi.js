@@ -1,9 +1,9 @@
 import Image from 'next/image';
-import Intro1 from "../../public/images/intro/1.webp";
-import Intro2 from "../../public/images/intro/2.webp";
-import Intro3 from "../../public/images/intro/3.webp";
-import Intro4 from "../../public/images/intro/4.webp";
-import Intro5 from "../../public/images/intro/5.webp";
+import Intro1 from "../../public/images/le-coaching/intro/1.webp";
+import Intro2 from "../../public/images/le-coaching/intro/2.webp";
+import Intro3 from "../../public/images/le-coaching/intro/3.webp";
+import Intro4 from "../../public/images/le-coaching/intro/4.webp";
+import Intro5 from "../../public/images/le-coaching/intro/5.webp";
 
 import { useEffect } from 'react';
 import { reveal } from '../../components/reveal';
@@ -19,8 +19,8 @@ export default function LeCoachingCestQuoi() {
 
     const list = (img, text) => {
         return (
-            <div className="flex flex-wrap flex-col sm:flex-row justify-center items-center mb-8">
-                <div className="intro-step w-1/2 md:w-1/4 md:pr-6 mx-auto transition duration-300 opacity-0 scale-0">
+            <div className="flex flex-col md:flex-row gap-6 justify-center items-center mb-8">
+                <div className="w-1/2 md:w-1/4 mx-auto transition duration-300 opacity-0 scale-0 intro-step">
                     <Image
                         src={img}
                         width={img.width}
@@ -29,7 +29,7 @@ export default function LeCoachingCestQuoi() {
                         alt="Illustration"
                     />
                 </div>
-                <div className="intro-step w-full md:w-3/4 md:pl-6 p-2 transition duration-300 opacity-0 translate-x-3/4">
+                <div className="w-full md:w-3/4 transition duration-300 opacity-0 translate-x-3/4 intro-step">
                     <p className="text-lg text-gray-900" dangerouslySetInnerHTML={{ __html: text }} />
                 </div>
             </div>

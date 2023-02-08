@@ -19,8 +19,8 @@ export default function Parentalite() {
                     <h4 className="subtitle">Accompagnement</h4>
                     <h4 className="title">Parents : Bien dans sa tête, bien dans ses baskets</h4>
                 </div>
-                <div className="flex flex-wrap flex-col sm:flex-row justify-center items-center mb-10">
-                    <div className="w-1/2 md:w-1/4 md:pr-6 pb-6 md:pb-0 mx-auto transition duration-200 scale-0 opacity-0 about-img">
+                <div className="flex flex-col md:flex-row gap-6 justify-center items-center mb-10">
+                    <div className="w-1/2 md:w-1/4 mx-auto transition duration-200 scale-0 opacity-0 about-img">
                         <Image
                             src={IntroIllustration}
                             width={IntroIllustration.width}
@@ -29,7 +29,7 @@ export default function Parentalite() {
                             alt="Parents"
                         />
                     </div>
-                    <div className="w-full md:w-3/4 md:pl-6 paragraph">
+                    <div className="w-full md:w-3/4 paragraph">
                         <p>
                             <strong>Être parent est merveilleux et difficile à la fois.</strong>
                         </p>
@@ -40,15 +40,15 @@ export default function Parentalite() {
                             Prendre du temps pour soi, prendre soin de soi sans culpabiliser, tout en étant dévoué en tant que parents, peut s’avérer difficile voire impossible.
                         </p>
                         <p>
-                            <strong>Les injonctions sociétales nous poussent à être un superparents</strong>, un super papa, une wondermaman, être au top au boulot, assurer à la maison, être physiquement au top : le défi des parents d'aujourd'hui. <strong>Mais toutes ces injonctions où il faut tout « assurer » dans tous les domaines de vie n'amènent-elles pas à de l’épuisement ou de l’insatisfaction tant dans la vie personnelle que professionnelle ?</strong>
+                            <strong>Les injonctions sociétales nous poussent à être de superparents</strong>, un super papa, une wondermaman, être au top au boulot, assurer à la maison, être physiquement au top : le défi des parents d'aujourd'hui. <strong>Mais toutes ces injonctions à « assurer » dans tous les domaines de vie n'amènent-elles pas à de l’épuisement, à de l’insatisfaction tant sur le plan personnel que professionnel ?</strong>
                         </p>
 
                     </div>
                 </div>
 
-                <div className="flex flex-wrap flex-col sm:flex-row justify-center items-start mb-10">
-                    <div className="w-full md:w-1/2 md:pl-6 paragraph">
-                        <h4 className="subtitle">Aujourd'hui :</h4>
+                <div className="flex flex-col md:flex-row gap-6 justify-center items-start mb-10">
+                    <div className="w-full md:w-1/2 paragraph">
+                        <h4 className="subtitle text-primary-800">Aujourd'hui :</h4>
                         <p>
                             Vous êtes (jeunes) parents, parents d'un ou plusieurs enfants
                         </p>
@@ -56,23 +56,23 @@ export default function Parentalite() {
                             OU vous avez repris le travail après un congé maternité, parental,
                         </p>
                         <p>
-                            Vous êtes surchargés, épuisés, débordés, fatigués physiquement, moralement, de devoir être sur tous les fronts, aussi bien à la maison qu'au travail,
+                            Vous êtes <strong>surchargés, épuisés, débordés, fatigués</strong> physiquement, moralement, de devoir être sur tous les fronts, aussi bien à la maison qu'au travail,
                         </p>
                         <p>
-                            Vous avez le sentiment de ne pas avoir du temps pour vous, pour votre famille, et remettez en question vos choix de vie,
+                            Vous avez le sentiment de <strong>ne pas avoir du temps pour vous</strong>, pour votre famille, et remettez en question vos choix de vie,
                         </p>
                         <p>
                             Vous n'arrivez plus à trouver le juste équilibre dans votre vie,
                         </p>
                         <p>
-                            Vous passez votre temps à courir après le temps,
+                            Vous passez votre temps <strong>à courir après le temps</strong>,
                         </p>
                         <p>
-                            Vous êtes épuisés de tenter de concilier vos différents rôles (mère, femme, professionnelle...).
+                            Vous êtes <strong>épuisés de tenter de concilier vos différents rôles</strong> (mère, femme, professionnelle...).
                         </p>
                     </div>
-                    <div className="w-full md:w-1/2 md:pl-6 paragraph">
-                        <h4 className="subtitle">Vous souhaitez :</h4>
+                    <div className="w-full md:w-1/2 paragraph font-bold">
+                        <h4 className="subtitle text-tertary-900">Vous souhaitez :</h4>
                         <p>
                             Vous retrouver en tant que femme, homme, en étant plus à votre écoute,
                         </p>
@@ -86,7 +86,7 @@ export default function Parentalite() {
                             Retrouver de l'énergie en prenant soin de sa tête & de son corps,
                         </p>
                         <p>
-                            Oser être VOUS.
+                            Oser être VOUS !
                         </p>
                     </div>
                 </div>

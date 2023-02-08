@@ -15,8 +15,8 @@ export default function Intro() {
     return (
         <section id="bio">
             <div className="container">
-                <div className="flex flex-wrap flex-col sm:flex-row justify-center">
-                    <div className="w-1/2 md:w-1/4 md:pr-6 pb-6 md:pb-0 mx-auto transition duration-200 scale-0 opacity-0 about-img">
+                <div className="flex flex-col md:flex-row gap-6 justify-center">
+                    <div className="w-1/2 md:w-1/4 mx-auto transition duration-200 scale-0 opacity-0 about-img">
                         <Image
                             src={Sabrina}
                             width={Sabrina.width}
@@ -25,7 +25,7 @@ export default function Intro() {
                             alt="Sabrina Appriou"
                         />
                     </div>
-                    <div className="w-full md:w-3/4 md:pl-6">
+                    <div className="w-full md:w-3/4">
                         <div className="handwrite mb-8 text-center md:text-start">
                             <h4 className="title uppercase">Sabrina Appriou</h4>
                             <h5 className="text-3xl text-md-5xl">

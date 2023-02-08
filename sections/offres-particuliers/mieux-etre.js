@@ -19,8 +19,8 @@ export default function MieuxEtre() {
                     <h4 className="subtitle">Accompagnement</h4>
                     <h4 className="title">De l'image du corps à l'image de soi</h4>
                 </div>
-                <div className="flex flex-wrap flex-col sm:flex-row justify-center items-center mb-10">
-                    <div className="w-1/2 md:w-1/4 md:pr-6 pb-6 md:pb-0 mx-auto transition duration-200 scale-0 opacity-0 about-img">
+                <div className="flex flex-col md:flex-row gap-6 justify-center items-center mb-10">
+                    <div className="w-1/2 md:w-1/4 mx-auto transition duration-200 scale-0 opacity-0 about-img">
                         <Image
                             src={MieuxEtreIllustration}
                             width={MieuxEtreIllustration.width}
@@ -29,7 +29,7 @@ export default function MieuxEtre() {
                             alt="De l'image du corps à l'image de soi"
                         />
                     </div>
-                    <div className="w-full md:w-3/4 md:pl-6 paragraph">
+                    <div className="w-full md:w-3/4 paragraph">
                         <p>
                             Vous avez pris du poids pendant la grossesse et avez des difficultés à retrouver votre poids d'avant-grossesse
                         </p>
@@ -46,21 +46,21 @@ export default function MieuxEtre() {
                     </div>
                 </div>
 
-                <div className="flex flex-wrap flex-col sm:flex-row justify-center items-start mb-10">
-                    <div className="w-full md:w-1/2 md:pl-6 paragraph">
-                        <h4 className="subtitle">Aujourd'hui :</h4>
+                <div className="flex flex-col md:flex-row gap-6 justify-center items-start mb-10">
+                    <div className="w-full md:w-1/2 paragraph">
+                        <h4 className="subtitle text-primary-800">Aujourd'hui :</h4>
                         <p>
-                            Vous avez un rapport difficile avec votre corps et cela a un fort impact sur votre estime de soi,
+                            Vous avez <strong>un rapport difficile avec votre corps</strong> et cela a un fort impact sur votre estime de soi,
                         </p>
                         <p>
-                            Vous avez entrepris des actions mais êtes frustrés de ne pas avoir les résultats escomptés,
+                            Vous avez <strong>entrepris des actions mais êtes frustrés</strong> de ne pas avoir les résultats escomptés,
                         </p>
                         <p>
-                            Vous ressentez le besoin d'un changement plus profond et plus durable.
+                            Vous ressentez le <strong>besoin d'un changement plus profond</strong> et plus durable.
                         </p>
                     </div>
-                    <div className="w-full md:w-1/2 md:pl-6 paragraph">
-                        <h4 className="subtitle">Vous souhaitez :</h4>
+                    <div className="w-full md:w-1/2 paragraph font-bold">
+                        <h4 className="subtitle text-tertary-900">Vous souhaitez :</h4>
                         <p>
                             Vous sentir plus à l'aise avec votre image, votre corps,
                         </p>

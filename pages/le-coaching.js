@@ -4,7 +4,7 @@ import AccompagnementQualite from '../sections/le-coaching/accompagnement-qualit
 import CommentCaMarche from '../sections/le-coaching/comment-ca-marche';
 import Contact from '../sections/contact';
 
-import CoachingIllustration from '../public/images/coaching_purple.jpg';
+import CoachingIllustration from '../public/images/banners/coaching.jpg';
 
 export default function LeCoaching() {
     const background = {

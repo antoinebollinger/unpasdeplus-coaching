@@ -2,8 +2,8 @@ import Image from "next/image";
 import Navbar from "./navbar";
 import Headline from "./headline";
 
-import Wave from "../public/images/header-shape.svg";
-import Home from "../public/images/home_purple.jpg";
+import Wave from "../public/images/svg/wave-white.svg";
+import Home from "../public/images/banners/home.jpg";
 
 Header.defaultProps = {
     background: {

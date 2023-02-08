@@ -1,5 +1,5 @@
 import Image from "next/image";
-import StepsImg from "../public/images/steps_rounded.jpg";
+import StepsImg from "../public/images/map.jpg";
 
 import { useEffect } from "react";
 import { reveal } from '../components/reveal';
@@ -37,15 +37,15 @@ export default function Steps() {
                     <h4 className="title">Les 5 étapes-clés du parcours d'accompagement</h4>
                 </div>
                 <div className="lg:max-w-4xl mx-auto">
-                    <div className="flex flex-wrap flex-col sm:flex-row justify-center items-center">
-                        <div className="w-1/2 md:w-1/2 pb-6 md:pb-0 md:pr-6 mx-auto transition duration-200 scale-0 about-img">
+                    <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
+                        <div className="w-1/2 md:w-1/2 mx-auto transition duration-200 scale-0 about-img">
                             <Image
                                 src={StepsImg}
                                 className="w-full rounded-full"
                                 alt="Les étapes du parcours"
                             />
                         </div>
-                        <div className="w-full md:w-1/2 md:pl-6 flex flex-col gap-5">
+                        <div className="w-full md:w-1/2 flex flex-col gap-5">
                             {mySteps(
                                 "1. Introspection",
                                 "On part de vous ! Comprendre son fonctionnement, ses schémas de pensées, ses freins actuels, ses blocages."

@@ -1,7 +1,7 @@
 import Image from "next/image";
-import How1 from '../../public/images/how/1.jpg';
-import How2 from '../../public/images/how/2.jpg';
-import How3 from '../../public/images/how/3.jpg';
+import How1 from '../../public/images/le-coaching/how/1.jpg';
+import How2 from '../../public/images/le-coaching/how/2.jpg';
+import How3 from '../../public/images/le-coaching/how/3.jpg';
 
 import { useEffect } from "react";
 import { reveal } from "../../components/reveal";
@@ -17,15 +17,15 @@ export default function CommentCaMarche() {
 
     const howStep = (img, title, subtitle, text) => {
         return (
-            <div className="flex flex-wrap flex-col sm:flex-row justify-center items-center mt-8">
-                <div className="how-step w-1/2 md:w-1/4 md:pr-6 pb-6 md:pb-0 mx-auto transition duration-300 opacity-0 scale-0">
+            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mt-8">
+                <div className="w-1/2 md:w-1/4 mx-auto transition duration-300 opacity-0 scale-0 how-step">
                     <Image
                         src={img}
                         className="w-full rounded-full"
                         alt="Entretien préalable"
                     />
                 </div>
-                <div className="how-step w-full md:w-3/4 md:pl-6 p-2 bg-white rounded shadow-lg transition duration-300 opacity-0 translate-x-3/4">
+                <div className="w-full md:w-3/4 p-2 bg-white rounded shadow-lg transition duration-300 opacity-0 translate-x-3/4 how-step">
                     <p className="text-xl font-semibold text-gray-900">{title}</p>
                     <p className="text-lg text-gray-700 pb-5">{subtitle}</p>
                     <div dangerouslySetInnerHTML={{ __html: text }} />

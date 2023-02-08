@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Epanouissement from "../../public/images/epanouissement.jpg";
+import Epanouissement from "../../public/images/index/epanouissement.jpg";
 
 import { useEffect } from 'react';
 import { reveal } from '../../components/reveal';
@@ -15,15 +15,15 @@ export default function Intro() {
     return (
         <section id="intro" className="bg-gray-100">
             <div className="container">
-                <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-                    <div className="w-full md:w-1/3 pb-6 md:pb-0 mx-auto transition duration-200 scale-0 about-img">
+                <div className="flex flex-col lg:flex-row gap-6 justify-center items-center">
+                    <div className="w-2/3 lg:w-1/3 mx-auto transition duration-200 scale-0 about-img">
                         <Image
                             src={Epanouissement}
                             className="w-full rounded-xl"
                             alt="Femme épanouie"
                         />
                     </div>
-                    <div className="w-full md:w-2/3">
+                    <div className="w-full lg:w-2/3">
                         <p>
                             Commencer à faire <strong>UN PAS</strong>, enclencher la mise ne mouvement, <strong>le premier PAS</strong>, peut parfois être difficile voire compliqué.
                         </p>

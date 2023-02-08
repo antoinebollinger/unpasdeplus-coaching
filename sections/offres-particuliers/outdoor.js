@@ -21,8 +21,8 @@ export default function Outdoor() {
                     <h4 className="title">Coaching Outdoor</h4>
                     <p className="text-3xl">Oser sortir de son cadre habituel pour explorer le champ des possibles</p>
                 </div>
-                <div className="flex flex-wrap flex-col sm:flex-row justify-center items-center mb-10">
-                    <div className="w-1/2 md:w-1/4 md:pr-6 pb-6 md:pb-0 mx-auto transition duration-200 scale-0 opacity-0 about-img">
+                <div className="flex flex-col md:flex-row gap-6 justify-center items-center mb-10">
+                    <div className="w-1/2 md:w-1/4 mx-auto transition duration-200 scale-0 opacity-0 about-img">
                         <Image
                             src={IntroIllustration}
                             width={IntroIllustration.width}
@@ -31,7 +31,7 @@ export default function Outdoor() {
                             alt="Coaching Outdoor"
                         />
                     </div>
-                    <div className="w-full md:w-3/4 md:pl-6 paragraph">
+                    <div className="w-full md:w-3/4 paragraph">
                         <p>
                             <strong>La marche est un outil précieux</strong> pour éveiller nos sens et nous reconnecter à notre nature profonde. C'est une méthode innovante pour des résultats concrets.
                         </p>
@@ -41,8 +41,8 @@ export default function Outdoor() {
                     </div>
                 </div>
 
-                <div className="flex flex-wrap flex-col sm:flex-row justify-center items-center mb-10">
-                    <div className="w-full md:w-3/4 md:pl-6 paragraph">
+                <div className="flex flex-col md:flex-row gap-6 justify-center items-start mb-10">
+                    <div className="w-full md:w-3/4 paragraph">
                         <h4 className="subtitle">Cet accompagnement est fait pour vous :</h4>
                         <p>
                             Clarifier votre situation personnelle / professionnelle,
@@ -66,7 +66,7 @@ export default function Outdoor() {
                             Sortir de l'immobilisme.
                         </p>
                     </div>
-                    <div className="w-1/2 md:w-1/4 md:pr-6 pb-6 md:pb-0 mx-auto transition duration-200 scale-0 opacity-0 about-img">
+                    <div className="w-1/2 md:w-1/4 mx-auto transition duration-200 scale-0 opacity-0 about-img">
                         <Image
                             src={OutroIllustration}
                             width={OutroIllustration.width}

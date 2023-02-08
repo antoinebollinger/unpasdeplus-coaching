@@ -1,12 +1,12 @@
 import Layout from '../components/layout';
+import Break from '../components/break';
 import Parentalite from '../sections/offres-particuliers/parentalite';
 import MieuxEtre from '../sections/offres-particuliers/mieux-etre';
 import Outdoor from '../sections/offres-particuliers/outdoor';
 import Steps from '../sections/steps';
 import Contact from '../sections/contact';
 
-import ParticuliersIllustration from '../public/images/particuliers_purple.jpg';
-import Break from '../components/break';
+import ParticuliersIllustration from '../public/images/banners/particuliers.jpg';
 
 export default function OffresParticuliers() {
     const background = {
