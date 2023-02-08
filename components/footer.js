@@ -78,12 +78,12 @@ export default function Footer({ onThisPage }) {
                                 <ul>
                                     <li>
                                         <Link href="/offres-particuliers">
-                                            Offres Particuliers
+                                            Coaching Particuliers
                                         </Link>
                                     </li>
                                     <li>
                                         <Link href="/offres-entreprises">
-                                            Offres Entreprises
+                                            Coaching Entreprises
                                         </Link>
                                     </li>
                                 </ul>

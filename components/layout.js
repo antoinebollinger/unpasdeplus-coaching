@@ -5,6 +5,7 @@ import Footer from "./footer";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
+import { Html } from "next/document";
 
 export const siteTitle = 'Un Pas De Plus';
 export const siteDescription = "Le site de votre coach en développement personnel Sabrina Appriou, fondatrice d'Un Pas De Plus.";
@@ -17,7 +18,15 @@ export default function Layout({ children, title, props, background, logo, onThi
 
     useEffect(() => {
         setSiteUrl(window.location.origin);
-    })
+
+        const backToTop = document.querySelector(".back-to-top");
+        backToTop?.addEventListener("click", e => {
+            // e.preventDefault();
+            document.querySelector("html").style.scrollBehavior = "smooth";
+            console.log(document.querySelector("html"));
+
+        })
+    }, [])
 
     return (
         <React.Fragment>

@@ -24,6 +24,7 @@ export default function Navbar() {
             backToTop.style.opacity = 1;
         else
             backToTop.style.opacity = 0;
+        document.querySelector("html").style.scrollBehavior = "auto";
     };
 
     useEffect(() => {
@@ -61,7 +62,7 @@ export default function Navbar() {
             <div className="absolute left-0 z-30 hidden w-full px-5 py-2 duration-300 bg-white shadow md:opacity-100 md:w-auto navbar-collapse md:block top-100 mt-full md:static md:bg-transparent md:shadow-none" id="navbarOne">
                 <ul className="items-center content-start mr-auto lg:justify-center md:justify-end navbar-nav md:flex uppercase">
                     <li className={`nav-item ${router.pathname == "/" ? "active" : ""}`}>
-                        <Link href="/" className="dropdown">
+                        <Link href="/">
                             <FontAwesomeIcon icon={faHome} className="text-2xl" />
                         </Link>
                     </li>
@@ -87,16 +88,6 @@ export default function Navbar() {
                             </li>
                         </ul>
                     </li>
-                    {/* <li className={`nav-item ${router.pathname == "/offres-particuliers" ? "active" : ""}`}>
-                        <Link href="/offres-particuliers" className="page-scroll">
-                            Offres<br />particuliers
-                        </Link>
-                    </li>
-                    <li className={`nav-item ${router.pathname == "/offres-entreprises" ? "active" : ""}`}>
-                        <Link href="/offres-entreprises" className="page-scroll">
-                            Offres<br />entreprises
-                        </Link>
-                    </li> */}
                     <li className={`nav-item ${router.pathname == "/qui-je-suis" ? "active" : ""}`}>
                         <Link href="/qui-je-suis" className="page-scroll">
                             Qui<br />je suis
