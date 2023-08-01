@@ -1,0 +1,46 @@
+.navbar-nav {
+    .nav-item {
+        a {
+            @apply relative inline-block px-8 py-2 font-bold text-gray-900 uppercase duration-300 text-left md:text-center cursor-pointer;
+            &:hover ~ ul {
+                @apply max-h-max;
+            }
+        }
+        > ul {
+            @apply max-h-0 md:absolute overflow-hidden transition md:px-0 px-8;
+            &:hover {
+                @apply max-h-max;
+            }
+        }
+        &.active, &:hover {
+            > a {
+                @apply text-tertary-900;
+            }
+        }
+    }
+}
+
+.navbar-collapse.show {
+    @apply block;
+}
+
+.toggler-icon {
+    @apply relative block duration-300 bg-gray-700;
+    height: 2px;
+    width: 30px;
+    margin: 6px 0;
+}
+
+.active>.toggler-icon:nth-child(1) {
+    @apply transform rotate-45;
+    top: 7px;
+}
+
+.active>.toggler-icon:nth-child(2) {
+    @apply opacity-0;
+}
+
+.active>.toggler-icon:nth-child(3) {
+    top: -8px;
+    transform: rotate(135deg);
+}

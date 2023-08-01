@@ -1,0 +1,14 @@
+.coaching {
+    h4 {
+    @apply mb-2 text-xl lg:text-2xl font-medium text-gray-900 mx-auto max-w-2xl text-center pb-10;
+    }
+}
+
+.legals {
+    h4 {
+        @apply font-bold text-tertary-900 pb-4;
+    }
+    p {
+        @apply pb-8;
+    }
+}

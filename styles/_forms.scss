@@ -1,0 +1,14 @@
+.single-form textarea,
+.single-form input {
+  @apply w-full px-6 py-3 mb-1 duration-300 bg-white border border-gray-300 rounded;
+}
+.single-form textarea:focus,
+.single-form input:focus {
+  @apply border-blue-600 outline-none;
+}
+.form-message.error {
+  @apply text-red-500;
+}
+.form-message.success {
+  @apply text-green-400;
+}

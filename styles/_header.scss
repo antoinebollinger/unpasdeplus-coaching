@@ -1,0 +1,41 @@
+header {
+    &::before {
+        // content: '';
+        @apply absolute inset-0 z-10 bg-gradient-to-b from-white via-light-white;
+    }
+    .navigation {
+        @apply absolute top-0 left-0 z-30 w-full py-3 md:py-1 duration-300 bg-white opacity-90;
+        &.sticky {
+            @apply fixed py-2 md:py-0 opacity-100 shadow;
+            ul {
+                @apply opacity-100;
+            }
+        }
+        ul {
+            @apply duration-300 bg-white;
+        }
+    }
+    .choice-ul {
+        li {
+        @apply p-1;
+        }
+        button {
+            @apply rounded shadow bg-gray-100 hover:bg-gray-200 px-4 py-2 transition duration-200;
+            &.vert {
+                &.active {
+                    @apply bg-tertary-900 text-white;
+                }
+            }
+            &.noir {
+                &.active {
+                    @apply bg-black text-white;
+                }
+            }
+            &.blanc {
+                &.active {
+                    @apply bg-white;
+                }
+            }
+        }
+    }
+}
