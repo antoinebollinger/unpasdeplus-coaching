@@ -5,17 +5,17 @@ export function openModal({ body = '', header = '', href = '#', buttons = 'block
     const modal = document.getElementById('modal');
     modal.querySelector('.modal-title').insertAdjacentHTML('afterbegin', header);
     modal.querySelector('.modal-body').insertAdjacentHTML('afterbegin', body);
-    modal.querySelector('.modal-link').dataset.href = href;
+    (modal.querySelector('.modal-link') as HTMLElement).dataset.href = href;
     document.getElementById('modal-buttons').className = buttons;
     modal.classList.remove('hidden');
 }
 
 export function closeModal() {
     const modal = document.getElementById('modal');
-    const url = modal.querySelector('.modal-link').dataset.href;
+    const url = (modal.querySelector('.modal-link') as HTMLElement).dataset.href;
     modal.querySelector('.modal-title').innerHTML = '';
     modal.querySelector('.modal-body').innerHTML = '';
-    modal.querySelector('.modal-link').dataset.href = '#';
+    (modal.querySelector('.modal-link') as HTMLElement).dataset.href = '#';
     document.getElementById('modal-buttons').className = 'block';
     modal.classList.add('hidden');
     return url;
