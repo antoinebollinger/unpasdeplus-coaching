@@ -4,7 +4,7 @@ config.autoAddCss = false
 import '../styles/global.scss'
 import { Metadata } from 'next'
 import { siteData } from '../src/data/metadata'
-import { roboto, urbanist, amatic } from '../styles/font'
+import { inter, roboto, urbanist, amatic } from '../styles/font'
 
 export const metadata: Metadata = {
     title: siteData.title,
@@ -17,7 +17,7 @@ export default function RootLayout({
     children: React.ReactNode,
 }) {
     return (
-        <html lang="en" className={`${roboto.variable} ${urbanist.variable} ${amatic.variable}`}>
+        <html lang="en" className={`${roboto.variable} ${urbanist.variable} ${amatic.variable} ${inter.variable}`}>
             <body>
                 {children}
             </body>

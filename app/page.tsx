@@ -1,5 +1,5 @@
 import Layout from '../src/layout'
-import Intro from '../src/sections/intro'
+import MaMission from '../src/sections/ma-mission'
 import MonParcours from '../src/sections/mon-parcours'
 import Contact from '../src/components/contact'
 import Banner from '/public/images/banners/home.webp'
@@ -22,7 +22,7 @@ export default function Page() {
 
     return (
         <Layout banner={Banner} onThisPage={onThisPage} >
-            <Intro />
+            <MaMission />
             <MonParcours />
             <Contact />
         </Layout >

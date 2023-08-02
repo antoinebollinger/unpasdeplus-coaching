@@ -5,7 +5,7 @@ import { reveal } from '../utils/reveal'
 import MamanZen from '/public/images/index/maman-zen.webp'
 import Logo from '/public/logos/logo-texte-vertical.svg'
 
-export default function Intro() {
+export default function MaMission() {
     useEffect(() => {
         reveal({
             collection: Array.from(document.querySelectorAll('.about-img')),
@@ -14,7 +14,7 @@ export default function Intro() {
     }, [])
 
     return (
-        <section id="intro">
+        <section id="mamission" className="intro">
             <div className="container">
                 <div className="flex justify-center items-center">
                     <Image

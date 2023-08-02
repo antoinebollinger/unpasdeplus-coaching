@@ -1,4 +1,9 @@
-import { Roboto, Urbanist, Amatic_SC } from "next/font/google"
+import { Inter, Roboto, Urbanist, Amatic_SC } from "next/font/google"
+
+export const inter = Inter({
+    subsets: ['latin'],
+    variable: '--font-sans'
+})
 
 export const roboto = Roboto({
     weight: ['400', '700'],
