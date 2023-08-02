@@ -60,7 +60,7 @@ export default function Navbar() {
             <div className="absolute left-0 z-30 hidden w-full px-5 py-2 duration-300 bg-white shadow md:opacity-100 md:w-auto navbar-collapse md:block top-100 mt-full md:static md:bg-transparent md:shadow-none" id="navbarOne">
                 <ul className="items-center content-start mr-auto lg:justify-center md:justify-end navbar-nav md:flex uppercase">
                     <li className={`nav-item ${pathname == "/" ? "active" : ""}`}>
-                        <Link href="/">
+                        <Link href="/" aria-label="Home">
                             <FontAwesomeIcon icon={faHome} className="text-2xl" />
                         </Link>
                     </li>
@@ -70,9 +70,9 @@ export default function Navbar() {
                         </Link>
                     </li>
                     <li className={`relative nav-item ${["/offres-particuliers", "/offres-entreprises"].indexOf(pathname) !== -1 ? "active" : ""}`}>
-                        <a>
+                        <Link href="/offres-particuliers" className="page-scroll">
                             Offres<br />de coaching
-                        </a>
+                        </Link>
                         <ul>
                             <li className={`nav-item ${pathname == "/offres-particuliers" ? "active" : ""}`}>
                                 <Link href="/offres-particuliers" className="page-scroll">
