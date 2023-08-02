@@ -20,7 +20,7 @@ export default function Header({
         anchors?.forEach(anchor => anchor.addEventListener('click', e => {
             document.querySelector('html').style.scrollBehavior = anchor.href.includes('#') ? 'smooth' : 'auto'
         }))
-    })
+    }, [])
 
     return (
         <header className="relative min-h-[60vh]" id="header">
