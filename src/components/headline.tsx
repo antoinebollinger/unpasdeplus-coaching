@@ -3,6 +3,7 @@ type headerProps = {
     title?: boolean,
     subtitle?: boolean
 }
+
 export default function Headline({ pretitle = false, title = false, subtitle = false }: headerProps) {
 
     return (
