@@ -17,7 +17,7 @@ export default function Layout({ children, headerProps, banner = {}, onThisPage 
             <Header headerProps={headerProps} banner={banner} />
             {children}
             <Footer onThisPage={onThisPage} />
-            <a className="back-to-top" href="#header">
+            <a className="back-to-top" href="#header" aria-label="Haut de page">
                 <FontAwesomeIcon icon={faChevronUp} />
             </a>
             <Modal className="z-[999]" />

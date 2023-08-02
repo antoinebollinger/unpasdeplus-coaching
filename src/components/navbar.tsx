@@ -4,9 +4,9 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faHome, } from '@fortawesome/free-solid-svg-icons'
 import newLogo from '/public/logos/logo-texte-horizontal.svg'
+import Socials from './socials'
 
 export default function Navbar() {
     const pathname = usePathname();
@@ -45,7 +45,7 @@ export default function Navbar() {
 
     return (
         <nav className="flex items-center justify-between navbar navbar-expand-md" >
-            <Link href="/" className="mr-4 navbar-brand">
+            <Link href="/" className="mr-4 navbar-brand" aria-label="Home">
                 <Image
                     src={newLogo}
                     alt="Logo"
@@ -96,11 +96,7 @@ export default function Navbar() {
 
             <div className="items-center justify-end hidden navbar-social lg:flex">
                 <span className="mr-4 font-bold text-gray-900 uppercase">Suivez-moi</span>
-                <ul className="flex footer-social">
-                    <li><a href="https://www.facebook.com/sabrina.appriou"><FontAwesomeIcon icon={faFacebook} /></a></li>
-                    <li><a href="https://www.instagram.com/sabs.app/"><FontAwesomeIcon icon={faInstagram} /></a></li>
-                    <li><a href="https://www.linkedin.com/in/sabrina-appriou-0138a8122/"><FontAwesomeIcon icon={faLinkedin} /></a></li>
-                </ul>
+                <Socials className="flex footer-social" />
             </div>
         </nav>
     )
