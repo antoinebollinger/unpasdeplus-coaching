@@ -3,7 +3,6 @@ import Link from 'next/link'
 import Image from 'next/image'
 import Logo from '/public/logos/logo-texte-horizontal.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons'
 import { useEffect } from 'react'
 import { closeModal, openModal } from '../utils/modal'
@@ -24,7 +23,8 @@ export default function Footer({ onThisPage = defaultProps }) {
     useEffect(() => {
         document.forms['newsletter-form'].addEventListener('submit', async e => {
             e.preventDefault();
-            e.preventDefault();
+            if (e.target.elements["email_from"].value === '')
+                return;
             openModal({
                 body: 'Envoi en cours', buttons: 'hidden'
             });
@@ -132,7 +132,7 @@ export default function Footer({ onThisPage = defaultProps }) {
                                 <p className="footer-title">Inscription à ma newsletter</p>
                                 <div className="newsletter">
                                     <form id="newsletter-form" className="relative mb-4">
-                                        <input type="email" name="email_from" placeholder="Je m'inscris en indiquant mon email" className="w-full py-3 pl-6 pr-12 duration-300 bg-gray-200 border border-gray-200 rounded-full focus:border-blue-600 focus:outline-none" />
+                                        <input type="email" name="email_from" placeholder="Je m'inscris en indiquant mon email" className="w-full py-3 pl-6 pr-12 duration-300 bg-gray-200 border border-gray-200 rounded-full focus:border-blue-600 focus:outline-none" required />
                                         <button type="submit" className="absolute top-0 right-0 mt-3 mr-6 text-xl text-primary-600" aria-label="S'incrire à ma newsletter">
                                             <FontAwesomeIcon icon={faAngleDoubleRight} />
                                         </button>
