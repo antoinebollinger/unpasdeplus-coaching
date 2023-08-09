@@ -44,19 +44,19 @@ export default function Pratique() {
                 <div className="lg:max-w-5xl mx-auto mb-16">
                     {list(
                         Pratique1,
-                        "Séances en présentiel et/u distanciel à Vannes et ses alentours. Durée de 1h/1h30 la séance à 10/15 jours d'intervalle"
+                        "Séances en <strong>présentiel</strong> et/ou <strong>distanciel</strong> à Vannes et ses alentours. Durée de 1h/1h30 la séance à 10/15 jours d'intervalle"
                     )}
                     {list(
                         Pratique2,
-                        "Des exercices de développements personnels entre les séances pour continuer à vous développer."
+                        "Des <strong>exercices de développements personnels</strong> entre les séances pour continuer à vous développer."
                     )}
                     {list(
                         Pratique3,
-                        "Echanges Whatsapp pour garder la dynamique et vous inspirer."
+                        "Echanges Whatsapp pour <strong>garder la dynamique</strong> et vous inspirer."
                     )}
                     {list(
                         Pratique4,
-                        "Bilan à mi-parcours pour évaluer le chemin parcouru. Bilan pour clôturer l'accompagnement."
+                        "<strong>Bilan à mi-parcours</strong> pour évaluer le chemin parcouru. <strong>Bilan final</strong> pour clôturer l'accompagnement."
                     )}
                 </div>
                 <div className="text-center">
