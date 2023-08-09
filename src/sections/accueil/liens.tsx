@@ -30,7 +30,7 @@ export default function Liens() {
                             <strong>Sabrina Appriou</strong>
                         </p>
                         <p className="text-lg text-center">
-                            Fondatrice Un pas de plus
+                            Fondatrice UN PAS DE PLUS
                         </p>
                         <Link href="/qui-je-suis" className="mx-auto">
                             <button type="submit" className="main-btn gradient-btn focus:outline-none uppercase">Qui je suis</button>

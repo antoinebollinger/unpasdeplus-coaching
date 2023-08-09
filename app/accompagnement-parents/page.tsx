@@ -12,12 +12,31 @@ export const metadata = {
 }
 
 export default function Page() {
+    const onThisPage = [
+        {
+            title: 'Introduction',
+            link: '#header'
+        },
+        {
+            title: 'C\'est quoi ?',
+            link: '#quoi'
+        },
+        {
+            title: 'Ma méthode',
+            link: '#methode'
+        },
+        {
+            title: 'En pratique',
+            link: '#pratique'
+        }
+    ];
+
     const headerProps = {
         title: 'Accompagnement des parents',
     }
 
     return (
-        <Layout banner={Banner} headerProps={headerProps}>
+        <Layout banner={Banner} headerProps={headerProps} onThisPage={onThisPage}>
             <Intro />
             <Qui />
             <Quoi />

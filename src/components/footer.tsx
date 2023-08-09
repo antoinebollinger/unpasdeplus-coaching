@@ -20,7 +20,7 @@ export default function Footer({ onThisPage = defaultProps }) {
         document.forms['newsletter-form'].addEventListener('submit', async e => {
             e.preventDefault();
             if (e.target.elements["email_from"].value === '')
-                return;
+                return
             openModal({
                 body: 'Envoi en cours', buttons: 'hidden'
             });

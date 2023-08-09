@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
-export default function Socials({ className }: { className: string }) {
+export default function Socials({ className }: { className?: string }) {
     return (
         <ul className={className}>
             <li>

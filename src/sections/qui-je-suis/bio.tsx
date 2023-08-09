@@ -29,7 +29,7 @@ export default function Bio() {
                         <div className="handwrite mb-8 text-center md:text-start">
                             <h3>Sabrina Appriou</h3>
                             <h4>
-                                Fondatrice d'UN PAS DE PLUS - Coach certifiée Linkup Coaching
+                                Fondatrice UN PAS DE PLUS
                             </h4>
                         </div>
                         <h5>

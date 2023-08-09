@@ -3,8 +3,6 @@ import { useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome, } from '@fortawesome/free-solid-svg-icons'
 import newLogo from '/public/logos/logo-texte-horizontal.svg'
 import Socials from './socials'
 
@@ -59,11 +57,6 @@ export default function Navbar() {
             </button>
             <div className="absolute left-0 z-30 hidden w-full px-5 py-2 duration-300 bg-white shadow md:opacity-100 md:w-auto navbar-collapse md:block top-100 mt-full md:static md:bg-transparent md:shadow-none" id="navbarOne">
                 <ul className="items-center content-start mr-auto lg:justify-center md:justify-end navbar-nav md:flex uppercase">
-                    {/* <li className={`nav-item ${pathname == "/" ? "active" : ""}`}>
-                        <Link href="/" aria-label="Home">
-                            <FontAwesomeIcon icon={faHome} className="text-2xl" />
-                        </Link>
-                    </li> */}
                     <li className={`nav-item ${pathname == "/accompagnement-parents" ? "active" : ""}`}>
                         <Link href="/accompagnement-parents" className="page-scroll">
                             Accompagnement<br />parents
@@ -74,23 +67,6 @@ export default function Navbar() {
                             Accompagnement<br />entreprises
                         </Link>
                     </li>
-                    {/* <li className={`relative nav-item ${["/offres-particuliers", "/offres-entreprises"].indexOf(pathname) !== -1 ? "active" : ""}`}>
-                        <Link href="/offres-particuliers" className="page-scroll">
-                            Offres<br />de coaching
-                        </Link>
-                        <ul>
-                            <li className={`nav-item ${pathname == "/offres-particuliers" ? "active" : ""}`}>
-                                <Link href="/offres-particuliers" className="page-scroll">
-                                    Particuliers
-                                </Link>
-                            </li>
-                            <li className={`nav-item ${pathname == "/offres-entreprises" ? "active" : ""}`}>
-                                <Link href="/offres-entreprises" className="page-scroll">
-                                    Entreprises
-                                </Link>
-                            </li>
-                        </ul>
-                    </li> */}
                     <li className={`nav-item ${pathname == "/qui-je-suis" ? "active" : ""}`}>
                         <Link href="/qui-je-suis" className="page-scroll">
                             Qui<br />je suis

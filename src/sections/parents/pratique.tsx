@@ -36,7 +36,7 @@ export default function Pratique() {
     }
 
     return (
-        <section id="mon-parcours">
+        <section id="pratique">
             <div className="container">
                 <div className="text-center pb-10">
                     <h3>En pratique, ça donne quoi ?</h3>
