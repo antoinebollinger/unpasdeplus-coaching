@@ -4,7 +4,7 @@ import Swipe from 'react-easy-swipe'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
 
-export default function Temoignages() {
+export default function Temoignages({ className = '' }: { className?: string }) {
     const [currentSlide, setCurrentSlide] = useState(0)
 
     const slides = [
@@ -30,7 +30,7 @@ export default function Temoignages() {
     }
 
     return (
-        <section id="temoignages">
+        <section id="temoignages" className={className}>
             <div className="container">
                 <div className="text-center pb-10">
                     <h3>Témoignages</h3>

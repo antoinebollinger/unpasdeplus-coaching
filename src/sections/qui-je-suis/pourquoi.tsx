@@ -3,7 +3,7 @@ import { Chart as ChartJS, registerables } from 'chart.js'
 import { Doughnut } from 'react-chartjs-2'
 ChartJS.register(...registerables)
 
-export default function Pourquoi() {
+export default function Pourquoi({ className = 'bg-gray-100' }: { className?: string }) {
     const data = {
         labels: ['Répétition', 'Motivation', 'Persévérance', 'Méthode', 'Régularité', 'Entraînement'],
         datasets: [{
@@ -20,7 +20,7 @@ export default function Pourquoi() {
     }
 
     return (
-        <section id="mon-parcours" className="bg-gray-100">
+        <section id="mon-parcours" className={className}>
             <div className="container">
                 <div className="pb-10">
                     <p className="text-lg"><strong>Un Pas de Plus</strong> fait référence au cercle vertueux du mouvement physique et mental, et des effets bénéfiques considérables du "pas". Faire un pas qui entraîne un autre avec ces différents leviers :</p>

@@ -5,21 +5,21 @@ import { reveal } from '../../utils/reveal'
 import Qui1 from '/public/images/parents/qui-1.webp'
 import Qui2 from '/public/images/parents/qui-2.webp'
 
-export default function Qui() {
+export default function Qui({ className = 'bg-gray-100' }: { className?: string }) {
     useEffect(() => {
         reveal({
             collection: Array.from(document.querySelectorAll('.qui-img')),
             classesToRemove: ['scale-0', 'opacity-0']
         })
         reveal({
-            collection: Array.from(document.querySelectorAll('.qui li')),
+            collection: Array.from(document.querySelectorAll('#qui li')),
             classesToRemove: ['opacity-0'],
             delayIncrement: 50
         })
     }, [])
 
     return (
-        <section id="qui" className="bg-gray-100 qui">
+        <section id="qui" className={className}>
             <div className="container">
                 <div className="flex flex-col md:flex-row gap-6 justify-center items-center mb-16">
                     <div className="w-full md:w-2/3 order-last md:order-first">

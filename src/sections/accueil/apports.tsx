@@ -2,7 +2,7 @@
 import { useEffect } from 'react'
 import { reveal } from '../../utils/reveal'
 
-export default function Apports() {
+export default function Apports({ className = 'bg-gray-100' }: { className?: string }) {
     useEffect(() => {
         reveal({
             collection: Array.from(document.querySelectorAll('.apports-text')),
@@ -27,7 +27,7 @@ export default function Apports() {
     }
 
     return (
-        <section id="apports-coaching" className="bg-gray-100">
+        <section id="apports-coaching" className={className}>
             <div className="container">
                 <div className="text-center pb-10">
                     <h3>Les apports du coaching</h3>

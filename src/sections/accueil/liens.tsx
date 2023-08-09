@@ -7,7 +7,7 @@ import Sabrina from '/public/images/sabrina.webp'
 import Parents from '/public/images/parents/parents.webp'
 import Entreprise from '/public/images/entreprises/entreprises.webp'
 
-export default function Liens() {
+export default function Liens({ className = 'bg-gray-100' }: { className?: string }) {
     useEffect(() => {
         reveal({
             collection: Array.from(document.querySelectorAll('.liens-img')),
@@ -16,7 +16,7 @@ export default function Liens() {
     }, [])
 
     return (
-        <section className="intro-liens bg-gray-100">
+        <section className={className}>
             <div className="container">
                 <div className="flex flex-col lg:flex-row gap-16 justify-center items-start">
                     <div className="w-full lg:w-1/3 flex flex-col gap-6">

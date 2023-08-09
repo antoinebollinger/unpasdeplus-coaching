@@ -1,6 +1,6 @@
-export default function Quoi() {
+export default function Quoi({ className = '' }: { className?: string }) {
     return (
-        <section id="quoi">
+        <section id="quoi" className={className}>
             <div className="container">
                 <div className="text-center pb-10">
                     <h3>C'est quoi exactement ?</h3>

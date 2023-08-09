@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { reveal } from '../../utils/reveal'
 import MamanZen from '/public/images/accueil/maman-zen.webp'
 
-export default function Approche() {
+export default function Approche({ className = '' }: { className?: string }) {
     useEffect(() => {
         reveal({
             collection: Array.from(document.querySelectorAll('.approche-img')),
@@ -14,7 +14,7 @@ export default function Approche() {
     }, [])
 
     return (
-        <section className="intro-approche">
+        <section className={className}>
             <div className="container">
                 <div className="flex flex-col lg:flex-row gap-6 justify-center items-center mb-16">
                     <div className="w-2/3 lg:w-1/3 transition duration-200 scale-0 approche-img">
@@ -47,6 +47,6 @@ export default function Approche() {
                     </Link>
                 </div>
             </div>
-        </section>
+        </section >
     )
 }

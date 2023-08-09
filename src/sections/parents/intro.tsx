@@ -5,14 +5,14 @@ import Link from 'next/link'
 import { reveal } from '../../utils/reveal'
 import IntroImg from '/public/images/parents/intro.webp'
 
-export default function Intro() {
+export default function Intro({ className = '' }: { className?: string }) {
     useEffect(() => {
         reveal({
             collection: Array.from(document.querySelectorAll('.parents-img')),
             classesToRemove: ['scale-0']
         })
         reveal({
-            collection: Array.from(document.querySelectorAll('.intro li')),
+            collection: Array.from(document.querySelectorAll('#introduction li')),
             classesToRemove: ['opacity-0'],
             delayIncrement: 50
         })
@@ -20,7 +20,7 @@ export default function Intro() {
 
 
     return (
-        <section id="introduction" className="intro">
+        <section id="introduction" className={className}>
             <div className="container">
                 <div className="flex flex-col lg:flex-row gap-6 justify-center items-center mb-16">
                     <div className="w-2/3 lg:w-1/3 text-center">

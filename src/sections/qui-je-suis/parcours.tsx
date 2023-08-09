@@ -6,7 +6,7 @@ import Career1 from '/public/images/qui-je-suis/1.webp'
 import Career2 from '/public/images/qui-je-suis/2.webp'
 import Career3 from '/public/images/qui-je-suis/3.webp'
 
-export default function Parcours() {
+export default function Parcours({ className = '' }: { className?: string }) {
     useEffect(() => {
         reveal({
             collection: Array.from(document.querySelectorAll('.career-step')),
@@ -35,7 +35,7 @@ export default function Parcours() {
     }
 
     return (
-        <section id="mon-parcours">
+        <section id="mon-parcours" className={className}>
             <div className="container">
                 <div className="text-center pb-10">
                     <h3>Mon parcours</h3>

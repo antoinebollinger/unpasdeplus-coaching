@@ -19,8 +19,8 @@ export default function Page() {
     return (
         <Layout headerProps={headerProps} banner={Banner}>
             <Parcours />
-            <Pourquoi />
-            <Bio />
+            {/* <Pourquoi /> */}
+            <Bio className="bg-gray-100" />
         </Layout>
     )
 }

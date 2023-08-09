@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { reveal } from '../../utils/reveal'
 import Map from '/public/images/parents/map.webp'
 
-export default function Methode() {
+export default function Methode({ className = 'bg-gray-100' }: { className?: string }) {
     useEffect(() => {
         reveal({
             collection: Array.from(document.querySelectorAll('.single-step')),
@@ -27,7 +27,7 @@ export default function Methode() {
     }
 
     return (
-        <section id="methode" className="bg-gray-100">
+        <section id="methode" className={className}>
             <div className="container">
 
                 <div className="flex flex-col lg:flex-row gap-6 justify-center items-center">

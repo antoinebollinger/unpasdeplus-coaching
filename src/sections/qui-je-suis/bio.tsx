@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { reveal } from '../../utils/reveal'
 import Sabrina from '/public/images/sabrina.webp'
 
-export default function Bio() {
+export default function Bio({ className = '' }: { className?: string }) {
     useEffect(() => {
         reveal({
             collection: Array.from(document.querySelectorAll('.about-img')),
@@ -13,7 +13,7 @@ export default function Bio() {
     }, [])
 
     return (
-        <section id="bio">
+        <section id="bio" className={className}>
             <div className="container">
                 <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
                     <div className="w-1/2 md:w-1/4 mx-auto transition duration-200 scale-0 opacity-0 about-img">

@@ -3,12 +3,12 @@ import { useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { reveal } from '../../utils/reveal'
-import Pratique1 from '/public/images/parents/1.webp'
-import Pratique2 from '/public/images/parents/2.webp'
-import Pratique3 from '/public/images/parents/3.webp'
-import Pratique4 from '/public/images/parents/4.webp'
+import EMCC from '/public/images/entreprises/emcc.webp'
+import FranceCompetences from '/public/images/entreprises/france_competences.webp'
+import Outils from '/public/images/entreprises/outils.webp'
+import Ethics from '/public/images/entreprises/ethique.webp'
 
-export default function Pratique({ className = '' }: { className?: string }) {
+export default function Qualite({ className = 'bg-gray-100' }: { className?: string }) {
     useEffect(() => {
         reveal({
             collection: Array.from(document.querySelectorAll('.career-step')),
@@ -39,24 +39,25 @@ export default function Pratique({ className = '' }: { className?: string }) {
         <section id="pratique" className={className}>
             <div className="container">
                 <div className="text-center pb-10">
-                    <h3>En pratique, ça donne quoi ?</h3>
+                    <h3>Un accompagnement de qualité</h3>
+                    <p className="text-lg italic">Avec professionnalisme, éthique et bienveillance</p>
                 </div>
                 <div className="lg:max-w-5xl mx-auto mb-16">
                     {list(
-                        Pratique1,
-                        "Séances en <strong>présentiel</strong> et/ou <strong>distanciel</strong> à Vannes et ses alentours. Durée de 1h/1h30 la séance à 10/15 jours d'intervalle"
+                        EMCC,
+                        "Accréditation EMCC - labélisation EMCC (European Mentoring Coaching Council)"
                     )}
                     {list(
-                        Pratique2,
-                        "Des <strong>exercices de développements personnels</strong> entre les séances pour continuer à vous développer."
+                        FranceCompetences,
+                        "Coach professionnelle certifiée RNCP 7 - Linkup Coaching"
                     )}
                     {list(
-                        Pratique3,
-                        "Echanges Whatsapp pour <strong>garder la dynamique</strong> et vous inspirer."
+                        Outils,
+                        "Outils et méthodes de coaching"
                     )}
                     {list(
-                        Pratique4,
-                        "<strong>Bilan à mi-parcours</strong> pour évaluer le chemin parcouru. <strong>Bilan final</strong> pour clôturer l'accompagnement."
+                        Ethics,
+                        "Charte déontologique du coach"
                     )}
                 </div>
                 <div className="text-center">

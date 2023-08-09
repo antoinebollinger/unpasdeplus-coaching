@@ -1,9 +1,9 @@
 import Image from 'next/image'
 import Logo from '/public/logos/logo-texte-vertical.svg'
 
-export default function Intro() {
+export default function Intro({ className = '' }: { className?: string }) {
     return (
-        <section id="introduction" className="intro">
+        <section id="introduction" className={className}>
             <div className="container">
                 <div className="flex flex-col lg:flex-row gap-6 justify-center items-center">
                     <div className="w-2/3 lg:w-1/3 text-center">
