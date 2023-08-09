@@ -51,11 +51,11 @@ export default function ApportsCoaching() {
                         "fois le montant investi, c'est le retour sur investissement moyen des entreprises"
                     )}
                 </div>
-                <div className="text-center pb-10">
+                <div className="lg:max-w-5xl mx-auto">
                     <p className="leading-10 text-xl">
-                        Le coaching a pour but de vous booster en prenant conscience que le changement passe avant tout par soi.
+                        <em>Source : étude ICF-PWC (2021)</em>
                         <br />
-                        « La victoire sur soi est la plus grande des victoires », <em>Platon</em>
+                        <strong>Le coaching a pour but de vous booster en prenant conscience que le changement passe avant tout par soi.</strong>
                     </p>
                 </div>
             </div>

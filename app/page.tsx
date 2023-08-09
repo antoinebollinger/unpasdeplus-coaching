@@ -1,5 +1,7 @@
 import Layout from '../src/layout'
 import Intro from '../src/sections/intro'
+import IntroLiens from '../src/sections/intro_liens'
+import IntroApproche from '../src/sections/intro-approche'
 import ApportsCoaching from '../src/sections/apports-coaching'
 import Temoignages from '../src/sections/temoignages'
 import Contact from '../src/sections/contact'
@@ -29,9 +31,11 @@ export default function Page() {
     return (
         <Layout banner={Banner} headerProps={headerProps} onThisPage={onThisPage} >
             <Intro />
+            <IntroLiens />
+            <IntroApproche />
             <ApportsCoaching />
             <Temoignages />
-            <Contact />
+            {/* <Contact /> */}
         </Layout >
     )
 }

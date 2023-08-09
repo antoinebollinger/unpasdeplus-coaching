@@ -20,11 +20,10 @@ export default function PourquoiUnpasdeplus() {
     }
 
     return (
-        <section id="mon-parcours">
+        <section id="mon-parcours" className="bg-gray-100">
             <div className="container">
                 <div className="pb-10">
-                    <h4 className="title text-center">Un Pas de Plus</h4>
-                    <p className="text-lg">fait référence au cercle vertueux du
+                    <p className="text-lg"><strong>Un Pas de Plus</strong> fait référence au cercle vertueux du
                         mouvement physique et mental
                         , et des eff ets bénéfi ques considérables du "pas". Faire un pas qui entraîne un autre avec ces diff érents leviers :</p>
                 </div>
