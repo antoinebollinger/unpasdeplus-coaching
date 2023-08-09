@@ -1,25 +1,25 @@
 'use client'
 import { useEffect } from 'react'
-import { reveal } from '../utils/reveal'
+import { reveal } from '../../utils/reveal'
 
-export default function ApportsCoaching() {
+export default function Apports() {
     useEffect(() => {
         reveal({
-            collection: Array.from(document.querySelectorAll('.career-step')),
+            collection: Array.from(document.querySelectorAll('.apports-text')),
             classesToRemove: ['translate-x-3/4', 'scale-0', 'opacity-0'],
             classesToAdd: ['translate-x-0'],
-        });
-    }, []);
+        })
+    }, [])
 
     const list = (illustration: string, text: string) => {
         return (
             <div className="flex flex-col md:flex-row gap-6 justify-center items-center mb-10">
-                <div className="transition duration-300 opacity-0 scale-0 career-step">
+                <div className="transition duration-300 opacity-0 scale-0 apports-text">
                     <div className="w-[100px] h-[100px] rounded-full bg-primary-100 flex justify-center items-center">
                         <p className="text-4xl">{illustration}</p>
                     </div>
                 </div>
-                <div className="grow transition duration-300 opacity-0 translate-x-3/4 career-step">
+                <div className="grow transition duration-300 opacity-0 translate-x-3/4 apports-text">
                     <p className="text-2xl text-gray-900" dangerouslySetInnerHTML={{ __html: text }} />
                 </div>
             </div>

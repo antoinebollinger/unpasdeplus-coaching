@@ -1,6 +1,5 @@
 import Layout from '../../src/layout'
 import MentionsLegales from '../../src/sections/mentions-legales'
-import Contact from '../../src/sections/contact'
 import Banner from '/public/images/banners/legals.webp'
 import { siteData } from '../../src/data/metadata'
 
@@ -16,7 +15,6 @@ export default function Page() {
     return (
         <Layout headerProps={headerProps} banner={Banner}>
             <MentionsLegales />
-            <Contact />
         </Layout>
     )
 }

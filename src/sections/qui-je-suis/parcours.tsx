@@ -1,19 +1,19 @@
 'use client'
 import { useEffect } from 'react'
 import Image from 'next/image'
-import { reveal } from '../utils/reveal'
+import { reveal } from '../../utils/reveal'
 import Career1 from '/public/images/qui-je-suis/1.webp'
 import Career2 from '/public/images/qui-je-suis/2.webp'
 import Career3 from '/public/images/qui-je-suis/3.webp'
 
-export default function MonParcours() {
+export default function Parcours() {
     useEffect(() => {
         reveal({
             collection: Array.from(document.querySelectorAll('.career-step')),
             classesToRemove: ['translate-x-3/4', 'scale-0', 'opacity-0'],
             classesToAdd: ['translate-x-0'],
-        });
-    }, []);
+        })
+    }, [])
 
     const list = (img, text: string) => {
         return (

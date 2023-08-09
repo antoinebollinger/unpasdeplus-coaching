@@ -69,9 +69,9 @@ export default function Navbar() {
                             Accompagnement<br />parents
                         </Link>
                     </li>
-                    <li className={`nav-item ${pathname == "/accompagnement-entreprise" ? "active" : ""}`}>
-                        <Link href="/accompagnement-entreprise" className="page-scroll">
-                            Accompagnement<br />entreprise
+                    <li className={`nav-item ${pathname == "/accompagnement-entreprises" ? "active" : ""}`}>
+                        <Link href="/accompagnement-entreprises" className="page-scroll">
+                            Accompagnement<br />entreprises
                         </Link>
                     </li>
                     {/* <li className={`relative nav-item ${["/offres-particuliers", "/offres-entreprises"].indexOf(pathname) !== -1 ? "active" : ""}`}>

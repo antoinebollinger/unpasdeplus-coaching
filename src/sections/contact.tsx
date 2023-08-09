@@ -2,37 +2,37 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
 import { useEffect } from 'react'
-import { closeModal, openModal } from '../utils/modal';
+import { closeModal, openModal } from '../utils/modal'
 
-export default function Contact() {
+export default function Contact({ className = '' }: { className?: string }) {
     useEffect(() => {
         document.forms['contact-form'].addEventListener('submit', async e => {
-            e.preventDefault();
+            e.preventDefault()
             openModal({
                 body: 'Envoi en cours', buttons: 'hidden'
-            });
-            const data = new FormData(e.target);
-            data.append('email_to', process.env.email_to);
-            data.append('name_to', process.env.name_to);
+            })
+            const data = new FormData(e.target)
+            data.append('email_to', process.env.email_to)
+            data.append('name_to', process.env.name_to)
             const sendEmail = await fetch(`${process.env.email_api}/email`, {
                 method: 'POST',
                 body: data
-            });
-            const response = await sendEmail.json();
+            })
+            const response = await sendEmail.json()
             closeModal();
             if (response.sent)
                 openModal({
                     body: `Cher.ère ${e.target.elements['name'].value},<br/>Votre message a bien été envoyé. Je reviendrai vers vous très rapidement. A bientôt !`, buttons: 'hidden'
-                });
+                })
             else
                 openModal({
                     body: `Oups... Une erreur est survenue. Merci de réessayer, ou de m'envoyer un email directement à l'adresse <strong>sabrina.appriou@hotmail.com</strong>. A bientôt !`, buttons: 'hidden'
-                });
+                })
         })
-    }, []);
+    }, [])
 
     return (
-        <section id="contact" className="contact-area py-120 bg-gray-100">
+        <section id="contact" className={`contact-area py-120  ${className}`}>
             <div className="container">
                 <div className="justify-center row">
                     <div className="w-full mx-4 lg:w-1/2">
@@ -96,6 +96,6 @@ export default function Contact() {
                     </div>
                 </div>
             </div>
-        </section>
+        </section >
     )
 }

@@ -1,16 +1,16 @@
 'use client';
 import { useEffect } from 'react'
 import Image from 'next/image'
-import Link from 'next/link';
-import { reveal } from '../utils/reveal'
+import Link from 'next/link'
+import { reveal } from '../../utils/reveal'
 import Sabrina from '/public/images/sabrina.webp'
 import Parents from '/public/images/parents/parents.webp'
-import Entreprise from '/public/images/entreprise/entreprise.webp'
+import Entreprise from '/public/images/entreprises/entreprises.webp'
 
-export default function IntroLiens() {
+export default function Liens() {
     useEffect(() => {
         reveal({
-            collection: Array.from(document.querySelectorAll('.intro-liens-img')),
+            collection: Array.from(document.querySelectorAll('.liens-img')),
             classesToRemove: ['scale-0']
         })
     }, [])
@@ -23,7 +23,7 @@ export default function IntroLiens() {
                         <Image
                             src={Sabrina}
                             width={200}
-                            className="mx-auto rounded-full transition duration-200 scale-0 intro-liens-img"
+                            className="mx-auto rounded-full transition duration-200 scale-0 liens-img"
                             alt="Sabrina Appriou"
                         />
                         <p className="text-lg text-center">
@@ -40,8 +40,8 @@ export default function IntroLiens() {
                         <Image
                             src={Parents}
                             width={200}
-                            className="mx-auto rounded-full transition duration-200 scale-0 intro-liens-img"
-                            alt="Parentalité"
+                            className="mx-auto rounded-full transition duration-200 scale-0 liens-img"
+                            alt="Accompagnement parents"
                         />
                         <p className="text-lg text-center">
                             <strong>Accompagnement parents</strong>
@@ -60,8 +60,8 @@ export default function IntroLiens() {
                         <Image
                             src={Entreprise}
                             width={200}
-                            className="mx-auto rounded-full transition duration-200 scale-0 intro-liens-img"
-                            alt="Entreprise"
+                            className="mx-auto rounded-full transition duration-200 scale-0 liens-img"
+                            alt="Accompagnement entreprises"
                         />
                         <p className="text-lg text-center">
                             <strong>Accompagnement entreprise</strong>
@@ -72,7 +72,7 @@ export default function IntroLiens() {
                             <br />
                             Avez-vous mis en place un dispositif pour renforcer une politique RH inclusive autour de la parentalité ?
                         </p>
-                        <Link href="/accompagnement-entreprise" className="mx-auto">
+                        <Link href="/accompagnement-entreprises" className="mx-auto">
                             <button type="submit" className="main-btn gradient-btn focus:outline-none uppercase">En savoir plus</button>
                         </Link>
                     </div>

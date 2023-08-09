@@ -1,9 +1,9 @@
 'use client'
-import { Chart as ChartJS, registerables } from 'chart.js';
+import { Chart as ChartJS, registerables } from 'chart.js'
 import { Doughnut } from 'react-chartjs-2'
-ChartJS.register(...registerables);
+ChartJS.register(...registerables)
 
-export default function PourquoiUnpasdeplus() {
+export default function Pourquoi() {
     const data = {
         labels: ['Répétition', 'Motivation', 'Persévérance', 'Méthode', 'Régularité', 'Entraînement'],
         datasets: [{
@@ -23,9 +23,7 @@ export default function PourquoiUnpasdeplus() {
         <section id="mon-parcours" className="bg-gray-100">
             <div className="container">
                 <div className="pb-10">
-                    <p className="text-lg"><strong>Un Pas de Plus</strong> fait référence au cercle vertueux du
-                        mouvement physique et mental
-                        , et des eff ets bénéfi ques considérables du "pas". Faire un pas qui entraîne un autre avec ces diff érents leviers :</p>
+                    <p className="text-lg"><strong>Un Pas de Plus</strong> fait référence au cercle vertueux du mouvement physique et mental, et des effets bénéfiques considérables du "pas". Faire un pas qui entraîne un autre avec ces différents leviers :</p>
                 </div>
                 <div className="lg:max-w-5xl mx-auto">
                     <Doughnut

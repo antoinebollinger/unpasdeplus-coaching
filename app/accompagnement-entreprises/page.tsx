@@ -1,15 +1,16 @@
 import Layout from '../../src/layout'
-import Intro from '../../src/sections/parents/intro'
-import Banner from '/public/images/banners/parents.webp'
+import Intro from '../../src/sections/entreprises/intro'
+import Banner from '/public/images/banners/entreprises.webp'
 import { siteData } from '../../src/data/metadata'
 
 export const metadata = {
-    title: `Accompagnement parents | ${siteData.title}`
+    title: `Accompagnement entreprises | ${siteData.title}`
 }
 
 export default function Page() {
     const headerProps = {
-        title: 'Accompagnement des parents',
+        title: 'Accompagnement des entreprises',
+        pretitle: 'Soutenir vos salarié.es, c\'est créer la différence',
     }
 
     return (

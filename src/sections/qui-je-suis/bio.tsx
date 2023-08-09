@@ -1,7 +1,7 @@
 'use client'
 import { useEffect } from 'react'
 import Image from 'next/image'
-import { reveal } from '../utils/reveal'
+import { reveal } from '../../utils/reveal'
 import Sabrina from '/public/images/sabrina.webp'
 
 export default function Bio() {
@@ -9,8 +9,8 @@ export default function Bio() {
         reveal({
             collection: Array.from(document.querySelectorAll('.about-img')),
             classesToRemove: ['scale-0', 'opacity-0']
-        });
-    }, []);
+        })
+    }, [])
 
     return (
         <section id="bio">

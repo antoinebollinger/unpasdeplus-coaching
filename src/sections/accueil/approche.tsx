@@ -1,14 +1,14 @@
 'use client';
 import { useEffect } from 'react'
 import Image from 'next/image'
-import { reveal } from '../utils/reveal'
-import MamanZen from '/public/images/home/maman-zen.webp'
-import Link from 'next/link';
+import Link from 'next/link'
+import { reveal } from '../../utils/reveal'
+import MamanZen from '/public/images/accueil/maman-zen.webp'
 
-export default function IntroApproche() {
+export default function Approche() {
     useEffect(() => {
         reveal({
-            collection: Array.from(document.querySelectorAll('.about-img')),
+            collection: Array.from(document.querySelectorAll('.approche-img')),
             classesToRemove: ['scale-0']
         })
     }, [])
@@ -17,7 +17,7 @@ export default function IntroApproche() {
         <section className="intro-approche">
             <div className="container">
                 <div className="flex flex-col lg:flex-row gap-6 justify-center items-center mb-16">
-                    <div className="w-2/3 lg:w-1/3 transition duration-200 scale-0 about-img">
+                    <div className="w-2/3 lg:w-1/3 transition duration-200 scale-0 approche-img">
                         <Image
                             src={MamanZen}
                             className="w-full rounded-xl"

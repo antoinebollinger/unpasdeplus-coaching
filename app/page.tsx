@@ -1,11 +1,10 @@
 import Layout from '../src/layout'
-import Intro from '../src/sections/intro'
-import IntroLiens from '../src/sections/intro_liens'
-import IntroApproche from '../src/sections/intro-approche'
-import ApportsCoaching from '../src/sections/apports-coaching'
-import Temoignages from '../src/sections/temoignages'
-import Contact from '../src/sections/contact'
-import Banner from '/public/images/banners/home.webp'
+import Intro from '../src/sections/accueil/intro'
+import Liens from '../src/sections/accueil/liens'
+import Approche from '../src/sections/accueil/approche'
+import Apports from '../src/sections/accueil/apports'
+import Temoignages from '../src/sections/accueil/temoignages'
+import Banner from '/public/images/banners/accueil.webp'
 
 export default function Page() {
     const onThisPage = [
@@ -31,11 +30,10 @@ export default function Page() {
     return (
         <Layout banner={Banner} headerProps={headerProps} onThisPage={onThisPage} >
             <Intro />
-            <IntroLiens />
-            <IntroApproche />
-            <ApportsCoaching />
+            <Liens />
+            <Approche />
+            <Apports />
             <Temoignages />
-            {/* <Contact /> */}
         </Layout >
     )
 }

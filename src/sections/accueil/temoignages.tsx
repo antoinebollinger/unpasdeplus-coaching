@@ -1,11 +1,11 @@
 'use client'
-import { useState } from "react";
-import Swipe from "react-easy-swipe";
+import { useState } from 'react'
+import Swipe from 'react-easy-swipe'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
 
 export default function Temoignages() {
-    const [currentSlide, setCurrentSlide] = useState(0);
+    const [currentSlide, setCurrentSlide] = useState(0)
 
     const slides = [
         {
@@ -20,15 +20,14 @@ export default function Temoignages() {
     ]
 
     const handleNextSlide = () => {
-        let newSlide = currentSlide === slides.length - 1 ? 0 : currentSlide + 1;
-        setCurrentSlide(newSlide);
-    };
+        let newSlide = currentSlide === slides.length - 1 ? 0 : currentSlide + 1
+        setCurrentSlide(newSlide)
+    }
 
     const handlePrevSlide = () => {
-        let newSlide = currentSlide === 0 ? slides.length - 1 : currentSlide - 1;
-        setCurrentSlide(newSlide);
-    };
-
+        let newSlide = currentSlide === 0 ? slides.length - 1 : currentSlide - 1
+        setCurrentSlide(newSlide)
+    }
 
     return (
         <section id="temoignages">

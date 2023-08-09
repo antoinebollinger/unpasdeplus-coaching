@@ -68,11 +68,3 @@ section:first-child {
 .subtitle {
     @apply mb-2 text-xl lg:text-3xl font-medium text-primary-700;
 }
-  
-.paragraph, .paragraph p {
-    @apply text-xl mb-4;
-}
-
-.paragraph li {
-    @apply mb-4 transition;
-}

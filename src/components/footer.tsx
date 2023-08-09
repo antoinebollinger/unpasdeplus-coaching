@@ -11,12 +11,8 @@ import Socials from './socials'
 const defaultProps = [
     {
         title: 'Haut de page',
-        link: '#'
+        link: '#header'
     },
-    {
-        title: 'Contact',
-        link: '#contact'
-    }
 ]
 
 export default function Footer({ onThisPage = defaultProps }) {
@@ -106,8 +102,8 @@ export default function Footer({ onThisPage = defaultProps }) {
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="/accompagnement-entreprise">
-                                            Entreprise
+                                        <Link href="/accompagnement-entreprises">
+                                            Entreprises
                                         </Link>
                                     </li>
                                 </ul>

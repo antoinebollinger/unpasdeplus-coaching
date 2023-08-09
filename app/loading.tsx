@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Layout from '../src/layout'
-import Banner from '/public/images/banners/home.webp'
+import Banner from '/public/images/banners/accueil.webp'
 import Loading from '/public/images/svg/loading.svg'
 
 export default function Page() {
