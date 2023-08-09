@@ -2,8 +2,8 @@
 import { useEffect } from 'react'
 import Image from 'next/image'
 import { reveal } from '../utils/reveal'
-import EntreprisesIllustration from '/public/images/entreprises/intro.webp'
-import Parents from '/public/images/entreprises/parents.webp'
+import EntreprisesIllustration from '/public/images/entreprise/intro.webp'
+import Parents from '/public/images/entreprise/parents.webp'
 
 
 export default function Entreprises() {
