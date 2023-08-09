@@ -23,7 +23,7 @@ export default function Parentalite() {
         <section id="parentalite">
             <div className="container">
                 <div className="text-center pb-10">
-                    <h4 className="title">Parents : Bien dans sa tête, bien dans ses baskets</h4>
+                    <h3 className="title">Parents : Bien dans sa tête, bien dans ses baskets</h3>
                 </div>
                 <div className="flex flex-col md:flex-row gap-6 justify-center items-center mb-16">
                     <div className="w-2/3 md:w-1/4 mx-auto transition duration-200 scale-0 opacity-0 about-img">

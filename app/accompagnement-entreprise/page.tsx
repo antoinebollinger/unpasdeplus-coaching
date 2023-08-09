@@ -1,6 +1,6 @@
 import Layout from '../../src/layout'
 import Entreprises from '../../src/sections/entreprises'
-import Contact from '../../src/components/contact'
+import Contact from '../../src/sections/contact'
 import Banner from '/public/images/banners/entreprises.webp'
 import { siteData } from '../../src/data/metadata'
 

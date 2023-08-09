@@ -68,7 +68,7 @@ section:first-child {
 }
 
 .subtitle {
-    @apply mb-2 text-xl lg:text-3xl font-medium;
+    @apply mb-2 text-xl lg:text-3xl font-medium text-primary-700;
 }
   
 .paragraph, .paragraph p {

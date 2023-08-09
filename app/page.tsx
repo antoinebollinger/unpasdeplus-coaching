@@ -1,29 +1,36 @@
 import Layout from '../src/layout'
-import MaMission from '../src/sections/ma-mission'
-import MonParcours from '../src/sections/mon-parcours'
-import Contact from '../src/components/contact'
+import Intro from '../src/sections/intro'
+import ApportsCoaching from '../src/sections/apports-coaching'
+import Temoignages from '../src/sections/temoignages'
+import Contact from '../src/sections/contact'
 import Banner from '/public/images/banners/home.webp'
 
 export default function Page() {
     const onThisPage = [
         {
-            title: 'Ma mission',
-            link: '#mamission'
+            title: 'Introduction',
+            link: '#header'
         },
         {
-            title: 'Mon parcours',
-            link: '#mon-parcours'
+            title: 'Apports du coaching',
+            link: '#apports-coaching'
         },
         {
-            title: 'Contact',
-            link: '#contact'
+            title: 'Témoignages',
+            link: '#temoignages'
         }
-    ]
+    ];
+
+    const headerProps = {
+        pretitle: 'Trouvez les clés et les ressources pour faire face aux défis quotidiens',
+        title: 'Votre partenaire mental',
+    }
 
     return (
-        <Layout banner={Banner} onThisPage={onThisPage} >
-            <MaMission />
-            <MonParcours />
+        <Layout banner={Banner} headerProps={headerProps} onThisPage={onThisPage} >
+            <Intro />
+            <ApportsCoaching />
+            <Temoignages />
             <Contact />
         </Layout >
     )

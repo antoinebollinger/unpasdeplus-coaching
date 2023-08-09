@@ -1,7 +1,9 @@
 import Layout from '../../src/layout'
+import MonParcours from '../../src/sections/mon-parcours'
+import PourquoiUnpasdeplus from '../../src/sections/pourquoi-unpasdeplus'
 import Bio from '../../src/sections/bio'
 import Break from '../../src/components/break'
-import Contact from '../../src/components/contact'
+import Contact from '../../src/sections/contact'
 import Banner from '/public/images/banners/quijesuis-intro.webp'
 import QuijesuisOutro from '/public/images/banners/quijesuis-outro.webp'
 import { siteData } from '../../src/data/metadata'
@@ -19,8 +21,10 @@ export default function Page() {
 
     return (
         <Layout headerProps={headerProps} banner={Banner}>
+            <MonParcours />
+            <PourquoiUnpasdeplus />
             <Bio />
-            <Break banner={QuijesuisOutro} text={outroText} textStyle="text-start text-xl md:text-3xl my-4 text-primary-100 w-1/2" last="grey" />
+            {/* <Break banner={QuijesuisOutro} text={outroText} textStyle="text-start text-xl md:text-3xl my-4 text-primary-100 w-1/2" last="grey" /> */}
             <Contact />
         </Layout>
     )

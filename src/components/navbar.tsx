@@ -59,17 +59,22 @@ export default function Navbar() {
             </button>
             <div className="absolute left-0 z-30 hidden w-full px-5 py-2 duration-300 bg-white shadow md:opacity-100 md:w-auto navbar-collapse md:block top-100 mt-full md:static md:bg-transparent md:shadow-none" id="navbarOne">
                 <ul className="items-center content-start mr-auto lg:justify-center md:justify-end navbar-nav md:flex uppercase">
-                    <li className={`nav-item ${pathname == "/" ? "active" : ""}`}>
+                    {/* <li className={`nav-item ${pathname == "/" ? "active" : ""}`}>
                         <Link href="/" aria-label="Home">
                             <FontAwesomeIcon icon={faHome} className="text-2xl" />
                         </Link>
-                    </li>
-                    <li className={`nav-item ${pathname == "/le-coaching" ? "active" : ""}`}>
-                        <Link href="/le-coaching" className="page-scroll">
-                            Le<br />coaching
+                    </li> */}
+                    <li className={`nav-item ${pathname == "/accompagnement-parents" ? "active" : ""}`}>
+                        <Link href="/accompagnement-parents" className="page-scroll">
+                            Accompagnement<br />parents
                         </Link>
                     </li>
-                    <li className={`relative nav-item ${["/offres-particuliers", "/offres-entreprises"].indexOf(pathname) !== -1 ? "active" : ""}`}>
+                    <li className={`nav-item ${pathname == "/accompagnement-entreprise" ? "active" : ""}`}>
+                        <Link href="/accompagnement-entreprise" className="page-scroll">
+                            Accompagnement<br />entreprise
+                        </Link>
+                    </li>
+                    {/* <li className={`relative nav-item ${["/offres-particuliers", "/offres-entreprises"].indexOf(pathname) !== -1 ? "active" : ""}`}>
                         <Link href="/offres-particuliers" className="page-scroll">
                             Offres<br />de coaching
                         </Link>
@@ -85,10 +90,15 @@ export default function Navbar() {
                                 </Link>
                             </li>
                         </ul>
-                    </li>
+                    </li> */}
                     <li className={`nav-item ${pathname == "/qui-je-suis" ? "active" : ""}`}>
                         <Link href="/qui-je-suis" className="page-scroll">
                             Qui<br />je suis
+                        </Link>
+                    </li>
+                    <li className={`nav-item ${pathname == "/contact" ? "active" : ""}`}>
+                        <Link href="/contact" className="page-scroll">
+                            Contact
                         </Link>
                     </li>
                 </ul>

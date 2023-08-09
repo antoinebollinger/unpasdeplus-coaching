@@ -2,7 +2,7 @@ import Layout from '../../src/layout'
 import Parentalite from '../../src/sections/parentalite'
 import MieuxEtre from '../../src/sections/mieux-etre'
 import Outdoor from '../../src/sections/outdoor'
-import Contact from '../../src/components/contact'
+import Contact from '../../src/sections/contact'
 import Banner from '/public/images/banners/particuliers.webp'
 import { siteData } from '../../src/data/metadata'
 

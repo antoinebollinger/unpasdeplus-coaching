@@ -33,38 +33,34 @@ export default function Bio() {
                             </h5>
                         </div>
                         <p className="subtitle my-10">
-                            Ma mission
+                            Maman de 3 enfants
                         </p>
-                        <p className="paragraph">
-                            J'accompagne les personnes à faire UN PAS DE PLUS pour un changement profond et durable dans leur vie personnelle et/ou professionnelle.
+                        <p className="text-lg">
+                            <strong>Parentalité</strong>, <strong>bien-être au travail</strong>, <strong>charge mentale</strong>, <strong>santé physique et mentale</strong>, sont des sujets importants pour moi en tant que maman de trois enfants et entrepreneure. Face à des défis quotidiens, à trouver sans cesse le meilleur équilibre, j'ai à coeur d'accompagner les parents, jeunes parents à entrainer le mental pour <strong>gagner en sérénité</strong>.
                         </p>
                         <p className="subtitle my-10">
-                            À propos de moi
+                            Course à pied
                         </p>
-                        <p className="paragraph">
-                            J'ai 38 ans, <strong>maman de 3 enfants</strong> (13, 11 et 3 ans).
-                            <br />
-                            <br />
-                            Je suis passionnée de <strong>course à pied</strong>, sport que je pratique depuis 20 ans déjà. <strong>J'aime les challenges</strong>, que ce soit dans le domaine sportif, professionnel ou personnel. Selon moi, <strong>ils sont sources de motivation</strong> et permettent de nous dépasser.
-                            <br />
-                            <br />
-                            Dynamique, sans cesse en mouvement, <strong>j'adore me fixer des objectifs</strong> et sortir des sentiers battus.
-                            <br />
-                            <br />
-                            <strong>Je suis connectée à la nature</strong>, aux paysages. Cela m'aide à me ressourcer et à nourrir mon intérieur. Je pratique la marche active et suis adepte des courses en milieu naturel.
-                            <br />
-                            <br />
-                            J'accord également une grande importance à <strong>une alimentation saine</strong>.
+                        <p className="text-lg">
+                            Passionnée depuis plus de 20 ans déjà. La course à pied est une ressource pour moi de <strong>dépassement de soi</strong>, de <strong>bien-être</strong> et d'être en <strong>mouvement</strong>. Quand je ne cours pas, je marche pour exlorer les sentiers côtiers de la Bretagne.
                         </p>
-                        <p className="paragraph"><q> <em>L'homme doit harmoniser l'esprit et le corps (Hippocrate)</em> </q></p>
-                        <p className="paragraph">
-                            Cela fait près de dix ans que je veille à manger bio, local et éthique.Je me sens en adéquation avec ces choix de vie qui font mon identité: une personne en mouvement, spirituellement et physiquement !
-                            <br />
-                            <br />
-                            Au fil des années, <strong>j'ai gagné en sérénité en prenant soin de mon corps et de ma tête</strong>.
-                            <br />
-                            <br />
-                            Mes valeurs : <strong>authentique, intègre et généreuse</strong>.
+                        <p className="subtitle my-10">
+                            Challenge
+                        </p>
+                        <p className="text-lg">
+                            J'aime les <strong>challenges</strong>, que ce soit dans le domaine sportif, professionnel ou personnel. Selon moi, ils sont source de <strong>motivation</strong> et <strong>permettent de nous dépasser</strong>.
+                        </p>
+                        <p className="subtitle my-10">
+                            Nature
+                        </p>
+                        <p className="text-lg">
+                            <strong>Connectée à la nature</strong>, source d'énergie pour moi et de sérénité. J'accorde également une grande importance <strong>à une alimentation saine et respectueuse de l'environnement</strong>.
+                        </p>
+                        <p className="subtitle my-10">
+                            Alimentation émotionnelle
+                        </p>
+                        <p className="text-lg">
+                            Lors de ma certification de coach professionnel, j'ai présenté un mémoire qui porte sur « Le coaching et la perte de poids ». J’évoque l’impact des émotions sur notre alimentation. Etre accompagner pour en prendre conscience et mieux les gérer.
                         </p>
                     </div>
                 </div>
