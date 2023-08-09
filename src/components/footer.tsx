@@ -73,17 +73,16 @@ export default function Footer({ onThisPage = defaultProps }) {
                                             Accueil
                                         </Link>
                                     </li>
-                                    {/* <li>
-                                        <Link href="/le-coaching">
-                                            Le coaching
-                                        </Link>
-                                    </li> */}
                                     <li>
                                         <Link href="/qui-je-suis">
                                             Qui je suis
                                         </Link>
                                     </li>
-                                    <li><a href="#contact">Contact</a></li>
+                                    <li>
+                                        <Link href="/contact">
+                                            Contact
+                                        </Link>
+                                    </li>
                                     <li>
                                         <Link href="/mentions-legales">
                                             Mentions légales
