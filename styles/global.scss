@@ -24,6 +24,18 @@ h1, h2, h3, h4 {
     @apply text-gray-900;
 }
 
+h3 {
+    @apply mb-4 text-2xl lg:text-5xl font-semibold text-primary-600;
+}
+
+h4 {
+    @apply text-2xl text-tertary-900 font-bold mb-3;
+}
+
+h5 {
+    @apply text-xl text-tertary-900 font-bold mb-2;
+}
+
 .handwrite {
     font-family: var(--font-amatic), sans-serif;
 }
@@ -58,13 +70,4 @@ section {
 
 section:first-child {
     font: optional;
-}
-
-.title {
-    line-height: 55px;
-    @apply mb-4 text-2xl lg:text-5xl font-semibold text-primary-600;
-}
-
-.subtitle {
-    @apply mb-2 text-xl lg:text-3xl font-medium text-primary-700;
 }

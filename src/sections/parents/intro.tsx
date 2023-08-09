@@ -35,17 +35,17 @@ export default function Intro() {
                         <p className="text-lg leading-6 mb-6">
                             Un coaching pour vous accompagner à prendre soin de votre santé physique et mentale en relevant vos défis quotidiens. Acquérir des habitudes mentales <strong>pour gagner en sérénité et en confiance en soi</strong>.
                         </p>
-                        <ul className="list-disc list-inside square text-lg leading-6">
-                            <li className="mb-4 opacity-0">
+                        <ul className="list-disc list-inside square text-lg leading-8">
+                            <li className="opacity-0">
                                 Accompagnement individuel de 3 ou 6 mois
                             </li>
-                            <li className="mb-4 opacity-0">
+                            <li className="opacity-0">
                                 Parcours personnalisé sur l’hygiène de vie ( alimentation, sport, habitudes de santé)
                             </li>
-                            <li className="mb-4 opacity-0">
+                            <li className="opacity-0">
                                 Des exercices de coaching entre les séances
                             </li>
-                            <li className="mb-4 opacity-0">
+                            <li className="opacity-0">
                                 Echange en ligne pour garder la dynamique
                             </li>
                         </ul>

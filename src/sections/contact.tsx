@@ -37,7 +37,7 @@ export default function Contact({ className = '' }: { className?: string }) {
                 <div className="justify-center row">
                     <div className="w-full mx-4 lg:w-1/2">
                         <div className="pb-10 text-center section-title">
-                            <h4 className="title">Contact</h4>
+                            <h3>Contact</h3>
                             <p className="text">Pour prendre RDV, avoir plus de renseignements, me poser des questions, me parler de vous !</p>
                             <br />
                             <p>

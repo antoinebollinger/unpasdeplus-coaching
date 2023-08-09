@@ -33,7 +33,7 @@ export default function Temoignages() {
         <section id="temoignages">
             <div className="container">
                 <div className="text-center pb-10">
-                    <h3 className="title">Témoignages</h3>
+                    <h3>Témoignages</h3>
                 </div>
                 <div className="relative">
                     <FontAwesomeIcon

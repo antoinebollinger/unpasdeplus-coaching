@@ -38,7 +38,7 @@ export default function Parcours() {
         <section id="mon-parcours">
             <div className="container">
                 <div className="text-center pb-10">
-                    <h4 className="title">Mon parcours</h4>
+                    <h3>Mon parcours</h3>
                     <p className="text-lg italic">Ma trajectoire de vie raconte qui je suis et ce que je peux vous apporter.</p>
                 </div>
                 <div className="lg:max-w-5xl mx-auto">
