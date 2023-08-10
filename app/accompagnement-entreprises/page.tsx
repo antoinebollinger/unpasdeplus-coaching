@@ -1,5 +1,8 @@
 import Layout from '../../src/layout'
 import Intro from '../../src/sections/entreprises/intro'
+import Qui from '../../src/sections/entreprises/qui'
+import Apports from '../../src/sections/entreprises/apports'
+import Services from '../../src/sections/entreprises/services'
 import Qualite from '../../src/sections/entreprises/qualite'
 import Banner from '/public/images/banners/entreprises.webp'
 import { siteData } from '../../src/data/metadata'
@@ -17,6 +20,9 @@ export default function Page() {
     return (
         <Layout banner={Banner} headerProps={headerProps}>
             <Intro />
+            <Qui />
+            <Apports />
+            <Services />
             <Qualite />
         </Layout >
     )

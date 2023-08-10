@@ -48,6 +48,26 @@ a {
     @apply font-bold text-primary-600 hover:text-primary-400;
 }
 
+.list-check {
+    padding-left: 25px;
+    li {
+        padding-left: 10px;
+        &::marker {
+            content: '✔️';
+        }
+    }
+}
+
+.list-mark {
+    padding-left: 25px;
+    li {
+        padding-left: 10px;
+        &::marker {
+            content: '❌';
+        }
+    }
+}
+
 .container {
     @apply px-5 mx-auto;
 }

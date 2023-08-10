@@ -24,7 +24,7 @@ export default function Qui({ className = 'bg-gray-100' }: { className?: string 
                 <div className="flex flex-col md:flex-row gap-6 justify-center items-center mb-16">
                     <div className="w-full md:w-2/3 order-last md:order-first">
                         <h4>L'accompagnement Healthy Habits parents est fait pour vous si...</h4>
-                        <ul className="list-disc list-inside square text-lg leading-8">
+                        <ul className="list-disc list-inside text-lg leading-8">
                             <li className="opacity-0">
                                 Vous êtes parents, jeunes parents occupés et <strong>prendre soin de vous relève du défi</strong>.
                             </li>
@@ -61,7 +61,7 @@ export default function Qui({ className = 'bg-gray-100' }: { className?: string 
                     </div>
                     <div className="w-full md:w-2/3">
                         <h4>Grâce à l'accompagnement Healthy Habits parents, vous serez :</h4>
-                        <ul className="list-disc list-inside square text-lg leading-8">
+                        <ul className="list-disc list-inside text-lg leading-8">
                             <li className="opacity-0">
                                 <strong>Guidé.e</strong> lors des séances de coaching pour <strong>avancer pas à pas</strong> dans cette volonté de mieux-être
                             </li>

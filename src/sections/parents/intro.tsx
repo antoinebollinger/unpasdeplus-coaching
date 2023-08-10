@@ -35,7 +35,7 @@ export default function Intro({ className = '' }: { className?: string }) {
                         <p className="text-lg leading-6 mb-6">
                             Un coaching pour vous accompagner à prendre soin de votre santé physique et mentale en relevant vos défis quotidiens. Acquérir des habitudes mentales <strong>pour gagner en sérénité et en confiance en soi</strong>.
                         </p>
-                        <ul className="list-disc list-inside square text-lg leading-8">
+                        <ul className="list-disc list-inside text-lg leading-8">
                             <li className="opacity-0">
                                 Accompagnement individuel de 3 ou 6 mois
                             </li>

@@ -8,7 +8,7 @@ import FranceCompetences from '/public/images/entreprises/france_competences.web
 import Outils from '/public/images/entreprises/outils.webp'
 import Ethics from '/public/images/entreprises/ethique.webp'
 
-export default function Qualite({ className = 'bg-gray-100' }: { className?: string }) {
+export default function Qualite({ className = '' }: { className?: string }) {
     useEffect(() => {
         reveal({
             collection: Array.from(document.querySelectorAll('.career-step')),
