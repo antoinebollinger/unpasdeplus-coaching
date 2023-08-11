@@ -4,6 +4,8 @@ import Image from 'next/image'
 import { reveal } from '../../utils/reveal'
 import Qui1 from '/public/images/entreprises/qui-1.webp'
 import Qui2 from '/public/images/entreprises/qui-2.webp'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCheck, faXmark } from '@fortawesome/free-solid-svg-icons'
 
 export default function Qui({ className = 'bg-gray-100' }: { className?: string }) {
     useEffect(() => {
@@ -26,20 +28,25 @@ export default function Qui({ className = 'bg-gray-100' }: { className?: string 
                         <p className="text-lg leading-6 mb-6">
                             <strong>Un salarié heureux</strong> est un salarié <strong>performant et engagé</strong>. Selon une étude du Harvad/MIT :
                         </p>
-                        <ul className="list-check text-lg leading-8 mb-6">
+                        <ul className="list-none list-inside fa-ul text-lg leading-8 mb-6">
                             <li className="opacity-0">
+                                <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
                                 <strong>31%</strong> plus productif
                             </li>
                             <li className="opacity-0">
+                                <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
                                 <strong>2 x</strong> moins malade
                             </li>
                             <li className="opacity-0">
+                                <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
                                 <strong>6 x</strong> moins absent
                             </li>
                             <li className="opacity-0">
+                                <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
                                 <strong>2 x</strong> plus loyal
                             </li>
                             <li className="opacity-0">
+                                <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
                                 <strong>55%</strong> plus créatif
                             </li>
                         </ul>
@@ -71,17 +78,21 @@ export default function Qui({ className = 'bg-gray-100' }: { className?: string 
                         <p className="text-lg leading-6 mb-6">
                             Pourtant...
                         </p>
-                        <ul className="list-mark text-lg leading-8">
+                        <ul className="list-none list-inside fa-ul text-lg leading-8">
                             <li className="opacity-0">
+                                <span className="fa-li text-red-600"><FontAwesomeIcon icon={faXmark} /></span>
                                 <strong>78%</strong> des salariées mères rencontrent des <strong>difficultés à conciler vie professionnelle et familiale</strong>
                             </li>
                             <li className="opacity-0">
+                                <span className="fa-li text-red-600"><FontAwesomeIcon icon={faXmark} /></span>
                                 <strong>68%</strong> des mères se disent <strong>physiquement fatiguées</strong>
                             </li>
                             <li className="opacity-0">
+                                <span className="fa-li text-red-600"><FontAwesomeIcon icon={faXmark} /></span>
                                 <strong>1 salarié sur 2</strong> se dit <strong>épuisé</strong>
                             </li>
                             <li className="opacity-0">
+                                <span className="fa-li text-red-600"><FontAwesomeIcon icon={faXmark} /></span>
                                 <strong>83%</strong> des salariés parents ont le sentiment de <strong>manquer de temps au quotidien</strong>
                             </li>
                         </ul>

@@ -3,6 +3,8 @@ import Image from 'next/image';
 import { useEffect } from 'react'
 import { reveal } from '../../utils/reveal'
 import IntroImg from '/public/images/entreprises/intro.webp'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCheck } from '@fortawesome/free-solid-svg-icons'
 
 export default function Apports({ className = '' }: { className?: string }) {
     useEffect(() => {
@@ -55,14 +57,17 @@ export default function Apports({ className = '' }: { className?: string }) {
                     <p className="text-lg leading-6">
                         Engager une politique RH inclusive en soutenant la parentalité en entreprise et la qualité de vie au travail avec des <strong>actions concrètes</strong>, c'est agir pour <strong>l'épanouissement professionnel et professionnel des salariés parents</strong> mais aussi pour <strong>la préservation de la propre performance de l'entreprise</strong> :
                     </p>
-                    <ul className="list-check text-lg leading-8">
+                    <ul className="list-none list-inside fa-ul text-lg leading-8">
                         <li className="opacity-0">
+                            <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
                             <strong>Attractivité</strong>, <strong>Engagement</strong>, <strong>Fidélisation</strong> et donc <strong>Rétention des talents</strong>
                         </li>
                         <li className="opacity-0">
+                            <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
                             Les collaborateurs se sentent compris à 91% et ont envie de rester à 81%.
                         </li>
                         <li className="opacity-0">
+                            <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
                             L'image de l'entreprise est améliorée de 84% auprès des collaborateurs.
                         </li>
                     </ul>

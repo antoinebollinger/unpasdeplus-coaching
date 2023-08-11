@@ -4,6 +4,8 @@ import Image from 'next/image'
 import { reveal } from '../../utils/reveal'
 import Qui1 from '/public/images/parents/qui-1.webp'
 import Qui2 from '/public/images/parents/qui-2.webp'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPersonBreastfeeding, faPersonRunning, faLightbulb, faHandshakeAngle, faCheck } from '@fortawesome/free-solid-svg-icons'
 
 export default function Qui({ className = 'bg-gray-100' }: { className?: string }) {
     useEffect(() => {
@@ -24,17 +26,21 @@ export default function Qui({ className = 'bg-gray-100' }: { className?: string 
                 <div className="flex flex-col md:flex-row gap-6 justify-center items-center mb-16">
                     <div className="w-full md:w-2/3 order-last md:order-first">
                         <h4>L'accompagnement Healthy Habits parents est fait pour vous si...</h4>
-                        <ul className="list-disc list-inside text-lg leading-8">
+                        <ul className="list-none list-inside fa-ul text-lg leading-8">
                             <li className="opacity-0">
+                                <span className="fa-li text-xl"><FontAwesomeIcon icon={faPersonBreastfeeding} /></span>
                                 Vous êtes parents, jeunes parents occupés et <strong>prendre soin de vous relève du défi</strong>.
                             </li>
                             <li className="opacity-0">
+                                <span className="fa-li text-xl"><FontAwesomeIcon icon={faPersonRunning} /></span>
                                 Vous savez que prendre soin de sa santé physique et mentale est important pour votre équilibre mais vous ne parvenez pas à la faire seul.e.
                             </li>
                             <li className="opacity-0">
+                                <span className="fa-li text-xl"><FontAwesomeIcon icon={faLightbulb} /></span>
                                 Vous recherchez plus qu'un accompagnement, c'est être soutenu dans les défis quotidiens tout en prenant soin de soi, forger des habitudes gagnates pour entrainer le mental à toute épreuve.
                             </li>
                             <li className="opacity-0">
+                                <span className="fa-li text-xl"><FontAwesomeIcon icon={faHandshakeAngle} /></span>
                                 Vous souhaitez appréhender les situations de façon différente pour éviter de se décourager, de craquer lors de situations difficiles et vulnérables. Rester déterminé.e dans cette volonté de prendre soin de soi grâce aux mouvements et à l'alimentation. La priorité, c'est vous !
                             </li>
                         </ul>
@@ -61,17 +67,21 @@ export default function Qui({ className = 'bg-gray-100' }: { className?: string 
                     </div>
                     <div className="w-full md:w-2/3">
                         <h4>Grâce à l'accompagnement Healthy Habits parents, vous serez :</h4>
-                        <ul className="list-disc list-inside text-lg leading-8">
+                        <ul className="list-none list-inside fa-ul text-lg leading-8">
                             <li className="opacity-0">
+                                <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
                                 <strong>Guidé.e</strong> lors des séances de coaching pour <strong>avancer pas à pas</strong> dans cette volonté de mieux-être
                             </li>
                             <li className="opacity-0">
+                                <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
                                 <strong>Epaulé.e</strong> par un professionnel lors de situations décourageantes, moments de doutes pour vivre cette transition progressivement.
                             </li>
                             <li className="opacity-0">
+                                <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
                                 <strong>Challengé.e</strong>gé.e par un objectif source de motivation, de plaisir et de performance avec un sentiment de dépassement et une fierté d'accomplissement.
                             </li>
                             <li className="opacity-0">
+                                <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
                                 Ainsi, gagner en <strong>sérénité</strong>, en <strong>confiance en soi</strong>, avec une <strong>meilleure connaissance & conscience de soi</strong> pour affronter <strong>les défis quotidiens</strong>.
                             </li>
                         </ul>
