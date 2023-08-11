@@ -20,7 +20,7 @@ export default function Pratique({ className = '' }: { className?: string }) {
     const list = (img, text: string) => {
         return (
             <div className="flex flex-col md:flex-row gap-6 justify-center items-center mb-10">
-                <div className="w-1/2 md:w-1/5 mx-auto transition duration-300 opacity-0 scale-0 career-step">
+                <div className="w-1/2 md:w-1/4 mx-auto transition duration-300 opacity-0 scale-0 career-step">
                     <Image
                         src={img}
                         width={150}
@@ -40,7 +40,7 @@ export default function Pratique({ className = '' }: { className?: string }) {
             <div className="container">
                 <div className="lg:max-w-5xl mx-auto mb-16">
                     <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
-                        <div className="w-1/2 md:w-1/5">
+                        <div className="w-1/2 md:w-1/4">
                             <Image
                                 src={Pratique1}
                                 width={150}
