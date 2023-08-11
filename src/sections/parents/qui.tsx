@@ -25,7 +25,7 @@ export default function Qui({ className = 'bg-gray-100' }: { className?: string 
             <div className="container">
                 <div className="flex flex-col md:flex-row gap-6 justify-center items-center mb-16">
                     <div className="w-full md:w-2/3 order-last md:order-first">
-                        <h4>L'accompagnement Healthy Habits parents est fait pour vous si...</h4>
+                        <h4>L'accompagnement "Healthy Habits" parents est fait pour vous si...</h4>
                         <ul className="list-none list-inside fa-ul text-lg leading-8">
                             <li className="opacity-0">
                                 <span className="fa-li text-xl"><FontAwesomeIcon icon={faPersonBreastfeeding} /></span>
@@ -37,11 +37,11 @@ export default function Qui({ className = 'bg-gray-100' }: { className?: string 
                             </li>
                             <li className="opacity-0">
                                 <span className="fa-li text-xl"><FontAwesomeIcon icon={faLightbulb} /></span>
-                                Vous recherchez plus qu'un accompagnement, c'est être soutenu dans les défis quotidiens tout en prenant soin de soi, forger des habitudes gagnates pour entrainer le mental à toute épreuve.
+                                Vous recherchez plus qu'un accompagnement, c'est être <strong>soutenu dans les défis quotidiens</strong> tout en prenant soin de soi, <strong>forger des habitudes gagnantes</strong> pour <strong>entrainer le mental</strong> à toute épreuve.
                             </li>
                             <li className="opacity-0">
                                 <span className="fa-li text-xl"><FontAwesomeIcon icon={faHandshakeAngle} /></span>
-                                Vous souhaitez appréhender les situations de façon différente pour éviter de se décourager, de craquer lors de situations difficiles et vulnérables. Rester déterminé.e dans cette volonté de prendre soin de soi grâce aux mouvements et à l'alimentation. La priorité, c'est vous !
+                                Vous souhaitez appréhender les situations de façon différente pour éviter de se décourager, de craquer lors de situations difficiles et vulnérables. Rester déterminé.e dans cette volonté de prendre soin de soi <strong>grâce aux mouvements et à l'alimentation</strong>. La priorité, c'est vous !
                             </li>
                         </ul>
                     </div>
@@ -66,7 +66,7 @@ export default function Qui({ className = 'bg-gray-100' }: { className?: string 
                         />
                     </div>
                     <div className="w-full md:w-2/3">
-                        <h4>Grâce à l'accompagnement Healthy Habits parents, vous serez :</h4>
+                        <h4>Grâce à l'accompagnement "Healthy Habits" parents, vous serez :</h4>
                         <ul className="list-none list-inside fa-ul text-lg leading-8">
                             <li className="opacity-0">
                                 <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
@@ -78,7 +78,7 @@ export default function Qui({ className = 'bg-gray-100' }: { className?: string 
                             </li>
                             <li className="opacity-0">
                                 <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
-                                <strong>Challengé.e</strong>gé.e par un objectif source de motivation, de plaisir et de performance avec un sentiment de dépassement et une fierté d'accomplissement.
+                                <strong>Challengé.e</strong> par un objectif source de motivation, de plaisir et de performance avec un sentiment de dépassement et une fierté d'accomplissement.
                             </li>
                             <li className="opacity-0">
                                 <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>

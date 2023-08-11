@@ -26,8 +26,7 @@ export default function Intro({ className = '' }: { className?: string }) {
                         />
                     </div>
                     <div className="w-full lg:w-2/3 lg:order-0">
-                        <h3 className="uppercase text-center lg:text-start">Accompagnement des entreprises</h3>
-                        <h4>Soutenir vos salarié.es, c'est créer la différence.</h4>
+                        <h3 className="text-center lg:text-start">Soutenir vos salarié.es,<br />c'est créer la différence</h3>
                         <br />
                         <p className="text-lg leading-6 mb-6">
                             Prendre soin de la santé physique et mentale de vos collaborateurs, c'est être attentif à la qualité de vie au travail et renforcer de meilleures conditions de travail.

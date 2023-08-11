@@ -38,10 +38,20 @@ export default function Pratique({ className = '' }: { className?: string }) {
     return (
         <section id="pratique" className={className}>
             <div className="container">
-                <div className="text-center pb-10">
-                    <h3>En pratique, ça donne quoi ?</h3>
-                </div>
                 <div className="lg:max-w-5xl mx-auto mb-16">
+                    <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
+                        <div className="w-1/2 md:w-1/5">
+                            <Image
+                                src={Pratique1}
+                                width={150}
+                                className="opacity-0"
+                                alt="Illustration"
+                            />
+                        </div>
+                        <div className="w-full md:w-3/4">
+                            <h3>En pratique, ça donne quoi ?</h3>
+                        </div>
+                    </div>
                     {list(
                         Pratique1,
                         "Séances en <strong>présentiel</strong> et/ou <strong>distanciel</strong> à Vannes et ses alentours. Durée de 1h/1h30 la séance à 10/15 jours d'intervalle"
