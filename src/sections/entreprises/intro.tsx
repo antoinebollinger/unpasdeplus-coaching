@@ -17,7 +17,7 @@ export default function Intro({ className = '' }: { className?: string }) {
         <section id="introduction" className={className}>
             <div className="container">
                 <div className="flex flex-col lg:flex-row gap-6 justify-center items-center mb-16">
-                    <div className="w-2/3 lg:w-1/3 lg:order-1">
+                    <div className="w-2/3 lg:w-1/4 lg:order-1">
                         <Image
                             src={IntroImg}
                             alt="Intro entreprises"
@@ -25,7 +25,7 @@ export default function Intro({ className = '' }: { className?: string }) {
                             className="w-full rounded-full mx-auto transition duration-200 scale-0 entreprises-img"
                         />
                     </div>
-                    <div className="w-full lg:w-2/3 lg:order-0">
+                    <div className="w-full lg:w-3/4ok. tu par lg:order-0">
                         <h3>Soutenir vos salarié.es,<br />c'est créer la différence</h3>
                         <br />
                         <p className="text-lg leading-6 mb-6">
