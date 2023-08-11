@@ -41,7 +41,7 @@ export default function Temoignages({ className = '' }: { className?: string }) 
                         onClick={handlePrevSlide}
                         className="absolute left-0 m-auto text-5xl inset-y-1/2 cursor-pointer text-primary-400 z-20"
                     />
-                    <div className="w-full lg:h-[70vh] flex overflow-hidden relative m-auto">
+                    <div className="w-full lg:mh-[70vh] flex overflow-hidden relative m-auto">
                         <Swipe
                             onSwipeLeft={handleNextSlide}
                             onSwipeRight={handlePrevSlide}

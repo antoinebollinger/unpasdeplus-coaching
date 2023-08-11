@@ -23,8 +23,8 @@ export default function Page() {
     ];
 
     const headerProps = {
-        pretitle: 'Trouvez les clés et les ressources pour faire face aux défis quotidiens',
-        title: 'Votre partenaire mental',
+        // pretitle: 'Trouvez les clés et les ressources pour faire face aux défis quotidiens',
+        // title: 'Votre partenaire mental',
     }
 
     return (
