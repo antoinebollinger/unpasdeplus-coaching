@@ -21,8 +21,8 @@ export default function Intro({ className = '' }: { className?: string }) {
                         <Image
                             src={IntroImg}
                             alt="Intro entreprises"
-                            height="250"
-                            className="rounded mx-auto transition duration-200 scale-0 entreprises-img"
+                            // width={250}
+                            className="w-full rounded-full mx-auto transition duration-200 scale-0 entreprises-img"
                         />
                     </div>
                     <div className="w-full lg:w-2/3 lg:order-0">

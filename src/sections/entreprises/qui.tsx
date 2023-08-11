@@ -27,33 +27,47 @@ export default function Qui({ className = 'bg-gray-100' }: { className?: string 
                 <div className="flex flex-col md:flex-row gap-6 justify-center items-center mb-16">
                     <div className="w-full md:w-1/2 order-last md:order-first">
                         <p className="text-lg leading-6 mb-6">
-                            <strong>Un salarié heureux</strong> est un salarié <strong>performant et engagé</strong>. Selon une étude du Harvad/MIT :
+                            <strong>Un salarié heureux et en forme</strong> est un salarié <strong>performant et engagé</strong>. Selon une étude du Harvard/MIT :
                         </p>
-                        <ul className="list-none list-inside fa-ul text-lg leading-8 mb-6">
-                            <li className="opacity-0">
-                                <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
-                                <strong>31%</strong> plus productif
-                            </li>
-                            <li className="opacity-0">
-                                <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
-                                <strong>2 x</strong> moins malade
-                            </li>
-                            <li className="opacity-0">
-                                <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
-                                <strong>6 x</strong> moins absent
-                            </li>
-                            <li className="opacity-0">
-                                <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
-                                <strong>2 x</strong> plus loyal
-                            </li>
-                            <li className="opacity-0">
-                                <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
-                                <strong>55%</strong> plus créatif
-                            </li>
-                        </ul>
-                        <p className="text-lg leading-6 mb-6">
-                            <strong>Un salarié en forme est plus productif</strong> : 7,9% plus productif en moyenne avec la pratique du sport.
+                        <div className="flex justify-center align-center">
+                            <ul className="list-none list-inside fa-ul text-lg leading-8 mb-6">
+                                <li className="opacity-0">
+                                    <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
+                                    <span className="text-2xl font-bold text-tertary-900">31%</span> plus productif
+                                </li>
+                                <li className="opacity-0">
+                                    <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
+                                    <span className="text-2xl font-bold text-tertary-900">2 x</span> moins malade
+                                </li>
+                                <li className="opacity-0">
+                                    <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
+                                    <span className="text-2xl font-bold text-tertary-900">6 x</span> moins absent
+                                </li>
+                                <li className="opacity-0">
+                                    <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
+                                    <span className="text-2xl font-bold text-tertary-900">2 x</span> plus loyal
+                                </li>
+                                <li className="opacity-0">
+                                    <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
+                                    <span className="text-2xl font-bold text-tertary-900">55%</span> plus créatif
+                                </li>
+                                <li className="opacity-0">
+                                    <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
+                                    <span className="text-2xl font-bold text-tertary-900">7,9%</span> plus productif en moyenne avec <strong>la pratique du sport</strong>
+                                </li>
+                            </ul>
+                        </div>
+                        {/* <p className="text-lg leading-6 mb-6">
+                            <strong>Un salarié en forme est plus productif</strong> :
                         </p>
+                        <div className="flex justify-center align-center">
+                            <ul className="list-none list-inside fa-ul text-lg leading-8 mb-6">
+                                <li className="opacity-0">
+                                    <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
+                                    <span className="text-2xl font-bold text-tertary-900">7,9%</span> plus productif en moyenne avec <strong>la pratique du sport</strong>
+                                </li>
+                            </ul>
+                        </div> */}
                     </div>
                     <div className="w-full md:w-1/2 mx-auto transition duration-200 scale-0 opacity-0 qui-img">
                         <Image
