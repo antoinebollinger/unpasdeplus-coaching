@@ -1,6 +1,8 @@
 'use client';
+import Image from 'next/image';
 import { useEffect } from 'react'
 import { reveal } from '../../utils/reveal'
+import IntroImg from '/public/images/entreprises/intro.webp'
 
 export default function Apports({ className = '' }: { className?: string }) {
     useEffect(() => {
@@ -9,13 +11,22 @@ export default function Apports({ className = '' }: { className?: string }) {
             classesToRemove: ['scale-0', 'opacity-0'],
             delayIncrement: 300
         })
+        reveal({
+            collection: Array.from(document.querySelectorAll('.progression')),
+            classesToRemove: ['h-0', 'lg:w-0'],
+            classesToAdd: ['h-full', 'lg:w-full'],
+        })
     }, [])
 
     const list = (text: string, i: number) => {
         return (
-            <div className="w-1/5 transition duration-200 scale-0 opacity-0 consequence" key={i}>
-                <p className="text-lg text-center leading-6 mb-6">
-                    <strong>{text}</strong>
+            <div className={`w-1/2 lg:w-1/5 relatif flex justify-center items-center rounded-full bg-primary-100 transition duration-200 scale-0 opacity-0 consequence`} key={i}>
+                <Image
+                    src={IntroImg}
+                    alt="Intro entreprises"
+                    className="w-full rounded-full opacity-0"
+                />
+                <p className="absolute text-lg text-center leading-6 font-bold" dangerouslySetInnerHTML={{ __html: text }}>
                 </p>
             </div>
         )
@@ -27,14 +38,17 @@ export default function Apports({ className = '' }: { className?: string }) {
                     <p className="text-lg leading-6">
                         Les risques psychosociaux liés à la <strong>parentalité</strong>, <strong>aux défis quotidiens personnels et professionnels</strong> ont des conséquences pour l'entreprise :
                     </p>
-                    <div className="flex flex-col lg:flex-row gap-6 justify-center items-center">
+                    <div className="relative flex flex-col lg:flex-row gap-6 justify-center items-center">
+                        <div className="absolute z-[-1] inset-0 px-[calc(50%-2px)] lg:px-[calc(20%/2)] flex lg:items-center">
+                            <div className="w-[4px] h-0 lg:w-0 lg:h-[4px] bg-primary-700 rounded transition-all duration-2500 progression"></div>
+                        </div>
                         {
                             [
                                 "Absentéisme",
-                                "Dégradation de la productivité",
-                                "Démotivation des équipes",
+                                "Dégradation<br/>de la<br/>productivité",
+                                "Démotivation<br/>des équipes",
                                 "Turn over",
-                                "Atteinte de l'image de l'entreprise"
+                                "Atteinte<br/>de l'image de<br/>l'entreprise"
                             ].map((e, i) => list(e, i))
                         }
                     </div>

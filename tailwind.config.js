@@ -66,6 +66,9 @@ module.exports = {
           '75%': { opacity: 0 },
           '100%': { opacity: 1 },
         }
+      },
+      transitionDuration: {
+        '2500': '2500ms',
       }
     }
   },
