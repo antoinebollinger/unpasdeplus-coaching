@@ -30,8 +30,7 @@ export default function Apports({ className = 'bg-gray-100' }: { className?: str
         <section id="apports-coaching" className={className}>
             <div className="container">
                 <div className="text-center pb-10">
-                    <h3 className="text-center lg:text-start">Les apports du coaching</h3>
-                    <p className="text-lg italic">« La victoire sur soi est la plus grande des victoires » (Platon)</p>
+                    <h3 className="text-start lg:text-center">Les apports du coaching</h3>
                 </div>
                 <div className="lg:max-w-5xl mx-auto pb-10">
                     {list(
@@ -56,6 +55,7 @@ export default function Apports({ className = 'bg-gray-100' }: { className?: str
                     <p className="leading-10 text-xl">
                         <strong>Le coaching a pour but de vous booster en prenant conscience que le changement passe avant tout par soi.</strong>
                     </p>
+                    <p className="text-lg">« La victoire sur soi est la plus grande des victoires » (Platon)</p>
                 </div>
             </div>
         </section>
