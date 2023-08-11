@@ -25,11 +25,11 @@ h1, h2, h3, h4 {
 }
 
 h3 {
-    @apply mb-4 text-2xl lg:text-5xl font-semibold text-primary-600;
+    @apply mb-4 text-4xl lg:text-5xl font-semibold text-primary-600;
 }
 
 h4 {
-    @apply text-3xl text-tertary-900 font-bold mb-4;
+    @apply text-2xl lg:text-3xl text-tertary-900 font-bold mb-4;
 }
 
 h5 {

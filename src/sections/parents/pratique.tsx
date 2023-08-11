@@ -40,7 +40,7 @@ export default function Pratique({ className = '' }: { className?: string }) {
             <div className="container">
                 <div className="lg:max-w-5xl mx-auto mb-16">
                     <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
-                        <div className="w-1/2 md:w-1/4">
+                        <div className="w-1/2 md:w-1/4 hidden lg:block">
                             <Image
                                 src={Pratique1}
                                 width={150}
