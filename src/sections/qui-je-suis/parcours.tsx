@@ -55,7 +55,7 @@ export default function Parcours({ className = '' }: { className?: string }) {
                     </div>
                     {list(
                         Career1,
-                        "J'ai débuté ma carrière à l'age de 23 ans dans un grand goupe bancaire.Je voyais pleins d'opprtunités pour les prochaines années. Une envie de gravir les échelons avec un confort financier à la clé. Tout se passait bien. Après la naissance de mon premier enfant, j'ai changé de poste et de rythme de travail, être au 4/5ème pour trouver un équilibre de vie."
+                        "J'ai débuté ma carrière à l'age de 23 ans dans un grand goupe bancaire.Je voyais pleins d'opprtunités pour les prochaines années. Une envie de gravir les échelons avec un confort financier à la clé. Tout se passait bien. Après la naissance de mon premier enfant, j'ai changé de poste et de rythme de travail, être au 4/5ème pour trouver <strong>un équilibre de vie</strong>."
                     )}
                     {list(
                         Career2,

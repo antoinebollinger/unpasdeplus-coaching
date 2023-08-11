@@ -23,6 +23,7 @@ export default function Qui({ className = 'bg-gray-100' }: { className?: string 
     return (
         <section id="qui" className={className}>
             <div className="container">
+                <h3>Pourquoi accompagner vos salarié.es parents ?</h3>
                 <div className="flex flex-col md:flex-row gap-6 justify-center items-center mb-16">
                     <div className="w-full md:w-1/2 order-last md:order-first">
                         <p className="text-lg leading-6 mb-6">
