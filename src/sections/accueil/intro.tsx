@@ -6,7 +6,7 @@ export default function Intro({ className = '' }: { className?: string }) {
         <section id="introduction" className={className}>
             <div className="container">
                 <div className="flex flex-col lg:flex-row gap-6 justify-center items-center">
-                    <div className="w-2/3 lg:w-1/3 text-center">
+                    <div className="w-2/3 lg:w-1/3 text-center lg:order-1">
                         <Image
                             src={Logo}
                             alt="Logo"
@@ -14,7 +14,7 @@ export default function Intro({ className = '' }: { className?: string }) {
                             className="mx-auto"
                         />
                     </div>
-                    <div className="w-full lg:w-2/3">
+                    <div className="w-full lg:w-2/3 lg:order-0">
                         <h3 className="uppercase">Votre partenaire mental</h3>
                         <h4>Trouvez les clés et les ressources pour faire face aux défis quotidiens.</h4>
                         <br />
