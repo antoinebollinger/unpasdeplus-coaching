@@ -11,7 +11,7 @@ export const metadata = {
 
 export default function Page() {
     const headerProps = {
-        pretitle: 'Envie de me connaitre un peu mieux ?'
+        // pretitle: 'Envie de me connaitre un peu mieux ?'
     }
 
     const outroText = "En tant que <strong>coach</strong>, j’accompagne aujourd'hui les personnes à faire <strong>UN PAS DE PLUS</strong> dans leur <strong>épanouissement personnel et/ou professionnel</strong> pour un changement profond & durable&nbsp;!"

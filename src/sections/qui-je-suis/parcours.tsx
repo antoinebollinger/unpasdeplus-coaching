@@ -5,6 +5,8 @@ import { reveal } from '../../utils/reveal'
 import Career1 from '/public/images/qui-je-suis/1.webp'
 import Career2 from '/public/images/qui-je-suis/2.webp'
 import Career3 from '/public/images/qui-je-suis/3.webp'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHandPointRight } from '@fortawesome/free-solid-svg-icons'
 
 export default function Parcours({ className = '' }: { className?: string }) {
     useEffect(() => {
@@ -18,12 +20,11 @@ export default function Parcours({ className = '' }: { className?: string }) {
     const list = (img, text: string) => {
         return (
             <div className="flex flex-col md:flex-row gap-6 justify-center items-center mb-10">
-                <div className="w-1/2 md:w-1/5 mx-auto transition duration-300 opacity-0 scale-0 career-step">
+                <div className="w-1/2 md:w-1/4 mx-auto transition duration-300 opacity-0 scale-0 career-step">
                     <Image
                         src={img}
-                        width={img.width}
-                        height={img.height}
-                        className="w-full rounded-full"
+                        width={150}
+                        className="rounded-full mx-auto"
                         alt="Illustration"
                     />
                 </div>
@@ -37,11 +38,21 @@ export default function Parcours({ className = '' }: { className?: string }) {
     return (
         <section id="mon-parcours" className={className}>
             <div className="container">
-                <div className="text-center pb-10">
-                    <h3>Mon parcours</h3>
-                    <p className="text-lg italic">Ma trajectoire de vie raconte qui je suis et ce que je peux vous apporter.</p>
-                </div>
-                <div className="lg:max-w-5xl mx-auto">
+                <div className="lg:max-w-5xl mx-auto mb-16">
+                    <div className="flex flex-col md:flex-row gap-6 justify-center items-center mb-16">
+                        <div className="w-1/2 md:w-1/4 hidden lg:block">
+                            <Image
+                                src={Career1}
+                                width={150}
+                                className="opacity-0"
+                                alt="Illustration"
+                            />
+                        </div>
+                        <div className="w-full md:w-3/4">
+                            <h3>Mon parcours</h3>
+                            <p className="text-lg italic">Ma trajectoire de vie raconte qui je suis et ce que je peux vous apporter.</p>
+                        </div>
+                    </div>
                     {list(
                         Career1,
                         "J'ai débuté ma carrière à l'age de 23 ans dans un grand goupe bancaire.Je voyais pleins d'opprtunités pour les prochaines années. Une envie de gravir les échelons avec un confort financier à la clé. Tout se passait bien. Après la naissance de mon premier enfant, j'ai changé de poste et de rythme de travail, être au 4/5ème pour trouver un équilibre de vie."
@@ -56,17 +67,17 @@ export default function Parcours({ className = '' }: { className?: string }) {
                     )}
                 </div>
                 <div className="lg:max-w-5xl mx-auto">
-                    <p className="text-lg text-gray-900">
+                    <p className="text-lg text-gray-900 mb-2">
                         Parce que ce parcours , c'est aussi le parcours d'autres parents, mamans, papas qui tentent de trouver le meilleur équilibre en prenant en compte les <strong>responsabilités familiales et professionnelles</strong>.
-                        <br />
-                        <br />
+                    </p>
+                    <p className="text-lg text-gray-900 mb-2">
                         Parce que je sais qu'on a tous des ressources en nous mais parfois la <strong>charge émotionnelle</strong> nous <strong>empêche d'avancer</strong>, de nous épanouir. Avoir une meilleure de <strong>conscience de soi</strong>, <strong>connaissance de soi</strong> aide à <strong>changer nos schémas de pensée</strong>.
-                        <br />
-                        <br />
+                    </p>
+                    <p className="text-lg text-gray-900 mb-12">
                         Parce que faire un métier qui me passionne et qui a du sens pour moi, me former au coaching professionnel était une évidence. Exercer le <strong>métier</strong> avec <strong>éthique</strong> et <strong>déontologie</strong> respectant la charte déontologique du coach.
-                        <br />
-                        <br />
-                        C'est donc l'envie de contribuer, à mon niveau, au bien-être des autres que <strong>Un pas de plus</strong> voit le jour.
+                    </p>
+                    <p className="text-lg text-gray-900">
+                        <FontAwesomeIcon icon={faHandPointRight} /> C'est donc l'envie de contribuer, à mon niveau, au bien-être des autres que <strong>Un pas de plus</strong> voit le jour.
                     </p>
                 </div>
             </div>
