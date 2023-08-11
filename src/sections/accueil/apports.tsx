@@ -30,7 +30,7 @@ export default function Apports({ className = 'bg-gray-100' }: { className?: str
         <section id="apports-coaching" className={className}>
             <div className="container">
                 <div className="text-center pb-10">
-                    <h3>Les apports du coaching</h3>
+                    <h3 className="text-center lg:text-start">Les apports du coaching</h3>
                     <p className="text-lg italic">« La victoire sur soi est la plus grande des victoires » (Platon)</p>
                 </div>
                 <div className="lg:max-w-5xl mx-auto pb-10">

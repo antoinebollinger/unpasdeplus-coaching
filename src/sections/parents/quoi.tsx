@@ -12,10 +12,7 @@ export default function Quoi({ className = '' }: { className?: string }) {
                         </p>
                         <h4>Qu'est ce que le coaching ?</h4>
                         <p className="text-lg leading-6 mb-6">
-                            Le coaching consiste à accompagner des personnes dans la défi nition et l'atteinte de leurs objectifs, au bénéfi ce du développement de leur potentiel et de la réussite de leur évolution personnelle et professionnelle.
-                            <br />
-                            <br />
-                            Le coaching a pour but de vous booster en prenant conscience que <strong>le changement passe avant tout par soi</strong>.
+                            Le coaching consiste à accompagner des personnes dans la définition et l'atteinte de leurs objectifs, au bénéfice du développement de leur potentiel et de la réussite de leur évolution personnelle et professionnelle.<br />Le coaching a pour but de vous booster en prenant conscience que <strong>le changement passe avant tout par soi</strong>.
                         </p>
                         <h4>Intelligence émotionnelle</h4>
                         <p className="text-lg leading-6 mb-6">

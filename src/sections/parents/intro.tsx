@@ -23,7 +23,7 @@ export default function Intro({ className = '' }: { className?: string }) {
         <section id="introduction" className={className}>
             <div className="container">
                 <div className="flex flex-col lg:flex-row gap-6 justify-center items-center mb-16">
-                    <div className="w-2/3 lg:w-1/3 text-center">
+                    <div className="w-2/3 lg:w-1/3 lg:order-1">
                         <Image
                             src={IntroImg}
                             alt="Intro parents"
@@ -31,7 +31,7 @@ export default function Intro({ className = '' }: { className?: string }) {
                             className="mx-auto transition duration-200 scale-0 parents-img"
                         />
                     </div>
-                    <div className="w-full lg:w-2/3">
+                    <div className="w-full lg:w-2/3 lg:order-0">
                         <p className="text-lg leading-6 mb-6">
                             Un coaching pour vous accompagner à prendre soin de votre santé physique et mentale en relevant vos défis quotidiens. Acquérir des habitudes mentales <strong>pour gagner en sérénité et en confiance en soi</strong>.
                         </p>

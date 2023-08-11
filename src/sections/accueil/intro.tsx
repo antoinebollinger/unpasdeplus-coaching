@@ -15,7 +15,7 @@ export default function Intro({ className = '' }: { className?: string }) {
                         />
                     </div>
                     <div className="w-full lg:w-2/3 lg:order-0">
-                        <h3 className="uppercase">Votre partenaire mental</h3>
+                        <h3 className="uppercase text-center lg:text-start">Votre partenaire mental</h3>
                         <h4>Trouvez les clés et les ressources pour faire face aux défis quotidiens.</h4>
                         <br />
                         <p className="text-lg leading-6">

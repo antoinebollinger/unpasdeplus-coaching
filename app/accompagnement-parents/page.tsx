@@ -32,7 +32,7 @@ export default function Page() {
     ];
 
     const headerProps = {
-        title: 'Accompagnement des parents',
+        // title: 'Accompagnement des parents',
     }
 
     return (

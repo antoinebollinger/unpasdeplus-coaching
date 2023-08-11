@@ -13,8 +13,8 @@ export const metadata = {
 
 export default function Page() {
     const headerProps = {
-        title: 'Accompagnement des entreprises',
-        pretitle: 'Soutenir vos salarié.es, c\'est créer la différence',
+        // title: 'Accompagnement des entreprises',
+        // pretitle: 'Soutenir vos salarié.es, c\'est créer la différence',
     }
 
     return (
