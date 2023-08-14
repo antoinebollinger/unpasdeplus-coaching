@@ -4,7 +4,7 @@ import { useEffect } from 'react'
 import { reveal } from '../../utils/reveal'
 import IntroImg from '/public/images/entreprises/intro.webp'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCheck } from '@fortawesome/free-solid-svg-icons'
+import { faChartLine, faCheck, faCircleCheck, faCircleInfo, faHandPointRight, faPlus, faTriangleExclamation } from '@fortawesome/free-solid-svg-icons'
 
 export default function Apports({ className = '' }: { className?: string }) {
     useEffect(() => {
@@ -18,27 +18,19 @@ export default function Apports({ className = '' }: { className?: string }) {
             classesToRemove: ['h-0', 'lg:w-0'],
             classesToAdd: ['h-full', 'lg:w-full'],
         })
+        reveal({
+            collection: Array.from(document.querySelectorAll('.resultat')),
+            classesToRemove: ['scale-0', 'opacity-0'],
+            delayIncrement: 500
+        })
     }, [])
 
-    const list = (text: string, i: number) => {
-        return (
-            <div className={`w-1/2 lg:w-1/5 relatif flex justify-center items-center rounded-full bg-primary-100 transition duration-200 scale-0 opacity-0 consequence`} key={i}>
-                <Image
-                    src={IntroImg}
-                    alt="Intro entreprises"
-                    className="w-full rounded-full opacity-0"
-                />
-                <p className="absolute text-lg text-center leading-6 font-bold" dangerouslySetInnerHTML={{ __html: text }}>
-                </p>
-            </div>
-        )
-    }
     return (
         <div id="apports" className={`py-120 ${className}`}>
             <div className="container">
                 <div className="w-full lg:w-2/3 mx-auto flex flex-col gap-12">
                     <p className="text-lg leading-6">
-                        Les risques psychosociaux liés à la <strong>parentalité</strong>, <strong>aux défis quotidiens personnels et professionnels</strong> ont des conséquences pour l'entreprise :
+                        <FontAwesomeIcon icon={faTriangleExclamation} className="text-primary-600" /> Les risques psychosociaux liés à la <strong>parentalité</strong>, <strong>aux défis quotidiens personnels et professionnels</strong> ont des conséquences pour l'entreprise :
                     </p>
                     <div className="relative flex flex-col lg:flex-row gap-6 justify-center items-center">
                         <div className="absolute z-[-1] inset-0 px-[calc(50%-2px)] lg:px-[calc(20%/2)] flex lg:items-center">
@@ -51,28 +43,47 @@ export default function Apports({ className = '' }: { className?: string }) {
                                 "Démotivation<br/>des équipes",
                                 "Turn over",
                                 "Atteinte<br/>de l'image de<br/>l'entreprise"
-                            ].map((e, i) => list(e, i))
+                            ].map((e, i) => (
+                                <div className={`w-1/2 lg:w-1/5 relatif flex justify-center items-center rounded-full bg-primary-100 transition duration-200 scale-0 opacity-0 consequence`} key={i}>
+                                    <Image
+                                        src={IntroImg}
+                                        alt="Intro entreprises"
+                                        className="w-full rounded-full opacity-0"
+                                    />
+                                    <p className="absolute text-lg text-center leading-6 font-bold" dangerouslySetInnerHTML={{ __html: e }}>
+                                    </p>
+                                </div>
+                            ))
                         }
                     </div>
-                    <p className="text-lg leading-6">
-                        Engager une politique RH inclusive en soutenant la parentalité en entreprise et la qualité de vie au travail avec des <strong>actions concrètes</strong>, c'est agir pour <strong>l'épanouissement professionnel et professionnel des salariés parents</strong> mais aussi pour <strong>la préservation de la propre performance de l'entreprise</strong> :
+                    <p className="text-xl leading-8">
+                        <FontAwesomeIcon icon={faCircleCheck} className="text-tertary-900" /> Engager une politique RH inclusive en soutenant la parentalité en entreprise et la qualité de vie au travail avec des <strong>actions concrètes</strong>, c'est agir pour <strong>l'épanouissement professionnel et professionnel des salariés parents</strong> mais aussi pour <strong>la préservation de la propre performance de l'entreprise</strong> :
                     </p>
-                    <ul className="list-none list-inside fa-ul text-lg leading-8">
-                        <li className="opacity-0">
-                            <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
-                            <strong>Attractivité</strong>, <strong>Engagement</strong>, <strong>Fidélisation</strong> et donc <strong>Rétention des talents</strong>
+                    <ul className="list-none list-inside fa-ul text-2xl leading-12">
+                        {
+                            ["attractivité", "engagement", "fidélisation"].map((e, i) => (
+                                <li className="opacity-0 resultat" key={i}>
+                                    <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faPlus} /></span>
+                                    <span className="font-bold uppercase">{e}</span>
+                                </li>
+                            ))
+                        }
+
+                        <li className="opacity-0 resultat">
+                            <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faHandPointRight} /></span>
+                            Les collaborateurs se sentent compris à <span className="text-2xl font-bold text-tertary-900">91%</span>  et ont envie de rester à <span className="text-2xl font-bold text-tertary-900">81%</span>.
                         </li>
-                        <li className="opacity-0">
-                            <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
-                            Les collaborateurs se sentent compris à 91% et ont envie de rester à 81%.
+                        <li className="opacity-0 consequence">
+                            <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faChartLine} /></span>
+                            L'image de l'entreprise est améliorée de <span className="text-2xl font-bold text-tertary-900">84%</span> auprès des collaborateurs.
                         </li>
-                        <li className="opacity-0">
+                        <li className="opacity-0 resultat">
                             <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
-                            L'image de l'entreprise est améliorée de 84% auprès des collaborateurs.
+                            <span className="font-bold uppercase">Marque employeur</span>
                         </li>
                     </ul>
                     <p className="text-lg leading-6">
-                        Le saviez-vous : en 2025, le bien-être est le premier critère de fidélité envers une entreprise selon une étude Women'UP, pour 75% des actifs en 2025.
+                        <FontAwesomeIcon icon={faCircleInfo} /> Le saviez-vous : en 2025, le bien-être est le premier critère de fidélité envers une entreprise selon une étude Women'UP, pour 75% des actifs en 2025.
                     </p>
                 </div>
             </div>

@@ -69,6 +69,9 @@ module.exports = {
       },
       transitionDuration: {
         '2500': '2500ms',
+      },
+      lineHeight: {
+        '12': '3rem',
       }
     }
   },

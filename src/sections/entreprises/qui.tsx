@@ -20,8 +20,8 @@ export default function Qui({ className = 'bg-gray-100' }: { className?: string 
         })
         reveal({
             collection: Array.from(document.querySelectorAll('.apports-text')),
-            classesToRemove: ['translate-x-3/4', 'scale-0', 'opacity-0'],
-            classesToAdd: ['translate-x-0'],
+            classesToRemove: ['translate-y-full', 'scale-0', 'opacity-0'],
+            classesToAdd: ['translate-y-0'],
         })
     }, [])
 
@@ -57,23 +57,19 @@ export default function Qui({ className = 'bg-gray-100' }: { className?: string 
                                         <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
                                         <span className="text-2xl font-bold text-tertary-900">55%</span> plus créatif
                                     </li>
+                                </ul>
+                            </div>
+                            <p className="text-lg leading-6 mb-6">
+                                Et <strong>un salarié en forme</strong> :
+                            </p>
+                            <div className="flex justify-center align-center">
+                                <ul className="list-none list-inside fa-ul text-lg leading-8 mb-6">
                                     <li className="opacity-0">
                                         <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
                                         <span className="text-2xl font-bold text-tertary-900">7,9%</span> plus productif en moyenne avec <strong>la pratique du sport</strong>
                                     </li>
                                 </ul>
                             </div>
-                            {/* <p className="text-lg leading-6 mb-6">
-                            <strong>Un salarié en forme est plus productif</strong> :
-                        </p>
-                        <div className="flex justify-center align-center">
-                            <ul className="list-none list-inside fa-ul text-lg leading-8 mb-6">
-                                <li className="opacity-0">
-                                    <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
-                                    <span className="text-2xl font-bold text-tertary-900">7,9%</span> plus productif en moyenne avec <strong>la pratique du sport</strong>
-                                </li>
-                            </ul>
-                        </div> */}
                         </div>
                         <div className="w-full md:w-1/2 mx-auto transition duration-200 scale-0 opacity-0 qui-img">
                             <Image
@@ -98,7 +94,7 @@ export default function Qui({ className = 'bg-gray-100' }: { className?: string 
                             ],
                             [
                                 '1 / 2',
-                                '<strong>1 salarié sur 2</strong> se dit <strong>épuisé</strong>'
+                                '<strong>salarié</strong> se dit <strong>épuisé</strong>'
                             ],
                             [
                                 '83%',
@@ -112,7 +108,7 @@ export default function Qui({ className = 'bg-gray-100' }: { className?: string 
                                             <p className="text-4xl text-primary-600 font-bold">{e[0]}</p>
                                         </div>
                                     </div>
-                                    <div className="grow transition duration-300 opacity-0 translate-x-3/4 apports-text">
+                                    <div className="grow transition duration-300 opacity-0 translate-y-full apports-text">
                                         <p className="text-2xl text-gray-900" dangerouslySetInnerHTML={{ __html: e[1] }} />
                                     </div>
                                 </div>

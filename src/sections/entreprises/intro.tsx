@@ -28,10 +28,10 @@ export default function Intro({ className = '' }: { className?: string }) {
                         <h3>Soutenir vos salarié.es,<br />c'est créer la différence</h3>
                         <br />
                         <p className="text-lg leading-6 mb-6">
-                            Prendre soin de la santé physique et mentale de vos collaborateurs, c'est être attentif à la qualité de vie au travail et renforcer de meilleures conditions de travail.
+                            Prendre soin de la <strong>santé physique et mentale de vos collaborateurs</strong>, c'est être attentif à la <strong>qualité de vie au travail</strong> et renforcer de meilleures conditions de travail.
                             <br />
                             <br />
-                            Mon accompagnement agit sur le bien-être des parents pour permettre de concilier sereinement parentalité/travail et défis quotidiens personnels et professionnels.
+                            Mon accompagnement agit sur le <strong>bien-être des parents</strong> pour permettre de <strong>concilier sereinement parentalité/travail</strong> et défis quotidiens personnels et professionnels.
                         </p>
                     </div>
                 </div>
