@@ -4,7 +4,7 @@ import { useEffect } from 'react'
 import { reveal } from '../../utils/reveal'
 import IntroImg from '/public/images/entreprises/intro.webp'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChartLine, faCheck, faCircleCheck, faCircleInfo, faHandPointRight, faPlus, faTriangleExclamation } from '@fortawesome/free-solid-svg-icons'
+import { faArrowTrendUp, faChartLine, faCheck, faCircleCheck, faCircleInfo, faHandPointRight, faPlus, faTriangleExclamation } from '@fortawesome/free-solid-svg-icons'
 
 export default function Apports({ className = '' }: { className?: string }) {
     useEffect(() => {
@@ -72,6 +72,10 @@ export default function Apports({ className = '' }: { className?: string }) {
                         <li className="opacity-0 resultat">
                             <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faHandPointRight} /></span>
                             Les collaborateurs se sentent compris à <span className="text-2xl font-bold text-tertary-900">91%</span>  et ont envie de rester à <span className="text-2xl font-bold text-tertary-900">81%</span>.
+                        </li>
+                        <li className="opacity-0 resultat">
+                            <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faArrowTrendUp} /></span>
+                            <span className="font-bold uppercase">Rétention des talents</span>
                         </li>
                         <li className="opacity-0 consequence">
                             <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faChartLine} /></span>
