@@ -36,7 +36,7 @@ export default function Qualite({ className = '' }: { className?: string }) {
     }
 
     return (
-        <section id="pratique" className={className}>
+        <section id="qualite" className={className}>
             <div className="container">
                 <div className="text-center pb-10">
                     <h3>Un accompagnement de qualité</h3>

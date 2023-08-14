@@ -34,7 +34,7 @@ export default function Apports({ className = '' }: { className?: string }) {
         )
     }
     return (
-        <section id="qui" className={className}>
+        <section id="apports" className={className}>
             <div className="container">
                 <div className="w-full lg:w-2/3 mx-auto flex flex-col gap-12">
                     <p className="text-lg leading-6">

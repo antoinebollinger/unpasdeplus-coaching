@@ -25,25 +25,6 @@ export default function Qui({ className = 'bg-gray-100' }: { className?: string 
         })
     }, [])
 
-    const liste = [
-        [
-            '78%',
-            'des salariées mères rencontrent des <strong>difficultés à conciler vie professionnelle et familiale</strong>'
-        ],
-        [
-            '68%',
-            'des mères se disent <strong>physiquement fatiguées</strong>'
-        ],
-        [
-            '1 / 2',
-            '<strong>1 salarié sur 2</strong> se dit <strong>épuisé</strong>'
-        ],
-        [
-            '83%',
-            'des salariés parents ont le sentiment de <strong>manquer de temps au quotidien</strong>'
-        ]
-    ]
-
     return (
         <section id="qui" className={className}>
             <div className="container">
@@ -105,7 +86,7 @@ export default function Qui({ className = 'bg-gray-100' }: { className?: string 
                         </div>
                     </div>
                     <h3>Pourtant...</h3>
-                    <div className="">
+                    <div>
                         {[
                             [
                                 '78%',
