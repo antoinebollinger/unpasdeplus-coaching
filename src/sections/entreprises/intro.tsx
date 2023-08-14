@@ -36,8 +36,8 @@ export default function Intro({ className = '' }: { className?: string }) {
                     </div>
                 </div>
                 <div className="text-center">
-                    <Link href="/contact">
-                        <button type="submit" className="main-btn gradient-btn focus:outline-none uppercase">Me contacter pour en savoir plus</button>
+                    <Link href="/contact" className="main-btn gradient-btn focus:outline-none uppercase">
+                        Me contacter pour en savoir plus
                     </Link>
                 </div>
             </div>

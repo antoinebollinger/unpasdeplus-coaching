@@ -42,8 +42,8 @@ export default function Approche({ className = '' }: { className?: string }) {
                     </div>
                 </div>
                 <div className="text-center">
-                    <Link href="/contact">
-                        <button type="submit" className="main-btn gradient-btn focus:outline-none uppercase">Besoin d'être épaulé.e ?<br />Contactez-moi</button>
+                    <Link href="/contact" className="main-btn gradient-btn focus:outline-none uppercase">
+                        Besoin d'être épaulé.e ?<br />Contactez-moi
                     </Link>
                 </div>
             </div>

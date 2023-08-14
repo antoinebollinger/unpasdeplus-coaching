@@ -13,8 +13,8 @@ export default function Services({ className = 'bg-gray-100' }: { className?: st
                         <p className="text-lg text-start grow">
                             <strong>Accompagner & soutenir</strong> vos salariés dans des <strong>changements de vie</strong> tels que <strong>le retour au travail après un congé maternité/partenité, absence de longue maladie ou face à une charge mentale importante.</strong>
                         </p>
-                        <Link href="/accompagnement-parents" className="mx-auto">
-                            <button type="submit" className="main-btn gradient-btn focus:outline-none uppercase">En savoir plus</button>
+                        <Link href="/contact" className="main-btn gradient-btn focus:outline-none uppercase mx-auto">
+                            En savoir plus
                         </Link>
                     </div>
                     <div className="w-full lg:w-1/2 flex flex-col gap-6">
@@ -22,8 +22,8 @@ export default function Services({ className = 'bg-gray-100' }: { className?: st
                         <p className="text-lg text-start grow">
                             <strong>Sensibiliser, accompagner</strong> les managers & RH sur la parentalité en entreprise et intensifier les actions sur la qualité de vie au travail.
                         </p>
-                        <Link href="/accompagnement-parents" className="mx-auto">
-                            <button type="submit" className="main-btn gradient-btn focus:outline-none uppercase">En savoir plus</button>
+                        <Link href="/contact" className="main-btn gradient-btn focus:outline-none uppercase mx-auto">
+                            En savoir plus
                         </Link>
                     </div>
                 </div>

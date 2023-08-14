@@ -32,8 +32,8 @@ export default function Liens({ className = 'bg-gray-100' }: { className?: strin
                         <p className="text-lg text-center grow">
                             Fondatrice UN PAS DE PLUS
                         </p>
-                        <Link href="/qui-je-suis" className="mx-auto">
-                            <button type="submit" className="main-btn gradient-btn focus:outline-none uppercase">Qui je suis</button>
+                        <Link href="/qui-je-suis" className="main-btn gradient-btn focus:outline-none uppercase mx-auto">
+                            Qui je suis
                         </Link>
                     </div>
                     <div className="w-full lg:w-1/3 flex flex-col gap-6">
@@ -52,8 +52,8 @@ export default function Liens({ className = 'bg-gray-100' }: { className?: strin
                             <br />
                             Avez-vous pensé à vous interroger sur vos motivations intrinsèques ?
                         </p>
-                        <Link href="/accompagnement-parents" className="mx-auto">
-                            <button type="submit" className="main-btn gradient-btn focus:outline-none uppercase">En savoir plus</button>
+                        <Link href="/accompagnement-parents" className="main-btn gradient-btn focus:outline-none uppercase mx-auto">
+                            En savoir plus
                         </Link>
                     </div>
                     <div className="w-full lg:w-1/3 flex flex-col gap-6">
@@ -72,8 +72,8 @@ export default function Liens({ className = 'bg-gray-100' }: { className?: strin
                             <br />
                             Avez-vous mis en place un dispositif pour renforcer une politique RH inclusive autour de la parentalité ?
                         </p>
-                        <Link href="/accompagnement-entreprises" className="mx-auto">
-                            <button type="submit" className="main-btn gradient-btn focus:outline-none uppercase">En savoir plus</button>
+                        <Link href="/accompagnement-entreprises" className="main-btn gradient-btn focus:outline-none uppercase mx-auto">
+                            En savoir plus
                         </Link>
                     </div>
                 </div>
