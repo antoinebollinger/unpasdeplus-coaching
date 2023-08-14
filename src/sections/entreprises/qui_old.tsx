@@ -1,4 +1,4 @@
-'use client';
+'use client'
 import { useEffect } from 'react'
 import Image from 'next/image'
 import { reveal } from '../../utils/reveal'
@@ -18,31 +18,7 @@ export default function Qui({ className = 'bg-gray-100' }: { className?: string 
             classesToRemove: ['opacity-0'],
             delayIncrement: 50
         })
-        reveal({
-            collection: Array.from(document.querySelectorAll('.apports-text')),
-            classesToRemove: ['translate-x-3/4', 'scale-0', 'opacity-0'],
-            classesToAdd: ['translate-x-0'],
-        })
     }, [])
-
-    const liste = [
-        [
-            '78%',
-            'des salariées mères rencontrent des <strong>difficultés à conciler vie professionnelle et familiale</strong>'
-        ],
-        [
-            '68%',
-            'des mères se disent <strong>physiquement fatiguées</strong>'
-        ],
-        [
-            '1 / 2',
-            '<strong>1 salarié sur 2</strong> se dit <strong>épuisé</strong>'
-        ],
-        [
-            '83%',
-            'des salariés parents ont le sentiment de <strong>manquer de temps au quotidien</strong>'
-        ]
-    ]
 
     return (
         <section id="qui" className={className}>
@@ -103,27 +79,6 @@ export default function Qui({ className = 'bg-gray-100' }: { className?: string 
                         />
                     </div>
                 </div>
-
-                <div className="w-full lg:w-2/3 mx-auto">
-
-                    {liste.map(ele => {
-                        return (
-                            <div className="flex flex-col gap-6 justify-center items-center mb-10">
-                                <div className="transition duration-300 opacity-0 scale-0 apports-text">
-                                    <div className="w-[100px] h-[100px] rounded-full bg-secondary-100 flex justify-center items-center">
-                                        <p className="text-4xl text-primary-600 font-bold">{ele[0]}</p>
-                                    </div>
-                                </div>
-                                <div className="grow transition duration-300 opacity-0 translate-x-3/4 apports-text">
-                                    <p className="text-2xl text-gray-900" dangerouslySetInnerHTML={{ __html: ele[1] }} />
-                                </div>
-                            </div>
-                        )
-                    })
-
-                    }
-                </div>
-
                 <div className="flex flex-col md:flex-row gap-6 justify-center items-center mb-16">
                     <div className="w-full md:w-1/2 mx-auto transition duration-200 scale-0 opacity-0 qui-img">
                         <Image

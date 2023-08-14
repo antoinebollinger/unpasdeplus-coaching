@@ -1,5 +1,5 @@
-'use client';
-import Image from 'next/image';
+'use client'
+import Image from 'next/image'
 import { useEffect } from 'react'
 import { reveal } from '../../utils/reveal'
 import IntroImg from '/public/images/entreprises/intro.webp'
