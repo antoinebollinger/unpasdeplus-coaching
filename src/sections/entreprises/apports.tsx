@@ -34,7 +34,7 @@ export default function Apports({ className = '' }: { className?: string }) {
         )
     }
     return (
-        <section id="apports" className={className}>
+        <div id="apports" className={`py-120 ${className}`}>
             <div className="container">
                 <div className="w-full lg:w-2/3 mx-auto flex flex-col gap-12">
                     <p className="text-lg leading-6">
@@ -76,6 +76,6 @@ export default function Apports({ className = '' }: { className?: string }) {
                     </p>
                 </div>
             </div>
-        </section>
+        </div>
     )
 }
