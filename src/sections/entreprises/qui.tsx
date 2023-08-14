@@ -123,16 +123,16 @@ export default function Qui({ className = 'bg-gray-100' }: { className?: string 
                                 '83%',
                                 'des salariés parents ont le sentiment de <strong>manquer de temps au quotidien</strong>'
                             ]
-                        ].map(ele => {
+                        ].map((e, i) => {
                             return (
-                                <div className="flex flex-col gap-6 justify-center items-center mb-10">
+                                <div className="flex flex-col gap-6 justify-center items-center mb-10" key={i}>
                                     <div className="transition duration-300 opacity-0 scale-0 apports-text">
                                         <div className="w-[100px] h-[100px] rounded-full bg-secondary-100 flex justify-center items-center">
-                                            <p className="text-4xl text-primary-600 font-bold">{ele[0]}</p>
+                                            <p className="text-4xl text-primary-600 font-bold">{e[0]}</p>
                                         </div>
                                     </div>
                                     <div className="grow transition duration-300 opacity-0 translate-x-3/4 apports-text">
-                                        <p className="text-2xl text-gray-900" dangerouslySetInnerHTML={{ __html: ele[1] }} />
+                                        <p className="text-2xl text-gray-900" dangerouslySetInnerHTML={{ __html: e[1] }} />
                                     </div>
                                 </div>
                             )
