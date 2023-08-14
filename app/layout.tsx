@@ -9,6 +9,11 @@ import { inter, roboto, urbanist, amatic } from '../styles/font'
 export const metadata: Metadata = {
     title: siteData.title,
     description: siteData.description,
+    openGraph: {
+        title: siteData.title,
+        description: siteData.description,
+        images: '/opengraph-image.jpg'
+    }
 }
 
 export default function RootLayout({
@@ -17,7 +22,7 @@ export default function RootLayout({
     children: React.ReactNode,
 }) {
     return (
-        <html lang="en" className={`${roboto.variable} ${urbanist.variable} ${amatic.variable} ${inter.variable}`}>
+        <html lang="fr" className={`${roboto.variable} ${urbanist.variable} ${amatic.variable} ${inter.variable}`}>
             <body>
                 {children}
             </body>

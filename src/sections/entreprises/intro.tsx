@@ -21,11 +21,10 @@ export default function Intro({ className = '' }: { className?: string }) {
                         <Image
                             src={IntroImg}
                             alt="Intro entreprises"
-                            // width={250}
                             className="w-full rounded-full mx-auto transition duration-200 scale-0 entreprises-img"
                         />
                     </div>
-                    <div className="w-full lg:w-3/4ok. tu par lg:order-0">
+                    <div className="w-full lg:w-3/4 lg:order-0">
                         <h3>Soutenir vos salarié.es,<br />c'est créer la différence</h3>
                         <br />
                         <p className="text-lg leading-6 mb-6">

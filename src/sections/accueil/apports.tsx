@@ -15,8 +15,8 @@ export default function Apports({ className = 'bg-gray-100' }: { className?: str
         return (
             <div className="flex flex-col md:flex-row gap-6 justify-center items-center mb-10">
                 <div className="transition duration-300 opacity-0 scale-0 apports-text">
-                    <div className="w-[100px] h-[100px] rounded-full bg-primary-100 flex justify-center items-center">
-                        <p className="text-4xl">{illustration}</p>
+                    <div className="w-[100px] h-[100px] rounded-full bg-tertary-200 flex justify-center items-center">
+                        <p className="text-4xl text-tertary-900 font-bold">{illustration}</p>
                     </div>
                 </div>
                 <div className="grow transition duration-300 opacity-0 translate-x-3/4 apports-text">
