@@ -1,7 +1,7 @@
-import Image from "next/image";
-import Wave from "/public/images/svg/wave-white.svg";
-import WaveGray from "/public/images/svg/wave-gray.svg";
-import Banner from "/public/images/banners/break.webp";
+import Image from 'next/image'
+import Wave from '/public/images/svg/wave-white.svg'
+import WaveGray from '/public/images/svg/wave-gray.svg'
+import Banner from '/public/images/banners/break.webp'
 
 type breakProps = {
     banner?: any,

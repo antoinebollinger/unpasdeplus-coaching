@@ -15,6 +15,11 @@ export default function Parcours({ className = '' }: { className?: string }) {
             classesToRemove: ['translate-x-3/4', 'scale-0', 'opacity-0'],
             classesToAdd: ['translate-x-0'],
         })
+        reveal({
+            collection: Array.from(document.querySelectorAll('.parcours-text')),
+            classesToRemove: ['translate-y-full', 'opacity-0'],
+            delayIncrement: 100
+        })
     }, [])
 
     return (
@@ -68,16 +73,16 @@ export default function Parcours({ className = '' }: { className?: string }) {
                     }
                 </div>
                 <div className="lg:max-w-5xl mx-auto">
-                    <p className="text-lg text-gray-900 mb-2">
+                    <p className="text-lg text-gray-900 mb-2 transition duration-200 opacity-0 translate-y-full parcours-text">
                         Parce que ce parcours , c'est aussi le parcours d'autres parents, mamans, papas qui tentent de trouver le meilleur équilibre en prenant en compte les <strong>responsabilités familiales et professionnelles</strong>.
                     </p>
-                    <p className="text-lg text-gray-900 mb-2">
+                    <p className="text-lg text-gray-900 mb-2 transition duration-200 opacity-0 translate-y-full parcours-text">
                         Parce que je sais qu'on a tous des ressources en nous mais parfois la <strong>charge émotionnelle</strong> nous <strong>empêche d'avancer</strong>, de nous épanouir. Avoir une meilleure de <strong>conscience de soi</strong>, <strong>connaissance de soi</strong> aide à <strong>changer nos schémas de pensée</strong>.
                     </p>
-                    <p className="text-lg text-gray-900 mb-12">
+                    <p className="text-lg text-gray-900 mb-12 transition duration-200 opacity-0 translate-y-full parcours-text">
                         Parce que faire un métier qui me passionne et qui a du sens pour moi, me former au coaching professionnel était une évidence. Exercer le <strong>métier</strong> avec <strong>éthique</strong> et <strong>déontologie</strong> respectant la charte déontologique du coach.
                     </p>
-                    <p className="text-lg text-gray-900">
+                    <p className="text-lg text-gray-900 transition duration-200 opacity-0 translate-y-full parcours-text">
                         <FontAwesomeIcon icon={faHandPointRight} /> C'est donc l'envie de contribuer, à mon niveau, au bien-être des autres que <strong>Un pas de plus</strong> voit le jour.
                     </p>
                 </div>

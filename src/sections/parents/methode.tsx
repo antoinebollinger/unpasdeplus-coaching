@@ -54,7 +54,7 @@ export default function Methode({ className = 'bg-gray-100' }: { className?: str
                                         alt="Intro entreprises"
                                         className="w-full rounded-full opacity-0"
                                     />
-                                    <p className="absolute text-xl text-center leading-6" dangerouslySetInnerHTML={{ __html: e }}>
+                                    <p className="absolute lg:text-xl text-center leading-6" dangerouslySetInnerHTML={{ __html: e }}>
                                     </p>
                                 </div>
                             ))

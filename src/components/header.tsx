@@ -1,27 +1,13 @@
-'use client';
+'use client'
 import Image from 'next/image'
 import Navbar from './navbar'
 import Headline from './headline'
 import Wave from '/public/images/svg/wave-white.svg'
-import { useState, useEffect } from 'react'
 
 export default function Header({
     banner,
     headerProps
 }) {
-    const [siteUrl, setSiteUrl] = useState('')
-
-    useEffect(() => {
-        setSiteUrl(window.location.origin)
-
-        document.querySelector('html').style.scrollBehavior = 'auto'
-
-        const anchors = Array.from(document.querySelectorAll('a'))
-        anchors?.forEach(anchor => anchor.addEventListener('click', e => {
-            document.querySelector('html').style.scrollBehavior = anchor.href.includes('#') ? 'smooth' : 'auto'
-        }))
-    }, [])
-
     return (
         <header className="relative min-h-[60vh]" id="header">
             <div className="navigation">
