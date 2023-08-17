@@ -30,7 +30,7 @@ export default function Apports({ className = '' }: { className?: string }) {
             <div className="container">
                 <div className="w-full lg:w-2/3 mx-auto flex flex-col gap-12">
                     <p className="text-lg leading-6">
-                        <FontAwesomeIcon icon={faTriangleExclamation} className="text-primary-600" /> Les risques psychosociaux liés à la <strong>parentalité</strong>, <strong>aux défis quotidiens personnels et professionnels</strong> ont des conséquences pour l'entreprise :
+                        <FontAwesomeIcon icon={faTriangleExclamation} className="text-primary-600 text-4xl" /> Les risques psychosociaux liés à la <strong>parentalité</strong>, <strong>aux défis quotidiens personnels et professionnels</strong> ont des conséquences pour l'entreprise :
                     </p>
                     <div className="relative flex flex-col lg:flex-row gap-6 justify-center items-center">
                         <div className="absolute z-[-1] inset-0 px-[calc(50%-2px)] lg:px-[calc(20%/2)] flex lg:items-center">
@@ -57,7 +57,7 @@ export default function Apports({ className = '' }: { className?: string }) {
                         }
                     </div>
                     <p className="text-xl leading-8">
-                        <FontAwesomeIcon icon={faCircleCheck} className="text-tertary-900" /> Engager une politique RH inclusive en soutenant la parentalité en entreprise et la qualité de vie au travail avec des <strong>actions concrètes</strong>, c'est agir pour <strong>l'épanouissement professionnel et professionnel des salariés parents</strong> mais aussi pour <strong>la préservation de la propre performance de l'entreprise</strong> :
+                        <FontAwesomeIcon icon={faCircleCheck} className="text-tertary-900 text-4xl" /> Engager une politique RH inclusive en soutenant la parentalité en entreprise et la qualité de vie au travail avec des <strong>actions concrètes</strong>, c'est agir pour <strong>l'épanouissement professionnel et professionnel des salariés parents</strong> mais aussi pour <strong>la préservation de la propre performance de l'entreprise</strong> :
                     </p>
                     <ul className="list-none list-inside fa-ul text-2xl leading-12 resultats">
                         <li className="opacity-0">

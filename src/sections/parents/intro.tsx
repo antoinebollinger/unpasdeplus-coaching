@@ -31,10 +31,10 @@ export default function Intro({ className = '' }: { className?: string }) {
                         />
                     </div>
                     <div className="w-full lg:w-3/4 lg:order-0">
-                        <h3>Accompagnement "Healthy Habits" :<br />bien dans sa tête, bien dans ses baskets</h3>
+                        <h3><strong>Un accompagnement remise en forme</strong><br />tant sur le plan <strong>physique</strong> que <strong>mental</strong></h3>
                         <br />
                         <p className="text-lg leading-6 mb-6">
-                            Un coaching pour vous accompagner à prendre soin de votre santé physique et mentale en relevant vos défis quotidiens. Acquérir des habitudes mentales <strong>pour gagner en sérénité et en confiance en soi</strong>.
+                            Un accompagnement individuel pour vous aider à prendre soin de votre santé physique et mentale en relevant vos défis quotidiens. Acquérir des habitudes mentales <strong>pour gagner en sérénité et en confiance en soi</strong>.
                         </p>
                         <ul className="list-disc list-inside text-lg leading-8">
                             <li className="opacity-0">

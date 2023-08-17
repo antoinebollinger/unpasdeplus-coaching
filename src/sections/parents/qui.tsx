@@ -33,7 +33,7 @@ export default function Qui({ className = 'bg-gray-100' }: { className?: string 
                             </li>
                             <li className="opacity-0">
                                 <span className="fa-li text-xl"><FontAwesomeIcon icon={faPersonRunning} /></span>
-                                Vous savez que prendre soin de sa santé physique et mentale est important pour votre équilibre mais vous ne parvenez pas à la faire seul.e.
+                                Vous savez que prendre soin de sa santé physique et mentale est important pour votre <strong>équilibre</strong> mais vous ne parvenez pas à la faire seul.e.
                             </li>
                             <li className="opacity-0">
                                 <span className="fa-li text-xl"><FontAwesomeIcon icon={faLightbulb} /></span>
@@ -74,11 +74,11 @@ export default function Qui({ className = 'bg-gray-100' }: { className?: string 
                             </li>
                             <li className="opacity-0">
                                 <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
-                                <strong>Epaulé.e</strong> par un professionnel lors de situations décourageantes, moments de doutes pour vivre cette transition progressivement.
+                                <strong>Epaulé.e</strong> par un professionnel lors de <strong>situations décourageantes</strong>, moments de doutes pour vivre cette transition progressivement.
                             </li>
                             <li className="opacity-0">
                                 <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
-                                <strong>Challengé.e</strong> par un objectif source de motivation, de plaisir et de performance avec un sentiment de dépassement et une fierté d'accomplissement.
+                                <strong>Challengé.e</strong> par un objectif source de <strong>motivation</strong>, de <strong>plaisir</strong> et de <strong>performance</strong> avec <strong>un sentiment de dépassement de soi</strong> et une <strong>fierté d'accomplissement</strong>.
                             </li>
                             <li className="opacity-0">
                                 <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>

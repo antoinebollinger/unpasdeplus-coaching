@@ -38,7 +38,7 @@ export default function Pratique({ className = '' }: { className?: string }) {
                         [
                             [
                                 Pratique1,
-                                "Séances en <strong>présentiel</strong> et/ou <strong>distanciel</strong> à Vannes et ses alentours. Durée de 1h/1h30 la séance à 10/15 jours d'intervalle"
+                                "Séances individuelles en <strong>présentiel</strong> et/ou <strong>distanciel</strong> à Vannes et ses alentours. Durée de 1h/1h30 la séance à 10/15 jours d'intervalle"
                             ],
                             [
                                 Pratique2,
