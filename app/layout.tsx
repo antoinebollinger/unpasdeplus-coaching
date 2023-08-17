@@ -7,12 +7,18 @@ import { siteData } from '../src/data/metadata'
 import { inter, roboto, urbanist, amatic } from '../styles/font'
 
 export const metadata: Metadata = {
+    metadataBase: new URL('https://unpasdeplus-coaching.fr'),
     title: siteData.title,
     description: siteData.description,
     openGraph: {
         title: siteData.title,
         description: siteData.description,
         images: '/opengraph-image.jpg'
+    },
+    twitter: {
+        title: siteData.title,
+        description: siteData.description,
+        images: '/twitter-image.jpg'
     }
 }
 

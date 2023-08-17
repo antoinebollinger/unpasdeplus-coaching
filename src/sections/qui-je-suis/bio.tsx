@@ -21,8 +21,6 @@ export default function Bio({ className = '' }: { className?: string }) {
                     <div className="w-1/2 md:w-1/4 mx-auto transition duration-200 scale-0 opacity-0 about-img">
                         <Image
                             src={Sabrina}
-                            width={Sabrina.width}
-                            height={Sabrina.height}
                             className="w-full rounded-full"
                             alt="Sabrina Appriou"
                         />

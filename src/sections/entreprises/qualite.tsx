@@ -17,24 +17,6 @@ export default function Qualite({ className = '' }: { className?: string }) {
         })
     }, [])
 
-    const list = (img, text: string) => {
-        return (
-            <div className="flex flex-col md:flex-row gap-6 justify-center items-center mb-10">
-                <div className="w-1/2 md:w-1/5 mx-auto transition duration-300 opacity-0 scale-0 career-step">
-                    <Image
-                        src={img}
-                        width={150}
-                        className="mx-auto rounded-full"
-                        alt="Illustration"
-                    />
-                </div>
-                <div className="w-full md:w-3/4 transition duration-300 opacity-0 translate-x-3/4 career-step">
-                    <p className="text-lg text-gray-900" dangerouslySetInnerHTML={{ __html: text }} />
-                </div>
-            </div>
-        )
-    }
-
     return (
         <section id="qualite" className={className}>
             <div className="container">
@@ -43,22 +25,40 @@ export default function Qualite({ className = '' }: { className?: string }) {
                     <p className="text-lg italic">Avec professionnalisme, éthique et bienveillance</p>
                 </div>
                 <div className="lg:max-w-5xl mx-auto mb-16">
-                    {list(
-                        EMCC,
-                        "Accréditation EMCC - labélisation EMCC (European Mentoring Coaching Council)"
-                    )}
-                    {list(
-                        FranceCompetences,
-                        "Coach professionnelle certifiée RNCP 7 - Linkup Coaching"
-                    )}
-                    {list(
-                        Outils,
-                        "Outils et méthodes de coaching"
-                    )}
-                    {list(
-                        Ethics,
-                        "Charte déontologique du coach"
-                    )}
+                    {
+                        [
+                            [
+                                EMCC,
+                                "Accréditation EMCC - labélisation EMCC (European Mentoring Coaching Council)"
+                            ],
+                            [
+                                FranceCompetences,
+                                "Coach professionnelle certifiée RNCP 7 - Linkup Coaching"
+                            ],
+                            [
+                                Outils,
+                                "Outils et méthodes de coaching"
+                            ],
+                            [
+                                Ethics,
+                                "Charte déontologique du coach"
+                            ]
+                        ].map((e, i) => (
+                            <div className="flex flex-col md:flex-row gap-6 justify-center items-center mb-10" key={i}>
+                                <div className="w-1/2 md:w-1/5 mx-auto transition duration-300 opacity-0 scale-0 career-step">
+                                    <Image
+                                        src={e[0]}
+                                        width={150}
+                                        className="mx-auto rounded-full"
+                                        alt="Illustration"
+                                    />
+                                </div>
+                                <div className="w-full md:w-3/4 transition duration-300 opacity-0 translate-x-3/4 career-step">
+                                    <p className="text-lg text-gray-900" dangerouslySetInnerHTML={{ __html: e[1] }} />
+                                </div>
+                            </div>
+                        ))
+                    }
                 </div>
                 <div className="text-center">
                     <Link href="/contact" className="main-btn gradient-btn focus:outline-none uppercase">

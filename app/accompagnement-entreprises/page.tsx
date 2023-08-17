@@ -12,13 +12,27 @@ export const metadata = {
 }
 
 export default function Page() {
-    const headerProps = {
-        // title: 'Accompagnement des entreprises',
-        // pretitle: 'Soutenir vos salarié.es, c\'est créer la différence',
-    }
+    const onThisPage = [
+        {
+            title: 'Introduction',
+            link: '#header'
+        },
+        {
+            title: 'Pourquoi ?',
+            link: '#pourquoi'
+        },
+        {
+            title: 'Mes services',
+            link: '#services'
+        },
+        {
+            title: 'Accompagnement de qualité',
+            link: '#qualite'
+        }
+    ];
 
     return (
-        <Layout banner={Banner} headerProps={headerProps}>
+        <Layout banner={Banner} onThisPage={onThisPage}>
             <Intro />
             <Qui />
             <Apports />

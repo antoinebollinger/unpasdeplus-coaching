@@ -31,12 +31,8 @@ export default function Page() {
         }
     ];
 
-    const headerProps = {
-        // title: 'Accompagnement des parents',
-    }
-
     return (
-        <Layout banner={Banner} headerProps={headerProps} onThisPage={onThisPage}>
+        <Layout banner={Banner} onThisPage={onThisPage}>
             <Intro />
             <Qui />
             <Quoi />

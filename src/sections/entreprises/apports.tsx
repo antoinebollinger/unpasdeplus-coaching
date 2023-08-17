@@ -19,8 +19,8 @@ export default function Apports({ className = '' }: { className?: string }) {
             classesToAdd: ['h-full', 'lg:w-full'],
         })
         reveal({
-            collection: Array.from(document.querySelectorAll('.resultat')),
-            classesToRemove: ['scale-0', 'opacity-0'],
+            collection: Array.from(document.querySelectorAll('.resultats li')),
+            classesToRemove: ['opacity-0'],
             delayIncrement: 500
         })
     }, [])
@@ -59,29 +59,32 @@ export default function Apports({ className = '' }: { className?: string }) {
                     <p className="text-xl leading-8">
                         <FontAwesomeIcon icon={faCircleCheck} className="text-tertary-900" /> Engager une politique RH inclusive en soutenant la parentalité en entreprise et la qualité de vie au travail avec des <strong>actions concrètes</strong>, c'est agir pour <strong>l'épanouissement professionnel et professionnel des salariés parents</strong> mais aussi pour <strong>la préservation de la propre performance de l'entreprise</strong> :
                     </p>
-                    <ul className="list-none list-inside fa-ul text-2xl leading-12">
-                        {
-                            ["attractivité", "engagement", "fidélisation"].map((e, i) => (
-                                <li className="opacity-0 resultat" key={i}>
-                                    <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faPlus} /></span>
-                                    <span className="font-bold uppercase">{e}</span>
-                                </li>
-                            ))
-                        }
-
-                        <li className="opacity-0 resultat">
+                    <ul className="list-none list-inside fa-ul text-2xl leading-12 resultats">
+                        <li className="opacity-0">
+                            <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faPlus} /></span>
+                            <span className="font-bold uppercase">Attractivité</span>
+                        </li>
+                        <li className="opacity-0">
+                            <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faPlus} /></span>
+                            <span className="font-bold uppercase">Engagement</span>
+                        </li>
+                        <li className="opacity-0">
+                            <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faPlus} /></span>
+                            <span className="font-bold uppercase">Fidélisation</span>
+                        </li>
+                        <li className="opacity-0">
                             <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faHandPointRight} /></span>
                             Les collaborateurs se sentent compris à <span className="text-2xl font-bold text-tertary-900">91%</span>  et ont envie de rester à <span className="text-2xl font-bold text-tertary-900">81%</span>.
                         </li>
-                        <li className="opacity-0 resultat">
+                        <li className="opacity-0">
                             <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faArrowTrendUp} /></span>
                             <span className="font-bold uppercase">Rétention des talents</span>
                         </li>
-                        <li className="opacity-0 consequence">
+                        <li className="opacity-0">
                             <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faChartLine} /></span>
                             L'image de l'entreprise est améliorée de <span className="text-2xl font-bold text-tertary-900">84%</span> auprès des collaborateurs.
                         </li>
-                        <li className="opacity-0 resultat">
+                        <li className="opacity-0">
                             <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
                             <span className="font-bold uppercase">Marque employeur</span>
                         </li>

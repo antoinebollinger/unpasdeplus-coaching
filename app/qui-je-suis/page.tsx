@@ -10,17 +10,26 @@ export const metadata = {
 }
 
 export default function Page() {
-    const headerProps = {
-        // pretitle: 'Envie de me connaitre un peu mieux ?'
-    }
-
-    const outroText = "En tant que <strong>coach</strong>, j’accompagne aujourd'hui les personnes à faire <strong>UN PAS DE PLUS</strong> dans leur <strong>épanouissement personnel et/ou professionnel</strong> pour un changement profond & durable&nbsp;!"
+    const onThisPage = [
+        {
+            title: 'Mon parcours',
+            link: '#header'
+        },
+        {
+            title: 'Pourquoi Un pas de plus ?',
+            link: '#pourquoi'
+        },
+        {
+            title: 'Ma bio',
+            link: '#bio'
+        },
+    ];
 
     return (
-        <Layout headerProps={headerProps} banner={Banner}>
+        <Layout banner={Banner} onThisPage={onThisPage}>
             <Parcours />
-            {/* <Pourquoi /> */}
-            <Bio className="bg-gray-100" />
+            <Pourquoi />
+            <Bio />
         </Layout>
     )
 }

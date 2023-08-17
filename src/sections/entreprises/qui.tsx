@@ -14,7 +14,7 @@ export default function Qui({ className = 'bg-gray-100' }: { className?: string 
             classesToRemove: ['scale-0', 'opacity-0']
         })
         reveal({
-            collection: Array.from(document.querySelectorAll('#qui li')),
+            collection: Array.from(document.querySelectorAll('#pourquoi li')),
             classesToRemove: ['opacity-0'],
             delayIncrement: 50
         })
@@ -26,12 +26,12 @@ export default function Qui({ className = 'bg-gray-100' }: { className?: string 
     }, [])
 
     return (
-        <section id="qui" className={className}>
+        <section id="pourquoi" className={className}>
             <div className="container">
                 <div className="w-full mx-auto">
-                    <h3>Pourquoi accompagner vos salarié.es parents ?</h3>
+                    <h3>Pourquoi accompagner<br />vos salarié.es parents ?</h3>
                     <div className="flex flex-col md:flex-row gap-6 justify-center items-center mb-16">
-                        <div className="w-full md:w-1/2 order-last md:order-first">
+                        <div className="w-full md:w-2/3 order-last md:order-first">
                             <p className="text-lg leading-6 mb-6">
                                 <strong>Un salarié heureux et en forme</strong> est un salarié <strong>performant et engagé</strong>. Selon une étude du Harvard/MIT :
                             </p>
@@ -71,7 +71,7 @@ export default function Qui({ className = 'bg-gray-100' }: { className?: string 
                                 </ul>
                             </div>
                         </div>
-                        <div className="w-full md:w-1/2 mx-auto transition duration-200 scale-0 opacity-0 qui-img">
+                        <div className="w-full md:w-1/3 mx-auto transition duration-200 scale-0 opacity-0 qui-img">
                             <Image
                                 src={Qui2}
                                 width={Qui2.width}

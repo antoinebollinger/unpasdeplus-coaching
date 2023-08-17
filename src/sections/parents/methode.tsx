@@ -10,64 +10,55 @@ export default function Methode({ className = 'bg-gray-100' }: { className?: str
             collection: Array.from(document.querySelectorAll('.single-step')),
             classesToRemove: ['opacity-0', 'translate-y-3/4']
         })
-
         reveal({
             collection: Array.from(document.querySelectorAll('.about-img')),
             classesToRemove: ['scale-0']
         })
-    }, [])
 
-    const mySteps = (title, text) => {
-        return (
-            <div className="single-step transition opacity-0 translate-y-3/4">
-                <h5>{title}</h5>
-                <p dangerouslySetInnerHTML={{ __html: text }} />
-            </div>
-        );
-    }
+        reveal({
+            collection: Array.from(document.querySelectorAll('.step')),
+            classesToRemove: ['scale-0', 'opacity-0'],
+            delayIncrement: 300
+        })
+        reveal({
+            collection: Array.from(document.querySelectorAll('.progression')),
+            classesToRemove: ['h-0', 'lg:w-0'],
+            classesToAdd: ['h-full', 'lg:w-full'],
+        })
+    }, [])
 
     return (
         <section id="methode" className={className}>
             <div className="container">
-                <div className="flex flex-col lg:flex-row gap-6 justify-center items-center">
-                    <div className="w-full lg:w-2/3">
-                        <div className="flex flex-col gap-6">
-                            <h3 className="lg:text-center">Ma méthode</h3>
-                            <p className="text-lg leading-6 mb-6">
-                                L'accompagnement repose sur une <strong>écoute active</strong>, un <strong>questionnement pertinent</strong> et des <strong>outils & méthodes de coaching</strong>, dans un cadre confidentiel et bienveillant. J'utilise également <strong>le sport</strong> comme outil d'accompagnement.
-                            </p>
-                            <h4 className="text-center">Les 4 étapes clés du parcours d'accompagnement :</h4>
+                <div className="w-full lg:w-2/3 mx-auto flex flex-col gap-6">
 
-                            <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
-                                <div className="w-1/2 md:w-1/2 transition duration-200 scale-0 about-img">
+                    <h3>Ma méthode</h3>
+                    <p className="text-lg leading-6">
+                        L'accompagnement repose sur une <strong>écoute active</strong>, un <strong>questionnement pertinent</strong> et des <strong>outils & méthodes de coaching</strong>, dans un cadre confidentiel et bienveillant. J'utilise également <strong>le sport</strong> comme outil d'accompagnement.
+                    </p>
+                    <h4>Les 4 étapes clés du parcours d'accompagnement :</h4>
+                    <div className="relative flex flex-col lg:flex-row gap-6 justify-center items-center">
+                        <div className="absolute z-[0] inset-0 px-[calc(50%-2px)] lg:px-[calc(20%/2)] flex lg:items-center">
+                            <div className="w-[4px] h-0 lg:w-0 lg:h-[4px] bg-tertary-700 rounded transition-all duration-2500 progression"></div>
+                        </div>
+                        {
+                            [
+                                "<strong>Accueillir</strong><br/>votre demande",
+                                "<strong>Nourrir</strong><br/>la motivation",
+                                "<strong>Activer</strong><br/>les leviers du<br/>bien-être<br/>physique et mental",
+                                "<strong>Développer<br/>et entretenir</strong><br/>un état d'esprit<br/>vers le mieux-être"
+                            ].map((e, i) => (
+                                <div className={`w-1/2 lg:w-1/4 z-[1] relatif flex justify-center items-center rounded-full bg-tertary-200 transition duration-200 scale-0 opacity-0 step`} key={i}>
                                     <Image
                                         src={Map}
-                                        width={300}
-                                        className="rounded-full mx-auto"
-                                        alt="Les étapes du parcours"
+                                        alt="Intro entreprises"
+                                        className="w-full rounded-full opacity-0"
                                     />
+                                    <p className="absolute text-xl text-center leading-6" dangerouslySetInnerHTML={{ __html: e }}>
+                                    </p>
                                 </div>
-                                <div className="w-full md:w-1/2 flex flex-col gap-5">
-                                    {mySteps(
-                                        "Accueillir",
-                                        "votre demande"
-                                    )}
-                                    {mySteps(
-                                        "Nourrir",
-                                        "la motivation"
-                                    )}
-                                    {mySteps(
-                                        "Activer",
-                                        "les leviers du bien-être physique et mental"
-                                    )}
-                                    {mySteps(
-                                        "Développer et entretenir",
-                                        "un état d'esprit vers le mieux-être"
-                                    )}
-                                </div>
-                            </div>
-
-                        </div>
+                            ))
+                        }
                     </div>
                 </div>
             </div>

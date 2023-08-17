@@ -22,13 +22,8 @@ export default function Page() {
         }
     ];
 
-    const headerProps = {
-        // pretitle: 'Trouvez les clés et les ressources pour faire face aux défis quotidiens',
-        // title: 'Votre partenaire mental',
-    }
-
     return (
-        <Layout banner={Banner} headerProps={headerProps} onThisPage={onThisPage} >
+        <Layout banner={Banner} onThisPage={onThisPage} >
             <Intro />
             <Liens />
             <Approche />

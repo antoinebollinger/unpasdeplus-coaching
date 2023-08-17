@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export default function Services({ className = 'bg-gray-100' }: { className?: string }) {
     return (
-        <section className={className}>
+        <section id="services" className={className}>
             <div className="container">
                 <div className="text-center pb-10">
                     <h3>Mes services</h3>
