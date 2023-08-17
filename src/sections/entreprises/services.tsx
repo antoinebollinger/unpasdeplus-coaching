@@ -10,7 +10,7 @@ export default function Services({ className = 'bg-gray-100' }: { className?: st
                     <h3>Mes services</h3>
                 </div>
                 <div className="w-full lg:w-2/3 mx-auto flex flex-col lg:flex-row gap-16 justify-center items-stretch">
-                    <div className="rounded bg-secondary-100 p-4 w-full lg:w-1/2 flex flex-col gap-6">
+                    <div className="rounded-xl bg-secondary-100 p-4 w-full lg:w-1/2 flex flex-col gap-6">
                         <h4 className="text-center">
                             Accompagner<br />et soutenir<br /><span className="font-black uppercase">vos salarié.es</span>
                         </h4>
@@ -32,7 +32,7 @@ export default function Services({ className = 'bg-gray-100' }: { className?: st
                             En savoir plus
                         </Link>
                     </div>
-                    <div className="rounded bg-secondary-100 p-4 w-full lg:w-1/2 flex flex-col gap-6">
+                    <div className="rounded-xl bg-secondary-100 p-4 w-full lg:w-1/2 flex flex-col gap-6">
                         <h4 className="text-center">
                             Sensibiliser<br />et accompagner les<br /><span className="font-black uppercase">managers & RH</span>
                         </h4>

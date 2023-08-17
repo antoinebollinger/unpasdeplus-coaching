@@ -15,7 +15,7 @@ export default function Bio({ className = '' }: { className?: string }) {
         reveal({
             collection: Array.from(document.querySelectorAll('.about-text')),
             classesToRemove: ['translate-y-full', 'opacity-0'],
-            delayIncrement: 200
+            delayIncrement: 100
         })
     }, [])
 
