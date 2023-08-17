@@ -5,7 +5,7 @@ import { reveal } from '../../utils/reveal'
 export default function Apports({ className = 'bg-gray-100' }: { className?: string }) {
     useEffect(() => {
         reveal({
-            collection: Array.from(document.querySelectorAll('.apports-text')),
+            collection: document.querySelectorAll('.apports-text'),
             classesToRemove: ['translate-x-3/4', 'scale-0', 'opacity-0'],
             classesToAdd: ['translate-x-0'],
         })

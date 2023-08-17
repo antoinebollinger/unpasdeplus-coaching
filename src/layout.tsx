@@ -13,8 +13,8 @@ export default function Layout({ children, headerProps, banner = {}, onThisPage 
 }) {
     useEffect(() => {
         document.querySelector('html').style.scrollBehavior = 'auto'
-        const anchors = Array.from(document.querySelectorAll('a'))
-        anchors?.forEach(anchor => anchor.addEventListener('click', e => {
+        const anchors = document.querySelectorAll('a')
+        anchors?.forEach(anchor => anchor.addEventListener('click', _ => {
             document.querySelector('html').style.scrollBehavior = anchor.href.includes('#') ? 'smooth' : 'auto'
         }))
     }, [])

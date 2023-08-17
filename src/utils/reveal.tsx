@@ -1,11 +1,11 @@
 export const reveal = (
     {
-        collection = [],
+        collection,
         classesToRemove = [],
         classesToAdd = [],
         delayIncrement = 0
     }: {
-        collection?: HTMLElement[],
+        collection: NodeListOf<Element>,
         classesToRemove?: string[],
         classesToAdd?: string[],
         delayIncrement?: number

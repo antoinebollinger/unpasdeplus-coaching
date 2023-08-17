@@ -9,7 +9,7 @@ import Socials from './socials'
 export default function Navbar() {
     const pathname = usePathname();
 
-    const stickyNavBar = (e) => {
+    const stickyNavBar = (e: Event) => {
         e.preventDefault()
         let scrollpos = window.scrollY
         const navigation = document.querySelector('.navigation')

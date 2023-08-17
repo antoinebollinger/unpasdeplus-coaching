@@ -11,12 +11,12 @@ import { faHandPointRight } from '@fortawesome/free-solid-svg-icons'
 export default function Parcours({ className = '' }: { className?: string }) {
     useEffect(() => {
         reveal({
-            collection: Array.from(document.querySelectorAll('.career-step')),
+            collection: document.querySelectorAll('.career-step'),
             classesToRemove: ['translate-x-3/4', 'scale-0', 'opacity-0'],
             classesToAdd: ['translate-x-0'],
         })
         reveal({
-            collection: Array.from(document.querySelectorAll('.parcours-text')),
+            collection: document.querySelectorAll('.parcours-text'),
             classesToRemove: ['translate-y-full', 'opacity-0'],
             delayIncrement: 100
         })

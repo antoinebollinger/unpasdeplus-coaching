@@ -7,21 +7,21 @@ import Map from '/public/images/parents/map.webp'
 export default function Methode({ className = 'bg-gray-100' }: { className?: string }) {
     useEffect(() => {
         reveal({
-            collection: Array.from(document.querySelectorAll('.single-step')),
+            collection: document.querySelectorAll('.single-step'),
             classesToRemove: ['opacity-0', 'translate-y-3/4']
         })
         reveal({
-            collection: Array.from(document.querySelectorAll('.about-img')),
+            collection: document.querySelectorAll('.about-img'),
             classesToRemove: ['scale-0']
         })
 
         reveal({
-            collection: Array.from(document.querySelectorAll('.step')),
+            collection: document.querySelectorAll('.step'),
             classesToRemove: ['scale-0', 'opacity-0'],
             delayIncrement: 300
         })
         reveal({
-            collection: Array.from(document.querySelectorAll('.progression')),
+            collection: document.querySelectorAll('.progression'),
             classesToRemove: ['h-0', 'lg:w-0'],
             classesToAdd: ['h-full', 'lg:w-full'],
         })

@@ -8,7 +8,7 @@ import IntroImg from '/public/images/entreprises/intro.webp'
 export default function Intro({ className = '' }: { className?: string }) {
     useEffect(() => {
         reveal({
-            collection: Array.from(document.querySelectorAll('.entreprises-img')),
+            collection: document.querySelectorAll('.entreprises-img'),
             classesToRemove: ['scale-0']
         })
     }, [])

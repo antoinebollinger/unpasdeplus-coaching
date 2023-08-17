@@ -9,17 +9,17 @@ import { faArrowTrendUp, faChartLine, faCheck, faCircleCheck, faCircleInfo, faHa
 export default function Apports({ className = '' }: { className?: string }) {
     useEffect(() => {
         reveal({
-            collection: Array.from(document.querySelectorAll('.consequence')),
+            collection: document.querySelectorAll('.consequence'),
             classesToRemove: ['scale-0', 'opacity-0'],
             delayIncrement: 300
         })
         reveal({
-            collection: Array.from(document.querySelectorAll('.progression')),
+            collection: document.querySelectorAll('.progression'),
             classesToRemove: ['h-0', 'lg:w-0'],
             classesToAdd: ['h-full', 'lg:w-full'],
         })
         reveal({
-            collection: Array.from(document.querySelectorAll('.resultats li')),
+            collection: document.querySelectorAll('.resultats li'),
             classesToRemove: ['translate-y-full', 'opacity-0'],
             delayIncrement: 100
         })

@@ -10,11 +10,11 @@ import { faPersonBreastfeeding, faPersonRunning, faLightbulb, faHandshakeAngle, 
 export default function Qui({ className = 'bg-gray-100' }: { className?: string }) {
     useEffect(() => {
         reveal({
-            collection: Array.from(document.querySelectorAll('.qui-img')),
+            collection: document.querySelectorAll('.qui-img'),
             classesToRemove: ['scale-0', 'opacity-0']
         })
         reveal({
-            collection: Array.from(document.querySelectorAll('#qui li')),
+            collection: document.querySelectorAll('#qui li'),
             classesToRemove: ['opacity-0'],
             delayIncrement: 50
         })

@@ -10,7 +10,7 @@ import Entreprise from '/public/images/entreprises/entreprises.webp'
 export default function Liens({ className = 'bg-gray-100' }: { className?: string }) {
     useEffect(() => {
         reveal({
-            collection: Array.from(document.querySelectorAll('.liens-img')),
+            collection: document.querySelectorAll('.liens-img'),
             classesToRemove: ['scale-0']
         })
     }, [])

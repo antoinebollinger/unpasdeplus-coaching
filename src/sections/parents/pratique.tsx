@@ -11,7 +11,7 @@ import Pratique4 from '/public/images/parents/4.webp'
 export default function Pratique({ className = '' }: { className?: string }) {
     useEffect(() => {
         reveal({
-            collection: Array.from(document.querySelectorAll('.career-step')),
+            collection: document.querySelectorAll('.career-step'),
             classesToRemove: ['translate-x-3/4', 'scale-0', 'opacity-0'],
             classesToAdd: ['translate-x-0'],
         })

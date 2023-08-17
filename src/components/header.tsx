@@ -3,10 +3,14 @@ import Image from 'next/image'
 import Navbar from './navbar'
 import Headline from './headline'
 import Wave from '/public/images/svg/wave-white.svg'
+import type { banner, headerProps } from '../models/types'
 
 export default function Header({
     banner,
     headerProps
+}: {
+    banner?: banner,
+    headerProps?: headerProps
 }) {
     return (
         <header className="relative min-h-[60vh]" id="header">

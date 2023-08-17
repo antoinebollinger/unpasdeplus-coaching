@@ -1,11 +1,11 @@
-type headerProps = {
-    pretitle?: boolean,
-    title?: boolean,
-    subtitle?: boolean
-}
+import type { headerProps } from '../models/types'
 
-export default function Headline({ pretitle = false, title = false, subtitle = false }: headerProps) {
-
+export default function Headline({
+    pretitle = false,
+    title = false,
+    subtitle = false
+}: headerProps
+) {
     return (
         <div className="container">
             <div className="justify-center row">
@@ -20,4 +20,3 @@ export default function Headline({ pretitle = false, title = false, subtitle = f
         </div >
     )
 }
-

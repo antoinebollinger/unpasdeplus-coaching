@@ -8,7 +8,7 @@ import MamanZen from '/public/images/accueil/maman-zen.webp'
 export default function Approche({ className = '' }: { className?: string }) {
     useEffect(() => {
         reveal({
-            collection: Array.from(document.querySelectorAll('.approche-img')),
+            collection: document.querySelectorAll('.approche-img'),
             classesToRemove: ['scale-0']
         })
     }, [])

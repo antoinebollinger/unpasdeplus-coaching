@@ -9,11 +9,11 @@ import { faPersonRunning, faHandsHoldingChild, faBullseye, faTree, faHeart } fro
 export default function Bio({ className = '' }: { className?: string }) {
     useEffect(() => {
         reveal({
-            collection: Array.from(document.querySelectorAll('.about-img')),
+            collection: document.querySelectorAll('.about-img'),
             classesToRemove: ['scale-0', 'opacity-0']
         })
         reveal({
-            collection: Array.from(document.querySelectorAll('.about-text')),
+            collection: document.querySelectorAll('.about-text'),
             classesToRemove: ['translate-y-full', 'opacity-0'],
             delayIncrement: 100
         })

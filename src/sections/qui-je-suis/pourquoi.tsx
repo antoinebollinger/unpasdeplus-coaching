@@ -15,10 +15,8 @@ export default function Pourquoi({ className = 'bg-gray-100' }: { className?: st
         }
         handleResize()
         window.addEventListener("resize", handleResize)
-        const circles = Array.from(document.querySelectorAll('.circle'))
+        const circles = document.querySelectorAll('.circle')
         const angle: number = (2 * Math.PI / circles.length)
-        console.log(widthI);
-
         circles.forEach((circle: HTMLElement, index: number) => {
             circle.style.width = `${widthI}px`
             circle.style.height = `${widthI}px`
@@ -27,7 +25,7 @@ export default function Pourquoi({ className = 'bg-gray-100' }: { className?: st
         })
 
         reveal({
-            collection: Array.from(document.querySelectorAll('.circle')),
+            collection: document.querySelectorAll('.circle'),
             classesToRemove: ['scale-0', 'opacity-0'],
         })
     }, [widthC, widthI])

@@ -2,15 +2,8 @@ import Image from 'next/image'
 import Wave from '/public/images/svg/wave-white.svg'
 import WaveGray from '/public/images/svg/wave-gray.svg'
 import Banner from '/public/images/banners/break.webp'
+import { breakProps } from '../models/types'
 
-type breakProps = {
-    banner?: any,
-    displayBanner?: boolean,
-    text?: string,
-    textStyle?: string,
-    first?: string,
-    last?: string
-}
 
 export default function Break({
     banner = Banner,
