@@ -16,13 +16,13 @@ export default function Intro({ className = '' }: { className?: string }) {
                     </div>
                     <div className="w-full lg:w-2/3 lg:order-0">
                         <h3 className="uppercase">Votre partenaire mental</h3>
-                        <h4>Trouvez les clés et les ressources pour faire face aux défis quotidiens.</h4>
+                        <h4>Trouvez les clés et les ressources pour faire face aux défis quotidiens</h4>
                         <br />
                         <p className="text-lg leading-6">
                             <span className="text-primary-600 font-bold">Un pas de plus</span>, c'est du <strong>coaching professionnel</strong>. Le coaching consiste à accompagner des personnes dans la définition et l'atteinte de leurs objectifs, au bénéfice du développement de leur potentiel et de la réussite de leur évolution personnelle et professionnelle.
                             <br />
                             <br />
-                            <span className="text-primary-600 font-bold">Un pas de plus</span>, c'est un <strong>accompagnement</strong> pour <strong>booster le mental</strong> des <strong>parents</strong> et un <strong>dispositif d'accompagnement des entreprises</strong> pour prendre soin de la <strong>santé physique et mentale</strong> de leur <strong>salariés parents</strong>.
+                            <span className="text-primary-600 font-bold">Un pas de plus</span>, c'est un <strong>accompagnement</strong> pour <strong>booster le mental</strong> des <strong>parents</strong> et un <strong>dispositif d'accompagnement des entreprises</strong> pour prendre soin de la <strong>santé physique et mentale</strong> de leur <strong>salarié.es parents</strong>.
                         </p>
                     </div>
                 </div>

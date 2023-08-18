@@ -40,7 +40,7 @@ export default function Bio({ className = '' }: { className?: string }) {
                         <div className="transition duration-200 opacity-0 translate-y-full about-text">
                             <h5><FontAwesomeIcon icon={faHandsHoldingChild} /> Maman de 3 enfants</h5>
                             <p className="text-lg mb-6">
-                                <strong>Parentalité</strong>, <strong>bien-être au travail</strong>, <strong>charge mentale</strong>, <strong>santé physique et mentale</strong>, sont des sujets importants pour moi en tant que maman de trois enfants, sportive et entrepreneure. Face à des défis quotidiens, à trouver sans cesse le meilleur équilibre, j'ai à coeur d'accompagner les parents, jeunes parents à entrainer le mental pour <strong>gagner en sérénité</strong>.
+                                <strong>Parentalité</strong>, <strong>bien-être au travail</strong>, <strong>charge mentale</strong>, <strong>santé physique et mentale</strong>, sont des sujets importants pour moi en tant que maman de trois enfants, sportive et entrepreneure. Face aux défis quotidiens, dans le but de trouver sans cesse le meilleur équilibre, j'ai à coeur d'accompagner les parents, jeunes parents à entrainer le mental pour <strong>gagner en sérénité</strong>.
                             </p>
                         </div>
                         <div className="transition duration-200 opacity-0 translate-y-full about-text">
@@ -52,13 +52,13 @@ export default function Bio({ className = '' }: { className?: string }) {
                         <div className="transition duration-200 opacity-0 translate-y-full about-text">
                             <h5><FontAwesomeIcon icon={faBullseye} /> Challenge</h5>
                             <p className="text-lg mb-6">
-                                J'aime les <strong>challenges</strong>, que ce soit dans le domaine sportif, professionnel ou personnel. Selon moi, ils sont source de <strong>motivation</strong> et <strong>permettent de nous dépasser</strong>.
+                                J'aime les <strong>challenges</strong>, que ce soit dans les domaines sportif, professionnel ou personnel. Selon moi, ils sont source de <strong>motivation</strong> et <strong>permettent de nous dépasser</strong>.
                             </p>
                         </div>
                         <div className="transition duration-200 opacity-0 translate-y-full about-text">
                             <h5><FontAwesomeIcon icon={faTree} /> Nature</h5>
                             <p className="text-lg mb-6">
-                                <strong>Connectée à la nature</strong>, source d'énergie pour moi et de sérénité. J'accorde également une grande importance <strong>à une alimentation saine et respectueuse de l'environnement</strong>.
+                                <strong>Connectée à la nature</strong>, source d'énergie et de sérénité pour moi. J'accorde également une grande importance <strong>à une alimentation saine et respectueuse de l'environnement</strong>.
                             </p>
                         </div>
                         <div className="transition duration-200 opacity-0 translate-y-full about-text">

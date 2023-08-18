@@ -2,13 +2,9 @@
 import { useEffect, useState, useCallback } from 'react'
 import useEmblaCarousel, { EmblaCarouselType } from 'embla-carousel-react'
 import { DotButton, PrevButton, NextButton } from '../../utils/emblaButtons'
-import Autoplay from 'embla-carousel-autoplay'
 
 export default function Temoignages() {
-    const [emblaRef, emblaApi] = useEmblaCarousel({}, [Autoplay({
-        delay: 5000,
-        stopOnMouseEnter: true
-    })])
+    const [emblaRef, emblaApi] = useEmblaCarousel({})
     const [prevBtnDisabled, setPrevBtnDisabled] = useState(true)
     const [nextBtnDisabled, setNextBtnDisabled] = useState(true)
     const [selectedIndex, setSelectedIndex] = useState(0)

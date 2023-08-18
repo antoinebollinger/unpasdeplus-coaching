@@ -42,11 +42,11 @@ export default function Pratique({ className = '' }: { className?: string }) {
                             ],
                             [
                                 Pratique2,
-                                "Des <strong>exercices de développements personnels</strong> entre les séances pour continuer à vous développer."
+                                "Des <strong>exercices de développement personnel</strong> entre les séances pour continuer à vous développer."
                             ],
                             [
                                 Pratique3,
-                                "Echanges Whatsapp pour <strong>garder la dynamique</strong> et vous inspirer."
+                                "Echanges WhatsApp pour <strong>garder la dynamique</strong> et vous inspirer."
                             ],
                             [
                                 Pratique4,

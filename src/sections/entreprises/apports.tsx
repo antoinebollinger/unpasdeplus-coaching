@@ -57,7 +57,7 @@ export default function Apports({ className = '' }: { className?: string }) {
                         }
                     </div>
                     <p className="text-xl leading-8">
-                        <FontAwesomeIcon icon={faCircleCheck} className="text-tertary-900 text-4xl" /> Engager une politique RH inclusive en soutenant la parentalité en entreprise et la qualité de vie au travail avec des <strong>actions concrètes</strong>, c'est agir pour <strong>l'épanouissement professionnel et professionnel des salariés parents</strong> mais aussi pour <strong>la préservation de la propre performance de l'entreprise</strong>&nbsp;:
+                        <FontAwesomeIcon icon={faCircleCheck} className="text-tertary-900 text-4xl" /> Engager une politique RH inclusive en soutenant la parentalité en entreprise et la qualité de vie au travail avec des <strong>actions concrètes</strong>, c'est agir pour <strong>l'épanouissement professionnel et professionnel des salarié.es parents</strong> mais aussi pour <strong>la préservation de la propre performance de l'entreprise</strong>&nbsp;:
                     </p>
                     <ul className="list-none list-inside fa-ul text-2xl leading-12 resultats">
                         <li className="opacity-0 translate-y-full">

@@ -35,7 +35,7 @@ export default function Apports({ className = 'bg-gray-100' }: { className?: str
                 <div className="lg:max-w-5xl mx-auto pb-10">
                     {list(
                         "81%",
-                        "des clients <strong>satisfaits</strong> de leur accompagnement"
+                        "des clients sont <strong>satisfaits</strong> de leur accompagnement"
                     )}
                     {list(
                         "80%",

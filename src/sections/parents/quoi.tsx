@@ -25,13 +25,13 @@ export default function Quoi({ className = '' }: { className?: string }) {
                     <div>
                         <h4 className="transition duration-200 opacity-0">Qu'est ce que le coaching&nbsp;?</h4>
                         <p className="text-lg leading-6 transition duration-200 opacity-0 translate-y-full quoi-text">
-                            Le coaching consiste à accompagner des personnes dans la définition et l'atteinte de leurs objectifs, au bénéfice du développement de leur potentiel et de la réussite de leur évolution personnelle et professionnelle.<br />Le coaching a pour but de vous booster en prenant conscience que <strong>le changement passe avant tout par soi</strong>.
+                            Le coaching consiste à accompagner des personnes dans la définition et l'atteinte de leurs objectifs, au bénéfice du développement de leur potentiel et de la réussite de leur évolution personnelle et professionnelle.<br />Le coaching a pour but de vous booster en prenant conscience que <strong>le changement passe avant tout par vous</strong>.
                         </p>
                     </div>
                     <div>
                         <h4 className="transition duration-200 opacity-0">Intelligence émotionnelle</h4>
                         <p className="text-lg leading-6 transition duration-200 opacity-0 translate-y-full quoi-text">
-                            <strong>L'intelligence émotionnelle</strong> a une place importante en coaching. Mais qu'est-ce que l'intelligence émotionnelle&nbsp;? Nous parlons de la capacité à nous <strong>adresser efficacement</strong> aux autres et à nous-même, à nous <strong>connecter à nos émotions</strong>, à les gérer, à nous <strong>auto-motiver</strong>, à freiner nos pulsions, à vaincre nos frustrations.
+                            <strong>L'intelligence émotionnelle</strong> a une place importante en coaching. Mais qu'est-ce c'est&nbsp;? Nous parlons ici de la capacité à nous <strong>adresser efficacement</strong> aux autres et à nous-même, à nous <strong>connecter à nos émotions</strong>, à les gérer, à nous <strong>auto-motiver</strong>, à freiner nos pulsions, à vaincre nos frustrations.
                         </p>
                     </div>
                 </div>

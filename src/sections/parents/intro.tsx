@@ -40,7 +40,7 @@ export default function Intro({ className = '' }: { className?: string }) {
                             {
                                 [
                                     "Accompagnement individuel de 3 ou 6 mois",
-                                    "Parcours personnalisé sur l’hygiène de vie ( alimentation, sport, habitudes de santé)",
+                                    "Parcours personnalisé sur l’hygiène de vie (alimentation, sport, habitudes de santé)",
                                     "Des exercices de coaching entre les séances",
                                     "Echange en ligne pour garder la dynamique"
                                 ].map((e, i) => (
@@ -52,7 +52,7 @@ export default function Intro({ className = '' }: { className?: string }) {
                 </div>
                 <div className="text-center">
                     <Link href="/contact" className="main-btn gradient-btn focus:outline-none uppercase">
-                        Je prends contact pour un appel découverte
+                        Je prends contact pour un appel Découverte
                     </Link>
                 </div>
             </div>

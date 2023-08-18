@@ -44,14 +44,14 @@ export default function Qui({ className = 'bg-gray-100' }: { className?: string 
                                     (
                                         <>
                                             <span className="fa-li text-xl"><FontAwesomeIcon icon={faLightbulb} /></span>
-                                            Vous recherchez plus qu'un accompagnement, c'est être <strong>soutenu dans les défis quotidiens</strong> tout en prenant soin de soi, <strong>forger des habitudes gagnantes</strong> pour <strong>entrainer le mental</strong> à toute épreuve.
+                                            Vous recherchez plus qu'un accompagnement, c'est être <strong>soutenu dans les défis quotidiens</strong> tout en prenant soin de vous, <strong>forger des habitudes gagnantes</strong> pour <strong>entrainer un mental</strong> à toute épreuve.
 
                                         </>
                                     ),
                                     (
                                         <>
                                             <span className="fa-li text-xl"><FontAwesomeIcon icon={faHandshakeAngle} /></span>
-                                            Vous souhaitez appréhender les situations de façon différente pour éviter de se décourager, de craquer lors de situations difficiles et vulnérables. Rester déterminé.e dans cette volonté de prendre soin de soi <strong>grâce aux mouvements et à l'alimentation</strong>. La priorité, c'est vous !
+                                            Vous souhaitez appréhender les situations de façon différente pour éviter de se décourager, de craquer face aux situations difficiles et qui vous rendent vulnérables. Rester déterminé.es dans cette volonté de prendre soin de soi <strong>grâce aux mouvements et à l'alimentation</strong>. La priorité, c'est vous !
                                         </>
                                     )
                                 ].map((e, i) => (
@@ -94,13 +94,13 @@ export default function Qui({ className = 'bg-gray-100' }: { className?: string 
                                     (
                                         <>
                                             <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
-                                            <strong>Epaulé.e</strong> par un professionnel lors de <strong>situations décourageantes</strong>, moments de doutes pour vivre cette transition progressivement.
+                                            <strong>Epaulé.e</strong> par un professionnel lors des <strong>situations décourageantes</strong>, des moments de doutes pour vivre cette transition progressivement.
                                         </>
                                     ),
                                     (
                                         <>
                                             <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
-                                            <strong>Challengé.e</strong> par un objectif source de <strong>motivation</strong>, de <strong>plaisir</strong> et de <strong>performance</strong> avec <strong>un sentiment de dépassement de soi</strong> et une <strong>fierté d'accomplissement</strong>.
+                                            <strong>Challengé.e</strong> par un objectif source de <strong>motivation</strong>, de <strong>plaisir</strong> et de <strong>performance</strong> avec <strong>un sentiment de dépassement de soi</strong> et une <strong>fierté dans l'accomplissement</strong>.
                                         </>
                                     ),
                                     (

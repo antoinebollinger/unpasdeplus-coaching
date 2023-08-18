@@ -30,7 +30,7 @@ export default function Liens({ className = 'bg-gray-100' }: { className?: strin
                             <strong>Sabrina Appriou</strong>
                         </p>
                         <p className="text-lg text-center grow">
-                            Fondatrice UN PAS DE PLUS
+                            Fondatrice Un pas de plus
                         </p>
                         <Link href="/qui-je-suis" className="main-btn gradient-btn focus:outline-none uppercase mx-auto">
                             Qui je suis
@@ -64,10 +64,10 @@ export default function Liens({ className = 'bg-gray-100' }: { className?: strin
                             alt="Accompagnement entreprises"
                         />
                         <p className="text-lg text-center">
-                            <strong>Accompagnement entreprise</strong>
+                            <strong>Accompagnement entreprises</strong>
                         </p>
                         <p className="text-lg text-start grow">
-                            Vous souhaitez accompagner activement vos salariés-parents pour les aider à mieux concilier vie pro vie perso pour limiter les <strong>impacts</strong> sur <strong>l’entreprise</strong> liés à la <strong>parentalité</strong>, à leur transition de vie&nbsp;?
+                            Vous souhaitez accompagner activement vos salarié.es-parents pour les aider à mieux concilier vie pro vie perso pour limiter les <strong>impacts</strong> sur <strong>l’entreprise</strong> liés à la <strong>parentalité</strong>, à leur transition de vie&nbsp;?
                             <br />
                             <br />
                             Avez-vous mis en place un dispositif pour renforcer une politique RH inclusive autour de la parentalité&nbsp;?

@@ -31,7 +31,7 @@ export default function Qui({ className = 'bg-gray-100' }: { className?: string 
                     <div className="flex flex-col md:flex-row gap-6 justify-center items-center mb-16">
                         <div className="w-full md:w-2/3 order-last md:order-first">
                             <p className="text-lg leading-6 mb-6">
-                                <strong>Un salarié heureux et en forme</strong> est un salarié <strong>performant et engagé</strong>. Selon une étude du Harvard/MIT&nbsp;:
+                                <strong>Un salarié heureux</strong> est un salarié <strong>performant et engagé</strong>. Selon une étude du Harvard/MIT&nbsp;:
                             </p>
                             <div className="flex justify-center align-center">
                                 <ul className="list-none list-inside fa-ul text-lg leading-8 mb-6">
@@ -91,7 +91,7 @@ export default function Qui({ className = 'bg-gray-100' }: { className?: string 
                         {[
                             [
                                 '78%',
-                                'des salariées mères rencontrent des <strong>difficultés à conciler vie professionnelle et familiale</strong>'
+                                'des salariées mères rencontrent des <strong>difficultés à concilier vie professionnelle et familiale</strong>'
                             ],
                             [
                                 '68%',
@@ -103,7 +103,7 @@ export default function Qui({ className = 'bg-gray-100' }: { className?: string 
                             ],
                             [
                                 '83%',
-                                'des salariés parents ont le sentiment de <strong>manquer de temps au quotidien</strong>'
+                                'des salarié.es parents ont le sentiment de <strong>manquer de temps au quotidien</strong>'
                             ]
                         ].map((e, i) => {
                             return (
