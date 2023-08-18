@@ -15,13 +15,11 @@ export default function Qui({ className = 'bg-gray-100' }: { className?: string 
         })
         reveal({
             collection: document.querySelectorAll('#pourquoi li'),
-            classesToRemove: ['opacity-0'],
-            delayIncrement: 50
+            classesToRemove: ['opacity-0']
         })
         reveal({
             collection: document.querySelectorAll('.apports-text'),
-            classesToRemove: ['translate-y-full', 'scale-0', 'opacity-0'],
-            classesToAdd: ['translate-y-0'],
+            classesToRemove: ['translate-y-full', 'scale-0', 'opacity-0']
         })
     }, [])
 
@@ -29,38 +27,45 @@ export default function Qui({ className = 'bg-gray-100' }: { className?: string 
         <section id="pourquoi" className={className}>
             <div className="container">
                 <div className="w-full mx-auto">
-                    <h3>Pourquoi accompagner<br />vos salarié.es parents ?</h3>
+                    <h3>Pourquoi accompagner<br />vos salarié.es parents&nbsp;?</h3>
                     <div className="flex flex-col md:flex-row gap-6 justify-center items-center mb-16">
                         <div className="w-full md:w-2/3 order-last md:order-first">
                             <p className="text-lg leading-6 mb-6">
-                                <strong>Un salarié heureux et en forme</strong> est un salarié <strong>performant et engagé</strong>. Selon une étude du Harvard/MIT :
+                                <strong>Un salarié heureux et en forme</strong> est un salarié <strong>performant et engagé</strong>. Selon une étude du Harvard/MIT&nbsp;:
                             </p>
                             <div className="flex justify-center align-center">
                                 <ul className="list-none list-inside fa-ul text-lg leading-8 mb-6">
-                                    <li className="opacity-0">
-                                        <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
-                                        <span className="text-2xl font-bold text-tertary-900">31%</span> plus productif
-                                    </li>
-                                    <li className="opacity-0">
-                                        <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
-                                        <span className="text-2xl font-bold text-tertary-900">2 x</span> moins malade
-                                    </li>
-                                    <li className="opacity-0">
-                                        <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
-                                        <span className="text-2xl font-bold text-tertary-900">6 x</span> moins absent
-                                    </li>
-                                    <li className="opacity-0">
-                                        <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
-                                        <span className="text-2xl font-bold text-tertary-900">2 x</span> plus loyal
-                                    </li>
-                                    <li className="opacity-0">
-                                        <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
-                                        <span className="text-2xl font-bold text-tertary-900">55%</span> plus créatif
-                                    </li>
+                                    {
+                                        [
+                                            (<>
+                                                <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
+                                                <span className="text-2xl font-bold text-tertary-900">31%</span> plus productif
+                                            </>),
+                                            (<>
+                                                <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
+                                                <span className="text-2xl font-bold text-tertary-900">2 x</span> moins malade
+                                            </>),
+                                            (<>
+                                                <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
+                                                <span className="text-2xl font-bold text-tertary-900">6 x</span> moins absent
+                                            </>),
+                                            (<>
+                                                <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
+                                                <span className="text-2xl font-bold text-tertary-900">2 x</span> plus loyal
+                                            </>),
+                                            (<>
+                                                <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
+                                                <span className="text-2xl font-bold text-tertary-900">55%</span> plus créatif
+                                            </>)
+                                        ].map((e, i) => (
+                                            <li className="transition duration-200 opacity-0" key={i}>{e}</li>
+                                        ))
+                                    }
+
                                 </ul>
                             </div>
                             <p className="text-lg leading-6 mb-6">
-                                Et <strong>un salarié en forme</strong> :
+                                Et <strong>un salarié en forme</strong>&nbsp;:
                             </p>
                             <div className="flex justify-center align-center">
                                 <ul className="list-none list-inside fa-ul text-lg leading-8 mb-6">
@@ -104,12 +109,12 @@ export default function Qui({ className = 'bg-gray-100' }: { className?: string 
                             return (
                                 <div className="flex flex-col gap-6 justify-center items-center mb-10" key={i}>
                                     <div className="transition duration-300 opacity-0 scale-0 apports-text">
-                                        <div className="w-[100px] h-[100px] rounded-full bg-secondary-100 flex justify-center items-center">
+                                        <div className="w-[100px] h-[100px] rounded-full shadow-lg bg-secondary-100 flex justify-center items-center">
                                             <p className="text-4xl text-primary-600 font-bold">{e[0]}</p>
                                         </div>
                                     </div>
-                                    <div className="grow transition duration-300 opacity-0 translate-y-full apports-text">
-                                        <p className="text-2xl text-gray-900" dangerouslySetInnerHTML={{ __html: e[1] }} />
+                                    <div className="w-full grow transition duration-300 opacity-0 translate-y-full apports-text">
+                                        <p className="text-2xl text-gray-900 lg:text-center" dangerouslySetInnerHTML={{ __html: e[1] }} />
                                     </div>
                                 </div>
                             )

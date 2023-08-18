@@ -37,18 +37,16 @@ export default function Intro({ className = '' }: { className?: string }) {
                             Un accompagnement individuel pour vous aider à prendre soin de votre santé physique et mentale en relevant vos défis quotidiens. Acquérir des habitudes mentales <strong>pour gagner en sérénité et en confiance en soi</strong>.
                         </p>
                         <ul className="list-disc list-inside text-lg leading-8">
-                            <li className="opacity-0">
-                                Accompagnement individuel de 3 ou 6 mois
-                            </li>
-                            <li className="opacity-0">
-                                Parcours personnalisé sur l’hygiène de vie ( alimentation, sport, habitudes de santé)
-                            </li>
-                            <li className="opacity-0">
-                                Des exercices de coaching entre les séances
-                            </li>
-                            <li className="opacity-0">
-                                Echange en ligne pour garder la dynamique
-                            </li>
+                            {
+                                [
+                                    "Accompagnement individuel de 3 ou 6 mois",
+                                    "Parcours personnalisé sur l’hygiène de vie ( alimentation, sport, habitudes de santé)",
+                                    "Des exercices de coaching entre les séances",
+                                    "Echange en ligne pour garder la dynamique"
+                                ].map((e, i) => (
+                                    <li className="opacity-0 transition duration-200" key={i}>{e}</li>
+                                ))
+                            }
                         </ul>
                     </div>
                 </div>

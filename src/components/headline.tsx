@@ -4,7 +4,8 @@ export default function Headline({
     pretitle = false,
     title = false,
     subtitle = false
-}: headerProps
+}:
+    headerProps
 ) {
     return (
         <div className="container">

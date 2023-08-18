@@ -16,7 +16,7 @@ export default function Page() {
             link: '#header'
         },
         {
-            title: 'Pourquoi Un pas de plus ?',
+            title: 'Pourquoi Un pas de plus&nbsp;?',
             link: '#pourquoi'
         },
         {

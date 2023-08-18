@@ -18,3 +18,8 @@ export interface breakProps {
     first?: string,
     last?: string
 }
+
+export interface onThisPage {
+    title?: string,
+    link?: string
+}

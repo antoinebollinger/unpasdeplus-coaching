@@ -49,7 +49,7 @@ export default function Qualite({ className = '' }: { className?: string }) {
                                     <Image
                                         src={e[0]}
                                         width={150}
-                                        className="mx-auto rounded-full"
+                                        className="mx-auto rounded-full shadow-lg"
                                         alt="Illustration"
                                     />
                                 </div>

@@ -27,22 +27,37 @@ export default function Qui({ className = 'bg-gray-100' }: { className?: string 
                     <div className="w-full md:w-2/3 order-last md:order-first">
                         <h4>L'accompagnement "Healthy Habits" parents est fait pour vous si...</h4>
                         <ul className="list-none list-inside fa-ul text-lg leading-8">
-                            <li className="opacity-0">
-                                <span className="fa-li text-xl"><FontAwesomeIcon icon={faPersonBreastfeeding} /></span>
-                                Vous êtes parents, jeunes parents occupés et <strong>prendre soin de vous relève du défi</strong>.
-                            </li>
-                            <li className="opacity-0">
-                                <span className="fa-li text-xl"><FontAwesomeIcon icon={faPersonRunning} /></span>
-                                Vous savez que prendre soin de sa santé physique et mentale est important pour votre <strong>équilibre</strong> mais vous ne parvenez pas à la faire seul.e.
-                            </li>
-                            <li className="opacity-0">
-                                <span className="fa-li text-xl"><FontAwesomeIcon icon={faLightbulb} /></span>
-                                Vous recherchez plus qu'un accompagnement, c'est être <strong>soutenu dans les défis quotidiens</strong> tout en prenant soin de soi, <strong>forger des habitudes gagnantes</strong> pour <strong>entrainer le mental</strong> à toute épreuve.
-                            </li>
-                            <li className="opacity-0">
-                                <span className="fa-li text-xl"><FontAwesomeIcon icon={faHandshakeAngle} /></span>
-                                Vous souhaitez appréhender les situations de façon différente pour éviter de se décourager, de craquer lors de situations difficiles et vulnérables. Rester déterminé.e dans cette volonté de prendre soin de soi <strong>grâce aux mouvements et à l'alimentation</strong>. La priorité, c'est vous !
-                            </li>
+                            {
+                                [
+                                    (
+                                        <>
+                                            <span className="fa-li text-xl"><FontAwesomeIcon icon={faPersonBreastfeeding} /></span>
+                                            Vous êtes parents, jeunes parents occupés et <strong>prendre soin de vous relève du défi</strong>.
+                                        </>
+                                    ),
+                                    (
+                                        <>
+                                            <span className="fa-li text-xl"><FontAwesomeIcon icon={faPersonRunning} /></span>
+                                            Vous savez que prendre soin de sa santé physique et mentale est important pour votre <strong>équilibre</strong> mais vous ne parvenez pas à la faire seul.e.
+                                        </>
+                                    ),
+                                    (
+                                        <>
+                                            <span className="fa-li text-xl"><FontAwesomeIcon icon={faLightbulb} /></span>
+                                            Vous recherchez plus qu'un accompagnement, c'est être <strong>soutenu dans les défis quotidiens</strong> tout en prenant soin de soi, <strong>forger des habitudes gagnantes</strong> pour <strong>entrainer le mental</strong> à toute épreuve.
+
+                                        </>
+                                    ),
+                                    (
+                                        <>
+                                            <span className="fa-li text-xl"><FontAwesomeIcon icon={faHandshakeAngle} /></span>
+                                            Vous souhaitez appréhender les situations de façon différente pour éviter de se décourager, de craquer lors de situations difficiles et vulnérables. Rester déterminé.e dans cette volonté de prendre soin de soi <strong>grâce aux mouvements et à l'alimentation</strong>. La priorité, c'est vous !
+                                        </>
+                                    )
+                                ].map((e, i) => (
+                                    <li className="transition duration-200 opacity-0" key={i}>{e}</li>
+                                ))
+                            }
                         </ul>
                     </div>
                     <div className="w-full md:w-1/3 mx-auto transition duration-200 scale-0 opacity-0 qui-img">
@@ -66,24 +81,38 @@ export default function Qui({ className = 'bg-gray-100' }: { className?: string 
                         />
                     </div>
                     <div className="w-full md:w-2/3">
-                        <h4>Grâce à l'accompagnement "Healthy Habits" parents, vous serez :</h4>
+                        <h4>Grâce à l'accompagnement "Healthy Habits" parents, vous serez&nbsp;:</h4>
                         <ul className="list-none list-inside fa-ul text-lg leading-8">
-                            <li className="opacity-0">
-                                <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
-                                <strong>Guidé.e</strong> lors des séances de coaching pour <strong>avancer pas à pas</strong> dans cette volonté de mieux-être
-                            </li>
-                            <li className="opacity-0">
-                                <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
-                                <strong>Epaulé.e</strong> par un professionnel lors de <strong>situations décourageantes</strong>, moments de doutes pour vivre cette transition progressivement.
-                            </li>
-                            <li className="opacity-0">
-                                <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
-                                <strong>Challengé.e</strong> par un objectif source de <strong>motivation</strong>, de <strong>plaisir</strong> et de <strong>performance</strong> avec <strong>un sentiment de dépassement de soi</strong> et une <strong>fierté d'accomplissement</strong>.
-                            </li>
-                            <li className="opacity-0">
-                                <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
-                                Ainsi, gagner en <strong>sérénité</strong>, en <strong>confiance en soi</strong>, avec une <strong>meilleure connaissance & conscience de soi</strong> pour affronter <strong>les défis quotidiens</strong>.
-                            </li>
+                            {
+                                [
+                                    (
+                                        <>
+                                            <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
+                                            <strong>Guidé.e</strong> lors des séances de coaching pour <strong>avancer pas à pas</strong> dans cette volonté de mieux-être
+                                        </>
+                                    ),
+                                    (
+                                        <>
+                                            <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
+                                            <strong>Epaulé.e</strong> par un professionnel lors de <strong>situations décourageantes</strong>, moments de doutes pour vivre cette transition progressivement.
+                                        </>
+                                    ),
+                                    (
+                                        <>
+                                            <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
+                                            <strong>Challengé.e</strong> par un objectif source de <strong>motivation</strong>, de <strong>plaisir</strong> et de <strong>performance</strong> avec <strong>un sentiment de dépassement de soi</strong> et une <strong>fierté d'accomplissement</strong>.
+                                        </>
+                                    ),
+                                    (
+                                        <>
+                                            <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
+                                            Ainsi, gagner en <strong>sérénité</strong>, en <strong>confiance en soi</strong>, avec une <strong>meilleure connaissance & conscience de soi</strong> pour affronter <strong>les défis quotidiens</strong>.
+                                        </>
+                                    )
+                                ].map((e, i) => (
+                                    <li className="transition duration-200 opacity-0" key={i}>{e}</li>
+                                ))
+                            }
                         </ul>
                     </div>
                 </div>

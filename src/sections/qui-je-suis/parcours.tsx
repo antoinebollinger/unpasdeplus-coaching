@@ -48,20 +48,20 @@ export default function Parcours({ className = '' }: { className?: string }) {
                             ],
                             [
                                 Career2,
-                                "Cependant,<strong> difficile de concilier vie pro et vie perso</strong> : être présente au travail, avoir du temps pour mes enfants, avoir du temps pour moi. J'avais l'impression de courir après la montre, d'être pressée par le temps et de <strong>subir ma vie</strong>.<br/>Ce rythme de vie commençait à m’épuiser. Je me suis sentie tiraillée entre mon envie de réussir ma carrière et celle de voir grandir mes enfants."
+                                "Cependant,<strong> difficile de concilier vie pro et vie perso</strong>&nbsp;: être présente au travail, avoir du temps pour mes enfants, avoir du temps pour moi. J'avais l'impression de courir après la montre, d'être pressée par le temps et de <strong>subir ma vie</strong>.<br/>Ce rythme de vie commençait à m’épuiser. Je me suis sentie tiraillée entre mon envie de réussir ma carrière et celle de voir grandir mes enfants."
                             ],
                             [
                                 Career3,
-                                "Ma <strong>charge mentale</strong> s’accroissait et j’ai commencé à remettre en question mes choix professionnels. Face l'épuisement professionnel, la lassitude, je me rends à l'évidence : je dois trouver une solution plus pérenne. A cela s'ajoute une <strong>quête de sens</strong>, et ce profond besoin de me reconnecter à <strong>mes valeurs</strong>, <strong>mon identité</strong>, <strong>ma personnalité</strong>."
+                                "Ma <strong>charge mentale</strong> s’accroissait et j’ai commencé à remettre en question mes choix professionnels. Face l'épuisement professionnel, la lassitude, je me rends à l'évidence&nbsp;: je dois trouver une solution plus pérenne. A cela s'ajoute une <strong>quête de sens</strong>, et ce profond besoin de me reconnecter à <strong>mes valeurs</strong>, <strong>mon identité</strong>, <strong>ma personnalité</strong>."
 
                             ]
                         ].map((e, i) => (
                             <div className="flex flex-col md:flex-row gap-6 justify-center items-center mb-10" key={i}>
-                                <div className="w-1/2 md:w-1/4 mx-auto transition duration-300 opacity-0 scale-0 career-step">
+                                <div className="w-1/2 md:w-1/4 transition duration-300 opacity-0 scale-0 career-step">
                                     <Image
                                         src={e[0]}
                                         width={150}
-                                        className="rounded-full mx-auto"
+                                        className="rounded-full shadow mx-auto"
                                         alt="Illustration"
                                     />
                                 </div>

@@ -49,7 +49,7 @@ export default function Apports({ className = 'bg-gray-100' }: { className?: str
                         "5,7",
                         "fois le montant investi, c'est le retour sur investissement moyen des entreprises"
                     )}
-                    <p className="italic">Source : étude ICF-PWC (2021)</p>
+                    <p className="italic">Source&nbsp;: étude ICF-PWC (2021)</p>
                 </div>
                 <div className="lg:max-w-5xl mx-auto">
                     <p className="leading-10 text-xl">

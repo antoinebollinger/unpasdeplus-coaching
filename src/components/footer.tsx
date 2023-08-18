@@ -7,15 +7,18 @@ import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons'
 import { useEffect } from 'react'
 import { closeModal, openModal } from '../utils/modal'
 import Socials from './socials'
+import { onThisPage } from '../models/types'
 
-const defaultProps = [
-    {
-        title: 'Haut de page',
-        link: '#header'
-    },
-]
-
-export default function Footer({ onThisPage = defaultProps }) {
+export default function Footer({
+    onThisPage = [
+        {
+            title: 'Haut de page',
+            link: '#header'
+        },
+    ]
+}: {
+    onThisPage?: onThisPage[]
+}) {
     useEffect(() => {
         document.forms['newsletter-form'].addEventListener('submit', async e => {
             e.preventDefault();
@@ -113,11 +116,9 @@ export default function Footer({ onThisPage = defaultProps }) {
                                 <p className="footer-title">Sur cette page</p>
                                 <ul>
                                     {
-                                        onThisPage?.map((e, i) => {
-                                            return (
-                                                <li key={i}><a href={e.link}>{e.title}</a></li>
-                                            );
-                                        })
+                                        onThisPage?.map((e, i) => (
+                                            <li key={i}><a href={e.link} dangerouslySetInnerHTML={{ __html: e.title }} /></li>
+                                        ))
                                     }
                                 </ul>
                             </div>

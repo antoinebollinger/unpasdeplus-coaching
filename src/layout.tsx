@@ -4,12 +4,13 @@ import Header from './components/header'
 import Footer from './components/footer'
 import Modal from './utils/modal'
 import Backtotop from './components/backtotop'
+import { banner, headerProps, onThisPage } from './models/types'
 
-export default function Layout({ children, headerProps, banner = {}, onThisPage }: {
+export default function Layout({ children, headerProps, banner, onThisPage }: {
     children: React.ReactNode,
-    headerProps?: Object,
-    banner: Object,
-    onThisPage?: any
+    headerProps?: headerProps,
+    banner: banner,
+    onThisPage?: onThisPage[]
 }) {
     useEffect(() => {
         document.querySelector('html').style.scrollBehavior = 'auto'

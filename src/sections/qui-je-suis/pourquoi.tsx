@@ -36,7 +36,7 @@ export default function Pourquoi({ className = 'bg-gray-100' }: { className?: st
                 <div className="w-full lg:w-2/3 mx-auto">
                     <div className="mb-[140px]">
                         <p className="text-lg">
-                            <strong>Un pas de plus</strong> fait référence au cercle vertueux du mouvement physique et mental, et des effets bénéfiques considérables du "pas". Faire un pas qui entraîne un autre avec ces différents leviers :
+                            <strong>Un pas de plus</strong> fait référence au cercle vertueux du mouvement physique et mental, et des effets bénéfiques considérables du "pas". Faire un pas qui entraîne un autre avec ces différents leviers&nbsp;:
                         </p>
                     </div>
                     <div className="relative w-3/4 md:w-1/2 mx-auto circles-container">

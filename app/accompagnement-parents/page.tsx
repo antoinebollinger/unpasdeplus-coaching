@@ -18,7 +18,7 @@ export default function Page() {
             link: '#header'
         },
         {
-            title: 'C\'est quoi ?',
+            title: 'C\'est quoi&nbsp;?',
             link: '#quoi'
         },
         {

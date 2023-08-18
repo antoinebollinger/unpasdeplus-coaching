@@ -47,10 +47,10 @@ export default function Liens({ className = 'bg-gray-100' }: { className?: strin
                             <strong>Accompagnement parents</strong>
                         </p>
                         <p className="text-lg text-start grow">
-                            <strong>Vous manquez de temps</strong> pour prendre soin de vous ? Vous avez essayé des choses mais face au quotidien, à vos responsabilités professionnelles et personnelles, <strong>vous baissez les bras ?</strong>
+                            <strong>Vous manquez de temps</strong> pour prendre soin de vous&nbsp;? Vous avez essayé des choses mais face au quotidien, à vos responsabilités professionnelles et personnelles, <strong>vous baissez les bras&nbsp;?</strong>
                             <br />
                             <br />
-                            Avez-vous pensé à vous interroger sur vos <strong>motivations intrinsèques</strong>, celles qui se manifestent par un réel engagement et une persévérance dans vos actions ?
+                            Avez-vous pensé à vous interroger sur vos <strong>motivations intrinsèques</strong>, celles qui se manifestent par un réel engagement et une persévérance dans vos actions&nbsp;?
                         </p>
                         <Link href="/accompagnement-parents" className="main-btn gradient-btn focus:outline-none uppercase mx-auto">
                             En savoir plus
@@ -67,10 +67,10 @@ export default function Liens({ className = 'bg-gray-100' }: { className?: strin
                             <strong>Accompagnement entreprise</strong>
                         </p>
                         <p className="text-lg text-start grow">
-                            Vous souhaitez accompagner activement vos salariés-parents pour les aider à mieux concilier vie pro vie perso pour limiter les <strong>impacts</strong> sur <strong>l’entreprise</strong> liés à la <strong>parentalité</strong>, à leur transition de vie ?
+                            Vous souhaitez accompagner activement vos salariés-parents pour les aider à mieux concilier vie pro vie perso pour limiter les <strong>impacts</strong> sur <strong>l’entreprise</strong> liés à la <strong>parentalité</strong>, à leur transition de vie&nbsp;?
                             <br />
                             <br />
-                            Avez-vous mis en place un dispositif pour renforcer une politique RH inclusive autour de la parentalité ?
+                            Avez-vous mis en place un dispositif pour renforcer une politique RH inclusive autour de la parentalité&nbsp;?
                         </p>
                         <Link href="/accompagnement-entreprises" className="main-btn gradient-btn focus:outline-none uppercase mx-auto">
                             En savoir plus

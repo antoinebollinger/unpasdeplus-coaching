@@ -18,7 +18,7 @@ export default function Page() {
             link: '#header'
         },
         {
-            title: 'Pourquoi ?',
+            title: 'Pourquoi&nbsp;?',
             link: '#pourquoi'
         },
         {

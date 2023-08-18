@@ -2,7 +2,7 @@ export default function MentionsLegales() {
     return (
         <section id="legals" className="pb-120 legals">
             <div className="container">
-                <h4>Editeur du site :</h4>
+                <h4>Editeur du site&nbsp;:</h4>
 
                 <p>
                     Le site www.unpasdeplus-coaching.fr est un site édité par la société UN PAS DE PLUS SARL au capital de 1000 euros.<br />
@@ -15,14 +15,14 @@ export default function MentionsLegales() {
                     Crédits Photos: Photos libres de droits
                 </p>
 
-                <h4>Hébergement :</h4>
+                <h4>Hébergement&nbsp;:</h4>
 
                 <p>
                     Le Site est hébergé sur les serveurs de Gandi SAS<br />
                     63,65 Boulevard Massena<br />
                     75013 Paris<br />
                     France<br />
-                    Tel. : +33 1 70 37 76 61
+                    Tel.&nbsp;: +33 1 70 37 76 61
                 </p>
 
                 <h4>Propriétés intellectuelles:</h4>
@@ -56,7 +56,7 @@ export default function MentionsLegales() {
 
                 </p>
 
-                <h4>Affiliation & partenariat :</h4>
+                <h4>Affiliation & partenariat&nbsp;:</h4>
 
                 <p>
                     Certains liens sont susceptibles d’être affiliés.L’éditeur perçoit ainsi une commission pour tout achat ou inscription à partir de ces liens sans qu’il n’y ait aucune incidence pour l’utilisateur.Chaque lien est vérifié et approuvé par l’éditeur qui recommande les produits mentionnés.Toutefois, l’utilisateur reste libre de passer par ces liens ou non.

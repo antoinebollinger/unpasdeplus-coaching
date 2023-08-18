@@ -34,7 +34,7 @@ export default function Approche({ className = '' }: { className?: string }) {
                             <strong>La marche met en mouvement</strong>. Marcher, c'est mettre un pied devant l'autre au sens physqique du terme mais c'est aussi <strong>accepter d'avancer</strong> dans des moments de doutes et de vulnérabilité. Trouver notre pas et à notre rythme. Retrouver ainsi cette sensation de <strong>légèreté</strong> et de <strong>liberté</strong>.
                             <br />
                             <br />
-                            <strong>Travailler son mental</strong> et <strong>rester concentrer</strong> sur son objectif, c’est comme un entraînement sportif : <strong>entraînement, répétition, méthode, persévérance, régularité et motivation</strong>.
+                            <strong>Travailler son mental</strong> et <strong>rester concentrer</strong> sur son objectif, c’est comme un entraînement sportif&nbsp;: <strong>entraînement, répétition, méthode, persévérance, régularité et motivation</strong>.
                             <br />
                             <br />
                             Un pas de plus vous propose un <strong>accompagnement</strong> et <strong>un plan d’action concret</strong> autour de la <strong>santé physique et mentale</strong>. Il peut s’agir de <strong>réduire la charge mentale</strong>, être accompagner <strong>du retour au travail après un congés maternité/paternité</strong>, <strong>après une absence de longue durée</strong>, <strong>trouver un équilibre de vie pour prendre soin de soi</strong>.
@@ -43,7 +43,7 @@ export default function Approche({ className = '' }: { className?: string }) {
                 </div>
                 <div className="text-center">
                     <Link href="/contact" className="main-btn gradient-btn focus:outline-none uppercase">
-                        Besoin d'être épaulé.e ?<br />Contactez-moi
+                        Besoin d'être épaulé.e&nbsp;?<br />Contactez-moi
                     </Link>
                 </div>
             </div>
