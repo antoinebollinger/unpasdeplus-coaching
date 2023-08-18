@@ -27,8 +27,7 @@ export default function Header({
                 <Image
                     src={banner.src}
                     alt="Main banner"
-                    width={banner.width}
-                    height={banner.height}
+                    fill={true}
                     className="object-cover w-full h-full opacity-80"
                     priority={true}
                 />

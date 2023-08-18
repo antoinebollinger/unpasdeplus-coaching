@@ -17,7 +17,7 @@ export default function Approche({ className = '' }: { className?: string }) {
         <section className={className}>
             <div className="container">
                 <div className="flex flex-col lg:flex-row gap-6 justify-center items-center mb-16">
-                    <div className="w-2/3 lg:w-1/3 lg:order-1 transition duration-200 scale-0 approche-img">
+                    <div className="w-full lg:w-1/3 lg:order-1 transition duration-200 scale-0 approche-img">
                         <Image
                             src={MamanZen}
                             className="w-full rounded-xl"
@@ -25,7 +25,7 @@ export default function Approche({ className = '' }: { className?: string }) {
                         />
                     </div>
                     <div className="w-full lg:w-2/3 lg:order-0">
-                        <h3>L'approche Un pas de plus</h3>
+                        <h3>L'approche Un&nbsp;pas&nbsp;de&nbsp;plus</h3>
                         <br />
                         <p className="text-lg leading-6">
                             Je suis convaincue que le <strong>changement d'état d'esprit</strong> repose sur <strong>le travail d'introspection associé à l'activité physique, le sport</strong>. Nous savons que le sport agit sur le <strong>physique</strong> mais <strong>surtout sur le mental</strong>.
