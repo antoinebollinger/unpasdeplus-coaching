@@ -2,12 +2,9 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
 import { useEffect } from 'react'
-import { closeModal, openModal } from '../utils/modal'
+import { openModal } from '../utils/modal'
 import { emailMessage } from '../data/metadata'
-
-interface CustomEvent extends SubmitEvent {
-    target: HTMLFormElement
-}
+import { CustomEvent } from '../models/types'
 
 export default function Contact({ className = '' }: { className?: string }) {
     useEffect(() => {
@@ -27,7 +24,7 @@ export default function Contact({ className = '' }: { className?: string }) {
                 const response = await sendEmail.json()
                 if (response.sent)
                     openModal({
-                        body: emailMessage.sent.sprintf([e.target.elements['name'].value]), buttons: 'hidden'
+                        body: emailMessage.messageSent.sprintf([e.target.elements['name'].value]), buttons: 'hidden'
                     })
                 else
                     throw new Error('Fetch returned with sent = false')

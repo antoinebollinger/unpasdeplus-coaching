@@ -30,3 +30,7 @@ export interface modalProps {
     href?: string,
     buttons?: string
 }
+
+export interface CustomEvent extends SubmitEvent {
+    target: HTMLFormElement
+}

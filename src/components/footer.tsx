@@ -6,8 +6,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons'
 import { useEffect } from 'react'
 import { closeModal, openModal } from '../utils/modal'
+import { CustomEvent, onThisPage } from '../models/types'
+import { emailMessage } from '../data/metadata'
 import Socials from './socials'
-import { onThisPage } from '../models/types'
 
 export default function Footer({
     onThisPage = [
@@ -20,30 +21,33 @@ export default function Footer({
     onThisPage?: onThisPage[]
 }) {
     useEffect(() => {
-        document.forms['newsletter-form'].addEventListener('submit', async e => {
-            e.preventDefault();
+        document.forms['newsletter-form'].addEventListener('submit', async (e: CustomEvent) => {
+            e.preventDefault()
             if (e.target.elements["email_from"].value === '')
                 return
             openModal({
-                body: 'Envoi en cours', buttons: 'hidden'
-            });
-            const data = new FormData(e.target);
-            data.append('email_to', process.env.email_to);
-            data.append('name_to', process.env.name_to);
-            const sendEmail = await fetch(`${process.env.email_api}/newsletter`, {
-                method: 'POST',
-                body: data
-            });
-            const response = await sendEmail.json();
-            closeModal();
-            if (response.sent)
+                body: emailMessage.sending, buttons: 'hidden'
+            })
+            const data = new FormData(e.target)
+            data.append('email_to', process.env.NEXT_PUBLIC_EMAIL_TO)
+            data.append('name_to', process.env.NEXT_PUBLIC_NAME_TO)
+            try {
+                const sendEmail = await fetch(`${process.env.NEXT_PUBLIC_EMAIL_API}/newsletter`, {
+                    method: 'POST',
+                    body: data
+                })
+                const response = await sendEmail.json()
+                if (response.sent)
+                    openModal({
+                        body: emailMessage.newsletterSent, buttons: 'hidden'
+                    })
+                else
+                    throw new Error('Fetch returned with sent = false')
+            } catch (error) {
                 openModal({
-                    body: `Votre demande d'inscription à ma newsletter a bien été envoyée. A très vite !`, buttons: 'hidden'
-                });
-            else
-                openModal({
-                    body: `Oups... Une erreur est survenue. Merci de réessayer, ou de m'envoyer un email directement à l'adresse <strong>sabrina.appriou@hotmail.com</strong>. A bientôt !`, buttons: 'hidden'
-                });
+                    body: emailMessage.fetchError.sprintf([process.env.NEXT_PUBLIC_EMAIL_TO, error.message]), buttons: 'hidden'
+                })
+            }
         })
     }, []);
 

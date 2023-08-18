@@ -9,7 +9,7 @@ export const siteData = {
 
 export const emailMessage = {
     sending: 'Envoi en cours...',
-    sent: 'Cher.ère {0},<br/>Votre message a bien été envoyé. Je reviendrai vers vous très rapidement. A bientôt !',
-    serverError: 'Oups... Une erreur est survenue.<br/>Merci de réessayer, ou de m\'envoyer un email directement à l\'adresse <strong>{0}</strong>.<br/>A bientôt !',
+    messageSent: 'Cher.ère {0},<br/>Votre message a bien été envoyé. Je reviendrai vers vous très rapidement. A bientôt !',
+    newsletterSent: 'Votre demande d\'inscription à ma newsletter a bien été envoyée. A très vite !',
     fetchError: 'Oups... Une erreur est survenue.<br/>Merci de réessayer, ou de m\'envoyer un email directement à l\'adresse <strong>{0}</strong>.<br/>A bientôt !<br/><br/>Message d\'erreur : {1}',
 }
