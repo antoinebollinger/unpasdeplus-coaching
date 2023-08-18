@@ -5,7 +5,7 @@ import { DotButton, PrevButton, NextButton } from '../../utils/emblaButtons'
 import Autoplay from 'embla-carousel-autoplay'
 
 export default function Temoignages() {
-    const [emblaRef, emblaApi] = useEmblaCarousel({}, [Autoplay()])
+    const [emblaRef, emblaApi] = useEmblaCarousel({}, [Autoplay({ delay: 5000 })])
     const [prevBtnDisabled, setPrevBtnDisabled] = useState(true)
     const [nextBtnDisabled, setNextBtnDisabled] = useState(true)
     const [selectedIndex, setSelectedIndex] = useState(0)

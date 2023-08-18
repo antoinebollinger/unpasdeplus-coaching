@@ -3,31 +3,42 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
 import { useEffect } from 'react'
 import { closeModal, openModal } from '../utils/modal'
+import { emailMessage } from '../data/metadata'
+
+interface CustomEvent extends SubmitEvent {
+    target: HTMLFormElement
+}
 
 export default function Contact({ className = '' }: { className?: string }) {
     useEffect(() => {
-        document.forms['contact-form'].addEventListener('submit', async e => {
+        document.forms['contact-form'].addEventListener('submit', async (e: CustomEvent) => {
             e.preventDefault()
             openModal({
-                body: 'Envoi en cours', buttons: 'hidden'
+                body: emailMessage.sending, buttons: 'hidden'
             })
             const data = new FormData(e.target)
-            data.append('email_to', process.env.email_to)
-            data.append('name_to', process.env.name_to)
-            const sendEmail = await fetch(`${process.env.email_api}/email`, {
-                method: 'POST',
-                body: data
-            })
-            const response = await sendEmail.json()
-            closeModal();
-            if (response.sent)
-                openModal({
-                    body: `Cher.ère ${e.target.elements['name'].value},<br/>Votre message a bien été envoyé. Je reviendrai vers vous très rapidement. A bientôt !`, buttons: 'hidden'
+            data.append('email_to', process.env.NEXT_PUBLIC_EMAIL_TO)
+            data.append('name_to', process.env.NEXT_PUBLIC_NAME_TO)
+            try {
+                const sendEmail = await fetch(`${process.env.NEXT_PUBLIC_EMAIL_API}/email`, {
+                    method: 'POST',
+                    body: data
                 })
-            else
+                const response = await sendEmail.json()
+                console.log(response)
+                if (response.sent)
+                    openModal({
+                        body: emailMessage.sent.sprintf([e.target.elements['name'].value]), buttons: 'hidden'
+                    })
+                else
+                    openModal({
+                        body: emailMessage.serverError.sprintf([process.env.NEXT_PUBLIC_EMAIL_TO]), buttons: 'hidden'
+                    })
+            } catch (error) {
                 openModal({
-                    body: `Oups... Une erreur est survenue. Merci de réessayer, ou de m'envoyer un email directement à l'adresse <strong>sabrina.appriou@hotmail.com</strong>. A bientôt !`, buttons: 'hidden'
+                    body: emailMessage.fetchError.sprintf([process.env.NEXT_PUBLIC_EMAIL_TO, error.message]), buttons: 'hidden'
                 })
+            }
         })
     }, [])
 

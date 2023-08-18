@@ -1,8 +1,16 @@
 'use client'
 import { useCallback, useState } from 'react'
+import { modalProps } from '../models/types';
 
-export function openModal({ body = '', header = '', href = '#', buttons = 'block' }) {
+export function openModal({
+    header = '',
+    body = '',
+    href = '#',
+    buttons = 'block'
+}: modalProps) {
     const modal = document.getElementById('modal');
+    modal.querySelector('.modal-title').innerHTML = '';
+    modal.querySelector('.modal-body').innerHTML = '';
     modal.querySelector('.modal-title').insertAdjacentHTML('afterbegin', header);
     modal.querySelector('.modal-body').insertAdjacentHTML('afterbegin', body);
     (modal.querySelector('.modal-link') as HTMLElement).dataset.href = href;
@@ -21,7 +29,7 @@ export function closeModal() {
     return url;
 }
 
-export default function Modal({ className = '' }) {
+export default function Modal({ className = '' }: { className?: string }) {
     const [header, setHeader] = useState('');
     const [body, setBody] = useState('');
     const [href, setHref] = useState('#');

@@ -23,3 +23,10 @@ export interface onThisPage {
     title?: string,
     link?: string
 }
+
+export interface modalProps {
+    header?: string,
+    body?: string,
+    href?: string,
+    buttons?: string
+}

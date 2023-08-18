@@ -5,6 +5,7 @@ import Footer from './components/footer'
 import Modal from './utils/modal'
 import Backtotop from './components/backtotop'
 import { banner, headerProps, onThisPage } from './models/types'
+import './utils/sprintf'
 
 export default function Layout({ children, headerProps, banner, onThisPage }: {
     children: React.ReactNode,

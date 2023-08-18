@@ -9,7 +9,7 @@ export default function Services({ className = 'bg-gray-100' }: { className?: st
     useEffect(() => {
         reveal({
             collection: document.querySelectorAll('#services .service'),
-            classesToRemove: ['opacity-0', 'translate-y-full']
+            classesToRemove: ['opacity-0', 'translate-y-1/4']
         })
     }, [])
 
@@ -65,7 +65,7 @@ export default function Services({ className = 'bg-gray-100' }: { className?: st
                                 </>
                             )
                         ].map((e, i) => (
-                            <div className="rounded-xl shadow-xl bg-secondary-100 p-4 w-full lg:w-1/2 flex flex-col gap-6 transtion duration-200 opacity-0 translate-y-full service" key={i}>{e}</div>
+                            <div className="rounded-xl shadow-xl bg-secondary-100 p-4 w-full lg:w-1/2 flex flex-col gap-6 transtion duration-200 opacity-0 translate-y-1/4 service" key={i}>{e}</div>
                         ))
                     }
                 </div>
