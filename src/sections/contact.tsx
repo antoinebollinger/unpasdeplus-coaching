@@ -25,15 +25,12 @@ export default function Contact({ className = '' }: { className?: string }) {
                     body: data
                 })
                 const response = await sendEmail.json()
-                console.log(response)
                 if (response.sent)
                     openModal({
                         body: emailMessage.sent.sprintf([e.target.elements['name'].value]), buttons: 'hidden'
                     })
                 else
-                    openModal({
-                        body: emailMessage.serverError.sprintf([process.env.NEXT_PUBLIC_EMAIL_TO]), buttons: 'hidden'
-                    })
+                    throw new Error('Fetch returned with sent = false')
             } catch (error) {
                 openModal({
                     body: emailMessage.fetchError.sprintf([process.env.NEXT_PUBLIC_EMAIL_TO, error.message]), buttons: 'hidden'
