@@ -52,7 +52,7 @@ export default function Contact({ className = '' }: { className?: string }) {
                             <p className="text">Pour prendre RDV, avoir plus de renseignements, me poser des questions, me parler de vous !</p>
                             <br />
                             <p>
-                                <FontAwesomeIcon icon={faEnvelope} /> <a href="mailto:sabrina.appriou@hotmail.fr" title="Envoyer un mail à Sabrina" className="text-2xl hover:text-secondary-700 transition">sabrina.appriou@hotmail.fr</a>
+                                <FontAwesomeIcon icon={faEnvelope} /> <a href={`mailto:${process.env.NEXT_PUBLIC_EMAIL_TO}`} title="Envoyer un mail à Sabrina" className="text-2xl hover:text-secondary-700 transition">{process.env.NEXT_PUBLIC_EMAIL_TO}</a>
                             </p>
                             <br />
                             <p>
