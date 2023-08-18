@@ -22,12 +22,12 @@ export default function Layout({ children, headerProps, banner, onThisPage }: {
     }, [])
 
     return (
-        <React.Fragment>
+        <>
             <Header headerProps={headerProps} banner={banner} />
             {children}
             <Footer onThisPage={onThisPage} />
             <Backtotop onThisPage={onThisPage} />
             <Modal className="z-[999]" />
-        </React.Fragment>
+        </>
     )
 }

@@ -149,7 +149,7 @@ export default function Footer({
                         <div className="w-full">
                             <div className="py-6 text-center">
                                 <p className="text-white">
-                                    Copyright © unpasdeplus 2022 - Site réalisé par <a className="text-primary-100 duration-300 hover:text-primary-300" rel="nofollow" href="https://antoinebollinger.fr">Antoine Bollinger</a>
+                                    Copyright © unpasdeplus 2022 - Site réalisé par <a className="font-bold duration-300 hover:text-primary-300" rel="nofollow" href="https://antoinebollinger.fr">Antoine Bollinger</a>
                                 </p>
                             </div>
                         </div>

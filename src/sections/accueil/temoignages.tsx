@@ -1,7 +1,7 @@
 'use client'
 import { useEffect, useState, useCallback } from 'react'
 import useEmblaCarousel, { EmblaCarouselType } from 'embla-carousel-react'
-import { DotButton, PrevButton, NextButton } from '../../utils/emblaButtons'
+import { DotButton, PrevButton, NextButton } from '../../components/emblaButtons'
 
 export default function Temoignages() {
     const [emblaRef, emblaApi] = useEmblaCarousel({})
@@ -76,13 +76,14 @@ export default function Temoignages() {
                     </div> */}
                 </div>
                 <div className="embla__dots">
-                    {scrollSnaps.map((_, index) => (
+                    {scrollSnaps.map((_, i) => (
                         <DotButton
-                            key={index}
-                            onClick={() => scrollTo(index)}
+                            key={i}
+                            onClick={() => scrollTo(i)}
                             className={'embla__dot'.concat(
-                                index === selectedIndex ? ' embla__dot--selected' : ''
+                                i === selectedIndex ? ' embla__dot--selected' : ''
                             )}
+                            aria-label={`Aller au slide ${i + 1}`}
                         />
                     ))}
                 </div>
