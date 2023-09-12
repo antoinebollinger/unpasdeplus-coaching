@@ -132,7 +132,7 @@ export default function Footer({
                                 <p className="footer-title">Inscription à ma newsletter</p>
                                 <div className="newsletter">
                                     <form id="newsletter-form" className="relative mb-4">
-                                        <input type="email" name="email_from" placeholder="Je m'inscris en indiquant mon email" className="w-full py-3 pl-6 pr-12 duration-300 bg-gray-100 border border-gray-100 rounded-full focus:border-primary-600 focus:outline-none" required />
+                                        <input type="email" name="email_from" placeholder="Entrez votre email" className="w-full py-3 pl-6 pr-12 duration-300 bg-gray-100 border border-gray-100 rounded-full focus:border-primary-600 focus:outline-none" required />
                                         <button type="submit" className="absolute top-0 right-0 mt-3 mr-6 text-xl text-primary-600" aria-label="S'incrire à ma newsletter">
                                             <FontAwesomeIcon icon={faAngleDoubleRight} />
                                         </button>

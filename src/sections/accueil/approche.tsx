@@ -31,7 +31,7 @@ export default function Approche({ className = '' }: { className?: string }) {
                             Je suis convaincue que le <strong>changement d'état d'esprit</strong> repose sur <strong>le travail d'introspection associé à l'activité physique, le sport</strong>. Nous savons que le sport agit sur le <strong>physique</strong> mais <strong>surtout sur le mental</strong>.
                             <br />
                             <br />
-                            <strong>La marche met en mouvement</strong>. Marcher, c'est mettre un pied devant l'autre au sens physqique du terme mais c'est aussi <strong>accepter d'avancer</strong> dans des moments de doutes et de vulnérabilité. Trouver notre pas et à notre rythme. Retrouver ainsi cette sensation de <strong>légèreté</strong> et de <strong>liberté</strong>.
+                            <strong>La marche met en mouvement</strong>. Marcher, c'est mettre un pied devant l'autre au sens physique du terme mais c'est aussi <strong>accepter d'avancer</strong> dans des moments de doutes et de vulnérabilité. Trouver notre pas et à notre rythme. Retrouver ainsi cette sensation de <strong>légèreté</strong> et de <strong>liberté</strong>.
                             <br />
                             <br />
                             <strong>Travailler son mental</strong> et <strong>rester concentrer</strong> sur son objectif, c’est comme un entraînement sportif&nbsp;: <strong>entraînement, répétition, méthode, persévérance, régularité et motivation</strong>.
