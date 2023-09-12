@@ -40,37 +40,54 @@ export default function Parcours({ className = '' }: { className?: string }) {
                             <p className="text-lg italic">Ma trajectoire de vie raconte qui je suis et ce que je peux vous apporter.</p>
                         </div>
                     </div>
-                    {
-                        [
-                            [
-                                Career1,
-                                "J'ai débuté ma carrière dans un grand goupe bancaire.Je voyais pleins d'opprtunités pour les prochaines années. Une envie de gravir les échelons avec un confort financier à la clé. Tout se passait bien. Après la naissance de mon premier enfant, j'ai changé de poste et de rythme de travail, être au 4/5ème pour trouver <strong>un équilibre de vie</strong>."
-                            ],
-                            [
-                                Career2,
-                                "Cependant,<strong> difficile de concilier vie pro et vie perso</strong>&nbsp;: être présente au travail, avoir du temps pour mes enfants, avoir du temps pour moi. J'avais l'impression de courir après la montre, d'être pressée par le temps et de <strong>subir ma vie</strong>.<br/>Ce rythme de vie commençait à m’épuiser. Je me suis sentie tiraillée entre mon envie de réussir ma carrière et celle de voir grandir mes enfants."
-                            ],
-                            [
-                                Career3,
-                                "Ma <strong>charge mentale</strong> s’accroissait et j’ai commencé à remettre en question mes choix professionnels. Face l'épuisement professionnel, la lassitude, je me rends à l'évidence&nbsp;: je dois trouver une solution plus pérenne. A cela s'ajoute une <strong>quête de sens</strong>, et ce profond besoin de me reconnecter à <strong>mes valeurs</strong>, <strong>mon identité</strong>, <strong>ma personnalité</strong>."
-
-                            ]
-                        ].map((e, i) => (
-                            <div className="flex flex-col md:flex-row gap-6 justify-center items-center mb-10" key={i}>
-                                <div className="w-1/2 md:w-1/4 transition duration-300 opacity-0 scale-0 career-step">
-                                    <Image
-                                        src={e[0]}
-                                        width={150}
-                                        className="rounded-full shadow mx-auto"
-                                        alt="Illustration"
-                                    />
-                                </div>
-                                <div className="w-full md:w-3/4 transition duration-300 opacity-0 translate-x-3/4 career-step">
-                                    <p className="text-lg text-gray-900" dangerouslySetInnerHTML={{ __html: e[1] }} />
-                                </div>
-                            </div>
-                        ))
-                    }
+                    <div className="flex flex-col md:flex-row gap-6 justify-center items-center mb-10">
+                        <div className="w-1/2 md:w-1/4 transition duration-300 opacity-0 scale-0 career-step">
+                            <Image
+                                src={Career1}
+                                width={150}
+                                height={150}
+                                className="rounded-full shadow mx-auto"
+                                alt="Illustration"
+                            />
+                        </div>
+                        <div className="w-full md:w-3/4 transition duration-300 opacity-0 translate-x-3/4 career-step">
+                            <p className="text-lg text-gray-900">
+                                J'ai débuté ma carrière dans un grand goupe bancaire.Je voyais pleins d'opprtunités pour les prochaines années. Une envie de gravir les échelons avec un confort financier à la clé. Tout se passait bien. Après la naissance de mon premier enfant, j'ai changé de poste et de rythme de travail, être au 4/5ème pour trouver <strong>un équilibre de vie</strong>.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="flex flex-col md:flex-row gap-6 justify-center items-center mb-10">
+                        <div className="w-1/2 md:w-1/4 transition duration-300 opacity-0 scale-0 career-step">
+                            <Image
+                                src={Career2}
+                                width={150}
+                                height={150}
+                                className="rounded-full shadow mx-auto"
+                                alt="Illustration"
+                            />
+                        </div>
+                        <div className="w-full md:w-3/4 transition duration-300 opacity-0 translate-x-3/4 career-step">
+                            <p className="text-lg text-gray-900">
+                                Cependant,<strong> difficile de concilier vie pro et vie perso</strong>&nbsp;: être présente au travail, avoir du temps pour mes enfants, avoir du temps pour moi. J'avais l'impression de courir après la montre, d'être pressée par le temps et de <strong>subir ma vie</strong>.<br />Ce rythme de vie commençait à m’épuiser. Je me suis sentie tiraillée entre mon envie de réussir ma carrière et celle de voir grandir mes enfants.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="flex flex-col md:flex-row gap-6 justify-center items-center mb-10">
+                        <div className="w-1/2 md:w-1/4 transition duration-300 opacity-0 scale-0 career-step">
+                            <Image
+                                src={Career3}
+                                width={150}
+                                height={150}
+                                className="rounded-full shadow mx-auto"
+                                alt="Illustration"
+                            />
+                        </div>
+                        <div className="w-full md:w-3/4 transition duration-300 opacity-0 translate-x-3/4 career-step">
+                            <p className="text-lg text-gray-900">
+                                Ma <strong>charge mentale</strong> s’accroissait et j’ai commencé à remettre en question mes choix professionnels. Face l'épuisement professionnel, la lassitude, je me rends à l'évidence&nbsp;: je dois trouver une solution plus pérenne. A cela s'ajoute une <strong>quête de sens</strong>, et ce profond besoin de me reconnecter à <strong>mes valeurs</strong>, <strong>mon identité</strong>, <strong>ma personnalité</strong>.
+                            </p>
+                        </div>
+                    </div>
                 </div>
                 <div className="lg:max-w-5xl mx-auto">
                     <p className="text-lg text-gray-900 mb-2 transition duration-200 opacity-0 translate-y-full parcours-text">

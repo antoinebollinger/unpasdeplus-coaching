@@ -25,41 +25,70 @@ export default function Qualite({ className = '' }: { className?: string }) {
                     <p className="text-lg italic">Avec professionnalisme, éthique et bienveillance</p>
                 </div>
                 <div className="lg:max-w-5xl mx-auto mb-16">
-                    {
-                        [
-                            [
-                                EMCC,
-                                "Accréditation EMCC - labélisation EMCC (European Mentoring Coaching Council)"
-                            ],
-                            [
-                                FranceCompetences,
-                                "Coach professionnelle certifiée RNCP 7 - Linkup Coaching"
-                            ],
-                            [
-                                Outils,
-                                "Outils et méthodes de coaching"
-                            ],
-                            [
-                                Ethics,
-                                "Charte déontologique du coach"
-                            ]
-                        ].map((e, i) => (
-                            <div className="flex flex-col md:flex-row gap-6 justify-center items-center mb-10" key={i}>
-                                <div className="w-1/2 md:w-1/5 mx-auto transition duration-300 opacity-0 scale-0 career-step">
-                                    <Image
-                                        src={e[0]}
-                                        width={150}
-                                        height={150}
-                                        className="mx-auto rounded-full shadow-lg"
-                                        alt="Illustration"
-                                    />
-                                </div>
-                                <div className="w-full md:w-3/4 transition duration-300 opacity-0 translate-x-3/4 career-step">
-                                    <p className="text-lg text-gray-900" dangerouslySetInnerHTML={{ __html: e[1] }} />
-                                </div>
-                            </div>
-                        ))
-                    }
+                    <div className="flex flex-col md:flex-row gap-6 justify-center items-center mb-10">
+                        <div className="w-1/2 md:w-1/5 mx-auto transition duration-300 opacity-0 scale-0 career-step">
+                            <Image
+                                src={EMCC}
+                                width={150}
+                                height={150}
+                                className="mx-auto rounded-full shadow-lg"
+                                alt="Illustration"
+                            />
+                        </div>
+                        <div className="w-full md:w-3/4 transition duration-300 opacity-0 translate-x-3/4 career-step">
+                            <p className="text-lg text-gray-900">
+                                Accréditation EMCC - labélisation EMCC (European Mentoring Coaching Council)
+                            </p>
+                        </div>
+                    </div>
+                    <div className="flex flex-col md:flex-row gap-6 justify-center items-center mb-10">
+                        <div className="w-1/2 md:w-1/5 mx-auto transition duration-300 opacity-0 scale-0 career-step">
+                            <Image
+                                src={FranceCompetences}
+                                width={150}
+                                height={150}
+                                className="mx-auto rounded-full shadow-lg"
+                                alt="Illustration"
+                            />
+                        </div>
+                        <div className="w-full md:w-3/4 transition duration-300 opacity-0 translate-x-3/4 career-step">
+                            <p className="text-lg text-gray-900">
+                                Coach professionnelle certifiée RNCP 7 - Linkup Coaching
+                            </p>
+                        </div>
+                    </div>
+                    <div className="flex flex-col md:flex-row gap-6 justify-center items-center mb-10">
+                        <div className="w-1/2 md:w-1/5 mx-auto transition duration-300 opacity-0 scale-0 career-step">
+                            <Image
+                                src={Outils}
+                                width={150}
+                                height={150}
+                                className="mx-auto rounded-full shadow-lg"
+                                alt="Illustration"
+                            />
+                        </div>
+                        <div className="w-full md:w-3/4 transition duration-300 opacity-0 translate-x-3/4 career-step">
+                            <p className="text-lg text-gray-900">
+                                Outils et méthodes de coaching
+                            </p>
+                        </div>
+                    </div>
+                    <div className="flex flex-col md:flex-row gap-6 justify-center items-center mb-10">
+                        <div className="w-1/2 md:w-1/5 mx-auto transition duration-300 opacity-0 scale-0 career-step">
+                            <Image
+                                src={Ethics}
+                                width={150}
+                                height={150}
+                                className="mx-auto rounded-full shadow-lg"
+                                alt="Illustration"
+                            />
+                        </div>
+                        <div className="w-full md:w-3/4 transition duration-300 opacity-0 translate-x-3/4 career-step">
+                            <p className="text-lg text-gray-900">
+                                Charte déontologique du coach
+                            </p>
+                        </div>
+                    </div>
                 </div>
                 <div className="text-center">
                     <Link href="/contact" className="main-btn gradient-btn focus:outline-none uppercase">
