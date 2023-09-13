@@ -43,6 +43,10 @@ The website is currently tested on a [Vercel](https://vercel.com/) deployment. Y
 
 Soon it will have its own domain 😎 !
 
+-- UPDATE -- (09/12/2023)
+
+🚀🚀🚀 GREAT NEWS: the site is online on its own domain: [unpasdeplus-coaching.fr](https://unpasdeplus-coaching.fr)
+
 <!-- CONTACT -->
 
 ## Contact 📧
