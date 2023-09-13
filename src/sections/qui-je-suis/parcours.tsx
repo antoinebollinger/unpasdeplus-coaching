@@ -52,7 +52,7 @@ export default function Parcours({ className = '' }: { className?: string }) {
                         </div>
                         <div className="w-full md:w-3/4 transition duration-300 opacity-0 translate-x-3/4 career-step">
                             <p className="text-lg text-gray-900">
-                                J'ai débuté ma carrière dans un grand goupe bancaire.Je voyais pleins d'opprtunités pour les prochaines années. Une envie de gravir les échelons avec un confort financier à la clé. Tout se passait bien. Après la naissance de mon premier enfant, j'ai changé de poste et de rythme de travail, être au 4/5ème pour trouver <strong>un équilibre de vie</strong>.
+                                J'ai débuté ma carrière dans un grand goupe bancaire. Je voyais pleins d'opportunités pour les prochaines années. Une envie de gravir les échelons avec un confort financier à la clé. Tout se passait bien. Après la naissance de mon premier enfant : changement de poste, rythme de travail au 4/5ème pour trouver <strong>un équilibre de vie</strong>.
                             </p>
                         </div>
                     </div>
@@ -94,7 +94,7 @@ export default function Parcours({ className = '' }: { className?: string }) {
                         Parce que ce parcours, c'est aussi le parcours d'autres parents, mamans, papas qui tentent de trouver le meilleur équilibre en prenant en compte les <strong>responsabilités familiales et professionnelles</strong>.
                     </p>
                     <p className="text-lg text-gray-900 mb-2 transition duration-200 opacity-0 translate-y-full parcours-text">
-                        Parce que je sais qu'on a tous des ressources en nous mais que parfois la <strong>charge émotionnelle</strong> nous <strong>empêche d'avancer</strong>, de nous épanouir. Avoir une meilleure de <strong>conscience de soi</strong>, <strong>connaissance de soi</strong> aide à <strong>changer nos schémas de pensée</strong>.
+                        Parce que je suis convaincue que nous avons tous des ressources mais que parfois la <strong>charge émotionnelle</strong> nous <strong>empêche d'avancer</strong>, de nous épanouir. Avoir une meilleure de <strong>conscience de soi</strong>, <strong>connaissance de soi</strong> aide à <strong>changer nos schémas de pensée</strong>.
                     </p>
                     <p className="text-lg text-gray-900 mb-12 transition duration-200 opacity-0 translate-y-full parcours-text">
                         Parce que faire un métier qui me passionne et qui a du sens pour moi, me former au coaching professionnel était une évidence. Exercer le <strong>métier</strong> avec <strong>éthique</strong> et <strong>déontologie</strong> en respectant la charte déontologique du coach.
