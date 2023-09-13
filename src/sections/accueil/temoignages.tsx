@@ -3,7 +3,7 @@ import { useEffect, useState, useCallback } from 'react'
 import useEmblaCarousel, { EmblaCarouselType } from 'embla-carousel-react'
 import { DotButton, PrevButton, NextButton } from '../../components/emblaButtons'
 
-export default function Temoignages() {
+export default function Temoignages({ className = '' }: { className?: string }) {
     const [emblaRef, emblaApi] = useEmblaCarousel({})
     const [prevBtnDisabled, setPrevBtnDisabled] = useState(true)
     const [nextBtnDisabled, setNextBtnDisabled] = useState(true)
@@ -43,7 +43,7 @@ export default function Temoignages() {
     }, [emblaApi, onInit, onSelect])
 
     return (
-        <section>
+        <section id="temoignages" className={className}>
             <div className="container relative">
                 <h3 className="text-center">Témoignages</h3>
                 <div className="embla">

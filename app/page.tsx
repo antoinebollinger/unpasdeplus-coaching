@@ -4,6 +4,7 @@ import Liens from '../src/sections/accueil/liens'
 import Approche from '../src/sections/accueil/approche'
 import Apports from '../src/sections/accueil/apports'
 import Temoignages from '../src/sections/accueil/temoignages'
+import Partenaires from '../src/sections/accueil/partenaires'
 import Banner from '/public/images/banners/accueil.webp'
 
 export default function Page() {
@@ -19,6 +20,10 @@ export default function Page() {
         {
             title: 'Témoignages',
             link: '#temoignages'
+        },
+        {
+            title: 'Mes Partenaires',
+            link: '#partenaires'
         }
     ];
 
@@ -29,6 +34,7 @@ export default function Page() {
             <Approche />
             <Apports />
             <Temoignages />
+            <Partenaires />
         </Layout >
     )
 }
