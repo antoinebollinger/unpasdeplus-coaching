@@ -19,7 +19,8 @@ export const metadata: Metadata = {
         title: siteData.title,
         description: siteData.description,
         images: '/twitter-image.jpg'
-    }
+    },
+    themeColor: "#421556"
 }
 
 export default function RootLayout({
