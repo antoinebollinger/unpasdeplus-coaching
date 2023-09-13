@@ -25,12 +25,14 @@ export default function Partenaires({ className = 'bg-gray-100' }: { className?:
                     {
                         [
                             (
-                                <a target="_blank" rel="nofollow" href="https://lespremieresbretagne.com/" className="w-2/3">
-                                    <Image
-                                        src={LesPremieresBretagne}
-                                        alt="Les Premières Bretagne"
-                                    />
-                                </a>
+                                <>
+                                    <a target="_blank" rel="nofollow" href="https://lespremieresbretagne.com/" className="w-2/3">
+                                        <Image
+                                            src={LesPremieresBretagne}
+                                            alt="Les Premières Bretagne"
+                                        />
+                                    </a>
+                                </>
                             )
                         ].map((e, i) => (
                             <div className="rounded-xl shadow-xl bg-white p-4 w-full lg:w-1/3 flex flex-col lg:flex-row gap-6 justify-center transtion duration-200 opacity-0 translate-y-1/4 service" key={i}>{e}</div>
