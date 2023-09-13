@@ -10,7 +10,7 @@ import LesPremieresBretagne from '/public/images/partenaires/les-premieres-breta
 export default function Partenaires({ className = 'bg-gray-100' }: { className?: string }) {
     useEffect(() => {
         reveal({
-            collection: document.querySelectorAll('#services .service'),
+            collection: document.querySelectorAll('#partenaires .service'),
             classesToRemove: ['opacity-0', 'translate-y-1/4']
         })
     }, [])
