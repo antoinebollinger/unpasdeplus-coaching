@@ -22,7 +22,7 @@ export default function Page() {
             link: '#temoignages'
         },
         {
-            title: 'Mes Partenaires',
+            title: 'Mes partenaires',
             link: '#partenaires'
         }
     ];
