@@ -5,6 +5,7 @@ import { reveal } from '../../utils/reveal'
 import Sabrina from '/public/images/sabrina.webp'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPersonRunning, faHandsHoldingChild, faBullseye, faTree, faHeart } from '@fortawesome/free-solid-svg-icons'
+import { madelyn } from '../../../styles/font'
 
 export default function Bio({ className = '' }: { className?: string }) {
     useEffect(() => {
@@ -34,7 +35,7 @@ export default function Bio({ className = '' }: { className?: string }) {
                         <div className="handwrite mb-8 text-center md:text-start">
                             <h3>Sabrina Appriou</h3>
                             <h4>
-                                Fondatrice UN PAS DE PLUS
+                                Fondatrice <span className={`${madelyn.className} text-7xl -translate-y-4`}>Un pas de plus</span>
                             </h4>
                         </div>
                         <div className="transition duration-200 opacity-0 translate-y-full about-text">

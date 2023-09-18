@@ -6,6 +6,7 @@ import Modal from './utils/modal'
 import Backtotop from './components/backtotop'
 import { banner, headerProps, onThisPage } from './models/types'
 import './utils/sprintf'
+import { motion } from 'framer-motion'
 
 export default function Layout({ children, headerProps, banner, onThisPage }: {
     children: React.ReactNode,
@@ -23,11 +24,18 @@ export default function Layout({ children, headerProps, banner, onThisPage }: {
 
     return (
         <>
-            <Header headerProps={headerProps} banner={banner} />
-            {children}
-            <Footer onThisPage={onThisPage} />
-            <Backtotop onThisPage={onThisPage} />
-            <Modal className="z-[999]" />
+            <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.5 }}
+            >
+                <Header headerProps={headerProps} banner={banner} />
+                {children}
+                <Footer onThisPage={onThisPage} />
+                <Backtotop onThisPage={onThisPage} />
+                <Modal className="z-[999]" />
+            </motion.div>
         </>
     )
 }
