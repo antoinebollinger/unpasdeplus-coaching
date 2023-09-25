@@ -19,7 +19,7 @@ export default function Liens({ className = 'bg-gray-100' }: { className?: strin
         <div className={`py-120 ${className}`}>
             <div className="container">
                 <div className="flex flex-col lg:flex-row gap-16 justify-center items-stretch">
-                    <div className="w-full lg:w-1/3 flex flex-col gap-6">
+                    <div className="w-full lg:w-1/3 flex flex-col gap-6 rounded-xl shadow-xl p-4 bg-white">
                         <Image
                             src={Sabrina}
                             width={200}
@@ -36,7 +36,7 @@ export default function Liens({ className = 'bg-gray-100' }: { className?: strin
                             Qui je suis
                         </Link>
                     </div>
-                    <div className="w-full lg:w-1/3 flex flex-col gap-6">
+                    <div className="w-full lg:w-1/3 flex flex-col gap-6 rounded-xl shadow-xl p-4 bg-white">
                         <Image
                             src={Parents}
                             width={200}
@@ -56,7 +56,7 @@ export default function Liens({ className = 'bg-gray-100' }: { className?: strin
                             En savoir plus
                         </Link>
                     </div>
-                    <div className="w-full lg:w-1/3 flex flex-col gap-6">
+                    <div className="w-full lg:w-1/3 flex flex-col gap-6 rounded-xl shadow-xl p-4 bg-white">
                         <Image
                             src={Entreprise}
                             width={200}
