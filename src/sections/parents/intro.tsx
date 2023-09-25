@@ -39,7 +39,7 @@ export default function Intro({ className = '' }: { className?: string }) {
                         <ul className="list-disc list-inside text-lg leading-8">
                             {
                                 [
-                                    "Accompagnement individuel de 3 ou 6 mois",
+                                    "Accompagnement individuel de 3 à 6 mois",
                                     "Parcours personnalisé sur l’hygiène de vie (alimentation, sport, habitudes de santé)",
                                     "Des exercices de coaching entre les séances",
                                     "Echange en ligne pour garder la dynamique"
