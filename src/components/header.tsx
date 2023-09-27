@@ -9,7 +9,7 @@ export default function Header({
     banner,
     headerProps
 }: {
-    banner?: banner,
+    banner: banner,
     headerProps?: headerProps
 }) {
     return (

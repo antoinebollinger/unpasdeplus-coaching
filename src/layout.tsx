@@ -7,11 +7,17 @@ import Backtotop from './components/backtotop'
 import { banner, headerProps, onThisPage } from './models/types'
 import './utils/sprintf'
 import { motion } from 'framer-motion'
+import Banner from '/public/images/banners/accueil.webp'
 
-export default function Layout({ children, headerProps, banner, onThisPage }: {
+export default function Layout({
+    children,
+    headerProps,
+    banner = Banner,
+    onThisPage
+}: {
     children: React.ReactNode,
     headerProps?: headerProps,
-    banner: banner,
+    banner?: banner,
     onThisPage?: onThisPage[]
 }) {
     useEffect(() => {
