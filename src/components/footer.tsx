@@ -51,6 +51,11 @@ export default function Footer({
         })
     }, []);
 
+    const year = () => {
+        const date = new Date()
+        return date.getFullYear()
+    }
+
     return (
         <footer id="footer" className="footer-area bg-secondary-100">
             <div className="mb-16 footer-widget">
@@ -149,7 +154,7 @@ export default function Footer({
                         <div className="w-full">
                             <div className="py-6 text-center">
                                 <p className="text-white">
-                                    Copyright © unpasdeplus 2022 - Site réalisé par <a target="_blank" className="font-bold duration-300 hover:text-primary-300" rel="nofollow" href="https://antoinebollinger.fr">Antoine Bollinger</a>
+                                    Copyright © unpasdeplus {year()} - Site réalisé par <a target="_blank" className="font-bold duration-300 hover:text-primary-300" rel="nofollow" href="https://antoinebollinger.fr">Antoine Bollinger</a>
                                 </p>
                             </div>
                         </div>
