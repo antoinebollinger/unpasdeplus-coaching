@@ -8,7 +8,7 @@ import Career3 from '/public/images/qui-je-suis/3.webp'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHandPointRight } from '@fortawesome/free-solid-svg-icons'
 
-export default function Parcours({ className = '' }: { className?: string }) {
+export default function Parcours({ className = 'bg-gray-100' }: { className?: string }) {
     useEffect(() => {
         reveal({
             collection: document.querySelectorAll('.career-step'),

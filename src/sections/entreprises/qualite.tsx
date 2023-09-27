@@ -3,10 +3,10 @@ import { useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { reveal } from '../../utils/reveal'
-import EMCC from '/public/images/entreprises/emcc.webp'
-import FranceCompetences from '/public/images/entreprises/france_competences.webp'
-import Outils from '/public/images/entreprises/outils.webp'
-import Ethics from '/public/images/entreprises/ethique.webp'
+import EMCC from '/public/images/icones/emcc.jpg'
+import FranceCompetences from '/public/images/icones/france_competences.jpg'
+import Outils from '/public/images/icones/outils.jpg'
+import Ethique from '/public/images/icones/ethique.jpg'
 
 export default function Qualite({ className = '' }: { className?: string }) {
     useEffect(() => {
@@ -76,7 +76,7 @@ export default function Qualite({ className = '' }: { className?: string }) {
                     <div className="flex flex-col md:flex-row gap-6 justify-center items-center mb-10">
                         <div className="w-1/2 md:w-1/5 mx-auto transition duration-300 opacity-0 scale-0 career-step">
                             <Image
-                                src={Ethics}
+                                src={Ethique}
                                 width={150}
                                 height={150}
                                 className="mx-auto rounded-full shadow-lg"

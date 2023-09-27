@@ -5,6 +5,7 @@
   padding: 1.6rem;
   padding-bottom: 2.4rem;
   position: relative;
+  display: flex;
 }
 .embla__viewport {
   overflow: hidden;
@@ -71,12 +72,9 @@
   margin: 0;
 }
 .embla__buttons {
-  display: flex;
+  // display: flex;
   align-items: center;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 1.6rem;
+  justify-content: center;
 }
 .embla__button {
   z-index: 1;

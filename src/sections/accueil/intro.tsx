@@ -1,5 +1,8 @@
 import Image from 'next/image'
 import Logo from '/public/logos/logo-texte-vertical.svg'
+import EMCC from '/public/images/icones/emcc.jpg'
+import FranceCompetences from '/public/images/icones/france_competences.jpg'
+import { madelyn } from '../../../styles/font'
 
 export default function Intro({ className = '' }: { className?: string }) {
     return (
@@ -15,9 +18,29 @@ export default function Intro({ className = '' }: { className?: string }) {
                         />
                     </div>
                     <div className="w-full lg:w-2/3 lg:order-0">
+                        <p className="text-lg mb-10">« <span className={`${madelyn.className} text-4xl`}>La victoire sur soi est la plus grande des victoires</span> » (Platon)</p>
                         <h3 className="uppercase">Votre partenaire mental</h3>
+                        <div className="flex flex-col lg:flex-row gap-6 mb-10">
+                            <div className="w-full lg:w-auto">
+                                <Image
+                                    src={EMCC}
+                                    width={150}
+                                    height={150}
+                                    className="mx-auto"
+                                    alt="Illustration"
+                                />
+                            </div>
+                            <div className="w-full lg:w-auto">
+                                <Image
+                                    src={FranceCompetences}
+                                    width={150}
+                                    height={150}
+                                    className="mx-auto"
+                                    alt="Illustration"
+                                />
+                            </div>
+                        </div>
                         <h4>Trouvez les clés et les ressources pour faire face aux défis quotidiens</h4>
-                        <br />
                         <p className="text-lg leading-6">
                             <span className="text-primary-600 font-bold">Un pas de plus</span>, c'est du <strong>coaching professionnel</strong>. Le coaching consiste à accompagner des personnes dans la définition et l'atteinte de leurs objectifs, au bénéfice du développement de leur potentiel et de la réussite de leur évolution personnelle et professionnelle.
                             <br />

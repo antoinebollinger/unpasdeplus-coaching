@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react'
 import { reveal } from '../../utils/reveal'
 
-export default function Pourquoi({ className = 'bg-gray-100' }: { className?: string }) {
+export default function Pourquoi({ className = '' }: { className?: string }) {
     const [widthC, setWidthC] = useState(0)
     const [widthI, setWidthI] = useState(150)
 

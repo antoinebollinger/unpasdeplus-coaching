@@ -23,20 +23,21 @@ export default function Bio({ className = '' }: { className?: string }) {
     return (
         <section id="bio" className={className}>
             <div className="container">
-                <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
+                <div className="flex flex-col md:flex-row gap-6 justify-center items-start">
                     <div className="w-1/2 md:w-1/4 mx-auto transition duration-200 scale-0 opacity-0 about-img">
                         <Image
                             src={Sabrina}
-                            className="w-full rounded-full"
+                            className="w-2/3 rounded-full"
                             alt="Sabrina Appriou"
                         />
                     </div>
                     <div className="w-full md:w-3/4">
-                        <div className="handwrite mb-8 text-center md:text-start">
+                        <div className="mb-8 text-center md:text-start mb-10">
                             <h3>Sabrina Appriou</h3>
                             <h4>
                                 Fondatrice <span className={`${madelyn.className} text-7xl -translate-y-4`}>Un&nbsp;pas&nbsp;de&nbsp;plus</span>
                             </h4>
+                            <p className="text-lg mb-6">Coach consultante professionnelle certifiée RNCP</p>
                         </div>
                         <div className="transition duration-200 opacity-0 translate-y-full about-text">
                             <h5><FontAwesomeIcon icon={faHandsHoldingChild} /> Maman de 3 enfants</h5>

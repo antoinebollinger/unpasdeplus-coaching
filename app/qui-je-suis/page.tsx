@@ -27,9 +27,9 @@ export default function Page() {
 
     return (
         <Layout banner={Banner} onThisPage={onThisPage}>
+            <Bio />
             <Parcours />
             <Pourquoi />
-            <Bio />
         </Layout>
     )
 }

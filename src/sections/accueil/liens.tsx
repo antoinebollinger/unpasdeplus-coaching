@@ -6,6 +6,7 @@ import { reveal } from '../../utils/reveal'
 import Sabrina from '/public/images/sabrina.webp'
 import Parents from '/public/images/parents/parents.webp'
 import Entreprise from '/public/images/entreprises/entreprises.webp'
+import { madelyn } from '../../../styles/font'
 
 export default function Liens({ className = 'bg-gray-100' }: { className?: string }) {
     useEffect(() => {
@@ -19,23 +20,6 @@ export default function Liens({ className = 'bg-gray-100' }: { className?: strin
         <div className={`py-120 ${className}`}>
             <div className="container">
                 <div className="flex flex-col lg:flex-row gap-16 justify-center items-stretch">
-                    <div className="w-full lg:w-1/3 flex flex-col gap-6 rounded-xl shadow-xl p-4 bg-white">
-                        <Image
-                            src={Sabrina}
-                            width={200}
-                            className="mx-auto rounded-full transition duration-200 scale-0 liens-img"
-                            alt="Sabrina Appriou"
-                        />
-                        <p className="text-lg text-center">
-                            <strong>Sabrina Appriou</strong>
-                        </p>
-                        <p className="text-lg text-center grow">
-                            Fondatrice Un pas de plus
-                        </p>
-                        <Link href="/qui-je-suis" className="main-btn gradient-btn focus:outline-none uppercase mx-auto">
-                            Qui je suis
-                        </Link>
-                    </div>
                     <div className="w-full lg:w-1/3 flex flex-col gap-6 rounded-xl shadow-xl p-4 bg-white">
                         <Image
                             src={Parents}
@@ -74,6 +58,29 @@ export default function Liens({ className = 'bg-gray-100' }: { className?: strin
                         </p>
                         <Link href="/accompagnement-entreprises" className="main-btn gradient-btn focus:outline-none uppercase mx-auto">
                             En savoir plus
+                        </Link>
+                    </div>
+                    <div className="w-full lg:w-1/3 flex flex-col gap-6 rounded-xl shadow-xl p-4 bg-white">
+                        <Image
+                            src={Sabrina}
+                            width={200}
+                            className="mx-auto rounded-full transition duration-200 scale-0 liens-img"
+                            alt="Sabrina Appriou"
+                        />
+                        <p className="text-lg text-center">
+                            <strong>Sabrina Appriou</strong>
+                        </p>
+                        <p className="text-lg text-start grow">
+                            <strong>Certification de coach consultante professionnelle</strong> de niveau 1 (France) et niveau 7 (Europe) enregistrée au RNCP (Répertoire National des Certifications Professionnelles), reconnue par l'Etat (équivalence Master, Bac +5)
+                            <br />
+                            <br />
+                            <strong>Respecte le code déontologique de l'EMCC France</strong> (European Mentoring & Coaching Council)
+                            <br />
+                            <br />
+                            Fondatrice <span className={`${madelyn.className} text-primary-900 text-5xl -translate-y-4`}>Un&nbsp;pas&nbsp;de&nbsp;plus</span>
+                        </p>
+                        <Link href="/qui-je-suis" className="main-btn gradient-btn focus:outline-none uppercase mx-auto">
+                            Qui je suis
                         </Link>
                     </div>
                 </div>
