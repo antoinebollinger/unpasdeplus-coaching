@@ -91,6 +91,11 @@ export default function Footer({
                                         </Link>
                                     </li>
                                     <li>
+                                        <Link href="/temoignages">
+                                            Témoignages
+                                        </Link>
+                                    </li>
+                                    <li>
                                         <Link href="/contact">
                                             Contact
                                         </Link>

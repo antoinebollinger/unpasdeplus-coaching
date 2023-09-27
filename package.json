@@ -3,7 +3,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "updateBranch": "git checkout %npm_config_branch% && git fetch origin && git merge origin/main"
   },
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^6.4.0",
