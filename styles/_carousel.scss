@@ -2,7 +2,7 @@
   --slide-spacing: 1rem;
   --slide-size: 100%;
   --slide-height: 19rem;
-  padding: 1.6rem;
+  padding-top: 1.6rem;
   padding-bottom: 2.4rem;
   position: relative;
   display: flex;
@@ -83,8 +83,7 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  width: 4rem;
-  height: 4rem;
+  @apply w-10 md:w-16 h-10 md:h-16;
 }
 .embla__button:disabled {
   opacity: 0.3;

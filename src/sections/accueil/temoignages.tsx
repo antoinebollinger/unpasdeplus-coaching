@@ -46,8 +46,8 @@ export default function Temoignages({ className = '' }: { className?: string }) 
         <section id="temoignages" className={className}>
             <div className="container relative">
                 <h3 className="text-center">Témoignages</h3>
-                <div className="embla">
-                    <div className="embla__buttons hidden lg:flex">
+                <div className="embla px-0 md:px-6">
+                    <div className="embla__buttons flex">
                         <PrevButton onClick={scrollPrev} disabled={prevBtnDisabled} />
                     </div>
                     <div className="embla__viewport lg:px-12" ref={emblaRef} >
@@ -69,14 +69,14 @@ export default function Temoignages({ className = '' }: { className?: string }) 
                                         <div className="w-full h-full mx-auto flex flex-col justify-center items-center gap-5">
                                             <h4 className="text-xl text-primary-700" dangerouslySetInnerHTML={{ __html: e.author }} />
                                             <p className="text-lg text-tertary-700 italic" dangerouslySetInnerHTML={{ __html: e.tag }} ></p>
-                                            <p className="lg:text-lg text-gray-900 lg:px-12" dangerouslySetInnerHTML={{ __html: e.text }} />
+                                            <p className="lg:text-lg text-gray-900 lg:px-12 text-center" dangerouslySetInnerHTML={{ __html: e.text }} />
                                         </div>
                                     </div>
                                 ))
                             }
                         </div>
                     </div>
-                    <div className="embla__buttons hidden lg:flex">
+                    <div className="embla__buttons flex">
                         <NextButton onClick={scrollNext} disabled={nextBtnDisabled} />
                     </div>
                 </div>
