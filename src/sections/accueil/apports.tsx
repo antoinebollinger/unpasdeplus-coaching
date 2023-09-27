@@ -13,14 +13,14 @@ export default function Apports({ className = 'bg-gray-100' }: { className?: str
 
     const list = (illustration: string, text: string) => {
         return (
-            <div className="flex flex-col md:flex-row gap-6 justify-center items-center mb-10">
+            <div className="flex flex-col gap-6 justify-center items-center mb-10">
                 <div className="transition duration-300 opacity-0 scale-0 apports-text">
                     <div className="w-[100px] h-[100px] rounded-full bg-tertary-200 flex justify-center items-center">
                         <p className="text-4xl text-tertary-900 font-bold">{illustration}</p>
                     </div>
                 </div>
                 <div className="grow transition duration-300 opacity-0 translate-x-3/4 apports-text">
-                    <p className="text-2xl text-gray-900" dangerouslySetInnerHTML={{ __html: text }} />
+                    <p className="text-2xl text-gray-900 text-center" dangerouslySetInnerHTML={{ __html: text }} />
                 </div>
             </div>
         )
@@ -33,22 +33,24 @@ export default function Apports({ className = 'bg-gray-100' }: { className?: str
                     <h3 className="text-start lg:text-center">Les apports du coaching</h3>
                 </div>
                 <div className="lg:max-w-5xl mx-auto pb-10">
-                    {list(
-                        "81%",
-                        "des clients sont <strong>satisfaits</strong> de leur accompagnement"
-                    )}
-                    {list(
-                        "80%",
-                        "ont noté une nette amélioration de leur <strong>confiance en eux</strong>"
-                    )}
-                    {list(
-                        "70%",
-                        "ont remarqué une <strong>amélioration</strong> de leur <strong>performance au travail</strong>"
-                    )}
-                    {list(
-                        "5,7",
-                        "fois le montant investi, c'est le retour sur investissement moyen des entreprises"
-                    )}
+                    <div className="flex flex-col md:flex-row gap-6">
+                        {list(
+                            "81%",
+                            "des clients sont <strong>satisfaits</strong> de leur accompagnement"
+                        )}
+                        {list(
+                            "80%",
+                            "ont noté une nette amélioration de leur <strong>confiance en eux</strong>"
+                        )}
+                        {list(
+                            "70%",
+                            "ont remarqué une <strong>amélioration</strong> de leur <strong>performance au travail</strong>"
+                        )}
+                        {list(
+                            "5,7",
+                            "fois le montant investi, c'est le retour sur investissement moyen des entreprises"
+                        )}
+                    </div>
                     <p className="italic">Source&nbsp;: étude ICF-PWC (2021)</p>
                 </div>
                 <div className="lg:max-w-5xl mx-auto">
