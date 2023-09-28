@@ -4,7 +4,8 @@ export default function MentionsLegales() {
     return (
         <section id="legals" className="pb-120 legals">
             <div className="container">
-                <h4>Editeur du site&nbsp;:</h4>
+                <h1>Mentions légales</h1>
+                <h2>Editeur du site&nbsp;:</h2>
 
                 <p>
                     Le site <strong>{siteData.domain}</strong> est un site édité par la société UN PAS DE PLUS SARL au capital de 1000 euros.<br />
@@ -12,12 +13,12 @@ export default function MentionsLegales() {
                     SIRET 851 105 775 00015<br />
                     Tel.&nbsp;: <strong>+33(0)6 61 79 46 99</strong><br />
                     Courriel&nbsp;: <strong><a href={`mailto:${process.env.NEXT_PUBLIC_EMAIL_TO}`}>{process.env.NEXT_PUBLIC_EMAIL_TO}</a></strong><br />
-                    Directrice de la publication&nbsp;:<strong>{siteData.owner}</strong><br />
+                    Directrice de la publication&nbsp;: <strong>{siteData.owner}</strong><br />
                     Conception et réalisation&nbsp;: <strong><a href="https://antoinebollinger.fr">antoinebollinger.fr</a></strong><br />
                     Crédits Photos&nbsp;: Photos libres de droits
                 </p>
 
-                <h4>Hébergement&nbsp;:</h4>
+                <h2>Hébergement&nbsp;:</h2>
 
                 <p>
                     Le Site est hébergé sur les serveurs de Gandi SAS<br />
@@ -27,13 +28,13 @@ export default function MentionsLegales() {
                     Tel.&nbsp;: +33 1 70 37 76 61
                 </p>
 
-                <h4>Propriétés intellectuelles:</h4>
+                <h2>Propriétés intellectuelles:</h2>
 
                 <p>
                     Tous droits réservés. L’accès au site <strong>{siteData.domain}</strong> vous confère un droit d’usage privé et non exclusif de ce site. L’ensemble des éléments édités sur ce site, incluant notamment les textes, photographies, logos, marques, constituent des œuvres au sens du code de la Propriété Intellectuelle. En conséquence La reproduction du contenu de ce site web, en tout ou en partie, est interdite sans la permission écrite de l’auteur.
                 </p>
 
-                <h4>Données personnelles:</h4>
+                <h2>Données personnelles:</h2>
 
                 <p>
                     Conformément à la Loi Informatique et Libertés du 6 janvier 1978, le Client dispose des droits d’interrogation, d’accès, de modification, d’opposition et de rectification sur les données personnelles le concernant. Il suffit alors d’envoyer un message: <a href={`mailto:${process.env.NEXT_PUBLIC_EMAIL_TO}`}>{process.env.NEXT_PUBLIC_EMAIL_TO}</a>.
@@ -47,7 +48,7 @@ export default function MentionsLegales() {
                     En saisissant ses informations et ses coordonnées sur l’un des sites d'UN PAS DE PLUS, le client reconnaît accepter recevoir des informations / publications de la part de la société par email et accepter de recevoir la newsletter. Il est libre de se désinscrire à tout instant. Il suffit pour cela de cliquer sur le lien présent à la fin des emails ou par email : <a href={`mailto:${process.env.NEXT_PUBLIC_EMAIL_TO}`}>{process.env.NEXT_PUBLIC_EMAIL_TO}</a>. Les traitements de données personnelles réalisés au sein de ce site font l’objet d’une déclaration auprès de la CNIL n°2028730v0.
                 </p>
 
-                <h4>Cookies</h4>
+                <h2>Cookies</h2>
 
                 <p>
                     L’utilisateur est informé que lors de ses visites sur le site unpasdeplus-coaching.fr, un cookie peut s’installer automatiquement sur son logiciel de navigation. Un cookie est un élément qui ne permet pas d’identifier l’utilisateur mais sert à enregistrer des informations relatives à la navigation de celui-ci sur le site Internet. Le paramétrage de votre logiciel de navigation permet d’informer de la présence de cookies et éventuellement de la refuser. Il y a un certain nombre de façons pour vous permettre de gérer les cookies. Chaque navigateur étant différent, nous vous invitons à prendre connaissance avec le menu « Aide » de votre navigateur, les règles de préférences concernant les cookies.
@@ -58,7 +59,7 @@ export default function MentionsLegales() {
 
                 </p>
 
-                <h4>Affiliation & partenariat&nbsp;:</h4>
+                <h2>Affiliation & partenariat&nbsp;:</h2>
 
                 <p>
                     Certains liens sont susceptibles d’être affiliés. L’éditeur perçoit ainsi une commission pour tout achat ou inscription à partir de ces liens sans qu’il n’y ait aucune incidence pour l’utilisateur. Chaque lien est vérifié et approuvé par l’éditeur qui recommande les produits mentionnés. Toutefois, l’utilisateur reste libre de passer par ces liens ou non.
