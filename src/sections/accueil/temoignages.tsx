@@ -48,7 +48,11 @@ export default function Temoignages({ className = '' }: { className?: string }) 
                 <h3 className="text-center">Témoignages</h3>
                 <div className="embla px-0 md:px-6">
                     <div className="embla__buttons flex">
-                        <PrevButton onClick={scrollPrev} disabled={prevBtnDisabled} />
+                        <PrevButton
+                            onClick={scrollPrev}
+                            disabled={prevBtnDisabled}
+                            aria-label="Slide précédent"
+                        />
                     </div>
                     <div className="embla__viewport lg:px-12" ref={emblaRef} >
                         <div className="embla__container">
@@ -68,7 +72,7 @@ export default function Temoignages({ className = '' }: { className?: string }) 
                                     <div className="embla__slide" key={i}>
                                         <div className="w-full h-full mx-auto flex flex-col justify-center items-center gap-5">
                                             <h4 className="text-xl text-primary-700" dangerouslySetInnerHTML={{ __html: e.author }} />
-                                            <p className="text-lg text-tertary-700 italic" dangerouslySetInnerHTML={{ __html: e.tag }} ></p>
+                                            <p className="text-lg text-tertary-900 italic" dangerouslySetInnerHTML={{ __html: e.tag }} ></p>
                                             <p className="lg:text-lg text-gray-900 lg:px-12 text-center" dangerouslySetInnerHTML={{ __html: e.text }} />
                                         </div>
                                     </div>
@@ -77,7 +81,11 @@ export default function Temoignages({ className = '' }: { className?: string }) 
                         </div>
                     </div>
                     <div className="embla__buttons flex">
-                        <NextButton onClick={scrollNext} disabled={nextBtnDisabled} />
+                        <NextButton
+                            onClick={scrollNext}
+                            disabled={nextBtnDisabled}
+                            aria-label="Slide suivant"
+                        />
                     </div>
                 </div>
                 <div className="embla__dots">
