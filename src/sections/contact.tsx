@@ -5,11 +5,16 @@ import { useEffect } from 'react'
 import { openModal } from '../utils/modal'
 import { emailMessage } from '../data/metadata'
 import { CustomEvent } from '../models/types'
+import Link from 'next/link'
 
 export default function Contact({ className = '' }: { className?: string }) {
     useEffect(() => {
         document.forms['contact-form'].addEventListener('submit', async (e: CustomEvent) => {
             e.preventDefault()
+
+            if (!e.target.elements["consent"].checked)
+                return
+
             openModal({
                 body: emailMessage.sending, buttons: 'hidden'
             })
@@ -87,6 +92,13 @@ export default function Contact({ className = '' }: { className?: string }) {
                                             <label>Votre message *
                                                 <textarea rows={5} name="message" data-error="Laissez-moi un message" required></textarea></label>
                                             <div className="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div className="w-full">
+                                        <div className="mx-4 mb-6 single-form form-group">
+                                            <label className="cursor-pointer">
+                                                <input type="checkbox" name="consent" required />&nbsp;En cochant cette case, je reconnais avoir pris connaissance de la <Link href="/mentions-legales" className="font-bold text-primary-900 hover:text-primary-700 transition">politique de confidentialité</Link> et j'autorise ce site à conserver mes données personnelles transmises via ce formulaire. Aucune exploitation commerciale ne sera faite des données conservées.
+                                            </label>
                                         </div>
                                     </div>
                                     <p className="mx-4 form-message">* Champs requis.</p>

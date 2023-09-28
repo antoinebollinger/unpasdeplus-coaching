@@ -23,14 +23,21 @@ export default function Footer({
     useEffect(() => {
         document.forms['newsletter-form'].addEventListener('submit', async (e: CustomEvent) => {
             e.preventDefault()
+
+            if (!e.target.elements["consent"].checked)
+                return
+
             if (e.target.elements["email_from"].value === '')
                 return
+
             openModal({
                 body: emailMessage.sending, buttons: 'hidden'
             })
+
             const data = new FormData(e.target)
             data.append('email_to', process.env.NEXT_PUBLIC_EMAIL_TO)
             data.append('name_to', process.env.NEXT_PUBLIC_NAME_TO)
+
             try {
                 const sendEmail = await fetch(`${process.env.NEXT_PUBLIC_EMAIL_API}/newsletter`, {
                     method: 'POST',
@@ -97,7 +104,7 @@ export default function Footer({
                                     </li>
                                     <li>
                                         <Link href="/mentions-legales">
-                                            Mentions légales
+                                            Mentions légales & politique de confidentialité
                                         </Link>
                                     </li>
                                 </ul>
@@ -136,11 +143,16 @@ export default function Footer({
                             <div className="mb-8 footer-newsletter">
                                 <p className="footer-title">Inscription à ma newsletter</p>
                                 <div className="newsletter">
-                                    <form id="newsletter-form" className="relative mb-4">
-                                        <input type="email" name="email_from" placeholder="Entrez votre email" className="w-full py-3 pl-6 pr-12 duration-300 bg-gray-100 border border-gray-100 rounded-full focus:border-primary-600 focus:outline-none" required />
+                                    <form id="newsletter-form" className="relative">
+                                        <input type="email" name="email_from" placeholder="Entrez votre email" className="w-full py-3 pl-6 pr-12 duration-300 bg-gray-100 border border-gray-100 rounded-full focus:border-primary-600 focus:outline-none mb-4" required />
                                         <button type="submit" className="absolute top-0 right-0 mt-3 mr-6 text-xl text-primary-600" aria-label="S'incrire à ma newsletter">
                                             <FontAwesomeIcon icon={faAngleDoubleRight} />
                                         </button>
+                                        <label htmlFor="consent" className="text-sm single-form cursor-pointer">
+                                            <input type="checkbox" name="consent" id="consent" className="accent-pink-500" required />&nbsp;
+                                            Vous acceptez de recevoir notre newletter. Vous pouvez vous désinscrire à tout moment à l'aide des liens de désinscription ou en me contactant à l'adresse <a href={`mailto:${process.env.NEXT_PUBLIC_EMAIL_TO}`} title="Envoyer un mail à Sabrina" className="font-bold text-primary-900 hover:text-primary-700 transition">{process.env.NEXT_PUBLIC_EMAIL_TO}</a>.
+                                        </label>
+
                                     </form>
                                 </div>
                             </div>

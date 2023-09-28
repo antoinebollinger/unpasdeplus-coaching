@@ -1,6 +1,9 @@
 .single-form textarea,
 .single-form input {
-  @apply w-full px-6 py-3 mb-1 duration-300 bg-white border border-gray-300 rounded;
+  @apply mb-1 duration-300 bg-white border border-gray-300 rounded;
+  &:not([type="checkbox"]) {
+    @apply w-full px-6 py-3;
+  }
 }
 .single-form textarea:focus,
 .single-form input:focus {
