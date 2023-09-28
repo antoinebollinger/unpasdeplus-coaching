@@ -33,10 +33,10 @@ export default function Bio({ className = '' }: { className?: string }) {
                     </div>
                     <div className="w-full md:w-3/4">
                         <div className="mb-8 text-center md:text-start mb-10">
-                            <h3>Sabrina Appriou</h3>
-                            <h4>
+                            <h1>Sabrina Appriou</h1>
+                            <h2>
                                 Fondatrice <span className={`${madelyn.className} text-7xl -translate-y-4`}>Un&nbsp;pas&nbsp;de&nbsp;plus</span>
-                            </h4>
+                            </h2>
                             <p className="text-lg mb-6">Coach consultante professionnelle certifiée RNCP</p>
                         </div>
                         <div className="transition duration-200 opacity-0 translate-y-full about-text">

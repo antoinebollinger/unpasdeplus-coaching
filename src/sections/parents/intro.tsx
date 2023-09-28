@@ -31,7 +31,7 @@ export default function Intro({ className = '' }: { className?: string }) {
                         />
                     </div>
                     <div className="w-full lg:w-3/4 lg:order-0">
-                        <h3><strong>Un accompagnement "Habitudes gagnantes"</strong><br />tant sur le plan <strong>physique</strong> que <strong>mental</strong></h3>
+                        <h1><strong>Un accompagnement "Habitudes gagnantes"</strong><br />tant sur le plan <strong>physique</strong> que <strong>mental</strong></h1>
                         <br />
                         <p className="text-lg leading-6 mb-6">
                             Un accompagnement individuel pour vous aider à prendre soin de votre santé physique et mentale en relevant vos défis quotidiens. Acquérir des habitudes mentales <strong>pour gagner en sérénité et en confiance en soi</strong>.

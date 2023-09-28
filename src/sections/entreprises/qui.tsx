@@ -27,7 +27,7 @@ export default function Qui({ className = 'bg-gray-100' }: { className?: string 
         <section id="pourquoi" className={className}>
             <div className="container">
                 <div className="w-full mx-auto">
-                    <h3>Pourquoi accompagner<br />vos salarié.es parents&nbsp;?</h3>
+                    <h2>Pourquoi accompagner<br />vos salarié.es parents&nbsp;?</h2>
                     <div className="flex flex-col md:flex-row gap-6 justify-center items-center mb-16">
                         <div className="w-full md:w-2/3 order-last md:order-first">
                             <p className="text-lg leading-6 mb-6">
@@ -86,7 +86,7 @@ export default function Qui({ className = 'bg-gray-100' }: { className?: string 
                             />
                         </div>
                     </div>
-                    <h3>Pourtant...</h3>
+                    <h2>Pourtant...</h2>
                     <div>
                         {[
                             [
