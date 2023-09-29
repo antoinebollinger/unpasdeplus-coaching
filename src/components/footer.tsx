@@ -37,7 +37,7 @@ export default function Footer({
             const data = new FormData(e.target)
             data.append('email_to', process.env.NEXT_PUBLIC_EMAIL_TO)
             data.append('name_to', process.env.NEXT_PUBLIC_NAME_TO)
-            data.append('method', 'gmail')
+            data.append('transporter', 'unpasdeplus')
 
             try {
                 const sendEmail = await fetch(`${process.env.NEXT_PUBLIC_EMAIL_API}/newsletter`, {
