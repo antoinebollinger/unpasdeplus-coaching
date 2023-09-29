@@ -22,7 +22,7 @@ export default function Contact({ className = '' }: { className?: string }) {
             data.append('email_to', process.env.NEXT_PUBLIC_EMAIL_TO)
             data.append('name_to', process.env.NEXT_PUBLIC_NAME_TO)
             try {
-                const sendEmail = await fetch(`${process.env.NEXT_PUBLIC_EMAIL_API}/email`, {
+                const sendEmail = await fetch(`${process.env.NEXT_PUBLIC_EMAIL_API}/contact`, {
                     method: 'POST',
                     body: data
                 })
@@ -101,7 +101,7 @@ export default function Contact({ className = '' }: { className?: string }) {
                                             </label>
                                         </div>
                                     </div>
-                                    <p className="mx-4 form-message">* Champs requis.</p>
+                                    <p className="mx-4 mb-6 form-message">* Champs requis.</p>
                                     <div className="w-full">
                                         <div className="mx-4 mt-2 text-center single-form form-group">
                                             <button type="submit" className="main-btn gradient-btn focus:outline-none uppercase">Envoyer</button>

@@ -152,7 +152,6 @@ export default function Footer({
                                             <input type="checkbox" name="consent" id="consent" className="accent-pink-500" required />&nbsp;
                                             Vous acceptez de recevoir notre newletter. Vous pouvez vous désinscrire à tout moment à l'aide des liens de désinscription ou en me contactant à l'adresse <a href={`mailto:${process.env.NEXT_PUBLIC_EMAIL_TO}`} title="Envoyer un mail à Sabrina" className="font-bold text-primary-900 hover:text-primary-700 transition">{process.env.NEXT_PUBLIC_EMAIL_TO}</a>.
                                         </label>
-
                                     </form>
                                 </div>
                             </div>
