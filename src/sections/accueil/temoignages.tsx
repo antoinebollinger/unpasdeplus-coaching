@@ -45,7 +45,7 @@ export default function Temoignages({ className = '' }: { className?: string }) 
     return (
         <section id="temoignages" className={className}>
             <div className="container relative">
-                <h3 className="text-center">Témoignages</h3>
+                <h3 className="h1 text-center">Témoignages</h3>
                 <div className="embla px-0 md:px-6">
                     <div className="embla__buttons flex">
                         <PrevButton
@@ -71,7 +71,7 @@ export default function Temoignages({ className = '' }: { className?: string }) 
                                 ].map((e, i) => (
                                     <div className="embla__slide" key={i}>
                                         <div className="w-full h-full mx-auto flex flex-col justify-center items-center gap-5">
-                                            <h4 className="text-xl text-primary-700" dangerouslySetInnerHTML={{ __html: e.author }} />
+                                            <h4 className="h2 text-xl text-primary-700" dangerouslySetInnerHTML={{ __html: e.author }} />
                                             <p className="text-lg text-tertary-900 italic" dangerouslySetInnerHTML={{ __html: e.tag }} ></p>
                                             <p className="lg:text-lg text-gray-900 lg:px-12 text-center" dangerouslySetInnerHTML={{ __html: e.text }} />
                                         </div>

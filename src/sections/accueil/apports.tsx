@@ -30,7 +30,7 @@ export default function Apports({ className = 'bg-gray-100' }: { className?: str
         <section id="apports-coaching" className={className}>
             <div className="container">
                 <div className="text-center pb-10">
-                    <h3 className="text-start lg:text-center">Les apports du coaching</h3>
+                    <h3 className="h1 text-start lg:text-center">Les apports du coaching</h3>
                 </div>
                 <div className="lg:max-w-5xl mx-auto pb-10">
                     <div className="flex flex-col md:flex-row gap-6">

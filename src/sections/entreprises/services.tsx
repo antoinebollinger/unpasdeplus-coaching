@@ -24,7 +24,7 @@ export default function Services({ className = 'bg-gray-100' }: { className?: st
                         [
                             (
                                 <>
-                                    <h4 className="text-center">
+                                    <h4 className="h2 text-center">
                                         Accompagner<br />et soutenir<br /><span className="font-black uppercase">vos salarié.es</span>
                                     </h4>
                                     <ul className="list-none list-inside fa-ul text-lg leading-8 grow">
@@ -48,7 +48,7 @@ export default function Services({ className = 'bg-gray-100' }: { className?: st
                             ),
                             (
                                 <>
-                                    <h4 className="text-center">
+                                    <h4 className="h2 text-center">
                                         Sensibiliser<br />et accompagner les<br /><span className="font-black uppercase">managers & RH</span>
                                     </h4>
                                     <ul className="list-none list-inside fa-ul text-lg leading-8 grow">

@@ -37,7 +37,7 @@ export default function Bio({ className = '' }: { className?: string }) {
                             <h2>
                                 Fondatrice <span className={`${madelyn.className} text-7xl -translate-y-4`}>Un&nbsp;pas&nbsp;de&nbsp;plus</span>
                             </h2>
-                            <p className="text-lg mb-6">Coach consultante professionnelle certifiée RNCP</p>
+                            <h3>Coach consultante professionnelle certifiée RNCP</h3>
                         </div>
                         <div className="transition duration-200 opacity-0 translate-y-full about-text">
                             <h3><FontAwesomeIcon icon={faHandsHoldingChild} /> Maman de 3 enfants</h3>
