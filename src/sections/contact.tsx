@@ -18,9 +18,12 @@ export default function Contact({ className = '' }: { className?: string }) {
             openModal({
                 body: emailMessage.sending, buttons: 'hidden'
             })
+
             const data = new FormData(e.target)
             data.append('email_to', process.env.NEXT_PUBLIC_EMAIL_TO)
             data.append('name_to', process.env.NEXT_PUBLIC_NAME_TO)
+            data.append('method', 'gmail')
+
             try {
                 const sendEmail = await fetch(`${process.env.NEXT_PUBLIC_EMAIL_API}/contact`, {
                     method: 'POST',
