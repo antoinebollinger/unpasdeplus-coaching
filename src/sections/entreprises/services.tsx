@@ -17,7 +17,7 @@ export default function Services({ className = 'bg-gray-100' }: { className?: st
         <section id="services" className={className}>
             <div className="container">
                 <div className="text-center pb-10">
-                    <h3>Mes services</h3>
+                    <h3 className="h1">Mes services</h3>
                 </div>
                 <div className="w-full lg:w-2/3 mx-auto flex flex-col lg:flex-row gap-16 justify-center items-stretch">
                     {

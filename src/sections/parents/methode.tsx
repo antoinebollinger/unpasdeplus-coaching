@@ -32,11 +32,11 @@ export default function Methode({ className = 'bg-gray-100' }: { className?: str
             <div className="container">
                 <div className="w-full lg:w-2/3 mx-auto flex flex-col gap-6">
 
-                    <h3>Ma méthode</h3>
+                    <h3 className="h1">Ma méthode</h3>
                     <p className="text-lg leading-6">
                         L'accompagnement repose sur une <strong>écoute active</strong>, un <strong>questionnement pertinent</strong> et des <strong>outils & méthodes de coaching</strong>, dans un cadre confidentiel et bienveillant. J'utilise également <strong>le sport</strong> comme outil d'accompagnement.
                     </p>
-                    <h4>Les 4 étapes clés du parcours d'accompagnement&nbsp;:</h4>
+                    <h4 className="h2">Les 4 étapes clés du parcours d'accompagnement&nbsp;:</h4>
                     <div className="relative flex flex-col lg:flex-row gap-6 justify-center items-center">
                         <div className="absolute z-[0] inset-0 px-[calc(50%-2px)] lg:px-[calc(20%/2)] flex lg:items-center">
                             <div className="w-[4px] h-0 lg:w-0 lg:h-[4px] bg-tertary-700 rounded transition-all duration-2500 progression"></div>

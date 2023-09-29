@@ -36,7 +36,7 @@ export default function Parcours({ className = 'bg-gray-100' }: { className?: st
                             />
                         </div>
                         <div className="w-full md:w-3/4">
-                            <h3>Mon parcours</h3>
+                            <h3 className="h1">Mon parcours</h3>
                             <p className="text-lg italic">Ma trajectoire de vie raconte qui je suis et ce que je peux vous apporter.</p>
                         </div>
                     </div>

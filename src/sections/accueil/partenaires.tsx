@@ -19,7 +19,7 @@ export default function Partenaires({ className = 'bg-gray-100' }: { className?:
         <section id="partenaires" className={className}>
             <div className="container">
                 <div className="text-center pb-10">
-                    <h3>Mes partenaires</h3>
+                    <h3 className="h1">Mes partenaires</h3>
                 </div>
                 <div className="w-full lg:w-2/3 mx-auto flex flex-col lg:flex-row gap-16 justify-center items-stretch">
                     {

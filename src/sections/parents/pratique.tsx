@@ -31,7 +31,7 @@ export default function Pratique({ className = '' }: { className?: string }) {
                             />
                         </div>
                         <div className="w-full md:w-3/4">
-                            <h3>En pratique, ça donne quoi&nbsp;?</h3>
+                            <h3 className="h1">En pratique, ça donne quoi&nbsp;?</h3>
                         </div>
                     </div>
                     <div className="flex flex-col md:flex-row gap-6 justify-center items-center mb-10">

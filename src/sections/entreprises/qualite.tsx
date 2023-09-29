@@ -21,7 +21,7 @@ export default function Qualite({ className = '' }: { className?: string }) {
         <section id="qualite" className={className}>
             <div className="container">
                 <div className="text-center pb-10">
-                    <h3>Un accompagnement de qualité</h3>
+                    <h3 className="h1">Un accompagnement de qualité</h3>
                     <p className="text-lg italic">Avec professionnalisme, éthique et bienveillance</p>
                 </div>
                 <div className="lg:max-w-5xl mx-auto mb-16">

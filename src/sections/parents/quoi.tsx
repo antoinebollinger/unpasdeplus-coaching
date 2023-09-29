@@ -18,7 +18,7 @@ export default function Quoi({ className = '' }: { className?: string }) {
         <section id="quoi" className={className}>
             <div className="container">
                 <div className="w-full lg:w-2/3 mx-auto flex flex-col gap-6">
-                    <h3>C'est quoi exactement&nbsp;?</h3>
+                    <h3 className="h1">C'est quoi exactement&nbsp;?</h3>
                     <p className="text-lg leading-6">
                         L'accompagnement repose sur une <strong>écoute active</strong>, un <strong>questionnement pertinent</strong> et <strong>des outils & méthodes de coaching</strong>, dans un cadre <strong>confidentiel et bienveillant</strong>.
                     </p>
