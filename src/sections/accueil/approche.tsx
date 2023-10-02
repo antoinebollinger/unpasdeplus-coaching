@@ -29,16 +29,16 @@ export default function Approche({ className = '' }: { className?: string }) {
                         <h3 className="h1">L'approche <span className={`${madelyn.className} text-7xl -translate-y-4`}>Un&nbsp;pas&nbsp;de&nbsp;plus</span></h3>
                         <br />
                         <p className="text-lg leading-6">
-                            Je suis convaincue que le <strong>changement d'état d'esprit</strong> repose sur <strong>le travail d'introspection associé à l'activité physique, le sport</strong>. Nous savons que le sport agit sur le <strong>physique</strong> mais <strong>surtout sur le mental</strong>.
+                            Je suis convaincue que le <strong>changement d'état d'esprit</strong> repose sur <strong>le travail d'introspection</strong> associé à la <strong>mise en mouvement du corps</strong>. Nous savons que le sport agit sur le <strong>physique</strong> mais <strong>surtout sur le mental</strong>.
                             <br />
                             <br />
-                            <strong>La marche met en mouvement</strong>. Marcher, c'est mettre un pied devant l'autre au sens physique du terme mais c'est aussi <strong>accepter d'avancer</strong> dans des moments de doutes et de vulnérabilité. Trouver notre pas et à notre rythme. Retrouver ainsi cette sensation de <strong>légèreté</strong> et de <strong>liberté</strong>.
+                            <strong>La marche met en mouvement</strong>. Marcher, c'est mettre un pied devant l'autre au sens physique du terme mais c'est aussi <strong>accepter d'avancer</strong> dans des moments de doutes et de vulnérabilité.
                             <br />
                             <br />
                             <strong>Travailler son mental</strong> et <strong>rester concentrer</strong> sur son objectif, c’est comme un entraînement sportif&nbsp;: <strong>entraînement, répétition, méthode, persévérance, régularité et motivation</strong>.
                             <br />
                             <br />
-                            Un pas de plus vous propose un <strong>accompagnement</strong> et <strong>un plan d’action concret</strong> autour de la <strong>santé physique et mentale</strong>. Il peut s’agir de <strong>réduire la charge mentale</strong>, d'être accompagner <strong>au retour au travail après un congés maternité/paternité</strong>, <strong>après une absence de longue durée</strong>, <strong>de trouver un équilibre de vie pour prendre soin de soi</strong>.
+                            Un pas de plus vous propose un <strong>accompagnement</strong> et <strong>un plan d’action concret</strong> autour de la <strong>santé physique et mentale</strong>&nbsp;: réduire <strong>la charge mentale</strong>, <strong>prendre</strong> davantage <strong>soin de soi</strong>, accompagner les salariés au <strong>retour au travail après un congé maternité/paternité</strong> ou après une <strong>absence de longue durée</strong>.
                         </p>
                     </div>
                 </div>

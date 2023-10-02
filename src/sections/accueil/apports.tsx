@@ -32,7 +32,7 @@ export default function Apports({ className = 'bg-gray-100' }: { className?: str
                 <div className="text-center pb-10">
                     <h3 className="h1 text-start lg:text-center">Les apports du coaching</h3>
                 </div>
-                <div className="lg:max-w-5xl mx-auto pb-10">
+                <div className="lg:max-w-5xl mx-auto">
                     <div className="flex flex-col md:flex-row gap-6">
                         {list(
                             "81%",
@@ -52,11 +52,6 @@ export default function Apports({ className = 'bg-gray-100' }: { className?: str
                         )}
                     </div>
                     <p className="italic">Source&nbsp;: étude ICF-PWC (2021)</p>
-                </div>
-                <div className="lg:max-w-5xl mx-auto">
-                    <p className="leading-10 text-xl text-justify">
-                        <strong>Le coaching a pour but de vous booster en prenant conscience que le changement passe avant tout par soi.</strong>
-                    </p>
                 </div>
             </div>
         </section>

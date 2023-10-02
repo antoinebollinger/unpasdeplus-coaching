@@ -31,7 +31,7 @@ export default function Liens({ className = 'bg-gray-100' }: { className?: strin
                             <strong>Accompagnement parents</strong>
                         </p>
                         <p className="text-lg text-start grow">
-                            <strong>Vous manquez de temps</strong> pour prendre soin de vous&nbsp;? Vous avez essayé des choses mais face au quotidien, à vos responsabilités professionnelles et personnelles, <strong>vous baissez les bras&nbsp;?</strong>
+                            <strong>Vous manquez de temps</strong> pour prendre soin de vous&nbsp;? Vous avez mis en place des actions mais face au quotidien, à vos responsabilités professionnelles et personnelles, <strong>vous baissez les bras&nbsp;?</strong>
                             <br />
                             <br />
                             Avez-vous pensé à vous interroger sur vos <strong>motivations intrinsèques</strong>, celles qui se manifestent par un réel engagement et une persévérance dans vos actions&nbsp;?

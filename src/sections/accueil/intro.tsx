@@ -18,7 +18,10 @@ export default function Intro({ className = '' }: { className?: string }) {
                         />
                     </div>
                     <div className="w-full lg:w-2/3 lg:order-0">
-                        <p className="text-lg mb-10">« <span className={`${madelyn.className} text-4xl`}>La victoire sur soi est la plus grande des victoires</span> » (Platon)</p>
+                        <p className="text-lg mb-10">
+                            « <span className={`${madelyn.className} text-5xl`}>La victoire sur soi est la plus grande des victoires</span> » (Platon)
+                            <br />
+                            Le coaching a pour but de vous booster en prenant conscience que le changement passe avant tout par soi.</p>
                         <h1 className="uppercase">Votre partenaire mental</h1>
                         <div className="flex flex-col lg:flex-row gap-6 mb-10">
                             <div className="w-full lg:w-auto">

@@ -48,7 +48,7 @@ export default function Bio({ className = '' }: { className?: string }) {
                         <div className="transition duration-200 opacity-0 translate-y-full about-text">
                             <h3><FontAwesomeIcon icon={faPersonRunning} /> Course à pied</h3>
                             <p className="text-lg mb-6">
-                                Passionnée depuis plus de 20 ans déjà. La course à pied est une ressource pour moi de <strong>dépassement de soi</strong>, de <strong>bien-être</strong> et d'être en <strong>mouvement</strong>. Quand je ne cours pas, je marche pour explorer les sentiers côtiers de la Bretagne.
+                                Passionnée depuis plus de 20 ans. La course à pied est une ressource pour moi de <strong>dépassement de soi</strong>, de <strong>bien-être</strong> et d'être en <strong>mouvement</strong>. Quand je ne cours pas, je marche pour explorer les sentiers côtiers de la Bretagne.
                             </p>
                         </div>
                         <div className="transition duration-200 opacity-0 translate-y-full about-text">
