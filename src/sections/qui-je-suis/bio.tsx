@@ -2,7 +2,7 @@
 import { useEffect } from 'react'
 import Image from 'next/image'
 import { reveal } from '../../utils/reveal'
-import Sabrina from '/public/images/sabrina.webp'
+import Sabrina from '/public/images/qui-je-suis/sabrina.webp'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPersonRunning, faHandsHoldingChild, faBullseye, faTree, faHeart } from '@fortawesome/free-solid-svg-icons'
 import { madelyn } from '../../../styles/font'

@@ -5,7 +5,7 @@ import Approche from '../src/sections/accueil/approche'
 import Apports from '../src/sections/accueil/apports'
 import Temoignages from '../src/sections/accueil/temoignages'
 import Partenaires from '../src/sections/accueil/partenaires'
-import Banner from '/public/images/banners/accueil.webp'
+import Banner from '/public/images/banners/1.jpg'
 
 export default function Page() {
     const onThisPage = [

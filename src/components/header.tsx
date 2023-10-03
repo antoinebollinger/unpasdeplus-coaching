@@ -1,16 +1,13 @@
 'use client'
 import Image from 'next/image'
 import Navbar from './navbar'
-import Headline from './headline'
 import Wave from '/public/images/svg/wave-white.svg'
-import type { banner, headerProps } from '../models/types'
+import type { banner } from '../models/types'
 
 export default function Header({
     banner,
-    headerProps
 }: {
     banner: banner,
-    headerProps?: headerProps
 }) {
     return (
         <header className="relative min-h-[60vh]" id="header">
@@ -31,9 +28,6 @@ export default function Header({
                     className="object-cover w-full h-full opacity-80"
                     priority={true}
                 />
-            </div>
-            <div className="absolute inset-0 z-10 flex justify-center items-center">
-                <Headline pretitle={headerProps?.pretitle} title={headerProps?.title} subtitle={headerProps?.subtitle} />
             </div>
             <div className="absolute bottom-0 z-10 w-full h-auto -mb-1 header-shape">
                 <Image

@@ -48,15 +48,16 @@ export default function Navbar() {
                     src={newLogo}
                     alt="Logo"
                     height="80"
+                    className="h-[80px]"
                 />
             </Link>
-            <button className="block navbar-toggler focus:outline-none md:hidden" type="button" data-toggle="collapse" data-target="#navbarOne" aria-controls="navbarOne" aria-expanded="false" aria-label="Toggle navigation">
+            <button className="block navbar-toggler focus:outline-none lg:hidden" type="button" data-toggle="collapse" data-target="#navbarOne" aria-controls="navbarOne" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="toggler-icon"></span>
                 <span className="toggler-icon"></span>
                 <span className="toggler-icon"></span>
             </button>
-            <div className="absolute left-0 z-30 hidden w-full px-5 py-2 duration-300 bg-white shadow md:opacity-100 md:w-auto navbar-collapse md:block top-100 mt-full md:static md:bg-transparent md:shadow-none" id="navbarOne">
-                <ul className="items-center content-start mr-auto lg:justify-center md:justify-end navbar-nav md:flex uppercase">
+            <div className="absolute left-0 z-30 hidden w-full px-5 py-2 duration-300 bg-white shadow lg:opacity-100 lg:w-auto navbar-collapse lg:block top-100 mt-full lg:static lg:bg-transparent lg:shadow-none" id="navbarOne">
+                <ul className="items-center content-start mr-auto lg:justify-center lg:justify-end navbar-nav lg:flex uppercase">
                     <li className={`nav-item ${pathname == "/accompagnement-parents" ? "active" : ""}`}>
                         <Link href="/accompagnement-parents" className="page-scroll">
                             Accompagnement<br />parents
@@ -69,7 +70,7 @@ export default function Navbar() {
                     </li>
                     <li className={`nav-item ${pathname == "/qui-je-suis" ? "active" : ""}`}>
                         <Link href="/qui-je-suis" className="page-scroll">
-                            Qui<br />je suis
+                            Qui<br />je&nbsp;suis
                         </Link>
                     </li>
                     <li className={`nav-item ${pathname == "/contact" ? "active" : ""}`}>
@@ -81,7 +82,7 @@ export default function Navbar() {
             </div>
 
             <div className="items-center justify-end hidden navbar-social lg:flex">
-                <span className="mr-4 font-bold text-gray-900 uppercase">Suivez-moi</span>
+                <span className="mr-4 font-bold text-gray-900 uppercase md:text-xs xl:text-base break-keep">Suivez-moi</span>
                 <Socials className="flex footer-social" />
             </div>
         </nav>

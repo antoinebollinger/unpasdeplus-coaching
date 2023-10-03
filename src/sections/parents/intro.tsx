@@ -3,7 +3,7 @@ import { useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { reveal } from '../../utils/reveal'
-import IntroImg from '/public/images/parents/intro.webp'
+import IntroImg from '/public/images/parents/parents.jpg'
 
 export default function Intro({ className = '' }: { className?: string }) {
     useEffect(() => {
@@ -27,7 +27,7 @@ export default function Intro({ className = '' }: { className?: string }) {
                         <Image
                             src={IntroImg}
                             alt="Intro parents"
-                            className="w-full mx-auto transition duration-200 scale-0 parents-img"
+                            className="w-full rounded-full mx-auto transition duration-200 scale-0 parents-img"
                         />
                     </div>
                     <div className="w-full lg:w-3/4 lg:order-0">

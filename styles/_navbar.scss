@@ -1,13 +1,17 @@
+.navbar-brand {
+    aspect-ratio: 300/105;
+}
+
 .navbar-nav {
     .nav-item {
         a {
-            @apply relative inline-block px-8 py-2 font-bold text-gray-900 uppercase duration-300 text-left md:text-center cursor-pointer;
+            @apply relative inline-block px-8 py-2 font-bold text-gray-900 uppercase duration-300 text-left lg:text-center cursor-pointer md:text-xs xl:text-base;
             &:hover ~ ul {
                 @apply max-h-max;
             }
         }
         > ul {
-            @apply max-h-0 md:absolute overflow-hidden transition md:px-0 px-8;
+            @apply max-h-0 lg:absolute overflow-hidden transition lg:px-0 px-8;
             &:hover {
                 @apply max-h-max;
             }

@@ -2,7 +2,7 @@ import Layout from '../../src/layout'
 import Parcours from '../../src/sections/qui-je-suis/parcours'
 import Pourquoi from '../../src/sections/qui-je-suis/pourquoi'
 import Bio from '../../src/sections/qui-je-suis/bio'
-import Banner from '/public/images/banners/quijesuis-intro.webp'
+import Banner from '/public/images/banners/4.jpg'
 import { siteData } from '../../src/data/metadata'
 
 export const metadata = {

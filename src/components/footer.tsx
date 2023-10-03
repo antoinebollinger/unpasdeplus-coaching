@@ -7,7 +7,7 @@ import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons'
 import { useEffect } from 'react'
 import { closeModal, openModal } from '../utils/modal'
 import { CustomEvent, onThisPage } from '../models/types'
-import { emailMessage } from '../data/metadata'
+import { siteData, emailMessage } from '../data/metadata'
 import Socials from './socials'
 
 export default function Footer({
@@ -85,7 +85,7 @@ export default function Footer({
                         </div>
                     </div>
                     <div className="row">
-                        <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/6">
+                        <div className="w-full md:w-1/3 xl:w-1/4">
                             <div className="mb-8 footer-link">
                                 <ul>
                                     <li>
@@ -111,7 +111,7 @@ export default function Footer({
                                 </ul>
                             </div>
                         </div>
-                        <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
+                        <div className="w-full md:w-1/3 xl:w-1/4">
                             <div className="mb-8 footer-link">
                                 <p className="footer-title">Mes accompagnements</p>
                                 <ul>
@@ -128,7 +128,7 @@ export default function Footer({
                                 </ul>
                             </div>
                         </div>
-                        <div className="w-full sm:w-5/12 md:w-1/3 lg:w-1/4">
+                        <div className="w-full md:w-1/3 xl:w-1/4">
                             <div className="mb-8 footer-link">
                                 <p className="footer-title">Sur cette page</p>
                                 <ul>
@@ -140,7 +140,7 @@ export default function Footer({
                                 </ul>
                             </div>
                         </div>
-                        <div className="w-full sm:w-7/12 md:w-1/2 lg:w-1/3">
+                        <div className="w-full md:w-1/2 xl:w-1/4">
                             <div className="mb-8 footer-newsletter">
                                 <p className="footer-title">Inscription à ma newsletter</p>
                                 <div className="newsletter">
@@ -163,13 +163,12 @@ export default function Footer({
             <div className="bg-primary-900 footer-copyright">
                 <div className="container">
                     <div className="row">
-                        <div className="w-full">
-                            <div className="py-6 text-center">
-                                <p className="text-white">
-                                    Copyright © unpasdeplus {year()} - Site réalisé par <a target="_blank" className="font-bold duration-300 hover:text-primary-300" rel="nofollow" href="https://antoinebollinger.fr">Antoine Bollinger</a>
-                                </p>
-                            </div>
+                        <div className="w-full h-[72px] flex justify-center items-center">
+                            <p className="text-white text-center">
+                                Copyright © {siteData.domain} {year()}<br />Site réalisé par <a target="_blank" className="font-bold duration-300 hover:text-primary-300" rel="nofollow" href="https://antoinebollinger.fr">Antoine Bollinger</a>
+                            </p>
                         </div>
+                        <div className="w-full h-[72px] md:hidden"></div>
                     </div>
                 </div>
             </div>

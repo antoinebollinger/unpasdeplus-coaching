@@ -1,8 +1,6 @@
 'use client';
 import { useEffect } from 'react'
-import Image from 'next/image'
 import { reveal } from '../../utils/reveal'
-import Map from '/public/images/parents/map.webp'
 
 export default function Methode({ className = 'bg-gray-100' }: { className?: string }) {
     useEffect(() => {
@@ -48,12 +46,7 @@ export default function Methode({ className = 'bg-gray-100' }: { className?: str
                                 "<strong>Activer</strong><br/>les leviers du<br/>bien-être<br/>physique et<br/>mental",
                                 "<strong>Développer<br/>et entretenir</strong><br/>un état d'esprit<br/>vers le<br/>mieux-être"
                             ].map((e, i) => (
-                                <div className={`w-1/2 lg:w-1/4 z-[1] relatif flex justify-center items-center rounded-full shadow-lg bg-tertary-200 transition duration-200 scale-0 opacity-0 step`} key={i}>
-                                    <Image
-                                        src={Map}
-                                        alt="Intro entreprises"
-                                        className="w-full rounded-full opacity-0"
-                                    />
+                                <div className={`w-1/2 lg:w-1/4 z-[1] relatif flex justify-center items-center rounded-full shadow-lg bg-tertary-200 ratio1 transition duration-200 scale-0 opacity-0 step`} key={i}>
                                     <p className="absolute lg:text-xl text-center leading-6" dangerouslySetInnerHTML={{ __html: e }}>
                                     </p>
                                 </div>

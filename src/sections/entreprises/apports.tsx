@@ -1,8 +1,6 @@
 'use client'
-import Image from 'next/image'
 import { useEffect } from 'react'
 import { reveal } from '../../utils/reveal'
-import IntroImg from '/public/images/entreprises/intro.webp'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowTrendUp, faChartLine, faCheck, faCircleCheck, faCircleInfo, faHandPointRight, faPlus, faTriangleExclamation } from '@fortawesome/free-solid-svg-icons'
 
@@ -44,12 +42,7 @@ export default function Apports({ className = '' }: { className?: string }) {
                                 "Turn over",
                                 "Atteinte<br/>de l'image de<br/>l'entreprise"
                             ].map((e, i) => (
-                                <div className={`w-1/2 lg:w-1/5 relatif flex justify-center items-center rounded-full shadow-lg bg-primary-100 transition duration-200 scale-0 opacity-0 consequence`} key={i}>
-                                    <Image
-                                        src={IntroImg}
-                                        alt="Intro entreprises"
-                                        className="w-full rounded-full opacity-0"
-                                    />
+                                <div className={`w-1/2 lg:w-1/5 relatif flex justify-center items-center rounded-full shadow-lg bg-primary-100 ratio1 transition duration-200 scale-0 opacity-0 consequence`} key={i}>
                                     <p className="absolute text-lg text-center leading-6 font-bold" dangerouslySetInnerHTML={{ __html: e }}>
                                     </p>
                                 </div>

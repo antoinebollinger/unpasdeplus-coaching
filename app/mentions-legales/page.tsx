@@ -8,12 +8,8 @@ export const metadata = {
 }
 
 export default function Page() {
-    const headerProps = {
-        title: 'Mentions légales'
-    }
-
     return (
-        <Layout headerProps={headerProps} banner={Banner}>
+        <Layout banner={Banner}>
             <MentionsLegales />
         </Layout>
     )

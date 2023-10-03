@@ -6,8 +6,8 @@ export default function Apports({ className = 'bg-gray-100' }: { className?: str
     useEffect(() => {
         reveal({
             collection: document.querySelectorAll('.apports-text'),
-            classesToRemove: ['translate-x-3/4', 'scale-0', 'opacity-0'],
-            classesToAdd: ['translate-x-0'],
+            classesToRemove: ['translate-x-3/4', 'lg:translate-y-3/4', 'scale-0', 'opacity-0'],
+            classesToAdd: ['translate-x-0', 'translate-y-0'],
         })
     }, [])
 
@@ -19,7 +19,7 @@ export default function Apports({ className = 'bg-gray-100' }: { className?: str
                         <p className="text-4xl text-tertary-900 font-bold">{illustration}</p>
                     </div>
                 </div>
-                <div className="grow transition duration-300 opacity-0 translate-x-3/4 apports-text">
+                <div className="grow transition duration-300 opacity-0 translate-y-0 translate-x-3/4 lg:translate-x-0 lg:translate-y-3/4 apports-text">
                     <p className="text-2xl text-gray-900 text-center" dangerouslySetInnerHTML={{ __html: text }} />
                 </div>
             </div>
