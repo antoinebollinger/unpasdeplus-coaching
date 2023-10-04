@@ -105,7 +105,7 @@ export default function Footer({
                                     </li>
                                     <li>
                                         <Link href="/mentions-legales">
-                                            Mentions légales & politique de confidentialité
+                                            Mentions légales<br />& politique de confidentialité
                                         </Link>
                                     </li>
                                 </ul>

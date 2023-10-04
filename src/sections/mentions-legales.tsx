@@ -13,7 +13,7 @@ export default function MentionsLegales() {
                     Courriel&nbsp;: <strong><a href={`mailto:${process.env.NEXT_PUBLIC_EMAIL_TO}`}>{process.env.NEXT_PUBLIC_EMAIL_TO}</a></strong><br />
                     Directrice de la publication&nbsp;: <strong>{siteData.owner}</strong><br />
                     Conception et réalisation&nbsp;: <strong><a href="https://antoinebollinger.fr" target="_blank">antoinebollinger.fr</a></strong><br />
-                    Crédits Photos&nbsp;: Anthony Rouanet, stock.adobe.com
+                    Crédits Photos&nbsp;: Anthony Rouanet, stock.adobe.com, Freepik
                 </p>
 
                 <h2>Hébergement&nbsp;:</h2>
