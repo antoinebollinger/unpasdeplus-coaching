@@ -4,7 +4,7 @@ import Qui from '../../src/sections/parents/qui'
 import Quoi from '../../src/sections/parents/quoi'
 import Methode from '../../src/sections/parents/methode'
 import Pratique from '../../src/sections/parents/pratique'
-import Banner from '/public/images/banners/2.jpg'
+import Banner from '/public/images/banners/2_bis.jpg'
 import { siteData } from '../../src/data/metadata'
 
 export const metadata = {

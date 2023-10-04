@@ -2,8 +2,7 @@
 import { useEffect } from 'react'
 import Image from 'next/image'
 import { reveal } from '../../utils/reveal'
-import Qui1 from '/public/images/entreprises/qui-1.webp'
-import Qui2 from '/public/images/entreprises/qui-2.webp'
+import SalarieeHeureuse from '/public/images/entreprises/salariee_heureuse.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheck, faXmark } from '@fortawesome/free-solid-svg-icons'
 
@@ -29,7 +28,7 @@ export default function Qui({ className = 'bg-gray-100' }: { className?: string 
                 <div className="w-full mx-auto">
                     <h2>Pourquoi accompagner<br />vos salarié.es parents&nbsp;?</h2>
                     <div className="flex flex-col md:flex-row gap-6 justify-center items-center mb-16">
-                        <div className="w-full md:w-2/3 order-last md:order-first">
+                        <div className="w-full md:w-3/4 order-last md:order-first">
                             <p className="text-lg leading-6 mb-6">
                                 <strong>Un salarié heureux</strong> est un salarié <strong>performant et engagé</strong>. Selon une étude du Harvard/MIT&nbsp;:
                             </p>
@@ -76,12 +75,12 @@ export default function Qui({ className = 'bg-gray-100' }: { className?: string 
                                 </ul>
                             </div>
                         </div>
-                        <div className="w-full md:w-1/3 mx-auto transition duration-200 scale-0 opacity-0 qui-img">
+                        <div className="w-full md:w-1/4 mx-auto transition duration-200 scale-0 opacity-0 qui-img">
                             <Image
-                                src={Qui2}
-                                width={Qui2.width}
-                                height={Qui2.height}
-                                className="w-full"
+                                src={SalarieeHeureuse}
+                                width={SalarieeHeureuse.width}
+                                height={SalarieeHeureuse.height}
+                                className="w-full rounded-full"
                                 alt="Parents en difficulté"
                             />
                         </div>

@@ -2,8 +2,7 @@
 import { useEffect } from 'react'
 import Image from 'next/image'
 import { reveal } from '../../utils/reveal'
-import Qui1 from '/public/images/parents/qui-1.webp'
-import Qui2 from '/public/images/parents/qui-2.webp'
+import PereFils from '/public/images/parents/pere_fils.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPersonBreastfeeding, faPersonRunning, faLightbulb, faHandshakeAngle, faCheck } from '@fortawesome/free-solid-svg-icons'
 
@@ -23,10 +22,19 @@ export default function Qui({ className = 'bg-gray-100' }: { className?: string 
     return (
         <section id="qui" className={className}>
             <div className="container">
-                <div className="flex flex-col md:flex-row gap-6 justify-center items-center mb-16">
-                    <div className="w-full md:w-2/3 order-last md:order-first">
+                <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
+                    <div className="w-full md:w-1/4 mx-auto transition duration-200 scale-0 opacity-0 qui-img">
+                        <Image
+                            src={PereFils}
+                            width={PereFils.width}
+                            height={PereFils.height}
+                            className="w-full rounded-full"
+                            alt="Parents en difficulté"
+                        />
+                    </div>
+                    <div className="w-full md:w-3/4">
                         <h2>L'accompagnement "Habitudes gagnantes" est fait pour vous si...</h2>
-                        <ul className="list-none list-inside fa-ul text-lg leading-8">
+                        <ul className="list-none list-inside fa-ul text-lg leading-8 mb-16">
                             {
                                 [
                                     (
@@ -59,28 +67,7 @@ export default function Qui({ className = 'bg-gray-100' }: { className?: string 
                                 ))
                             }
                         </ul>
-                    </div>
-                    <div className="w-full md:w-1/3 mx-auto transition duration-200 scale-0 opacity-0 qui-img">
-                        <Image
-                            src={Qui1}
-                            width={Qui1.width}
-                            height={Qui1.height}
-                            className="w-full"
-                            alt="Parents en difficulté"
-                        />
-                    </div>
-                </div>
-                <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
-                    <div className="w-full md:w-1/3 mx-auto transition duration-200 scale-0 opacity-0 qui-img">
-                        <Image
-                            src={Qui2}
-                            width={Qui2.width}
-                            height={Qui2.height}
-                            className="w-full"
-                            alt="Parents zen"
-                        />
-                    </div>
-                    <div className="w-full md:w-2/3">
+
                         <h2>Grâce à l'accompagnement "Habitudes gagnantes", vous serez&nbsp;:</h2>
                         <ul className="list-none list-inside fa-ul text-lg leading-8">
                             {

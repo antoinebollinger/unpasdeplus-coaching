@@ -1,11 +1,10 @@
 import Image from 'next/image'
 import Layout from '../src/layout'
-import Banner from '/public/images/banners/accueil.webp'
 import Loading from '/public/images/svg/loading.svg'
 
 export default function Page() {
     return (
-        <Layout banner={Banner}>
+        <Layout>
             <div className="h-[50vh] flex justify-center items-center">
                 <Image
                     src={Loading}

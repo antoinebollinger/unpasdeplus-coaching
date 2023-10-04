@@ -3,7 +3,7 @@ import { useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { reveal } from '../../utils/reveal'
-import MamanZen from '/public/images/accueil/maman-zen.webp'
+import Baskets from '/public/images/accueil/baskets.jpg'
 import { madelyn } from '../../../styles/font'
 
 export default function Approche({ className = '' }: { className?: string }) {
@@ -18,14 +18,14 @@ export default function Approche({ className = '' }: { className?: string }) {
         <section className={className}>
             <div className="container">
                 <div className="flex flex-col lg:flex-row gap-6 justify-center items-center mb-16">
-                    <div className="w-full lg:w-1/3 lg:order-1 transition duration-200 scale-0 approche-img">
+                    <div className="w-full lg:w-1/4 lg:order-1 transition duration-200 scale-0 approche-img">
                         <Image
-                            src={MamanZen}
-                            className="w-full rounded-xl"
+                            src={Baskets}
+                            className="w-full rounded-full"
                             alt="Femme épanouie et zen"
                         />
                     </div>
-                    <div className="w-full lg:w-2/3 lg:order-0">
+                    <div className="w-full lg:w-3/4 lg:order-0">
                         <h3 className="h1">L'approche <span className={`${madelyn.className} text-7xl -translate-y-4`}>Un&nbsp;pas&nbsp;de&nbsp;plus</span></h3>
                         <br />
                         <p className="text-lg leading-6">

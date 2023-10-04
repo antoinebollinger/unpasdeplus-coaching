@@ -3,9 +3,9 @@ import { useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { reveal } from '../../utils/reveal'
-import Sabrina from '/public/images/qui-je-suis/sabrina.webp'
-import Parents from '/public/images/parents/parents.webp'
-import Entreprise from '/public/images/entreprises/entreprises.webp'
+import Sabrina from '/public/images/accueil/sabrina.webp'
+import Parents from '/public/images/accueil/parents.jpg'
+import Entreprise from '/public/images/accueil/entreprises.webp'
 import { madelyn } from '../../../styles/font'
 
 export default function Liens({ className = 'bg-gray-100' }: { className?: string }) {
