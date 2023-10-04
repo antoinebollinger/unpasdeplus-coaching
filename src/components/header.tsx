@@ -10,7 +10,7 @@ export default function Header({
     banner: banner,
 }) {
     return (
-        <header className="relative min-h-[60vh]" id="header">
+        <header className="relative min-h-[65vh]" id="header">
             <div className="navigation">
                 <div className="container">
                     <div className="row">

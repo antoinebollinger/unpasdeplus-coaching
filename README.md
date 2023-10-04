@@ -31,7 +31,7 @@
 
 ### Preview
 
-![Preview](public/preview.webp)
+![Preview](public/preview.jpg)
 
 ### Build with
 

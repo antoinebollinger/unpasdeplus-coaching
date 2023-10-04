@@ -1,8 +1,4 @@
 header {
-    &::before {
-        // content: '';
-        @apply absolute inset-0 z-10 bg-gradient-to-b from-white via-light-white;
-    }
     .navigation {
         @apply absolute top-0 left-0 z-30 w-full py-3 md:py-1 duration-300 bg-white opacity-90;
         &.sticky {

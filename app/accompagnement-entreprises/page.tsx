@@ -4,7 +4,7 @@ import Qui from '../../src/sections/entreprises/qui'
 import Apports from '../../src/sections/entreprises/apports'
 import Services from '../../src/sections/entreprises/services'
 import Qualite from '../../src/sections/entreprises/qualite'
-import Banner from '/public/images/banners/entreprises.webp'
+import Banner from '/public/images/banners/3.jpg'
 import { siteData } from '../../src/data/metadata'
 
 export const metadata = {
