@@ -25,7 +25,8 @@ export default function Intro({ className = '' }: { className?: string }) {
                         />
                     </div>
                     <div className="w-full lg:w-3/4 lg:order-0">
-                        <h1>Soutenir vos salarié.es,<br />c'est créer la différence</h1>
+                        <h1>Soutien à la parentalité en entreprise</h1>
+                        <h2>Soutenir vos salarié.es, c'est créer la différence</h2>
                         <br />
                         <p className="text-lg leading-6 mb-6">
                             Prendre soin de la <strong>santé physique et mentale de vos collaborateurs</strong>, c'est être attentif à la <strong>qualité de vie au travail</strong> et renforcer de meilleures conditions de travail.
