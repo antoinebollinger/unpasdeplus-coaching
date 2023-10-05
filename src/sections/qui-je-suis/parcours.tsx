@@ -18,7 +18,6 @@ export default function Parcours({ className = 'bg-gray-100' }: { className?: st
         reveal({
             collection: document.querySelectorAll('.parcours-text'),
             classesToRemove: ['translate-y-full', 'opacity-0'],
-            delayIncrement: 100
         })
     }, [])
 

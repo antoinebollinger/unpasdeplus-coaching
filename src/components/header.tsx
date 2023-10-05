@@ -1,6 +1,5 @@
 'use client'
 import Image from 'next/image'
-import { motion } from 'framer-motion'
 import Navbar from './navbar'
 import Wave from '/public/images/svg/wave-white.svg'
 import type { banner } from '../models/types'
@@ -11,34 +10,32 @@ export default function Header({
     banner: banner,
 }) {
     return (
-        <motion.div>
-            <header className="relative min-h-[65vh]" id="header">
-                <div className="navigation">
-                    <div className="container">
-                        <div className="row">
-                            <div className="w-full">
-                                <Navbar />
-                            </div>
+        <header className="relative min-h-[65vh]" id="header">
+            <div className="navigation">
+                <div className="container">
+                    <div className="row">
+                        <div className="w-full">
+                            <Navbar />
                         </div>
                     </div>
                 </div>
-                <div className="absolute inset-0 z-0">
-                    <Image
-                        src={banner.src}
-                        alt="Main banner"
-                        fill={true}
-                        className="object-cover w-full h-full opacity-80"
-                        priority={true}
-                    />
-                </div>
-                <div className="absolute bottom-0 z-10 w-full h-auto -mb-1 header-shape">
-                    <Image
-                        src={Wave}
-                        alt="wave"
-                        className="object-cover w-full h-full"
-                    />
-                </div>
-            </header>
-        </motion.div>
+            </div>
+            <div className="absolute inset-0 z-0">
+                <Image
+                    src={banner.src}
+                    alt="Main banner"
+                    fill={true}
+                    className="object-cover opacity-80"
+                    priority={true}
+                />
+            </div>
+            <div className="absolute bottom-0 z-10 w-full h-auto -mb-1 header-shape">
+                <Image
+                    src={Wave}
+                    alt="wave"
+                    className="object-cover w-full h-full"
+                />
+            </div>
+        </header>
     )
 }
