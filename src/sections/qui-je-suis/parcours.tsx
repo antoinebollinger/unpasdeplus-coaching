@@ -84,7 +84,7 @@ export default function Parcours({ className = 'bg-gray-100' }: { className?: st
                         </div>
                         <div className="w-full md:w-3/4 transition duration-300 opacity-0 translate-x-3/4 career-step">
                             <p className="text-lg text-gray-900">
-                                Ma <strong>charge mentale</strong> s’accroissait et j’ai commencé à remettre en question mes choix professionnels. Face l'épuisement professionnel, la lassitude, je me rends à l'évidence&nbsp;: je dois trouver une solution plus pérenne. A cela s'ajoute une <strong>quête de sens</strong>, et ce profond besoin de me reconnecter à <strong>mes valeurs</strong>, <strong>mon identité</strong>, <strong>ma personnalité</strong>.
+                                Ma <strong>charge mentale</strong> s’accroissait et j’ai commencé à remettre en question mes choix professionnels. Face à l'épuisement professionnel, la lassitude, je me rends à l'évidence&nbsp;: je dois trouver une solution plus pérenne. A cela s'ajoute une <strong>quête de sens</strong>, et ce profond besoin de me reconnecter à <strong>mes valeurs</strong>, <strong>mon identité</strong>, <strong>ma personnalité</strong>.
                             </p>
                         </div>
                     </div>

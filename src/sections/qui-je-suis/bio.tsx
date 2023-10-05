@@ -66,7 +66,7 @@ export default function Bio({ className = '' }: { className?: string }) {
                         <div className="transition duration-200 opacity-0 translate-y-full about-text">
                             <h3><FontAwesomeIcon icon={faHeart} /> Alimentation émotionnelle</h3>
                             <p className="text-lg mb-6">
-                                Lors de ma certification de coach professionnel, j'ai présenté un mémoire qui porte sur « Le coaching et la perte de poids ». J’évoque <strong>l’impact des émotions</strong> sur notre <strong>alimentation</strong>. Etre accompagner pour en prendre <strong>conscience</strong> et <strong>mieux les gérer</strong>.
+                                Lors de ma certification de coach professionnel, j'ai présenté un mémoire qui porte sur « Le coaching et la perte de poids ». J’évoque <strong>l’impact des émotions</strong> sur notre <strong>alimentation</strong>. Etre accompagné.e pour en prendre <strong>conscience</strong> et <strong>mieux les gérer</strong>.
                             </p>
                         </div>
                     </div>

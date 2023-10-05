@@ -27,5 +27,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
             url: `${siteData.url}/mentions-legales`,
             lastModified: new Date(),
         },
+        {
+            url: `${siteData.url}/politique-confidentialite`,
+            lastModified: new Date(),
+        },
     ]
 }
