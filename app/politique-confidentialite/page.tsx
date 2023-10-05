@@ -4,7 +4,7 @@ import Banner from '/public/images/banners/6.jpg'
 import { siteData } from '../../src/data/metadata'
 
 export const metadata = {
-    title: `Mentions légales | ${siteData.title}`
+    title: `Politique de confidentialité | ${siteData.title}`
 }
 
 export default function Page() {
