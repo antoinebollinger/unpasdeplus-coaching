@@ -25,10 +25,10 @@ export default function Liens({ className = 'bg-gray-100' }: { className?: strin
                             src={Parents}
                             width={200}
                             className="mx-auto rounded-full transition duration-200 scale-0 liens-img"
-                            alt="Accompagnement parents"
+                            alt="Coaching santé et bien-être des parents"
                         />
                         <p className="text-lg text-center">
-                            <strong>Accompagnement parents</strong>
+                            <strong>Coaching santé et bien-être des parents</strong>
                         </p>
                         <p className="text-lg text-start grow">
                             <strong>Vous manquez de temps</strong> pour prendre soin de vous&nbsp;? Vous avez mis en place des actions mais face au quotidien, à vos responsabilités professionnelles et personnelles, <strong>vous baissez les bras&nbsp;?</strong>
@@ -48,7 +48,7 @@ export default function Liens({ className = 'bg-gray-100' }: { className?: strin
                             alt="Accompagnement entreprises"
                         />
                         <p className="text-lg text-center">
-                            <strong>Accompagnement entreprises</strong>
+                            <strong>Coaching entreprise</strong>
                         </p>
                         <p className="text-lg text-start grow">
                             Vous souhaitez accompagner activement vos salarié.es-parents pour les aider à mieux concilier vie pro vie perso pour limiter les <strong>impacts</strong> sur <strong>l’entreprise</strong> liés à la <strong>parentalité</strong>, à leur transition de vie&nbsp;?

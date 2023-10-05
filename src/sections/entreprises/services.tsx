@@ -29,16 +29,19 @@ export default function Services({ className = 'bg-gray-100' }: { className?: st
                                     </h4>
                                     <ul className="list-none list-inside fa-ul text-lg leading-8 grow">
                                         <li>
-                                            <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>Changement de vie
+                                            <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>Équilibre travail-vie familiale
                                         </li>
                                         <li>
-                                            <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>Retour au travail après un congé maternité/paternité
+                                            <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>Accompagnement du retour de congé maternité/paternité
                                         </li>
                                         <li>
-                                            <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>Retour au travail après une absence de longue durée
+                                            <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>Réintégration post-congé maternité/paternité
                                         </li>
                                         <li>
-                                            <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>Charge mentale importante
+                                            <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>Gestion de la transition post-congé
+                                        </li>
+                                        <li>
+                                            <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>Intégration en douceur après le congé
                                         </li>
                                     </ul>
                                     <Link href="/contact" className="main-btn gradient-btn focus:outline-none uppercase mx-auto">
@@ -53,10 +56,16 @@ export default function Services({ className = 'bg-gray-100' }: { className?: st
                                     </h4>
                                     <ul className="list-none list-inside fa-ul text-lg leading-8 grow">
                                         <li>
-                                            <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>Dispositif sur la qualité de vie au travail
+                                            <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>Ateliers de sensibilisation
                                         </li>
                                         <li>
-                                            <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>Parentalité en entreprise
+                                            <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>Coaching individuel pour les managers
+                                        </li>
+                                        <li>
+                                            <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>Programmes de bien-être parental
+                                        </li>
+                                        <li>
+                                            <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>Gestion du retour de congé
                                         </li>
                                     </ul>
                                     <Link href="/contact" className="main-btn gradient-btn focus:outline-none uppercase mx-auto">

@@ -33,7 +33,7 @@ export default function Qui({ className = 'bg-gray-100' }: { className?: string 
                         />
                     </div>
                     <div className="w-full md:w-3/4">
-                        <h2>L'accompagnement "Habitudes gagnantes" est fait pour vous si...</h2>
+                        <h2>Le coaching "Habitudes gagnantes" est fait pour vous si...</h2>
                         <ul className="list-none list-inside fa-ul text-lg leading-8 mb-16">
                             {
                                 [
@@ -68,7 +68,7 @@ export default function Qui({ className = 'bg-gray-100' }: { className?: string 
                             }
                         </ul>
 
-                        <h2>Grâce à l'accompagnement "Habitudes gagnantes", vous serez&nbsp;:</h2>
+                        <h2>Grâce au coaching "Habitudes gagnantes", vous serez&nbsp;:</h2>
                         <ul className="list-none list-inside fa-ul text-lg leading-8">
                             {
                                 [

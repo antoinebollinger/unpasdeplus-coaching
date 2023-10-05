@@ -31,7 +31,7 @@ export default function Intro({ className = '' }: { className?: string }) {
                         />
                     </div>
                     <div className="w-full lg:w-3/4 lg:order-0">
-                        <h1><strong>Un accompagnement "Habitudes gagnantes"</strong><br />tant sur le plan <strong>physique</strong> que <strong>mental</strong></h1>
+                        <h1><strong>Un coaching "Habitudes gagnantes"</strong><br />tant sur le plan <strong>physique</strong> que <strong>mental</strong></h1>
                         <br />
                         <p className="text-lg leading-6 mb-6">
                             Un accompagnement individuel pour vous aider à prendre soin de votre santé physique et mentale en relevant vos défis quotidiens. Acquérir des habitudes mentales <strong>pour gagner en sérénité et en confiance en soi</strong>.
@@ -39,7 +39,7 @@ export default function Intro({ className = '' }: { className?: string }) {
                         <ul className="list-disc list-inside text-lg leading-8">
                             {
                                 [
-                                    "Accompagnement individuel de 3 à 6 mois",
+                                    "Coaching individuel de 3 à 6 mois",
                                     "Parcours personnalisé sur l’hygiène de vie (alimentation, sport, habitudes de santé)",
                                     "Des exercices de coaching entre les séances",
                                     "Echange en ligne pour garder la dynamique"
