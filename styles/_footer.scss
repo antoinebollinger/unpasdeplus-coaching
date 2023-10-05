@@ -1,7 +1,7 @@
 .footer-social {
     li {
         a {
-            @apply inline-block mr-2 text-2xl text-gray-800 duration-300;
+            @apply inline-block mr-2 text-2xl text-gray-800 duration-200;
             &:hover {
                 @apply text-tertary-900;
             }
@@ -17,7 +17,7 @@
     ul {
         li {
             a {
-                @apply inline-block mb-3 font-medium text-gray-900 duration-300;
+                @apply inline-block mb-3 font-medium text-gray-900 duration-200;
                 &:hover {
                     @apply text-tertary-900;
                 }

@@ -107,12 +107,12 @@ export default function Qui({ className = 'bg-gray-100' }: { className?: string 
                         ].map((e, i) => {
                             return (
                                 <div className="flex flex-col gap-6 justify-center items-center mb-10" key={i}>
-                                    <div className="transition duration-300 opacity-0 scale-0 apports-text">
+                                    <div className="transition duration-200 opacity-0 scale-0 apports-text">
                                         <div className="w-[100px] h-[100px] rounded-full shadow-lg bg-secondary-100 flex justify-center items-center">
                                             <p className="text-4xl text-primary-600 font-bold">{e[0]}</p>
                                         </div>
                                     </div>
-                                    <div className="w-full grow transition duration-300 opacity-0 translate-y-full apports-text">
+                                    <div className="w-full grow transition duration-200 opacity-0 translate-y-full apports-text">
                                         <p className="text-2xl text-gray-900 lg:text-center" dangerouslySetInnerHTML={{ __html: e[1] }} />
                                     </div>
                                 </div>

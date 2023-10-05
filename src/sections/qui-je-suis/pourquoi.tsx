@@ -45,7 +45,7 @@ export default function Pourquoi({ className = '' }: { className?: string }) {
                         </div>
                         {
                             ["Motivation", "Persévérance", "Méthode", "Régularité", "Entraînement", "Répétition"].map((e, i) => (
-                                <div className="absolute rounded-full bg-tertary-100 border border-tertary-900 transition duration-300 opacity-0 scale-0 circle" key={i} >
+                                <div className="absolute rounded-full bg-tertary-100 border border-tertary-900 transition duration-200 opacity-0 scale-0 circle" key={i} >
                                     <div className="absolute inset-0 flex justify-center items-center">
                                         <p className="text-sm lg:text-lg text-tertary-900">{e}</p>
                                     </div>

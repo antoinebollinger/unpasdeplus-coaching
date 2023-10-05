@@ -9,7 +9,6 @@ export default function Apports({ className = '' }: { className?: string }) {
         reveal({
             collection: document.querySelectorAll('.consequence'),
             classesToRemove: ['scale-0', 'opacity-0'],
-            delayIncrement: 300
         })
         reveal({
             collection: document.querySelectorAll('.progression'),
@@ -19,7 +18,6 @@ export default function Apports({ className = '' }: { className?: string }) {
         reveal({
             collection: document.querySelectorAll('.resultats li'),
             classesToRemove: ['translate-y-full', 'opacity-0'],
-            delayIncrement: 100
         })
     }, [])
 

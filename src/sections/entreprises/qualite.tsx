@@ -26,7 +26,7 @@ export default function Qualite({ className = '' }: { className?: string }) {
                 </div>
                 <div className="lg:max-w-5xl mx-auto mb-16">
                     <div className="flex flex-col md:flex-row gap-6 justify-center items-center mb-10">
-                        <div className="w-1/2 md:w-1/5 mx-auto transition duration-300 opacity-0 scale-0 career-step">
+                        <div className="w-1/2 md:w-1/5 mx-auto transition duration-200 opacity-0 scale-0 career-step">
                             <Image
                                 src={EMCC}
                                 width={150}
@@ -35,14 +35,14 @@ export default function Qualite({ className = '' }: { className?: string }) {
                                 alt="Illustration"
                             />
                         </div>
-                        <div className="w-full md:w-3/4 transition duration-300 opacity-0 translate-x-3/4 career-step">
+                        <div className="w-full md:w-3/4 transition duration-200 opacity-0 translate-x-3/4 career-step">
                             <p className="text-lg text-gray-900">
                                 Accréditation EMCC - labélisation EMCC (European Mentoring Coaching Council)
                             </p>
                         </div>
                     </div>
                     <div className="flex flex-col md:flex-row gap-6 justify-center items-center mb-10">
-                        <div className="w-1/2 md:w-1/5 mx-auto transition duration-300 opacity-0 scale-0 career-step">
+                        <div className="w-1/2 md:w-1/5 mx-auto transition duration-200 opacity-0 scale-0 career-step">
                             <Image
                                 src={FranceCompetences}
                                 width={150}
@@ -51,14 +51,14 @@ export default function Qualite({ className = '' }: { className?: string }) {
                                 alt="Illustration"
                             />
                         </div>
-                        <div className="w-full md:w-3/4 transition duration-300 opacity-0 translate-x-3/4 career-step">
+                        <div className="w-full md:w-3/4 transition duration-200 opacity-0 translate-x-3/4 career-step">
                             <p className="text-lg text-gray-900">
                                 Coach professionnelle certifiée RNCP 7 - Linkup Coaching
                             </p>
                         </div>
                     </div>
                     <div className="flex flex-col md:flex-row gap-6 justify-center items-center mb-10">
-                        <div className="w-1/2 md:w-1/5 mx-auto transition duration-300 opacity-0 scale-0 career-step">
+                        <div className="w-1/2 md:w-1/5 mx-auto transition duration-200 opacity-0 scale-0 career-step">
                             <Image
                                 src={Outils}
                                 width={150}
@@ -67,14 +67,14 @@ export default function Qualite({ className = '' }: { className?: string }) {
                                 alt="Illustration"
                             />
                         </div>
-                        <div className="w-full md:w-3/4 transition duration-300 opacity-0 translate-x-3/4 career-step">
+                        <div className="w-full md:w-3/4 transition duration-200 opacity-0 translate-x-3/4 career-step">
                             <p className="text-lg text-gray-900">
                                 Outils et méthodes de coaching
                             </p>
                         </div>
                     </div>
                     <div className="flex flex-col md:flex-row gap-6 justify-center items-center mb-10">
-                        <div className="w-1/2 md:w-1/5 mx-auto transition duration-300 opacity-0 scale-0 career-step">
+                        <div className="w-1/2 md:w-1/5 mx-auto transition duration-200 opacity-0 scale-0 career-step">
                             <Image
                                 src={Ethique}
                                 width={150}
@@ -83,7 +83,7 @@ export default function Qualite({ className = '' }: { className?: string }) {
                                 alt="Illustration"
                             />
                         </div>
-                        <div className="w-full md:w-3/4 transition duration-300 opacity-0 translate-x-3/4 career-step">
+                        <div className="w-full md:w-3/4 transition duration-200 opacity-0 translate-x-3/4 career-step">
                             <p className="text-lg text-gray-900">
                                 Charte déontologique du coach
                             </p>

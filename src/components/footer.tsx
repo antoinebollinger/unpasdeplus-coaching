@@ -150,7 +150,7 @@ export default function Footer({
                                 <p className="footer-title">Inscription à ma newsletter</p>
                                 <div className="newsletter">
                                     <form id="newsletter-form" className="relative">
-                                        <input type="email" name="email_from" placeholder="Entrez votre email" className="w-full py-3 pl-6 pr-12 duration-300 bg-gray-100 border border-gray-100 rounded-full focus:border-primary-600 focus:outline-none mb-4" required />
+                                        <input type="email" name="email_from" placeholder="Entrez votre email" className="w-full py-3 pl-6 pr-12 duration-200 bg-gray-100 border border-gray-100 rounded-full focus:border-primary-600 focus:outline-none mb-4" required />
                                         <button type="submit" className="absolute top-0 right-0 mt-3 mr-6 text-xl text-primary-600" aria-label="S'incrire à ma newsletter">
                                             <FontAwesomeIcon icon={faAngleDoubleRight} />
                                         </button>
@@ -170,7 +170,7 @@ export default function Footer({
                     <div className="row">
                         <div className="w-full h-[72px] flex justify-center items-center">
                             <p className="text-white text-center">
-                                Copyright © {siteData.domain} {year()}<br />Site réalisé par <a target="_blank" className="font-bold duration-300 hover:text-primary-300" rel="nofollow" href="https://antoinebollinger.fr">Antoine Bollinger</a>
+                                Copyright © {siteData.domain} {year()}<br />Site réalisé par <a target="_blank" className="font-bold duration-200 hover:text-primary-300" rel="nofollow" href="https://antoinebollinger.fr">Antoine Bollinger</a>
                             </p>
                         </div>
                         <div className="w-full h-[72px] md:hidden"></div>

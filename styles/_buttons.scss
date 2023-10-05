@@ -1,5 +1,5 @@
 .main-btn {
-    @apply inline-block px-8 py-4 font-bold text-white duration-300 bg-primary-700 rounded-full;
+    @apply inline-block px-8 py-4 font-bold text-white duration-200 bg-primary-700 rounded-full;
     &:hover {
         @apply bg-primary-500;
     }

@@ -5,7 +5,7 @@
 .navbar-nav {
     .nav-item {
         a {
-            @apply relative inline-block px-8 py-2 font-bold text-gray-900 uppercase duration-300 text-left lg:text-center cursor-pointer md:text-xs xl:text-base;
+            @apply relative inline-block px-8 py-2 font-bold text-gray-900 uppercase duration-200 text-left lg:text-center cursor-pointer md:text-xs xl:text-base;
             &:hover ~ ul {
                 @apply max-h-max;
             }
@@ -29,7 +29,7 @@
 }
 
 .toggler-icon {
-    @apply relative block duration-300 bg-gray-700;
+    @apply relative block duration-200 bg-gray-700;
     height: 2px;
     width: 30px;
     margin: 6px 0;

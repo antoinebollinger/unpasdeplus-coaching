@@ -1,6 +1,6 @@
 header {
     .navigation {
-        @apply absolute top-0 left-0 z-30 w-full py-3 md:py-1 duration-300 bg-white opacity-90;
+        @apply absolute top-0 left-0 z-30 w-full py-3 md:py-1 duration-200 bg-white opacity-90;
         &.sticky {
             @apply fixed py-2 md:py-0 opacity-100 shadow;
             ul {
@@ -8,7 +8,7 @@ header {
             }
         }
         ul {
-            @apply duration-300 bg-white;
+            @apply duration-200 bg-white;
         }
     }
     .choice-ul {
