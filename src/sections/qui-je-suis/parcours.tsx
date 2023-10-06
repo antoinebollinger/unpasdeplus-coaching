@@ -12,12 +12,7 @@ export default function Parcours({ className = 'bg-gray-100' }: { className?: st
     useEffect(() => {
         reveal({
             collection: document.querySelectorAll('.career-step'),
-            classesToRemove: ['translate-x-3/4', 'scale-0', 'opacity-0'],
-            classesToAdd: ['translate-x-0'],
-        })
-        reveal({
-            collection: document.querySelectorAll('.parcours-text'),
-            classesToRemove: ['translate-y-full', 'opacity-0'],
+            classesToRemove: ['translate-x-3/4', 'translate-y-full', 'scale-0', 'opacity-0'],
         })
     }, [])
 
@@ -89,16 +84,16 @@ export default function Parcours({ className = 'bg-gray-100' }: { className?: st
                     </div>
                 </div>
                 <div className="lg:max-w-5xl mx-auto">
-                    <p className="text-lg text-gray-900 mb-2 transition duration-200 opacity-0 translate-y-full parcours-text">
+                    <p className="text-lg text-gray-900 mb-2 transition duration-200 opacity-0 translate-y-full career-step">
                         Parce que ce parcours, c'est aussi le parcours d'autres parents, mamans, papas qui tentent de trouver le meilleur équilibre en prenant en compte les <strong>responsabilités familiales et professionnelles</strong>.
                     </p>
-                    <p className="text-lg text-gray-900 mb-2 transition duration-200 opacity-0 translate-y-full parcours-text">
+                    <p className="text-lg text-gray-900 mb-2 transition duration-200 opacity-0 translate-y-full career-step">
                         Parce que je suis convaincue que nous avons tous des ressources mais que parfois la <strong>charge émotionnelle</strong> nous <strong>empêche d'avancer</strong>, de nous épanouir. Avoir une meilleure de <strong>conscience de soi</strong>, <strong>connaissance de soi</strong> aide à <strong>changer nos schémas de pensée</strong>.
                     </p>
-                    <p className="text-lg text-gray-900 mb-12 transition duration-200 opacity-0 translate-y-full parcours-text">
+                    <p className="text-lg text-gray-900 mb-12 transition duration-200 opacity-0 translate-y-full career-step">
                         Parce que faire un métier qui me passionne et qui a du sens pour moi, me former au coaching professionnel était une évidence. Exercer le <strong>métier</strong> avec <strong>éthique</strong> et <strong>déontologie</strong> en respectant la charte déontologique du coach.
                     </p>
-                    <p className="text-lg text-gray-900 transition duration-200 opacity-0 translate-y-full parcours-text">
+                    <p className="text-lg text-gray-900 transition duration-200 opacity-0 translate-y-full career-step">
                         <FontAwesomeIcon icon={faHandPointRight} /> C'est donc dans l'envie de contribuer, à mon niveau, au bien-être des autres que <strong>Un pas de plus</strong> a vu le jour.
                     </p>
                 </div>
