@@ -8,7 +8,7 @@ import Banner from '/public/images/banners/3.jpg'
 import { siteData } from '../../src/data/metadata'
 
 export const metadata = {
-    title: `Accompagnement entreprises | ${siteData.title}`
+    title: `Coaching entreprise | ${siteData.title}`
 }
 
 export default function Page() {
