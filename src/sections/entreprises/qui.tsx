@@ -9,15 +9,7 @@ import { faCheck, faXmark } from '@fortawesome/free-solid-svg-icons'
 export default function Qui({ className = 'bg-gray-100' }: { className?: string }) {
     useEffect(() => {
         reveal({
-            collection: document.querySelectorAll('.qui-img'),
-            classesToRemove: ['scale-0', 'opacity-0']
-        })
-        reveal({
-            collection: document.querySelectorAll('#pourquoi li'),
-            classesToRemove: ['opacity-0']
-        })
-        reveal({
-            collection: document.querySelectorAll('.apports-text'),
+            collection: document.querySelectorAll('.qui-transition, #pourquoi li, .apports-text'),
             classesToRemove: ['translate-y-full', 'scale-0', 'opacity-0']
         })
     }, [])

@@ -41,7 +41,7 @@ export default function Services({ className = 'bg-gray-100' }: { className?: st
                                             <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>Gestion de la transition post-congé
                                         </li>
                                         <li>
-                                            <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>Intégration en douceur après le congé
+                                            <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>Après une absence de longue durée
                                         </li>
                                     </ul>
                                     <Link href="/contact" className="main-btn gradient-btn focus:outline-none uppercase mx-auto">
