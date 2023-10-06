@@ -38,7 +38,7 @@ export default function Approche({ className = '' }: { className?: string }) {
                             <strong>Travailler son mental</strong> et <strong>rester concentrer</strong> sur son objectif, c’est comme un entraînement sportif&nbsp;: <strong>entraînement, répétition, méthode, persévérance, régularité et motivation</strong>.
                             <br />
                             <br />
-                            Un pas de plus vous propose un <strong>accompagnement</strong> et <strong>un plan d’action concret</strong> autour de la <strong>santé physique et mentale</strong>&nbsp;: réduire <strong>la charge mentale</strong>, <strong>prendre</strong> davantage <strong>soin de soi</strong>, accompagner les salariés au <strong>retour au travail après un congé maternité/paternité</strong> ou après une <strong>absence de longue durée</strong>.
+                            Un pas de plus vous propose un <strong>accompagnement</strong> et <strong>un plan d’action concret</strong> autour de la <strong>santé physique et mentale</strong>&nbsp;: mieux gérer <strong>la charge mentale</strong>, <strong>prendre</strong> davantage <strong>soin de soi</strong>, accompagner les salariés au <strong>retour au travail après un congé maternité/paternité</strong> ou après une <strong>absence de longue durée</strong>.
                         </p>
                     </div>
                 </div>

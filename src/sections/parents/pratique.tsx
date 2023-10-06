@@ -46,7 +46,7 @@ export default function Pratique({ className = '' }: { className?: string }) {
                         </div>
                         <div className="w-full md:w-3/4 transition duration-200 opacity-0 translate-x-3/4 career-step">
                             <p className="text-lg text-gray-900">
-                                Séances individuelles en <strong>présentiel</strong> et/ou <strong>distanciel</strong> à Vannes et ses alentours. Durée de 1h/1h30 la séance à 10/15 jours d'intervalle
+                                Séances individuelles en <strong>présentiel</strong> et/ou <strong>distanciel</strong> à Vannes et ses alentours. Durée de 1h/1h15 la séance à 10/15 jours d'intervalle
                             </p>
                         </div>
                     </div>

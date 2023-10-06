@@ -58,14 +58,14 @@ export default function Navbar() {
             </button>
             <div className="absolute left-0 z-30 hidden w-full px-5 py-2 duration-200 bg-white shadow lg:opacity-100 lg:w-auto navbar-collapse lg:block top-100 mt-full lg:static lg:bg-transparent lg:shadow-none" id="navbarOne">
                 <ul className="items-center content-start mr-auto lg:justify-center lg:justify-end navbar-nav lg:flex uppercase">
-                    <li className={`nav-item ${pathname == "/accompagnement-parents" ? "active" : ""}`}>
-                        <Link href="/accompagnement-parents" className="page-scroll">
-                            Accompagnement<br />parents
+                    <li className={`nav-item ${pathname == "/coaching-sante-bienetre" ? "active" : ""}`}>
+                        <Link href="/coaching-sante-bienetre" className="page-scroll">
+                            Coaching<br />santé & bien-être
                         </Link>
                     </li>
-                    <li className={`nav-item ${pathname == "/accompagnement-entreprises" ? "active" : ""}`}>
-                        <Link href="/accompagnement-entreprises" className="page-scroll">
-                            Accompagnement<br />entreprises
+                    <li className={`nav-item ${pathname == "/coaching-entreprise" ? "active" : ""}`}>
+                        <Link href="/coaching-entreprise" className="page-scroll">
+                            Coaching<br />entreprise
                         </Link>
                     </li>
                     <li className={`nav-item ${pathname == "/qui-je-suis" ? "active" : ""}`}>
@@ -78,12 +78,10 @@ export default function Navbar() {
                             Contact
                         </Link>
                     </li>
+                    <li className="nav-item flex gap-4 items-center">
+                        <span>Suivez-moi</span><Socials className="flex footer-social" />
+                    </li>
                 </ul>
-            </div>
-
-            <div className="items-center justify-end hidden navbar-social lg:flex">
-                <span className="mr-4 font-bold text-gray-900 uppercase md:text-xs xl:text-base break-keep">Suivez-moi</span>
-                <Socials className="flex footer-social" />
             </div>
         </nav>
     )

@@ -4,17 +4,11 @@
 
 .navbar-nav {
     .nav-item {
-        a {
+        > a {
             @apply relative inline-block px-8 py-2 font-bold text-gray-900 uppercase duration-200 text-left lg:text-center cursor-pointer md:text-xs xl:text-base;
-            &:hover ~ ul {
-                @apply max-h-max;
-            }
         }
-        > ul {
-            @apply max-h-0 lg:absolute overflow-hidden transition lg:px-0 px-8;
-            &:hover {
-                @apply max-h-max;
-            }
+        > span {
+            @apply relative inline-block ps-8 py-2 font-bold text-gray-900 uppercase duration-200 text-left md:text-xs xl:text-base;
         }
         &.active, &:hover {
             > a {

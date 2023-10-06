@@ -113,6 +113,9 @@ export default function Footer({
                                             Politique de confidentialité
                                         </Link>
                                     </li>
+                                    <li>
+                                        <div className="flex gap-2"><span>Suivez-moi</span><Socials className="flex gap-2" /></div>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -121,12 +124,12 @@ export default function Footer({
                                 <p className="footer-title">Mes accompagnements</p>
                                 <ul>
                                     <li>
-                                        <Link href="/accompagnement-parents">
+                                        <Link href="/coaching-sante-bienetre">
                                             Parents
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="/accompagnement-entreprises">
+                                        <Link href="/coaching-entreprise">
                                             Entreprises
                                         </Link>
                                     </li>

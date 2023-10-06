@@ -36,7 +36,7 @@ export default function Liens({ className = 'bg-gray-100' }: { className?: strin
                             <br />
                             Avez-vous pensé à vous interroger sur vos <strong>motivations intrinsèques</strong>, celles qui se manifestent par un réel engagement et une persévérance dans vos actions&nbsp;?
                         </p>
-                        <Link href="/accompagnement-parents" className="main-btn gradient-btn focus:outline-none uppercase mx-auto">
+                        <Link href="/coaching-sante-bienetre" className="main-btn gradient-btn focus:outline-none uppercase mx-auto">
                             En savoir plus
                         </Link>
                     </div>
@@ -56,7 +56,7 @@ export default function Liens({ className = 'bg-gray-100' }: { className?: strin
                             <br />
                             Avez-vous mis en place un dispositif pour renforcer une politique RH inclusive autour de la parentalité&nbsp;?
                         </p>
-                        <Link href="/accompagnement-entreprises" className="main-btn gradient-btn focus:outline-none uppercase mx-auto">
+                        <Link href="/coaching-entreprise" className="main-btn gradient-btn focus:outline-none uppercase mx-auto">
                             En savoir plus
                         </Link>
                     </div>

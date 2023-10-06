@@ -8,11 +8,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
             lastModified: new Date(),
         },
         {
-            url: `${siteData.url}/accompagnement-parents`,
+            url: `${siteData.url}/coaching-sante-bienetre`,
             lastModified: new Date(),
         },
         {
-            url: `${siteData.url}/accompagnement-entreprises`,
+            url: `${siteData.url}/coaching-entreprise`,
             lastModified: new Date(),
         },
         {
