@@ -32,9 +32,9 @@ export default function Approche({ className = '' }: { className?: string }) {
                             Je suis convaincue que le <strong>changement d'état d'esprit</strong> repose sur <strong>le travail d'introspection</strong> associé à la <strong>mise en mouvement du corps</strong>. Nous savons que l'activité physique agit sur le bien-être du corps mais plus encore <strong>sur le mental</strong>.
                             <br />
                             <br />
-                            <strong>La marche met en mouvement</strong>. Marcher, c'est mettre un pied devant l'autre au sens physique du terme mais c'est aussi <strong>accepter d'avancer</strong> dans des moments de doutes et de vulnérabilité.
+                            {/* <strong>La marche met en mouvement</strong>. Marcher, c'est mettre un pied devant l'autre au sens physique du terme mais c'est aussi <strong>accepter d'avancer</strong> dans des moments de doutes et de vulnérabilité.
                             <br />
-                            <br />
+                            <br /> */}
                             <strong>Travailler son mental</strong> et <strong>rester concentrer</strong> sur son objectif, c’est comme un entraînement sportif&nbsp;: <strong>entraînement, répétition, méthode, persévérance, régularité et motivation</strong>.
                             <br />
                             <br />
