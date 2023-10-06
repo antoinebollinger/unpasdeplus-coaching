@@ -17,7 +17,7 @@ export default function GoogleAnalytics() {
                     function gtag(){dataLayer.push(arguments);}
                     gtag('js', new Date());
 
-                    gtag('config', 'G-Z333G07JWE');
+                    gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}');
                 `}
             </Script>
         </>
