@@ -5,6 +5,9 @@ export const siteData = {
     owner: 'Sabrina Appriou',
     domain: 'unpasdeplus-coaching.fr',
     url: 'https://unpasdeplus-coaching.fr',
+    facebook: 'https://www.facebook.com/profile.php?id=61552167146932',
+    instagram: 'https://www.instagram.com/unpasdepluscoaching/',
+    linkedin: 'https://www.linkedin.com/in/sabrina-appriou-0138a8122/',
     email: process.env.NEXT_PUBLIC_EMAIL_TO
 }
 
