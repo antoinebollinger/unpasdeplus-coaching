@@ -125,12 +125,12 @@ export default function Footer({
                                 <ul>
                                     <li>
                                         <Link href="/coaching-sante-bienetre">
-                                            Parents
+                                            Coaching santé & bien-être
                                         </Link>
                                     </li>
                                     <li>
                                         <Link href="/coaching-entreprise">
-                                            Entreprises
+                                            Coaching entreprise
                                         </Link>
                                     </li>
                                 </ul>
