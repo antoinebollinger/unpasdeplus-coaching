@@ -6,6 +6,7 @@ import { Metadata } from 'next'
 import { siteData } from '../src/data/metadata'
 import { inter, roboto, urbanist, amatic } from '../styles/font'
 import GoogleAnalytics from '../src/components/google'
+import SiteName from '../src/components/siteName'
 
 export const metadata: Metadata = {
     metadataBase: new URL('https://unpasdeplus-coaching.fr'),
@@ -32,6 +33,7 @@ export default function RootLayout({
     return (
         <html lang="fr" className={`${roboto.variable} ${urbanist.variable} ${amatic.variable} ${inter.variable}`}>
             <GoogleAnalytics />
+            <SiteName />
             <body>
                 {children}
             </body>
