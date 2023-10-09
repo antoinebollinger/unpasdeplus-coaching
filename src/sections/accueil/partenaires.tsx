@@ -6,6 +6,7 @@ import { useEffect } from 'react'
 import Image from 'next/image'
 import { reveal } from '../../utils/reveal'
 import LesPremieresBretagne from '/public/images/partenaires/les-premieres-bretagne.png'
+import FemmesDeBretagne from '/public/images/partenaires/femmes-de-bretagne.jpg'
 
 export default function Partenaires({ className = 'bg-gray-100' }: { className?: string }) {
     useEffect(() => {
@@ -33,9 +34,19 @@ export default function Partenaires({ className = 'bg-gray-100' }: { className?:
                                         />
                                     </a>
                                 </>
+                            ),
+                            (
+                                <>
+                                    <a target="_blank" rel="nofollow" href="http://www.femmesdebretagne.fr/" className="w-full">
+                                        <Image
+                                            src={FemmesDeBretagne}
+                                            alt="Femmes de Bretage"
+                                        />
+                                    </a>
+                                </>
                             )
                         ].map((e, i) => (
-                            <div className="rounded-xl shadow-xl bg-white p-4 w-full lg:w-1/3 flex flex-col lg:flex-row gap-6 justify-center transtion duration-200 opacity-0 translate-y-1/4 service" key={i}>{e}</div>
+                            <div className="rounded-xl shadow-xl bg-white p-4 w-full lg:w-1/3 flex flex-col lg:flex-row gap-6 justify-center items-center transtion duration-200 opacity-0 translate-y-1/4 service" key={i}>{e}</div>
                         ))
                     }
                 </div>
