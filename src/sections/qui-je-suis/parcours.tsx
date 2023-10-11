@@ -46,7 +46,7 @@ export default function Parcours({ className = 'bg-gray-100' }: { className?: st
                         </div>
                         <div className="w-full md:w-3/4 transition duration-200 opacity-0 translate-x-3/4 career-step">
                             <p className="text-lg text-gray-900">
-                                J'ai débuté ma carrière dans un grand goupe bancaire. Je voyais pleins d'opportunités pour les prochaines années. Une envie de gravir les échelons avec un confort financier à la clé. Tout se passait bien. Après la naissance de mon premier enfant : changement de poste, rythme de travail au 4/5ème pour trouver <strong>un équilibre de vie</strong>.
+                                J'ai travaillé 13 ans à la Société Générale. Je voyais pleins d'opportunités pour les prochaines années. Une envie de gravir les échelons avec un confort financier à la clé. Tout se passait bien. Après la naissance de mon premier enfant : changement de poste, rythme de travail au 4/5ème pour trouver <strong>un équilibre de vie</strong>.
                             </p>
                         </div>
                     </div>
