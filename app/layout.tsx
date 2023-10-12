@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     title: siteData.title,
     description: siteData.description,
     openGraph: {
+        siteName: siteData.title,
         title: siteData.title,
         description: siteData.description,
         images: '/opengraph-image.jpg'

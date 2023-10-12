@@ -6,7 +6,8 @@ import Banner from '/public/images/banners/4.jpg'
 import { siteData } from '../../src/data/metadata'
 
 export const metadata = {
-    title: `Qui je suis | ${siteData.title}`
+    title: `Qui je suis | ${siteData.title}`,
+    description: `Sabrina Appriou, fondatrice Un pas de plus Coaching, coach consultante professionnelle certifiée RNCP, basée à Vannes (56). ${siteData.description}`
 }
 
 export default function Page() {

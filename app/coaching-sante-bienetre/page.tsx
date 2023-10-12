@@ -8,7 +8,8 @@ import Banner from '/public/images/banners/2_bis.jpg'
 import { siteData } from '../../src/data/metadata'
 
 export const metadata = {
-    title: `Coaching santé & bien-être | ${siteData.title}`
+    title: `Coaching santé & bien-être | ${siteData.title}`,
+    description: 'Un accompagnement individuel pour vous aider à prendre soin de votre santé physique et mentale en relevant vos défis quotidiens. Acquérir des habitudes mentales pour gagner en sérénité et en confiance en soi.'
 }
 
 export default function Page() {
