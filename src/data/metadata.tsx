@@ -1,6 +1,6 @@
 export const siteData = {
     title: 'Un pas de plus Coaching',
-    description: 'Le coaching Un pas de plus, c\'est un accompagnement pour booster le mental des parents et un dispositif d\'accompagnement des entreprises pour prendre soin de la santé physique et mentale de leur salariés parents.',
+    description: 'Un pas de plus, c\'est un coaching bien-être pour booster la santé physique et mentale des parents. C\'est également du coaching en entreprise pour accompagner et soutenir la parentalité responsable après un congé maternité, paternité ou parental, ou après une absence de longue durée.',
     author: 'Antoine Bollinger',
     owner: 'Sabrina Appriou',
     domain: 'unpasdeplus-coaching.fr',
