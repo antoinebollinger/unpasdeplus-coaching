@@ -29,7 +29,7 @@ export default function Approche({ className = '' }: { className?: string }) {
                         <h3 className="h1">L'approche <span className={`${madelyn.className} text-7xl -translate-y-4`}>Un&nbsp;pas&nbsp;de&nbsp;plus</span></h3>
                         <br />
                         <p className="text-lg leading-6">
-                            Je suis convaincue que le <strong>changement d'état d'esprit</strong> repose sur <strong>le travail d'introspection</strong> associé à la <strong>mise en mouvement du corps</strong>. Nous savons que l'activité physique agit sur le bien-être du corps mais plus encore <strong>sur le mental</strong>.
+                            Je suis convaincue que le <strong>changement d'état d'esprit</strong> repose sur <strong>le travail d'introspection</strong> associé à la <strong>mise en mouvement du corps</strong>. Nous savons que l'activité physique adaptée agit sur le bien-être du corps mais plus encore <strong>sur le mental</strong>.
                             <br />
                             <br />
                             {/* <strong>La marche met en mouvement</strong>. Marcher, c'est mettre un pied devant l'autre au sens physique du terme mais c'est aussi <strong>accepter d'avancer</strong> dans des moments de doutes et de vulnérabilité.

@@ -40,7 +40,7 @@ export default function Intro({ className = '' }: { className?: string }) {
                             {
                                 [
                                     "Coaching individuel de 3 à 6 mois",
-                                    "Parcours personnalisé sur l’hygiène de vie (alimentation, activité physique, habitudes de santé)",
+                                    "Parcours personnalisé sur l’hygiène de vie (alimentation, activité physique adaptée, habitudes de santé)",
                                     "Des exercices de coaching entre les séances",
                                     "Echange en ligne pour garder la dynamique"
                                 ].map((e, i) => (

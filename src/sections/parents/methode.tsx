@@ -32,7 +32,7 @@ export default function Methode({ className = 'bg-gray-100' }: { className?: str
 
                     <h3 className="h1">Ma méthode</h3>
                     <p className="text-lg leading-6">
-                        L'accompagnement repose sur une <strong>écoute active</strong>, un <strong>questionnement pertinent</strong> et des <strong>outils & méthodes de coaching</strong>, dans un cadre confidentiel et bienveillant. J'utilise également <strong>l'activité physique</strong> comme outil d'accompagnement.
+                        L'accompagnement repose sur une <strong>écoute active</strong>, un <strong>questionnement pertinent</strong> et des <strong>outils & méthodes de coaching</strong>, dans un cadre confidentiel et bienveillant. J'utilise également <strong>l'activité physique adaptée</strong> comme outil d'accompagnement.
                     </p>
                     <h4 className="h2">Les 4 étapes clés du parcours d'accompagnement&nbsp;:</h4>
                     <div className="relative flex flex-col lg:flex-row gap-6 justify-center items-center">
