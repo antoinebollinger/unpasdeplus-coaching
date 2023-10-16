@@ -10,8 +10,11 @@ import SiteName from '../src/components/siteName'
 
 export const metadata: Metadata = {
     metadataBase: new URL('https://unpasdeplus-coaching.fr'),
+    applicationName: siteData.title,
     title: siteData.title,
     description: siteData.description,
+    keywords: ['santé mentale', 'santé physique', 'mouvement', 'coaching', 'activité physique adaptée', 'objectifs', 'motivation', 'bien-être'],
+    authors: [{ name: siteData.author, url: 'https://antoinebollinger.fr' }],
     openGraph: {
         siteName: siteData.title,
         title: siteData.title,
