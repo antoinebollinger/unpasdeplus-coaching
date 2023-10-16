@@ -1,10 +1,10 @@
 import Link from 'next/link'
 import Layout from '../src/layout'
-import { siteData } from '../src/data/metadata'
+// import { siteData } from '../src/data/metadata'
 
-export const metadata = {
-    title: `Erreur 404 | ${siteData.title}`,
-}
+// export const metadata = {
+//     title: `Erreur 404 | ${siteData.title}`,
+// }
 
 export default function NotFound() {
     return (
