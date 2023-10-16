@@ -8,16 +8,18 @@ import Backtotop from './components/backtotop'
 import { banner, onThisPage } from './models/types'
 import './utils/sprintf'
 import { motion } from 'framer-motion'
-import Banner from '/public/images/banners/default.jpg'
+import Banner from '/public/images/banners/1.jpg'
 
 export default function Layout({
     children,
     banner = Banner,
-    onThisPage
+    onThisPage,
+    footer = true,
 }: {
     children: React.ReactNode,
     banner?: banner,
-    onThisPage?: onThisPage[]
+    onThisPage?: onThisPage[],
+    footer?: boolean
 }) {
     useEffect(() => {
         document.querySelector('html').style.scrollBehavior = 'auto'
@@ -37,7 +39,7 @@ export default function Layout({
             >
                 <Header banner={banner} />
                 {children}
-                <Footer onThisPage={onThisPage} />
+                {footer && <Footer onThisPage={onThisPage} />}
                 <Backtotop onThisPage={onThisPage} />
                 <Modal className="z-[999]" />
             </motion.div>

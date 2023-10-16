@@ -5,7 +5,7 @@ import Loading from '/public/images/svg/loading.svg'
 export default function Page() {
     return (
         <Layout>
-            <div className="h-[50vh] flex justify-center items-center">
+            <div className="min-h-[35vh] flex justify-center items-center">
                 <Image
                     src={Loading}
                     alt="loading"
