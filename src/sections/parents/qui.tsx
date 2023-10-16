@@ -46,7 +46,7 @@ export default function Qui({ className = 'bg-gray-100' }: { className?: string 
                                     (
                                         <>
                                             <span className="fa-li text-xl"><FontAwesomeIcon icon={faPersonRunning} /></span>
-                                            Vous savez que prendre soin de sa santé physique et mentale est important pour votre <strong>équilibre</strong> mais vous ne parvenez pas à la faire seul.e.
+                                            Vous savez que prendre soin de sa santé physique et mentale est important pour votre <strong>équilibre</strong> mais vous ne parvenez pas à le faire seul.e.
                                         </>
                                     ),
                                     (

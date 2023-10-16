@@ -5,9 +5,13 @@ export default function SiteName() {
         <Script
             id="sitename"
             type="application/ld+json"
+            strategy="lazyOnload"
         >
             {
-                `{ "name": "Un pas de plus Coaching" }`
+                `{ 
+                    "@type": "WebSite",
+                    "name": "Un pas de plus Coaching"
+                 }`
             }
         </Script>
     )
