@@ -48,7 +48,7 @@ export default function Intro({ className = '' }: { className?: string }) {
                             <span className="text-primary-600 font-bold">Un pas de plus</span>, c'est du <strong>coaching professionnel</strong>. Le coaching consiste à accompagner des personnes dans la définition et l'atteinte de leurs objectifs, au bénéfice du développement de leur potentiel et de la réussite de leur évolution personnelle et professionnelle.
                             <br />
                             <br />
-                            <span className="text-primary-600 font-bold">Un pas de plus</span>, c'est un <strong>coaching bien-être</strong> pour booster la <strong>santé physique et mentale des parents</strong>. C'est également du <strong>coaching en entreprise</strong> pour accompagner et soutenir la parentalité responsable après un congé maternité, paternité ou parental, ou après une absence de longue durée.
+                            <span className="text-primary-600 font-bold">Un pas de plus</span>, c'est un <strong>coaching bien-être</strong> pour accompagner et dynamiser la <strong>santé physique et mentale des parents</strong>. C'est également du <strong>coaching en entreprise</strong> pour accompagner et soutenir la parentalité responsable après un congé maternité, paternité ou parental, ou après une absence de longue durée.
                         </p>
                     </div>
                 </div>
