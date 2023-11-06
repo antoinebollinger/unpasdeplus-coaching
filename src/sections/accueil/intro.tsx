@@ -45,10 +45,10 @@ export default function Intro({ className = '' }: { className?: string }) {
                         </div>
                         <h2>Trouvez les clés et les ressources pour faire face aux défis quotidiens</h2>
                         <p className="text-lg leading-6">
-                            <span className="text-primary-600 font-bold">Un pas de plus</span>, c'est du <strong>coaching professionnel</strong>. Le coaching consiste à accompagner des personnes dans la définition et l'atteinte de leurs objectifs, au bénéfice du développement de leur potentiel et de la réussite de leur évolution personnelle et professionnelle.
+                            <span className="text-primary-600 font-bold">Un pas de plus Coaching</span>, c'est du <strong>coaching professionnel</strong>. Le coaching consiste à accompagner des personnes dans la définition et l'atteinte de leurs objectifs, au bénéfice du développement de leur potentiel et de la réussite de leur évolution personnelle et professionnelle.
                             <br />
                             <br />
-                            <span className="text-primary-600 font-bold">Un pas de plus</span>, c'est un <strong>coaching bien-être</strong> pour accompagner et dynamiser la <strong>santé physique et mentale des parents</strong>. C'est également du <strong>coaching en entreprise</strong> pour accompagner et soutenir la parentalité responsable après un congé maternité, paternité ou parental, ou après une absence de longue durée.
+                            <span className="text-primary-600 font-bold">Un pas de plus Coaching</span>, c'est un <strong>coaching bien-être</strong> pour accompagner et dynamiser la <strong>santé physique et mentale des parents</strong>. C'est également du <strong>coaching en entreprise</strong> pour accompagner et soutenir la parentalité responsable après un congé maternité, paternité ou parental, ou après une absence de longue durée.
                         </p>
                     </div>
                 </div>

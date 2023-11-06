@@ -77,7 +77,7 @@ export default function Liens({ className = 'bg-gray-100' }: { className?: strin
                             <strong>Respecte le code déontologique de l'EMCC France</strong> (European Mentoring & Coaching Council)
                             <br />
                             <br />
-                            Fondatrice <span className={`${madelyn.className} text-primary-900 text-5xl -translate-y-4`}>Un&nbsp;pas&nbsp;de&nbsp;plus</span>
+                            Fondatrice <span className={`${madelyn.className} text-primary-900 text-5xl -translate-y-4`}>Un&nbsp;pas&nbsp;de&nbsp;plus</span> Coaching
                         </p>
                         <Link href="/qui-je-suis" className="main-btn gradient-btn focus:outline-none uppercase mx-auto">
                             Qui je suis

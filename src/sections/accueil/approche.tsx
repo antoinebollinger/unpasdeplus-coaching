@@ -26,7 +26,7 @@ export default function Approche({ className = '' }: { className?: string }) {
                         />
                     </div>
                     <div className="w-full lg:w-3/4 lg:order-0">
-                        <h3 className="h1">L'approche <span className={`${madelyn.className} text-7xl -translate-y-4`}>Un&nbsp;pas&nbsp;de&nbsp;plus</span></h3>
+                        <h3 className="h1">L'approche <span className={`${madelyn.className} text-7xl -translate-y-4`}>Un&nbsp;pas&nbsp;de&nbsp;plus</span> Coaching</h3>
                         <br />
                         <p className="text-lg leading-6">
                             Je suis convaincue que le <strong>changement d'état d'esprit</strong> repose sur <strong>le travail d'introspection</strong> associé à la <strong>mise en mouvement du corps</strong>. Nous savons que l'activité physique adaptée agit sur le bien-être du corps mais plus encore <strong>sur le mental</strong>.
@@ -38,7 +38,7 @@ export default function Approche({ className = '' }: { className?: string }) {
                             <strong>Travailler son mental</strong> et <strong>rester concentrer</strong> sur son objectif, c’est comme un entraînement sportif&nbsp;: <strong>entraînement, répétition, méthode, persévérance, régularité et motivation</strong>.
                             <br />
                             <br />
-                            Un pas de plus vous propose un <strong>accompagnement</strong> et <strong>un plan d’action concret</strong> autour de la <strong>santé physique et mentale</strong>&nbsp;: mieux gérer <strong>la charge mentale</strong>, <strong>prendre</strong> davantage <strong>soin de soi</strong>, accompagner les salariés au <strong>retour au travail après un congé maternité/paternité</strong> ou après une <strong>absence de longue durée</strong>.
+                            <span className="text-primary-600 font-bold">Un pas de plus Coaching</span> vous propose un <strong>accompagnement</strong> et <strong>un plan d’action concret</strong> autour de la <strong>santé physique et mentale</strong>&nbsp;: mieux gérer <strong>la charge mentale</strong>, <strong>prendre</strong> davantage <strong>soin de soi</strong>, accompagner les salariés au <strong>retour au travail après un congé maternité/paternité</strong> ou après une <strong>absence de longue durée</strong>.
                         </p>
                     </div>
                 </div>

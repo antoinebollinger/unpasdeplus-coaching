@@ -35,7 +35,7 @@ export default function Bio({ className = '' }: { className?: string }) {
                         <div className="mb-8 text-center md:text-start mb-10">
                             <h1>Sabrina Appriou</h1>
                             <h2 className="leading-8">
-                                Fondatrice <span className={`${madelyn.className} text-5xl lg:text-7xl -translate-y-4`}>Un&nbsp;pas&nbsp;de&nbsp;plus</span>
+                                Fondatrice <span className={`${madelyn.className} text-5xl lg:text-7xl -translate-y-4`}>Un&nbsp;pas&nbsp;de&nbsp;plus</span> Coaching
                             </h2>
                             <h3>Coach consultante professionnelle certifiée RNCP, basée à Vannes (56)</h3>
                         </div>
