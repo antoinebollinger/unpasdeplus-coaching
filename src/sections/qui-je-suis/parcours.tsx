@@ -94,7 +94,7 @@ export default function Parcours({ className = 'bg-gray-100' }: { className?: st
                         Parce que faire un métier qui me passionne et qui a du sens pour moi, me former au coaching professionnel était une évidence. Exercer le <strong>métier</strong> avec <strong>éthique</strong> et <strong>déontologie</strong> en respectant la charte déontologique du coach.
                     </p>
                     <p className="text-lg text-gray-900 transition duration-200 opacity-0 translate-y-full career-step">
-                        <FontAwesomeIcon icon={faHandPointRight} /> C'est donc dans l'envie de contribuer, à mon niveau, au bien-être des autres que <strong>Un pas de plus</strong> a vu le jour.
+                        <FontAwesomeIcon icon={faHandPointRight} /> C'est donc dans l'envie de contribuer, à mon niveau, au bien-être des autres que <strong>Un pas de plus Coaching</strong> a vu le jour.
                     </p>
                 </div>
             </div>

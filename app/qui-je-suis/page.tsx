@@ -17,7 +17,7 @@ export default function Page() {
             link: '#header'
         },
         {
-            title: 'Pourquoi Un pas de plus&nbsp;?',
+            title: 'Pourquoi Un pas de plus Coaching&nbsp;?',
             link: '#pourquoi'
         },
         {

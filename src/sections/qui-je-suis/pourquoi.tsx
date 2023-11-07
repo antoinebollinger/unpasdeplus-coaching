@@ -18,7 +18,7 @@ export default function Pourquoi({ className = '' }: { className?: string }) {
                 <div className="lg:max-w-5xl mx-auto">
                     <div className="mb-16">
                         <p className="text-lg">
-                            <strong>Un pas de plus</strong> fait référence au cercle vertueux du mouvement physique et mental, et des effets bénéfiques considérables du "pas". Faire un pas qui entraîne un autre grâce à ces différents leviers&nbsp;:
+                            <strong>Un pas de plus Coaching</strong> fait référence au cercle vertueux du mouvement physique et mental, et des effets bénéfiques considérables du "pas". Faire un pas qui entraîne un autre grâce à ces différents leviers&nbsp;:
                         </p>
                     </div>
                     <div className="w-full lg:w-3/4 mx-auto transtion duration-200 scale-0 opacity-0 circle">

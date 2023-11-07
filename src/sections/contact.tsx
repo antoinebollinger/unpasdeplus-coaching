@@ -1,6 +1,6 @@
 'use client'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons'
 import { useEffect } from 'react'
 import { openModal } from '../utils/modal'
 import { emailMessage } from '../data/metadata'
@@ -60,7 +60,10 @@ export default function Contact({ className = '' }: { className?: string }) {
                             <p className="text-lg md:text-2xl">
                                 <FontAwesomeIcon icon={faPhone} /> <a href="tel:+33661794699" title="Téléphoner à Sabrina" className="hover:text-secondary-700 transition">06 61 79 46 99</a>
                             </p>
-
+                            <br />
+                            <p className="text-lg md:text-2xl">
+                                <FontAwesomeIcon icon={faLocationDot} /> En présentiel à Vannes et/ou distanciel
+                            </p>
                         </div>
                     </div>
                 </div>
