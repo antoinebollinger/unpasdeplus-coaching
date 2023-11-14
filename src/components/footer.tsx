@@ -124,8 +124,8 @@ export default function Footer({
                                 <p className="footer-title">Mes accompagnements</p>
                                 <ul>
                                     <li>
-                                        <Link href="/coaching-sante-bienetre">
-                                            Coaching santé & bien-être
+                                        <Link href="/coaching-parental">
+                                            Coaching parental
                                         </Link>
                                     </li>
                                     <li>

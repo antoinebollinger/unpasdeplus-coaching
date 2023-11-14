@@ -36,7 +36,7 @@ export default function Liens({ className = 'bg-gray-100' }: { className?: strin
                             <br />
                             Avez-vous pensé à vous interroger sur vos <strong>motivations intrinsèques</strong>, celles qui se manifestent par un réel engagement et une persévérance dans vos actions&nbsp;?
                         </p>
-                        <Link href="/coaching-sante-bienetre" className="main-btn gradient-btn focus:outline-none uppercase mx-auto">
+                        <Link href="/coaching-parental" className="main-btn gradient-btn focus:outline-none uppercase mx-auto">
                             En savoir plus
                         </Link>
                     </div>

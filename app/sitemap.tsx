@@ -8,7 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
             lastModified: new Date(),
         },
         {
-            url: `${siteData.url}/coaching-sante-bienetre`,
+            url: `${siteData.url}/coaching-parental`,
             lastModified: new Date(),
         },
         {

@@ -58,9 +58,9 @@ export default function Navbar() {
             </button>
             <div className="absolute left-0 z-30 hidden w-full px-5 py-2 duration-200 bg-white shadow lg:opacity-100 lg:w-auto navbar-collapse lg:block top-100 mt-full lg:static lg:bg-transparent lg:shadow-none" id="navbarOne">
                 <ul className="items-center content-start mr-auto lg:justify-center lg:justify-end navbar-nav lg:flex uppercase">
-                    <li className={`nav-item ${pathname == "/coaching-sante-bienetre" ? "active" : ""}`}>
-                        <Link href="/coaching-sante-bienetre" className="page-scroll">
-                            Coaching<br />santé & bien-être
+                    <li className={`nav-item ${pathname == "/coaching-parental" ? "active" : ""}`}>
+                        <Link href="/coaching-parental" className="page-scroll">
+                            Coaching<br />parental
                         </Link>
                     </li>
                     <li className={`nav-item ${pathname == "/coaching-entreprise" ? "active" : ""}`}>
