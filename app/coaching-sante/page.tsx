@@ -1,14 +1,14 @@
 import Layout from '../../src/layout'
-import Intro from '../../src/sections/parental/intro'
-import Qui from '../../src/sections/parental/qui'
-import Quoi from '../../src/sections/parental/quoi'
-import Methode from '../../src/sections/parental/methode'
-import Pratique from '../../src/sections/parental/pratique'
+import Intro from '../../src/sections/sante/intro'
+import Qui from '../../src/sections/sante/qui'
+import Quoi from '../../src/sections/sante/quoi'
+import Methode from '../../src/sections/sante/methode'
+import Pratique from '../../src/sections/sante/pratique'
 import Banner from '/public/images/banners/2_bis.jpg'
 import { siteData } from '../../src/data/metadata'
 
 export const metadata = {
-    title: `Coaching parental | ${siteData.title}`,
+    title: `Coaching santé | ${siteData.title}`,
     description: 'Un accompagnement individuel pour vous aider à prendre soin de votre santé physique et mentale en relevant vos défis quotidiens. Acquérir des habitudes mentales pour gagner en sérénité et en confiance en soi.'
 }
 
