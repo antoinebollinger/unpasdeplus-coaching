@@ -25,10 +25,10 @@ export default function Liens({ className = 'bg-gray-100' }: { className?: strin
                             src={Parents}
                             width={200}
                             className="mx-auto rounded-full transition duration-200 scale-0 liens-img"
-                            alt="Coaching santé et bien-être des parents"
+                            alt="Coaching santé"
                         />
                         <p className="text-lg text-center">
-                            <strong>Coaching santé et bien-être des parents</strong>
+                            <strong>Coaching santé</strong>
                         </p>
                         <p className="text-lg text-start grow">
                             <strong>Vous manquez de temps</strong> pour prendre soin de vous&nbsp;? Vous avez mis en place des actions mais face au quotidien, à vos responsabilités professionnelles et personnelles, <strong>vous baissez les bras&nbsp;?</strong>
