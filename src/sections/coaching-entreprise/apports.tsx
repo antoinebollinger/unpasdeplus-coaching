@@ -7,7 +7,7 @@ import { faArrowTrendUp, faChartLine, faCheck, faCircleCheck, faCircleInfo, faHa
 export default function Apports({ className = '' }: { className?: string }) {
     useEffect(() => {
         reveal({
-            collection: document.querySelectorAll('.consequence, .resultats li'),
+            collection: document.querySelectorAll('.consequence, .resultats li, #apports li'),
             classesToRemove: ['scale-0', 'translate-y-full', 'opacity-0'],
         })
         reveal({
@@ -21,9 +21,9 @@ export default function Apports({ className = '' }: { className?: string }) {
         <div id="apports" className={`py-120 ${className}`}>
             <div className="container">
                 <div className="w-full lg:w-2/3 mx-auto flex flex-col gap-12">
-                    <p className="text-lg leading-6">
-                        <FontAwesomeIcon icon={faTriangleExclamation} className="text-primary-600 text-4xl" /> Les risques psychosociaux liés à la <strong>parentalité</strong>, <strong>aux défis quotidiens personnels et professionnels</strong> ont des conséquences pour l'entreprise&nbsp;:
-                    </p>
+                    <h2>
+                        Des risques psychosociaux liés à la parentalité qui ont de lourdes conséquences pour l'entreprise
+                    </h2>
                     <div className="relative flex flex-col lg:flex-row gap-6 justify-center items-center">
                         <div className="absolute z-[-1] inset-0 px-[calc(50%-2px)] lg:px-[calc(20%/2)] flex lg:items-center">
                             <div className="w-[4px] h-0 lg:w-0 lg:h-[4px] bg-primary-700 rounded transition-all duration-2500 progression"></div>
@@ -44,8 +44,45 @@ export default function Apports({ className = '' }: { className?: string }) {
                         }
                     </div>
                     <p className="text-xl leading-8">
-                        <FontAwesomeIcon icon={faCircleCheck} className="text-tertary-900 text-4xl" /> Engager une politique RH inclusive en soutenant la parentalité en entreprise et la qualité de vie au travail avec des <strong>actions concrètes</strong>, c'est agir pour <strong>l'épanouissement professionnel et personnel des salarié.es parents</strong> mais aussi pour <strong>la préservation de la propre performance de l'entreprise</strong>&nbsp;:
+                        Pourtant...
                     </p>
+                    <h2>
+                        Un salarié heureux est un salarié plus performant au travail
+                    </h2>
+                    <p>
+                        Selon une étude du Harvard/MIT&nbsp;:
+                    </p>
+                    <div className="flex justify-center align-center">
+                        <ul className="list-none list-inside fa-ul text-lg leading-8 mb-6">
+                            {
+                                [
+                                    (<>
+                                        <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
+                                        <span className="text-2xl font-bold text-tertary-900">31%</span> plus productif
+                                    </>),
+                                    (<>
+                                        <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
+                                        <span className="text-2xl font-bold text-tertary-900">2 x</span> moins malade
+                                    </>),
+                                    (<>
+                                        <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
+                                        <span className="text-2xl font-bold text-tertary-900">6 x</span> moins absent
+                                    </>),
+                                    (<>
+                                        <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
+                                        <span className="text-2xl font-bold text-tertary-900">2 x</span> plus loyal
+                                    </>),
+                                    (<>
+                                        <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
+                                        <span className="text-2xl font-bold text-tertary-900">55%</span> plus créatif
+                                    </>)
+                                ].map((e, i) => (
+                                    <li className="transition duration-200 opacity-0" key={i}>{e}</li>
+                                ))
+                            }
+
+                        </ul>
+                    </div>
                     <ul className="list-none list-inside fa-ul text-2xl leading-12 resultats">
                         <li className="opacity-0 translate-y-full">
                             <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faPlus} /></span>
