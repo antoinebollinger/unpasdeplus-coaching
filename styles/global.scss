@@ -19,20 +19,30 @@ body {
     overflow-x: hidden;
 }
 
-h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
+h1,
+h2,
+h3,
+h4,
+.h1,
+.h2,
+.h3,
+.h4 {
     font-family: var(--font-roboto), sans-serif;
     // @apply text-gray-900;
 }
 
-h1, .h1 {
+h1,
+.h1 {
     @apply mb-4 text-4xl lg:text-5xl font-medium text-primary-600;
 }
 
-h2, .h2 {
+h2,
+.h2 {
     @apply text-2xl lg:text-3xl text-tertary-900 font-medium mb-4;
 }
 
-h3 {
+h3,
+.h3 {
     @apply text-xl text-tertary-900 font-bold mb-2;
 }
 
@@ -46,8 +56,10 @@ p {
 
 .list-check {
     padding-left: 25px;
+
     li {
         padding-left: 10px;
+
         &::marker {
             content: '✔️';
         }
@@ -56,8 +68,10 @@ p {
 
 .list-mark {
     padding-left: 25px;
+
     li {
         padding-left: 10px;
+
         &::marker {
             content: '❌';
         }
@@ -79,6 +93,7 @@ p {
 section {
     padding-top: 120px;
     padding-bottom: 120px;
+
     &:first-of-type {
         padding-top: 60px;
     }
@@ -106,6 +121,7 @@ section:first-child {
     @apply bg-primary-600;
 }
 
-.no-scroll-bar::-webkit-scrollbar-thumb,.no-scroll-bar::-webkit-scrollbar-track {
+.no-scroll-bar::-webkit-scrollbar-thumb,
+.no-scroll-bar::-webkit-scrollbar-track {
     background: transparent
 }
