@@ -2,14 +2,19 @@
 import { useEffect } from 'react'
 import Image from 'next/image'
 import { reveal } from '../../utils/reveal'
-import PereFils from '/public/images/parents/pere_fils.jpg'
+import QuiImg from '/public/images/coaching-bien-etre-equilibre/qui.jpg'
+import Stress from '/public/images/coaching-bien-etre-equilibre/stress.jpg'
+import Emotions from '/public/images/coaching-bien-etre-equilibre/emotions.jpg'
+import Habitudes from '/public/images/coaching-bien-etre-equilibre/habitudes.jpg'
+import Alimentation from '/public/images/coaching-bien-etre-equilibre/alimentation.jpg'
+import Sport from '/public/images/coaching-bien-etre-equilibre/sport.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPersonBreastfeeding, faPersonRunning, faLightbulb, faHandshakeAngle, faCheck } from '@fortawesome/free-solid-svg-icons'
 
 export default function Qui({ className = 'bg-gray-100' }: { className?: string }) {
     useEffect(() => {
         reveal({
-            collection: document.querySelectorAll('.qui-img'),
+            collection: document.querySelectorAll('#qui img'),
             classesToRemove: ['scale-0', 'opacity-0']
         })
         reveal({
@@ -22,44 +27,44 @@ export default function Qui({ className = 'bg-gray-100' }: { className?: string 
     return (
         <section id="qui" className={className}>
             <div className="container">
-                <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
-                    <div className="w-full md:w-1/4 mx-auto transition duration-200 scale-0 opacity-0 qui-img">
+                <div className="flex flex-col md:flex-row gap-6 justify-center items-center mb-16">
+                    <div className="w-full md:w-1/4 mx-auto transition duration-200 scale-0 opacity-0 img">
                         <Image
-                            src={PereFils}
-                            width={PereFils.width}
-                            height={PereFils.height}
+                            src={QuiImg}
+                            width={QuiImg.width}
+                            height={QuiImg.height}
                             className="w-full rounded-full"
-                            alt="Parents en difficulté"
+                            alt="Le coaching est fait pour vous si..."
                         />
                     </div>
                     <div className="w-full md:w-3/4">
-                        <h2>Le coaching "Habitudes gagnantes" est fait pour vous si...</h2>
+                        <h2>Le coaching bien-être et équilibre est fait pour vous si...</h2>
                         <ul className="list-none list-inside fa-ul text-lg leading-8 mb-16">
                             {
                                 [
                                     (
                                         <>
                                             <span className="fa-li text-xl"><FontAwesomeIcon icon={faPersonBreastfeeding} /></span>
-                                            Vous êtes parents, jeunes parents occupés et <strong>prendre soin de vous relève du défi</strong>.
+                                            Prendre soin de vous relève du défi.
                                         </>
                                     ),
                                     (
                                         <>
                                             <span className="fa-li text-xl"><FontAwesomeIcon icon={faPersonRunning} /></span>
-                                            Vous savez que prendre soin de sa santé physique et mentale est important pour votre <strong>équilibre</strong> mais vous ne parvenez pas à le faire seul.e.
+                                            Vous savez que prendre soin de son <strong>bien-être physique et de sa santé mentale</strong> est important pour votre équilibre  <strong>physique, mental et émotionnel</strong> mais vous ne parvenez pas à le faire seul.e.
                                         </>
                                     ),
                                     (
                                         <>
                                             <span className="fa-li text-xl"><FontAwesomeIcon icon={faLightbulb} /></span>
-                                            Vous recherchez plus qu'un accompagnement, c'est être <strong>soutenu dans les défis quotidiens</strong> tout en prenant soin de vous, <strong>forger des habitudes gagnantes</strong> pour <strong>entrainer un mental</strong> à toute épreuve.
+                                            Vous recherchez plus qu'un accompagnement, c'est être <strong>soutenu</strong> dans les <strong>défis quotidiens</strong> tout en prenant soin de vous, forger des habitudes gagnantes pour entrainer un mental à toute épreuve.
 
                                         </>
                                     ),
                                     (
                                         <>
                                             <span className="fa-li text-xl"><FontAwesomeIcon icon={faHandshakeAngle} /></span>
-                                            Vous souhaitez appréhender les situations de façon différente pour éviter de se décourager, de craquer face aux situations difficiles et qui vous rendent vulnérables. Rester déterminé.es dans cette volonté de prendre soin de soi <strong>grâce aux mouvements et à l'alimentation</strong>. La priorité, c'est vous !
+                                            Vous souhaitez appréhender les situations de façon différente pour <strong>éviter de se décourager</strong>, de "craquer" face aux <strong>situations difficiles</strong> et qui vous rendent vulnérables. <br />Rester déterminé.es dans cette volonté de prendre soin de soi. La priorité, c'est vous !
                                         </>
                                     )
                                 ].map((e, i) => (
@@ -68,32 +73,31 @@ export default function Qui({ className = 'bg-gray-100' }: { className?: string 
                             }
                         </ul>
 
-                        <h2>Grâce au coaching "Habitudes gagnantes", vous serez&nbsp;:</h2>
+                        <h2>Grâce au coaching bien-être et équilibre, vous serez&nbsp;:</h2>
                         <ul className="list-none list-inside fa-ul text-lg leading-8">
                             {
                                 [
                                     (
                                         <>
                                             <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
-                                            <strong>Guidé.e</strong> lors des séances de coaching pour <strong>avancer pas à pas</strong> dans cette volonté de mieux-être
+                                            <strong>Guidé.e</strong><br />Avancer pas à pas, à votre rythme dans cette volonté de <strong>mieux-être</strong> lors des séances de coaching.
                                         </>
                                     ),
                                     (
                                         <>
                                             <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
-                                            <strong>Epaulé.e</strong> par un professionnel lors des <strong>situations décourageantes</strong>, des moments de doutes pour vivre cette transition progressivement.
+                                            <strong>Soutenu.e</strong><br />Surmonter les<strong>défis</strong>, les <strong>freins</strong> avec plus de <strong>sérénité</strong> et plus de <strong>confiance en soi</strong>.
                                         </>
                                     ),
                                     (
                                         <>
                                             <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
-                                            <strong>Challengé.e</strong> par un objectif source de <strong>motivation</strong>, de <strong>plaisir</strong> et de <strong>performance</strong> avec <strong>un sentiment de dépassement de soi</strong> et une <strong>fierté dans l'accomplissement</strong>.
+                                            <strong>Challengé.e</strong><br />Accompagné.e par un<strong>objectif atteignable et réalisable</strong> qui sera source de motivation, de plaisir et de performance.
                                         </>
                                     ),
                                     (
                                         <>
-                                            <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
-                                            Ainsi, gagner en <strong>sérénité</strong>, en <strong>confiance en soi</strong>, avec une <strong>meilleure connaissance & conscience de soi</strong> pour affronter <strong>les défis quotidiens</strong>.
+                                            <br />À la clé : <strong>retrouver un équilibre</strong> dans votre vie personnelle et professionnelle sur le plan mental, physique et émotionnel.
                                         </>
                                     )
                                 ].map((e, i) => (
@@ -101,6 +105,63 @@ export default function Qui({ className = 'bg-gray-100' }: { className?: string 
                                 ))
                             }
                         </ul>
+                    </div>
+                </div>
+                <div className="w-full flex flex-col md:flex-row gap-6 justify-between items-center">
+                    <div>
+                        <Image
+                            src={Stress}
+                            width={200}
+                            className="mx-auto rounded-full mb-6 transition duration-200 scale-0 img"
+                            alt="Mieux gérer son stress au quotidien"
+                        />
+                        <p className="text-center font-bold">
+                            Mieux gérer<br />son stress au quotidien
+                        </p>
+                    </div>
+                    <div>
+                        <Image
+                            src={Emotions}
+                            width={200}
+                            className="mx-auto rounded-full mb-6 transition duration-200 scale-0 img"
+                            alt="Mieux gérer ses émotions"
+                        />
+                        <p className="text-center font-bold">
+                            Mieux gérer ses émotions
+                        </p>
+                    </div>
+                    <div>
+                        <Image
+                            src={Habitudes}
+                            width={200}
+                            className="mx-auto rounded-full mb-6 transition duration-200 scale-0 img"
+                            alt="Mettre en place de nouvelles habitudes de vie"
+                        />
+                        <p className="text-center font-bold">
+                            Mettre en place de<br />nouvelles habitudes de vie
+                        </p>
+                    </div>
+                    <div>
+                        <Image
+                            src={Alimentation}
+                            width={200}
+                            className="mx-auto rounded-full mb-6 transition duration-200 scale-0 img"
+                            alt="S'alimenter de manière saine et équilibrée"
+                        />
+                        <p className="text-center font-bold">
+                            S'alimenter de manière<br />saine et équilibrée
+                        </p>
+                    </div>
+                    <div>
+                        <Image
+                            src={Sport}
+                            width={200}
+                            className="mx-auto rounded-full mb-6 transition duration-200 scale-0 img"
+                            alt="Développer votre forme grâce à une activité physique adaptée"
+                        />
+                        <p className="text-center font-bold">
+                            Développer votre forme grâce<br />à une activité physique adaptée
+                        </p>
                     </div>
                 </div>
             </div>

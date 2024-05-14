@@ -23,10 +23,6 @@ export default function Page() {
             link: '#quoi'
         },
         {
-            title: 'Ma méthode',
-            link: '#methode'
-        },
-        {
             title: 'En pratique',
             link: '#pratique'
         }
@@ -37,7 +33,7 @@ export default function Page() {
             <Intro />
             <Qui />
             <Quoi />
-            <Methode />
+            {/* <Methode /> */}
             <Pratique />
         </Layout >
     )

@@ -3,12 +3,12 @@ import { useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { reveal } from '../../utils/reveal'
-import Pratique1 from '/public/images/parents/1.webp'
-import Pratique2 from '/public/images/parents/2.webp'
-import Pratique3 from '/public/images/parents/3.webp'
-import Pratique4 from '/public/images/parents/4.webp'
+import Pratique1 from '/public/images/coaching-bien-etre-equilibre/pratique_1.webp'
+import Pratique2 from '/public/images/coaching-bien-etre-equilibre/pratique_2.webp'
+import Pratique3 from '/public/images/coaching-bien-etre-equilibre/pratique_3.jpg'
+import Pratique4 from '/public/images/coaching-bien-etre-equilibre/pratique_4.webp'
 
-export default function Pratique({ className = '' }: { className?: string }) {
+export default function Pratique({ className = 'bg-gray-100' }: { className?: string }) {
     useEffect(() => {
         reveal({
             collection: document.querySelectorAll('.career-step'),
@@ -46,7 +46,7 @@ export default function Pratique({ className = '' }: { className?: string }) {
                         </div>
                         <div className="w-full md:w-3/4 transition duration-200 opacity-0 translate-x-3/4 career-step">
                             <p className="text-lg text-gray-900">
-                                Séances individuelles en <strong>présentiel</strong> à Vannes et ses alentours et/ou <strong>distanciel</strong>. Durée de 1h/1h15 la séance à 10/15 jours d'intervalle
+                                Coaching en séances individuelles
                             </p>
                         </div>
                     </div>
@@ -62,7 +62,7 @@ export default function Pratique({ className = '' }: { className?: string }) {
                         </div>
                         <div className="w-full md:w-3/4 transition duration-200 opacity-0 translate-x-3/4 career-step">
                             <p className="text-lg text-gray-900">
-                                Des <strong>exercices de développement personnel</strong> entre les séances pour continuer à vous développer.
+                                Un programme efficace et complet
                             </p>
                         </div>
                     </div>
@@ -78,7 +78,7 @@ export default function Pratique({ className = '' }: { className?: string }) {
                         </div>
                         <div className="w-full md:w-3/4 transition duration-200 opacity-0 translate-x-3/4 career-step">
                             <p className="text-lg text-gray-900">
-                                Echanges WhatsApp pour <strong>garder la dynamique</strong> et vous inspirer.
+                                Ateliers collectifs
                             </p>
                         </div>
                     </div>
@@ -94,7 +94,7 @@ export default function Pratique({ className = '' }: { className?: string }) {
                         </div>
                         <div className="w-full md:w-3/4 transition duration-200 opacity-0 translate-x-3/4 career-step">
                             <p className="text-lg text-gray-900">
-                                <strong>Bilan à mi-parcours</strong> pour évaluer le chemin parcouru. <strong>Bilan final</strong> pour clôturer l'accompagnement.
+                                En présentiel à Vannes & ses alentours / distanciel sur toute la France
                             </p>
                         </div>
                     </div>

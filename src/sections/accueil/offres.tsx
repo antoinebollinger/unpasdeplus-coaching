@@ -67,7 +67,7 @@ export default function Offres({ className = 'bg-gray-100' }: { className?: stri
                 </div>
                 <div className="text-center">
                     <a target="_blank" rel="nofollow" href="https://calendly.com/unpasdeplus-coaching56/30min" className="main-btn gradient-btn focus:outline-none uppercase">
-                        Réserver votre appel découverte offre
+                        Réserver votre appel découverte offert
                     </a>
                 </div>
             </div>
