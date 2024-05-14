@@ -9,11 +9,15 @@ export interface onThisPage {
     link?: string
 }
 
-export interface modalProps {
+export interface dialogProps {
     header?: string,
     body?: string,
     href?: string,
     buttons?: string
+}
+
+export interface modalProps {
+    content?: string,
 }
 
 export interface CustomEvent extends SubmitEvent {

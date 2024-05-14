@@ -5,7 +5,7 @@ import Logo from '/public/logos/logo-texte-horizontal.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons'
 import { useEffect } from 'react'
-import { closeModal, openModal } from '../utils/modal'
+import { openDialog } from '../utils/dialog'
 import { CustomEvent, onThisPage } from '../models/types'
 import { siteData, emailMessage } from '../data/metadata'
 import Socials from './socials'
@@ -30,7 +30,7 @@ export default function Footer({
             if (e.target.elements["email_from"].value === '')
                 return
 
-            openModal({
+            openDialog({
                 body: emailMessage.sending, buttons: 'hidden'
             })
 
@@ -46,13 +46,13 @@ export default function Footer({
                 })
                 const response = await sendEmail.json()
                 if (response.sent)
-                    openModal({
+                    openDialog({
                         body: emailMessage.newsletterSent, buttons: 'hidden'
                     })
                 else
                     throw new Error('Fetch returned with sent = false')
             } catch (error) {
-                openModal({
+                openDialog({
                     body: emailMessage.fetchError.sprintf([process.env.NEXT_PUBLIC_EMAIL_TO, error.message]), buttons: 'hidden'
                 })
             }

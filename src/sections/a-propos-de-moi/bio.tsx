@@ -1,11 +1,11 @@
 'use client'
 import { useEffect } from 'react'
+import { renderToString } from 'react-dom/server'
 import Image from 'next/image'
 import { reveal } from '../../utils/reveal'
+import Parcours from './parcours'
 import Sabrina from '/public/images/qui-je-suis/sabrina.webp'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPersonRunning, faHandsHoldingChild, faBullseye, faTree, faHeart } from '@fortawesome/free-solid-svg-icons'
-import { madelyn } from '../../../styles/font'
+import { openModal } from '../../utils/modal'
 
 export default function Bio({ className = '' }: { className?: string }) {
     useEffect(() => {
@@ -18,12 +18,19 @@ export default function Bio({ className = '' }: { className?: string }) {
             classesToRemove: ['translate-y-full', 'opacity-0'],
             delayIncrement: 100
         })
+        document.querySelector("#voirParcours").addEventListener('click', e => {
+            e.preventDefault()
+            const parcours = renderToString(<Parcours />)
+            openModal({
+                content: parcours
+            })
+        })
     }, [])
 
     return (
         <section id="bio" className={className}>
             <div className="container">
-                <div className="flex flex-col md:flex-row gap-6 justify-center items-start">
+                <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
                     <div className="w-1/2 md:w-1/4 mx-auto transition duration-200 scale-0 opacity-0 about-img">
                         <Image
                             src={Sabrina}
@@ -33,43 +40,40 @@ export default function Bio({ className = '' }: { className?: string }) {
                     </div>
                     <div className="w-full md:w-3/4">
                         <div className="mb-8 text-center md:text-start mb-10">
-                            <h1>Sabrina Appriou</h1>
-                            <h2 className="leading-8">
-                                Fondatrice <span className={`${madelyn.className} text-5xl lg:text-7xl -translate-y-4`}>Un&nbsp;pas&nbsp;de&nbsp;plus</span>&nbsp;Coaching
-                            </h2>
-                            <h3>Coach consultante professionnelle certifiée RNCP, basée à Vannes (56)</h3>
+                            <p className="h1">Bien dans ses baskets, bien dans sa tête</p>
                         </div>
                         <div className="transition duration-200 opacity-0 translate-y-full about-text">
-                            <h3><FontAwesomeIcon icon={faHandsHoldingChild} /> Maman de 3 enfants</h3>
+                            <h2>Course à pied, mon activité physique quotidienne</h2>
                             <p className="text-lg mb-6">
-                                <strong>Parentalité</strong>, <strong>bien-être au travail</strong>, <strong>charge mentale</strong>, <strong>santé physique et mentale</strong>, sont des sujets importants pour moi en tant que maman de trois enfants, sportive et entrepreneure. Face aux défis quotidiens, dans le but de trouver sans cesse le meilleur équilibre, j'ai à coeur d'accompagner les parents, jeunes parents à entrainer le mental pour <strong>gagner en sérénité</strong>.
+                                Je pratique la course à pied depuis l'âge de mes 18 ans. L'activité physique tient une place importante dans mon quotidien. Quand je cours, je me sens libre, forte et combative. Amoureuse de la nature, je suis une adepte des randonnées, des trails (courses en milieu naturel). Le mouvement, c'est la vie !
                             </p>
                         </div>
                         <div className="transition duration-200 opacity-0 translate-y-full about-text">
-                            <h3><FontAwesomeIcon icon={faPersonRunning} /> Course à pied</h3>
+                            <h2>Les challenges, source de motivation</h2>
                             <p className="text-lg mb-6">
-                                Passionnée depuis plus de 20 ans. La course à pied est une ressource pour moi de <strong>dépassement de soi</strong>, de <strong>bien-être</strong> et d'être en <strong>mouvement</strong>. Quand je ne cours pas, je marche pour explorer les sentiers côtiers de la Bretagne.
+                                Mon mantra: "Ne limite pas tes défis, défis tes limites".
+                                <br />
+                                J'aime les <strong>challenges</strong> personnels, professionnels et sportifs, une <strong>source de motivation</strong> et de <strong>dépassement de soi</strong>. Les défis contribuent à forger le mental, à puiser les <strong>ressources physiques et mentales</strong> nécessaires pour aller au bout d'un objectif.
+
                             </p>
                         </div>
                         <div className="transition duration-200 opacity-0 translate-y-full about-text">
-                            <h3><FontAwesomeIcon icon={faBullseye} /> Challenge</h3>
+                            <h2>Alimentation saine et consciente</h2>
                             <p className="text-lg mb-6">
-                                J'aime les <strong>challenges</strong>, que ce soit dans les domaines sportif, professionnel ou personnel. Selon moi, ils sont source de <strong>motivation</strong> et <strong>permettent de nous dépasser</strong>.
+                                Sportive , j'accorde une importance à <strong>l'alimentation</strong>. Un corps sain dans un esprit sain. Pour moi, prendre soin de soi, c'est un <strong>équilibre harmonieux entre le corps et l'esprit</strong>. L'alimentation saine et consciente nourrit à la fois le corps et la tête, sans compromis sur le plaisir.
                             </p>
                         </div>
                         <div className="transition duration-200 opacity-0 translate-y-full about-text">
-                            <h3><FontAwesomeIcon icon={faTree} /> Nature</h3>
                             <p className="text-lg mb-6">
-                                <strong>Connectée à la nature</strong>, source d'énergie et de sérénité pour moi. J'accorde également une grande importance <strong>à une alimentation saine et respectueuse de l'environnement</strong>.
-                            </p>
-                        </div>
-                        <div className="transition duration-200 opacity-0 translate-y-full about-text">
-                            <h3><FontAwesomeIcon icon={faHeart} /> Alimentation émotionnelle</h3>
-                            <p className="text-lg mb-6">
-                                Lors de ma certification de coach professionnel, j'ai présenté un mémoire qui porte sur « Le coaching et la perte de poids ». J’évoque <strong>l’impact des émotions</strong> sur notre <strong>alimentation</strong>. Etre accompagné.e pour en prendre <strong>conscience</strong> et <strong>mieux les gérer</strong>.
+                                Au fil des années, j'ai gagné en sérénité en prenant soin de mon corps et ma tête . Cela n'a pas toujours été le cas. Découvrez mon parcours pour comprendre comment je suis parvenue à m'épanouir et à devenir la personne que je suis aujourd'hui.
                             </p>
                         </div>
                     </div>
+                </div>
+                <div className="text-center">
+                    <a target="_blank" rel="nofollow" href="#" className="main-btn gradient-btn focus:outline-none uppercase" id="voirParcours">
+                        Voir mon parcours
+                    </a>
                 </div>
             </div>
         </section >

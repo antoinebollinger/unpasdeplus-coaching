@@ -3,12 +3,13 @@ import React, { useEffect } from 'react'
 import Script from 'next/script'
 import Header from './components/header'
 import Footer from './components/footer'
-import Modal from './utils/modal'
+import Dialog from './utils/dialog'
 import Backtotop from './components/backtotop'
 import { banner, onThisPage } from './models/types'
 import './utils/sprintf'
 import { motion } from 'framer-motion'
 import Banner from '/public/images/banners/1.jpg'
+import Modal from './utils/modal'
 
 export default function Layout({
     children,
@@ -41,6 +42,7 @@ export default function Layout({
                 {children}
                 {footer && <Footer onThisPage={onThisPage} />}
                 <Backtotop onThisPage={onThisPage} />
+                <Dialog className="z-[999]" />
                 <Modal className="z-[999]" />
             </motion.div>
             <Script src="/scripts/axeptio.js" />

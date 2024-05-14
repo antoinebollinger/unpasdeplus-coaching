@@ -2,7 +2,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons'
 import { useEffect } from 'react'
-import { openModal } from '../utils/modal'
+import { openDialog } from '../utils/dialog'
 import { emailMessage } from '../data/metadata'
 import { CustomEvent } from '../models/types'
 import Link from 'next/link'
@@ -15,7 +15,7 @@ export default function Contact({ className = '' }: { className?: string }) {
             if (!e.target.elements["consent"].checked)
                 return
 
-            openModal({
+            openDialog({
                 body: emailMessage.sending, buttons: 'hidden'
             })
 
@@ -31,13 +31,13 @@ export default function Contact({ className = '' }: { className?: string }) {
                 })
                 const response = await sendEmail.json()
                 if (response.sent)
-                    openModal({
+                    openDialog({
                         body: emailMessage.messageSent.sprintf([e.target.elements['name'].value]), buttons: 'hidden'
                     })
                 else
                     throw new Error('Fetch returned with sent = false')
             } catch (error) {
-                openModal({
+                openDialog({
                     body: emailMessage.fetchError.sprintf([process.env.NEXT_PUBLIC_EMAIL_TO, error.message]), buttons: 'hidden'
                 })
             }
