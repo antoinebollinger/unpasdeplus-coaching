@@ -25,21 +25,25 @@ export default function Intro({ className = '' }: { className?: string }) {
                         />
                     </div>
                     <div className="w-full lg:w-3/4 lg:order-0">
-                        <h1>Soutien à la parentalité en entreprise</h1>
-                        <h2>Soutenir vos salarié.es, c'est créer la différence</h2>
-                        <br />
+                        <h1>Améliorer la performance par le bien-être</h1>
                         <p className="text-lg leading-6 mb-6">
-                            Prendre soin de la <strong>santé physique et mentale de vos collaborateurs</strong>, c'est être attentif à la <strong>qualité de vie au travail</strong> et renforcer de meilleures conditions de travail.
+                            <strong>L'équilibre vie pro perso</strong> est un défi constant, et jugé <strong>difficile</strong> surtout pour les <strong>parents actifs pour 77%</strong>.
                             <br />
                             <br />
-                            Mon accompagnement agit sur le <strong>bien-être des parents</strong> pour permettre de <strong>concilier sereinement parentalité/travail</strong> et défis quotidiens personnels et professionnels.
+                            Notre mission : agir sur le <strong>bien-être des salariés-parents</strong> pour permettre aux entreprises d'avoir des <strong>salariés en forme</strong> et concilier sereinement parentalité et travail.
+                        </p>
+                        <p className="text-center text-lg leading-6 mb-6">
+                            <strong>Conciliation travail & famille</strong>
+                            <br />
+                            <br />
+                            une priorité n° 1 pour 66% des parents.
                         </p>
                     </div>
                 </div>
                 <div className="text-center">
-                    <Link href="/contact" className="main-btn gradient-btn focus:outline-none uppercase">
-                        Me contacter pour en savoir plus
-                    </Link>
+                    <a target="_blank" rel="nofollow" href="https://calendly.com/unpasdeplus-coaching56/30min" className="main-btn gradient-btn focus:outline-none uppercase">
+                        Réserver votre appel découverte offert
+                    </a>
                 </div>
             </div>
         </section>

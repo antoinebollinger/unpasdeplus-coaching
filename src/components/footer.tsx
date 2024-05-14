@@ -94,8 +94,8 @@ export default function Footer({
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="/qui-je-suis">
-                                            Qui je suis
+                                        <Link href="/a-propos-de-moi">
+                                            À propos de moi
                                         </Link>
                                     </li>
                                     <li>
@@ -121,11 +121,16 @@ export default function Footer({
                         </div>
                         <div className="w-full md:w-1/3 xl:w-1/4">
                             <div className="mb-8 footer-link">
-                                <p className="footer-title">Mes accompagnements</p>
+                                <p className="footer-title">Mes offres</p>
                                 <ul>
                                     <li>
-                                        <Link href="/coaching-sante">
-                                            Coaching santé
+                                        <Link href="/coaching-perte-de-poids">
+                                            Coaching perte de poids
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href="/coaching-bien-etre-equilibre">
+                                            Coaching bien-être & équilibre
                                         </Link>
                                     </li>
                                     <li>

@@ -4,14 +4,34 @@
 
 .navbar-nav {
     .nav-item {
-        > a {
+        >a {
             @apply relative inline-block px-8 py-2 font-bold text-gray-900 uppercase duration-200 text-left lg:text-center cursor-pointer md:text-xs xl:text-base;
+
+            ~ul {
+                @apply w-max max-h-0 md:absolute overflow-hidden transition md:px-0 px-8;
+
+                a {
+                    @apply text-left;
+                }
+
+                &:hover {
+                    @apply max-h-max;
+                }
+            }
+
+            &:hover~ul {
+                @apply max-h-max;
+            }
         }
-        > span {
+
+
+        >span {
             @apply relative inline-block ps-8 py-2 font-bold text-gray-900 uppercase duration-200 text-left md:text-xs xl:text-base;
         }
-        &.active, &:hover {
-            > a {
+
+        &.active,
+        &:hover {
+            >a {
                 @apply text-tertary-900;
             }
         }

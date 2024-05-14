@@ -1,12 +1,12 @@
 import Layout from '../../src/layout'
-import Parcours from '../../src/sections/qui-je-suis/parcours'
-import Pourquoi from '../../src/sections/qui-je-suis/pourquoi'
-import Bio from '../../src/sections/qui-je-suis/bio'
+import Parcours from '../../src/sections/a-propos-de-moi/parcours'
+import Pourquoi from '../../src/sections/a-propos-de-moi/pourquoi'
+import Bio from '../../src/sections/a-propos-de-moi/bio'
 import Banner from '/public/images/banners/4.jpg'
 import { siteData } from '../../src/data/metadata'
 
 export const metadata = {
-    title: `Qui je suis | ${siteData.title}`,
+    title: `À propos de moi | ${siteData.title}`,
     description: `Sabrina Appriou, fondatrice Un pas de plus Coaching, coach consultante professionnelle certifiée RNCP, basée à Vannes (56). ${siteData.description}`
 }
 

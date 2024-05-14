@@ -1,9 +1,8 @@
 import Layout from '../src/layout'
 import Intro from '../src/sections/accueil/intro'
-import Liens from '../src/sections/accueil/liens'
-import Approche from '../src/sections/accueil/approche'
+import Offres from '../src/sections/accueil/offres'
+import Sabrina from '../src/sections/accueil/sabrina'
 import Apports from '../src/sections/accueil/apports'
-import Temoignages from '../src/sections/accueil/temoignages'
 import Partenaires from '../src/sections/accueil/partenaires'
 import Banner from '/public/images/banners/1.jpg'
 
@@ -14,26 +13,29 @@ export default function Page() {
             link: '#header'
         },
         {
+            title: 'Mes offres',
+            link: '#mes-offres'
+        },
+        {
+            title: 'Sabrina Appriou',
+            link: '#sabrina-appriou'
+        },
+        {
             title: 'Apports du coaching',
             link: '#apports-coaching'
         },
         {
-            title: 'Témoignages',
-            link: '#temoignages'
-        },
-        {
             title: 'Mes partenaires',
-            link: '#partenaires'
+            link: '#mes-partenaires'
         }
     ];
 
     return (
         <Layout banner={Banner} onThisPage={onThisPage} >
             <Intro />
-            <Liens />
-            <Approche />
+            <Offres />
+            <Sabrina />
             <Apports />
-            <Temoignages />
             <Partenaires />
         </Layout >
     )
