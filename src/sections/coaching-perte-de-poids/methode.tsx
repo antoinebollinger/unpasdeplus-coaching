@@ -42,9 +42,6 @@ export default function Methode({ className = '' }: { className?: string }) {
                             <h2>Alimentation équilivrée dans l'assiette et dans la tête</h2>
                             <p className="text-lg leading-6 transition duration-200 opacity-0 text">
                                 Les émotions peuvent influencer les habitudes alimentaires. Les identifier, les comprendre peuvent aider à une meilleure gestion des émotions pour maintenir une relation saine avec la nourriture.
-                                <br />
-                                <br />
-                                Grâce au coaching perte de poids, vous serez&nbsp;:
                             </p>
                         </div>
                     </div>

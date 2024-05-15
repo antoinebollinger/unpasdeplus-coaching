@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { reveal } from '../../utils/reveal'
 import IntroImg from '/public/images/entreprises/intro.webp'
+import Calendly from '../../components/calendly'
 
 export default function Intro({ className = '' }: { className?: string }) {
     useEffect(() => {
@@ -32,18 +33,13 @@ export default function Intro({ className = '' }: { className?: string }) {
                             <br />
                             Notre mission&nbsp;: agir sur le <strong>bien-être des salariés-parents</strong> pour permettre aux entreprises d'avoir des <strong>salariés en forme</strong> et concilier sereinement parentalité et travail.
                         </p>
-                        <p className="text-center text-lg leading-6 mb-6">
-                            <strong>Conciliation travail & famille</strong>
-                            <br />
-                            <br />
-                            une priorité n° 1 pour 66% des parents.
+                        <p className="text-xl leading-8 mb-6">
+                            <strong>Conciliation travail & famille</strong> : une priorité n° 1 pour 66% des parents.
                         </p>
                     </div>
                 </div>
                 <div className="text-center">
-                    <a target="_blank" rel="nofollow" href="https://calendly.com/unpasdeplus-coaching56/30min" className="main-btn gradient-btn focus:outline-none uppercase">
-                        Réserver votre appel découverte offert
-                    </a>
+                    <Calendly />
                 </div>
             </div>
         </section>

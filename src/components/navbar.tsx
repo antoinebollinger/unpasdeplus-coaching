@@ -14,7 +14,7 @@ export default function Navbar() {
         let scrollpos = window.scrollY
         const navigation = document.querySelector('.navigation')
         const backToTop = document.querySelector<HTMLElement>('.back-to-top')
-        if (scrollpos > 10)
+        if (scrollpos > 100)
             navigation.classList.add('stuck')
         else
             navigation.classList.remove('stuck')

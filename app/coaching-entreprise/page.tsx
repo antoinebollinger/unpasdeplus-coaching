@@ -1,11 +1,12 @@
 import Layout from '../../src/layout'
 import Intro from '../../src/sections/coaching-entreprise/intro'
-import Qui from '../../src/sections/coaching-entreprise/qui'
-import Apports from '../../src/sections/coaching-entreprise/apports'
-import Services from '../../src/sections/coaching-entreprise/services'
-import Qualite from '../../src/sections/coaching-entreprise/qualite'
 import Banner from '/public/images/banners/3.jpg'
 import { siteData } from '../../src/data/metadata'
+import Enjeux from '../../src/sections/coaching-entreprise/enjeux'
+import Risques from '../../src/sections/coaching-entreprise/risques'
+import Performance from '../../src/sections/coaching-entreprise/performance'
+import Attractivite from '../../src/sections/coaching-entreprise/attractivite'
+import Cles from '../../src/sections/coaching-entreprise/cles'
 
 export const metadata = {
     title: `Coaching entreprise | ${siteData.title}`,
@@ -35,10 +36,11 @@ export default function Page() {
     return (
         <Layout banner={Banner} onThisPage={onThisPage}>
             <Intro />
-            <Qui />
-            <Apports />
-            <Services />
-            <Qualite />
+            <Enjeux />
+            <Risques />
+            <Performance />
+            <Attractivite />
+            <Cles />
         </Layout >
     )
 }

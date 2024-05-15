@@ -16,9 +16,6 @@ export default function Header({
     useLayoutEffect(() => {
         if (navRef.current) {
             headerRef.current.style.height = `${navRef.current.offsetHeight}px`
-            // headerRef.current.style.marginTop = `${navRef.current.offsetHeight}px`
-            // document.body.style.paddingTop = `${navRef.current.offsetHeight}px`
-            // document.body.style.scrollMarginTop = `${navRef.current.offsetHeight}px`
         }
     }, [])
 
