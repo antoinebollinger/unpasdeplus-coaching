@@ -3,12 +3,10 @@ import { useEffect } from 'react'
 import Image, { StaticImageData } from 'next/image'
 import Link from 'next/link'
 import { reveal } from '../../utils/reveal'
-import PerteDePoids from '/public/images/accueil/baskets.jpg'
 import Balance from '/public/images/accueil/balance.jpg'
 import Equilibre from '/public/images/accueil/equilibre.jpg'
 import Entreprise from '/public/images/accueil/entreprises.webp'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCalendarDays } from '@fortawesome/free-solid-svg-icons'
+import Calendly from '../../components/calendly'
 
 export default function Offres({ className = 'bg-gray-100' }: { className?: string }) {
     useEffect(() => {
@@ -63,9 +61,7 @@ export default function Offres({ className = 'bg-gray-100' }: { className?: stri
                     )}
                 </div>
                 <div className="text-center">
-                    <a target="_blank" rel="nofollow" href="https://calendly.com/unpasdeplus-coaching56/30min" className="main-btn gradient-btn focus:outline-none uppercase">
-                        <FontAwesomeIcon icon={faCalendarDays} />&nbsp;&nbsp;Réserver votre<br />appel découverte offert
-                    </a>
+                    <Calendly />
                 </div>
             </div>
         </section>

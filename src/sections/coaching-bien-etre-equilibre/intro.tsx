@@ -3,6 +3,7 @@ import { useEffect } from 'react'
 import Image from 'next/image'
 import { reveal } from '../../utils/reveal'
 import IntroImg from '/public/images/coaching-bien-etre-equilibre/intro.jpg'
+import Calendly from '../../components/calendly'
 
 export default function Intro({ className = '' }: { className?: string }) {
     useEffect(() => {
@@ -16,7 +17,6 @@ export default function Intro({ className = '' }: { className?: string }) {
             delayIncrement: 50
         })
     }, [])
-
 
     return (
         <section id="introduction" className={className}>
@@ -41,9 +41,7 @@ export default function Intro({ className = '' }: { className?: string }) {
                     </div>
                 </div>
                 <div className="text-center">
-                    <a target="_blank" rel="nofollow" href="https://calendly.com/unpasdeplus-coaching56/30min" className="main-btn gradient-btn focus:outline-none uppercase">
-                        Réserver votre appel découverte offert
-                    </a>
+                    <Calendly />
                 </div>
             </div>
         </section>

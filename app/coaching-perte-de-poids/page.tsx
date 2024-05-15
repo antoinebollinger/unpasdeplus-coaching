@@ -5,6 +5,8 @@ import Temoignages from '../../src/sections/coaching-perte-de-poids/temoignages'
 
 import Banner from '/public/images/banners/2_ter.jpg'
 import { siteData } from '../../src/data/metadata'
+import Methode from '../../src/sections/coaching-perte-de-poids/methode'
+import Resultat from '../../src/sections/coaching-perte-de-poids/resultat'
 
 export const metadata = {
     title: `Coaching perte de poids | ${siteData.title}`,
@@ -14,12 +16,20 @@ export const metadata = {
 export default function Page() {
     const onThisPage = [
         {
-            title: 'Introduction',
-            link: '#header'
+            title: 'Le coaching perte de poids',
+            link: '#top'
         },
         {
-            title: 'Le coaching perte de poids',
-            link: '#quoi'
+            title: 'Méthode',
+            link: '#methode'
+        },
+        {
+            title: 'Resultat',
+            link: '#resultat'
+        },
+        {
+            title: 'Témoignages',
+            link: '#temoignages'
         }
     ];
 
@@ -27,6 +37,8 @@ export default function Page() {
         <Layout banner={Banner} onThisPage={onThisPage}>
             <Intro />
             <Quoi />
+            <Methode />
+            <Resultat />
             <Temoignages />
         </Layout >
     )

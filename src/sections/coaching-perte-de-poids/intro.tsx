@@ -4,17 +4,13 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { reveal } from '../../utils/reveal'
 import IntroImg from '/public/images/coaching-perte-de-poids/intro.jpg'
+import Calendly from '../../components/calendly'
 
 export default function Intro({ className = '' }: { className?: string }) {
     useEffect(() => {
         reveal({
-            collection: document.querySelectorAll('.parents-img'),
+            collection: document.querySelectorAll('#introduction .transition'),
             classesToRemove: ['scale-0']
-        })
-        reveal({
-            collection: document.querySelectorAll('#introduction li'),
-            classesToRemove: ['opacity-0'],
-            delayIncrement: 50
         })
     }, [])
 
@@ -23,14 +19,14 @@ export default function Intro({ className = '' }: { className?: string }) {
         <section id="introduction" className={className}>
             <div className="container">
                 <div className="w-full lg:w-2/3 mx-auto flex flex-col lg:flex-row gap-6 justify-center items-center mb-16">
-                    <div className="w-2/3 lg:w-1/4 lg:order-1">
+                    <div className="w-2/3 lg:w-1/4">
                         <Image
                             src={IntroImg}
                             alt="Intro parents"
-                            className="w-full rounded-full mx-auto transition duration-200 scale-0 parents-img"
+                            className="w-full rounded-full mx-auto transition duration-200 scale-0 opacity-0"
                         />
                     </div>
-                    <div className="w-full lg:w-3/4 lg:order-0">
+                    <div className="w-full lg:w-3/4">
                         <p className="h2">Perdre du poids de manière saine et durable&nbsp;: l'art du coaching bienveillant.</p>
                         <br />
                         <p className="text-lg leading-6 mb-6">
@@ -45,9 +41,7 @@ export default function Intro({ className = '' }: { className?: string }) {
                     </div>
                 </div>
                 <div className="text-center">
-                    <a target="_blank" rel="nofollow" href="https://calendly.com/unpasdeplus-coaching56/30min" className="main-btn gradient-btn focus:outline-none uppercase">
-                        Je prends contact pour appel découverte
-                    </a>
+                    <Calendly />
                 </div>
             </div>
         </section>
