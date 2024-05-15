@@ -32,7 +32,7 @@ export default function Parcours() {
                     </div>
                     <div className="w-full md:w-3/4">
                         <p className="text-lg text-gray-900">
-                            Une vie sans trop me poser de question : métro, boulot, dodo. Salariée et maman de 2 enfants en bas âge. Rythme effréné, le sentiment de mener une course contre la montre au quotidien. C'était il y a quelques années. Au fil du temps, la quête de sens, de mes aspirations, s'installent.
+                            Une vie sans trop me poser de question&nbsp;: métro, boulot, dodo. Salariée et maman de 2 enfants en bas âge. Rythme effréné, le sentiment de mener une course contre la montre au quotidien. C'était il y a quelques années. Au fil du temps, la quête de sens, de mes aspirations, s'installent.
                         </p>
                     </div>
                 </div>
@@ -48,7 +48,7 @@ export default function Parcours() {
                     </div>
                     <div className="w-full md:w-3/4">
                         <p className="text-lg text-gray-900">
-                            Je me suis sentie tiraillée entre être présente pour mes enfants et réussir professionnellement, tout en essayant de trouver <strong>mon équilibre de vie personnelle, familiale et professionnelle</strong>. À cette période-là, je trouvais mon équilibre grâce à ma passion : l'activité physique, la course à pied. Un allié au quotidien, ma bulle d'oxygène.
+                            Je me suis sentie tiraillée entre être présente pour mes enfants et réussir professionnellement, tout en essayant de trouver <strong>mon équilibre de vie personnelle, familiale et professionnelle</strong>. À cette période-là, je trouvais mon équilibre grâce à ma passion&nbsp;: l'activité physique, la course à pied. Un allié au quotidien, ma bulle d'oxygène.
                         </p>
                     </div>
                 </div>

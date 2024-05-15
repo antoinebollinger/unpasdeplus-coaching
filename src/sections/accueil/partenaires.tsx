@@ -43,7 +43,7 @@ export default function Partenaires({ className = '' }: { className?: string }) 
                                 </>
                             )
                         ].map((e, i) => (
-                            <div className="rounded-xl shadow-xl bg-white p-4 w-full lg:w-1/3 flex flex-col lg:flex-row gap-6 justify-center items-center transtion duration-200 opacity-0 translate-y-1/4 partenaire" key={i}>{e}</div>
+                            <div className="rounded-xl shadow-xl bg-white p-4 w-full lg:w-1/3 flex flex-col lg:flex-row gap-6 justify-center items-center transtion duration-200 opacity-0 translate-y-1/4 hover:scale-[1.05] partenaire" key={i}>{e}</div>
                         ))
                     }
                 </div>

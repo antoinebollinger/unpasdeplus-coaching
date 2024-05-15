@@ -33,7 +33,7 @@ export default function Qui({ className = 'bg-gray-100' }: { className?: string 
                             Aujourd'hui, les salariés-parents recherchent plus de <strong>flexibilité d'organisation</strong> pour <strong>mieux concilier vie pro perso</strong>. Des conditions de travail, une qualité de vie au travail où l'on prend en compte les <strong>responsabilités familiales</strong>, les <strong>contraintes et les imprévus</strong> d'un salarié parent.
                             <br />
                             <br />
-                            Réussir à tout jongler : s'occuper de ses enfants, être performant au travail, prendre du temps pour soi est un jeu d'équilibriste. Difficile parfois de trouver un <strong>équilibre de vie</strong> face à une <strong>charge mentale importante</strong> qu'incombe d'être à la fois parent et salarié.
+                            Réussir à tout jongler&nbsp;: s'occuper de ses enfants, être performant au travail, prendre du temps pour soi est un jeu d'équilibriste. Difficile parfois de trouver un <strong>équilibre de vie</strong> face à une <strong>charge mentale importante</strong> qu'incombe d'être à la fois parent et salarié.
                             <br />
                             <br />
                             Ces <strong>défis personnels et défis professionnels</strong> ont des répercussions sur la <strong>santé physique et mentale</strong> des salariés. Charge mentale importante, fatigue physique et mentale jusqu'à un état d'épuisement mental et physique peuvent être sources de <strong>risques psychosociaux</strong> au travail.

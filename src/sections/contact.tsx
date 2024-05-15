@@ -1,6 +1,6 @@
 'use client'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faLocationDot, faPhone, faCalendarDays } from '@fortawesome/free-solid-svg-icons'
 import { useEffect } from 'react'
 import { openDialog } from '../utils/dialog'
 import { emailMessage } from '../data/metadata'
@@ -59,6 +59,10 @@ export default function Contact({ className = '' }: { className?: string }) {
                             <br />
                             <p className="text-lg md:text-2xl">
                                 <FontAwesomeIcon icon={faPhone} /> <a href="tel:+33661794699" title="Téléphoner à Sabrina" className="hover:text-secondary-700 transition">06 61 79 46 99</a>
+                            </p>
+                            <br />
+                            <p className="text-lg md:text-2xl">
+                                <FontAwesomeIcon icon={faCalendarDays} /> <a target="_blank" rel="nofollow" href="https://calendly.com/unpasdeplus-coaching56/30min" title="Réserver un appel découverte offert" className="hover:text-secondary-700 transition">Réserver un appel découverte offert sur Calendly</a>
                             </p>
                             <br />
                             <p className="text-lg md:text-2xl">

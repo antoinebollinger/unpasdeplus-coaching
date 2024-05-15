@@ -31,7 +31,7 @@ export default function Intro({ className = '' }: { className?: string }) {
                         />
                     </div>
                     <div className="w-full lg:w-3/4 lg:order-0">
-                        <p className="h2">Perdre du poids de manière saine et durable : l'art du coaching bienveillant.</p>
+                        <p className="h2">Perdre du poids de manière saine et durable&nbsp;: l'art du coaching bienveillant.</p>
                         <br />
                         <p className="text-lg leading-6 mb-6">
                             La quête <strong>d'une perte de poids saine et durable</strong> est souvent parsemée d'embûches.
@@ -46,7 +46,7 @@ export default function Intro({ className = '' }: { className?: string }) {
                 </div>
                 <div className="text-center">
                     <a target="_blank" rel="nofollow" href="https://calendly.com/unpasdeplus-coaching56/30min" className="main-btn gradient-btn focus:outline-none uppercase">
-                        Je prends contact pour appel découverte (Calendly)
+                        Je prends contact pour appel découverte
                     </a>
                 </div>
             </div>

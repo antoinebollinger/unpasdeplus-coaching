@@ -97,7 +97,7 @@ export default function Qui({ className = 'bg-gray-100' }: { className?: string 
                                     ),
                                     (
                                         <>
-                                            <br />À la clé : <strong>retrouver un équilibre</strong> dans votre vie personnelle et professionnelle sur le plan mental, physique et émotionnel.
+                                            <br />À la clé&nbsp;: <strong>retrouver un équilibre</strong> dans votre vie personnelle et professionnelle sur le plan mental, physique et émotionnel.
                                         </>
                                     )
                                 ].map((e, i) => (

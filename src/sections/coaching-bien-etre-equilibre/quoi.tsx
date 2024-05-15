@@ -33,7 +33,7 @@ export default function Quoi({ className = '' }: { className?: string }) {
                         Le coaching bien-être et équilibre vous aide à retrouver <strong>l'harmonie entre bien-être intérieur et extérieur</strong>.
                         <br />
                         <br />
-                        C'est un parcours de coaching pour un <strong>mieux-être au quotidien</strong> s'articulent autour de 3 axes :
+                        C'est un parcours de coaching pour un <strong>mieux-être au quotidien</strong> s'articulent autour de 3 axes&nbsp;:
                     </p>
                 </div>
                 <div className="flex flex-col lg:flex-row gap-16 justify-center items-stretch">
