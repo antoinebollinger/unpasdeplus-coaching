@@ -6,7 +6,7 @@ import { reveal } from '../../utils/reveal'
 import Pratique1 from '/public/images/coaching-bien-etre-equilibre/pratique_1.webp'
 import Pratique2 from '/public/images/coaching-bien-etre-equilibre/pratique_2.webp'
 import Pratique3 from '/public/images/coaching-bien-etre-equilibre/pratique_3.jpg'
-import Pratique4 from '/public/images/coaching-bien-etre-equilibre/pratique_4.webp'
+import Pratique4 from '/public/images/coaching-bien-etre-equilibre/pratique_4.jpg'
 
 export default function Pratique({ className = 'bg-gray-100' }: { className?: string }) {
     useEffect(() => {
