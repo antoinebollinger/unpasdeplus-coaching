@@ -10,7 +10,7 @@ export default function Page() {
     const onThisPage = [
         {
             title: 'Introduction',
-            link: '#header'
+            link: '#top'
         },
         {
             title: 'Mes offres',

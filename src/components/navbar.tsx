@@ -15,9 +15,9 @@ export default function Navbar() {
         const navigation = document.querySelector('.navigation')
         const backToTop = document.querySelector<HTMLElement>('.back-to-top')
         if (scrollpos > 10)
-            navigation.classList.add('sticky')
+            navigation.classList.add('stuck')
         else
-            navigation.classList.remove('sticky')
+            navigation.classList.remove('stuck')
         if (scrollpos > 300)
             backToTop.style.opacity = '1'
         else

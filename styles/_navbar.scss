@@ -1,64 +1,76 @@
-.navbar-brand {
-    aspect-ratio: 300/105;
-}
+.navigation {
+    @apply sticky top-0 left-0 z-30 w-full py-4 md:py-2 duration-200 bg-white;
 
-.navbar-nav {
-    .nav-item {
-        >a {
-            @apply relative inline-block px-8 py-2 font-bold text-gray-900 uppercase duration-200 text-left lg:text-center cursor-pointer md:text-xs xl:text-base;
+    &.stuck {
+        @apply py-2 md:py-0 shadow;
+    }
 
-            ~ul {
-                @apply w-max max-h-0 md:absolute overflow-hidden transition md:px-0 px-8;
+    ul {
+        @apply duration-200 bg-white;
+    }
 
-                a {
-                    @apply text-left;
+    .navbar-brand {
+        aspect-ratio: 300/105;
+    }
+
+    .navbar-nav {
+        .nav-item {
+            >a {
+                @apply relative inline-block px-8 py-2 font-bold text-gray-900 uppercase duration-200 text-left lg:text-center cursor-pointer md:text-xs xl:text-base;
+
+                ~ul {
+                    @apply w-max max-h-0 md:absolute overflow-hidden transition md:px-0 px-8;
+
+                    a {
+                        @apply text-left;
+                    }
+
+                    &:hover {
+                        @apply max-h-max;
+                    }
                 }
 
-                &:hover {
+                &:hover~ul {
                     @apply max-h-max;
                 }
             }
 
-            &:hover~ul {
-                @apply max-h-max;
+
+            >span {
+                @apply relative inline-block ps-8 py-2 font-bold text-gray-900 uppercase duration-200 text-left md:text-xs xl:text-base;
             }
-        }
 
-
-        >span {
-            @apply relative inline-block ps-8 py-2 font-bold text-gray-900 uppercase duration-200 text-left md:text-xs xl:text-base;
-        }
-
-        &.active,
-        &:hover {
-            >a {
-                @apply text-tertary-900;
+            &.active,
+            &:hover {
+                >a {
+                    @apply text-tertary-900;
+                }
             }
         }
     }
-}
 
-.navbar-collapse.show {
-    @apply block;
-}
+    .navbar-collapse.show {
+        @apply block;
+    }
 
-.toggler-icon {
-    @apply relative block duration-200 bg-gray-700;
-    height: 2px;
-    width: 30px;
-    margin: 6px 0;
-}
+    .toggler-icon {
+        @apply relative block duration-200 bg-gray-700;
+        height: 2px;
+        width: 30px;
+        margin: 6px 0;
+    }
 
-.active>.toggler-icon:nth-child(1) {
-    @apply transform rotate-45;
-    top: 7px;
-}
+    .active>.toggler-icon:nth-child(1) {
+        @apply transform rotate-45;
+        top: 7px;
+    }
 
-.active>.toggler-icon:nth-child(2) {
-    @apply opacity-0;
-}
+    .active>.toggler-icon:nth-child(2) {
+        @apply opacity-0;
+    }
 
-.active>.toggler-icon:nth-child(3) {
-    top: -8px;
-    transform: rotate(135deg);
+    .active>.toggler-icon:nth-child(3) {
+        top: -8px;
+        transform: rotate(135deg);
+    }
 }
