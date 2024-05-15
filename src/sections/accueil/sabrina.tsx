@@ -3,7 +3,7 @@ import { useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { reveal } from '../../utils/reveal'
-import SabrinaPic from '/public/images/qui-je-suis/sabrina.webp'
+import SabrinaPic from '/public/images/accueil/sabrina.webp'
 import { madelyn } from '../../../styles/font'
 
 export default function Sabrina({ className = '' }: { className?: string }) {

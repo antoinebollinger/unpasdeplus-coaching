@@ -8,15 +8,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
             lastModified: new Date(),
         },
         {
-            url: `${siteData.url}/coaching-sante`,
+            url: `${siteData.url}/a-propos-de-moi`,
+            lastModified: new Date(),
+        },
+        {
+            url: `${siteData.url}/coaching-bien-etre-equilibre`,
+            lastModified: new Date(),
+        },
+        {
+            url: `${siteData.url}/coaching-perte-de-poids`,
             lastModified: new Date(),
         },
         {
             url: `${siteData.url}/coaching-entreprise`,
-            lastModified: new Date(),
-        },
-        {
-            url: `${siteData.url}/qui-je-suis`,
             lastModified: new Date(),
         },
         {

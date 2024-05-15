@@ -2,19 +2,12 @@
 import { useEffect } from 'react'
 import Image from 'next/image'
 import { reveal } from '../../utils/reveal'
-import Career1 from '/public/images/qui-je-suis/1.webp'
-import Career2 from '/public/images/qui-je-suis/2.webp'
+import Career1 from '/public/images/a-propos-de-moi/1.webp'
+import Career2 from '/public/images/a-propos-de-moi/2.webp'
 
 export default function Parcours() {
-    useEffect(() => {
-        reveal({
-            collection: document.querySelectorAll('.career-step'),
-            classesToRemove: ['translate-x-3/4', 'translate-y-full', 'scale-0', 'opacity-0'],
-        })
-    }, [])
-
     return (
-        <div className="">
+        <div className="parcours">
             <div className="text-center pb-10">
                 <p className='h2'>Mon parcours</p>
                 <h1>Trouver son équilibre est un entrainement</h1>

@@ -21,7 +21,8 @@ export default function Offres({ className = 'bg-gray-100' }: { className?: stri
     const list = (
         img: StaticImageData,
         text: string,
-        href: string
+        href: string,
+        alt?: string
     ) => {
         return (
             <Link href={href} className="w-full lg:w-1/3 flex flex-col gap-6 rounded-xl shadow-xl p-4 bg-white transition hover:scale-[1.05]">
@@ -32,7 +33,7 @@ export default function Offres({ className = 'bg-gray-100' }: { className?: stri
                     src={img}
                     width={200}
                     className="mx-auto rounded-full transition duration-200 scale-0 liens-img"
-                    alt="Coaching Perte de poids"
+                    alt={alt ?? "Illustration du coaching"}
                 />
             </Link>
         )

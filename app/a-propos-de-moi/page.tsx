@@ -12,7 +12,7 @@ export default function Page() {
     const onThisPage = [
         {
             title: 'À propos de moi',
-            link: '#header'
+            link: '#top'
         }
     ];
 
