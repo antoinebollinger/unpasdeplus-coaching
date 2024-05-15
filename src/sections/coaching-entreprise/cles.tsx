@@ -82,10 +82,13 @@ export default function Cles({ className = 'bg-gray-100' }: { className?: string
                         "<ul><li>✔ Organiser des ateliers collectifs de sensibilisation et de formation sur les <strong>défis spécifiques</strong> auxquels sont confrontés les parents permet de cultiver une <strong>culture d'entreprise inclusive</strong>.</li><li>✔ Sensibiliser l'équipe à la nécessité d'un <strong>équilibre vie pro-perso</strong> contribue à créer une atmosphère de compréhension mutuelle au sein de l'entreprise.</li></ul>"
                     )}
                 </div>
-                <div className="text-center">
+                <div className="text-center mb-16">
                     <Link href="/contact" className="main-btn gradient-btn focus:outline-none uppercase">
                         En savoir plus
                     </Link>
+                </div>
+                <div className="text-center">
+                    <h2>Coach professionnelle dans le Morbihan, basé à Vannes. En présentiel ou en distanciel.</h2>
                 </div>
             </div>
         </section >
