@@ -20,14 +20,6 @@ export default function Page() {
             link: '#top'
         },
         {
-            title: 'Méthode',
-            link: '#methode'
-        },
-        {
-            title: 'Resultat',
-            link: '#resultat'
-        },
-        {
             title: 'Témoignages',
             link: '#temoignages'
         }

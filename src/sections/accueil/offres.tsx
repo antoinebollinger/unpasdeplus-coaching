@@ -29,8 +29,7 @@ export default function Offres({ className = 'bg-gray-100' }: { className?: stri
                 </p>
                 <Image
                     src={img}
-                    width={200}
-                    className="mx-auto rounded-full transition duration-200 scale-0 liens-img"
+                    className="w-full h-[200px] object-cover rounded transition duration-200 scale-0 liens-img"
                     alt={alt ?? "Illustration du coaching"}
                 />
             </Link>

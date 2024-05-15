@@ -2,7 +2,6 @@ import Layout from '../../src/layout'
 import Intro from '../../src/sections/coaching-bien-etre-equilibre/intro'
 import Qui from '../../src/sections/coaching-bien-etre-equilibre/qui'
 import Quoi from '../../src/sections/coaching-bien-etre-equilibre/quoi'
-import Methode from '../../src/sections/coaching-bien-etre-equilibre/methode'
 import Pratique from '../../src/sections/coaching-bien-etre-equilibre/pratique'
 import Banner from '/public/images/banners/2_bis.jpg'
 import { siteData } from '../../src/data/metadata'
@@ -15,12 +14,8 @@ export const metadata = {
 export default function Page() {
     const onThisPage = [
         {
-            title: 'Introduction',
+            title: 'Le coaching bien-être & équilibre',
             link: '#header'
-        },
-        {
-            title: 'C\'est quoi&nbsp;?',
-            link: '#quoi'
         },
         {
             title: 'En pratique',
@@ -33,7 +28,6 @@ export default function Page() {
             <Intro />
             <Qui />
             <Quoi />
-            {/* <Methode /> */}
             <Pratique />
         </Layout >
     )

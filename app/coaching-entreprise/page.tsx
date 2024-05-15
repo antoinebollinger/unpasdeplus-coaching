@@ -20,16 +20,16 @@ export default function Page() {
             link: '#header'
         },
         {
-            title: 'Pourquoi&nbsp;?',
-            link: '#pourquoi'
+            title: 'Les enjeux',
+            link: '#enjeux'
         },
         {
-            title: 'Mes services',
-            link: '#services'
+            title: 'Bien-être et performance',
+            link: '#performance'
         },
         {
-            title: 'Accompagnement de qualité',
-            link: '#qualite'
+            title: 'Les clés pour accompagner la parentalité',
+            link: '#cles'
         }
     ];
 

@@ -1,9 +1,8 @@
 'use client'
 import { useEffect } from 'react'
 import Image from 'next/image'
-import Link from 'next/link'
 import { reveal } from '../../utils/reveal'
-import IntroImg from '/public/images/entreprises/intro.webp'
+import IntroImg from '/public/images/coaching-entreprise/intro.webp'
 import Calendly from '../../components/calendly'
 
 export default function Intro({ className = '' }: { className?: string }) {
