@@ -16,6 +16,9 @@ export default function Header({
     useLayoutEffect(() => {
         if (navRef.current) {
             headerRef.current.style.height = `${navRef.current.offsetHeight}px`
+            document.querySelectorAll("nav ul.dropdown").forEach((e: HTMLUListElement) => {
+                // e.style.top = `${navRef.current.offsetHeight}px`
+            })
         }
     }, [])
 

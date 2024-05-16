@@ -1,8 +1,8 @@
 .navigation {
-    @apply sticky top-0 left-0 z-30 w-full py-4 md:py-2 duration-200 bg-white;
+    @apply sticky top-0 left-0 z-30 w-full py-4 lg:py-2 duration-200 bg-white;
 
     &.stuck {
-        @apply py-2 md:py-0 shadow;
+        @apply py-2 lg:py-0 shadow;
     }
 
     ul {
@@ -15,29 +15,30 @@
 
     .navbar-nav {
         .nav-item {
-            >a {
-                @apply relative inline-block px-8 py-2 font-bold text-gray-900 uppercase duration-200 text-left lg:text-center cursor-pointer md:text-xs xl:text-base;
 
-                ~ul {
-                    @apply w-max max-h-0 md:absolute overflow-hidden transition md:px-0 px-8;
+            >a,
+            >span {
+                @apply relative inline-block px-8 py-2 lg:py-0 lg:h-full lg:flex lg:flex-col lg:justify-center font-bold text-gray-900 uppercase duration-200 text-left lg:text-center cursor-pointer md:text-xs xl:text-base;
+
+                ~ul.dropdown {
+                    @apply w-max lg:max-h-0 lg:absolute overflow-hidden transition lg:px-0 px-8 top-full rounded;
+
+                    li {
+                        @apply lg:py-2
+                    }
 
                     a {
                         @apply text-left;
                     }
 
                     &:hover {
-                        @apply max-h-max;
+                        @apply lg:max-h-max;
                     }
                 }
 
                 &:hover~ul {
-                    @apply max-h-max;
+                    @apply lg:max-h-max;
                 }
-            }
-
-
-            >span {
-                @apply relative inline-block ps-8 py-2 font-bold text-gray-900 uppercase duration-200 text-left md:text-xs xl:text-base;
             }
 
             &.active,
