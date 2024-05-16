@@ -1,59 +1,59 @@
-'use client'
-import Link from 'next/link'
-import Image from 'next/image'
-import Logo from '/public/logos/logo-texte-horizontal.svg'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons'
-import { useEffect } from 'react'
-import { openDialog } from '../utils/dialog'
-import { CustomEvent, onThisPage } from '../models/types'
-import { siteData, emailMessage } from '../data/metadata'
-import Socials from './socials'
+"use client"
+import Link from "next/link"
+import Image from "next/image"
+import Logo from "/public/logos/logo-texte-horizontal.svg"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faAngleDoubleRight } from "@fortawesome/free-solid-svg-icons"
+import { useEffect } from "react"
+import { openDialog } from "../utils/dialog"
+import { CustomEvent, onThisPage } from "../models/types"
+import { siteData, emailMessage } from "../data/metadata"
+import Socials from "./socials"
 
 export default function Footer({
     onThisPage = [
         {
-            title: 'Haut de page',
-            link: '#header'
+            title: "Haut de page",
+            link: "#header"
         },
     ]
 }: {
     onThisPage?: onThisPage[]
 }) {
     useEffect(() => {
-        document.forms['newsletter-form'].addEventListener('submit', async (e: CustomEvent) => {
+        document.forms["newsletter-form"].addEventListener("submit", async (e: CustomEvent) => {
             e.preventDefault()
 
             if (!e.target.elements["consent"].checked)
                 return
 
-            if (e.target.elements["email_from"].value === '')
+            if (e.target.elements["email_from"].value === "")
                 return
 
             openDialog({
-                body: emailMessage.sending, buttons: 'hidden'
+                body: emailMessage.sending, buttons: "hidden"
             })
 
             const data = new FormData(e.target)
-            data.append('email_to', process.env.NEXT_PUBLIC_EMAIL_TO)
-            data.append('name_to', process.env.NEXT_PUBLIC_NAME_TO)
-            data.append('transporter', 'unpasdeplus')
+            data.append("email_to", process.env.NEXT_PUBLIC_EMAIL_TO)
+            data.append("name_to", process.env.NEXT_PUBLIC_NAME_TO)
+            data.append("transporter", "unpasdeplus")
 
             try {
                 const sendEmail = await fetch(`${process.env.NEXT_PUBLIC_EMAIL_API}/newsletter`, {
-                    method: 'POST',
+                    method: "POST",
                     body: data
                 })
                 const response = await sendEmail.json()
                 if (response.sent)
                     openDialog({
-                        body: emailMessage.newsletterSent, buttons: 'hidden'
+                        body: emailMessage.newsletterSent, buttons: "hidden"
                     })
                 else
-                    throw new Error('Fetch returned with sent = false')
+                    throw new Error("Fetch returned with sent = false")
             } catch (error) {
                 openDialog({
-                    body: emailMessage.fetchError.sprintf([process.env.NEXT_PUBLIC_EMAIL_TO, error.message]), buttons: 'hidden'
+                    body: emailMessage.fetchError.sprintf([process.env.NEXT_PUBLIC_EMAIL_TO, error.message]), buttons: "hidden"
                 })
             }
         })
@@ -159,12 +159,12 @@ export default function Footer({
                                 <div className="newsletter">
                                     <form id="newsletter-form" className="relative">
                                         <input type="email" name="email_from" placeholder="Entrez votre email" className="w-full py-3 pl-6 pr-12 duration-200 bg-gray-100 border border-gray-100 rounded-full focus:border-primary-600 focus:outline-none mb-4" required />
-                                        <button type="submit" className="absolute top-0 right-0 mt-3 mr-6 text-xl text-primary-600" aria-label="S'incrire à ma newsletter">
+                                        <button type="submit" className="absolute top-0 right-0 mt-3 mr-6 text-xl text-primary-600" aria-label="S’incrire à ma newsletter">
                                             <FontAwesomeIcon icon={faAngleDoubleRight} />
                                         </button>
                                         <label htmlFor="consent" className="text-sm single-form cursor-pointer">
                                             <input type="checkbox" name="consent" id="consent" className="accent-pink-500" required />&nbsp;
-                                            Vous acceptez de recevoir notre newletter. Vous pouvez vous désinscrire à tout moment à l'aide des liens de désinscription ou en me contactant à l'adresse <a href={`mailto:${process.env.NEXT_PUBLIC_EMAIL_TO}`} title="Envoyer un mail à Sabrina" className="font-bold text-primary-900 hover:text-primary-700 transition">{process.env.NEXT_PUBLIC_EMAIL_TO}</a>.
+                                            Vous acceptez de recevoir notre newletter. Vous pouvez vous désinscrire à tout moment à l’aide des liens de désinscription ou en me contactant à l’adresse <a href={`mailto:${process.env.NEXT_PUBLIC_EMAIL_TO}`} title="Envoyer un mail à Sabrina" className="font-bold text-primary-900 hover:text-primary-700 transition">{process.env.NEXT_PUBLIC_EMAIL_TO}</a>.
                                         </label>
                                     </form>
                                 </div>

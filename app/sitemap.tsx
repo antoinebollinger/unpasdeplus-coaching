@@ -1,5 +1,5 @@
-import { MetadataRoute } from 'next'
-import { siteData } from '../src/data/metadata'
+import { MetadataRoute } from "next"
+import { siteData } from "../src/data/metadata"
 
 export default function sitemap(): MetadataRoute.Sitemap {
     return [

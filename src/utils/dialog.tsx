@@ -1,47 +1,47 @@
-'use client'
-import { useCallback, useState } from 'react'
-import { dialogProps } from '../models/types'
+"use client"
+import { useCallback, useState } from "react"
+import { dialogProps } from "../models/types"
 
 export function openDialog({
-    header = '',
-    body = '',
-    href = '#',
-    buttons = 'block'
+    header = "",
+    body = "",
+    href = "#",
+    buttons = "block"
 }: dialogProps) {
-    const dialog = document.getElementById('dialog')
-    dialog.querySelector('.dialog-title').innerHTML = ''
-    dialog.querySelector('.dialog-body').innerHTML = ''
-    dialog.querySelector('.dialog-title').insertAdjacentHTML('afterbegin', header)
-    dialog.querySelector('.dialog-body').insertAdjacentHTML('afterbegin', body);
-    (dialog.querySelector('.dialog-link') as HTMLElement).dataset.href = href
-    document.getElementById('dialog-buttons').className = buttons
-    dialog.classList.remove('hidden')
+    const dialog = document.getElementById("dialog")
+    dialog.querySelector(".dialog-title").innerHTML = ""
+    dialog.querySelector(".dialog-body").innerHTML = ""
+    dialog.querySelector(".dialog-title").insertAdjacentHTML("afterbegin", header)
+    dialog.querySelector(".dialog-body").insertAdjacentHTML("afterbegin", body);
+    (dialog.querySelector(".dialog-link") as HTMLElement).dataset.href = href
+    document.getElementById("dialog-buttons").className = buttons
+    dialog.classList.remove("hidden")
 }
 
 export function closeDialog() {
-    const dialog = document.getElementById('dialog')
-    const url = (dialog.querySelector('.dialog-link') as HTMLElement).dataset.href
-    dialog.querySelector('.dialog-container').innerHTML = ''
-    dialog.querySelector('.dialog-title').innerHTML = ''
-    dialog.querySelector('.dialog-body').innerHTML = '';
-    (dialog.querySelector('.dialog-link') as HTMLElement).dataset.href = '#'
-    document.getElementById('dialog-buttons').className = 'block'
-    dialog.classList.add('hidden')
+    const dialog = document.getElementById("dialog")
+    const url = (dialog.querySelector(".dialog-link") as HTMLElement).dataset.href
+    dialog.querySelector(".dialog-container").innerHTML = ""
+    dialog.querySelector(".dialog-title").innerHTML = ""
+    dialog.querySelector(".dialog-body").innerHTML = "";
+    (dialog.querySelector(".dialog-link") as HTMLElement).dataset.href = "#"
+    document.getElementById("dialog-buttons").className = "block"
+    dialog.classList.add("hidden")
     return url
 }
 
 export default function Dialog(
-    { className = '' }: { className?: string }
+    { className = "" }: { className?: string }
 ) {
-    const [header, setHeader] = useState('')
-    const [body, setBody] = useState('')
-    const [href, setHref] = useState('#')
+    const [header, setHeader] = useState("")
+    const [body, setBody] = useState("")
+    const [href, setHref] = useState("#")
 
     const close = useCallback((goLink = false) => {
         const url = closeDialog()
-        setHeader('')
-        setBody('')
-        setHref('#')
+        setHeader("")
+        setBody("")
+        setHref("#")
         if (!goLink) return
         window.open(url)
     }, [])

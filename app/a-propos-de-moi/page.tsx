@@ -1,7 +1,7 @@
-import Layout from '../../src/layout'
-import Bio from '../../src/sections/a-propos-de-moi/bio'
-import Banner from '/public/images/banners/4.jpg'
-import { siteData } from '../../src/data/metadata'
+import Layout from "../../src/layout"
+import Bio from "../../src/sections/a-propos-de-moi/bio"
+import Banner from "/public/images/banners/4.jpg"
+import { siteData } from "../../src/data/metadata"
 
 export const metadata = {
     title: `À propos de moi | ${siteData.title}`,
@@ -11,8 +11,8 @@ export const metadata = {
 export default function Page() {
     const onThisPage = [
         {
-            title: 'À propos de moi',
-            link: '#top'
+            title: "À propos de moi",
+            link: "#top"
         }
     ];
 

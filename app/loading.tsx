@@ -1,6 +1,6 @@
-import Image from 'next/image'
-import Layout from '../src/layout'
-import Loading from '/public/images/svg/loading.svg'
+import Image from "next/image"
+import Layout from "../src/layout"
+import Loading from "/public/images/svg/loading.svg"
 
 export default function Page() {
     return (

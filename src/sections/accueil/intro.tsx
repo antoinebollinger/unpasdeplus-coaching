@@ -47,7 +47,7 @@ export default function Intro({ className = '' }: { className?: string }) {
                             <strong>Bien dans sa tête, bien dans son corps.</strong>
                             <br />
                             <br />
-                            Le coaching professionnel consiste à accompagner des personnes dans la définition et l'atteinte de leurs objectifs, au bénéfice du développement  de leur potentiel et de la réussite de leur évolution personnelle et professionnelle.
+                            Le coaching professionnel consiste à accompagner des personnes dans la définition et l’atteinte de leurs objectifs, au bénéfice du développement  de leur potentiel et de la réussite de leur évolution personnelle et professionnelle.
                         </p>
                     </div>
                 </div>

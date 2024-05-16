@@ -39,10 +39,14 @@ export default function Bio({ className = '' }: { className?: string }) {
                             <p className="h1">Bien dans ses baskets, bien dans sa tête</p>
                         </div>
                         <div className="transition duration-200 opacity-0 translate-y-full">
-                            <h2>Course à pied, mon activité physique quotidienne</h2>
+                            <h2>Les challenges, source de motivation</h2>
                             <p className="text-lg mb-6">
-                                Je pratique la course à pied depuis l'âge de mes 18 ans. L'activité physique tient une place importante dans mon quotidien. Quand je cours, je me sens libre, forte et combative. Amoureuse de la nature, je suis une adepte des randonnées, des trails (courses en milieu naturel). Le mouvement, c'est la vie !
+                                Mon mantra&nbsp;: «&nbsp;Ne limite pas tes défis, défis tes limites&nbsp;».
+                                <br />
+                                J’aime les <strong>challenges</strong> personnels, professionnels et sportifs, une <strong>source de motivation</strong> et de <strong>dépassement de soi</strong>. Les défis contribuent à forger le mental, à puiser les <strong>ressources physiques et mentales</strong> nécessaires pour aller au bout d’un objectif.
+
                             </p>
+
                         </div>
                     </div>
                 </div>
@@ -56,23 +60,20 @@ export default function Bio({ className = '' }: { className?: string }) {
                     </div>
                     <div className="w-full md:w-3/4">
                         <div className="transition duration-200 opacity-0 translate-y-full">
-                            <h2>Les challenges, source de motivation</h2>
+                            <h2>Course à pied, mon activité physique quotidienne</h2>
                             <p className="text-lg mb-6">
-                                Mon mantra: "Ne limite pas tes défis, défis tes limites".
-                                <br />
-                                J'aime les <strong>challenges</strong> personnels, professionnels et sportifs, une <strong>source de motivation</strong> et de <strong>dépassement de soi</strong>. Les défis contribuent à forger le mental, à puiser les <strong>ressources physiques et mentales</strong> nécessaires pour aller au bout d'un objectif.
-
+                                Je pratique la course à pied depuis l’âge de mes 18 ans. L’activité physique tient une place importante dans mon quotidien. Quand je cours, je me sens libre, forte et combative. Amoureuse de la nature, je suis une adepte des randonnées, des trails (courses en milieu naturel). Le mouvement, c’est la vie !
                             </p>
                         </div>
                         <div className="transition duration-200 opacity-0 translate-y-full">
                             <h2>Alimentation saine et consciente</h2>
                             <p className="text-lg mb-6">
-                                Sportive , j'accorde une importance à <strong>l'alimentation</strong>. Un corps sain dans un esprit sain. Pour moi, prendre soin de soi, c'est un <strong>équilibre harmonieux entre le corps et l'esprit</strong>. L'alimentation saine et consciente nourrit à la fois le corps et la tête, sans compromis sur le plaisir.
+                                Sportive, j’accorde une importance à <strong>l’alimentation</strong>. Un corps sain dans un esprit sain. Pour moi, prendre soin de soi, c’est un <strong>équilibre harmonieux entre le corps et l’esprit</strong>. L’alimentation saine et consciente nourrit à la fois le corps et la tête, sans compromis sur le plaisir.
                             </p>
                         </div>
                         <div className="transition duration-200 opacity-0 translate-y-full">
                             <p className="text-lg mb-6">
-                                Au fil des années, j'ai gagné en sérénité en prenant soin de mon corps et ma tête . Cela n'a pas toujours été le cas. Découvrez mon parcours pour comprendre comment je suis parvenue à m'épanouir et à devenir la personne que je suis aujourd'hui.
+                                Au fil des années, j’ai gagné en sérénité en prenant soin de mon corps et ma tête. Cela n’a pas toujours été le cas. Découvrez mon parcours pour comprendre comment je suis parvenue à m’épanouir et à devenir la personne que je suis aujourd’hui.
                             </p>
                         </div>
                     </div>

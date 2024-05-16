@@ -1,28 +1,28 @@
-'use client'
-import { useEffect } from 'react'
-import { modalProps } from '../models/types'
-import { CustomEvent } from '../models/types'
+"use client"
+import { useEffect } from "react"
+import { modalProps } from "../models/types"
+import { CustomEvent } from "../models/types"
 
 export function openModal({
-    content = ''
+    content = ""
 }: modalProps) {
-    const modal = document.getElementById('modal')
-    modal.querySelector('.modal-content').innerHTML = ''
-    modal.querySelector('.modal-content').insertAdjacentHTML('afterbegin', content)
-    modal.classList.remove('hidden')
+    const modal = document.getElementById("modal")
+    modal.querySelector(".modal-content").innerHTML = ""
+    modal.querySelector(".modal-content").insertAdjacentHTML("afterbegin", content)
+    modal.classList.remove("hidden")
 }
 
 export function closeModal(
 
 ) {
-    const modal = document.getElementById('modal')
-    modal.querySelector('.modal-content').innerHTML = ''
-    modal.classList.add('hidden')
+    const modal = document.getElementById("modal")
+    modal.querySelector(".modal-content").innerHTML = ""
+    modal.classList.add("hidden")
 }
 
 export default function Modal(
     {
-        className = ''
+        className = ""
     }: {
         className?: string
     }

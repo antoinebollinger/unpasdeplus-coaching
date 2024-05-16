@@ -48,7 +48,7 @@ export default function Apports({ className = 'bg-gray-100' }: { className?: str
                         )}
                         {list(
                             "5,7",
-                            "fois le montant investi, c'est le retour sur investissement moyen des entreprises"
+                            "fois le montant investi, c’est le retour sur investissement moyen des entreprises"
                         )}
                     </div>
                     <p className="italic">Source&nbsp;: étude ICF-PWC (2021)</p>

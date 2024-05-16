@@ -1,10 +1,10 @@
-'use client'
-import { useEffect } from 'react'
-import Link from 'next/link'
-import Image from 'next/image'
-import { usePathname } from 'next/navigation'
-import newLogo from '/public/logos/logo-texte-horizontal.svg'
-import Socials from './socials'
+"use client"
+import { useEffect } from "react"
+import Link from "next/link"
+import Image from "next/image"
+import { usePathname } from "next/navigation"
+import newLogo from "/public/logos/logo-texte-horizontal.svg"
+import Socials from "./socials"
 
 export default function Navbar() {
     const pathname = usePathname();
@@ -12,32 +12,32 @@ export default function Navbar() {
     const stickyNavBar = (e: Event) => {
         e.preventDefault()
         let scrollpos = window.scrollY
-        const navigation = document.querySelector('.navigation')
-        const backToTop = document.querySelector<HTMLElement>('.back-to-top')
+        const navigation = document.querySelector(".navigation")
+        const backToTop = document.querySelector<HTMLElement>(".back-to-top")
         if (scrollpos > 100)
-            navigation.classList.add('stuck')
+            navigation.classList.add("stuck")
         else
-            navigation.classList.remove('stuck')
+            navigation.classList.remove("stuck")
         if (scrollpos > 300)
-            backToTop.style.opacity = '1'
+            backToTop.style.opacity = "1"
         else
-            backToTop.style.opacity = '0'
+            backToTop.style.opacity = "0"
     };
 
     useEffect(() => {
-        document.addEventListener('scroll', stickyNavBar)
+        document.addEventListener("scroll", stickyNavBar)
 
-        const navtoggler = document.querySelector('.navbar-toggler')
-        const navcollapse = document.querySelector('.navbar-collapse')
-        const navlinks = document.querySelectorAll('.page-scroll')
+        const navtoggler = document.querySelector(".navbar-toggler")
+        const navcollapse = document.querySelector(".navbar-collapse")
+        const navlinks = document.querySelectorAll(".page-scroll")
 
-        navtoggler?.addEventListener('click', (e) => {
-            navtoggler.classList.toggle('active')
-            navcollapse.classList.toggle('show')
+        navtoggler?.addEventListener("click", (e) => {
+            navtoggler.classList.toggle("active")
+            navcollapse.classList.toggle("show")
         })
-        navlinks?.forEach(link => link.addEventListener('click', (e) => {
-            navtoggler.classList.remove('active')
-            navcollapse.classList.remove('show')
+        navlinks?.forEach(link => link.addEventListener("click", (e) => {
+            navtoggler.classList.remove("active")
+            navcollapse.classList.remove("show")
         }))
     }, [])
 
@@ -60,7 +60,7 @@ export default function Navbar() {
                 <ul className="mr-auto navbar-nav lg:flex uppercase" id="main-ul">
                     <li className={`nav-item ${pathname == "/a-propos-de-moi" ? "active" : ""}`}>
                         <Link href="/a-propos-de-moi" className="page-scroll">
-                            à propos<br />de moi
+                            À propos<br />de moi
                         </Link>
                     </li>
                     <li className={`relative nav-item ${pathname.startsWith("/coaching") ? "active" : ""}`}>

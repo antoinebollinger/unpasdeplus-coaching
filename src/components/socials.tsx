@@ -1,6 +1,6 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import { siteData } from '../data/metadata'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faFacebook, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons"
+import { siteData } from "../data/metadata"
 
 export default function Socials({
     className

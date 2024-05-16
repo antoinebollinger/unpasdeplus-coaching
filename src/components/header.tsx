@@ -1,9 +1,9 @@
-'use client'
-import Image from 'next/image'
-import Navbar from './navbar'
-import Wave from '/public/images/svg/wave-white.svg'
-import type { banner } from '../models/types'
-import { useLayoutEffect, useRef } from 'react'
+"use client"
+import Image from "next/image"
+import Navbar from "./navbar"
+import Wave from "/public/images/svg/wave-white.svg"
+import type { banner } from "../models/types"
+import { useLayoutEffect, useRef } from "react"
 
 export default function Header({
     banner,
@@ -16,9 +16,6 @@ export default function Header({
     useLayoutEffect(() => {
         if (navRef.current) {
             headerRef.current.style.height = `${navRef.current.offsetHeight}px`
-            document.querySelectorAll("nav ul.dropdown").forEach((e: HTMLUListElement) => {
-                // e.style.top = `${navRef.current.offsetHeight}px`
-            })
         }
     }, [])
 
