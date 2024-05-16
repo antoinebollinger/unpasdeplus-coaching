@@ -65,23 +65,25 @@ export default function Navbar() {
                     </li>
                     <li className={`relative nav-item ${pathname.startsWith("/coaching") ? "active" : ""}`}>
                         <span>Mes offres</span>
-                        <ul className="dropdown">
-                            <li className={`nav-item ${pathname == "/coaching-perte-de-poids" ? "active" : ""}`}>
-                                <Link href="/coaching-perte-de-poids" className="page-scroll">
-                                    Coaching perte de poids
-                                </Link>
-                            </li>
-                            <li className={`nav-item ${pathname == "/coaching-bien-etre-equilibre" ? "active" : ""}`}>
-                                <Link href="/coaching-bien-etre-equilibre" className="page-scroll">
-                                    Coaching bien-être & équilibre
-                                </Link>
-                            </li>
-                            <li className={`nav-item ${pathname == "/coaching-entreprise" ? "active" : ""}`}>
-                                <Link href="/coaching-entreprise" className="page-scroll">
-                                    Coaching entreprise
-                                </Link>
-                            </li>
-                        </ul>
+                        <div className="dropdown">
+                            <ul>
+                                <li className={`nav-item ${pathname == "/coaching-perte-de-poids" ? "active" : ""}`}>
+                                    <Link href="/coaching-perte-de-poids" className="page-scroll">
+                                        Coaching perte de poids
+                                    </Link>
+                                </li>
+                                <li className={`nav-item ${pathname == "/coaching-bien-etre-equilibre" ? "active" : ""}`}>
+                                    <Link href="/coaching-bien-etre-equilibre" className="page-scroll">
+                                        Coaching bien-être & équilibre
+                                    </Link>
+                                </li>
+                                <li className={`nav-item ${pathname == "/coaching-entreprise" ? "active" : ""}`}>
+                                    <Link href="/coaching-entreprise" className="page-scroll">
+                                        Coaching entreprise
+                                    </Link>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
                     <li className={`nav-item ${pathname == "/contact" ? "active" : ""}`}>
                         <Link href="/contact" className="page-scroll">

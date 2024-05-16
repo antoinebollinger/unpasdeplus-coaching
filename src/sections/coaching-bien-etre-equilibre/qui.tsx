@@ -28,7 +28,7 @@ export default function Qui({ className = "bg-gray-100" }: { className?: string 
         <section id="qui" className={className}>
             <div className="container">
                 <div className="flex flex-col md:flex-row gap-6 justify-center items-center mb-16">
-                    <div className="w-full md:w-1/4 mx-auto transition duration-200 scale-0 opacity-0 img">
+                    <div className="w-full md:w-1/4 mx-auto transition duration-200 scale-0 opacity-0 img md:order-last">
                         <Image
                             src={QuiImg}
                             width={QuiImg.width}

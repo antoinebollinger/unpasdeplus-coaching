@@ -20,23 +20,28 @@
             >span {
                 @apply relative inline-block px-8 py-2 lg:py-0 lg:h-full lg:flex lg:flex-col lg:justify-center font-bold text-gray-900 uppercase duration-200 text-left lg:text-center cursor-pointer md:text-xs xl:text-base;
 
-                ~ul.dropdown {
+                ~.dropdown {
                     @apply w-max lg:max-h-0 lg:absolute overflow-hidden transition lg:px-0 px-8 top-full rounded;
 
-                    li {
-                        @apply lg:py-2
+                    ul {
+                        @apply lg:pb-4;
+
+                        li {
+                            @apply lg:py-2
+                        }
+
+                        a {
+                            @apply text-left;
+                        }
                     }
 
-                    a {
-                        @apply text-left;
-                    }
 
                     &:hover {
                         @apply lg:max-h-max;
                     }
                 }
 
-                &:hover~ul {
+                &:hover~.dropdown {
                     @apply lg:max-h-max;
                 }
             }
