@@ -1,21 +1,20 @@
-'use client'
-import { useEffect } from 'react'
-import Image, { StaticImageData } from 'next/image'
-import Link from 'next/link'
-import { reveal } from '../../utils/reveal'
-import Entreprise from '/public/images/coaching-entreprise/entreprises.webp'
-import Lescles from '/public/images/coaching-entreprise/cles.jpg'
-import Coaching_1 from '/public/images/coaching-entreprise/coaching_1.jpg'
-import Coaching_2 from '/public/images/coaching-entreprise/coaching_2.jpg'
-import Coaching_3 from '/public/images/coaching-entreprise/coaching_3.jpg'
-import Coaching_4 from '/public/images/coaching-entreprise/coaching_4.jpg'
-import Coaching_5 from '/public/images/coaching-entreprise/coaching_5.jpg'
+"use client"
+import { useEffect } from "react"
+import Image, { StaticImageData } from "next/image"
+import Link from "next/link"
+import { reveal } from "../../utils/reveal"
+import Lescles from "/public/images/coaching-entreprise/cles.jpg"
+import Coaching_1 from "/public/images/coaching-entreprise/coaching_1.jpg"
+import Coaching_2 from "/public/images/coaching-entreprise/coaching_2.jpg"
+import Coaching_3 from "/public/images/coaching-entreprise/coaching_3.jpg"
+import Coaching_4 from "/public/images/coaching-entreprise/coaching_4.jpg"
+import Coaching_5 from "/public/images/coaching-entreprise/coaching_5.jpg"
 
-export default function Cles({ className = 'bg-gray-100' }: { className?: string }) {
+export default function Cles({ className = "bg-gray-100" }: { className?: string }) {
     useEffect(() => {
         reveal({
-            collection: document.querySelectorAll('#cles .transition'),
-            classesToRemove: ['translate-y-full', 'scale-0', 'opacity-0']
+            collection: document.querySelectorAll("#cles .transition"),
+            classesToRemove: ["translate-y-full", "scale-0", "opacity-0"]
         })
     }, [])
 
@@ -59,10 +58,10 @@ export default function Cles({ className = 'bg-gray-100' }: { className?: string
                                 Le coaching en entreprise offre un espace dédié aux salariés parents pour <strong>explorer leurs défis</strong>, un <strong>soutien personnalisé</strong>, pour créer un environnement propice au <strong>mieux-être au travail</strong>.
                             </p>
                             <p className="text-lg leading-6 transition duration-200 opacity-0 translate-y-full">
-                                Offrir du coaching aux salariés parents, c'est se soucier de la parentalité de ses salariés et donc de leur <strong>mieux-être au travail</strong>. Les employés se sentent compris, plus sereins et reconnaissants.
+                                Offrir du coaching aux salariés parents, c’est se soucier de la parentalité de ses salariés et donc de leur <strong>mieux-être au travail</strong>. Les employés se sentent compris, plus sereins et reconnaissants.
                             </p>
                             <p className="text-lg leading-6 transition duration-200 opacity-0 translate-y-full">
-                                Cela renforce une <strong>culture d'entreprise bienveillante et adaptable</strong>. Un environnement plus favorable et inclusif.
+                                Cela renforce une <strong>culture d’entreprise bienveillante et adaptable</strong>. Un environnement plus favorable et inclusif.
                             </p>
                             <p className="text-xl font-bold leading-6 transition duration-200 opacity-0 translate-y-full">
                                 A la clé&nbsp;: des salariés engagés envers leur entreprise.
@@ -74,17 +73,17 @@ export default function Cles({ className = 'bg-gray-100' }: { className?: string
                     {list(
                         Coaching_1,
                         "Coaching individuel pour les salariés parents",
-                        "<p>Un accompagnement pour prendre soin de leur santé physique et mentale dans les défis de la vie. C'est garantir un <strong>soutien émotionnel</strong> aux parents dans leur transition de vie pour mieux gérer le stress, surmonter les défis personnels et limiter ainsi les risques psychosociaux.</p>"
+                        "<p>Un accompagnement pour prendre soin de leur santé physique et mentale dans les défis de la vie. C’est garantir un <strong>soutien émotionnel</strong> aux parents dans leur transition de vie pour mieux gérer le stress, surmonter les défis personnels et limiter ainsi les risques psychosociaux.</p>"
                     )}
                     {list(
                         Coaching_2,
                         "Coaching à la reprise du travail après un congé maternité / paternité / parental ",
-                        "<p>Être parent et travailler implique une nouvelle <strong>organisation professionnelle et personnelle</strong>.</p><ul><li>✔ Accompagner les parents dans leur nouveau rôle de parents, comme préparer le retour de congés maternité/paternité  permet au salarié de vivre sereinement cette transition.</li><li>✔ Accompagner les salariés après une <strong>absence maladie de longue durée</strong> pour réintégrer en douceur le monde du travail.</li></ul><p>L'entreprise a un rôle à jouer dans le bien-être du salarié pour permettre aux salariés parents de <strong>concilier carrière et parentalité</strong> avec <strong>moins de stress et d'anxiété</strong>.</p>"
+                        "<p>Être parent et travailler implique une nouvelle <strong>organisation professionnelle et personnelle</strong>.</p><ul><li>✔ Accompagner les parents dans leur nouveau rôle de parents, comme préparer le retour de congés maternité/paternité  permet au salarié de vivre sereinement cette transition.</li><li>✔ Accompagner les salariés après une <strong>absence maladie de longue durée</strong> pour réintégrer en douceur le monde du travail.</li></ul><p>L’entreprise a un rôle à jouer dans le bien-être du salarié pour permettre aux salariés parents de <strong>concilier carrière et parentalité</strong> avec <strong>moins de stress et d’anxiété</strong>.</p>"
                     )}
                     {list(
                         Coaching_3,
                         "Coaching transitions de vie & carrière",
-                        "<p>Être parent, c'est aussi l'être à <strong>différentes étapes de la vie</strong>.</p><ul><li>✔ Être parent de jeunes enfants, d'adolescents, où la gestion de la routine de vie peut être source de <strong>charge mentale importante</strong> pour le salarié-parent et avoir des répercussions au sein du milieu professionnel.</li></ul>"
+                        "<p>Être parent, c’est aussi l’être à <strong>différentes étapes de la vie</strong>.</p><ul><li>✔ Être parent de jeunes enfants, d’adolescents, où la gestion de la routine de vie peut être source de <strong>charge mentale importante</strong> pour le salarié-parent et avoir des répercussions au sein du milieu professionnel.</li></ul>"
                     )}
                     {list(
                         Coaching_4,
@@ -94,7 +93,7 @@ export default function Cles({ className = 'bg-gray-100' }: { className?: string
                     {list(
                         Coaching_5,
                         "Sensibiliser et former&nbsp;: cultiver une politique inclusive",
-                        "<ul><li>✔ Organiser des ateliers collectifs de sensibilisation et de formation sur les <strong>défis spécifiques</strong> auxquels sont confrontés les parents permet de cultiver une <strong>culture d'entreprise inclusive</strong>.</li><li>✔ Sensibiliser l'équipe à la nécessité d'un <strong>équilibre vie pro-perso</strong> contribue à créer une atmosphère de compréhension mutuelle au sein de l'entreprise.</li></ul>"
+                        "<ul><li>✔ Organiser des ateliers collectifs de sensibilisation et de formation sur les <strong>défis spécifiques</strong> auxquels sont confrontés les parents permet de cultiver une <strong>culture d’entreprise inclusive</strong>.</li><li>✔ Sensibiliser l’équipe à la nécessité d’un <strong>équilibre vie pro-perso</strong> contribue à créer une atmosphère de compréhension mutuelle au sein de l’entreprise.</li></ul>"
                     )}
                 </div>
                 <div className="text-center mb-16">

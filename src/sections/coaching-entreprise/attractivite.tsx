@@ -1,14 +1,14 @@
-'use client'
-import { useEffect } from 'react'
-import { reveal } from '../../utils/reveal'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowTrendUp, faChartLine, faCheck, faCircleInfo, faHandPointRight, faPlus } from '@fortawesome/free-solid-svg-icons'
+"use client"
+import { useEffect } from "react"
+import { reveal } from "../../utils/reveal"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faArrowTrendUp, faChartLine, faCheck, faCircleInfo, faHandPointRight, faPlus } from "@fortawesome/free-solid-svg-icons"
 
-export default function Attractivite({ className = '' }: { className?: string }) {
+export default function Attractivite({ className = "" }: { className?: string }) {
     useEffect(() => {
         reveal({
-            collection: document.querySelectorAll('#attractivite .transition'),
-            classesToRemove: ['translate-y-full', 'scale-0', 'opacity-0']
+            collection: document.querySelectorAll("#attractivite .transition"),
+            classesToRemove: ["translate-y-full", "scale-0", "opacity-0"]
         })
     }, [])
 
@@ -18,7 +18,7 @@ export default function Attractivite({ className = '' }: { className?: string })
                 <div className="w-full lg:w-2/3 mx-auto flex flex-col gap-6">
                     <div className="flex flex-col gap-6">
                         <h2>
-                            Favoriser le bien-être au travail , un levier de performance pour les entreprises&nbsp;:
+                            Favoriser le bien-être au travail, un levier de performance pour les entreprises&nbsp;:
                         </h2>
                         <ul className="list-none list-inside fa-ul text-2xl leading-12 resultats">
                             <li className="transition duration-200 opacity-0 translate-y-full">
@@ -43,7 +43,7 @@ export default function Attractivite({ className = '' }: { className?: string })
                             </li>
                             <li className="transition duration-200 opacity-0 translate-y-full">
                                 <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faChartLine} /></span>
-                                L'image de l'entreprise est améliorée de <span className="text-2xl font-bold text-tertary-900">84%</span> auprès des collaborateurs.
+                                L’image de l’entreprise est améliorée de <span className="text-2xl font-bold text-tertary-900">84%</span> auprès des collaborateurs.
                             </li>
                             <li className="transition duration-200 opacity-0 translate-y-full">
                                 <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
@@ -51,7 +51,7 @@ export default function Attractivite({ className = '' }: { className?: string })
                             </li>
                         </ul>
                         <p className="text-lg leading-6">
-                            <FontAwesomeIcon icon={faCircleInfo} /> Le saviez-vous&nbsp;: en 2025, le bien-être est le premier critère de fidélité envers une entreprise selon une étude Women'UP, pour 75% des actifs en 2025.
+                            <FontAwesomeIcon icon={faCircleInfo} /> Le saviez-vous&nbsp;: en 2025, le bien-être est le premier critère de fidélité envers une entreprise selon une étude Women’UP, pour 75% des actifs en 2025.
                         </p>
 
                     </div>

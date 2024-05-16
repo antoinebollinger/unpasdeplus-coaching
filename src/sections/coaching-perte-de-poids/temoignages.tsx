@@ -1,9 +1,9 @@
-'use client'
-import { useEffect, useState, useCallback } from 'react'
-import useEmblaCarousel, { EmblaCarouselType } from 'embla-carousel-react'
-import { DotButton, PrevButton, NextButton } from '../../components/emblaButtons'
+"use client"
+import { useEffect, useState, useCallback } from "react"
+import useEmblaCarousel, { EmblaCarouselType } from "embla-carousel-react"
+import { DotButton, PrevButton, NextButton } from "../../components/emblaButtons"
 
-export default function Temoignages({ className = '' }: { className?: string }) {
+export default function Temoignages({ className = "" }: { className?: string }) {
     const [emblaRef, emblaApi] = useEmblaCarousel({})
     const [prevBtnDisabled, setPrevBtnDisabled] = useState(true)
     const [nextBtnDisabled, setNextBtnDisabled] = useState(true)
@@ -37,9 +37,9 @@ export default function Temoignages({ className = '' }: { className?: string }) 
         if (!emblaApi) return
         onInit(emblaApi)
         onSelect(emblaApi)
-        emblaApi.on('reInit', onInit)
-        emblaApi.on('reInit', onSelect)
-        emblaApi.on('select', onSelect)
+        emblaApi.on("reInit", onInit)
+        emblaApi.on("reInit", onSelect)
+        emblaApi.on("select", onSelect)
     }, [emblaApi, onInit, onSelect])
 
     return (
@@ -93,8 +93,8 @@ export default function Temoignages({ className = '' }: { className?: string }) 
                         <DotButton
                             key={i}
                             onClick={() => scrollTo(i)}
-                            className={'embla__dot'.concat(
-                                i === selectedIndex ? ' embla__dot--selected' : ''
+                            className={"embla__dot".concat(
+                                i === selectedIndex ? " embla__dot--selected" : ""
                             )}
                             aria-label={`Aller au slide ${i + 1}`}
                         />

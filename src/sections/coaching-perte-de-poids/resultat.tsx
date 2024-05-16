@@ -1,21 +1,21 @@
-'use client'
-import { useEffect } from 'react'
-import Image from 'next/image'
-import Link from 'next/link'
-import { reveal } from '../../utils/reveal'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCheck } from '@fortawesome/free-solid-svg-icons'
-import Youpi from '/public/images/coaching-perte-de-poids/resultat.jpg'
+"use client"
+import { useEffect } from "react"
+import Image from "next/image"
+import Link from "next/link"
+import { reveal } from "../../utils/reveal"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faCheck } from "@fortawesome/free-solid-svg-icons"
+import Youpi from "/public/images/coaching-perte-de-poids/resultat.jpg"
 
-export default function Resultat({ className = 'bg-gray-100' }: { className?: string }) {
+export default function Resultat({ className = "bg-gray-100" }: { className?: string }) {
     useEffect(() => {
         reveal({
-            collection: document.querySelectorAll('#resultat .transition'),
-            classesToRemove: ['opacity-0', 'scale-0']
+            collection: document.querySelectorAll("#resultat .transition"),
+            classesToRemove: ["opacity-0", "scale-0"]
         })
         reveal({
-            collection: document.querySelectorAll('#resultat li'),
-            classesToRemove: ['opacity-0', 'translate-x-full'],
+            collection: document.querySelectorAll("#resultat li"),
+            classesToRemove: ["opacity-0", "translate-x-full"],
             delayIncrement: 50
         })
     }, [])
@@ -65,7 +65,7 @@ export default function Resultat({ className = 'bg-gray-100' }: { className?: st
                         </div>
                         <div>
                             <h2>
-                                Un accompagnement adapté pour retrouver <strong>sérénité et équilibre de vie</strong>&nbsp;:
+                                Un accompagnement adapté pour retrouver sérénité et équilibre de vie&nbsp;:
                             </h2>
                             <ul className="list-none list-inside fa-ul text-lg leading-8">
                                 {
@@ -95,9 +95,9 @@ export default function Resultat({ className = 'bg-gray-100' }: { className?: st
                             </ul>
                         </div>
                         <div>
-                            <h2>Bien-être du Corps et Amélioration de l'Image de Soi&nbsp;:</h2>
+                            <h2>Bien-être du corps et amélioration de l’image de soi&nbsp;:</h2>
                             <p className="text-lg leading-6 transition duration-200 opacity-0 text">
-                                Au-delà de l'objectif perte de poids, le parcours <strong>coaching perte de poids</strong> vous accompagne à <strong>développer une meilleure image de soi</strong>, une meilleure <strong>confiance en soi</strong>, en vos <strong>capacités</strong> pour un <strong>impact positif</strong> dans votre quotidien.
+                                Au-delà de l’objectif perte de poids, le parcours <strong>coaching perte de poids</strong> vous accompagne à <strong>développer une meilleure image de soi</strong>, une meilleure <strong>confiance en soi</strong>, en vos <strong>capacités</strong> pour un <strong>impact positif</strong> dans votre quotidien.
                             </p>
                         </div>
                     </div>

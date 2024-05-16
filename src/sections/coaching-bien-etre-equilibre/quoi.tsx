@@ -1,25 +1,25 @@
-'use client'
-import { useEffect } from 'react'
-import Image, { StaticImageData } from 'next/image'
-import { reveal } from '../../utils/reveal'
-import Quoi_1 from '/public/images/coaching-bien-etre-equilibre/quoi_1.jpg'
-import Quoi_2 from '/public/images/coaching-bien-etre-equilibre/quoi_2.jpg'
-import Quoi_3 from '/public/images/coaching-bien-etre-equilibre/quoi_3.jpg'
+"use client"
+import { useEffect } from "react"
+import Image, { StaticImageData } from "next/image"
+import { reveal } from "../../utils/reveal"
+import Quoi_1 from "/public/images/coaching-bien-etre-equilibre/quoi_1.jpg"
+import Quoi_2 from "/public/images/coaching-bien-etre-equilibre/quoi_2.jpg"
+import Quoi_3 from "/public/images/coaching-bien-etre-equilibre/quoi_3.jpg"
 
 
-export default function Quoi({ className = '' }: { className?: string }) {
+export default function Quoi({ className = "" }: { className?: string }) {
     useEffect(() => {
         reveal({
-            collection: document.querySelectorAll('#quoi h4'),
-            classesToRemove: ['opacity-0']
+            collection: document.querySelectorAll("#quoi h4"),
+            classesToRemove: ["opacity-0"]
         })
         reveal({
-            collection: document.querySelectorAll('#quoi .quoi-text'),
-            classesToRemove: ['opacity-0', 'translate-y-full']
+            collection: document.querySelectorAll("#quoi .quoi-text"),
+            classesToRemove: ["opacity-0", "translate-y-full"]
         })
         reveal({
-            collection: document.querySelectorAll('#quoi .img'),
-            classesToRemove: ['scale-0']
+            collection: document.querySelectorAll("#quoi .img"),
+            classesToRemove: ["scale-0"]
         })
     }, [])
 
@@ -51,11 +51,11 @@ export default function Quoi({ className = '' }: { className?: string }) {
         <section id="quoi" className={className}>
             <div className="container">
                 <div className="w-full lg:w-2/3 mx-auto flex flex-col gap-6 mb-16">
-                    <h3 className="h1">Le coaching bien-être et équilibre, c'est quoi&nbsp;?</h3>
+                    <h3 className="h1">Le coaching bien-être et équilibre, c’est quoi&nbsp;?</h3>
                     <p className="text-lg leading-6">
-                        Le coaching bien-être et équilibre vous aide à retrouver <strong>l'harmonie entre bien-être intérieur et extérieur</strong>.
+                        Le coaching bien-être et équilibre vous aide à retrouver <strong>l’harmonie entre bien-être intérieur et extérieur</strong>.
                         <br />
-                        C'est un parcours de coaching pour un <strong>mieux-être au quotidien</strong> s'articulent autour de 3 axes&nbsp;:
+                        C’est un parcours de coaching pour un <strong>mieux-être au quotidien</strong> s’articulent autour de 3 axes&nbsp;:
                     </p>
                 </div>
                 <div className="flex flex-col lg:flex-row gap-16 justify-center items-stretch">
@@ -67,10 +67,10 @@ export default function Quoi({ className = '' }: { className?: string }) {
                                 Établir des objectifs visant à améliorer votre bien-être mental peut être une véritable <strong>source de motivation</strong>.
                             </li>
                             <li>
-                                Prendre soin de votre <strong>bien-être mental</strong>, c'est prendre soin de vous-même, de votre <strong>état émotionnel</strong>.
+                                Prendre soin de votre <strong>bien-être mental</strong>, c’est prendre soin de vous-même, de votre <strong>état émotionnel</strong>.
                             </li>
                             <li>
-                                Apprenez à <strong>diminuer le stress et l'anxiété</strong> pour retrouver un équilibre intérieur.
+                                Apprenez à <strong>diminuer le stress et l’anxiété</strong> pour retrouver un équilibre intérieur.
                             </li>
                             <li>
                                 Affrontez les défis de la vie avec calme et sérénité grâce à des techniques de gestion du stress.
@@ -79,7 +79,7 @@ export default function Quoi({ className = '' }: { className?: string }) {
                                 Réactivez votre énergie et votre motivation pour atteindre vos objectifs de bien-être mental.
                             </li>
                             <li>
-                                Trouvez <strong>l'équilibre physique, mental et émotionnel</strong> dont vous avez besoin pour mener une vie épanouissante.
+                                Trouvez <strong>l’équilibre physique, mental</strong> et <strong>émotionnel</strong> dont vous avez besoin pour mener une vie épanouissante.
                             </li>
                         `
                     )}
@@ -91,13 +91,13 @@ export default function Quoi({ className = '' }: { className?: string }) {
                                 Apprenez à <strong>gérer vos émotions</strong> pour mettre fin à la tendance de manger par émotion.
                             </li>
                             <li>
-                                Explorez la voie d'un <strong>rééquilibrage alimentaire</strong> pour restaurer <strong>l'harmonie entre votre corps et votre esprit</strong>.
+                                Explorez la voie d’un <strong>rééquilibrage alimentaire</strong> pour restaurer <strong>l’harmonie entre votre corps et votre esprit</strong>.
                             </li>
                             <li>
                                 Adoptez un rééquilibrage alimentaire pour renouer avec une <strong>relation saine</strong> entre votre <strong>corps et votre esprit</strong>.
                             </li>
                             <li>
-                                Découvrez des techniques pour <strong>canaliser vos émotions</strong> et éviter de recourir à la nourriture comme un moyen d'apaisement.
+                                Découvrez des techniques pour <strong>canaliser vos émotions</strong> et éviter de recourir à la nourriture comme un moyen d’apaisement.
                             </li>
                         `
                     )}
@@ -109,7 +109,7 @@ export default function Quoi({ className = '' }: { className?: string }) {
                                 Prendre soin de son <strong>hygiène de vie</strong> est essentiel pour retrouver un équilibre de vie harmonieux. Un accompagnement pour vous aider à atteindre vos <strong>objectifs de santé et de forme physique</strong> de manière <strong>durable et épanouissante</strong>.
                             </li>
                             <li>
-                                Mettre en place des <strong>stratégies efficaces</strong> pour maintenir votre engagement et vous transformer en habitude de vie. Au-delà des bénéfices physiques, un développement d'une <strong>meilleure image de soi</strong>, une plus grande <strong>confiance</strong> en vos <strong>capacités</strong>. Un impact sur tous les aspects de votre vie. Un accompagnement adapté pour retrouver <strong>sérénité et équilibre de vie</strong>.
+                                Mettre en place des <strong>stratégies efficaces</strong> pour maintenir votre engagement et vous transformer en habitude de vie. Au-delà des bénéfices physiques, un développement d’une <strong>meilleure image de soi</strong>, une plus grande <strong>confiance</strong> en vos <strong>capacités</strong>. Un impact sur tous les aspects de votre vie. Un accompagnement adapté pour retrouver <strong>sérénité et équilibre de vie</strong>.
                             </li>
                         `
                     )}

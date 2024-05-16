@@ -1,14 +1,14 @@
-'use client'
-import { useEffect } from 'react'
-import { reveal } from '../../utils/reveal'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCheck } from '@fortawesome/free-solid-svg-icons'
+"use client"
+import { useEffect } from "react"
+import { reveal } from "../../utils/reveal"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faCheck } from "@fortawesome/free-solid-svg-icons"
 
-export default function Performance({ className = 'bg-gray-100' }: { className?: string }) {
+export default function Performance({ className = "bg-gray-100" }: { className?: string }) {
     useEffect(() => {
         reveal({
-            collection: document.querySelectorAll('#performance .transition'),
-            classesToRemove: ['opacity-0', 'translate-y-full']
+            collection: document.querySelectorAll("#performance .transition"),
+            classesToRemove: ["opacity-0", "translate-y-full"]
         })
     }, [])
 
@@ -59,7 +59,7 @@ export default function Performance({ className = 'bg-gray-100' }: { className?:
                             Soutenir la parentalité et la qualité de vie au travail
                         </h2>
                         <p className="text-lg leading-6 transition duration-200 opacity-0 translate-y-full">
-                            Engager une politique RH inclusive en faveur de la parentalité en entreprise, c'est permettre aux salariés de s'épanouir professionnellement et être attentif à leur <strong>santé physique et mentale</strong>. C'est aussi <strong>préserver la propre performance de l'entreprise</strong>.
+                            Engager une politique RH inclusive en faveur de la parentalité en entreprise, c’est permettre aux salariés de s’épanouir professionnellement et être attentif à leur <strong>santé physique et mentale</strong>. C’est aussi <strong>préserver la propre performance de l’entreprise</strong>.
                         </p>
                         <p className="text-xl font-bold leading-6 transition duration-200 opacity-0 translate-y-full">
                             Les collaborateurs se sentent compris à 91% et ont envie de rester à 81%.
