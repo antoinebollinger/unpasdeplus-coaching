@@ -39,7 +39,6 @@ export default function Layout({
                 transition={{ duration: 0.5 }}
                 id="top"
             >
-                {/* <Navbar /> */}
                 <Header banner={banner} />
                 {children}
                 {footer && <Footer onThisPage={onThisPage} />}

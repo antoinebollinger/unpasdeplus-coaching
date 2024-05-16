@@ -9,6 +9,7 @@ import { openDialog } from "../utils/dialog"
 import { CustomEvent, onThisPage } from "../models/types"
 import { siteData, emailMessage } from "../data/metadata"
 import Socials from "./socials"
+import Wave from "/public/images/svg/wave-pink.svg"
 
 export default function Footer({
     onThisPage = [
@@ -65,21 +66,28 @@ export default function Footer({
     }
 
     return (
-        <footer id="footer" className="footer-area bg-secondary-100">
-            <div className="mb-16 footer-widget">
+        <footer id="footer" className="footer-area">
+            <div className="z-10 w-full h-auto -mb-1 header-shape">
+                <Image
+                    src={Wave}
+                    alt="wave"
+                    className="object-cover w-full h-full"
+                />
+            </div>
+            <div className="footer-widget bg-secondary-100 pb-16">
                 <div className="container">
                     <div className="row">
                         <div className="w-full">
                             <div className="items-end justify-between block mb-8 footer-logo-support md:flex">
                                 <div className="flex items-center footer-logo">
-                                    <Link href="/" className="mt-8">
+                                    <Link href="/">
                                         <Image
                                             src={Logo}
                                             alt="Logo"
-                                            height="60"
+                                            height="80"
                                         />
                                     </Link>
-                                    <Socials className="flex mt-8 ml-8 footer-social hidden" />
+                                    <Socials className="flex ml-8 footer-social hidden" />
                                 </div>
                             </div>
                         </div>
