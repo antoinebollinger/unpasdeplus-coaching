@@ -1,18 +1,18 @@
-'use client'
-import { useEffect } from 'react'
-import Image, { StaticImageData } from 'next/image'
-import Link from 'next/link'
-import { reveal } from '../../utils/reveal'
-import Balance from '/public/images/accueil/balance.jpg'
-import Equilibre from '/public/images/accueil/equilibre.jpg'
-import Entreprise from '/public/images/accueil/entreprises.webp'
-import Calendly from '../../components/calendly'
+"use client"
+import { useEffect } from "react"
+import Image, { StaticImageData } from "next/image"
+import Link from "next/link"
+import { reveal } from "../../utils/reveal"
+import Balance from "/public/images/accueil/balance.jpg"
+import Equilibre from "/public/images/accueil/equilibre.jpg"
+import Entreprise from "/public/images/accueil/entreprises.webp"
+import Calendly from "../../components/calendly"
 
-export default function Offres({ className = 'bg-gray-100' }: { className?: string }) {
+export default function Offres({ className = "bg-gray-100" }: { className?: string }) {
     useEffect(() => {
         reveal({
-            collection: document.querySelectorAll('.liens-img'),
-            classesToRemove: ['scale-0']
+            collection: document.querySelectorAll(".liens-img"),
+            classesToRemove: ["scale-0"]
         })
     }, [])
 

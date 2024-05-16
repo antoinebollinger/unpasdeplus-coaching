@@ -8,7 +8,7 @@ export default function MentionsLegales() {
                 <h2>Editeur du site&nbsp;:</h2>
 
                 <p>
-                    Le site <strong>{siteData.domain}</strong> est édité par l'entreprise individuelle Appriou Sabrina – 56250 SAINT-NOLFF<br />
+                    Le site <strong>{siteData.domain}</strong> est édité par l’entreprise individuelle Appriou Sabrina – 56250 SAINT-NOLFF<br />
                     Tel.&nbsp;: <strong>+33(0)6 61 79 46 99</strong><br />
                     Courriel&nbsp;: <strong><a href={`mailto:${process.env.NEXT_PUBLIC_EMAIL_TO}`}>{process.env.NEXT_PUBLIC_EMAIL_TO}</a></strong><br />
                     Directrice de la publication&nbsp;: <strong>{siteData.owner}</strong><br />

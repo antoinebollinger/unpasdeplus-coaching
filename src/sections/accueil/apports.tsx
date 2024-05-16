@@ -1,13 +1,13 @@
-'use client'
-import { useEffect } from 'react'
-import { reveal } from '../../utils/reveal'
+"use client"
+import { useEffect } from "react"
+import { reveal } from "../../utils/reveal"
 
-export default function Apports({ className = 'bg-gray-100' }: { className?: string }) {
+export default function Apports({ className = "bg-gray-100" }: { className?: string }) {
     useEffect(() => {
         reveal({
-            collection: document.querySelectorAll('#apports-coaching .text'),
-            classesToRemove: ['translate-x-3/4', 'lg:translate-y-3/4', 'scale-0', 'opacity-0'],
-            classesToAdd: ['translate-x-0', 'translate-y-0'],
+            collection: document.querySelectorAll("#apports-coaching .text"),
+            classesToRemove: ["translate-x-3/4", "lg:translate-y-3/4", "scale-0", "opacity-0"],
+            classesToAdd: ["translate-x-0", "translate-y-0"],
         })
     }, [])
 

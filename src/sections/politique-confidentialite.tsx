@@ -17,7 +17,7 @@ export default function PolitiqueConfidentialite() {
                 </p>
 
                 <p>
-                    En saisissant ses informations et ses coordonnées sur l'un des formulaires du site <strong>{siteData.domain}</strong>, le client reconnaît accepter recevoir des informations / publications de la part de la société par email et accepter de recevoir la newsletter. Il est libre de se désinscrire à tout instant. Il suffit pour cela de cliquer sur le lien présent à la fin des emails ou par email&nbsp;: <a href={`mailto:${process.env.NEXT_PUBLIC_EMAIL_TO}`}>{process.env.NEXT_PUBLIC_EMAIL_TO}</a>.
+                    En saisissant ses informations et ses coordonnées sur l’un des formulaires du site <strong>{siteData.domain}</strong>, le client reconnaît accepter recevoir des informations / publications de la part de la société par email et accepter de recevoir la newsletter. Il est libre de se désinscrire à tout instant. Il suffit pour cela de cliquer sur le lien présent à la fin des emails ou par email&nbsp;: <a href={`mailto:${process.env.NEXT_PUBLIC_EMAIL_TO}`}>{process.env.NEXT_PUBLIC_EMAIL_TO}</a>.
                 </p>
 
                 <h2>Cookies</h2>

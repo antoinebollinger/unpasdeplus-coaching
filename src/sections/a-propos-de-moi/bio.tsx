@@ -1,20 +1,20 @@
-'use client'
-import { useEffect } from 'react'
-import { renderToString } from 'react-dom/server'
-import Image from 'next/image'
-import { reveal } from '../../utils/reveal'
-import Parcours from './parcours'
-import Sabrina from '/public/images/a-propos-de-moi/sabrina.webp'
-import Sportive from '/public/images/a-propos-de-moi/sportive.jpg'
-import { openModal } from '../../utils/modal'
+"use client"
+import { useEffect } from "react"
+import { renderToString } from "react-dom/server"
+import Image from "next/image"
+import { reveal } from "../../utils/reveal"
+import Parcours from "./parcours"
+import Sabrina from "/public/images/a-propos-de-moi/sabrina.webp"
+import Sportive from "/public/images/a-propos-de-moi/sportive.jpg"
+import { openModal } from "../../utils/modal"
 
-export default function Bio({ className = '' }: { className?: string }) {
+export default function Bio({ className = "" }: { className?: string }) {
     useEffect(() => {
         reveal({
-            collection: document.querySelectorAll('.transition'),
-            classesToRemove: ['scale-0', 'opacity-0', 'translate-y-full', 'translate-x-full']
+            collection: document.querySelectorAll(".transition"),
+            classesToRemove: ["scale-0", "opacity-0", "translate-y-full", "translate-x-full"]
         })
-        document.querySelector("#voirParcours").addEventListener('click', e => {
+        document.querySelector("#voirParcours").addEventListener("click", e => {
             e.preventDefault()
             const parcours = renderToString(<Parcours />)
             openModal({

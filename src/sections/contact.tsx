@@ -1,44 +1,44 @@
-'use client'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faLocationDot, faPhone, faCalendarDays } from '@fortawesome/free-solid-svg-icons'
-import { useEffect } from 'react'
-import { openDialog } from '../utils/dialog'
-import { emailMessage } from '../data/metadata'
-import { CustomEvent } from '../models/types'
-import Link from 'next/link'
+"use client"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faEnvelope, faLocationDot, faPhone, faCalendarDays } from "@fortawesome/free-solid-svg-icons"
+import { useEffect } from "react"
+import { openDialog } from "../utils/dialog"
+import { emailMessage } from "../data/metadata"
+import { CustomEvent } from "../models/types"
+import Link from "next/link"
 
-export default function Contact({ className = '' }: { className?: string }) {
+export default function Contact({ className = "" }: { className?: string }) {
     useEffect(() => {
-        document.forms['contact-form'].addEventListener('submit', async (e: CustomEvent) => {
+        document.forms["contact-form"].addEventListener("submit", async (e: CustomEvent) => {
             e.preventDefault()
 
             if (!e.target.elements["consent"].checked)
                 return
 
             openDialog({
-                body: emailMessage.sending, buttons: 'hidden'
+                body: emailMessage.sending, buttons: "hidden"
             })
 
             const data = new FormData(e.target)
-            data.append('email_to', process.env.NEXT_PUBLIC_EMAIL_TO)
-            data.append('name_to', process.env.NEXT_PUBLIC_NAME_TO)
-            data.append('transporter', 'unpasdeplus')
+            data.append("email_to", process.env.NEXT_PUBLIC_EMAIL_TO)
+            data.append("name_to", process.env.NEXT_PUBLIC_NAME_TO)
+            data.append("transporter", "unpasdeplus")
 
             try {
                 const sendEmail = await fetch(`${process.env.NEXT_PUBLIC_EMAIL_API}/contact`, {
-                    method: 'POST',
+                    method: "POST",
                     body: data
                 })
                 const response = await sendEmail.json()
                 if (response.sent)
                     openDialog({
-                        body: emailMessage.messageSent.sprintf([e.target.elements['name'].value]), buttons: 'hidden'
+                        body: emailMessage.messageSent.sprintf([e.target.elements["name"].value]), buttons: "hidden"
                     })
                 else
-                    throw new Error('Fetch returned with sent = false')
+                    throw new Error("Fetch returned with sent = false")
             } catch (error) {
                 openDialog({
-                    body: emailMessage.fetchError.sprintf([process.env.NEXT_PUBLIC_EMAIL_TO, error.message]), buttons: 'hidden'
+                    body: emailMessage.fetchError.sprintf([process.env.NEXT_PUBLIC_EMAIL_TO, error.message]), buttons: "hidden"
                 })
             }
         })
@@ -79,7 +79,7 @@ export default function Contact({ className = '' }: { className?: string }) {
                                     <div className="w-full">
                                         <div className="mx-4 mb-6 single-form form-group">
                                             <label>Votre nom *
-                                                <input type="text" name="name" data-error="Votre nom s'il vous plait." required /></label>
+                                                <input type="text" name="name" data-error="Votre nom s’il vous plait." required /></label>
                                             <div className="help-block with-errors"></div>
                                         </div>
                                     </div>
@@ -107,7 +107,7 @@ export default function Contact({ className = '' }: { className?: string }) {
                                     <div className="w-full">
                                         <div className="mx-4 mb-6 single-form form-group">
                                             <label className="cursor-pointer">
-                                                <input type="checkbox" name="consent" required />&nbsp;En cochant cette case, je reconnais avoir pris connaissance de la <Link href="/mentions-legales" className="font-bold text-primary-900 hover:text-primary-700 transition">politique de confidentialité</Link> et j'autorise ce site à conserver mes données personnelles transmises via ce formulaire. Aucune exploitation commerciale ne sera faite des données conservées.
+                                                <input type="checkbox" name="consent" required />&nbsp;En cochant cette case, je reconnais avoir pris connaissance de la <Link href="/mentions-legales" className="font-bold text-primary-900 hover:text-primary-700 transition">politique de confidentialité</Link> et j’autorise ce site à conserver mes données personnelles transmises via ce formulaire. Aucune exploitation commerciale ne sera faite des données conservées.
                                             </label>
                                         </div>
                                     </div>

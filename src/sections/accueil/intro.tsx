@@ -1,10 +1,10 @@
-import Image from 'next/image'
-import Logo from '/public/logos/logo-texte-vertical.svg'
-import EMCC from '/public/images/icones/emcc.jpg'
-import FranceCompetences from '/public/images/icones/france_competences.jpg'
-import { madelyn } from '../../../styles/font'
+import Image from "next/image"
+import Logo from "/public/logos/logo-texte-vertical.svg"
+import EMCC from "/public/images/icones/emcc.jpg"
+import FranceCompetences from "/public/images/icones/france_competences.jpg"
+import { madelyn } from "../../../styles/font"
 
-export default function Intro({ className = '' }: { className?: string }) {
+export default function Intro({ className = "" }: { className?: string }) {
     return (
         <section id="introduction" className={className}>
             <div className="container">
@@ -19,7 +19,7 @@ export default function Intro({ className = '' }: { className?: string }) {
                     </div>
                     <div className="w-full lg:w-2/3 lg:order-0">
                         <p className="text-2xl mb-10">
-                            « Ne limite pas tes défis, défis tes limites »
+                            «&nbsp;Ne limite pas tes défis, défis tes limites&nbsp;»
                         </p>
                         <p className="h1">Facilitatrice de la mise en mouvement physique, mentale et émotionnelle</p>
                         <div className="flex flex-col lg:flex-row gap-6 mb-10">

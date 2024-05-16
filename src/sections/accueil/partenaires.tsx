@@ -1,15 +1,15 @@
-'use client'
-import { useEffect } from 'react'
-import Image from 'next/image'
-import { reveal } from '../../utils/reveal'
-import LesPremieresBretagne from '/public/images/partenaires/les-premieres-bretagne.png'
-import FemmesDeBretagne from '/public/images/partenaires/femmes-de-bretagne.jpg'
+"use client"
+import { useEffect } from "react"
+import Image from "next/image"
+import { reveal } from "../../utils/reveal"
+import LesPremieresBretagne from "/public/images/partenaires/les-premieres-bretagne.png"
+import FemmesDeBretagne from "/public/images/partenaires/femmes-de-bretagne.jpg"
 
-export default function Partenaires({ className = '' }: { className?: string }) {
+export default function Partenaires({ className = "" }: { className?: string }) {
     useEffect(() => {
         reveal({
-            collection: document.querySelectorAll('#mes-partenaires .partenaire'),
-            classesToRemove: ['opacity-0', 'translate-y-1/4']
+            collection: document.querySelectorAll("#mes-partenaires .partenaire"),
+            classesToRemove: ["opacity-0", "translate-y-1/4"]
         })
     }, [])
 

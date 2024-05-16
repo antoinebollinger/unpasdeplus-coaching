@@ -1,16 +1,16 @@
-'use client'
-import { useEffect } from 'react'
-import Image from 'next/image'
-import Link from 'next/link'
-import { reveal } from '../../utils/reveal'
-import SabrinaPic from '/public/images/accueil/sabrina.webp'
-import { madelyn } from '../../../styles/font'
+"use client"
+import { useEffect } from "react"
+import Image from "next/image"
+import Link from "next/link"
+import { reveal } from "../../utils/reveal"
+import SabrinaPic from "/public/images/accueil/sabrina.webp"
+import { madelyn } from "../../../styles/font"
 
-export default function Sabrina({ className = '' }: { className?: string }) {
+export default function Sabrina({ className = "" }: { className?: string }) {
     useEffect(() => {
         reveal({
-            collection: document.querySelectorAll('#sabrina-appriou .img'),
-            classesToRemove: ['scale-0']
+            collection: document.querySelectorAll("#sabrina-appriou .img"),
+            classesToRemove: ["scale-0"]
         })
     }, [])
 
