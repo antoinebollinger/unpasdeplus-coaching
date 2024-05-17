@@ -67,11 +67,11 @@ export default function Footer({
 
     return (
         <footer id="footer" className="footer-area">
-            <div className="z-10 w-full h-auto -mb-1 header-shape">
+            <div className="z-10 w-full h-[120px] -mb-1 header-shape flex items-end">
                 <Image
                     src={Wave}
                     alt="wave"
-                    className="object-cover w-full h-full"
+                    className="w-full m-h-[120px]"
                 />
             </div>
             <div className="footer-widget bg-secondary-100 pb-16">
