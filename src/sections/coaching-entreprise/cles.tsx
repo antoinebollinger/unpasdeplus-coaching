@@ -73,12 +73,12 @@ export default function Cles({ className = "bg-gray-100" }: { className?: string
                     {list(
                         Coaching_1,
                         "Coaching individuel pour les salariés parents",
-                        "<p>Un accompagnement pour prendre soin de leur santé physique et mentale dans les défis de la vie. C’est garantir un <strong>soutien émotionnel</strong> aux parents dans leur transition de vie pour mieux gérer le stress, surmonter les défis personnels et limiter ainsi les risques psychosociaux.</p>"
+                        "<p>Un accompagnement pour prendre soin de leur <strong>santé physique et mentale</strong> dans les défis de la vie. C’est garantir un <strong>soutien émotionnel</strong> aux parents dans leur <strong>transition de vie</strong> pour mieux gérer le stress, surmonter les <strong>défis personnels</strong> et limiter ainsi les <strong>risques psychosociaux</strong>.</p>"
                     )}
                     {list(
                         Coaching_2,
                         "Coaching à la reprise du travail après un congé maternité / paternité / parental ",
-                        "<p>Être parent et travailler implique une nouvelle <strong>organisation professionnelle et personnelle</strong>.</p><ul><li>✔ Accompagner les parents dans leur nouveau rôle de parents, comme préparer le retour de congés maternité/paternité  permet au salarié de vivre sereinement cette transition.</li><li>✔ Accompagner les salariés après une <strong>absence maladie de longue durée</strong> pour réintégrer en douceur le monde du travail.</li></ul><p>L’entreprise a un rôle à jouer dans le bien-être du salarié pour permettre aux salariés parents de <strong>concilier carrière et parentalité</strong> avec <strong>moins de stress et d’anxiété</strong>.</p>"
+                        "<p>Être parent et travailler implique une nouvelle <strong>organisation professionnelle et personnelle</strong>.</p><ul><li>✔ Accompagner les parents dans leur nouveau rôle de parents, comme préparer le <strong>retour de congés maternité/paternité</strong> permet au salarié de vivre sereinement cette transition.</li><li>✔ Accompagner les salariés après une <strong>absence maladie de longue durée</strong> pour réintégrer en douceur le monde du travail.</li></ul><p>L’entreprise a un rôle à jouer dans le <strong>bien-être du salarié</strong> pour permettre aux salariés parents de <strong>concilier carrière et parentalité</strong> avec <strong>moins de stress et d’anxiété</strong>.</p>"
                     )}
                     {list(
                         Coaching_3,
@@ -87,8 +87,8 @@ export default function Cles({ className = "bg-gray-100" }: { className?: string
                     )}
                     {list(
                         Coaching_4,
-                        "Coaching parent aidant au travail&nbsp;: surmonter les défis avec le Coaching en Entreprise",
-                        "<p>Les parents aidants jonglent souvent entre les responsabilités professionnelles et les obligations familiales, ce qui peut créer des défis dans le milieu de travail. Confrontés à différents freins comme des contraintes de gestion du temps et flexibilité, du Stress et charge émotionnelle qui ont un impact sur la carrière et les choix professionnels.</p><ul><li>✔ Le coaching peut aider les parents aidants à mieux gérer le stress, améliorer le bien-être émotionnel et maintenir une performance optimale au travail.</li></ul>"
+                        "Coaching salariés aidants au travail&nbsp;: surmonter les défis avec le Coaching en Entreprise",
+                        "<p>Les salariés aidants jonglent souvent entre les <strong>responsabilités professionnelles et les obligations familiales</strong>, ce qui peut créer des défis dans le milieu de travail. Confrontés à différents freins comme des contraintes de gestion du temps et flexibilité, du stress et charge émotionnelle qui ont un <strong>impact sur la carrière et les choix professionnels</strong>.</p><ul><li>✔ Le coaching peut aider les salariés aidants à mieux <strong>gérer le stress</strong>, améliorer le <strong>bien-être émotionnel</strong> et maintenir une <strong>performance optimale au travail</strong>.</li></ul>"
                     )}
                     {list(
                         Coaching_5,

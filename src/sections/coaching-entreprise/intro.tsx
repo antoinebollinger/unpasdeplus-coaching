@@ -31,7 +31,7 @@ export default function Intro({ className = "" }: { className?: string }) {
                             <strong>L’équilibre vie pro perso</strong> est un défi constant, et jugé <strong>difficile</strong> surtout pour les <strong>parents actifs pour 77%</strong>.
                             <br />
                             <br />
-                            Notre mission&nbsp;: agir sur le <strong>bien-être des salariés-parents</strong> pour permettre aux entreprises d’avoir des <strong>salariés en forme</strong> et concilier sereinement parentalité et travail.
+                            Notre mission&nbsp;: agir sur le <strong>bien-être des salariés-parents</strong> pour permettre aux entreprises d’avoir des <strong>salariés en forme</strong> et <strong>concilier sereinement parentalité et travail</strong>.
                         </p>
                         <p className="text-xl leading-8 mb-6">
                             <strong>Conciliation travail & famille</strong>&nbsp;: une priorité n° 1 pour 66% des parents.

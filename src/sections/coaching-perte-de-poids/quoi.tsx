@@ -17,7 +17,7 @@ export default function Quoi({ className = "bg-gray-100" }: { className?: string
                 <div className="w-full lg:w-2/3 mx-auto flex flex-col gap-6">
                     <h1>Trouver l’équilibre dans la perte de poids</h1>
                     <p className="text-lg leading-6 transition duration-200 opacity-0 text">
-                        La <strong>perte de poids</strong> n’est pas simplement une question de chiffres sur la balance. C’est trouver son équilibre dans <strong>l’alimentation</strong>, dans une <strong>activé physique adaptée</strong> et sa <strong>santé mentale</strong>.
+                        La <strong>perte de poids</strong> n’est pas simplement une question de chiffres sur la balance. C’est trouver son équilibre dans <strong>l’alimentation</strong>, dans une <strong>activité physique adaptée</strong> et sa <strong>santé mentale</strong>.
                     </p>
                     <div>
                         <h2>L’importance du coaching mental</h2>

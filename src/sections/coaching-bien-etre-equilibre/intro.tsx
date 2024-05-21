@@ -33,7 +33,7 @@ export default function Intro({ className = "" }: { className?: string }) {
                         <h1>Retrouver équilibre et bien-être au quotidien</h1>
                         <br />
                         <p className="text-lg leading-6 mb-6">
-                            Le coaching bien-être et équilibre vous accompagne à prendre soin de vous et à trouver un équilibre <strong>physique, mental</strong> et <strong>émotionnel</strong>.
+                            Le coaching bien-être & équilibre vous accompagne à prendre soin de vous et à trouver un équilibre <strong>physique, mental</strong> et <strong>émotionnel</strong>.
                             <br />
                             <br />
                             Vous souhaitez vous sentir mieux au quotidien&nbsp;? Mais vous manquez de temps pour <strong>prendre soin de vous</strong> et vous avez besoin d’un soutien permanent pour <strong>rester motivé.e</strong> durant la durée du coaching&nbsp;?

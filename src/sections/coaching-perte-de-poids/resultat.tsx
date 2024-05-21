@@ -54,7 +54,7 @@ export default function Resultat({ className = "bg-gray-100" }: { className?: st
                                         (
                                             <>
                                                 <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
-                                                <strong>Soutenu.e</strong> tout au long du parcours de coaching dans les moments de doutes ou de démotivation
+                                                <strong>Soutenu.e</strong> tout au long du parcours de coaching dans les moments de doutes ou de baisse de motivation
                                             </>
                                         )
                                     ].map((e, i) => (

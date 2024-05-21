@@ -32,16 +32,16 @@ export default function Methode({ className = "" }: { className?: string }) {
                                 Le <strong>coaching perte de poids</strong> comprend une composante importante&nbsp;: l’activité physique.
                                 <br />
                                 <br />
-                                L’activité physique ne doit pas être synonyme de corvée mais agréable à votre quotidien. Se fixer des <strong>challenges sportifs</strong> avec des <strong>objectifs atteignables et réalisables</strong>. Une activité physique adaptée à vous, à votre forme et votre style de vie. L’exercice physique est connu pour réduire le stress en libérant des endorphines, les «&nbsp;hormones du bonheur&nbsp;». <strong>La gestion du stress</strong> est importante dans un contexte de perte de poids, pour réguler les comportements alimentaires.
+                                L’activité physique ne doit pas être synonyme de corvée mais agréable à votre quotidien. Se fixer des <strong>challenges sportifs</strong> avec des <strong>objectifs atteignables et réalisables</strong>. Une activité physique adaptée à vous, à votre forme et votre style de vie. L’exercice physique est connu pour <strong>réduire le stress</strong> en libérant des endorphines, les «&nbsp;hormones du bonheur&nbsp;». <strong>La gestion du stress</strong> est importante dans un contexte de perte de poids, pour réguler les comportements alimentaires.
                                 <br />
                                 <br />
                                 Améliorer son <strong>bien-être mental</strong> et <strong>son humeur</strong>, grâce à <strong>l’activité physique adaptée</strong> pour installer des <strong>habitudes saines et durables</strong>.
                             </p>
                         </div>
                         <div>
-                            <h2>Alimentation équilivrée dans l’assiette et dans la tête</h2>
+                            <h2>Alimentation équilibrée dans l’assiette et dans la tête</h2>
                             <p className="text-lg leading-6 transition duration-200 opacity-0 text">
-                                Les émotions peuvent influencer les habitudes alimentaires. Les identifier, les comprendre peuvent aider à une meilleure gestion des émotions pour maintenir une relation saine avec la nourriture.
+                                Les <strong>émotions</strong> peuvent influencer les <strong>habitudes alimentaires</strong>. Les identifier, les comprendre peuvent aider à une <strong>meilleure gestion des émotions</strong> pour maintenir une <strong>relation saine avec la nourriture</strong>.
                             </p>
                         </div>
                     </div>

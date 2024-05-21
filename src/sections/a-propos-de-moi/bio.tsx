@@ -68,7 +68,7 @@ export default function Bio({ className = "" }: { className?: string }) {
                         <div className="transition duration-200 opacity-0 translate-y-full">
                             <h2>Alimentation saine et consciente</h2>
                             <p className="text-lg mb-6">
-                                Sportive, j’accorde une importance à <strong>l’alimentation</strong>. Un corps sain dans un esprit sain. Pour moi, prendre soin de soi, c’est un <strong>équilibre harmonieux entre le corps et l’esprit</strong>. L’alimentation saine et consciente nourrit à la fois le corps et la tête, sans compromis sur le plaisir.
+                                Sportive, j’accorde une importance à <strong>l’alimentation</strong>. Un corps sain dans un esprit sain. Prendre soin de soi, c’est un <strong>équilibre harmonieux entre le corps et l’esprit</strong>. L’alimentation saine et consciente nourrit à la fois le corps et la tête, sans compromis sur le plaisir.
                             </p>
                         </div>
                         <div className="transition duration-200 opacity-0 translate-y-full">

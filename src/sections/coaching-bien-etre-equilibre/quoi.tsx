@@ -51,9 +51,9 @@ export default function Quoi({ className = "" }: { className?: string }) {
         <section id="quoi" className={className}>
             <div className="container">
                 <div className="w-full lg:w-2/3 mx-auto flex flex-col gap-6 mb-16">
-                    <h3 className="h1">Le coaching bien-être et équilibre, c’est quoi&nbsp;?</h3>
+                    <h3 className="h1">Le coaching bien-être & équilibre, c’est quoi&nbsp;?</h3>
                     <p className="text-lg leading-6">
-                        Le coaching bien-être et équilibre vous aide à retrouver <strong>l’harmonie entre bien-être intérieur et extérieur</strong>.
+                        Le coaching bien-être & équilibre vous aide à retrouver <strong>l’harmonie entre bien-être intérieur et extérieur</strong>.
                         <br />
                         C’est un parcours de coaching pour un <strong>mieux-être au quotidien</strong> s’articulent autour de 3 axes&nbsp;:
                     </p>
@@ -61,7 +61,7 @@ export default function Quoi({ className = "" }: { className?: string }) {
                 <div className="flex flex-col lg:flex-row gap-16 justify-center items-stretch">
                     {list(
                         Quoi_1,
-                        "Bien-être mental",
+                        "Coaching bien-être mental",
                         `                                
                             <li>
                                 Établir des objectifs visant à améliorer votre bien-être mental peut être une véritable <strong>source de motivation</strong>.
@@ -73,10 +73,10 @@ export default function Quoi({ className = "" }: { className?: string }) {
                                 Apprenez à <strong>diminuer le stress et l’anxiété</strong> pour retrouver un équilibre intérieur.
                             </li>
                             <li>
-                                Affrontez les défis de la vie avec calme et sérénité grâce à des techniques de gestion du stress.
+                                <strong>Affrontez les défis</strong> de la vie avec calme et sérénité grâce à des techniques de gestion du stress.
                             </li>
                             <li>
-                                Réactivez votre énergie et votre motivation pour atteindre vos objectifs de bien-être mental.
+                                <strong>Réactivez votre énergie</strong> et votre motivation pour atteindre vos objectifs de bien-être mental.
                             </li>
                             <li>
                                 Trouvez <strong>l’équilibre physique, mental</strong> et <strong>émotionnel</strong> dont vous avez besoin pour mener une vie épanouissante.
