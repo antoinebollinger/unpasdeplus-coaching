@@ -23,7 +23,7 @@ export default function Parcours() {
                     </div>
                     <div className="w-full md:w-3/4">
                         <p className="text-lg text-gray-900">
-                            Une vie sans trop me poser de question&nbsp;: métro, boulot, dodo. Salariée et maman de 2 enfants en bas âge. Rythme effréné, le sentiment de mener une course contre la montre au quotidien. C’était il y a quelques années. La quête de sens, de mes aspirations, s’installent.
+                            Une vie sans trop me poser de question&nbsp;: métro, boulot, dodo. Salariée et maman de 2 enfants en bas âge. Rythme effréné, le sentiment de mener une course contre la montre au quotidien. C’était il y a quelques années.
                         </p>
                     </div>
                 </div>

@@ -5,7 +5,9 @@ import { reveal } from "../../utils/reveal"
 import Quoi_1 from "/public/images/coaching-bien-etre-equilibre/quoi_1.jpg"
 import Quoi_2 from "/public/images/coaching-bien-etre-equilibre/quoi_2.jpg"
 import Quoi_3 from "/public/images/coaching-bien-etre-equilibre/quoi_3.jpg"
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faCheck } from "@fortawesome/free-solid-svg-icons"
+import { renderToString } from "react-dom/server"
 
 export default function Quoi({ className = "" }: { className?: string }) {
     useEffect(() => {
@@ -41,7 +43,7 @@ export default function Quoi({ className = "" }: { className?: string }) {
                     <strong>{title}</strong>
                 </p>
                 <div className="text-lg text-start grow">
-                    <ul className="list-disc list-inside flex flex-col gap-6" dangerouslySetInnerHTML={{ __html: text }} />
+                    <ul className="list-none list-inside fa-ul flex flex-col gap-6" dangerouslySetInnerHTML={{ __html: text }} />
                 </div >
             </div >
         )
@@ -64,21 +66,27 @@ export default function Quoi({ className = "" }: { className?: string }) {
                         "Coaching bien-être mental",
                         `                                
                             <li>
+                            ${renderToString(<span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>)}
                                 Établir des objectifs visant à améliorer votre bien-être mental peut être une véritable <strong>source de motivation</strong>.
                             </li>
                             <li>
+                            ${renderToString(<span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>)}
                                 Prendre soin de votre <strong>bien-être mental</strong>, c’est prendre soin de vous-même, de votre <strong>état émotionnel</strong>.
                             </li>
                             <li>
+                            ${renderToString(<span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>)}
                                 Apprenez à <strong>diminuer le stress et l’anxiété</strong> pour retrouver un équilibre intérieur.
                             </li>
                             <li>
+                            ${renderToString(<span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>)}
                                 <strong>Affrontez les défis</strong> de la vie avec calme et sérénité grâce à des techniques de gestion du stress.
                             </li>
                             <li>
+                            ${renderToString(<span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>)}
                                 <strong>Réactivez votre énergie</strong> et votre motivation pour atteindre vos objectifs de bien-être mental.
                             </li>
                             <li>
+                            ${renderToString(<span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>)}
                                 Trouvez <strong>l’équilibre physique, mental</strong> et <strong>émotionnel</strong> dont vous avez besoin pour mener une vie épanouissante.
                             </li>
                         `
@@ -88,15 +96,19 @@ export default function Quoi({ className = "" }: { className?: string }) {
                         "Coaching en alimentation émotionnelle",
                         `                                
                             <li>
+                            ${renderToString(<span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>)}
                                 Apprenez à <strong>gérer vos émotions</strong> pour mettre fin à la tendance de manger par émotion.
                             </li>
                             <li>
+                            ${renderToString(<span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>)}
                                 Explorez la voie d’un <strong>rééquilibrage alimentaire</strong> pour restaurer <strong>l’harmonie entre votre corps et votre esprit</strong>.
                             </li>
                             <li>
+                            ${renderToString(<span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>)}
                                 Adoptez un rééquilibrage alimentaire pour renouer avec une <strong>relation saine</strong> entre votre <strong>corps et votre esprit</strong>.
                             </li>
                             <li>
+                            ${renderToString(<span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>)}
                                 Découvrez des techniques pour <strong>canaliser vos émotions</strong> et éviter de recourir à la nourriture comme un moyen d’apaisement.
                             </li>
                         `
@@ -106,9 +118,11 @@ export default function Quoi({ className = "" }: { className?: string }) {
                         "Coaching bien-être physique",
                         `                                
                             <li>
+                            ${renderToString(<span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>)}
                                 Prendre soin de son <strong>hygiène de vie</strong> est essentiel pour retrouver un équilibre de vie harmonieux. Un accompagnement pour vous aider à atteindre vos <strong>objectifs de santé et de forme physique</strong> de manière <strong>durable et épanouissante</strong>.
                             </li>
                             <li>
+                            ${renderToString(<span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>)}
                                 Mettre en place des <strong>stratégies efficaces</strong> pour maintenir votre engagement et vous transformer en habitude de vie. Au-delà des bénéfices physiques, un développement d’une <strong>meilleure image de soi</strong>, une plus grande <strong>confiance</strong> en vos <strong>capacités</strong>. Un impact sur tous les aspects de votre vie. Un accompagnement adapté pour retrouver <strong>sérénité et équilibre de vie</strong>.
                             </li>
                         `

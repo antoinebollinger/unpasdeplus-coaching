@@ -9,6 +9,9 @@ import Coaching_2 from "/public/images/coaching-entreprise/coaching_2.jpg"
 import Coaching_3 from "/public/images/coaching-entreprise/coaching_3.jpg"
 import Coaching_4 from "/public/images/coaching-entreprise/coaching_4.jpg"
 import Coaching_5 from "/public/images/coaching-entreprise/coaching_5.jpg"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faCheck } from "@fortawesome/free-solid-svg-icons"
+import { renderToString } from "react-dom/server"
 
 export default function Cles({ className = "bg-gray-100" }: { className?: string }) {
     useEffect(() => {
@@ -73,27 +76,66 @@ export default function Cles({ className = "bg-gray-100" }: { className?: string
                     {list(
                         Coaching_1,
                         "Coaching individuel pour les salariés parents",
-                        "<p>Un accompagnement pour prendre soin de leur <strong>santé physique et mentale</strong> dans les défis de la vie. C’est garantir un <strong>soutien émotionnel</strong> aux parents dans leur <strong>transition de vie</strong> pour mieux gérer le stress, surmonter les <strong>défis personnels</strong> et limiter ainsi les <strong>risques psychosociaux</strong>.</p>"
+                        `<p>Un accompagnement pour prendre soin de leur <strong>santé physique et mentale</strong> dans les défis de la vie. C’est garantir un <strong>soutien émotionnel</strong> aux parents dans leur <strong>transition de vie</strong> pour mieux gérer le stress, surmonter les <strong>défis personnels</strong> et limiter ainsi les <strong>risques psychosociaux</strong>.</p>`
                     )}
                     {list(
                         Coaching_2,
                         "Coaching à la reprise du travail après un congé maternité / paternité / parental ",
-                        "<p>Être parent et travailler implique une nouvelle <strong>organisation professionnelle et personnelle</strong>.</p><ul><li>✔ Accompagner les parents dans leur nouveau rôle de parents, comme préparer le <strong>retour de congés maternité/paternité</strong> permet au salarié de vivre sereinement cette transition.</li><li>✔ Accompagner les salariés après une <strong>absence maladie de longue durée</strong> pour réintégrer en douceur le monde du travail.</li></ul><p>L’entreprise a un rôle à jouer dans le <strong>bien-être du salarié</strong> pour permettre aux salariés parents de <strong>concilier carrière et parentalité</strong> avec <strong>moins de stress et d’anxiété</strong>.</p>"
+                        `<p>
+                            Être parent et travailler implique une nouvelle <strong>organisation professionnelle et personnelle</strong>.
+                        </p>
+                        <ul class="list-none list-inside fa-ul flex flex-col gap-6">
+                            <li>
+                            ${renderToString(<span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>)}
+                            Accompagner les parents dans leur nouveau rôle de parents, comme préparer le <strong>retour de congés maternité/paternité</strong> permet au salarié de vivre sereinement cette transition.
+                            </li>
+                            <li>
+                            ${renderToString(<span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>)}
+                             Accompagner les salariés après une <strong>absence maladie de longue durée</strong> pour réintégrer en douceur le monde du travail.
+                            </li>
+                        </ul>
+                        <p>
+                            L’entreprise a un rôle à jouer dans le <strong>bien-être du salarié</strong> pour permettre aux salariés parents de <strong>concilier carrière et parentalité</strong> avec <strong>moins de stress et d’anxiété</strong>.
+                        </p>`
                     )}
                     {list(
                         Coaching_3,
                         "Coaching transitions de vie & carrière",
-                        "<p>Être parent, c’est aussi l’être à <strong>différentes étapes de la vie</strong>.</p><ul><li>✔ Être parent de jeunes enfants, d’adolescents, où la gestion de la routine de vie peut être source de <strong>charge mentale importante</strong> pour le salarié-parent et avoir des répercussions au sein du milieu professionnel.</li></ul>"
+                        `<p>
+                            Être parent, c’est aussi l’être à <strong>différentes étapes de la vie</strong>.
+                        </p>
+                        <ul class="list-none list-inside fa-ul flex flex-col gap-6">
+                            <li>
+                            ${renderToString(<span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>)}
+                            Être parent de jeunes enfants, d’adolescents, où la gestion de la routine de vie peut être source de <strong>charge mentale importante</strong> pour le salarié-parent et avoir des répercussions au sein du milieu professionnel.
+                            </li>
+                        </ul>`
                     )}
                     {list(
                         Coaching_4,
                         "Coaching salariés aidants au travail&nbsp;: surmonter les défis avec le Coaching en Entreprise",
-                        "<p>Les salariés aidants jonglent souvent entre les <strong>responsabilités professionnelles et les obligations familiales</strong>, ce qui peut créer des défis dans le milieu de travail. Confrontés à différents freins comme des contraintes de gestion du temps et flexibilité, du stress et charge émotionnelle qui ont un <strong>impact sur la carrière et les choix professionnels</strong>.</p><ul><li>✔ Le coaching peut aider les salariés aidants à mieux <strong>gérer le stress</strong>, améliorer le <strong>bien-être émotionnel</strong> et maintenir une <strong>performance optimale au travail</strong>.</li></ul>"
+                        `<p>
+                            Les salariés aidants jonglent souvent entre les <strong>responsabilités professionnelles et les obligations familiales</strong>, ce qui peut créer des défis dans le milieu de travail. Confrontés à différents freins comme des contraintes de gestion du temps et flexibilité, du stress et charge émotionnelle qui ont un <strong>impact sur la carrière et les choix professionnels</strong>.
+                        </p>
+                        <ul class="list-none list-inside fa-ul flex flex-col gap-6">
+                            <li>
+                            ${renderToString(<span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>)}
+                            Le coaching peut aider les salariés aidants à mieux <strong>gérer le stress</strong>, améliorer le <strong>bien-être émotionnel</strong> et maintenir une <strong>performance optimale au travail</strong>.
+                            </li>
+                        </ul>`
                     )}
                     {list(
                         Coaching_5,
                         "Sensibiliser et former&nbsp;: cultiver une politique inclusive",
-                        "<ul><li>✔ Organiser des ateliers collectifs de sensibilisation et de formation sur les <strong>défis spécifiques</strong> auxquels sont confrontés les parents permet de cultiver une <strong>culture d’entreprise inclusive</strong>.</li><li>✔ Sensibiliser l’équipe à la nécessité d’un <strong>équilibre vie pro-perso</strong> contribue à créer une atmosphère de compréhension mutuelle au sein de l’entreprise.</li></ul>"
+                        `<ul class="list-none list-inside fa-ul flex flex-col gap-6">
+                            <li>
+                            ${renderToString(<span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>)}
+                            Organiser des ateliers collectifs de sensibilisation et de formation sur les <strong>défis spécifiques</strong> auxquels sont confrontés les parents permet de cultiver une <strong>culture d’entreprise inclusive</strong>.
+                            </li>
+                            <li>
+                            ${renderToString(<span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>)}Sensibiliser l’équipe à la nécessité d’un <strong>équilibre vie pro-perso</strong> contribue à créer une atmosphère de compréhension mutuelle au sein de l’entreprise.
+                            </li>
+                        </ul>`
                     )}
                 </div>
                 <div className="text-center mb-16">
