@@ -22,7 +22,7 @@ export default function Contact({ className = '' }: { className?: string }) {
             const data = new FormData(e.target)
             data.append('email_to', process.env.NEXT_PUBLIC_EMAIL_TO)
             data.append('name_to', process.env.NEXT_PUBLIC_NAME_TO)
-            data.append('transporter', 'unpasdeplus')
+            data.append('transporter', 'gmail')
 
             try {
                 const sendEmail = await fetch(`${process.env.NEXT_PUBLIC_EMAIL_API}/contact`, {
