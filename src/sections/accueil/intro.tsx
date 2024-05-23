@@ -1,23 +1,33 @@
+"use client"
+import { useEffect } from "react"
 import Image from "next/image"
-import Logo from "/public/logos/logo-texte-vertical.svg"
+import { reveal } from "../../utils/reveal"
+import IntroPic from "/public/images/accueil/intro.jpg"
 import EMCC from "/public/images/icones/emcc.jpg"
 import FranceCompetences from "/public/images/icones/france_competences.jpg"
 import { madelyn } from "../../../styles/font"
 
 export default function Intro({ className = "" }: { className?: string }) {
+    useEffect(() => {
+        reveal({
+            collection: document.querySelectorAll("#introduction img"),
+            classesToRemove: ["scale-0"]
+        })
+    }, [])
+
     return (
         <section id="introduction" className={className}>
             <div className="container">
                 <div className="flex flex-col lg:flex-row gap-6 justify-center items-center">
-                    <div className="w-2/3 lg:w-1/3 text-center lg:order-1">
+                    <div className="w-2/3 lg:w-1/4 text-center lg:order-1">
                         <Image
-                            src={Logo}
+                            src={IntroPic}
                             alt="Logo"
                             height="250"
-                            className="mx-auto"
+                            className="w-full rounded-full mx-auto transition duration-200 scale-0"
                         />
                     </div>
-                    <div className="w-full lg:w-2/3 lg:order-0">
+                    <div className="w-full lg:w-3/4 lg:order-0">
                         <p className="text-2xl mb-10">
                             «&nbsp;Ne limite pas tes défis, défis tes limites&nbsp;»
                         </p>

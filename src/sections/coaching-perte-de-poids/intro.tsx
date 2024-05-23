@@ -8,7 +8,7 @@ import Calendly from "../../components/calendly"
 export default function Intro({ className = "" }: { className?: string }) {
     useEffect(() => {
         reveal({
-            collection: document.querySelectorAll(".parents-img"),
+            collection: document.querySelectorAll("#introduction img"),
             classesToRemove: ["scale-0"]
         })
         reveal({
@@ -25,8 +25,8 @@ export default function Intro({ className = "" }: { className?: string }) {
                     <div className="w-2/3 lg:w-1/4">
                         <Image
                             src={IntroImg}
-                            alt="Intro parents"
-                            className="w-full rounded-full mx-auto transition duration-200 scale-0 parents-img"
+                            alt="Intro coaching perte de poids"
+                            className="w-full rounded-full mx-auto transition duration-200 scale-0"
                         />
                     </div>
                     <div className="w-full lg:w-3/4">
