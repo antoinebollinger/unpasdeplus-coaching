@@ -21,7 +21,6 @@ export function openDialog({
 export function closeDialog() {
     const dialog = document.getElementById("dialog")
     const url = (dialog.querySelector(".dialog-link") as HTMLElement).dataset.href
-    dialog.querySelector(".dialog-container").innerHTML = ""
     dialog.querySelector(".dialog-title").innerHTML = ""
     dialog.querySelector(".dialog-body").innerHTML = "";
     (dialog.querySelector(".dialog-link") as HTMLElement).dataset.href = "#"
