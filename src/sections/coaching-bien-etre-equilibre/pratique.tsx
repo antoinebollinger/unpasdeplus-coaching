@@ -5,8 +5,8 @@ import Link from "next/link"
 import { reveal } from "../../utils/reveal"
 import Pratique1 from "/public/images/coaching-bien-etre-equilibre/pratique_1.webp"
 import Pratique2 from "/public/images/coaching-bien-etre-equilibre/pratique_2.webp"
-import Pratique3 from "/public/images/coaching-bien-etre-equilibre/pratique_3.jpg"
-import Pratique4 from "/public/images/coaching-bien-etre-equilibre/pratique_4.jpg"
+import Pratique3 from "/public/images/coaching-bien-etre-equilibre/pratique_3.webp"
+import Pratique4 from "/public/images/coaching-bien-etre-equilibre/pratique_4.webp"
 
 export default function Pratique({ className = "bg-gray-100" }: { className?: string }) {
     useEffect(() => {
@@ -39,7 +39,7 @@ export default function Pratique({ className = "bg-gray-100" }: { className?: st
                                 },
                                 {
                                     img: Pratique4,
-                                    text: "En présentiel à Vannes & ses alentours<br/>Distanciel sur toute la France"
+                                    text: "En présentiel à Vannes & ses alentours<br />Distanciel sur toute la France"
                                 }
                             ].map((e, i) => (
                                 <div className="w-full" key={i}>
@@ -47,7 +47,7 @@ export default function Pratique({ className = "bg-gray-100" }: { className?: st
                                         src={e.img}
                                         width={200}
                                         className="mx-auto rounded-full mb-6 transition duration-200 scale-0 img"
-                                        alt="Mieux gérer son stress au quotidien"
+                                        alt={e.text.replace("<br />", " ")}
                                     />
                                     <p className="text-center font-bold" dangerouslySetInnerHTML={{ __html: e.text }} />
                                 </div>

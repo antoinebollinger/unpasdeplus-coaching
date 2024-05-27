@@ -1,6 +1,6 @@
 import Layout from "../../src/layout"
 import Intro from "../../src/sections/coaching-entreprise/intro"
-import Banner from "/public/images/banners/3.jpg"
+import Banner from "/public/images/banners/entreprise.webp"
 import { siteData } from "../../src/data/metadata"
 import Enjeux from "../../src/sections/coaching-entreprise/enjeux"
 import Risques from "../../src/sections/coaching-entreprise/risques"

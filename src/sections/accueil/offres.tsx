@@ -3,8 +3,8 @@ import { useEffect } from "react"
 import Image, { StaticImageData } from "next/image"
 import Link from "next/link"
 import { reveal } from "../../utils/reveal"
-import Balance from "/public/images/accueil/balance.jpg"
-import Equilibre from "/public/images/accueil/equilibre.jpg"
+import Balance from "/public/images/accueil/balance.webp"
+import Equilibre from "/public/images/accueil/equilibre.webp"
 import Entreprise from "/public/images/accueil/entreprises.webp"
 import Calendly from "../../components/calendly"
 
@@ -46,17 +46,20 @@ export default function Offres({ className = "bg-gray-100" }: { className?: stri
                     {list(
                         Balance,
                         "Coaching perte de poids",
-                        "/coaching-perte-de-poids"
+                        "/coaching-perte-de-poids",
+                        "Perte de poids"
                     )}
                     {list(
                         Equilibre,
                         "Coaching bien-être & équilibre",
-                        "/coaching-bien-etre-equilibre"
+                        "/coaching-bien-etre-equilibre",
+                        "Bien-être & équilibre"
                     )}
                     {list(
                         Entreprise,
                         "Coaching entreprise",
-                        "/coaching-entreprise"
+                        "/coaching-entreprise",
+                        "Coaching en entreprise"
                     )}
                 </div>
                 <div className="text-center">

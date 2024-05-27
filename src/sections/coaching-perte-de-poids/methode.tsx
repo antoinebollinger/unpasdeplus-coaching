@@ -2,7 +2,7 @@
 import { useEffect } from "react"
 import { reveal } from "../../utils/reveal"
 import Image from "next/image"
-import Balance from "/public/images/coaching-perte-de-poids/balance.jpg"
+import Balance from "/public/images/coaching-perte-de-poids/balance.webp"
 
 
 export default function Methode({ className = "" }: { className?: string }) {
@@ -22,7 +22,7 @@ export default function Methode({ className = "" }: { className?: string }) {
                         <Image
                             src={Balance}
                             className="rounded-full"
-                            alt="Sabrina Appriou"
+                            alt="Entrainement adapté, alimentation équilibrée"
                         />
                     </div>
                     <div className="w-full md:w-3/4 flex flex-col gap-6">

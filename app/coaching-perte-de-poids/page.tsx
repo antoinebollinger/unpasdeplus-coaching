@@ -3,7 +3,7 @@ import Intro from "../../src/sections/coaching-perte-de-poids/intro"
 import Quoi from "../../src/sections/coaching-perte-de-poids/quoi"
 import Temoignages from "../../src/sections/coaching-perte-de-poids/temoignages"
 
-import Banner from "/public/images/banners/2_ter.jpg"
+import Banner from "/public/images/banners/perte-de-poids.webp"
 import { siteData } from "../../src/data/metadata"
 import Methode from "../../src/sections/coaching-perte-de-poids/methode"
 import Resultat from "../../src/sections/coaching-perte-de-poids/resultat"

@@ -2,9 +2,9 @@
 import { useEffect } from "react"
 import Image from "next/image"
 import { reveal } from "../../utils/reveal"
-import IntroPic from "/public/images/accueil/intro.jpg"
-import EMCC from "/public/images/icones/emcc.jpg"
-import FranceCompetences from "/public/images/icones/france_competences.jpg"
+import IntroPic from "/public/images/accueil/intro.webp"
+import EMCC from "/public/images/icones/emcc.webp"
+import FranceCompetences from "/public/images/icones/france_competences.webp"
 import { madelyn } from "../../../styles/font"
 
 export default function Intro({ className = "" }: { className?: string }) {
@@ -22,7 +22,7 @@ export default function Intro({ className = "" }: { className?: string }) {
                     <div className="w-2/3 lg:w-1/4 text-center lg:order-1">
                         <Image
                             src={IntroPic}
-                            alt="Logo"
+                            alt="Facilitatrice de la mise en mouvement"
                             height="250"
                             className="w-full rounded-full mx-auto transition duration-200 scale-0"
                         />
@@ -39,7 +39,7 @@ export default function Intro({ className = "" }: { className?: string }) {
                                     width={150}
                                     height={150}
                                     className="mx-auto"
-                                    alt="Illustration"
+                                    alt="EMCC France"
                                 />
                             </div>
                             <div className="w-full lg:w-auto">
@@ -48,7 +48,7 @@ export default function Intro({ className = "" }: { className?: string }) {
                                     width={150}
                                     height={150}
                                     className="mx-auto"
-                                    alt="Illustration"
+                                    alt="Certification France Compétences, enregistrée au RNCP"
                                 />
                             </div>
                         </div>

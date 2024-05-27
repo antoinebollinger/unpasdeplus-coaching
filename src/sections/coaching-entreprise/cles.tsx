@@ -3,12 +3,12 @@ import { useEffect } from "react"
 import Image, { StaticImageData } from "next/image"
 import Link from "next/link"
 import { reveal } from "../../utils/reveal"
-import Lescles from "/public/images/coaching-entreprise/cles.jpg"
-import Coaching_1 from "/public/images/coaching-entreprise/coaching_1.jpg"
-import Coaching_2 from "/public/images/coaching-entreprise/coaching_2.jpg"
-import Coaching_3 from "/public/images/coaching-entreprise/coaching_3.jpg"
-import Coaching_4 from "/public/images/coaching-entreprise/coaching_4.jpg"
-import Coaching_5 from "/public/images/coaching-entreprise/coaching_5.jpg"
+import Lescles from "/public/images/coaching-entreprise/cles.webp"
+import Coaching_1 from "/public/images/coaching-entreprise/coaching_1.webp"
+import Coaching_2 from "/public/images/coaching-entreprise/coaching_2.webp"
+import Coaching_3 from "/public/images/coaching-entreprise/coaching_3.webp"
+import Coaching_4 from "/public/images/coaching-entreprise/coaching_4.webp"
+import Coaching_5 from "/public/images/coaching-entreprise/coaching_5.webp"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCheck } from "@fortawesome/free-solid-svg-icons"
 import { renderToString } from "react-dom/server"
@@ -24,15 +24,14 @@ export default function Cles({ className = "bg-gray-100" }: { className?: string
     const list = (
         img: StaticImageData,
         title: string,
-        text: string,
-        alt?: string
+        text: string
     ) => {
         return (
             <div className="w-full flex flex-col gap-6 rounded-xl shadow-xl p-6 bg-white">
                 <Image
                     src={img}
                     className="w-full rounded transition duration-200 scale-0 object-cover"
-                    alt={alt ?? "Illustration du coaching"}
+                    alt={text}
                 />
                 <h2 dangerouslySetInnerHTML={{ __html: title }} />
                 <div className="flex flex-col gap-6" dangerouslySetInnerHTML={{ __html: text }} />
@@ -47,7 +46,7 @@ export default function Cles({ className = "bg-gray-100" }: { className?: string
                     <div className="w-2/3 lg:w-1/4">
                         <Image
                             src={Lescles}
-                            alt="Le coaching en entreprise"
+                            alt="Le clés du coaching en entreprise"
                             className="w-full rounded-full mx-auto transition duration-200 scale-0"
                         />
                     </div>

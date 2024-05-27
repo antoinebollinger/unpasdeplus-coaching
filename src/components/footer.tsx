@@ -122,7 +122,7 @@ export default function Footer({
                                         </Link>
                                     </li>
                                     <li>
-                                        <div className="flex gap-2"><span>Suivez-moi</span><Socials className="flex gap-2" /></div>
+                                        <div className="flex gap-2"><Socials className="flex gap-2" /></div>
                                     </li>
                                 </ul>
                             </div>

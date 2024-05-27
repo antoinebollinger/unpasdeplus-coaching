@@ -2,8 +2,8 @@
 import { useEffect } from "react"
 import Image from "next/image"
 import { reveal } from "../../utils/reveal"
-import LesPremieresBretagne from "/public/images/partenaires/les-premieres-bretagne.png"
-import FemmesDeBretagne from "/public/images/partenaires/femmes-de-bretagne.jpg"
+import LesPremieresBretagne from "/public/images/partenaires/les-premieres-bretagne.webp"
+import FemmesDeBretagne from "/public/images/partenaires/femmes-de-bretagne.webp"
 
 export default function Partenaires({ className = "" }: { className?: string }) {
     useEffect(() => {

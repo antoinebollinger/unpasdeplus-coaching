@@ -8,7 +8,7 @@ import Backtotop from "./components/backtotop"
 import { banner, onThisPage } from "./models/types"
 import "./utils/sprintf"
 import { motion } from "framer-motion"
-import Banner from "/public/images/banners/1.jpg"
+import Banner from "/public/images/banners/accueil.webp"
 import Modal from "./utils/modal"
 
 export default function Layout({

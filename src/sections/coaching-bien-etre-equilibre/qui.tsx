@@ -2,12 +2,12 @@
 import { useEffect } from "react"
 import Image from "next/image"
 import { reveal } from "../../utils/reveal"
-import QuiImg from "/public/images/coaching-bien-etre-equilibre/qui.jpg"
-import Stress from "/public/images/coaching-bien-etre-equilibre/stress.jpg"
-import Emotions from "/public/images/coaching-bien-etre-equilibre/emotions.jpg"
-import Habitudes from "/public/images/coaching-bien-etre-equilibre/habitudes.jpg"
-import Alimentation from "/public/images/coaching-bien-etre-equilibre/alimentation.jpg"
-import Sport from "/public/images/coaching-bien-etre-equilibre/sport.jpg"
+import QuiImg from "/public/images/coaching-bien-etre-equilibre/qui.webp"
+import Stress from "/public/images/coaching-bien-etre-equilibre/stress.webp"
+import Emotions from "/public/images/coaching-bien-etre-equilibre/emotions.webp"
+import Habitudes from "/public/images/coaching-bien-etre-equilibre/habitudes.webp"
+import Alimentation from "/public/images/coaching-bien-etre-equilibre/alimentation.webp"
+import Sport from "/public/images/coaching-bien-etre-equilibre/sport.webp"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faPersonBreastfeeding, faPersonRunning, faLightbulb, faHandshakeAngle, faCheck } from "@fortawesome/free-solid-svg-icons"
 
@@ -112,7 +112,7 @@ export default function Qui({ className = "bg-gray-100" }: { className?: string 
                         [
                             {
                                 img: Stress,
-                                text: "Mieux gérer<br />son stress au quotidien"
+                                text: "Mieux gérer<br />son stress au quotidien",
                             },
                             {
                                 img: Emotions,
@@ -136,7 +136,7 @@ export default function Qui({ className = "bg-gray-100" }: { className?: string 
                                     src={e.img}
                                     width={200}
                                     className="mx-auto rounded-full mb-6 transition duration-200 scale-0 img"
-                                    alt="Mieux gérer son stress au quotidien"
+                                    alt={e.text.replace("<br />", " ")}
                                 />
                                 <p className="text-center font-bold" dangerouslySetInnerHTML={{ __html: e.text }} />
                             </div>

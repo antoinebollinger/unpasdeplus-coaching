@@ -2,9 +2,9 @@
 import { useEffect } from "react"
 import Image, { StaticImageData } from "next/image"
 import { reveal } from "../../utils/reveal"
-import Quoi_1 from "/public/images/coaching-bien-etre-equilibre/quoi_1.jpg"
-import Quoi_2 from "/public/images/coaching-bien-etre-equilibre/quoi_2.jpg"
-import Quoi_3 from "/public/images/coaching-bien-etre-equilibre/quoi_3.jpg"
+import Quoi_1 from "/public/images/coaching-bien-etre-equilibre/quoi_1.webp"
+import Quoi_2 from "/public/images/coaching-bien-etre-equilibre/quoi_2.webp"
+import Quoi_3 from "/public/images/coaching-bien-etre-equilibre/quoi_3.webp"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCheck } from "@fortawesome/free-solid-svg-icons"
 import { renderToString } from "react-dom/server"
@@ -28,8 +28,7 @@ export default function Quoi({ className = "" }: { className?: string }) {
     const list = (
         img: StaticImageData,
         title: string,
-        text: string,
-        alt?: string
+        text: string
     ) => {
         return (
             <div className="w-full lg:w-1/3 flex flex-col gap-6 rounded-xl shadow-xl p-6 bg-white">
@@ -37,7 +36,7 @@ export default function Quoi({ className = "" }: { className?: string }) {
                     src={img}
                     width={200}
                     className="mx-auto rounded-full transition duration-200 scale-0 img"
-                    alt={alt ?? "Illustration"}
+                    alt={title ?? "Illustration"}
                 />
                 <p className="text-lg text-center">
                     <strong>{title}</strong>

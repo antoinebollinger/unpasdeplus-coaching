@@ -4,7 +4,7 @@ import Offres from "../src/sections/accueil/offres"
 import Sabrina from "../src/sections/accueil/sabrina"
 import Apports from "../src/sections/accueil/apports"
 import Partenaires from "../src/sections/accueil/partenaires"
-import Banner from "/public/images/banners/1.jpg"
+import Banner from "/public/images/banners/accueil.webp"
 
 export default function Page() {
     const onThisPage = [

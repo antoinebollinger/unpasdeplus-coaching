@@ -5,7 +5,7 @@ import Image from "next/image"
 import { reveal } from "../../utils/reveal"
 import Parcours from "./parcours"
 import Sabrina from "/public/images/a-propos-de-moi/sabrina.webp"
-import Sportive from "/public/images/a-propos-de-moi/sportive.jpg"
+import Sportive from "/public/images/a-propos-de-moi/sportive.webp"
 import { openModal } from "../../utils/modal"
 
 export default function Bio({ className = "" }: { className?: string }) {
@@ -31,7 +31,7 @@ export default function Bio({ className = "" }: { className?: string }) {
                         <Image
                             src={Sabrina}
                             className="rounded-full"
-                            alt="Sabrina Appriou"
+                            alt="Sabrina Appriou, coach certifiée"
                         />
                     </div>
                     <div className="w-full md:w-3/4">

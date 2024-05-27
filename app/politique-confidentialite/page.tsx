@@ -1,6 +1,6 @@
 import Layout from "../../src/layout"
 import PolitiqueConfidentialite from "../../src/sections/politique-confidentialite"
-import Banner from "/public/images/banners/6.jpg"
+import Banner from "/public/images/banners/politique-confidentialite.webp"
 import { siteData } from "../../src/data/metadata"
 
 export const metadata = {

@@ -91,7 +91,9 @@ export default function Navbar() {
                         </Link>
                     </li>
                     <li className="nav-item flex gap-4 items-center">
-                        <span>Suivez-moi</span><Socials className="flex footer-social" />
+                        <span>
+                            <Socials className="flex footer-social" />
+                        </span>
                     </li>
                 </ul>
             </div>

@@ -3,7 +3,7 @@ import Intro from "../../src/sections/coaching-bien-etre-equilibre/intro"
 import Qui from "../../src/sections/coaching-bien-etre-equilibre/qui"
 import Quoi from "../../src/sections/coaching-bien-etre-equilibre/quoi"
 import Pratique from "../../src/sections/coaching-bien-etre-equilibre/pratique"
-import Banner from "/public/images/banners/2_bis.jpg"
+import Banner from "/public/images/banners/bien-etre-equilibre.webp"
 import { siteData } from "../../src/data/metadata"
 
 export const metadata = {

@@ -5,7 +5,7 @@ import Link from "next/link"
 import { reveal } from "../../utils/reveal"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCheck } from "@fortawesome/free-solid-svg-icons"
-import Youpi from "/public/images/coaching-perte-de-poids/resultat.jpg"
+import Youpi from "/public/images/coaching-perte-de-poids/resultat.webp"
 
 export default function Resultat({ className = "bg-gray-100" }: { className?: string }) {
     useEffect(() => {
@@ -28,7 +28,7 @@ export default function Resultat({ className = "bg-gray-100" }: { className?: st
                         <Image
                             src={Youpi}
                             className="rounded-full"
-                            alt="Sabrina Appriou"
+                            alt="Serein, confiant, soutenu"
                         />
                     </div>
                     <div className="w-full md:w-3/4 flex flex-col gap-6">

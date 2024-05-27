@@ -39,7 +39,7 @@ export default function Parcours() {
                     </div>
                     <div className="w-full md:w-3/4">
                         <p className="text-lg text-gray-900">
-                            Au fil du temps, je me suis sentie tiraillée entre être présente pour mes enfants et réussir professionnellement, tout en essayant de trouver <strong>mon équilibre de vie personnelle, familiale et professionnelle</strong>. À cette période-là, je trouv<strong>mon équilibre</strong> grâce à ma passion&nbsp;: <strong>l’activité physique, la course à pied</strong>. Un <strong>allié au quotidien</strong> dans mes défis.
+                            Au fil du temps, je me suis sentie tiraillée entre être présente pour mes enfants et réussir professionnellement, tout en essayant de trouver <strong>mon équilibre de vie personnelle, familiale et professionnelle</strong>. À cette période-là, je trouve <strong>mon équilibre</strong> grâce à ma passion&nbsp;: <strong>l’activité physique, la course à pied</strong>. Un <strong>allié au quotidien</strong> dans mes défis.
                         </p>
                     </div>
                 </div>

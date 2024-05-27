@@ -22,7 +22,7 @@ export default function Sabrina({ className = "" }: { className?: string }) {
                         <Image
                             src={SabrinaPic}
                             className="w-full rounded-full"
-                            alt="Sabrina Appriou"
+                            alt="Sabrina Appriou, coach certifiée"
                         />
                     </div>
                     <div className="w-full lg:w-3/4 lg:order-0">

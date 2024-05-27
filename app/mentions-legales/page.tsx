@@ -1,6 +1,6 @@
 import Layout from "../../src/layout"
 import MentionsLegales from "../../src/sections/mentions-legales"
-import Banner from "/public/images/banners/6.jpg"
+import Banner from "/public/images/banners/mentions-legales.webp"
 import { siteData } from "../../src/data/metadata"
 
 export const metadata = {
