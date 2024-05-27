@@ -29,6 +29,7 @@ export default function Resultat({ className = "bg-gray-100" }: { className?: st
                             src={Youpi}
                             className="rounded-full"
                             alt="Serein, confiant, soutenu"
+                            title="Serein, confiant, soutenu"
                         />
                     </div>
                     <div className="w-full md:w-3/4 flex flex-col gap-6">

@@ -37,7 +37,7 @@ export default function Partenaires({ className = "" }: { className?: string }) 
                                     <a target="_blank" rel="nofollow" href="http://www.femmesdebretagne.fr/" className="w-full">
                                         <Image
                                             src={FemmesDeBretagne}
-                                            alt="Femmes de Bretage"
+                                            alt="Femmes de Bretagne"
                                         />
                                     </a>
                                 </>

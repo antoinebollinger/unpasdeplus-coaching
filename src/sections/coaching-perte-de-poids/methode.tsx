@@ -23,6 +23,7 @@ export default function Methode({ className = "" }: { className?: string }) {
                             src={Balance}
                             className="rounded-full"
                             alt="Entrainement adapté, alimentation équilibrée"
+                            title="Entrainement adapté, alimentation équilibrée"
                         />
                     </div>
                     <div className="w-full md:w-3/4 flex flex-col gap-6">

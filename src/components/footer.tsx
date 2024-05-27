@@ -70,7 +70,7 @@ export default function Footer({
             <div className="z-10 w-full h-[120px] -mb-1 header-shape flex items-end">
                 <Image
                     src={Wave}
-                    alt="wave"
+                    alt="Wave"
                     className="w-full m-h-[120px]"
                 />
             </div>

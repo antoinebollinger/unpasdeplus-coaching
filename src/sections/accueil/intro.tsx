@@ -22,9 +22,10 @@ export default function Intro({ className = "" }: { className?: string }) {
                     <div className="w-2/3 lg:w-1/4 text-center lg:order-1">
                         <Image
                             src={IntroPic}
-                            alt="Facilitatrice de la mise en mouvement"
-                            height="250"
                             className="w-full rounded-full mx-auto transition duration-200 scale-0"
+                            height="250"
+                            alt="Facilitatrice de la mise en mouvement"
+                            title="Facilitatrice de la mise en mouvement"
                         />
                     </div>
                     <div className="w-full lg:w-3/4 lg:order-0">
@@ -40,6 +41,7 @@ export default function Intro({ className = "" }: { className?: string }) {
                                     height={150}
                                     className="mx-auto"
                                     alt="EMCC France"
+                                    title="EMCC France"
                                 />
                             </div>
                             <div className="w-full lg:w-auto">
@@ -49,6 +51,7 @@ export default function Intro({ className = "" }: { className?: string }) {
                                     height={150}
                                     className="mx-auto"
                                     alt="Certification France Compétences, enregistrée au RNCP"
+                                    title="Certification France Compétences, enregistrée au RNCP"
                                 />
                             </div>
                         </div>

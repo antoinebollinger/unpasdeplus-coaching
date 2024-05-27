@@ -36,7 +36,8 @@ export default function Quoi({ className = "" }: { className?: string }) {
                     src={img}
                     width={200}
                     className="mx-auto rounded-full transition duration-200 scale-0 img"
-                    alt={title ?? "Illustration"}
+                    alt={title}
+                    title={title}
                 />
                 <p className="text-lg text-center">
                     <strong>{title}</strong>

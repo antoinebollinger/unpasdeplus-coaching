@@ -35,6 +35,7 @@ export default function Qui({ className = "bg-gray-100" }: { className?: string 
                             height={QuiImg.height}
                             className="w-full rounded-full"
                             alt="Le coaching est fait pour vous si..."
+                            title="Le coaching est fait pour vous si..."
                         />
                     </div>
                     <div className="w-full md:w-3/4">
@@ -137,6 +138,7 @@ export default function Qui({ className = "bg-gray-100" }: { className?: string 
                                     width={200}
                                     className="mx-auto rounded-full mb-6 transition duration-200 scale-0 img"
                                     alt={e.text.replace("<br />", " ")}
+                                    title={e.text.replace("<br />", " ")}
                                 />
                                 <p className="text-center font-bold" dangerouslySetInnerHTML={{ __html: e.text }} />
                             </div>

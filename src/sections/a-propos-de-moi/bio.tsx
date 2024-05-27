@@ -32,6 +32,7 @@ export default function Bio({ className = "" }: { className?: string }) {
                             src={Sabrina}
                             className="rounded-full"
                             alt="Sabrina Appriou, coach certifiée"
+                            title="Sabrina Appriou, coach certifiée"
                         />
                     </div>
                     <div className="w-full md:w-3/4">
@@ -55,7 +56,8 @@ export default function Bio({ className = "" }: { className?: string }) {
                         <Image
                             src={Sportive}
                             className="rounded-full"
-                            alt="Sabrina Appriou sportive"
+                            alt="Sabrina Appriou, sportive au quotidien"
+                            title="Sabrina Appriou, sportive au quotidien"
                         />
                     </div>
                     <div className="w-full md:w-3/4">

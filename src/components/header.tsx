@@ -43,7 +43,7 @@ export default function Header({
                 <div className="absolute bottom-0 z-10 w-full h-auto -mb-1 header-shape">
                     <Image
                         src={Wave}
-                        alt="wave"
+                        alt="Wave"
                         className="object-cover w-full h-full"
                     />
                 </div>

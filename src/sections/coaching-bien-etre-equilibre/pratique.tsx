@@ -48,6 +48,7 @@ export default function Pratique({ className = "bg-gray-100" }: { className?: st
                                         width={200}
                                         className="mx-auto rounded-full mb-6 transition duration-200 scale-0 img"
                                         alt={e.text.replace("<br />", " ")}
+                                        title={e.text.replace("<br />", " ")}
                                     />
                                     <p className="text-center font-bold" dangerouslySetInnerHTML={{ __html: e.text }} />
                                 </div>

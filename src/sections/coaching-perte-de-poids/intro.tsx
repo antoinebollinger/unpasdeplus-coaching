@@ -25,8 +25,9 @@ export default function Intro({ className = "" }: { className?: string }) {
                     <div className="w-2/3 lg:w-1/4">
                         <Image
                             src={IntroImg}
-                            alt="Perdre du poids de manière saine et durable"
                             className="w-full rounded-full mx-auto transition duration-200 scale-0"
+                            alt="Perdre du poids de manière saine et durable"
+                            title="Perdre du poids de manière saine et durable"
                         />
                     </div>
                     <div className="w-full lg:w-3/4">

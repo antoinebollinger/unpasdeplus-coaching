@@ -8,7 +8,7 @@ export default function Page() {
             <div className="min-h-[35vh] flex justify-center items-center">
                 <Image
                     src={Loading}
-                    alt="loading"
+                    alt="Loading"
                     width="100"
                 />
             </div>

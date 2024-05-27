@@ -32,6 +32,7 @@ export default function Cles({ className = "bg-gray-100" }: { className?: string
                     src={img}
                     className="w-full rounded transition duration-200 scale-0 object-cover"
                     alt={text}
+                    title={text}
                 />
                 <h2 dangerouslySetInnerHTML={{ __html: title }} />
                 <div className="flex flex-col gap-6" dangerouslySetInnerHTML={{ __html: text }} />
@@ -46,8 +47,9 @@ export default function Cles({ className = "bg-gray-100" }: { className?: string
                     <div className="w-2/3 lg:w-1/4">
                         <Image
                             src={Lescles}
-                            alt="Le clés du coaching en entreprise"
                             className="w-full rounded-full mx-auto transition duration-200 scale-0"
+                            alt="Le clés du coaching en entreprise"
+                            title="Le clés du coaching en entreprise"
                         />
                     </div>
                     <div className="w-full lg:w-3/4">
