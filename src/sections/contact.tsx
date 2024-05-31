@@ -53,8 +53,8 @@ export default function Contact({ className = "" }: { className?: string }) {
                     <h1>Contact</h1>
                     <p className="text">Pour prendre RDV, avoir plus de renseignements, me poser des questions, me parler de vous !</p>
                 </div>
-                <div className="flex flex-col lg:flex-row gap-6 mx-auto">
-                    <div className="w-full lg:w-1/2 bg-gray-100 py-8 px-4 rounded">
+                <div className="flex flex-col lg:flex-row gap-6 mx-auto mb-16">
+                    <div className="w-full lg:w-1/2 bg-gray-100 py-8 px-4 rounded-xl">
                         <h2 className="text-center">Formulaire</h2>
                         <form id="contact-form" data-toggle="validator" className="flex flex-col gap-6">
                             <div className="single-form">
@@ -83,8 +83,8 @@ export default function Contact({ className = "" }: { className?: string }) {
                                 </label>
                             </div>
                             <p>* Champs requis.</p>
-                            <div className="single-form">
-                                <button type="submit" className="w-full main-btn gradient-btn focus:outline-none uppercase">Envoyer</button>
+                            <div className="single-form text-center">
+                                <button type="submit" className="w-1/2 main-btn gradient-btn focus:outline-none uppercase">Envoyer</button>
                             </div>
                         </form>
                     </div>
