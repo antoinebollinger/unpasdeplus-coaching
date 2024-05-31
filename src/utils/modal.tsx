@@ -28,14 +28,14 @@ export default function Modal(
     }
 ) {
     useEffect(() => {
-        document.getElementById("modal").addEventListener("click", (e: CustomEvent) => {
+        document.getElementById("modal")?.addEventListener("click", (e: CustomEvent) => {
             const child = document.getElementById("modal-child")
             if (child && !child.contains(e.target))
                 closeModal()
         })
 
         return () => {
-            document.getElementById("modal").removeEventListener("click", closeModal)
+            document.getElementById("modal")?.removeEventListener("click", closeModal)
         }
     })
 
