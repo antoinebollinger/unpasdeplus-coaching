@@ -23,7 +23,6 @@ export default function Intro({ className = "" }: { className?: string }) {
                         <Image
                             src={IntroPic}
                             className="w-full rounded-full mx-auto transition duration-200 scale-0"
-                            height="250"
                             alt="Facilitatrice de la mise en mouvement"
                             title="Facilitatrice de la mise en mouvement"
                         />
