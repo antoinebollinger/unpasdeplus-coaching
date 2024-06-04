@@ -1,25 +1,25 @@
-'use client'
-import { useEffect } from 'react'
-import { reveal } from '../../utils/reveal'
+"use client"
+import { useEffect } from "react"
+import { reveal } from "../../utils/reveal"
 
-export default function Apports({ className = 'bg-gray-100' }: { className?: string }) {
+export default function Apports({ className = "bg-gray-100" }: { className?: string }) {
     useEffect(() => {
         reveal({
-            collection: document.querySelectorAll('.apports-text'),
-            classesToRemove: ['translate-x-3/4', 'lg:translate-y-3/4', 'scale-0', 'opacity-0'],
-            classesToAdd: ['translate-x-0', 'translate-y-0'],
+            collection: document.querySelectorAll("#apports-coaching .text"),
+            classesToRemove: ["translate-x-3/4", "lg:translate-y-3/4", "scale-0", "opacity-0"],
+            classesToAdd: ["translate-x-0", "translate-y-0"],
         })
     }, [])
 
     const list = (illustration: string, text: string) => {
         return (
             <div className="flex flex-col gap-6 justify-center items-center mb-10">
-                <div className="transition duration-200 opacity-0 scale-0 apports-text">
+                <div className="transition duration-200 opacity-0 scale-0 text">
                     <div className="w-[100px] h-[100px] rounded-full bg-tertary-200 flex justify-center items-center">
                         <p className="text-4xl text-tertary-900 font-bold">{illustration}</p>
                     </div>
                 </div>
-                <div className="grow transition duration-200 opacity-0 translate-y-0 translate-x-3/4 lg:translate-x-0 lg:translate-y-3/4 apports-text">
+                <div className="grow transition duration-200 opacity-0 translate-y-0 translate-x-3/4 lg:translate-x-0 lg:translate-y-3/4 text">
                     <p className="text-2xl text-gray-900 text-center" dangerouslySetInnerHTML={{ __html: text }} />
                 </div>
             </div>
@@ -48,7 +48,7 @@ export default function Apports({ className = 'bg-gray-100' }: { className?: str
                         )}
                         {list(
                             "5,7",
-                            "fois le montant investi, c'est le retour sur investissement moyen des entreprises"
+                            "fois le montant investi, c’est le retour sur investissement moyen des entreprises"
                         )}
                     </div>
                     <p className="italic">Source&nbsp;: étude ICF-PWC (2021)</p>

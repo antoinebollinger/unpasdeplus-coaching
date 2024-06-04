@@ -1,23 +1,20 @@
-'use client'
-import { faCheck } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Link from 'next/link'
-import { useEffect } from 'react'
-import Image from 'next/image'
-import { reveal } from '../../utils/reveal'
-import LesPremieresBretagne from '/public/images/partenaires/les-premieres-bretagne.png'
-import FemmesDeBretagne from '/public/images/partenaires/femmes-de-bretagne.jpg'
+"use client"
+import { useEffect } from "react"
+import Image from "next/image"
+import { reveal } from "../../utils/reveal"
+import LesPremieresBretagne from "/public/images/partenaires/les-premieres-bretagne.webp"
+import FemmesDeBretagne from "/public/images/partenaires/femmes-de-bretagne.webp"
 
-export default function Partenaires({ className = 'bg-gray-100' }: { className?: string }) {
+export default function Partenaires({ className = "" }: { className?: string }) {
     useEffect(() => {
         reveal({
-            collection: document.querySelectorAll('#partenaires .service'),
-            classesToRemove: ['opacity-0', 'translate-y-1/4']
+            collection: document.querySelectorAll("#mes-partenaires .partenaire"),
+            classesToRemove: ["opacity-0", "translate-y-1/4"]
         })
     }, [])
 
     return (
-        <section id="partenaires" className={className}>
+        <section id="mes-partenaires" className={className}>
             <div className="container">
                 <div className="text-center pb-10">
                     <h3 className="h1">Mes partenaires</h3>
@@ -40,13 +37,13 @@ export default function Partenaires({ className = 'bg-gray-100' }: { className?:
                                     <a target="_blank" rel="nofollow" href="http://www.femmesdebretagne.fr/" className="w-full">
                                         <Image
                                             src={FemmesDeBretagne}
-                                            alt="Femmes de Bretage"
+                                            alt="Femmes de Bretagne"
                                         />
                                     </a>
                                 </>
                             )
                         ].map((e, i) => (
-                            <div className="rounded-xl shadow-xl bg-white p-4 w-full lg:w-1/3 flex flex-col lg:flex-row gap-6 justify-center items-center transtion duration-200 opacity-0 translate-y-1/4 service" key={i}>{e}</div>
+                            <div className="rounded-xl shadow-xl bg-white p-4 w-full lg:w-1/3 flex flex-col lg:flex-row gap-6 justify-center items-center transtion duration-200 opacity-0 translate-y-1/4 hover:scale-[1.05] partenaire" key={i}>{e}</div>
                         ))
                     }
                 </div>

@@ -1,6 +1,6 @@
 .coaching {
     h4 {
-    @apply mb-2 text-xl lg:text-2xl font-medium text-gray-900 mx-auto max-w-2xl text-center pb-10;
+        @apply mb-2 text-xl lg:text-2xl font-medium text-gray-900 mx-auto max-w-2xl text-center pb-10;
     }
 }
 
@@ -8,7 +8,14 @@
     h4 {
         @apply font-bold text-tertary-900 pb-4;
     }
+
     p {
         @apply pb-8;
+    }
+}
+
+#cles {
+    ul {
+        @apply flex flex-col gap-6 list-none list-inside;
     }
 }

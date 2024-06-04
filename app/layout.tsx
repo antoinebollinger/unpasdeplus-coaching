@@ -1,31 +1,34 @@
-import { config } from '@fortawesome/fontawesome-svg-core'
-import '@fortawesome/fontawesome-svg-core/styles.css'
+import { config } from "@fortawesome/fontawesome-svg-core"
+import "@fortawesome/fontawesome-svg-core/styles.css"
 config.autoAddCss = false
-import '../styles/global.scss'
-import { Metadata } from 'next'
-import { siteData } from '../src/data/metadata'
-import { inter, roboto, urbanist, amatic } from '../styles/font'
-import GoogleAnalytics from '../src/components/google'
-import SiteName from '../src/components/siteName'
+import "../styles/global.scss"
+import { Metadata, Viewport } from "next"
+import { siteData } from "../src/data/metadata"
+import { inter, roboto, urbanist, amatic } from "../styles/font"
+import GoogleAnalytics from "../src/components/google"
+import SiteName from "../src/components/siteName"
 
 export const metadata: Metadata = {
-    metadataBase: new URL('https://unpasdeplus-coaching.fr'),
+    metadataBase: new URL("https://unpasdeplus-coaching.fr"),
     applicationName: siteData.title,
     title: siteData.title,
     description: siteData.description,
-    keywords: ['santé mentale', 'santé physique', 'mouvement', 'coaching', 'activité physique adaptée', 'objectifs', 'motivation', 'bien-être'],
-    authors: [{ name: siteData.author, url: 'https://antoinebollinger.fr' }],
+    keywords: ["santé mentale", "santé physique", "mouvement", "coaching", "activité physique adaptée", "objectifs", "motivation", "bien-être"],
+    authors: [{ name: siteData.author, url: "https://antoinebollinger.fr" }],
     openGraph: {
         siteName: siteData.title,
         title: siteData.title,
         description: siteData.description,
-        images: '/opengraph-image.jpg'
+        images: "/opengraph-image.jpg"
     },
     twitter: {
         title: siteData.title,
         description: siteData.description,
-        images: '/twitter-image.jpg'
-    },
+        images: "/twitter-image.jpg"
+    }
+}
+
+export const viewport: Viewport = {
     themeColor: "#421556"
 }
 
