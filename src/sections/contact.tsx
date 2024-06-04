@@ -113,6 +113,11 @@ export default function Contact({ className = "" }: { className?: string }) {
                             <p className="text-lg md:text-xl">
                                 En présentiel à Vannes et/ou distanciel
                             </p>
+                            <br />
+                            <p>
+                                30 ter avenue de la Marne<br />
+                                56000 Vannes<br />
+                            </p>
                         </div>
                     </div>
                 </div>
