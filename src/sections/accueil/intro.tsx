@@ -31,7 +31,7 @@ export default function Intro({ className = "" }: { className?: string }) {
                         <p className="text-2xl mb-10">
                             «&nbsp;Ne limite pas tes défis, défis tes limites&nbsp;»
                         </p>
-                        <p className="h1">Facilitatrice de la mise en mouvement physique, mentale et émotionnelle</p>
+                        <p className="h1">Coach de la mise en mouvement physique, mentale et émotionnelle</p>
                         <div className="flex flex-col lg:flex-row gap-6 mb-10">
                             <div className="w-full lg:w-auto">
                                 <Image
