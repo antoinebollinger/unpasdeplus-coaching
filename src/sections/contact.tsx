@@ -103,9 +103,9 @@ export default function Contact({ className = "" }: { className?: string }) {
                             </p>
                         </div>
                         <div>
-                            <h3><FontAwesomeIcon icon={faCalendarDays} /> Sur Calendly</h3>
+                            <h3><FontAwesomeIcon icon={faCalendarDays} /> Sur Google Calendar</h3>
                             <p className="text-lg md:text-xl">
-                                <a target="_blank" rel="nofollow" href="https://calendly.com/unpasdeplus-coaching56/30min" title="Réserver un appel découverte offert" className="underline hover:text-secondary-700 transition">Réserver un appel découverte offert</a>
+                                <a target="_blank" rel="nofollow" href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0xX22nFZMeAPX61l1w_gta3X7MiZRFHv1TIFeyIYrGJdfCQRCPYYpBMstmluh2XMzza-YfOcle?gv=true%27" title="Réserver un appel découverte offert" className="underline hover:text-secondary-700 transition">Réserver un appel découverte offert</a>
                             </p>
                         </div>
                         <div>
