@@ -44,12 +44,6 @@ export default function Offres({ className = "bg-gray-100" }: { className?: stri
                 </div>
                 <div className="flex flex-col lg:flex-row gap-16 justify-center items-stretch mb-16">
                     {list(
-                        Balance,
-                        "Coaching perte de poids",
-                        "/coaching-perte-de-poids",
-                        "Perte de poids"
-                    )}
-                    {list(
                         Equilibre,
                         "Coaching bien-être & équilibre",
                         "/coaching-bien-etre-equilibre",
@@ -60,6 +54,12 @@ export default function Offres({ className = "bg-gray-100" }: { className?: stri
                         "Coaching entreprise",
                         "/coaching-entreprise",
                         "Coaching en entreprise"
+                    )}
+                    {list(
+                        Balance,
+                        "Coaching perte de poids",
+                        "/coaching-perte-de-poids",
+                        "Perte de poids"
                     )}
                 </div>
                 <div className="text-center">
