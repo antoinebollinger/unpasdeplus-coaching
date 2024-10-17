@@ -7,7 +7,7 @@ import newLogo from "/public/logos/logo-texte-horizontal.svg"
 import Socials from "./socials"
 
 export default function Navbar() {
-    const pathname = usePathname();
+    const pathname = usePathname()
 
     const stickyNavBar = (e: Event) => {
         e.preventDefault()
@@ -22,7 +22,7 @@ export default function Navbar() {
             backToTop.style.opacity = "1"
         else
             backToTop.style.opacity = "0"
-    };
+    }
 
     useEffect(() => {
         document.addEventListener("scroll", stickyNavBar)

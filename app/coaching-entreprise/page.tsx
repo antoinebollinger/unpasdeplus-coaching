@@ -31,7 +31,7 @@ export default function Page() {
             title: "Les clés pour accompagner la parentalité",
             link: "#cles"
         }
-    ];
+    ]
 
     return (
         <Layout banner={Banner} onThisPage={onThisPage}>

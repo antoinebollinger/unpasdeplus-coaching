@@ -58,7 +58,7 @@ export default function Footer({
                 })
             }
         })
-    }, []);
+    }, [])
 
     const year = () => {
         const date = new Date()

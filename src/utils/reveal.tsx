@@ -19,7 +19,7 @@ export const reveal = (
                 setTimeout(() => {
                     classesToRemove?.forEach(classe => entry.target.classList.remove(classe))
                     classesToAdd?.forEach(classe => entry.target.classList.add(classe))
-                    observer.unobserve(entry.target);
+                    observer.unobserve(entry.target)
                 }, delay)
                 delay += delayIncrement
             })

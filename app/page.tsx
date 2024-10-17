@@ -28,7 +28,7 @@ export default function Page() {
             title: "Mes partenaires",
             link: "#mes-partenaires"
         }
-    ];
+    ]
 
     return (
         <Layout banner={Banner} onThisPage={onThisPage} >

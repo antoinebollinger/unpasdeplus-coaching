@@ -21,7 +21,7 @@ export default function Page() {
             title: "En pratique",
             link: "#pratique"
         }
-    ];
+    ]
 
     return (
         <Layout banner={Banner} onThisPage={onThisPage}>

@@ -14,7 +14,7 @@ export default function Page() {
             title: "À propos de moi",
             link: "#top"
         }
-    ];
+    ]
 
     return (
         <Layout banner={Banner} onThisPage={onThisPage}>

@@ -23,7 +23,7 @@ export default function Page() {
             title: "Témoignages",
             link: "#temoignages"
         }
-    ];
+    ]
 
     return (
         <Layout banner={Banner} onThisPage={onThisPage}>
