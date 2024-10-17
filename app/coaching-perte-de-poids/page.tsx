@@ -10,7 +10,7 @@ import Resultat from "../../src/sections/coaching-perte-de-poids/resultat"
 
 export const metadata = {
     title: `Coaching perte de poids | ${siteData.title}`,
-    description: "Au-delà de l\"objectif perte de poids, le parcours coaching perte de poids vous accompagne à développer une meilleure image de soi, une meilleure confiance en soi, en vos capacités pour un impact positif dans votre quotidien."
+    description: "Au-delà de l'objectif perte de poids, le parcours coaching perte de poids vous accompagne à développer une meilleure image de soi, une meilleure confiance en soi, en vos capacités pour un impact positif dans votre quotidien."
 }
 
 export default function Page() {

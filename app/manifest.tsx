@@ -4,7 +4,7 @@ export default function manifest(): MetadataRoute.Manifest {
     return {
         name: "Un Pas de Plus Coaching",
         short_name: "Un Pas de Plus Coaching",
-        description: "Le site de votre coach en développement personnel Sabrina Appriou, fondatrice d\"Un Pas De Plus.",
+        description: "Le site de votre coach en développement personnel Sabrina Appriou, fondatrice d'Un Pas De Plus.",
         scope: "https://unpasdeplus-coaching.fr/",
         start_url: "https://unpasdeplus-coaching.fr",
         display: "standalone",

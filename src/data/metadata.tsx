@@ -1,6 +1,6 @@
 export const siteData = {
     title: "Un pas de plus Coaching",
-    description: "Un pas de plus, c\"est un coaching bien-être pour booster la santé physique et mentale des parents. C\"est également du coaching en entreprise pour accompagner et soutenir la parentalité responsable après un congé maternité, paternité ou parental, ou après une absence de longue durée.",
+    description: "Prendre soin de soi, c’est prendre soin de sa santé physique, santé mentale et son bien-être émotionnel. Un défi face aux responsabilités professionnelles, personnelles et familiales. Relever ce défi avec confiance.",
     author: "Antoine Bollinger",
     owner: "Sabrina Appriou",
     domain: "unpasdeplus-coaching.fr",
