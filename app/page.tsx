@@ -1,10 +1,17 @@
 import Layout from "../src/layout"
-import Intro from "../src/sections/accueil/intro"
-import Offres from "../src/sections/accueil/offres"
-import Sabrina from "../src/sections/accueil/sabrina"
-import Apports from "../src/sections/accueil/apports"
-import Partenaires from "../src/sections/accueil/partenaires"
 import Banner from "/public/images/banners/accueil.webp"
+import dynamic from "next/dynamic"
+
+const Intro = dynamic(() => import("../src/sections/accueil/intro"))
+const Offres = dynamic(() => import("../src/sections/accueil/offres"))
+const Sabrina = dynamic(() => import("../src/sections/accueil/sabrina"))
+const Apports = dynamic(() => import("../src/sections/accueil/apports"))
+const Partenaires = dynamic(() => import("../src/sections/accueil/partenaires"))
+// import Intro from "../src/sections/accueil/intro"
+// import Offres from "../src/sections/accueil/offres"
+// import Sabrina from "../src/sections/accueil/sabrina"
+// import Apports from "../src/sections/accueil/apports"
+// import Partenaires from "../src/sections/accueil/partenaires"
 
 export default function Page() {
     const onThisPage = [
