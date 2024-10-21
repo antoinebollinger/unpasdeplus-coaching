@@ -1,15 +1,17 @@
 "use client"
 import React, { useEffect } from "react"
 import Script from "next/script"
-import Header from "./components/header"
-import Footer from "./components/footer"
-import Dialog from "./utils/dialog"
-import Backtotop from "./components/backtotop"
+import dynamic from "next/dynamic"
 import { banner, onThisPage } from "./models/types"
 import "./utils/sprintf"
 import { motion } from "framer-motion"
 import Banner from "/public/images/banners/accueil.webp"
-import Modal from "./utils/modal"
+
+const Modal = dynamic(() => import("./utils/modal"))
+const Dialog = dynamic(() => import("./utils/dialog"))
+const Header = dynamic(() => import("./components/header"))
+const Footer = dynamic(() => import("./components/footer"))
+const Backtotop = dynamic(() => import("./components/backtotop"))
 
 export default function Layout({
     children,

@@ -3,7 +3,6 @@ import dynamic from "next/dynamic"
 import { siteData } from "../src/data/metadata"
 
 const Layout = dynamic(() => import("../src/layout"))
-// import Layout from "../src/layout"
 
 export const metadata = {
     title: `Erreur 404 | ${siteData.title}`,

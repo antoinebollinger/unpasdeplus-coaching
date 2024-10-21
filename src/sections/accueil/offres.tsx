@@ -2,11 +2,13 @@
 import { useEffect } from "react"
 import Image, { StaticImageData } from "next/image"
 import Link from "next/link"
+import dynamic from "next/dynamic"
 import { reveal } from "../../utils/reveal"
 import Balance from "/public/images/accueil/balance.webp"
 import Equilibre from "/public/images/accueil/equilibre.webp"
 import Entreprise from "/public/images/accueil/entreprises.webp"
-import Calendly from "../../components/calendly"
+
+const Calendly = dynamic(() => import("../../components/calendly"))
 
 export default function Offres({ className = "bg-gray-100" }: { className?: string }) {
     useEffect(() => {

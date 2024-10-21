@@ -9,8 +9,6 @@ import { inter, roboto, urbanist, amatic } from "../styles/font"
 
 const GoogleAnalytics = dynamic(() => import("../src/components/google"))
 const SiteName = dynamic(() => import("../src/components/siteName"))
-// import GoogleAnalytics from "../src/components/google"
-// import SiteName from "../src/components/siteName"
 
 export const metadata: Metadata = {
     metadataBase: new URL("https://unpasdeplus-coaching.fr"),
