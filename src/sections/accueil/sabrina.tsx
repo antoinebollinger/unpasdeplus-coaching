@@ -21,6 +21,8 @@ export default function Sabrina({ className = "" }: { className?: string }) {
                     <div className="w-full lg:w-1/4 transition duration-200 scale-0 img">
                         <Image
                             src={SabrinaPic}
+                            width={300}
+                            height={300}
                             className="w-full rounded-full"
                             alt="Sabrina Appriou, coach certifiée"
                             title="Sabrina Appriou, coach certifiée"
