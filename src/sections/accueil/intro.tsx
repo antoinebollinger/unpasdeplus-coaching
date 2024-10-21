@@ -27,6 +27,7 @@ export default function Intro({ className = "" }: { className?: string }) {
                             className="w-full rounded-full mx-auto transition duration-200 scale-0"
                             alt="Facilitatrice de la mise en mouvement"
                             title="Facilitatrice de la mise en mouvement"
+                            loading="eager"
                         />
                     </div>
                     <div className="w-full lg:w-3/4 lg:order-0">
