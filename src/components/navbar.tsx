@@ -3,8 +3,11 @@ import { useEffect } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { usePathname } from "next/navigation"
+import dynamic from "next/dynamic"
 import newLogo from "/public/logos/logo-texte-horizontal.svg"
-import Socials from "./socials"
+
+const Socials = dynamic(() => import("./socials"))
+// import Socials from "./socials"
 
 export default function Navbar() {
     const pathname = usePathname()
@@ -85,6 +88,11 @@ export default function Navbar() {
                             </ul>
                         </div>
                     </li>
+                    {/* <li className={`nav-item ${pathname.startsWith("/blog") ? "active" : ""}`}>
+                        <Link href="/blog" className="page-scroll">
+                            Mon blog
+                        </Link>
+                    </li> */}
                     <li className={`nav-item ${pathname == "/contact" ? "active" : ""}`}>
                         <Link href="/contact" className="page-scroll">
                             Contact

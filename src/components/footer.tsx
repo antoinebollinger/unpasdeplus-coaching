@@ -1,6 +1,7 @@
 "use client"
 import Link from "next/link"
 import Image from "next/image"
+import dynamic from "next/dynamic"
 import Logo from "/public/logos/logo-texte-horizontal.svg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faAngleDoubleRight } from "@fortawesome/free-solid-svg-icons"
@@ -8,8 +9,10 @@ import { useEffect } from "react"
 import { openDialog } from "../utils/dialog"
 import { CustomEvent, onThisPage } from "../models/types"
 import { siteData, emailMessage } from "../data/metadata"
-import Socials from "./socials"
 import Wave from "/public/images/svg/wave-pink.svg"
+
+const Socials = dynamic(() => import("./socials"))
+// import Socials from "./socials"
 
 export default function Footer({
     onThisPage = [

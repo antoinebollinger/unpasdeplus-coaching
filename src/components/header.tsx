@@ -1,9 +1,12 @@
 "use client"
 import Image from "next/image"
-import Navbar from "./navbar"
+import dynamic from "next/dynamic"
 import Wave from "/public/images/svg/wave-white.svg"
 import type { banner } from "../models/types"
 import { useLayoutEffect, useRef } from "react"
+
+const Navbar = dynamic(() => import("./navbar"))
+// import Navbar from "./navbar"
 
 export default function Header({
     banner,

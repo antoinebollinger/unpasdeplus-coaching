@@ -3,10 +3,14 @@ import "@fortawesome/fontawesome-svg-core/styles.css"
 config.autoAddCss = false
 import "../styles/global.scss"
 import { Metadata, Viewport } from "next"
+import dynamic from "next/dynamic"
 import { siteData } from "../src/data/metadata"
 import { inter, roboto, urbanist, amatic } from "../styles/font"
-import GoogleAnalytics from "../src/components/google"
-import SiteName from "../src/components/siteName"
+
+const GoogleAnalytics = dynamic(() => import("../src/components/google"))
+const SiteName = dynamic(() => import("../src/components/siteName"))
+// import GoogleAnalytics from "../src/components/google"
+// import SiteName from "../src/components/siteName"
 
 export const metadata: Metadata = {
     metadataBase: new URL("https://unpasdeplus-coaching.fr"),

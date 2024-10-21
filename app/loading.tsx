@@ -1,6 +1,8 @@
 import Image from "next/image"
-import Layout from "../src/layout"
+import dynamic from "next/dynamic"
 import Loading from "/public/images/svg/loading.svg"
+
+const Layout = dynamic(() => import("../src/layout"))
 
 export default function Page() {
     return (
