@@ -22,6 +22,8 @@ export default function Intro({ className = "" }: { className?: string }) {
                     <div className="w-2/3 lg:w-1/4 text-center lg:order-1">
                         <Image
                             src={IntroPic}
+                            width={300}
+                            height={300}
                             className="w-full rounded-full mx-auto transition duration-200 scale-0"
                             alt="Facilitatrice de la mise en mouvement"
                             title="Facilitatrice de la mise en mouvement"
