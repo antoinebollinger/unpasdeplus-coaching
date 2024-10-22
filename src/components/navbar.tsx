@@ -70,11 +70,6 @@ export default function Navbar() {
                         <button>Mes offres</button>
                         <div className="dropdown">
                             <ul>
-                                <li className={`nav-item ${pathname == "/coaching-perte-de-poids" ? "active" : ""}`}>
-                                    <Link href="/coaching-perte-de-poids" className="page-scroll">
-                                        Coaching perte de poids
-                                    </Link>
-                                </li>
                                 <li className={`nav-item ${pathname == "/coaching-bien-etre-equilibre" ? "active" : ""}`}>
                                     <Link href="/coaching-bien-etre-equilibre" className="page-scroll">
                                         Coaching bien-être & équilibre
@@ -83,6 +78,11 @@ export default function Navbar() {
                                 <li className={`nav-item ${pathname == "/coaching-entreprise" ? "active" : ""}`}>
                                     <Link href="/coaching-entreprise" className="page-scroll">
                                         Coaching entreprise
+                                    </Link>
+                                </li>
+                                <li className={`nav-item ${pathname == "/coaching-perte-de-poids" ? "active" : ""}`}>
+                                    <Link href="/coaching-perte-de-poids" className="page-scroll">
+                                        Coaching perte de poids
                                     </Link>
                                 </li>
                             </ul>
