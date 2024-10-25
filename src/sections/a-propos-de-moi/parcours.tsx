@@ -52,7 +52,7 @@ export default function Parcours() {
                     Parce que prendre soin de son bien-être, c’est prendre soin de sa <strong>santé physique</strong>, sa <strong>santé mentale</strong> et de son <strong>bien-être émotionnel</strong>.
                 </p>
                 <p className="text-lg text-gray-900 mb-12">
-                    Parce que je suis convaincue que nous pouvons être des athlètes de haut niveau face à nos défis du quotidien, Un Pas de Plus coaching a vu le jour, et a pour mission d'accompagner les personnes à se sentir bien dans leur tête et leur corps pour retrouver un équilibre de vie.
+                    Parce que je suis convaincue que nous pouvons être des athlètes de haut niveau face à nos défis du quotidien, Un Pas de Plus coaching a vu le jour, et a pour mission d'accompagner les personnes à <strong>se sentir bien dans leur tête et leur corps</strong> pour retrouver un <strong>équilibre de vie</strong>.
                 </p>
             </div>
         </div>
