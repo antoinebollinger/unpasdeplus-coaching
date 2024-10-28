@@ -88,6 +88,11 @@ export default function Navbar() {
                             </ul>
                         </div>
                     </li>
+                    {/* <li className={`nav-item ${pathname.startsWith("/blog") ? "active" : ""}`}>
+                        <Link href="/blog" className="page-scroll">
+                            Mon blog
+                        </Link>
+                    </li> */}
                     <li className={`nav-item ${pathname == "/contact" ? "active" : ""}`}>
                         <Link href="/contact" className="page-scroll">
                             Contact
