@@ -19,3 +19,16 @@
         @apply flex flex-col gap-6 list-none list-inside;
     }
 }
+
+.post-body {
+    p {
+
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        line-height: 1.6 !important;
+    }
+
+    a {
+        display: inline-block;
+    }
+}

@@ -6,7 +6,17 @@ const nextConfig = {
     defaultLocale: "fr",
   },
   optimizeFonts: false,
-  output: 'standalone'
+  output: "standalone",
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "blogger.googleusercontent.com",
+        port: "",
+        pathname: "/img/**"
+      }
+    ]
+  }
 }
 
 module.exports = nextConfig
