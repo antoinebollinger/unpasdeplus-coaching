@@ -6,7 +6,7 @@ import { PostList, Post } from "../../src/models/posts"
 import Image from "next/image"
 
 export default async function Page() {
-    const postsUrl = `https://www.googleapis.com/blogger/v3/blogs/${process.env.NEXT_PUBLIC_BLOGGER_ID}/posts?fetchImages=true`
+    const postsUrl = `https://www.googleapis.com/blogger/v3/blogs/${process.env.NEXT_PUBLIC_BLOGGER_ID}/posts?fetchImages=true&key=${process.env.NEXT_PUBLIC_BLOGGER_KEY}`
     const fetchPosts: PostList = await customFetch(postsUrl)
     const posts: Post[] = fetchPosts.items ?? []
 

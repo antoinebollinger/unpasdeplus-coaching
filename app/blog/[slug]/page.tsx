@@ -4,7 +4,7 @@ import displayDate from "../../../src/utils/date"
 import { Post } from "../../../src/models/posts"
 
 export default async function Page({ params }: { params: { slug: string } }) {
-    const postsUrl = `https://www.googleapis.com/blogger/v3/blogs/${process.env.NEXT_PUBLIC_BLOGGER_ID}/posts/${params.slug}`
+    const postsUrl = `https://www.googleapis.com/blogger/v3/blogs/${process.env.NEXT_PUBLIC_BLOGGER_ID}/posts/${params.slug}?key=${process.env.NEXT_PUBLIC_BLOGGER_KEY}`
     const post: Post = await customFetch(postsUrl)
 
     return (
