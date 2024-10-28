@@ -9,7 +9,6 @@ export default async function Page() {
     const postsUrl = `https://www.googleapis.com/blogger/v3/blogs/${process.env.NEXT_PUBLIC_BLOGGER_ID}/posts?fetchImages=true`
     const fetchPosts: PostList = await customFetch(postsUrl)
     const posts: Post[] = fetchPosts.items ?? []
-    console.log(posts)
 
     return (
         <Layout>
