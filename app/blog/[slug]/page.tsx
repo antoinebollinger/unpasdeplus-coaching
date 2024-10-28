@@ -1,4 +1,3 @@
-import Link from "next/link"
 import Layout from "../../../src/layout";
 import customFetch from "../../../src/utils/fetch"
 import displayDate from "../../../src/utils/date"
@@ -7,7 +6,6 @@ import { Post } from "../../../src/models/posts"
 export default async function Page({ params }: { params: { slug: string } }) {
     const postsUrl = `https://www.googleapis.com/blogger/v3/blogs/${process.env.NEXT_PUBLIC_BLOGGER_ID}/posts/${params.slug}`
     const post: Post = await customFetch(postsUrl)
-    console.log(post);
 
     return (
         <Layout>
