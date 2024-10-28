@@ -6,6 +6,8 @@ import { Post } from "../../../src/models/posts"
 export default async function Page({ params }: { params: { slug: string } }) {
     const postsUrl = `https://www.googleapis.com/blogger/v3/blogs/${process.env.NEXT_PUBLIC_BLOGGER_ID}/posts/${params.slug}`
     const post: Post = await customFetch(postsUrl)
+    console.log(post)
+
 
     return (
         <Layout>
@@ -17,7 +19,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
                                 <h2>{post.title}</h2>
                                 <p><small>{displayDate(post.published)}</small></p>
 
-                                <div dangerouslySetInnerHTML={{ __html: post.content }} className="post-body" />
+                                <div className="post-body" dangerouslySetInnerHTML={{ __html: post.content ?? "" }} />
                             </div>
                         }
                     </div>
