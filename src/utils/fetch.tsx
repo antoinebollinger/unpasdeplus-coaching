@@ -6,5 +6,6 @@ export default async function customFetch(url: string = "") {
     })
     if (!res.ok) return []
     const data = await res.json()
+    console.log(data)
     return data
 }
