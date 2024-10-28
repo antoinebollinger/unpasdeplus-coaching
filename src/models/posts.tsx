@@ -3,6 +3,10 @@ interface Blog {
     id: string;
 }
 
+interface Images {
+    url: string
+}
+
 interface Author {
     id: string;
     displayName: string;
@@ -35,6 +39,7 @@ export interface Post {
     selfLink: string;     // API link to the post
     title: string;        // Title of the post
     content: string;      // HTML content of the post
+    images: Images[];
     author: Author;       // Author object containing author info
     replies: Replies;     // Replies object containing comments info
     location: Location;   // Location object for geographic information
