@@ -34,7 +34,7 @@ export default function Intro({ className = "" }: { className?: string }) {
                         <p className="text-2xl mb-10">
                             «&nbsp;Ne limite pas tes défis, défis tes limites&nbsp;»
                         </p>
-                        <p className="h1">Coach en bien-être physique & santé mentale</p>
+                        <h1>Coach en bien-être physique, émotionnel & santé mentale</h1>
                         <div className="flex flex-col lg:flex-row gap-6 mb-10">
                             <div className="w-full lg:w-auto">
                                 <Image
@@ -57,9 +57,9 @@ export default function Intro({ className = "" }: { className?: string }) {
                                 />
                             </div>
                         </div>
-                        <h1 className="h2"><span className={`${madelyn.className} text-5xl`}>Un pas de plus</span> <span className="text-xl">Coaching</span> allie bien-être et équilibre pour surmonter les défis</h1>
+                        <h2>Bien dans sa tête, bien dans ses baskets</h2>
                         <p className="text-lg leading-6">
-                            <strong>Bien dans sa tête, bien dans son corps.</strong>
+                            Du coaching pour relever les défis au bénéfice de votre bien-être physique, bien-être émotionnel et de votre santé mentale.
                             <br />
                             <br />
                             Le coaching professionnel consiste à accompagner des personnes dans la définition et l’atteinte de leurs objectifs, au bénéfice du développement  de leur potentiel et de la réussite de leur évolution personnelle et professionnelle.
