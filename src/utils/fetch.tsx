@@ -4,9 +4,9 @@ export default async function customFetch(url: string = "") {
         //     Authorization: `Bearer ${process.env.NEXT_PUBLIC_GOOGLE_TOKEN}`
         // }
     })
-    console.log(res)
+    // console.log(res)
     if (!res.ok) return []
     const data = await res.json()
-    console.log(data)
+    // console.log(data)
     return data
 }
