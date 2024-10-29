@@ -30,10 +30,12 @@ export default function Sabrina({ className = "" }: { className?: string }) {
                     </div>
                     <div className="w-full lg:w-3/4 lg:order-0">
                         <h3 className="h1">Sabrina Appriou</h3>
-                        <h3 className="h2">Coach certifiée, fondatrice <span className={`${madelyn.className} text-5xl lg:text-7xl -translate-y-4`}>Un&nbsp;pas&nbsp;de&nbsp;plus</span>&nbsp;Coaching</h3>
+                        <h3 className="h2">Coach consultante professionnelle certifiée, fondatrice <span className={`${madelyn.className} text-5xl lg:text-7xl -translate-y-4`}>Un&nbsp;pas&nbsp;de&nbsp;plus</span>&nbsp;Coaching</h3>
                         <br />
                         <p className="text-lg leading-6">
-                            Sabrina a fondé <span className="text-primary-600 font-bold">Un pas de plus Coaching</span> qui a pour mission d’accompagner les particuliers, les entreprises et les collectivités à <strong>relever les défis personnels, professionnels</strong> et <strong>sportifs</strong> en mettant au premier plan <strong>bien-être, équilibre</strong> et <strong>performance</strong>.
+                            <span className="text-primary-600 font-bold">Un pas de plus Coaching</span> vous accompagne en mettant au premier plan votre <strong>bien-être physique, santé mentale et bien-être émotionnel</strong> pour relever les <strong>défis personnels & professionnels</strong> avec confiance et détermination&nbsp;:
+                            <br />
+                            la mission d'<span className="text-primary-600 font-bold">Un pas de plus Coaching</span>
                             <br />
                             <br />
                             Un <strong>espace sécurisé</strong> dans lequel les personnes peuvent avancer à leur rythme, en toute <strong>bienveillance</strong> pour faire Un Pas de Plus en faveur de leur <strong>bien-être physique, émotionnel</strong> et <strong>mental</strong>.

@@ -135,11 +135,6 @@ export default function Footer({
                                 <p className="footer-title">Mes offres</p>
                                 <ul>
                                     <li>
-                                        <Link href="/coaching-perte-de-poids">
-                                            Coaching perte de poids
-                                        </Link>
-                                    </li>
-                                    <li>
                                         <Link href="/coaching-bien-etre-equilibre">
                                             Coaching bien-être & équilibre
                                         </Link>
@@ -147,6 +142,11 @@ export default function Footer({
                                     <li>
                                         <Link href="/coaching-entreprise">
                                             Coaching entreprise
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href="/coaching-perte-de-poids">
+                                            Coaching perte de poids
                                         </Link>
                                     </li>
                                 </ul>

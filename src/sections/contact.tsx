@@ -1,12 +1,14 @@
 "use client"
+import Link from "next/link"
+import Image from "next/image"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLocationDot, faPhone, faCalendarDays, faPaperPlane } from "@fortawesome/free-solid-svg-icons"
-// import { faPaperPlane } from "@fortawesome/free-regular-svg-icons"
-import { useEffect, useLayoutEffect } from "react"
+import { useEffect } from "react"
 import { openDialog } from "../utils/dialog"
 import { emailMessage } from "../data/metadata"
 import { CustomEvent } from "../models/types"
-import Link from "next/link"
+
+import Cabinet from "../../public/images/contact/cabinet.webp"
 
 export default function Contact({ className = "" }: { className?: string }) {
 
@@ -113,6 +115,13 @@ export default function Contact({ className = "" }: { className?: string }) {
                             <p className="text-lg md:text-xl">
                                 En présentiel à Vannes et/ou distanciel
                             </p>
+                            <br />
+                            <Image
+                                src={Cabinet}
+                                alt="Cabinet à Vannes"
+                                title="Cabinet à Vannes"
+                                className="rounded-xl shadow-xl"
+                            />
                             <br />
                             <p>
                                 30 ter avenue de la Marne<br />
