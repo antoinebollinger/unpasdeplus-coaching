@@ -25,7 +25,7 @@ export default async function Page() {
                                 <Image
                                     src={post.images[0].url}
                                     width={500}
-                                    height={500}
+                                    height={300}
                                     alt={post.title}
                                     className="w-full mb-4"
                                 />
