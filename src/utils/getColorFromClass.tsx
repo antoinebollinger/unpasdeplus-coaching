@@ -10,6 +10,7 @@ function rgbToHex(rgb: string) {
 }
 
 export function getHexColorFromClass(className: string) {
+    if (typeof document === "undefined") return null
     const bgClassTmp = className?.match(/bg-[\w-]+/)
     const bgClass = bgClassTmp ? bgClassTmp[0] : "bg-white"
     const tempElement = document.createElement('div')
