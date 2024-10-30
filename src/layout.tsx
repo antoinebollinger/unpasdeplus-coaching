@@ -13,11 +13,6 @@ const Header = dynamic(() => import("./components/header"))
 const Footer = dynamic(() => import("./components/footer"))
 const Backtotop = dynamic(() => import("./components/backtotop"))
 
-const transformBgToTextClass = ({ className }: { className: string }) => {
-    const bgClass = className?.match(/bg-[\w-]+/)
-    return bgClass ? bgClass[0].replace("bg", "text") : "text-white"
-}
-
 export default function Layout({
     children,
     banner = Banner,
@@ -49,7 +44,7 @@ export default function Layout({
                 id="top"
                 className={className}
             >
-                <Header banner={banner} waveClassName={transformBgToTextClass({ className })} />
+                <Header banner={banner} waveClassName={className} />
                 {children}
                 {footer && <Footer onThisPage={onThisPage} />}
                 <Backtotop onThisPage={onThisPage} />

@@ -15,7 +15,7 @@ export default async function Main({ className = "" }: { className?: string }) {
                 <div className="text-center mb-16">
                     <h1>Mon blog</h1>
                 </div>
-                <div className="grid grid-cols-3 gap-8">
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {posts.map(post => (
                         <Link href={`/blog/${post.id}`} key={post.id} className="flex flex-col rounded-xl shadow-xl p-4 bg-white transition hover:scale-[1.05]">
                             <div className="grow">

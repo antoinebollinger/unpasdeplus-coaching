@@ -1,13 +1,12 @@
 "use client"
 import Image from "next/image"
 import dynamic from "next/dynamic"
-// import Wave from "/public/images/svg/wave-white.svg"
-import Wave from "../../public/images/svg/wave"
+import Wave from "./wave"
 import type { banner } from "../models/types"
 import { useLayoutEffect, useRef } from "react"
+import { getHexColorFromClass } from "../utils/getColorFromClass"
 
 const Navbar = dynamic(() => import("./navbar"))
-// import Navbar from "./navbar"
 
 export default function Header({
     banner,
@@ -47,7 +46,7 @@ export default function Header({
                     />
                 </div>
                 <div className="absolute bottom-0 z-10 w-full h-auto -mb-1 header-shape">
-                    <Wave className={waveClassName} />
+                    <Wave color={getHexColorFromClass(waveClassName)} />
                     {/* <Image
                         src={Wave}
                         alt="Wave"
