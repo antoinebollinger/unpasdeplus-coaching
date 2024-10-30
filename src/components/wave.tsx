@@ -1,7 +1,7 @@
-export default async function Wave({ color }: { color: string }) {
+export default function Wave({ color }: { color: string }) {
     return (
         <svg
-            enable-background="new 0 0 1504 131.3"
+            enableBackground="new 0 0 1504 131.3"
             viewBox="0 0 1504 131.3"
             xmlns="http://www.w3.org/2000/svg"
         >

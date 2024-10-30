@@ -1,13 +1,13 @@
 import Link from "next/link"
 import Image from "next/image"
-import { getPosts } from "../../../src/utils/fetch"
-import displayDate from "../../../src/utils/date"
+import { getPosts } from "../../utils/fetch"
+import { displayDate } from "../../utils/date"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faComment } from "@fortawesome/free-solid-svg-icons"
+import { Post } from "../../models/posts"
 
-export default async function Main({ className = "" }: { className?: string }) {
-    const posts = await getPosts()
-    console.log(posts)
+export default async function Posts({ className = "" }: { className?: string }) {
+    const posts: Post[] = await getPosts()
 
     return (
         <section className={className}>

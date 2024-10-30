@@ -1,4 +1,4 @@
-export default function displayDate(dateStr: string) {
+export function displayDate(dateStr: string) {
     const date = new Date(dateStr)
     const readableDate: string = date.toLocaleString("fr-FR", {
         year: "numeric",

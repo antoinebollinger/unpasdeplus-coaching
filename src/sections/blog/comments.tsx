@@ -1,12 +1,22 @@
-export default function Comments({ comments }: { comments?: string }) {
+import { getComments } from "../../utils/fetch"
+import { displayDate } from "../../utils/date"
+
+export default async function Comments({ postId }: { postId: string }) {
+    const comments = await getComments(postId)
+
     return (
-        <form>
-            <div className="single-form">
-                <textarea rows={1} name="message" data-error="" placeholder="Saisir un commentaire" required></textarea>
-            </div>
-            <div className="single-form text-end">
-                <button type="submit" className="main-btn gradient-btn focus:outline-none uppercase">Publier</button>
-            </div>
-        </form>
+        <div>
+            {comments.map(comment => (
+                <div key={comment.id}>
+                    <p className="mb-2">
+                        <strong>{comment.author.displayName}</strong>, <i>{displayDate(comment.published)}</i>
+                    </p>
+                    <p className="text-gray-500 mb-4">
+                        {comment.content}
+                    </p>
+                    <hr className="mb-6" />
+                </div>
+            ))}
+        </div>
     )
 }
