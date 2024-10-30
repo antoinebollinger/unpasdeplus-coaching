@@ -3,7 +3,8 @@ import { Post, PostList } from "../models/posts"
 
 export async function customFetch({ url = "", method = "GET" }: { url: string, method?: string }) {
     const res = await fetch(url, {
-        method
+        method,
+        cache: "no-store"
     })
     if (!res.ok) return []
     const data = await res.json()
