@@ -1,7 +1,8 @@
 "use client"
 import Image from "next/image"
 import dynamic from "next/dynamic"
-import Wave from "/public/images/svg/wave-white.svg"
+// import Wave from "/public/images/svg/wave-white.svg"
+import Wave from "../../public/images/svg/wave"
 import type { banner } from "../models/types"
 import { useLayoutEffect, useRef } from "react"
 
@@ -10,8 +11,10 @@ const Navbar = dynamic(() => import("./navbar"))
 
 export default function Header({
     banner,
+    waveClassName
 }: {
     banner: banner,
+    waveClassName: string
 }) {
     const navRef = useRef<HTMLDivElement>()
     const headerRef = useRef<HTMLDivElement>()
@@ -44,11 +47,12 @@ export default function Header({
                     />
                 </div>
                 <div className="absolute bottom-0 z-10 w-full h-auto -mb-1 header-shape">
-                    <Image
+                    <Wave className={waveClassName} />
+                    {/* <Image
                         src={Wave}
                         alt="Wave"
                         className="object-cover w-full h-full"
-                    />
+                    /> */}
                 </div>
             </header>
         </>

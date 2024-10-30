@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
 export default async function Page({ params }: { params: { slug: string } }) {
     const post: Post = await getPost(params.slug)
     return (
-        <Layout banner={Banner}>
+        <Layout banner={Banner} className="bg-gray-100">
             <OnePost params={{ post }} />
         </Layout>
     )

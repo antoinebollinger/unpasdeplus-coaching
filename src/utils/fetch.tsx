@@ -12,13 +12,13 @@ export async function customFetch(url: string = "") {
 }
 
 export async function getPost(slug: string) {
-    const postsUrl = `https://www.googleapis.com/blogger/v3/blogs/${process.env.NEXT_PUBLIC_BLOGGER_ID}/posts/${slug}?key=${process.env.NEXT_PUBLIC_BLOGGER_KEY}`
+    const postsUrl = `${process.env.NEXT_PUBLIC_BLOGGER_API}/blogs/${process.env.NEXT_PUBLIC_BLOGGER_ID}/posts/${slug}?key=${process.env.NEXT_PUBLIC_BLOGGER_KEY}`
     const post: Post = await customFetch(postsUrl)
     return post
 }
 
 export async function getPosts() {
-    const postsUrl = `https://www.googleapis.com/blogger/v3/blogs/${process.env.NEXT_PUBLIC_BLOGGER_ID}/posts?fetchImages=true&key=${process.env.NEXT_PUBLIC_BLOGGER_KEY}`
+    const postsUrl = `${process.env.NEXT_PUBLIC_BLOGGER_API}/blogs/${process.env.NEXT_PUBLIC_BLOGGER_ID}/posts?fetchImages=true&key=${process.env.NEXT_PUBLIC_BLOGGER_KEY}`
     const fetchPosts: PostList = await customFetch(postsUrl)
     const posts: Post[] = fetchPosts.items ?? []
     return posts

@@ -9,7 +9,7 @@ export const metadata = {
 
 export default async function Page() {
     return (
-        <Layout banner={Banner}>
+        <Layout banner={Banner} className="bg-gray-100">
             <Main />
         </Layout >
     )

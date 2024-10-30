@@ -13,16 +13,23 @@ const Header = dynamic(() => import("./components/header"))
 const Footer = dynamic(() => import("./components/footer"))
 const Backtotop = dynamic(() => import("./components/backtotop"))
 
+const transformBgToTextClass = ({ className }: { className: string }) => {
+    const bgClass = className?.match(/bg-[\w-]+/)
+    return bgClass ? bgClass[0].replace("bg", "text") : "text-white"
+}
+
 export default function Layout({
     children,
     banner = Banner,
     onThisPage,
     footer = true,
+    className
 }: {
     children: React.ReactNode,
     banner?: banner,
     onThisPage?: onThisPage[],
-    footer?: boolean
+    footer?: boolean,
+    className?: string
 }) {
     useEffect(() => {
         document.querySelector("html").style.scrollBehavior = "auto"
@@ -40,8 +47,9 @@ export default function Layout({
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.5 }}
                 id="top"
+                className={className}
             >
-                <Header banner={banner} />
+                <Header banner={banner} waveClassName={transformBgToTextClass({ className })} />
                 {children}
                 {footer && <Footer onThisPage={onThisPage} />}
                 <Backtotop onThisPage={onThisPage} />
