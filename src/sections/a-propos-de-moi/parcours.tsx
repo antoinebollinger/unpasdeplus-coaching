@@ -2,13 +2,15 @@
 import Image from "next/image"
 import Career1 from "/public/images/a-propos-de-moi/1.webp"
 import Career2 from "/public/images/a-propos-de-moi/2.webp"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faCheck } from "@fortawesome/free-solid-svg-icons"
 
 export default function Parcours() {
     return (
         <div className="parcours">
             <div className="text-center pb-10">
                 <p className="h2">Mon parcours</p>
-                <h1>Trouver son équilibre est un entrainement</h1>
+                <h1>Trouver son équilibre, un véritable défi</h1>
             </div>
             <div className="w-full">
                 <div className="flex flex-col md:flex-row gap-6 justify-center items-center mb-10">
@@ -23,7 +25,7 @@ export default function Parcours() {
                     </div>
                     <div className="w-full md:w-3/4">
                         <p className="text-lg text-gray-900">
-                            Une vie sans trop me poser de question&nbsp;: métro, boulot, dodo. Salariée et maman de 2 enfants en bas âge. Rythme effréné, le sentiment de mener une course contre la montre au quotidien. C’était il y a quelques années.
+                            Salariée d'un grand groupe bancaire pendant plus de 10 ans, une vie sans trop me poser de question&nbsp;: enfants, métro, boulot, dodo.
                         </p>
                     </div>
                 </div>
@@ -39,20 +41,31 @@ export default function Parcours() {
                     </div>
                     <div className="w-full md:w-3/4">
                         <p className="text-lg text-gray-900">
-                            Au fil du temps, je me suis sentie tiraillée entre être présente pour mes enfants et réussir professionnellement, tout en essayant de trouver <strong>mon équilibre de vie personnelle, familiale et professionnelle</strong>. À cette période-là, je trouve <strong>mon équilibre</strong> grâce à ma passion&nbsp;: <strong>l’activité physique, la course à pied</strong>. Un <strong>allié au quotidien</strong> dans mes défis.
+                            Au fil du temps, me sentir à ma place, m'épanouir professionnellement, représente un défi. Ce sentiment de conflit intérieur avec mes valeurs, mes besoins, mon identité. Cela crée une charge mentale supplémentaire, celle de trouver son équilibre de vie.
                         </p>
                     </div>
                 </div>
             </div>
             <div className="lg:max-w-5xl mx-auto">
-                <p className="text-lg text-gray-900 mb-2">
-                    Parce que le sport va bien au-delà d’une simple activité physique. C’est un véritable <strong>accélérateur de développement personnel et professionnel</strong>. La persévérance, la discipline, la motivation, l’équilibre de vie, la gestion de la performance sont autant de qualités pour <strong>surmonter les défis</strong>, forger <strong>le mental</strong>, garder <strong>le cap sur ses objectifs</strong>.
+                <p className="text-lg text-gray-900 mb-4">
+                    C'est pour accompagner chacun à traverser ses transitions de vie, à relever ses défis personnels & professionnels qu'<span className="text-primary-600 font-bold">Un pas de plus Coaching</span> a vu le jour et a pour mission d'accompagner les personnes à <strong>se sentir bien dans leur tête et leur corps</strong> pour retrouver un équilibre de vie.
                 </p>
-                <p className="text-lg text-gray-900 mb-2">
-                    Parce que prendre soin de son bien-être, c’est prendre soin de sa <strong>santé physique</strong>, sa <strong>santé mentale</strong> et de son <strong>bien-être émotionnel</strong>.
+                <ul className="text-lg text-gray-900 list-none list-inside fa-ul flex flex-col gap-6 mb-4">
+                    <li>
+                        <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span> Parce qu'avoir une meilleure <strong>connaissance de soi</strong>, c'est comprendre son fonctionnement pour agir avec une meilleure <strong>conscience de soi</strong>&nbsp;;
+                    </li>
+                    <li>
+                        <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span> Parce que <strong>cultiver la mise en mouvement physique</strong>, c'est prendre soin de son corps et aussi de sa tête&nbsp;;<br />
+                    </li>
+                    <li>
+                        <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span> Parce que trouve son <strong>équilibre de vie</strong>, c'est apprendre à <strong>gérer ses émotions</strong> pour faire face aux défis du quotidien.
+                    </li>
+                </ul>
+                <p className="text-lg text-gray-900 mb-4">
+                    Parce que nous sommes convaincus que <strong>forger un mental</strong> à toute épreuve, cultiver la <strong>mise en mouvement physique</strong> et avoir une meilleure <strong>gestion de ses émotions</strong>, c'est être capable de surmonter les <strong>défis personnels & professionnels</strong> avec confiance et sérénité.
                 </p>
                 <p className="text-lg text-gray-900 mb-12">
-                    Parce que je suis convaincue que nous pouvons être des athlètes de haut niveau face à nos défis du quotidien, Un Pas de Plus coaching a vu le jour, et a pour mission d'accompagner les personnes à <strong>se sentir bien dans leur tête et leur corps</strong> pour retrouver un <strong>équilibre de vie</strong>.
+                    Bienvenue chez <span className="text-primary-600 font-bold">Un pas de plus Coaching</span>&nbsp;!
                 </p>
             </div>
         </div>
