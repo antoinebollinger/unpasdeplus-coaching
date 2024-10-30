@@ -2,6 +2,8 @@ import { displayDate } from "../../../src/utils/date"
 import { Post } from "../../../src/models/posts"
 import Comments from "./comments"
 import { getPost } from "../../utils/fetch"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faComment } from "@fortawesome/free-solid-svg-icons"
 
 export default async function SinglePost({ postId }: { postId: string }) {
     const post: Post = await getPost(postId)
@@ -16,6 +18,9 @@ export default async function SinglePost({ postId }: { postId: string }) {
                             <p><small>{displayDate(post.published)}</small></p>
                             <div className="post-body mb-6" dangerouslySetInnerHTML={{ __html: post.content ?? "" }} />
                             <hr className="mb-6" />
+                            <div className="flex">
+                                <span className="text-xl grow"><FontAwesomeIcon icon={faComment} /> {post.replies.totalItems}</span>
+                            </div>
                             <Comments postId={post.id} />
                         </div>
                     }
