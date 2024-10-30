@@ -10,7 +10,7 @@ function rgbToHex(rgb: string) {
 }
 
 export function getHexColorFromClass(className: string) {
-    if (typeof document === "undefined") return null
+    if (typeof document === "undefined") return "#fff"
     const bgClassTmp = className?.match(/bg-[\w-]+/)
     const bgClass = bgClassTmp ? bgClassTmp[0] : "bg-white"
     const tempElement = document.createElement('div')
@@ -19,5 +19,5 @@ export function getHexColorFromClass(className: string) {
     document.body.appendChild(tempElement)
     const color = getComputedStyle(tempElement).backgroundColor
     document.body.removeChild(tempElement)
-    return color.startsWith('rgb') ? rgbToHex(color) : color || null
+    return color.startsWith('rgb') ? rgbToHex(color) : color || "#fff"
 }
