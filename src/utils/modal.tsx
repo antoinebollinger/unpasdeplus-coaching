@@ -41,7 +41,7 @@ export default function Modal(
 
     return (
         <div className={`hidden fixed inset-0 ${className}`} id="modal">
-            <div tabIndex={-1} className="absolute inset-0 flex justify-center items-center bg-gray-900 bg-opacity-50 p-12">
+            <div tabIndex={-1} className="absolute inset-0 flex justify-center items-center bg-gray-900 bg-opacity-50 p-2 md:p-6 lg:p-12">
                 <div className="w-full lg:w-2/3 mx-auto max-h-full bg-white rounded-xl p-6 flex flex-col" id="modal-child">
                     <div className="flex justify-end pb-6">
                         <button type="button" className="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center" onClick={() => closeModal()}>
