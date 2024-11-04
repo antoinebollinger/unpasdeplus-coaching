@@ -33,10 +33,10 @@ export default function Posts({ className = "" }: { className?: string }) {
     return (
         <section className={className}>
             <div className="container">
-                <div className="text-center mb-16">
+                <div className="text-center mb-8 lg:mb-16">
                     <h1>Mon blog</h1>
                 </div>
-                <div className="mb-16 mx-auto lg:w-1/2">
+                <div className="mx-auto lg:w-1/2 mb-8 lg:mb-16">
                     <div id="search-form" className="relative">
                         <input
                             type="text"
