@@ -24,6 +24,15 @@ export async function getPosts() {
     return posts
 }
 
+export async function searchPosts(search?: string) {
+    const url = `${process.env.NEXT_PUBLIC_BLOGGER_API}/blogs/${process.env.NEXT_PUBLIC_BLOGGER_ID}/posts/search?q=${search}&fetchImages=true&key=${process.env.NEXT_PUBLIC_BLOGGER_KEY}`
+    const fetchPosts: PostList = await customFetch({ url })
+    const filteredPosts: Post[] = fetchPosts.items ?? []
+    const allPosts: Post[] = await getPosts()
+    const posts: Post[] = allPosts.filter(post => filteredPosts.some(filter => filter.id === post.id))
+    return posts
+}
+
 export async function getComments(postId: string) {
     const url = `${process.env.NEXT_PUBLIC_BLOGGER_API}/blogs/${process.env.NEXT_PUBLIC_BLOGGER_ID}/posts/${postId}/comments?key=${process.env.NEXT_PUBLIC_BLOGGER_KEY}`
     const fetchComments: CommentList = await customFetch({ url })
