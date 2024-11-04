@@ -25,7 +25,7 @@ export async function getPosts() {
 }
 
 export async function searchPosts(search?: string) {
-    const url = `${process.env.NEXT_PUBLIC_BLOGGER_API}/blogs/${process.env.NEXT_PUBLIC_BLOGGER_ID}/posts/search?q=${search}&fetchImages=true&key=${process.env.NEXT_PUBLIC_BLOGGER_KEY}`
+    const url = `${process.env.NEXT_PUBLIC_BLOGGER_API}/blogs/${process.env.NEXT_PUBLIC_BLOGGER_ID}/posts/search?q=${search}&fetchBodies=false&key=${process.env.NEXT_PUBLIC_BLOGGER_KEY}`
     const fetchPosts: PostList = await customFetch({ url })
     const filteredPosts: Post[] = fetchPosts.items ?? []
     const allPosts: Post[] = await getPosts()
