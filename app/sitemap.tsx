@@ -12,15 +12,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
             lastModified: new Date(),
         },
         {
-            url: `${siteData.url}/coaching-bien-etre-equilibre`,
+            url: `${siteData.url}/offres-particuliers`,
             lastModified: new Date(),
         },
         {
-            url: `${siteData.url}/coaching-perte-de-poids`,
+            url: `${siteData.url}/offres-particuliers/coaching-bien-etre-equilibre`,
             lastModified: new Date(),
         },
         {
-            url: `${siteData.url}/coaching-entreprise`,
+            url: `${siteData.url}/offres-particuliers/coaching-perte-de-poids`,
+            lastModified: new Date(),
+        },
+        {
+            url: `${siteData.url}/offres-entreprises`,
+            lastModified: new Date(),
+        },
+        {
+            url: `${siteData.url}/offres-entreprises/coaching-entreprise`,
             lastModified: new Date(),
         },
         {

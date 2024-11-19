@@ -2,7 +2,7 @@
 import { useEffect } from "react"
 import Image from "next/image"
 import Link from "next/link"
-import { reveal } from "../../utils/reveal"
+import { reveal } from "../../../utils/reveal"
 import Pratique1 from "/public/images/coaching-bien-etre-equilibre/pratique_1.webp"
 import Pratique2 from "/public/images/coaching-bien-etre-equilibre/pratique_2.webp"
 import Pratique3 from "/public/images/coaching-bien-etre-equilibre/pratique_3.webp"

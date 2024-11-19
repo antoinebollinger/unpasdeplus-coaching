@@ -2,7 +2,7 @@
 import { useEffect } from "react"
 import Image, { StaticImageData } from "next/image"
 import Link from "next/link"
-import { reveal } from "../../utils/reveal"
+import { reveal } from "../../../utils/reveal"
 import Lescles from "/public/images/coaching-entreprise/cles.webp"
 import Coaching_1 from "/public/images/coaching-entreprise/coaching_1.webp"
 import Coaching_2 from "/public/images/coaching-entreprise/coaching_2.webp"

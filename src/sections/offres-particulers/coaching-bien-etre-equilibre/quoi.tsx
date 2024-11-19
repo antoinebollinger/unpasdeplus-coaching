@@ -1,7 +1,7 @@
 "use client"
 import { useEffect } from "react"
 import Image, { StaticImageData } from "next/image"
-import { reveal } from "../../utils/reveal"
+import { reveal } from "../../../utils/reveal"
 import Quoi_1 from "/public/images/coaching-bien-etre-equilibre/quoi_1.webp"
 import Quoi_2 from "/public/images/coaching-bien-etre-equilibre/quoi_2.webp"
 import Quoi_3 from "/public/images/coaching-bien-etre-equilibre/quoi_3.webp"
