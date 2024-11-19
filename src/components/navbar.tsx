@@ -68,7 +68,7 @@ export default function Navbar() {
                     </li>
                     <li className={`relative nav-item ${pathname.startsWith("/offres-particuliers") ? "active" : ""}`}>
                         <Link href="/offres-particuliers">Offres <br className="hidden lg:block" />Particuliers</Link>
-                        <div className="dropdown pt-4">
+                        <div className="dropdown lg:pt-4 pt-0">
                             <ul>
                                 <li className={`nav-item ${pathname == "/offres-particuliers/coaching-bien-etre-equilibre" ? "active" : ""}`}>
                                     <Link href="/offres-particuliers/coaching-bien-etre-equilibre" className="page-scroll">
@@ -85,7 +85,7 @@ export default function Navbar() {
                     </li>
                     <li className={`relative nav-item ${pathname.startsWith("/offres-entreprises") ? "active" : ""}`}>
                         <Link href="/offres-entreprises">Offres <br className="hidden lg:block" />Entreprises</Link>
-                        <div className="dropdown pt-4">
+                        <div className="dropdown lg:pt-4 pt-0">
                             <ul>
                                 <li className={`nav-item ${pathname == "/offres-entreprises/coaching-carriere-parentalite" ? "active" : ""}`}>
                                     <Link href="/offres-entreprises/coaching-carriere-parentalite" className="page-scroll">
