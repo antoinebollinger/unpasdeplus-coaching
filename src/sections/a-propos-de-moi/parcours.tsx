@@ -25,7 +25,7 @@ export default function Parcours() {
                     </div>
                     <div className="w-full md:w-3/4">
                         <p className="text-lg text-gray-900">
-                            Salariée d'un grand groupe bancaire pendant plus de 10 ans, une vie sans trop me poser de question&nbsp;: enfants, métro, boulot, dodo.
+                            Salariée dans un grand groupe bancaire pendant plus de 10 ans, une vie sans trop me poser de question&nbsp;: enfants, métro, boulot, dodo.
                         </p>
                     </div>
                 </div>
@@ -58,7 +58,7 @@ export default function Parcours() {
                         <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span> Parce que <strong>cultiver la mise en mouvement physique</strong>, c'est prendre soin de son corps et aussi de sa tête&nbsp;;<br />
                     </li>
                     <li>
-                        <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span> Parce que trouve son <strong>équilibre de vie</strong>, c'est apprendre à <strong>gérer ses émotions</strong> pour faire face aux défis du quotidien.
+                        <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span> Parce que trouver son <strong>équilibre de vie</strong>, c'est apprendre à <strong>gérer ses émotions</strong> pour faire face aux défis du quotidien.
                     </li>
                 </ul>
                 <p className="text-lg text-gray-900 mb-4">

@@ -95,95 +95,87 @@ export default function Footer({
                             </div>
                         </div>
                     </div>
-                    <div className="row">
+                    <div className="row gap-y-4">
                         <div className="w-full md:w-1/3 xl:w-1/4">
-                            <div className="mb-8 footer-link">
-                                <ul>
-                                    <li>
-                                        <Link href="/">
-                                            Accueil
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link href="/a-propos-de-moi">
-                                            À propos de moi
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link href="/blog">
-                                            Mon blog
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link href="/contact">
-                                            Contact
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link href="/mentions-legales">
-                                            Mentions légales
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link href="/politique-confidentialite">
-                                            Politique de confidentialité
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <div className="flex gap-2"><Socials className="flex gap-2" /></div>
-                                    </li>
-                                </ul>
-                            </div>
+                            <ul className="footer-link">
+                                <li>
+                                    <Link href="/">
+                                        Accueil
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/a-propos-de-moi">
+                                        À propos de moi
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/contact">
+                                        Contact
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/mentions-legales">
+                                        Mentions légales
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/politique-confidentialite">
+                                        Politique de confidentialité
+                                    </Link>
+                                </li>
+                                <li>
+                                    <div className="flex gap-2"><Socials className="flex gap-2" /></div>
+                                </li>
+                            </ul>
                         </div>
                         <div className="w-full md:w-1/3 xl:w-1/4">
-                            <div className="mb-8 footer-link">
-                                <p className="footer-title">Mes offres</p>
-                                <ul>
-                                    <li>
-                                        <Link href="/coaching-bien-etre-equilibre">
-                                            Coaching bien-être & équilibre
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link href="/coaching-entreprise">
-                                            Coaching entreprise
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link href="/coaching-perte-de-poids">
-                                            Coaching perte de poids
-                                        </Link>
-                                    </li>
-                                </ul>
-                            </div>
+                            <p className="footer-title"><Link href="/offres-particuliers">Offres Particuliers</Link></p>
+                            <ul className="footer-link">
+                                <li>
+                                    <Link href="/offres-particuliers/coaching-bien-etre-equilibre">
+                                        Coaching bien-être & équilibre
+                                    </Link>
+                                </li>
+
+                                <li>
+                                    <Link href="/offres-particuliers/coaching-perte-de-poids">
+                                        Coaching perte de poids
+                                    </Link>
+                                </li>
+                            </ul>
+                            <br />
+                            <p className="footer-title"><Link href="/offres-entreprises">Offres Entreprises</Link></p>
+                            <ul className="footer-link">
+                                <li>
+                                    <Link href="/offres-entreprises/coaching-carriere-parentalite">
+                                        Coaching Carrière & Parentalité
+                                    </Link>
+                                </li>
+                            </ul>
                         </div>
-                        <div className="w-full md:w-1/3 xl:w-1/4">
-                            <div className="mb-8 footer-link">
-                                <p className="footer-title">Sur cette page</p>
-                                <ul>
-                                    {
-                                        onThisPage?.map((e, i) => (
-                                            <li key={i}><a href={e.link} dangerouslySetInnerHTML={{ __html: e.title }} /></li>
-                                        ))
-                                    }
-                                </ul>
-                            </div>
+                        <div className="w-full md:w-1/3 xl:w-1/4 ">
+                            <p className="footer-title">Sur cette page</p>
+                            <ul className="footer-link">
+                                {
+                                    onThisPage?.map((e, i) => (
+                                        <li key={i}><a href={e.link} dangerouslySetInnerHTML={{ __html: e.title }} /></li>
+                                    ))
+                                }
+                            </ul>
                         </div>
                         <div className="w-full md:w-1/2 xl:w-1/4">
-                            <div className="mb-8 footer-newsletter">
-                                <p className="footer-title">Inscription à ma newsletter</p>
-                                <div className="newsletter">
-                                    <form id="newsletter-form" className="relative">
-                                        <input type="email" name="email_from" placeholder="Entrez votre email" className="w-full py-3 pl-6 pr-12 duration-200 bg-gray-100 border border-gray-100 rounded-full focus:border-primary-600 focus:outline-none mb-4" required />
-                                        <button type="submit" className="absolute top-0 right-0 mt-3 mr-6 text-xl text-primary-600" aria-label="S’incrire à ma newsletter">
-                                            <FontAwesomeIcon icon={faAngleDoubleRight} />
-                                        </button>
-                                        <label htmlFor="consent" className="text-sm single-form cursor-pointer">
-                                            <input type="checkbox" name="consent" id="consent" className="accent-pink-500" required />&nbsp;
-                                            Vous acceptez de recevoir notre newletter. Vous pouvez vous désinscrire à tout moment à l’aide des liens de désinscription ou en me contactant à l’adresse <a href={`mailto:${process.env.NEXT_PUBLIC_EMAIL_TO}`} title="Envoyer un mail à Sabrina" className="font-bold text-primary-900 hover:text-primary-700 transition">{process.env.NEXT_PUBLIC_EMAIL_TO}</a>.
-                                        </label>
-                                    </form>
-                                </div>
+                            <p className="footer-title">Inscription à ma newsletter</p>
+                            <div className="newsletter">
+                                <form id="newsletter-form" className="relative">
+                                    <input type="email" name="email_from" placeholder="Entrez votre email" className="w-full py-3 pl-6 pr-12 duration-200 bg-gray-100 border border-gray-100 rounded-full focus:border-primary-600 focus:outline-none mb-4" required />
+                                    <button type="submit" className="absolute top-0 right-0 mt-3 mr-6 text-xl text-primary-600" aria-label="S’incrire à ma newsletter">
+                                        <FontAwesomeIcon icon={faAngleDoubleRight} />
+                                    </button>
+                                    <label htmlFor="consent" className="text-sm single-form cursor-pointer">
+                                        <input type="checkbox" name="consent" id="consent" className="accent-pink-500" required />&nbsp;
+                                        Vous acceptez de recevoir notre newletter. Vous pouvez vous désinscrire à tout moment à l’aide des liens de désinscription ou en me contactant à l’adresse <a href={`mailto:${process.env.NEXT_PUBLIC_EMAIL_TO}`} title="Envoyer un mail à Sabrina" className="font-bold text-primary-900 hover:text-primary-700 transition">{process.env.NEXT_PUBLIC_EMAIL_TO}</a>.
+                                    </label>
+                                </form>
                             </div>
                         </div>
                     </div>

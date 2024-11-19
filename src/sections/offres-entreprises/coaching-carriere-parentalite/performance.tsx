@@ -1,6 +1,6 @@
 "use client"
 import { useEffect } from "react"
-import { reveal } from "../../utils/reveal"
+import { reveal } from "../../../utils/reveal"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCheck } from "@fortawesome/free-solid-svg-icons"
 

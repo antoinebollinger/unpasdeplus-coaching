@@ -1,6 +1,6 @@
 "use client"
 import { useEffect } from "react"
-import { reveal } from "../../utils/reveal"
+import { reveal } from "../../../utils/reveal"
 
 export default function Risques({ className = "" }: { className?: string }) {
     useEffect(() => {

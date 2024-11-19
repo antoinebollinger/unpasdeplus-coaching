@@ -3,18 +3,16 @@
 }
 
 .footer-link {
-    ul {
-        li {
+    li {
 
-            a,
-            span {
-                @apply inline-block mb-3 font-medium text-gray-900 duration-200;
-            }
+        a,
+        span {
+            @apply inline-block mb-3 font-medium text-gray-900 duration-200;
+        }
 
-            a {
-                &:hover {
-                    @apply text-tertary-900;
-                }
+        a {
+            &:hover {
+                @apply text-tertary-900;
             }
         }
     }

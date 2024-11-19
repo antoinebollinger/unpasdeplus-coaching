@@ -1,7 +1,7 @@
 "use client"
 import { useEffect } from "react"
 import Image from "next/image"
-import { reveal } from "../../utils/reveal"
+import { reveal } from "../../../utils/reveal"
 import QuiImg from "/public/images/coaching-bien-etre-equilibre/qui.webp"
 import Stress from "/public/images/coaching-bien-etre-equilibre/stress.webp"
 import Emotions from "/public/images/coaching-bien-etre-equilibre/emotions.webp"

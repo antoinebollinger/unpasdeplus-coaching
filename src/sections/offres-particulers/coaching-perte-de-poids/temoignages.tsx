@@ -1,7 +1,7 @@
 "use client"
 import { useEffect, useState, useCallback } from "react"
 import useEmblaCarousel, { EmblaCarouselType } from "embla-carousel-react"
-import { DotButton, PrevButton, NextButton } from "../../components/emblaButtons"
+import { DotButton, PrevButton, NextButton } from "../../../components/emblaButtons"
 
 export default function Temoignages({ className = "" }: { className?: string }) {
     const [emblaRef, emblaApi] = useEmblaCarousel({})
