@@ -1,6 +1,6 @@
 "use client"
 import { useEffect } from "react"
-import { reveal } from "../../utils/reveal"
+import { reveal } from "../../../utils/reveal"
 import Image from "next/image"
 import Balance from "/public/images/coaching-perte-de-poids/balance.webp"
 

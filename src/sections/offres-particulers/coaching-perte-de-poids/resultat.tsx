@@ -2,7 +2,7 @@
 import { useEffect } from "react"
 import Image from "next/image"
 import Link from "next/link"
-import { reveal } from "../../utils/reveal"
+import { reveal } from "../../../utils/reveal"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCheck } from "@fortawesome/free-solid-svg-icons"
 import Youpi from "/public/images/coaching-perte-de-poids/resultat.webp"

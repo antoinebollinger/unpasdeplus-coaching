@@ -1,14 +1,14 @@
 "use client"
 import { useEffect } from "react"
 import Image from "next/image"
-import { reveal } from "../../utils/reveal"
-import IntroImg from "/public/images/coaching-bien-etre-equilibre/intro.webp"
-import Calendly from "../../components/calendly"
+import { reveal } from "../../../utils/reveal"
+import IntroImg from "/public/images/coaching-perte-de-poids/intro.webp"
+import Calendly from "../../../components/calendly"
 
 export default function Intro({ className = "" }: { className?: string }) {
     useEffect(() => {
         reveal({
-            collection: document.querySelectorAll(".parents-img"),
+            collection: document.querySelectorAll("#introduction img"),
             classesToRemove: ["scale-0"]
         })
         reveal({
@@ -25,19 +25,22 @@ export default function Intro({ className = "" }: { className?: string }) {
                     <div className="w-2/3 lg:w-1/4">
                         <Image
                             src={IntroImg}
-                            className="w-full rounded-full mx-auto transition duration-200 scale-0 parents-img"
-                            alt="Retrouver bien-être et équilibre au quotidien"
-                            title="Retrouver bien-être et équilibre au quotidien"
+                            className="w-full rounded-full mx-auto transition duration-200 scale-0"
+                            alt="Perdre du poids de manière saine et durable"
+                            title="Perdre du poids de manière saine et durable"
                         />
                     </div>
                     <div className="w-full lg:w-3/4">
-                        <h1>Retrouver équilibre et bien-être au quotidien</h1>
+                        <p className="h1">Perdre du poids de manière saine et durable&nbsp;: l’art du coaching bienveillant.</p>
                         <br />
                         <p className="text-lg leading-6 mb-6">
-                            Le coaching bien-être & équilibre vous accompagne à prendre soin de vous et à trouver un équilibre <strong>physique, mental</strong> et <strong>émotionnel</strong>.
+                            La quête <strong>d’une perte de poids saine et durable</strong> est souvent parsemée d’embûches.
                             <br />
                             <br />
-                            Vous souhaitez vous sentir mieux au quotidien&nbsp;? Mais vous manquez de temps pour <strong>prendre soin de vous</strong> et vous avez besoin d’un soutien permanent pour <strong>rester motivé.e</strong> durant la durée du coaching&nbsp;?
+                            Le coaching bienveillant peut être la clé pour <strong>atteindre vos objectifs</strong> de manière <strong>saine et durable</strong>.
+                            <br />
+                            <br />
+                            Une <strong>approche saine et positive</strong> qui respecte vos besoins et votre rythme.
                         </p>
                     </div>
                 </div>
