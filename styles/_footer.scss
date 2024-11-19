@@ -2,20 +2,6 @@
     @apply mb-5 text-sm font-bold text-gray-700;
 }
 
-.footer-title-link {
-
-    a,
-    span {
-        @apply mb-5 text-sm font-bold text-gray-700 duration-200;
-    }
-
-    a {
-        &:hover {
-            @apply text-tertary-900;
-        }
-    }
-}
-
 .footer-link {
     li {
 

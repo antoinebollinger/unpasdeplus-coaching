@@ -129,7 +129,7 @@ export default function Footer({
                             </ul>
                         </div>
                         <div className="w-full md:w-1/3 xl:w-1/4">
-                            <p className="footer-title">Offres Particuliers</p>
+                            <p className="footer-title"><Link href="/offres-particuliers">Offres Particuliers</Link></p>
                             <ul className="footer-link">
                                 <li>
                                     <Link href="/offres-particuliers/coaching-bien-etre-equilibre">
@@ -144,11 +144,11 @@ export default function Footer({
                                 </li>
                             </ul>
                             <br />
-                            <p className="footer-title">Offres Entreprises</p>
+                            <p className="footer-title"><Link href="/offres-entreprises">Offres Entreprises</Link></p>
                             <ul className="footer-link">
                                 <li>
                                     <Link href="/offres-entreprises/coaching-carriere-parentalite">
-                                        Coaching entreprise
+                                        Coaching Carrière & Parentalité
                                     </Link>
                                 </li>
                             </ul>
