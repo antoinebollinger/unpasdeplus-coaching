@@ -29,7 +29,7 @@ export default function Enjeux({ className = "bg-gray-100" }: { className?: stri
                             Réussir à tout jongler&nbsp;: s’occuper de ses enfants, être performant au travail, prendre du temps pour soi est un jeu d’équilibriste. Difficile parfois de trouver un <strong>équilibre de vie</strong> face à une <strong>charge mentale importante</strong> qu’incombe d’être à la fois parent et salarié.
                         </p>
                         <p className="text-lg leading-6 transition duration-200 opacity-0 translate-y-full">
-                            Ces <strong>défis à la fois personnels et professionnels</strong> peuvent avoir des répercussions sur la <strong>santé physique et mentale</strong> des salariés. Ces défis peuvent être sources de risques psychosociaux au travail.
+                            Ces <strong>défis personnels et défis professionnels</strong> ont des répercussions sur la <strong>santé physique et mentale</strong> des salariés. Charge mentale importante, fatigue physique et mentale jusqu’à un état d’épuisement mental et physique peuvent être sources de <strong>risques psychosociaux</strong> au travail.
                         </p>
                     </div>
                 </div>
