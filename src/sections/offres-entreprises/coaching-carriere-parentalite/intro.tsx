@@ -26,10 +26,10 @@ export default function Intro({ className = "" }: { className?: string }) {
                         />
                     </div>
                     <div className="w-full lg:w-3/4">
-                        <h1>Améliorer la performance par le bien-être</h1>
+                        <h1>Accompagner la parentalité en entreprise</h1>
                         <br />
                         <p className="text-lg leading-6 mb-6">
-                            <strong>L’équilibre vie pro perso</strong> est un défi constant, et jugé <strong>difficile</strong> surtout pour les <strong>parents actifs pour 77%</strong>.
+                            <strong>Concilier vie pro perso</strong> est un défi constant, et jugé <strong>difficile</strong> pour les <strong>parents actifs pour 77%</strong>.
                             <br />
                             <br />
                             Notre mission&nbsp;: agir sur le <strong>bien-être des salariés-parents</strong> pour permettre aux entreprises d’avoir des <strong>salariés en forme</strong> et <strong>concilier sereinement parentalité et travail</strong>.
