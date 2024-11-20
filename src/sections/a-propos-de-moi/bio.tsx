@@ -75,7 +75,7 @@ export default function Bio({ className = "" }: { className?: string }) {
                         </div>
                         <div className="transition duration-200 opacity-0 translate-y-full">
                             <p className="text-lg mb-6">
-                                Au fil des années, j’ai gagné en sérénité en prenant soin de mon corps et ma tête. Cela n’a pas toujours été le cas. Découvrez mon parcours pour comprendre comment je suis parvenue à m’épanouir et à devenir la personne que je suis aujourd’hui.
+                                Au fil des années, j’ai gagné en sérénité en prenant soin de mon corps et ma tête. Découvrez mon parcours pour comprendre comment je suis parvenue à m’épanouir et à devenir la personne que je suis aujourd’hui.
                             </p>
                         </div>
                     </div>
