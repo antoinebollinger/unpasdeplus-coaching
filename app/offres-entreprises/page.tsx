@@ -1,5 +1,5 @@
 import Layout from "../../src/layout"
-import Offres from "../../src/sections/offres-entreprises/offres"
+import Offres from "../../src/sections/d-entreprises/offres"
 import Banner from "/public/images/banners/contact.webp"
 import { siteData } from "../../src/data/metadata"
 

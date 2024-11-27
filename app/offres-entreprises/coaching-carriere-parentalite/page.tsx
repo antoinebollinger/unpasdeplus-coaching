@@ -1,12 +1,12 @@
 import Layout from "../../../src/layout"
-import Intro from "../../../src/sections/offres-entreprises/coaching-carriere-parentalite/intro"
+import Intro from "../../../src/sections/d-entreprises/03-carriere-parentalite/intro"
 import Banner from "/public/images/banners/entreprise.webp"
 import { siteData } from "../../../src/data/metadata"
-import Enjeux from "../../../src/sections/offres-entreprises/coaching-carriere-parentalite/enjeux"
-import Risques from "../../../src/sections/offres-entreprises/coaching-carriere-parentalite/risques"
-import Performance from "../../../src/sections/offres-entreprises/coaching-carriere-parentalite/performance"
-import Attractivite from "../../../src/sections/offres-entreprises/coaching-carriere-parentalite/attractivite"
-import Cles from "../../../src/sections/offres-entreprises/coaching-carriere-parentalite/cles"
+import Enjeux from "../../../src/sections/d-entreprises/03-carriere-parentalite/enjeux"
+import Risques from "../../../src/sections/d-entreprises/03-carriere-parentalite/risques"
+import Performance from "../../../src/sections/d-entreprises/03-carriere-parentalite/performance"
+import Attractivite from "../../../src/sections/d-entreprises/03-carriere-parentalite/attractivite"
+import Cles from "../../../src/sections/d-entreprises/03-carriere-parentalite/cles"
 
 export const metadata = {
     title: `Coaching Carrière & Parentalité | ${siteData.title}`,
