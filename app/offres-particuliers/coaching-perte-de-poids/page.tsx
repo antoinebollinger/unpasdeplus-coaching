@@ -1,12 +1,12 @@
 import Layout from "../../../src/layout"
-import Intro from "../../../src/sections/offres-particulers/coaching-perte-de-poids/intro"
-import Quoi from "../../../src/sections/offres-particulers/coaching-perte-de-poids/quoi"
-import Temoignages from "../../../src/sections/offres-particulers/coaching-perte-de-poids/temoignages"
+import Intro from "../../../src/sections/c-particuliers/02-perte-de-poids/intro"
+import Quoi from "../../../src/sections/c-particuliers/02-perte-de-poids/quoi"
+import Temoignages from "../../../src/sections/c-particuliers/02-perte-de-poids/temoignages"
 
 import Banner from "/public/images/banners/perte-de-poids.webp"
 import { siteData } from "../../../src/data/metadata"
-import Methode from "../../../src/sections/offres-particulers/coaching-perte-de-poids/methode"
-import Resultat from "../../../src/sections/offres-particulers/coaching-perte-de-poids/resultat"
+import Methode from "../../../src/sections/c-particuliers/02-perte-de-poids/methode"
+import Resultat from "../../../src/sections/c-particuliers/02-perte-de-poids/resultat"
 
 export const metadata = {
     title: `Coaching perte de poids | ${siteData.title}`,

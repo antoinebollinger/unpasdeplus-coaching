@@ -2,11 +2,11 @@ import Layout from "../src/layout"
 import Banner from "/public/images/banners/accueil.webp"
 import dynamic from "next/dynamic"
 
-const Intro = dynamic(() => import("../src/sections/accueil/intro"))
-const Offres = dynamic(() => import("../src/sections/accueil/offres"))
-const Sabrina = dynamic(() => import("../src/sections/accueil/sabrina"))
-const Apports = dynamic(() => import("../src/sections/accueil/apports"))
-const Partenaires = dynamic(() => import("../src/sections/accueil/partenaires"))
+const Intro = dynamic(() => import("../src/sections/a-accueil/intro"))
+const Offres = dynamic(() => import("../src/sections/a-accueil/offres"))
+const Sabrina = dynamic(() => import("../src/sections/a-accueil/sabrina"))
+const Apports = dynamic(() => import("../src/sections/a-accueil/apports"))
+const Partenaires = dynamic(() => import("../src/sections/a-accueil/partenaires"))
 
 export default function Page() {
     const onThisPage = [

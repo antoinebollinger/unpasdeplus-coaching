@@ -3,20 +3,16 @@ import { useEffect } from "react"
 import Image, { StaticImageData } from "next/image"
 import Link from "next/link"
 import { reveal } from "../../../utils/reveal"
-import Lescles from "/public/images/coaching-entreprise/cles.webp"
 import Coaching_1 from "/public/images/coaching-entreprise/coaching_1.webp"
 import Coaching_2 from "/public/images/coaching-entreprise/coaching_2.webp"
-import Coaching_3 from "/public/images/coaching-entreprise/coaching_3.webp"
-import Coaching_4 from "/public/images/coaching-entreprise/coaching_4.webp"
-import Coaching_5 from "/public/images/coaching-entreprise/coaching_5.webp"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCheck } from "@fortawesome/free-solid-svg-icons"
 import { renderToString } from "react-dom/server"
 
-export default function Cles({ className = "bg-gray-100" }: { className?: string }) {
+export default function Approche({ className = "" }: { className?: string }) {
     useEffect(() => {
         reveal({
-            collection: document.querySelectorAll("#cles .transition"),
+            collection: document.querySelectorAll("#approche .transition"),
             classesToRemove: ["translate-y-full", "scale-0", "opacity-0"]
         })
     }, [])
@@ -41,36 +37,9 @@ export default function Cles({ className = "bg-gray-100" }: { className?: string
     }
 
     return (
-        <section id="cles" className={className}>
+        <section id="approche" className={className}>
             <div className="container">
-                <div className="flex flex-col lg:flex-row gap-6 justify-center items-center mb-16">
-                    <div className="w-2/3 lg:w-1/4">
-                        <Image
-                            src={Lescles}
-                            className="w-full rounded-full mx-auto transition duration-200 scale-0"
-                            alt="Le clés du coaching en entreprise"
-                            title="Le clés du coaching en entreprise"
-                        />
-                    </div>
-                    <div className="w-full lg:w-3/4">
-                        <p className="h1">Les clés pour accompagner la parentalité</p>
-                        <div className="flex flex-col gap-6">
-                            <h2>
-                                Coaching en entreprise&nbsp;: un outil puissant pour accompagner la parentalité
-                            </h2>
-                            <p className="text-lg leading-6 transition duration-200 opacity-0 translate-y-full">
-                                Le coaching en entreprise offre un espace dédié aux salariés parents pour <strong>explorer leurs défis</strong>, un <strong>soutien professionnel et personnalisé</strong>, pour créer un environnement propice au <strong>bien-être au travail</strong>.
-                            </p>
-                            <p className="text-lg leading-6 transition duration-200 opacity-0 translate-y-full">
-                                Offrir du coaching aux salariés parents, c'est apporter son soutien à ses salariés et renforcer une culture d'entreprise bienveillante et inclusive.
-                            </p>
-                            <p className="text-xl font-bold leading-6 transition duration-200 opacity-0 translate-y-full">
-                                A la clé&nbsp;: des salariés engagés envers leur entreprise.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div className="grid grid-col-1 md:grid-cols-2 gap-16 justify-center items-stretch mb-16">
+                <div className="grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 gap-16 justify-center items-stretch mb-16">
                     {list(
                         Coaching_1,
                         "Coaching équilibre des temps de vie d'un salarié-parent",
