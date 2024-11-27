@@ -87,9 +87,9 @@ export default function Navbar() {
                         <Link href="/offres-entreprises">Offres <br className="hidden lg:block" />Entreprises</Link>
                         <div className="dropdown lg:pt-4 pt-0">
                             <ul>
-                                <li className={`nav-item ${pathname == "/offres-entreprises/coaching-carriere-parentalite" ? "active" : ""}`}>
-                                    <Link href="/offres-entreprises/coaching-carriere-parentalite" className="page-scroll">
-                                        Coaching Carrière & Parentalité
+                                <li className={`nav-item ${pathname == "/offres-entreprises/coaching-gestion-carrieres-transitions" ? "active" : ""}`}>
+                                    <Link href="/offres-entreprises/coaching-gestion-carrieres-transitions" className="page-scroll">
+                                        Coaching Gestion des Carrières & Transitions
                                     </Link>
                                 </li>
                                 <li className={`nav-item ${pathname == "/offres-entreprises/coaching-bien-etre-travail-performance" ? "active" : ""}`}>
@@ -97,9 +97,9 @@ export default function Navbar() {
                                         Coaching Bien-être au Travail & Performance
                                     </Link>
                                 </li>
-                                <li className={`nav-item ${pathname == "/offres-entreprises/coaching-gestion-carrieres-transitions" ? "active" : ""}`}>
-                                    <Link href="/offres-entreprises/coaching-gestion-carrieres-transitions" className="page-scroll">
-                                        Coaching Gestion des Carrières & Transitions
+                                <li className={`nav-item ${pathname == "/offres-entreprises/coaching-carriere-parentalite" ? "active" : ""}`}>
+                                    <Link href="/offres-entreprises/coaching-carriere-parentalite" className="page-scroll">
+                                        Coaching Carrière & Parentalité
                                     </Link>
                                 </li>
                             </ul>
