@@ -24,18 +24,6 @@ export default function Offres({ className = "" }: { className?: string }) {
                 <div className="flex flex-col lg:flex-row gap-16 justify-center items-stretch mb-16">
                     {offres(
                         Entreprise,
-                        "Gestion des carrières & transitions",
-                        "/offres-entreprises/coaching-gestion-carrieres-transitions",
-                        "Coaching Gestion des carrières & transitions"
-                    )}
-                    {offres(
-                        Entreprise,
-                        "Bien-être au travail & performance",
-                        "/offres-entreprises/coaching-bien-etre-travail-performance",
-                        "Coaching Bien-être au travail & performance"
-                    )}
-                    {offres(
-                        Entreprise,
                         "Carrière & Parentalité",
                         "/offres-entreprises/coaching-carriere-parentalite",
                         "Coaching Carrière & Parentalité"
