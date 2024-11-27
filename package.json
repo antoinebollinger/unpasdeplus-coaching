@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev && node --trace-deprecation .next",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"

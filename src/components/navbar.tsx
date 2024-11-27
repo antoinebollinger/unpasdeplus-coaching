@@ -92,6 +92,16 @@ export default function Navbar() {
                                         Coaching Carrière & Parentalité
                                     </Link>
                                 </li>
+                                <li className={`nav-item ${pathname == "/offres-entreprises/coaching-bien-etre-travail-performance" ? "active" : ""}`}>
+                                    <Link href="/offres-entreprises/coaching-bien-etre-travail-performance" className="page-scroll">
+                                        Coaching Bien-être au Travail & Performance
+                                    </Link>
+                                </li>
+                                <li className={`nav-item ${pathname == "/offres-entreprises/coaching-gestion-carrieres-transitions" ? "active" : ""}`}>
+                                    <Link href="/offres-entreprises/coaching-gestion-carrieres-transitions" className="page-scroll">
+                                        Coaching Gestion des Carrières & Transitions
+                                    </Link>
+                                </li>
                             </ul>
                         </div>
                     </li>
