@@ -147,8 +147,18 @@ export default function Footer({
                             <p className="footer-title"><Link href="/offres-entreprises">Offres Entreprises</Link></p>
                             <ul className="footer-link">
                                 <li>
+                                    <Link href="/offres-entreprises/coaching-gestion-carrieres-transitions">
+                                        Gestions des carrières & transitions
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/offres-entreprises/coaching-bien-etre-travail-performance">
+                                        Bien-être au travail & performance
+                                    </Link>
+                                </li>
+                                <li>
                                     <Link href="/offres-entreprises/coaching-carriere-parentalite">
-                                        Coaching Carrière & Parentalité
+                                        Coaching carrière & parentalité
                                     </Link>
                                 </li>
                             </ul>
