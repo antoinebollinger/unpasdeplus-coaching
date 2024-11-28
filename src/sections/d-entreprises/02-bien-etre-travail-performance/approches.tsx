@@ -10,10 +10,10 @@ import Coaching_1 from "/public/images/offres-entreprises/bien-etre-travail-perf
 import Coaching_2 from "/public/images/offres-entreprises/bien-etre-travail-performance/offre_2.webp"
 import Coaching_3 from "/public/images/offres-entreprises/bien-etre-travail-performance/offre_3.webp"
 
-export default function Offre({ className = "" }: { className?: string }) {
+export default function Approches({ className = "" }: { className?: string }) {
     useEffect(() => {
         reveal({
-            collection: document.querySelectorAll("#offre .transition"),
+            collection: document.querySelectorAll("#approches .transition"),
             classesToRemove: ["translate-y-full", "scale-0", "opacity-0"]
         })
     }, [])
@@ -32,13 +32,18 @@ export default function Offre({ className = "" }: { className?: string }) {
                     title={text}
                 />
                 <h2 dangerouslySetInnerHTML={{ __html: title }} />
-                <div className="flex flex-col gap-6" dangerouslySetInnerHTML={{ __html: text }} />
+                <div className="flex flex-col gap-6 grow" dangerouslySetInnerHTML={{ __html: text }} />
+                <div className="text-center">
+                    <Link href="/contact" className="main-btn gradient-btn focus:outline-none uppercase">
+                        En savoir plus
+                    </Link>
+                </div>
             </div>
         )
     }
 
     return (
-        <section id="offre" className={className}>
+        <section id="approches" className={className}>
             <div className="container">
                 <div className="w-full lg:w-2/3 mx-auto flex flex-col gap-6 mb-16">
                     <div className="flex flex-col gap-6">

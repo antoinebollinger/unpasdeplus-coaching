@@ -4,16 +4,16 @@ import { reveal } from "../../../utils/reveal"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faArrowTrendUp, faChartLine, faCheck, faCircleInfo, faHandPointRight, faPlus } from "@fortawesome/free-solid-svg-icons"
 
-export default function Attractivite({ className = "bg-gray-100" }: { className?: string }) {
+export default function Performance({ className = "bg-gray-100" }: { className?: string }) {
     useEffect(() => {
         reveal({
-            collection: document.querySelectorAll("#attractivite .transition"),
+            collection: document.querySelectorAll("#performance .transition"),
             classesToRemove: ["translate-y-full", "scale-0", "opacity-0"]
         })
     }, [])
 
     return (
-        <section id="attractivite" className={className}>
+        <section id="performance" className={className}>
             <div className="container">
                 <div className="w-full lg:w-2/3 mx-auto flex flex-col gap-6">
                     <div className="flex flex-col gap-6">
