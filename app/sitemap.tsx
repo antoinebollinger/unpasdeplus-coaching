@@ -28,7 +28,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
             lastModified: new Date(),
         },
         {
-            url: `${siteData.url}/offres-entreprises/coaching-entreprise`,
+            url: `${siteData.url}/offres-entreprises/coaching-bien-etre-travail-performance`,
+            lastModified: new Date(),
+        },
+        {
+            url: `${siteData.url}/offres-entreprises/coaching-carriere-parentalite`,
+            lastModified: new Date(),
+        },
+        {
+            url: `${siteData.url}/offres-entreprises/coaching-gestion-carrieres-transitions`,
             lastModified: new Date(),
         },
         {
