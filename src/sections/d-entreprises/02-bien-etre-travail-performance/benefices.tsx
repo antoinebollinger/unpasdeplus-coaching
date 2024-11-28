@@ -2,7 +2,7 @@
 import { useEffect } from "react"
 import { reveal } from "../../../utils/reveal"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faCheck } from "@fortawesome/free-solid-svg-icons"
+import { faArrowTrendDown, faArrowTrendUp, faCheck, faPlus } from "@fortawesome/free-solid-svg-icons"
 
 export default function Benefices({ className = "" }: { className?: string }) {
     useEffect(() => {
@@ -12,7 +12,7 @@ export default function Benefices({ className = "" }: { className?: string }) {
         })
         reveal({
             collection: document.querySelectorAll("#benefices .transition"),
-            classesToRemove: ["opacity-0", "translate-y-full"]
+            classesToRemove: ["translate-y-full", "scale-0", "opacity-0"]
         })
     }, [])
 
@@ -25,29 +25,29 @@ export default function Benefices({ className = "" }: { className?: string }) {
                             Les bénéfices concrets pour votre entreprise
                         </h2>
                         <p className="text-xl leading-8 mb-6">
-                            Les entreprises qui investissent dans la <strong>qualité de vie au travail</strong> constatent&nbsp;:
+                            Les entreprises qui investissent dans la <strong>qualité de vie au travail</strong> observent des bénéfices concrets et durables&nbsp;:
                         </p>
-                        <ul className="list-none list-inside fa-ul text-lg leading-8 mb-6">
+                        <ul className="list-none list-inside fa-ul text-2xl leading-12">
                             {
                                 [
                                     (<>
-                                        <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
-                                        <strong>Booster l’engagement des salariés&nbsp;</strong>: des collaborateurs épanouis sont plus impliqués dans leurs missions.
+                                        <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faPlus} /></span>
+                                        <strong>Booster l’engagement des salariés&nbsp;</strong>:des collaborateurs épanouis sont plus impliqués dans leurs missions.
                                     </>),
                                     (<>
-                                        <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
+                                        <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faArrowTrendUp} /></span>
                                         <strong>Améliorer la performance globale&nbsp;</strong>: un climat de travail positif favorise l’innovation et la collaboration.
                                     </>),
                                     (<>
-                                        <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
+                                        <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faArrowTrendDown} /></span>
                                         <strong>Réduire les coûts liés à l’absentéisme et au turnover&nbsp;</strong>: les salariés heureux restent et contribuent sur le long terme.
                                     </>),
                                     (<>
-                                        <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
+                                        <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faPlus} /></span>
                                         <strong>Attirer les talents&nbsp;</strong>: une entreprise attentive au bien-être de ses équipes devient un employeur attractif.
                                     </>)
                                 ].map((e, i) => (
-                                    <li className="transition duration-200 opacity-0" key={i}>{e}</li>
+                                    <li className="transition duration-200 opacity-0 translate-y-full" key={i}>{e}</li>
                                 ))
                             }
                         </ul>

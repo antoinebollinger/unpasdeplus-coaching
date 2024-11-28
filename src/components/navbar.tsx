@@ -89,17 +89,17 @@ export default function Navbar() {
                             <ul>
                                 <li className={`nav-item ${pathname == "/offres-entreprises/coaching-gestion-carrieres-transitions" ? "active" : ""}`}>
                                     <Link href="/offres-entreprises/coaching-gestion-carrieres-transitions" className="page-scroll">
-                                        Coaching Gestion des Carrières & Transitions
+                                        Gestion des Carrières & Transitions
                                     </Link>
                                 </li>
                                 <li className={`nav-item ${pathname == "/offres-entreprises/coaching-bien-etre-travail-performance" ? "active" : ""}`}>
                                     <Link href="/offres-entreprises/coaching-bien-etre-travail-performance" className="page-scroll">
-                                        Coaching Bien-être au Travail & Performance
+                                        Bien-être au Travail & Performance
                                     </Link>
                                 </li>
                                 <li className={`nav-item ${pathname == "/offres-entreprises/coaching-carriere-parentalite" ? "active" : ""}`}>
                                     <Link href="/offres-entreprises/coaching-carriere-parentalite" className="page-scroll">
-                                        Coaching Carrière & Parentalité
+                                        Carrière & Parentalité
                                     </Link>
                                 </li>
                             </ul>
