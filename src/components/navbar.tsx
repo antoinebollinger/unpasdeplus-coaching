@@ -87,7 +87,6 @@ export default function Navbar() {
                         <Link href="/offres-entreprises">Offres <br className="hidden lg:block" />Entreprises</Link>
                         <div className="dropdown lg:pt-4 pt-0">
                             <ul>
-<<<<<<< HEAD
                                 <li className={`nav-item ${pathname == "/offres-entreprises/coaching-gestion-carrieres-transitions" ? "active" : ""}`}>
                                     <Link href="/offres-entreprises/coaching-gestion-carrieres-transitions" className="page-scroll">
                                         Gestion des Carrières & Transitions
@@ -98,8 +97,6 @@ export default function Navbar() {
                                         Bien-être au Travail & Performance
                                     </Link>
                                 </li>
-=======
->>>>>>> main
                                 <li className={`nav-item ${pathname == "/offres-entreprises/coaching-carriere-parentalite" ? "active" : ""}`}>
                                     <Link href="/offres-entreprises/coaching-carriere-parentalite" className="page-scroll">
                                         Carrière & Parentalité
