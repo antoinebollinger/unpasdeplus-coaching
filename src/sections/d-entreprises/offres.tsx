@@ -10,7 +10,9 @@ export default function Offres({ className = "" }: { className?: string }) {
                 <div className="text-center pb-10">
                     <h2 className="h1 text-start lg:text-center">Offres Entreprises</h2>
                 </div>
-                <MenuOffresEntreprises />
+                <div className="flex flex-col lg:flex-row gap-16 justify-center items-stretch mb-16">
+                    <MenuOffresEntreprises />
+                </div>
                 <div className="text-center">
                     <Calendly />
                 </div>
