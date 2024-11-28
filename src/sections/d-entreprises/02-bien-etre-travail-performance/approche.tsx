@@ -1,18 +1,19 @@
 "use client"
 import { useEffect } from "react"
+import { renderToString } from "react-dom/server"
 import Image, { StaticImageData } from "next/image"
 import Link from "next/link"
 import { reveal } from "../../../utils/reveal"
-import Coaching_1 from "/public/images/coaching-entreprise/coaching_1.webp"
-import Coaching_2 from "/public/images/coaching-entreprise/coaching_2.webp"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCheck } from "@fortawesome/free-solid-svg-icons"
-import { renderToString } from "react-dom/server"
+import Coaching_1 from "/public/images/offres-entreprises/bien-etre-travail-performance/offre_1.webp"
+import Coaching_2 from "/public/images/offres-entreprises/bien-etre-travail-performance/offre_2.webp"
+import Coaching_3 from "/public/images/offres-entreprises/bien-etre-travail-performance/offre_3.webp"
 
-export default function Approche({ className = "" }: { className?: string }) {
+export default function Offre({ className = "" }: { className?: string }) {
     useEffect(() => {
         reveal({
-            collection: document.querySelectorAll("#approche .transition"),
+            collection: document.querySelectorAll("#offre .transition"),
             classesToRemove: ["translate-y-full", "scale-0", "opacity-0"]
         })
     }, [])
@@ -37,22 +38,49 @@ export default function Approche({ className = "" }: { className?: string }) {
     }
 
     return (
-        <section id="approche" className={className}>
+        <section id="offre" className={className}>
             <div className="container">
+                <div className="w-full lg:w-2/3 mx-auto flex flex-col gap-6 mb-16">
+                    <div className="flex flex-col gap-6">
+                        <h2>
+                            Notre approche pour améliorer le bien-être au travail
+                        </h2>
+                        <p className="text-lg leading-6 transition duration-200 opacity-0 translate-y-full">
+                            Notre approche repose sur des outils & méthodes de coaching basés sur les neurosciences, les sciences cognitives, l’intelligence émotionnelle.
+                        </p>
+                        <h3>
+                            Programmes de coaching
+                        </h3>
+                    </div>
+                </div>
                 <div className="grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 gap-16 justify-center items-stretch mb-16">
                     {list(
                         Coaching_1,
-                        "Coaching équilibre des temps de vie d'un salarié-parent",
-                        `<p>Investir dans l'équilibre vie pro perso des salariés parents, c'est construire un environnement de travail plus humain et performant. En reconnaissant et en soutenant leurs besoins spécifiques, l'entreprise gagne en engagement, en productivité et en attractivité.</p>`
+                        "Coaching individuel",
+                        `<ul class="list-none list-inside fa-ul flex flex-col gap-6">
+                            <li>
+                                ${renderToString(<span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>)}
+                                Accompagner vos collaborateurs à prendre soin de leur santé physique et mentale.
+                            </li>
+                        </ul>`
                     )}
                     {list(
                         Coaching_2,
-                        "Coaching avant un départ en congé maternité / paternité / parental et à la reprise du travail",
-                        `<p>Être à la fois futur·e / jeune parent et salarié implique une nouvelle <strong>organisation professionnelle et personnelle</strong>.</p>
-                        <ul class="list-none list-inside fa-ul flex flex-col gap-6">
+                        "Atelier collectif",
+                        `<ul class="list-none list-inside fa-ul flex flex-col gap-6">
                             <li>
-                            ${renderToString(<span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>)}
-                            Accompagner les futurs/jeunes parents dans leur nouveau rôle de parents, pour préparer <strong>l'avant congé maternité / paternité / parental et la reprise du travail</strong> après le congé permet au salarié de vivre sereinement cette transition.
+                                ${renderToString(<span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>)}
+                                Outiller vos collaborateurs sur des problématiques liées à leur bien-être.
+                            </li>
+                        </ul>`
+                    )}
+                    {list(
+                        Coaching_3,
+                        "Conférence",
+                        `<ul class="list-none list-inside fa-ul flex flex-col gap-6">
+                            <li>
+                                ${renderToString(<span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>)}
+                                Sensibiliser les collaborateurs sur des problématiques autour de la santé mentale, de l’équilibre vie pro perso, des risques psychosociaux, etc.).
                             </li>
                         </ul>`
                     )}

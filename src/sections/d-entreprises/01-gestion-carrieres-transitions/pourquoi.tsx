@@ -31,7 +31,7 @@ export default function Pourquoi({ className = "bg-gray-100" }: { className?: st
                             </li>
                             <li className="transition duration-200 opacity-0 translate-y-full">
                                 <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={fa3} /></span>
-                                <strong>Soutenir les collaborateurs dans les moments de transition&nbsp;:</strong> intégration dans un nouveau rôle, accompagnement après une période difficile (burn-out, transitions personnelles , réorganisation). C’est maintenir la motivation et l’engagement des collaborateurs face au changement.
+                                <strong>Soutenir les collaborateurs dans les moments de transition&nbsp;:</strong> intégration dans un nouveau rôle, accompagnement après une période difficile (burn-out, transitions personnelles, réorganisation). C’est maintenir la motivation et l’engagement des collaborateurs face au changement.
                             </li>
                             <li className="transition duration-200 opacity-0 translate-y-full">
                                 <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={fa4} /></span>

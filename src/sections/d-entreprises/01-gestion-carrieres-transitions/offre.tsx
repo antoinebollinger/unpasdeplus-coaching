@@ -1,14 +1,13 @@
 "use client"
 import { useEffect } from "react"
+import { renderToString } from "react-dom/server"
 import Image, { StaticImageData } from "next/image"
 import Link from "next/link"
 import { reveal } from "../../../utils/reveal"
-import Lescles from "/public/images/coaching-entreprise/cles.webp"
-import Coaching_1 from "/public/images/coaching-entreprise/coaching_1.webp"
-import Coaching_2 from "/public/images/coaching-entreprise/coaching_2.webp"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCheck } from "@fortawesome/free-solid-svg-icons"
-import { renderToString } from "react-dom/server"
+import Coaching_1 from "/public/images/offres-entreprises/gestion-carrieres-transitions/coaching_01.webp"
+import Coaching_2 from "/public/images/offres-entreprises/gestion-carrieres-transitions/coaching_02.webp"
 
 export default function Offre({ className = "" }: { className?: string }) {
     useEffect(() => {
@@ -50,7 +49,7 @@ export default function Offre({ className = "" }: { className?: string }) {
                         </p>
                     </div>
                 </div>
-                <div className="grid grid-col-1 md:grid-cols-2 gap-16 justify-center items-stretch mb-16">
+                <div className="w-full lg:w-2/3 mx-auto grid grid-col-1 md:grid-cols-2 gap-16 justify-center items-stretch mb-16">
                     {list(
                         Coaching_1,
                         "Coaching individuel",

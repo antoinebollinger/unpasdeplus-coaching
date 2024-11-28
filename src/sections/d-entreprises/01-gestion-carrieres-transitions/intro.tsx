@@ -2,7 +2,7 @@
 import { useEffect } from "react"
 import Image from "next/image"
 import { reveal } from "../../../utils/reveal"
-import IntroImg from "/public/images/coaching-entreprise/intro.webp"
+import IntroImg from "/public/images/offres-entreprises/gestion-carrieres-transitions/intro.webp"
 import Calendly from "../../../components/calendly"
 
 export default function Intro({ className = "" }: { className?: string }) {
@@ -26,10 +26,10 @@ export default function Intro({ className = "" }: { className?: string }) {
                         />
                     </div>
                     <div className="w-full lg:w-3/4">
-                        <h1>Accompagner vos salariés à aborder sereinement les changements</h1>
+                        <h1>Accompagner vos salariés<br />à aborder sereinement les changements</h1>
                         <br />
                         <p className="text-lg leading-6 mb-6">
-                            Dans un monde professionnel en constante évolution, la <strong>gestion des carrières</strong> est marquée par des étapes clés : <strong>promotions, orientation, prise de poste, reconversion, évolution professionnelle, changement de poste, responsabilités, formation , mobilité ou même des transitions imprévues</strong>.
+                            Dans un monde professionnel en constante évolution, la <strong>gestion des carrières</strong> est marquée par des étapes clés&nbsp;: <strong>promotions, orientation, prise de poste, reconversion, évolution professionnelle, changement de poste, responsabilités, formation, mobilité ou même des transitions imprévues</strong>.
                             <br />
                             <br />
                             Ces <strong>changements</strong> peuvent être stimulants, mais aussi sources d’incertitudes et de défis.

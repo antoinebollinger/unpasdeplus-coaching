@@ -3,7 +3,7 @@ import { useEffect } from "react"
 import dynamic from "next/dynamic"
 import { reveal } from "../../utils/reveal"
 import { offres } from "../../utils/offres"
-import Entreprise from "/public/images/accueil/entreprises.webp"
+import Entreprise from "/public/images/offres-entreprises/entreprises.webp"
 
 const Calendly = dynamic(() => import("../../components/calendly"))
 
