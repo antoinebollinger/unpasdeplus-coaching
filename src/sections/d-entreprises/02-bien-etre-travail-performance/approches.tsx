@@ -50,7 +50,7 @@ export default function Approches({ className = "" }: { className?: string }) {
                         <h2>
                             Notre approche pour améliorer le bien-être au travail
                         </h2>
-                        <p className="text-lg leading-6 transition duration-200 opacity-0 translate-y-full">
+                        <p className="text-lg leading-6">
                             Notre approche repose sur des outils & méthodes de coaching basés sur les neurosciences, les sciences cognitives, l’intelligence émotionnelle.
                         </p>
                         <h3>
