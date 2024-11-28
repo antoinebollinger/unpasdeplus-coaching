@@ -1,6 +1,6 @@
 import Layout from "../../src/layout"
 import Offres from "../../src/sections/d-entreprises/offres"
-import Banner from "/public/images/banners/contact.webp"
+import Banner from "/public/images/banners/entreprise.webp"
 import { siteData } from "../../src/data/metadata"
 
 export const metadata = {

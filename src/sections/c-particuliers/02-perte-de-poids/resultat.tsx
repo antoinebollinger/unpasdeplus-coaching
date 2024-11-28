@@ -5,7 +5,8 @@ import Link from "next/link"
 import { reveal } from "../../../utils/reveal"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCheck } from "@fortawesome/free-solid-svg-icons"
-import Youpi from "/public/images/coaching-perte-de-poids/resultat.webp"
+// import Youpi from "/public/images/coaching-perte-de-poids/resultat.webp"
+import Youpi from "/public/images/offres-particuliers/perte-de-poids/resultat.webp"
 
 export default function Resultat({ className = "bg-gray-100" }: { className?: string }) {
     useEffect(() => {

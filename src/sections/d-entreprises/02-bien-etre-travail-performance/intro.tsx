@@ -2,7 +2,7 @@
 import { useEffect } from "react"
 import Image from "next/image"
 import { reveal } from "../../../utils/reveal"
-import IntroImg from "/public/images/coaching-entreprise/intro.webp"
+import IntroImg from "/public/images/offres-entreprises/bien-etre-travail-performance/intro_test.webp"
 import Calendly from "../../../components/calendly"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCheck } from "@fortawesome/free-solid-svg-icons"

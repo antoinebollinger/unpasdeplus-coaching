@@ -1,20 +1,9 @@
-"use client"
-import { useEffect } from "react"
 import dynamic from "next/dynamic"
-import { reveal } from "../../utils/reveal"
-import { offres } from "../../utils/offres"
-import Entreprise from "/public/images/accueil/entreprises.webp"
+import MenuOffresEntreprises from "../../components/menuOffresEntreprises"
 
 const Calendly = dynamic(() => import("../../components/calendly"))
 
 export default function Offres({ className = "" }: { className?: string }) {
-    useEffect(() => {
-        reveal({
-            collection: document.querySelectorAll(".liens-img"),
-            classesToRemove: ["scale-0"]
-        })
-    }, [])
-
     return (
         <section id="mes-offres" className={className}>
             <div className="container">
@@ -22,12 +11,7 @@ export default function Offres({ className = "" }: { className?: string }) {
                     <h2 className="h1 text-start lg:text-center">Offres Entreprises</h2>
                 </div>
                 <div className="flex flex-col lg:flex-row gap-16 justify-center items-stretch mb-16">
-                    {offres(
-                        Entreprise,
-                        "Carrière & Parentalité",
-                        "/offres-entreprises/coaching-carriere-parentalite",
-                        "Coaching Carrière & Parentalité"
-                    )}
+                    <MenuOffresEntreprises />
                 </div>
                 <div className="text-center">
                     <Calendly />
