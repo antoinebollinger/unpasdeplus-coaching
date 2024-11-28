@@ -53,7 +53,7 @@ export default function Approches({ className = "" }: { className?: string }) {
                         <p className="text-lg leading-6">
                             Notre approche repose sur des outils & méthodes de coaching basés sur les neurosciences, les sciences cognitives, l’intelligence émotionnelle.
                         </p>
-                        <h3>
+                        <h3 className="h1 text-center">
                             Programmes de coaching
                         </h3>
                     </div>
