@@ -5,7 +5,9 @@ import { reveal } from "../../utils/reveal"
 import { offres } from "../../utils/offres"
 import Balance from "/public/images/accueil/balance.webp"
 import Equilibre from "/public/images/accueil/equilibre.webp"
-import Entreprise from "/public/images/accueil/entreprises.webp"
+import Entreprise_1 from "/public/images/offres-entreprises/gestion-carrieres-transitions.webp"
+import Entreprise_2 from "/public/images/offres-entreprises/bien-etre.webp"
+import Entreprise_3 from "/public/images/offres-entreprises/carriere-parentalite.webp"
 
 const Calendly = dynamic(() => import("../../components/calendly"))
 
@@ -42,19 +44,19 @@ export default function Offres({ className = "bg-gray-100" }: { className?: stri
                 </div>
                 <div className="flex flex-col lg:flex-row gap-16 justify-center items-stretch mb-16">
                     {offres(
-                        Entreprise,
+                        Entreprise_1,
                         "Gestion des carrières & transitions",
                         "/offres-entreprises/coaching-gestion-carrieres-transitions",
                         "Coaching Gestion des carrières & transitions"
                     )}
                     {offres(
-                        Entreprise,
+                        Entreprise_2,
                         "Bien-être au travail & performance",
                         "/offres-entreprises/coaching-bien-etre-travail-performance",
                         "Coaching Bien-être au travail & performance"
                     )}
                     {offres(
-                        Entreprise,
+                        Entreprise_3,
                         "Carrière & Parentalité",
                         "/offres-entreprises/coaching-carriere-parentalite",
                         "Coaching Carrière & Parentalité"
