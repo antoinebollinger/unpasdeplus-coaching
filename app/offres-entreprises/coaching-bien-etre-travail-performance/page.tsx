@@ -5,6 +5,7 @@ import Benefices from "../../../src/sections/d-entreprises/02-bien-etre-travail-
 import Offres from "../../../src/sections/d-entreprises/02-bien-etre-travail-performance/offres"
 import Approches from "../../../src/sections/d-entreprises/02-bien-etre-travail-performance/approches"
 import Banner from "/public/images/banners/entreprise.webp"
+import Temoignages from "../../../src/sections/d-entreprises/02-bien-etre-travail-performance/temoignages"
 
 export default function Page() {
     const onThisPage = [
@@ -27,6 +28,10 @@ export default function Page() {
         {
             title: "Notre approche",
             link: "#approches"
+        },
+        {
+            title: "Témoignages",
+            link: "#temoignages"
         }
     ]
 
@@ -37,6 +42,7 @@ export default function Page() {
             <Benefices />
             <Offres />
             <Approches />
+            <Temoignages />
         </Layout>
     )
 }

@@ -5,6 +5,7 @@ import Quoi from "../../../src/sections/c-particuliers/01-bien-etre-equilibre/qu
 import Pratique from "../../../src/sections/c-particuliers/01-bien-etre-equilibre/pratique"
 import Banner from "/public/images/banners/bien-etre-equilibre.webp"
 import { siteData } from "../../../src/data/metadata"
+import Temoignages from "../../../src/sections/c-particuliers/01-bien-etre-equilibre/temoignages"
 
 export const metadata = {
     title: `Coaching bien-être & équilibre | ${siteData.title}`,
@@ -20,6 +21,10 @@ export default function Page() {
         {
             title: "En pratique",
             link: "#pratique"
+        },
+        {
+            title: "Témoignages",
+            link: "#temoignages"
         }
     ]
 
@@ -29,6 +34,7 @@ export default function Page() {
             <Qui />
             <Quoi />
             <Pratique />
+            <Temoignages />
         </Layout >
     )
 }
