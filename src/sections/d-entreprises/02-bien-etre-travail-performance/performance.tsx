@@ -2,13 +2,13 @@
 import { useEffect } from "react"
 import { reveal } from "../../../utils/reveal"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faCheck } from "@fortawesome/free-solid-svg-icons"
+import { faArrowTrendUp, faChartLine, faCheck, faCircleInfo, faHandPointRight, faPlus } from "@fortawesome/free-solid-svg-icons"
 
 export default function Performance({ className = "bg-gray-100" }: { className?: string }) {
     useEffect(() => {
         reveal({
             collection: document.querySelectorAll("#performance .transition"),
-            classesToRemove: ["opacity-0", "translate-y-full"]
+            classesToRemove: ["translate-y-full", "scale-0", "opacity-0"]
         })
     }, [])
 
@@ -18,52 +18,42 @@ export default function Performance({ className = "bg-gray-100" }: { className?:
                 <div className="w-full lg:w-2/3 mx-auto flex flex-col gap-6">
                     <div className="flex flex-col gap-6">
                         <h2>
-                            Favoriser le bien-être au travail,<br />un levier de
-                            performance pour les entreprises&nbsp;:
+                            Favoriser le bien-être au travail, un levier de performance pour les entreprises&nbsp;:
                         </h2>
-                        <p className="text-lg leading-6 transition duration-200 opacity-0 translate-y-full">
-                            Selon une étude du Harvard/MIT&nbsp;:
+                        <ul className="list-none list-inside fa-ul text-2xl leading-12 resultats">
+                            <li className="transition duration-200 opacity-0 translate-y-full">
+                                <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faPlus} /></span>
+                                <span className="font-bold uppercase">Attractivité</span>
+                            </li>
+                            <li className="transition duration-200 opacity-0 translate-y-full">
+                                <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faPlus} /></span>
+                                <span className="font-bold uppercase">Engagement</span>
+                            </li>
+                            <li className="transition duration-200 opacity-0 translate-y-full">
+                                <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faPlus} /></span>
+                                <span className="font-bold uppercase">Fidélisation</span>
+                            </li>
+                            <li className="transition duration-200 opacity-0 translate-y-full">
+                                <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faHandPointRight} /></span>
+                                Les collaborateurs se sentent compris à <span className="text-2xl font-bold text-tertary-900">91%</span>  et ont envie de rester à <span className="text-2xl font-bold text-tertary-900">81%</span>.
+                            </li>
+                            <li className="transition duration-200 opacity-0 translate-y-full">
+                                <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faArrowTrendUp} /></span>
+                                <span className="font-bold uppercase">Rétention des talents</span>
+                            </li>
+                            <li className="transition duration-200 opacity-0 translate-y-full">
+                                <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faChartLine} /></span>
+                                L’image de l’entreprise est améliorée de <span className="text-2xl font-bold text-tertary-900">84%</span> auprès des collaborateurs.
+                            </li>
+                            <li className="transition duration-200 opacity-0 translate-y-full">
+                                <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
+                                <span className="font-bold uppercase">Marque employeur</span>
+                            </li>
+                        </ul>
+                        <p className="text-lg leading-6">
+                            <FontAwesomeIcon icon={faCircleInfo} /> Le saviez-vous&nbsp;: en 2025, le bien-être est le premier critère de fidélité envers une entreprise selon une étude Women’UP, pour 75% des actifs en 2025.
                         </p>
-                        <div className="flex justify-center align-center">
-                            <ul className="list-none list-inside fa-ul text-lg leading-8 mb-6">
-                                {
-                                    [
-                                        (<>
-                                            <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
-                                            <span className="text-2xl font-bold text-tertary-900">31%</span> plus productif
-                                        </>),
-                                        (<>
-                                            <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
-                                            <span className="text-2xl font-bold text-tertary-900">2 x</span> moins malade
-                                        </>),
-                                        (<>
-                                            <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
-                                            <span className="text-2xl font-bold text-tertary-900">6 x</span> moins absent
-                                        </>),
-                                        (<>
-                                            <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
-                                            <span className="text-2xl font-bold text-tertary-900">2 x</span> plus loyal
-                                        </>),
-                                        (<>
-                                            <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
-                                            <span className="text-2xl font-bold text-tertary-900">55%</span> plus créatif
-                                        </>)
-                                    ].map((e, i) => (
-                                        <li className="transition duration-200 opacity-0" key={i}>{e}</li>
-                                    ))
-                                }
 
-                            </ul>
-                        </div>
-                        <h2>
-                            Soutenir la parentalité et la qualité de vie au travail
-                        </h2>
-                        <p className="text-lg leading-6 transition duration-200 opacity-0 translate-y-full">
-                            Engager une politique RH inclusive en faveur de la parentalité en entreprise, c’est permettre aux salariés de s’épanouir professionnellement et être attentif à leur <strong>santé physique et mentale</strong>. C’est aussi <strong>préserver la propre performance de l’entreprise</strong>.
-                        </p>
-                        <p className="text-xl font-bold leading-6 transition duration-200 opacity-0 translate-y-full">
-                            Les collaborateurs se sentent compris à 91% et ont envie de rester à 81%.
-                        </p>
                     </div>
                 </div>
             </div>

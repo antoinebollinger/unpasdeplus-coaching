@@ -2,7 +2,7 @@
 import { useEffect } from "react"
 import Image from "next/image"
 import { reveal } from "../../../utils/reveal"
-import IntroImg from "/public/images/coaching-perte-de-poids/intro.webp"
+import IntroImg from "/public/images/offres-particuliers/perte-de-poids/intro.webp"
 import Calendly from "../../../components/calendly"
 
 export default function Intro({ className = "" }: { className?: string }) {

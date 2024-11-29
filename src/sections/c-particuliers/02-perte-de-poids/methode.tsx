@@ -2,7 +2,7 @@
 import { useEffect } from "react"
 import { reveal } from "../../../utils/reveal"
 import Image from "next/image"
-import Balance from "/public/images/coaching-perte-de-poids/balance.webp"
+import Balance from "/public/images/offres-particuliers/perte-de-poids/balance.webp"
 
 
 export default function Methode({ className = "" }: { className?: string }) {
