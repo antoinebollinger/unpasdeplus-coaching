@@ -23,3 +23,9 @@ export interface modalProps {
 export interface CustomEvent extends SubmitEvent {
     target: HTMLFormElement
 }
+
+export interface review {
+    author: string,
+    tag: string,
+    text: string
+}
