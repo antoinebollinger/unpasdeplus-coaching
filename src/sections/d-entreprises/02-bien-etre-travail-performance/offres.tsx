@@ -66,18 +66,22 @@ export default function Offres({ className = "bg-gray-100" }: { className?: stri
                         <ul class="list-none list-inside fa-ul flex flex-col gap-6">
                             <li>
                             ${renderToString(<span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>)}
-                            Soutenir les salariés dans leurs responsabilités familiales, personnelles, pour les aider à gérer sereinement les défis du quotidien.
+                            Réduire les troubles musculo-squelettiques et la fatigue.
                             </li>
                             <li>
                             ${renderToString(<span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>)}
-                            Contribuer à une meilleure gestion du temps, des priorités pour éviter le burn-out.
+                            Améliorer la concentration et la gestion du stress.
+                            </li>
+                            <li>
+                            ${renderToString(<span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>)}
+                            Réduire les absences en favorisant une meilleure prévention santé (alimentation équilibrée, hygiène de vie, mouvement au quotidien).
                             </li>
                         </ul>`
                     )}
                     {list(
                         Coaching_3,
                         "Coaching Equilibre vie pro et perso",
-                        `<p>Concilier vie professionnelle et personnelle peut être un véritable défi pour les salariés. Ces défis peuvent impacter leur motivation et leur productivité.<br/>Accompagner les salariés à mieux concilier vie pro perso, c’est&nbsp;:</p>
+                        `<p><strong>Concilier vie professionnelle et personnelle</strong> peut être un véritable défi pour les salariés. Ces défis peuvent impacter leur <strong>motivation</strong> et leur <strong>productivité</strong>.<br/>Accompagner les salariés à mieux <strong>concilier vie pro perso</strong>, c’est&nbsp;:</p>
                         <ul class="list-none list-inside fa-ul flex flex-col gap-6">
                             <li>
                             ${renderToString(<span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>)}

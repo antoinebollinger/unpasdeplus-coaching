@@ -47,22 +47,28 @@ export default function Parcours() {
                 </div>
             </div>
             <div className="lg:max-w-5xl mx-auto">
-                <p className="text-lg text-gray-900 mb-4">
-                    C'est pour accompagner chacun à traverser ses transitions de vie, à relever ses défis personnels & professionnels qu'<span className="text-primary-600 font-bold">Un pas de plus Coaching</span> a vu le jour et a pour mission d'accompagner les personnes à <strong>se sentir bien dans leur tête et leur corps</strong> pour retrouver un équilibre de vie.
-                </p>
                 <ul className="text-lg text-gray-900 list-none list-inside fa-ul flex flex-col gap-6 mb-4">
                     <li>
-                        <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span> Parce qu'avoir une meilleure <strong>connaissance de soi</strong>, c'est comprendre son fonctionnement pour agir avec une meilleure <strong>conscience de soi</strong>&nbsp;;
+                        <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span> Parce que nous sommes tous confrontés à des défis, qu'ils soient personnels et/ou professionnels&nbsp;;
                     </li>
                     <li>
-                        <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span> Parce que <strong>cultiver la mise en mouvement physique</strong>, c'est prendre soin de son corps et aussi de sa tête&nbsp;;<br />
+                        <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span> Parce que surmonter ses défis seul.e, c’est rester dans le flou, freiné.e par ses freins et de ses doutes, qui empêchent <strong>d’avancer vers un mieux-être</strong>&nbsp;;
                     </li>
                     <li>
-                        <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span> Parce que trouver son <strong>équilibre de vie</strong>, c'est apprendre à <strong>gérer ses émotions</strong> pour faire face aux défis du quotidien.
+                        <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span> Parce que notre entourage n’a pas toujours les réponses à nos questions et ne comprend pas forcément nos véritables besoins&nbsp;;
+                    </li>
+                    <li>
+                        <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span> Parce qu’il nous arrive d’être notre propre obstacle face à nos défis et objectifs&nbsp;;
+                    </li>
+                    <li>
+                        <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span> Parce que seul, on va peut être plus vite mais qu’ensemble, on va toujours plus loin&nbsp;;
                     </li>
                 </ul>
                 <p className="text-lg text-gray-900 mb-4">
-                    Parce que nous sommes convaincus que <strong>forger un mental</strong> à toute épreuve, cultiver la <strong>mise en mouvement physique</strong> et avoir une meilleure <strong>gestion de ses émotions</strong>, c'est être capable de surmonter les <strong>défis personnels & professionnels</strong> avec confiance et sérénité.
+                    C'est pour accompagner chacun à faire Un Pas de Plus vers un <strong>mieux-être physique et mental</strong>, à relever ses <strong>défis personnels & professionnels</strong>, qu'<span className="text-primary-600 font-bold">Un pas de plus Coaching</span> a vu le jour.
+                </p>
+                <p className="text-lg text-gray-900 mb-4">
+                    <span className="text-primary-600 font-bold">Un pas de plus Coaching</span> a pour mission de vous aider à vous <strong>sentir mieux dans votre tête et dans votre corps</strong> pour retrouver un <strong>équilibre de vie</strong>.
                 </p>
                 <p className="text-lg text-gray-900 mb-12">
                     Bienvenue chez <span className="text-primary-600 font-bold">Un pas de plus Coaching</span>&nbsp;!
