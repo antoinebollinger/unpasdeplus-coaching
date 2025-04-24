@@ -2,7 +2,7 @@
 import { useEffect } from "react"
 import { reveal } from "../../../utils/reveal"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faArrowTrendDown, faArrowTrendUp, faCheck, faPlus } from "@fortawesome/free-solid-svg-icons"
+import { faArrowTrendDown, faArrowTrendUp, faPlus } from "@fortawesome/free-solid-svg-icons"
 
 export default function Benefices({ className = "" }: { className?: string }) {
     useEffect(() => {

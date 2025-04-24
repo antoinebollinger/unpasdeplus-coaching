@@ -6,7 +6,6 @@ import type { banner } from "../models/types"
 import { useLayoutEffect, useRef } from "react"
 
 const Navbar = dynamic(() => import("./navbar"))
-// import Navbar from "./navbar"
 
 export default function Header({
     banner,

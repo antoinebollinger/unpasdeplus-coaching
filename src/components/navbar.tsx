@@ -7,7 +7,6 @@ import dynamic from "next/dynamic"
 import newLogo from "/public/logos/logo-texte-horizontal.svg"
 
 const Socials = dynamic(() => import("./socials"))
-// import Socials from "./socials"
 
 export default function Navbar() {
     const pathname = usePathname()
