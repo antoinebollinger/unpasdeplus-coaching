@@ -5,7 +5,6 @@ import { reveal } from "../../utils/reveal"
 import IntroPic from "/public/images/accueil/intro.webp"
 import EMCC from "/public/images/icones/emcc.webp"
 import FranceCompetences from "/public/images/icones/france_competences.webp"
-import { madelyn } from "../../../styles/font"
 
 export default function Intro({ className = "" }: { className?: string }) {
     useEffect(() => {
@@ -27,7 +26,6 @@ export default function Intro({ className = "" }: { className?: string }) {
                             className="w-full rounded-full mx-auto transition duration-200 scale-0"
                             alt="Facilitatrice de la mise en mouvement"
                             title="Facilitatrice de la mise en mouvement"
-                        // loading="eager"
                         />
                     </div>
                     <div className="w-full lg:w-3/4 lg:order-0">

@@ -10,7 +10,7 @@ export default function Temoignages({ className = "" }: { className?: string }) 
                     {
                         "author": "Aline",
                         "tag": "#coachingbienetreequilibre",
-                        "text": "Un grand merci Aline pour ce retour très chaleureux. Ta bonne humeur lors de nos échanges transparait parfaitement à travers ce commentaire. Très heureuse de contribuer à un impact positif dans ton développement personnel et professionnel. Ce témoignage renforce ma conviction dans l'importance de mon travail et me pousse à offrir le meilleur service possible à chacun de mes coachés. Un énorme merci pour ta recommandation. Je te souhaite tout le meilleur!"
+                        "text": "Tout commence par une rencontre amicale et très rapidement je me rends compte de l'impact rayonnant et dynamisant de Sabrina sur moi. Au travail comme dans la vie Sabrina nous emmène avec elle en respectant nos besoins et capacités. Toujours en objectif de nous emmener vers le haut et de faire sortir le meilleur de nous .... Naturellement. Merci Sabrina pour tout ce que tu apportes ."
                     },
                     {
                         "author": "Angélique",

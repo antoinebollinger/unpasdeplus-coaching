@@ -12,7 +12,6 @@ import { siteData, emailMessage } from "../data/metadata"
 import Wave from "/public/images/svg/wave-pink.svg"
 
 const Socials = dynamic(() => import("./socials"))
-// import Socials from "./socials"
 
 export default function Footer({
     onThisPage = [

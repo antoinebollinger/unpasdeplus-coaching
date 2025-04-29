@@ -1,7 +1,6 @@
 "use client"
 import { useEffect } from "react"
 import Image, { StaticImageData } from "next/image"
-import Link from "next/link"
 import { reveal } from "../../../utils/reveal"
 import Coaching_1 from "/public/images/offres-entreprises/bien-etre-travail-performance/coaching_1.webp"
 import Coaching_2 from "/public/images/offres-entreprises/bien-etre-travail-performance/coaching_2.webp"
