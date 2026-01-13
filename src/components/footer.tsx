@@ -53,7 +53,7 @@ export default function Footer({
                         body: emailMessage.newsletterSent, buttons: "hidden"
                     })
                 else
-                    throw new Error("Fetch returned with sent = false")
+                    throw new Error(response.error ?? "Fetch returned with sent = false")
             } catch (error) {
                 openDialog({
                     body: emailMessage.fetchError.sprintf([process.env.NEXT_PUBLIC_EMAIL_TO, error.message]), buttons: "hidden"
