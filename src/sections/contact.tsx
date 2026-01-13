@@ -39,8 +39,9 @@ export default function Contact({ className = "" }: { className?: string }) {
                         body: emailMessage.messageSent.sprintf([e.target.elements["name"].value]), buttons: "hidden"
                     })
                 else
-                    throw new Error("Fetch returned with sent = false")
+                    throw new Error(response.error ?? "Fetch returned with sent = false")
             } catch (error) {
+                console.log(error)
                 openDialog({
                     body: emailMessage.fetchError.sprintf([process.env.NEXT_PUBLIC_EMAIL_TO, error.message]), buttons: "hidden"
                 })
