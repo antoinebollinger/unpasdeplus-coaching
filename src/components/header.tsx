@@ -47,11 +47,6 @@ export default function Header({
                 </div>
                 <div className="absolute bottom-0 z-10 w-full h-auto -mb-1 header-shape">
                     <Wave color={getHexColorFromClass(waveClassName)} />
-                    {/* <Image
-                        src={Wave}
-                        alt="Wave"
-                        className="object-cover w-full h-full"
-                    /> */}
                 </div>
             </header>
         </>
