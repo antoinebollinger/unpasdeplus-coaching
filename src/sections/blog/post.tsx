@@ -15,8 +15,8 @@ export default async function SinglePost({ postId }: { postId: string }) {
                         <h2>{post.title}</h2>
                         <p><small>{displayDate(post.published)}</small></p>
                         <div className="post-body mb-12" dangerouslySetInnerHTML={{ __html: post.content ?? "" }} />
-                        <Comments postId={postId} className="mb-12" />
-                        <NewComment />
+                        {/* <Comments postId={postId} className="mb-12" />
+                        <NewComment /> */}
                     </div>
                 </div>
             </div>

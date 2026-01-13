@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faComment, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons"
 import { Post } from "../../models/posts"
 import React, { useEffect, useState } from "react"
-import { debounce } from "../../utils/debounce"
+// import { debounce } from "../../utils/debounce"
 import Loading from "../../components/loading"
 
 export default function Posts({ className = "" }: { className?: string }) {
@@ -67,9 +67,9 @@ export default function Posts({ className = "" }: { className?: string }) {
                                     />
                                     }
                                 </div>
-                                <div className="flex">
+                                {/* <div className="flex">
                                     <span className="text-xl grow"><FontAwesomeIcon icon={faComment} /> {post.replies.totalItems}</span>
-                                </div>
+                                </div> */}
                             </Link>
                         ))}
                     </div>
