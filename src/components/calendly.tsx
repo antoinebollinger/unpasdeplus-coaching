@@ -3,7 +3,7 @@ import { faCalendarDays } from "@fortawesome/free-solid-svg-icons"
 
 export default function Calendly() {
     return (
-        <a target="_blank" rel="nofollow" href="https://www.resalib.fr/praticien/95511-sabrina-appriou-un-pas-de-plus-coaching-coach-professionnel-certifie-vannes" className="main-btn gradient-btn focus:outline-none uppercase">
+        <a target="_blank" rel="nofollow" href="https://calendar.app.google/awqKqvPV8B19giEm9" className="main-btn gradient-btn focus:outline-none uppercase">
             <FontAwesomeIcon icon={faCalendarDays} />&nbsp;&nbsp;Réserver votre<br />appel découverte offert
         </a>
     )
