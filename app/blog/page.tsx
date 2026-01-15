@@ -1,5 +1,5 @@
 import Layout from "../../src/layout"
-import Banner from "/public/images/banners/blog.webp"
+import Banner from "/public/images/banners/accueil.webp"
 import { siteData } from "../../src/data/metadata"
 import Posts from "../../src/sections/blog/posts"
 
