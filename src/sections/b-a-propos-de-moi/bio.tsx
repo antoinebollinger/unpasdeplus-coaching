@@ -4,7 +4,7 @@ import Image from "next/image"
 import { reveal } from "../../utils/reveal"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCheck } from "@fortawesome/free-solid-svg-icons"
-import Sabrina from "/public/images/a-propos-de-moi/sabrina.webp"
+import Sabrina from "/public/images/a-propos-de-moi/Sabrina_Appriou.webp"
 import Sportive from "/public/images/a-propos-de-moi/sportive.webp"
 import { madelyn } from "../../../styles/font"
 
@@ -30,7 +30,7 @@ export default function Bio({ className = "" }: { className?: string }) {
                     <div className="w-1/2 md:w-1/4 mx-auto transition duration-200 scale-0 opacity-0">
                         <Image
                             src={Sabrina}
-                            className="rounded-full"
+                            className="rounded-xl"
                             alt="Sabrina Appriou, coach certifiée"
                             title="Sabrina Appriou, coach certifiée"
                         />

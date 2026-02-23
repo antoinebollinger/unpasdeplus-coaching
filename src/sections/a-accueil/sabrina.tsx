@@ -3,7 +3,7 @@ import { useEffect } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { reveal } from "../../utils/reveal"
-import SabrinaPic from "/public/images/accueil/sabrina.webp"
+import SabrinaPic from "/public/images/accueil/Sabrina_Appriou.webp"
 import { madelyn } from "../../../styles/font"
 
 export default function Sabrina({ className = "" }: { className?: string }) {
@@ -23,7 +23,7 @@ export default function Sabrina({ className = "" }: { className?: string }) {
                             src={SabrinaPic}
                             width={300}
                             height={300}
-                            className="w-full rounded-full"
+                            className="w-full rounded-xl"
                             alt="Sabrina Appriou, coach certifiée"
                             title="Sabrina Appriou, coach certifiée"
                         />
