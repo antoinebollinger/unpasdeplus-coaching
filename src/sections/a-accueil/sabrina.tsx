@@ -33,7 +33,7 @@ export default function Sabrina({ className = "" }: { className?: string }) {
                         <h3 className="h2"><span className={`${madelyn.className} text-5xl lg:text-7xl -translate-y-4`}>Un&nbsp;pas&nbsp;de&nbsp;plus</span>&nbsp;vers votre équilibre, votre mieux-être, à votre rythme</h3>
                         <br />
                         <p className="text-lg leading-6">
-                            Je suis Sabrina Appriou, coach de vie à Vannes et fondatrice d'<span className="text-primary-600 font-bold">Un pas de plus</span>.
+                            Je suis Sabrina Appriou, coach de vie à Vannes et fondatrice d'<span className="text-primary-600 font-bold">Un Pas de Plus coaching</span>.
                             <br />
                             <br />
                             J’accompagne les particuliers et les professionnels grâce au coaching de vie, pour retrouver équilibre, confiance en soi et sérénité, en ravaillant à la fois sur le corps, le mental et les émotions.
