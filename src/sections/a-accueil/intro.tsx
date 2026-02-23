@@ -54,7 +54,7 @@ export default function Intro({ className = "" }: { className?: string }) {
                             src={IntroPic}
                             width={300}
                             height={300}
-                            className="w-full rounded-full mx-auto transition duration-200 scale-0"
+                            className="w-full rounded-xl mx-auto transition duration-200 scale-0"
                             alt="Facilitatrice de la mise en mouvement"
                             title="Facilitatrice de la mise en mouvement"
                         />

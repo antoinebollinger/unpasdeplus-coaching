@@ -27,7 +27,7 @@ export default function Pourquoi({ className = "bg-gray-100" }: { className?: st
                             src={SabrinaPic}
                             width={300}
                             height={300}
-                            className="w-full rounded-full"
+                            className="w-full rounded-xl"
                             alt="Sabrina Appriou, coach certifiée"
                             title="Sabrina Appriou, coach certifiée"
                         />

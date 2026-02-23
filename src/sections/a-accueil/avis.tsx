@@ -113,11 +113,13 @@ export default function Avis({ className = "bg-gray-100" }: { className?: string
                         Découvrez comment mes coaché·es ont retrouvé énergie, sérénité et équilibre grâce au coaching !
                         <br />
                         <br />
-                        <FontAwesomeIcon icon={faStar} />
-                        <FontAwesomeIcon icon={faStar} />
-                        <FontAwesomeIcon icon={faStar} />
-                        <FontAwesomeIcon icon={faStar} />
-                        <FontAwesomeIcon icon={faStar} />
+                        <span className="text-yellow-400">
+                            <FontAwesomeIcon icon={faStar} />
+                            <FontAwesomeIcon icon={faStar} />
+                            <FontAwesomeIcon icon={faStar} />
+                            <FontAwesomeIcon icon={faStar} />
+                            <FontAwesomeIcon icon={faStar} />
+                        </span>
                     </p>
                     <p><i>Source: <Link href="https://www.google.com/search?sca_esv=ad335200c38ab265&sxsrf=ANbL-n78dly11Qto4Ya1SPu1pk2WhSoEXg:1771847021111&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOX97miUa-WP1y5ITHLV4uyt4awPnHVxi-fEkIoHHVFtO3ucXA0vE2XbL9us6mcssyXYsYMiwWCMHtAR0cPn3TzQ5CuzOvdrZ-KBGoazh9twS_GCcWw0E9f5yqOWzicwg_0AoEBM%3D&q=Un+Pas+de+Plus+coaching-+Sabrina+Appriou+Avis&sa=X&ved=2ahUKEwiUmKjCxO-SAxU6S_EDHYKbE_cQ0bkNegQIShAH&biw=1920&bih=911&dpr=1" className="text-primary-600 hover::underline" target="_blank">Google Avis</Link> </i></p>
                 </div>
