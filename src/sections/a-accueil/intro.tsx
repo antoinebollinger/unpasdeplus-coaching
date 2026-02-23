@@ -17,17 +17,8 @@ export default function Intro({ className = "" }: { className?: string }) {
         <section id="introduction" className={className}>
             <div className="container">
                 <div className="flex flex-col lg:flex-row gap-6 justify-center items-center mb-16">
-                    <div className="w-2/3 lg:w-1/4 text-center lg:order-1">
-                        <Image
-                            src={LogosCombines}
-                            width={300}
-                            height={300}
-                            className="w-full rounded-xl mx-auto transition duration-200 scale-0"
-                            alt="Facilitatrice de la mise en mouvement"
-                            title="Facilitatrice de la mise en mouvement"
-                        />
-                    </div>
-                    <div className="w-full lg:w-3/4 lg:order-0">
+
+                    <div className="w-full lg:w-3/4">
                         <p className="text-2xl mb-10">
                             «&nbsp;Ne limite pas tes défis, défis tes limites&nbsp;»
                         </p>
@@ -41,6 +32,16 @@ export default function Intro({ className = "" }: { className?: string }) {
                             <br />
                             Mon approche du coaching de vie associe le travail sur le mental, les émotions et le passage à l'action par le mouvement, pour vous aider à dépasser vos blocages et avancer concrètement vers vos objectifs.
                         </p>
+                    </div>
+                    <div className="w-2/3 lg:w-1/4 text-center">
+                        <Image
+                            src={LogosCombines}
+                            width={300}
+                            height={300}
+                            className="w-full rounded-xl mx-auto transition duration-200 scale-0"
+                            alt="Facilitatrice de la mise en mouvement"
+                            title="Facilitatrice de la mise en mouvement"
+                        />
                     </div>
                 </div>
                 <div className="text-center">
