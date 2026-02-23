@@ -25,16 +25,16 @@ export default function Page() {
             link: "#mes-offres"
         },
         {
+            title: "Avis clients",
+            link: "#avis"
+        },
+        {
             title: "Qui suis-je ?",
             link: "#sabrina-appriou"
         },
         {
             title: "FAQ",
             link: "#faq"
-        },
-        {
-            title: "Apports du coaching",
-            link: "#apports-coaching"
         }
     ]
 
