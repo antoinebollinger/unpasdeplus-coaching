@@ -66,7 +66,7 @@ export default function Navbar() {
                         </Link>
                     </li>
                     <li className={`relative nav-item ${pathname.startsWith("/offres-particuliers") ? "active" : ""}`}>
-                        <Link href="/offres-particuliers">Je suis un <br className="hidden lg:block" />particuliers</Link>
+                        <Link href="/offres-particuliers">Je suis un <br className="hidden lg:block" />particulier</Link>
                         <div className="dropdown lg:pt-4 pt-0">
                             <ul>
                                 <li className={`nav-item ${pathname == "/offres-particuliers/coaching-bien-etre-equilibre" ? "active" : ""}`}>
