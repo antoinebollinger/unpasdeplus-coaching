@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "dev": "next dev && node --trace-deprecation .next",
+    "dev": "cross-env NODE_ENV=development next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -24,6 +24,7 @@
     "@types/node": "20.4.5",
     "@types/react": "18.2.18",
     "autoprefixer": "^10.4.14",
+    "cross-env": "^10.1.0",
     "eslint": "^8.46.0",
     "eslint-config-next": "^13.4.12",
     "postcss": "^8.4.27",

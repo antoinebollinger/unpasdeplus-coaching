@@ -17,6 +17,7 @@ export interface dialogProps {
 }
 
 export interface modalProps {
+    title?: string,
     content?: string,
 }
 
@@ -26,6 +27,6 @@ export interface CustomEvent extends SubmitEvent {
 
 export interface review {
     author: string,
-    tag: string,
+    tag?: string,
     text: string
 }

@@ -52,7 +52,7 @@ export default function Parcours() {
                         <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span> Parce que nous sommes tous confrontés à des défis, qu'ils soient personnels et/ou professionnels&nbsp;;
                     </li>
                     <li>
-                        <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span> Parce que surmonter ses défis seul.e, c’est rester dans le flou, freiné.e par ses freins et de ses doutes, qui empêchent <strong>d’avancer vers un mieux-être</strong>&nbsp;;
+                        <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span> Parce que surmonter ses défis seul·e, c’est rester dans le flou, freiné·e par ses freins et de ses doutes, qui empêchent <strong>d’avancer vers un mieux-être</strong>&nbsp;;
                     </li>
                     <li>
                         <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span> Parce que notre entourage n’a pas toujours les réponses à nos questions et ne comprend pas forcément nos véritables besoins&nbsp;;

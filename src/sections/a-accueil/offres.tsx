@@ -4,7 +4,7 @@ import MenuOffresParticuliers from "../../components/menuOffresParticuliers"
 
 const Calendly = dynamic(() => import("../../components/calendly"))
 
-export default function Offres({ className = "bg-gray-100" }: { className?: string }) {
+export default function Offres({ className = "" }: { className?: string }) {
     return (
         <section id="mes-offres" className={className}>
             <div className="container">

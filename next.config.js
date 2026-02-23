@@ -6,7 +6,6 @@ const nextConfig = {
     defaultLocale: "fr",
   },
   optimizeFonts: false,
-  output: "standalone",
   images: {
     remotePatterns: [
       {

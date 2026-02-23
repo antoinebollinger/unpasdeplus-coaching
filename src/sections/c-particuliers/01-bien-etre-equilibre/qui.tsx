@@ -52,7 +52,7 @@ export default function Qui({ className = "bg-gray-100" }: { className?: string 
                                     (
                                         <>
                                             <span className="fa-li text-xl"><FontAwesomeIcon icon={faPersonRunning} /></span>
-                                            Vous savez que prendre soin de son <strong>bien-être physique et de sa santé mentale</strong> est important pour votre équilibre  <strong>physique, mental</strong> et <strong>émotionnel</strong> mais vous ne parvenez pas à le faire seul.e.
+                                            Vous savez que prendre soin de son <strong>bien-être physique et de sa santé mentale</strong> est important pour votre équilibre  <strong>physique, mental</strong> et <strong>émotionnel</strong> mais vous ne parvenez pas à le faire seul·e.
                                         </>
                                     ),
                                     (
@@ -65,7 +65,7 @@ export default function Qui({ className = "bg-gray-100" }: { className?: string 
                                     (
                                         <>
                                             <span className="fa-li text-xl"><FontAwesomeIcon icon={faHandshakeAngle} /></span>
-                                            Vous souhaitez appréhender les situations de façon différente pour <strong>éviter de se décourager</strong>, de «&nbsp;craquer&nbsp;» face aux <strong>situations difficiles</strong> et qui vous rendent vulnérables. <br />Rester déterminé.es dans cette volonté de prendre soin de soi. La priorité, c’est vous !
+                                            Vous souhaitez appréhender les situations de façon différente pour <strong>éviter de se décourager</strong>, de «&nbsp;craquer&nbsp;» face aux <strong>situations difficiles</strong> et qui vous rendent vulnérables. <br />Rester déterminé·es dans cette volonté de prendre soin de soi. La priorité, c’est vous !
                                         </>
                                     )
                                 ].map((e, i) => (
@@ -81,19 +81,19 @@ export default function Qui({ className = "bg-gray-100" }: { className?: string 
                                     (
                                         <>
                                             <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
-                                            <strong>Guidé.e</strong><br />Avancer pas à pas, à votre rythme dans cette volonté de <strong>mieux-être</strong> lors des séances de coaching.
+                                            <strong>Guidé·e</strong><br />Avancer pas à pas, à votre rythme dans cette volonté de <strong>mieux-être</strong> lors des séances de coaching.
                                         </>
                                     ),
                                     (
                                         <>
                                             <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
-                                            <strong>Soutenu.e</strong><br />Surmonter les <strong>défis</strong>, les <strong>freins</strong> avec plus de <strong>sérénité</strong> et plus de <strong>confiance en soi</strong>.
+                                            <strong>Soutenu·e</strong><br />Surmonter les <strong>défis</strong>, les <strong>freins</strong> avec plus de <strong>sérénité</strong> et plus de <strong>confiance en soi</strong>.
                                         </>
                                     ),
                                     (
                                         <>
                                             <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
-                                            <strong>Challengé.e</strong><br />Accompagné.e par un <strong>objectif atteignable</strong> et <strong>réalisable</strong> qui sera source de motivation, de plaisir et de performance.
+                                            <strong>Challengé·e</strong><br />Accompagné·e par un <strong>objectif atteignable</strong> et <strong>réalisable</strong> qui sera source de motivation, de plaisir et de performance.
                                         </>
                                     ),
                                     (

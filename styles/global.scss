@@ -49,7 +49,8 @@ h3,
     font-family: var(--font-amatic), sans-serif;
 }
 
-p {
+p,
+li {
     @apply text-gray-700;
 }
 

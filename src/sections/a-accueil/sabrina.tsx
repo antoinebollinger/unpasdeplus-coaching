@@ -29,17 +29,17 @@ export default function Sabrina({ className = "" }: { className?: string }) {
                         />
                     </div>
                     <div className="w-full lg:w-3/4 lg:order-0">
-                        <h3 className="h1">Sabrina Appriou</h3>
-                        <h3 className="h2">Coach consultante professionnelle certifiée, fondatrice <span className={`${madelyn.className} text-5xl lg:text-7xl -translate-y-4`}>Un&nbsp;pas&nbsp;de&nbsp;plus</span>&nbsp;Coaching</h3>
+                        <h3 className="h1">Qui suis-je ?</h3>
+                        <h3 className="h2"><span className={`${madelyn.className} text-5xl lg:text-7xl -translate-y-4`}>Un&nbsp;pas&nbsp;de&nbsp;plus</span>&nbsp;vers votre équilibre, votre mieux-être, à votre rythme</h3>
                         <br />
                         <p className="text-lg leading-6">
-                            Chaque <strong>obstacle</strong> semble plus grand, chaque <strong>doute</strong> plus lourd, et le chemin peut devenir <strong>douloureux</strong>.
+                            Je suis Sabrina Appriou, coach de vie à Vannes et fondatrice d'<span className="text-primary-600 font-bold">Un pas de plus</span>.
                             <br />
                             <br />
-                            Notre mission&nbsp;: vous aider à vous <strong>épanouir</strong>, <strong>à croire en soi</strong>, <strong>à oser</strong>, <strong>à faire</strong> <span className="text-primary-600 font-bold">Un pas de plus</span> vers un <strong>mieux-être physique</strong>, <strong>mental et émotionnel</strong>.
+                            J’accompagne les particuliers et les professionnels grâce au coaching de vie, pour retrouver équilibre, confiance en soi et sérénité, en ravaillant à la fois sur le corps, le mental et les émotions.
                             <br />
                             <br />
-                            Un <strong>espace sécurisé</strong> dans lequel les personnes peuvent avancer à leur rythme, en toute <strong>bienveillance</strong> pour faire Un Pas de Plus en faveur de leur <strong>bien-être physique, émotionnel</strong> et <strong>mental</strong>.
+                            Mon approche vise une transformation durable, en vous aidant à mobiliser vos ressources pour avancer vers vos objectifs personnels et professionnels.
                         </p>
                     </div>
                 </div>
