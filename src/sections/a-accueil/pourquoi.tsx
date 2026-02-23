@@ -21,7 +21,7 @@ export default function Pourquoi({ className = "bg-gray-100" }: { className?: st
     return (
         <section id="pourquoi" className={className}>
             <div className="container">
-                <div className="flex flex-col lg:flex-row gap-6 justify-center items-center mb-16">
+                <div className="flex flex-col lg:flex-row gap-6 justify-center items-center">
                     <div className="w-full lg:w-1/4 transition duration-200 scale-0 img">
                         <Image
                             src={SabrinaPic}

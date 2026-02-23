@@ -17,7 +17,6 @@ export default function Intro({ className = "" }: { className?: string }) {
         <section id="introduction" className={className}>
             <div className="container">
                 <div className="flex flex-col lg:flex-row gap-6 justify-center items-center mb-16">
-
                     <div className="w-full lg:w-3/4">
                         <p className="text-2xl mb-10">
                             «&nbsp;Ne limite pas tes défis, défis tes limites&nbsp;»

@@ -24,7 +24,7 @@ export default function Faq({ className = "bg-gray-100" }: { className?: string 
                 <div className="text-center pb-10">
                     <h2 className="h1 text-start lg:text-center">Foire aux questions</h2>
                 </div>
-                <div className="w-full mx-auto grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 gap-16 justify-center items-stretch mb-16">
+                <div className="w-full mx-auto grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 gap-16 justify-center items-stretch">
                     {list(
                         "Qu'est-ce qu'un coach de vie peut m'apporter ?",
                         "<p>Un coach de vie vous aide à <strong>faire le point</strong>, à <strong>y voir plus clair</strong> et à <strong>avancer concrètement</strong> dans votre vie personnelle ou professionnelle. Concrètement, le coaching peut vous aider à :</p><ul class='list-disc list-inside'><li>Sortir d'une période de flou, de fatigue ou de surcharge mentale</li><li>Mieux gérer le stress et retrouver de l'énergie</li><li>Clarifier ce que vous voulez vraiment (et ce que vous ne voulez plus)</li><li>Reprendre confiance en vous et en vos capacités</li><li>Dépasser des blocages, des peurs ou des schémas répétitifs</li><li>Passer à l'action, à votre rythme, avec plus de sérénité</li></ul><p>Le coaching, ce n'est <strong>ni une thérapie</strong>, ni des conseils tout fait. C'est un <strong>espace d'écoute</strong>, <strong>de réflexion et de mise en mouvement</strong>, où vous restez pleinement acteur, actrice de votre chemin.</p><p>Mon rôle est de vous accompagner avec bienveillance, des questions justes et des outils adaptés pour que vous puissiez <strong>trouver vos propres réponses</strong> et créer des changements durables.</p>"
