@@ -17,7 +17,8 @@ export default function Avis({ className = "bg-gray-100" }: { className?: string
                 <FontAwesomeIcon icon={faStar} /></>)
         },
         {
-            author: "Clara", text: "Je suis ravie d’avoir été accompagnée par Sabrina qui est très professionnelle. C’est une Coach très positive et douce qui rassure et met en confiance ! Sabrina m’a aidé à atteindre mes objectifs de perte de poids en débloquant les barrières psychologiques qui me freinaient dans ma réussite.<br/>Je conseille fortement l’aide d’un coach qui nous aide à « cadrer » nos objectifs afin qu’ils soient atteignables et mesurables dans le temps.<br/>Sabrina est disponible et positive, c’est un plaisir de travailler avec elle ! Elle a su m’acompagner au-delà de mes attentes initiales.",
+            author: "Clara",
+            text: "Je suis ravie d’avoir été accompagnée par Sabrina qui est très professionnelle. C’est une Coach très positive et douce qui rassure et met en confiance ! Sabrina m’a aidé à atteindre mes objectifs de perte de poids en débloquant les barrières psychologiques qui me freinaient dans ma réussite.<br/>Je conseille fortement l’aide d’un coach qui nous aide à « cadrer » nos objectifs afin qu’ils soient atteignables et mesurables dans le temps.<br/>Sabrina est disponible et positive, c’est un plaisir de travailler avec elle ! Elle a su m’acompagner au-delà de mes attentes initiales.",
             tag: renderToString(<><FontAwesomeIcon icon={faStar} />
                 <FontAwesomeIcon icon={faStar} />
                 <FontAwesomeIcon icon={faStar} />
@@ -25,7 +26,8 @@ export default function Avis({ className = "bg-gray-100" }: { className?: string
                 <FontAwesomeIcon icon={faStar} /></>)
         },
         {
-            author: "Aline", text: "Tout commence par une rencontre amicale et très rapidement je me rends compte de l'impact rayonnant et dynamisant de Sabrina sur moi. Au travail comme dans la vie Sabrina nous emmène avec elle en respectant nos besoins et capacités. Toujours en objectif de nous emmener vers le haut et de faire sortir le meilleur de nous .... Naturellement <br/>Merci Sabrina pour tout ce que tu apportes.",
+            author: "Aline",
+            text: "Tout commence par une rencontre amicale et très rapidement je me rends compte de l'impact rayonnant et dynamisant de Sabrina sur moi. Au travail comme dans la vie Sabrina nous emmène avec elle en respectant nos besoins et capacités. Toujours en objectif de nous emmener vers le haut et de faire sortir le meilleur de nous .... Naturellement <br/>Merci Sabrina pour tout ce que tu apportes.",
             tag: renderToString(<><FontAwesomeIcon icon={faStar} />
                 <FontAwesomeIcon icon={faStar} />
                 <FontAwesomeIcon icon={faStar} />
@@ -41,7 +43,8 @@ export default function Avis({ className = "bg-gray-100" }: { className?: string
                 <FontAwesomeIcon icon={faStar} /></>)
         },
         {
-            author: "Alyse", text: "Je suis vraiment reconnaissante d'avoir bénéficié du coaching de Sabrina. Sa disponibilité et son écoute m'ont permis de me sentir comprise dès le départ. C'est une femme avec une sensibilité incroyable, capable de cerner rapidement les blocages et d’apporter des solutions adaptées. Grâce à son accompagnement, j'ai gagné en clarté et j'ai amélioré mon organisation au quotidien. Elle a su me booster tout en respectant mon rythme. Elle m’a aidé à mieux structurer mes journées et à aborder mes objectifs de manière plus sereine. Je vois vraiment les effets sur mon travail et mon bien-être au quotidien. Son approche est à la fois professionnelle et humaine. Je recommande vivement son coaching !<br/>Un grand merci pour ton soutien Sabrina !",
+            author: "Alyse",
+            text: "Je suis vraiment reconnaissante d'avoir bénéficié du coaching de Sabrina. Sa disponibilité et son écoute m'ont permis de me sentir comprise dès le départ. C'est une femme avec une sensibilité incroyable, capable de cerner rapidement les blocages et d’apporter des solutions adaptées. Grâce à son accompagnement, j'ai gagné en clarté et j'ai amélioré mon organisation au quotidien. Elle a su me booster tout en respectant mon rythme. Elle m’a aidé à mieux structurer mes journées et à aborder mes objectifs de manière plus sereine. Je vois vraiment les effets sur mon travail et mon bien-être au quotidien. Son approche est à la fois professionnelle et humaine. Je recommande vivement son coaching !<br/>Un grand merci pour ton soutien Sabrina !",
             tag: renderToString(<><FontAwesomeIcon icon={faStar} />
                 <FontAwesomeIcon icon={faStar} />
                 <FontAwesomeIcon icon={faStar} />
@@ -49,7 +52,8 @@ export default function Avis({ className = "bg-gray-100" }: { className?: string
                 <FontAwesomeIcon icon={faStar} /></>)
         },
         {
-            author: "Anthony", text: "Il arrive à tout le monde d'avoir des périodes de doutes. Sabrina n'y pas répond, elle a fait bien plus : elle m'a accompagné en toute simplicité et sans jamais porter de jugement à me poser les bonnes questions. Cela ouvre d'autres perspectives et surtout ne pas s'enfermer. Avoir une écoute extérieure à notre cercle habituel à été bénéfique, et que ça a été avec Sabrina fût un plus.<br/>Merci Sabrina",
+            author: "Anthony",
+            text: "Il arrive à tout le monde d'avoir des périodes de doutes. Sabrina n'y pas répond, elle a fait bien plus : elle m'a accompagné en toute simplicité et sans jamais porter de jugement à me poser les bonnes questions. Cela ouvre d'autres perspectives et surtout ne pas s'enfermer. Avoir une écoute extérieure à notre cercle habituel à été bénéfique, et que ça a été avec Sabrina fût un plus.<br/>Merci Sabrina",
             tag: renderToString(<><FontAwesomeIcon icon={faStar} />
                 <FontAwesomeIcon icon={faStar} />
                 <FontAwesomeIcon icon={faStar} />
@@ -57,7 +61,8 @@ export default function Avis({ className = "bg-gray-100" }: { className?: string
                 <FontAwesomeIcon icon={faStar} /></>)
         },
         {
-            author: "Nora", text: "Un atelier très sympa avec Sabrina qui a su nous mettre en confiance et nous donner des pistes pour agir. Un bon exercice de réflexion à partager pour lever les freins à l'action ! On quitte l'atelier plus sereinement aussi bien pour la confiance que pour la compréhension de soi-même ! Je recommande vivement les services de Sabrina quelque soit notre problématique en parler c'est déjà agir",
+            author: "Nora",
+            text: "Un atelier très sympa avec Sabrina qui a su nous mettre en confiance et nous donner des pistes pour agir. Un bon exercice de réflexion à partager pour lever les freins à l'action ! On quitte l'atelier plus sereinement aussi bien pour la confiance que pour la compréhension de soi-même ! Je recommande vivement les services de Sabrina quelque soit notre problématique en parler c'est déjà agir",
             tag: renderToString(<><FontAwesomeIcon icon={faStar} />
                 <FontAwesomeIcon icon={faStar} />
                 <FontAwesomeIcon icon={faStar} />
@@ -65,7 +70,8 @@ export default function Avis({ className = "bg-gray-100" }: { className?: string
                 <FontAwesomeIcon icon={faStar} /></>)
         },
         {
-            author: "Safia", text: "J’ai vraiment apprécié le coaching que j’ai reçu. L'accompagnement a été personnalisé, clair et extrêmement bénéfique. Merci pour tous les conseils. Sabrina a su créer un environnement de confiance et m’a permis de voir les choses sous un autre angle. Une expérience très enrichissante que je recommande.",
+            author: "Safia",
+            text: "J’ai vraiment apprécié le coaching que j’ai reçu. L'accompagnement a été personnalisé, clair et extrêmement bénéfique. Merci pour tous les conseils. Sabrina a su créer un environnement de confiance et m’a permis de voir les choses sous un autre angle. Une expérience très enrichissante que je recommande.",
             tag: renderToString(<><FontAwesomeIcon icon={faStar} />
                 <FontAwesomeIcon icon={faStar} />
                 <FontAwesomeIcon icon={faStar} />
@@ -73,7 +79,8 @@ export default function Avis({ className = "bg-gray-100" }: { className?: string
                 <FontAwesomeIcon icon={faStar} /></>)
         },
         {
-            author: "Aline", text: "J’ai eu la chance d’assister à un atelier sur le thème de la charge mentale « parentale » Je dis bien chance ! En effet, il est rare pouvoir assister à ces réunions dans un cadre aussi serein et abordable où il fait bon parler et échanger avec d’autres personnes : et ce , en toute simplicité et confiance. Et ceci grâce à Sabrina qui mène son atelier avec tant de bienveillance. Chacun trouve sa place. On en sort motiver ! Prêt à mettre en place les nombreux conseils de Sabrina !<br/>Un grand merci pr cette expérience.",
+            author: "Aline",
+            text: "J’ai eu la chance d’assister à un atelier sur le thème de la charge mentale « parentale » Je dis bien chance ! En effet, il est rare pouvoir assister à ces réunions dans un cadre aussi serein et abordable où il fait bon parler et échanger avec d’autres personnes : et ce , en toute simplicité et confiance. Et ceci grâce à Sabrina qui mène son atelier avec tant de bienveillance. Chacun trouve sa place. On en sort motiver ! Prêt à mettre en place les nombreux conseils de Sabrina !<br/>Un grand merci pr cette expérience.",
             tag: renderToString(<><FontAwesomeIcon icon={faStar} />
                 <FontAwesomeIcon icon={faStar} />
                 <FontAwesomeIcon icon={faStar} />
@@ -81,7 +88,8 @@ export default function Avis({ className = "bg-gray-100" }: { className?: string
                 <FontAwesomeIcon icon={faStar} /></>)
         },
         {
-            author: "Elodie", text: "Le dynamisme et la bonne humeur de Sabrina est un plaisir. Elle m’a permis d’y voir plus claire sur mon projet et d’avancer sereinement. Grace à son coaching je vais pouvoir mettre des actions en place rapidement. Merci beaucoup",
+            author: "Elodie",
+            text: "Le dynamisme et la bonne humeur de Sabrina est un plaisir. Elle m’a permis d’y voir plus claire sur mon projet et d’avancer sereinement. Grace à son coaching je vais pouvoir mettre des actions en place rapidement. Merci beaucoup",
             tag: renderToString(<><FontAwesomeIcon icon={faStar} />
                 <FontAwesomeIcon icon={faStar} />
                 <FontAwesomeIcon icon={faStar} />
@@ -89,7 +97,8 @@ export default function Avis({ className = "bg-gray-100" }: { className?: string
                 <FontAwesomeIcon icon={faStar} /></>)
         },
         {
-            author: "Julie", text: "Un énorme merci Sabrina pour avoir organisé la première rando-coaching sur St Nolff. Je suis heureuse d’avoir fait le déplacement de Lanester. J’ai aimé ton dynamisme, ton esprit d’équipe, ta bonne humeur, ta douceur et ta bienveillance. Le fait de bouger et surtout de marcher dans la nature tout en amenant à des prises de conscience grâce aux questions que tu nous as posé fut enrichissant et inspirant. Je vous recommande à 100% Sabrina pour la belle personne qu’elle est et son professionnalisme.",
+            author: "Julie",
+            text: "Un énorme merci Sabrina pour avoir organisé la première rando-coaching sur St Nolff. Je suis heureuse d’avoir fait le déplacement de Lanester. J’ai aimé ton dynamisme, ton esprit d’équipe, ta bonne humeur, ta douceur et ta bienveillance. Le fait de bouger et surtout de marcher dans la nature tout en amenant à des prises de conscience grâce aux questions que tu nous as posé fut enrichissant et inspirant. Je vous recommande à 100% Sabrina pour la belle personne qu’elle est et son professionnalisme.",
             tag: renderToString(<><FontAwesomeIcon icon={faStar} />
                 <FontAwesomeIcon icon={faStar} />
                 <FontAwesomeIcon icon={faStar} />
@@ -97,7 +106,17 @@ export default function Avis({ className = "bg-gray-100" }: { className?: string
                 <FontAwesomeIcon icon={faStar} /></>)
         },
         {
-            author: "Julien", text: "Sabrina est une coach de vie à l’écoute, bienveillante, professionnelle et humaine.<br/>Elle a su répondre à mes problématiques qui m’empêchaient d’avancer aussi bien dans ma vie perso et pro. Grâce à son accompagnement, j’avance aujourd’hui avec plus de sérénité et de clarté.<br/>Merci pour tout Sabrina !<br/>Je recommande vivement son coaching à toute personne confrontée à des freins personnels et/ou professionnels.",
+            author: "Julien",
+            text: "Sabrina est une coach de vie à l’écoute, bienveillante, professionnelle et humaine.<br/>Elle a su répondre à mes problématiques qui m’empêchaient d’avancer aussi bien dans ma vie perso et pro. Grâce à son accompagnement, j’avance aujourd’hui avec plus de sérénité et de clarté.<br/>Merci pour tout Sabrina !<br/>Je recommande vivement son coaching à toute personne confrontée à des freins personnels et/ou professionnels.",
+            tag: renderToString(<><FontAwesomeIcon icon={faStar} />
+                <FontAwesomeIcon icon={faStar} />
+                <FontAwesomeIcon icon={faStar} />
+                <FontAwesomeIcon icon={faStar} />
+                <FontAwesomeIcon icon={faStar} /></>)
+        },
+        {
+            author: "Clea",
+            text: "",
             tag: renderToString(<><FontAwesomeIcon icon={faStar} />
                 <FontAwesomeIcon icon={faStar} />
                 <FontAwesomeIcon icon={faStar} />
@@ -121,7 +140,7 @@ export default function Avis({ className = "bg-gray-100" }: { className?: string
                             <FontAwesomeIcon icon={faStar} />
                         </span>
                     </p>
-                    <p><i>Source: <Link href="https://www.google.com/search?sca_esv=ad335200c38ab265&sxsrf=ANbL-n78dly11Qto4Ya1SPu1pk2WhSoEXg:1771847021111&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOX97miUa-WP1y5ITHLV4uyt4awPnHVxi-fEkIoHHVFtO3ucXA0vE2XbL9us6mcssyXYsYMiwWCMHtAR0cPn3TzQ5CuzOvdrZ-KBGoazh9twS_GCcWw0E9f5yqOWzicwg_0AoEBM%3D&q=Un+Pas+de+Plus+coaching-+Sabrina+Appriou+Avis&sa=X&ved=2ahUKEwiUmKjCxO-SAxU6S_EDHYKbE_cQ0bkNegQIShAH&biw=1920&bih=911&dpr=1" className="text-primary-600 hover::underline" target="_blank">Google Avis</Link> </i></p>
+                    <p><i>Source : {reviews.length} avis sur <Link href="https://www.google.com/search?sca_esv=ad335200c38ab265&sxsrf=ANbL-n78dly11Qto4Ya1SPu1pk2WhSoEXg:1771847021111&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOX97miUa-WP1y5ITHLV4uyt4awPnHVxi-fEkIoHHVFtO3ucXA0vE2XbL9us6mcssyXYsYMiwWCMHtAR0cPn3TzQ5CuzOvdrZ-KBGoazh9twS_GCcWw0E9f5yqOWzicwg_0AoEBM%3D&q=Un+Pas+de+Plus+coaching-+Sabrina+Appriou+Avis&sa=X&ved=2ahUKEwiUmKjCxO-SAxU6S_EDHYKbE_cQ0bkNegQIShAH&biw=1920&bih=911&dpr=1" className="text-primary-600 hover::underline" target="_blank">Google Avis</Link> </i></p>
                 </div>
                 <div className="relative bg-gray-200 rounded-xl p-6">
                     <Reviews reviews={reviews} />

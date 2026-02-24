@@ -1,5 +1,4 @@
 import Layout from "../src/layout"
-import Banner from "/public/images/banners/accueil.webp"
 import dynamic from "next/dynamic"
 
 const Intro = dynamic(() => import("../src/sections/a-accueil/intro"))
@@ -39,7 +38,7 @@ export default function Page() {
     ]
 
     return (
-        <Layout banner={Banner} onThisPage={onThisPage} >
+        <Layout onThisPage={onThisPage} >
             <Intro />
             <Pourquoi />
             <Offres />

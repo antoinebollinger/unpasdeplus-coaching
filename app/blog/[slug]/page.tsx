@@ -1,5 +1,4 @@
 import Layout from "../../../src/layout"
-import Banner from "/public/images/banners/blog.webp"
 import SinglePost from "../../../src/sections/blog/post"
 import { siteData } from "../../../src/data/metadata"
 import { getPost } from "../../../src/utils/fetch"
@@ -15,7 +14,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
 
 export default async function Page({ params }: { params: { slug: string } }) {
     return (
-        <Layout banner={Banner} className="bg-gray-100">
+        <Layout className="bg-gray-100">
             <SinglePost postId={params.slug} />
         </Layout>
     )
