@@ -9,6 +9,7 @@ import { emailMessage } from "../data/metadata"
 import { CustomEvent } from "../models/types"
 
 import Cabinet from "../../public/images/contact/cabinet.webp"
+import Calendly from "../components/calendly"
 
 export default function Contact({ className = "" }: { className?: string }) {
 
@@ -108,7 +109,7 @@ export default function Contact({ className = "" }: { className?: string }) {
                         <div>
                             <h3><FontAwesomeIcon icon={faCalendarDays} /> Sur Calendar</h3>
                             <p className="text-lg md:text-xl">
-                                <a target="_blank" rel="nofollow" href="https://calendar.app.google/awqKqvPV8B19giEm9" className="underline hover:text-secondary-700 transition">Réserver un appel découverte offert</a>
+                                <Calendly className="underline hover:text-secondary-700 transition" text="Réserver un appel découverte offert" />
                             </p>
                         </div>
                         <div>
