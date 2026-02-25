@@ -1,7 +1,7 @@
 import dynamic from "next/dynamic"
-import MenuOffresEntreprises from "../../components/menuOffresEntreprises"
-import MenuOffresParticuliers from "../../components/menuOffresParticuliers"
 
+const MenuOffresEntreprises = dynamic(() => import("../../components/menuOffresEntreprises"))
+const MenuOffresParticuliers = dynamic(() => import("../../components/menuOffresParticuliers"))
 const Calendly = dynamic(() => import("../../components/calendly"))
 
 export default function Offres({ className = "" }: { className?: string }) {
