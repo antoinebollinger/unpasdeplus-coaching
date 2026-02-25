@@ -133,7 +133,7 @@ export default function Footer({
                             </ul>
                         </div>
                         <div className="w-full md:w-1/3 xl:w-1/4">
-                            <p className="footer-title"><Link href="/offres-particuliers">Je suis un particuliers</Link></p>
+                            <p className="footer-title"><Link href="/offres-particuliers">Je suis un particulier</Link></p>
                             <ul className="footer-link">
                                 <li>
                                     <Link href="/offres-particuliers/coaching-bien-etre-equilibre">
