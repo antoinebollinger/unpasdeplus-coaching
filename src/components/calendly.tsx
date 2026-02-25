@@ -22,19 +22,20 @@ export default function Calendly({
     text?: ReactNode;
     modalTitle?: ReactNode;
 }) {
+    const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+        e.preventDefault()
+        openModal({
+            title: renderToString(modalTitle), content: renderToString(
+                <iframe src={process.env.NEXT_PUBLIC_CALENDAR_URL} width="100%" height="600"></iframe>
+            )
+        })
+    }
+
     return (
         <a
-            onClick={(e) => {
-                e.preventDefault()
-                openModal({
-                    title: renderToString(modalTitle), content: renderToString(<>
-                        <iframe src={process.env.NEXT_PUBLIC_CALENDAR_URL} width="100%" height="600" frameBorder="0"></iframe>
-                    </>)
-                })
-            }}
+            onClick={handleClick}
             target="_blank"
             rel="nofollow"
-            href={process.env.NEXT_PUBLIC_CALENDAR_URL}
             className={className}
         >
             {text}
