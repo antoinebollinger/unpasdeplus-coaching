@@ -1,5 +1,6 @@
 "use client"
 import Link from "next/link"
+import dynamic from "next/dynamic"
 import Image from "next/image"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLocationDot, faPhone, faCalendarDays, faPaperPlane } from "@fortawesome/free-solid-svg-icons"
@@ -7,9 +8,9 @@ import { useEffect } from "react"
 import { openDialog } from "../utils/dialog"
 import { emailMessage } from "../data/metadata"
 import { CustomEvent } from "../models/types"
-
 import Cabinet from "../../public/images/contact/cabinet.webp"
-import Calendly from "../components/calendly"
+
+const Calendly = dynamic(() => import("../components/calendly"))
 
 export default function Contact({ className = "" }: { className?: string }) {
 

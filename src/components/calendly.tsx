@@ -18,9 +18,9 @@ export default function Calendly({
         </>
     ),
 }: {
-    className?: string;
-    text?: ReactNode;
-    modalTitle?: ReactNode;
+    className?: string,
+    text?: ReactNode,
+    modalTitle?: ReactNode
 }) {
     const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
         e.preventDefault()

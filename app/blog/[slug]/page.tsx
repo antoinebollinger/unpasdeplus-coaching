@@ -6,7 +6,7 @@ import { Post } from "../../../src/models/posts"
 
 export async function generateMetadata({ params }: { params: { slug: string } }) {
     const post: Post = await getPost(params.slug)
-    const title = `${post?.title ?? "Blog"} | ${siteData.title}`;
+    const title = `${post?.title ?? "Blog"} | ${siteData.title}`
     return {
         title,
     }

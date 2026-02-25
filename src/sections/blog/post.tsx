@@ -1,7 +1,5 @@
 import { displayDate } from "../../../src/utils/date"
 import { Post } from "../../../src/models/posts"
-import Comments from "./comments"
-import NewComment from "./newComment"
 import { getPost } from "../../utils/fetch"
 
 export default async function SinglePost({ postId }: { postId: string }) {
@@ -15,8 +13,6 @@ export default async function SinglePost({ postId }: { postId: string }) {
                         <h2>{post.title}</h2>
                         <p><small>{displayDate(post.published)}</small></p>
                         <div className="post-body mb-12" dangerouslySetInnerHTML={{ __html: post.content ?? "" }} />
-                        {/* <Comments postId={postId} className="mb-12" />
-                        <NewComment /> */}
                     </div>
                 </div>
             </div>
