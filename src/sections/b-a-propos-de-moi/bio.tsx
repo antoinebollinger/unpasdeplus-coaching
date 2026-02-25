@@ -14,13 +14,6 @@ export default function Bio({ className = "" }: { className?: string }) {
             collection: document.querySelectorAll(".transition"),
             classesToRemove: ["scale-0", "opacity-0", "translate-y-full", "translate-x-full"]
         })
-        // document.querySelector("#voirParcours").addEventListener("click", e => {
-        //     e.preventDefault()
-        //     const parcours = renderToString(<Parcours />)
-        //     openModal({
-        //         content: parcours
-        //     })
-        // })
     }, [])
 
     return (
@@ -36,9 +29,6 @@ export default function Bio({ className = "" }: { className?: string }) {
                         />
                     </div>
                     <div className="w-full md:w-3/4">
-                        {/* <div className="mb-8 text-center md:text-start mb-10">
-                            <p className="h1">Parce que nous sommes tous confrontés à des défis sur le plan personnel, professionnel ou dans la parentalité.</p>
-                        </div> */}
                         <div className="transition duration-200 opacity-0 translate-y-full">
                             <h2>Parce que nous sommes tous confrontés à des défis sur le plan personnel, professionnel ou dans la parentalité.</h2>
                             <p className="text-lg mb-6">
@@ -89,7 +79,7 @@ export default function Bio({ className = "" }: { className?: string }) {
                     <div className="w-1/2 md:w-1/4 mx-auto transition duration-200 scale-0 opacity-0 md:order-last">
                         <Image
                             src={Sportive}
-                            className="rounded-full"
+                            className="rounded-xl"
                             alt="Sabrina Appriou, sportive au quotidien"
                             title="Sabrina Appriou, sportive au quotidien"
                         />
@@ -141,12 +131,6 @@ export default function Bio({ className = "" }: { className?: string }) {
                         </div>
                     </div>
                 </div>
-
-                {/* <div className="text-center">
-                    <a target="_blank" rel="nofollow" href="#" className="main-btn gradient-btn focus:outline-none uppercase" id="voirParcours">
-                        Voir mon parcours
-                    </a>
-                </div> */}
             </div>
         </section >
     )
