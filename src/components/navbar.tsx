@@ -62,11 +62,11 @@ export default function Navbar() {
                 <ul className="mr-auto navbar-nav lg:flex uppercase" id="main-ul">
                     <li className={`nav-item ${pathname == "/a-propos-de-moi" ? "active" : ""}`}>
                         <Link href="/a-propos-de-moi" className="page-scroll">
-                            À propos <br className="hidden lg:block" />de moi
+                            À propos
                         </Link>
                     </li>
                     <li className={`relative nav-item ${pathname.startsWith("/offres-particuliers") ? "active" : ""}`}>
-                        <Link href="/offres-particuliers">Offres <br className="hidden lg:block" />Particuliers</Link>
+                        <Link href="/offres-particuliers">Je suis un <br className="hidden lg:block" />particulier</Link>
                         <div className="dropdown lg:pt-4 pt-0">
                             <ul>
                                 <li className={`nav-item ${pathname == "/offres-particuliers/coaching-bien-etre-equilibre" ? "active" : ""}`}>
@@ -83,7 +83,7 @@ export default function Navbar() {
                         </div>
                     </li>
                     <li className={`relative nav-item ${pathname.startsWith("/offres-entreprises") ? "active" : ""}`}>
-                        <Link href="/offres-entreprises">Offres <br className="hidden lg:block" />Entreprises</Link>
+                        <Link href="/offres-entreprises">Je suis une <br className="hidden lg:block" />entreprise / collectivité</Link>
                         <div className="dropdown lg:pt-4 pt-0">
                             <ul>
                                 <li className={`nav-item ${pathname == "/offres-entreprises/coaching-gestion-carrieres-transitions" ? "active" : ""}`}>

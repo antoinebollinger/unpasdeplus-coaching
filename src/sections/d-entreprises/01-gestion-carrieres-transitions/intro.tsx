@@ -1,9 +1,11 @@
 "use client"
 import { useEffect } from "react"
 import Image from "next/image"
+import dynamic from "next/dynamic"
 import { reveal } from "../../../utils/reveal"
 import IntroImg from "/public/images/offres-entreprises/gestion-carrieres-transitions/intro.webp"
-import Calendly from "../../../components/calendly"
+
+const Calendly = dynamic(() => import("../../../components/calendly"))
 
 export default function Intro({ className = "" }: { className?: string }) {
     useEffect(() => {

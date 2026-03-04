@@ -60,8 +60,8 @@ export default function Reviews({ reviews = [] }: { reviews?: review[] }) {
                                 <div className="embla__slide" key={i}>
                                     <div className="w-full h-full mx-auto flex flex-col justify-center items-center gap-5">
                                         <h4 className="h2 text-xl text-primary-700" dangerouslySetInnerHTML={{ __html: e.author }} />
-                                        <p className="text-lg text-tertary-900 italic" dangerouslySetInnerHTML={{ __html: e.tag }} ></p>
-                                        <p className="lg:text-lg text-gray-900 lg:px-12 text-center" dangerouslySetInnerHTML={{ __html: e.text }} />
+                                        <p className="text-lg text-yellow-400 italic" dangerouslySetInnerHTML={{ __html: e.tag }} ></p>
+                                        <p className="lg:text-lg text-gray-900 lg:px-12" dangerouslySetInnerHTML={{ __html: e.text }} />
                                     </div>
                                 </div>
                             ))

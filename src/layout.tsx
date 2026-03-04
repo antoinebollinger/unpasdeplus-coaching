@@ -5,7 +5,7 @@ import dynamic from "next/dynamic"
 import { banner, onThisPage } from "./models/types"
 import "./utils/sprintf"
 import { motion } from "framer-motion"
-import Banner from "/public/images/banners/accueil.webp"
+import Banner from "/public/images/banners/default.webp"
 
 const Modal = dynamic(() => import("./utils/modal"))
 const Dialog = dynamic(() => import("./utils/dialog"))

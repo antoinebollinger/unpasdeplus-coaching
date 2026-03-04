@@ -1,5 +1,6 @@
 "use client"
 import Link from "next/link"
+import dynamic from "next/dynamic"
 import Image from "next/image"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLocationDot, faPhone, faCalendarDays, faPaperPlane } from "@fortawesome/free-solid-svg-icons"
@@ -7,8 +8,9 @@ import { useEffect } from "react"
 import { openDialog } from "../utils/dialog"
 import { emailMessage } from "../data/metadata"
 import { CustomEvent } from "../models/types"
-
 import Cabinet from "../../public/images/contact/cabinet.webp"
+
+const Calendly = dynamic(() => import("../components/calendly"))
 
 export default function Contact({ className = "" }: { className?: string }) {
 
@@ -108,7 +110,7 @@ export default function Contact({ className = "" }: { className?: string }) {
                         <div>
                             <h3><FontAwesomeIcon icon={faCalendarDays} /> Sur Calendar</h3>
                             <p className="text-lg md:text-xl">
-                                <a target="_blank" rel="nofollow" href="https://calendar.app.google/awqKqvPV8B19giEm9" className="underline hover:text-secondary-700 transition">Réserver un appel découverte offert</a>
+                                <Calendly className="underline hover:text-secondary-700 transition cursor-pointer" text="Réserver un appel découverte offert" />
                             </p>
                         </div>
                         <div>

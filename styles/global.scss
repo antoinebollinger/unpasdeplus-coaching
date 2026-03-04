@@ -6,6 +6,7 @@
 @import './carousel';
 @import './footer';
 @import './forms';
+@import './modal';
 @import './navbar';
 @import './pages';
 @import './snapScroll';
@@ -49,7 +50,8 @@ h3,
     font-family: var(--font-amatic), sans-serif;
 }
 
-p {
+p,
+li {
     @apply text-gray-700;
 }
 
