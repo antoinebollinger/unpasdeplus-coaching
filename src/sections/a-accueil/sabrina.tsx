@@ -36,7 +36,7 @@ export default function Sabrina({ className = "" }: { className?: string }) {
                             Je suis Sabrina Appriou, coach de vie à Vannes et fondatrice d'<span className="text-primary-600 font-bold">Un Pas de Plus coaching</span>.
                             <br />
                             <br />
-                            J’accompagne les particuliers et les professionnels grâce au coaching de vie, pour retrouver équilibre, confiance en soi et sérénité, en ravaillant à la fois sur le corps, le mental et les émotions.
+                            J’accompagne les particuliers et les professionnels grâce au coaching de vie, pour retrouver équilibre, confiance en soi et sérénité, en travaillant à la fois sur le corps, le mental et les émotions.
                             <br />
                             <br />
                             Mon approche vise une transformation durable, en vous aidant à mobiliser vos ressources pour avancer vers vos objectifs personnels et professionnels.
