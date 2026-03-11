@@ -30,7 +30,7 @@ export default function Bio({ className = "" }: { className?: string }) {
                     </div>
                     <div className="w-full md:w-3/4">
                         <div className="transition duration-200 opacity-0 translate-y-full">
-                            <h2>À propos de moi</h2>
+                            <h1 className="h2">Coach de vie à Vannes | Coaching personnel & bien-être - <strong><span className={`${madelyn.className} text-5xl lg:text-4xl -translate-y-4`}>Un&nbsp;Pas&nbsp;de&nbsp;Plus</span>&nbsp;Coaching</strong></h1>
                             <p className="text-lg mb-6">
                                 Depuis plus de 20 ans, je pratique la course à pied, sur route comme en trail, en connexion avec la nature.
                             </p>
