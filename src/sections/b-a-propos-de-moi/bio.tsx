@@ -19,7 +19,7 @@ export default function Bio({ className = "" }: { className?: string }) {
     return (
         <section id="bio" className={className}>
             <div className="container">
-                <div className="flex flex-col md:flex-row gap-6 justify-center items-center mb-16">
+                <div className="flex flex-col md:flex-row gap-6 justify-center items-start mb-16">
                     <div className="w-1/2 md:w-1/4 mx-auto transition duration-200 scale-0 opacity-0">
                         <Image
                             src={Sabrina}
