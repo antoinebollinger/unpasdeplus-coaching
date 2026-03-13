@@ -200,7 +200,7 @@ export default function Footer({
                     <div className="row">
                         <div className="w-full h-[72px] flex justify-center items-center">
                             <p className="text-white text-center">
-                                Copyright © {siteData.domain} {year()}<br />Site réalisé par <a target="_blank" className="font-bold duration-200 hover:text-primary-300" rel="nofollow" href="https://antoinebollinger.fr">Antoine Bollinger</a>
+                                Copyright © {siteData.domain} {year()}<br />Site réalisé par <a target="_blank" className="font-bold duration-200 hover:text-primary-300" rel="nofollow" href="https://antoinebollinger.partez.net">Antoine Bollinger</a>
                             </p>
                         </div>
                         <div className="w-full h-[72px] md:hidden"></div>

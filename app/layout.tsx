@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: siteData.title,
     description: siteData.description,
     keywords: ["santé mentale", "santé physique", "mouvement", "coaching", "activité physique adaptée", "objectifs", "motivation", "bien-être"],
-    authors: [{ name: siteData.author, url: "https://antoinebollinger.fr" }],
+    authors: [{ name: siteData.author, url: "https://antoinebollinger.partez.net" }],
     openGraph: {
         siteName: siteData.title,
         title: siteData.title,

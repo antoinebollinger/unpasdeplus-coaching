@@ -19,7 +19,7 @@ export default function MentionsLegales() {
                     Tel.&nbsp;: <strong>+33(0)6 61 79 46 99</strong><br />
                     Courriel&nbsp;: <strong><a href={`mailto:${process.env.NEXT_PUBLIC_EMAIL_TO}`}>{process.env.NEXT_PUBLIC_EMAIL_TO}</a></strong><br />
                     Directrice de la publication&nbsp;: <strong>{siteData.owner}</strong><br />
-                    Conception et réalisation&nbsp;: <strong><a href="https://antoinebollinger.fr" target="_blank">antoinebollinger.fr</a></strong><br />
+                    Conception et réalisation&nbsp;: <strong><a href="https://antoinebollinger.partez.net" target="_blank">antoinebollinger.partez.net</a></strong><br />
                 </p>
 
                 <h2>Hébergement&nbsp;:</h2>
