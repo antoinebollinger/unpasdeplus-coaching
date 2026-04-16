@@ -1,12 +1,12 @@
 import Layout from "../../../src/layout"
-import Intro from "../../../src/sections/d-entreprises/03-carriere-parentalite/intro"
+import Intro from "../../../src/sections/d-entreprises/01-parentalite-entreprise/intro"
+import Pourquoi from "../../../src/sections/d-entreprises/01-parentalite-entreprise/pourquoi"
+import Enjeux from "../../../src/sections/d-entreprises/01-parentalite-entreprise/enjeux"
+import Accompagnement from "../../../src/sections/d-entreprises/01-parentalite-entreprise/accompagnement"
+import Performance from "../../../src/sections/d-entreprises/01-parentalite-entreprise/benefices"
+
 import Banner from "/public/images/banners/entreprise.webp"
 import { siteData } from "../../../src/data/metadata"
-import Enjeux from "../../../src/sections/d-entreprises/03-carriere-parentalite/enjeux"
-import Risques from "../../../src/sections/d-entreprises/03-carriere-parentalite/risques"
-import Performance from "../../../src/sections/d-entreprises/03-carriere-parentalite/performance"
-import Attractivite from "../../../src/sections/d-entreprises/03-carriere-parentalite/attractivite"
-import Cles from "../../../src/sections/d-entreprises/03-carriere-parentalite/cles"
 
 export const metadata = {
     title: `Coaching Carrière & Parentalité | ${siteData.title}`,
@@ -20,27 +20,30 @@ export default function Page() {
             link: "#header"
         },
         {
+            title: "Pourquoi&nbsp;?",
+            link: "#pourquoi"
+        },
+        {
             title: "Les enjeux",
             link: "#enjeux"
         },
         {
-            title: "Bien-être et performance",
-            link: "#performance"
+            title: "Mon accompagnement",
+            link: "#accompagnement"
         },
         {
-            title: "Les clés pour accompagner la parentalité",
-            link: "#cles"
+            title: "Les bénéfices",
+            link: "#benefices"
         }
     ]
 
     return (
         <Layout banner={Banner} onThisPage={onThisPage}>
             <Intro />
+            <Pourquoi />
             <Enjeux />
-            <Risques />
+            <Accompagnement />
             <Performance />
-            <Attractivite />
-            <Cles />
         </Layout >
     )
 }

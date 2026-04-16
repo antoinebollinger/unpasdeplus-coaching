@@ -86,6 +86,11 @@ export default function Navbar() {
                         <Link href="/offres-entreprises">Je suis une <br className="hidden lg:block" />entreprise / collectivité</Link>
                         <div className="dropdown lg:pt-4 pt-0">
                             <ul>
+                                <li className={`nav-item ${pathname == "/offres-entreprises/coaching-parentalite-entreprise" ? "active" : ""}`}>
+                                    <Link href="/offres-entreprises/coaching-parentalite-entreprise" className="page-scroll">
+                                        Parentalité en entreprise
+                                    </Link>
+                                </li>
                                 <li className={`nav-item ${pathname == "/offres-entreprises/coaching-gestion-carrieres-transitions" ? "active" : ""}`}>
                                     <Link href="/offres-entreprises/coaching-gestion-carrieres-transitions" className="page-scroll">
                                         Gestion des Carrières & Transitions
@@ -94,11 +99,6 @@ export default function Navbar() {
                                 <li className={`nav-item ${pathname == "/offres-entreprises/coaching-bien-etre-travail-performance" ? "active" : ""}`}>
                                     <Link href="/offres-entreprises/coaching-bien-etre-travail-performance" className="page-scroll">
                                         Bien-être au Travail & Performance
-                                    </Link>
-                                </li>
-                                <li className={`nav-item ${pathname == "/offres-entreprises/coaching-carriere-parentalite" ? "active" : ""}`}>
-                                    <Link href="/offres-entreprises/coaching-carriere-parentalite" className="page-scroll">
-                                        Carrière & Parentalité
                                     </Link>
                                 </li>
                             </ul>

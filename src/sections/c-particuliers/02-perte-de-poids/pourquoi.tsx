@@ -17,7 +17,7 @@ export default function Pourquoi({ className = "bg-gray-100" }: { className?: st
         <section id="pourquoi" className={className}>
             <div className="container">
                 <div className="w-full lg:w-3/4 mx-auto">
-                    <h2>Pourquoi les régimes ne fonctionnent pas sur le long terme</h2>
+                    <h2>Pourquoi les régimes ne fonctionnent pas sur le long terme&nbsp;?</h2>
                     <br />
                     <p className="text-lg leading-6 mb-6">
                         Beaucoup de personnes ont vécu l’expérience des régimes&nbsp;: perte de poids rapide, puis reprise progressive.
