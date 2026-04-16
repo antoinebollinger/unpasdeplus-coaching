@@ -18,31 +18,25 @@ export default function Intro({ className = "" }: { className?: string }) {
     return (
         <section id="introduction" className={className}>
             <div className="container">
-                <div className="flex flex-col lg:flex-row gap-6 justify-center items-center mb-16">
-                    <div className="w-2/3 lg:w-1/4">
+                <div className="flex flex-col lg:flex-row gap-6 justify-center items-center lg:items-start mb-16">
+                    <div className="w-2/3 lg:w-1/4 order-0 lg:order-1">
                         <Image
                             src={IntroImg}
-                            className="w-full rounded-full mx-auto transition duration-200 scale-0 entreprises-img"
+                            className="w-full rounded-xl mx-auto transition duration-200 scale-0 entreprises-img"
                             alt="Le coaching en entreprise"
                             title="Le coaching en entreprise"
                         />
                     </div>
                     <div className="w-full lg:w-3/4">
-                        <h1>Accompagner la parentalité en entreprise</h1>
+                        <h1>Parentalité en entreprise&nbsp;: accompagner les salariés parents et améliorer la qualité de vie au travail</h1>
                         <br />
                         <p className="text-lg leading-6 mb-6">
-                            <strong>Concilier vie pro perso</strong> est un défi constant, et jugé <strong>difficile</strong> pour les <strong>parents actifs pour 77%</strong>.
-                            <br />
-                            <br />
-                            Notre mission&nbsp;: agir sur le <strong>bien-être des salariés-parents</strong> pour permettre aux entreprises d’avoir des <strong>salariés en forme</strong> et <strong>concilier sereinement parentalité et travail</strong>.
-                        </p>
-                        <p className="text-xl leading-8 mb-6">
-                            <strong>Conciliation travail & famille</strong>&nbsp;: une priorité n° 1 pour 66% des parents.
+                            La <strong>parentalité en entreprise</strong> est devenue un véritable enjeu pour les organisations. Aujourd’hui, de nombreux salariés doivent <strong>concilier vie professionnelle et vie familiale</strong>, gérer leur <strong>charge mentale</strong>, faire face à la fatigue, ou aux imprévus liés au quotidien parental. La mise en place  politique de <strong>bien-être au travail</strong> centrée sur les parents contribue à renforcer l’engagement et la performance des équipes.
                         </p>
                     </div>
                 </div>
                 <div className="text-center">
-                    <Calendly />
+                    <Calendly text={<>Agissez pour la parentalité<br />et le bien-être de vos équipes</>} />
                 </div>
             </div>
         </section>

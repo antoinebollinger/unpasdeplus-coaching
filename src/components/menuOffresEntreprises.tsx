@@ -17,6 +17,12 @@ export default function MenuOffresEntreprises() {
     return (
         <div className="flex flex-col lg:flex-row gap-16 justify-center items-stretch mb-16">
             {offres(
+                Entreprise_3,
+                "Coaching<br/>Parentalité en entreprise",
+                "/offres-entreprises/coaching-parentalite-entreprise",
+                "Coaching Parentalité en entreprise"
+            )}
+            {offres(
                 Entreprise_1,
                 "Coaching<br/>Gestion des carrières & transitions",
                 "/offres-entreprises/coaching-gestion-carrieres-transitions",
@@ -27,12 +33,6 @@ export default function MenuOffresEntreprises() {
                 "Coaching<br/>Bien-être au travail & performance",
                 "/offres-entreprises/coaching-bien-etre-travail-performance",
                 "Coaching Bien-être au travail & performance"
-            )}
-            {offres(
-                Entreprise_3,
-                "Coaching<br/>Carrière & parentalité",
-                "/offres-entreprises/coaching-carriere-parentalite",
-                "Coaching Carrière & Parentalité"
             )}
         </div>
     )
