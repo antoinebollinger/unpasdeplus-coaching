@@ -80,7 +80,7 @@ export default function Intro({ className = "" }: { className?: string }) {
                     </div>
                 </div>
                 <div className="text-center">
-                    <Calendly />
+                    <Calendly text={<>Réserver votre premier échange offert</>} />
                 </div>
             </div>
         </section >
