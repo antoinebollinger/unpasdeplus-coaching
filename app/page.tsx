@@ -7,8 +7,6 @@ const Offres = dynamic(() => import("../src/sections/a-accueil/offres"))
 const Avis = dynamic(() => import("../src/sections/a-accueil/avis"))
 const Sabrina = dynamic(() => import("../src/sections/a-accueil/sabrina"))
 const Faq = dynamic(() => import("../src/sections/a-accueil/faq"))
-const Apports = dynamic(() => import("../src/sections/a-accueil/apports"))
-const Partenaires = dynamic(() => import("../src/sections/a-accueil/partenaires"))
 
 export default function Page() {
     const onThisPage = [

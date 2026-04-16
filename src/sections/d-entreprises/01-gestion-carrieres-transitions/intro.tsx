@@ -22,7 +22,7 @@ export default function Intro({ className = "" }: { className?: string }) {
                     <div className="w-2/3 lg:w-1/4">
                         <Image
                             src={IntroImg}
-                            className="w-full rounded-full mx-auto transition duration-200 scale-0 entreprises-img"
+                            className="w-full rounded-xl mx-auto transition duration-200 scale-0 entreprises-img"
                             alt="Le coaching en entreprise"
                             title="Le coaching en entreprise"
                         />
