@@ -1,12 +1,14 @@
 import Layout from "../../../src/layout"
-import Intro from "../../../src/sections/c-particuliers/01-bien-etre-equilibre/intro"
-import Qui from "../../../src/sections/c-particuliers/01-bien-etre-equilibre/qui"
-import Quoi from "../../../src/sections/c-particuliers/01-bien-etre-equilibre/quoi"
-import Pratique from "../../../src/sections/c-particuliers/01-bien-etre-equilibre/pratique"
-import Temoignages from "../../../src/sections/c-particuliers/01-bien-etre-equilibre/temoignages"
+import Intro from "../../../src/sections/c-particuliers/01-confiance-en-soi/intro"
+import Consequences from "../../../src/sections/c-particuliers/01-confiance-en-soi/consequences"
+import Possible from "../../../src/sections/c-particuliers/01-confiance-en-soi/possible"
+import Accompagnement from "../../../src/sections/c-particuliers/01-confiance-en-soi/accompagnement"
+import Temoignages from "../../../src/sections/c-particuliers/01-confiance-en-soi/temoignages"
 
-import Banner from "/public/images/banners/bien-etre-equilibre.webp"
+import Banner from "/public/images/banners/confiance-en-soi.webp"
 import { siteData } from "../../../src/data/metadata"
+import Qui from "../../../src/sections/c-particuliers/01-confiance-en-soi/qui"
+import Pourquoi from "../../../src/sections/c-particuliers/01-confiance-en-soi/pourquoi"
 
 export const metadata = {
     title: `Coaching bien-être & équilibre | ${siteData.title}`,
@@ -21,7 +23,7 @@ export default function Page() {
         },
         {
             title: "En pratique",
-            link: "#pratique"
+            link: "#accompagnement"
         },
         {
             title: "Témoignages",
@@ -32,9 +34,11 @@ export default function Page() {
     return (
         <Layout banner={Banner} onThisPage={onThisPage}>
             <Intro />
+            <Consequences />
+            <Possible />
+            <Accompagnement />
             <Qui />
-            <Quoi />
-            <Pratique />
+            <Pourquoi />
             <Temoignages />
         </Layout >
     )

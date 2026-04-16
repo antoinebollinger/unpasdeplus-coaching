@@ -1,7 +1,6 @@
 "use client"
 import { useEffect } from "react"
 import Image, { StaticImageData } from "next/image"
-import Link from "next/link"
 import dynamic from "next/dynamic"
 import { reveal } from "../../../utils/reveal"
 import Coaching_1 from "/public/images/offres-entreprises/carriere-parentalite/coaching_1.webp"

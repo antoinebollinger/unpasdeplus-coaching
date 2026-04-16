@@ -5,7 +5,7 @@ import dynamic from "next/dynamic"
 import { reveal } from "../../../utils/reveal"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCheck } from "@fortawesome/free-solid-svg-icons"
-import IntroImg from "/public/images/offres-particuliers/perte-de-poids/intro.webp"
+import IntroImg from "/public/images/offres-particuliers/confiance-en-soi/intro.webp"
 
 const Calendly = dynamic(() => import("../../../components/calendly"))
 
@@ -30,52 +30,48 @@ export default function Intro({ className = "" }: { className?: string }) {
                         <Image
                             src={IntroImg}
                             className="w-full rounded-xl mx-auto transition duration-200 scale-0"
-                            alt="Perdre du poids de manière saine et durable"
-                            title="Perdre du poids de manière saine et durable"
+                            alt="Retrouver confiance en soi et bien-être au quotidien"
+                            title="Retrouver confiance en soi et bien-être au quotidien"
                         />
                     </div>
                     <div className="w-full lg:w-3/4">
-                        <h1>Coach de perte de poids durable à Vannes et alentours et en ligne</h1>
+                        <h1>Retrouver confiance en soi<br />et oser prendre sa place</h1>
                         <br />
-                        <p className="text-lg leading-6 mb-6">
-                            Perdre du poids ne se résume pas à suivre un régime.<br />
-                            La vraie transformation se joue dans votre <strong>relation à l’alimentation</strong>, <strong>vos émotions</strong>, <strong>votre motivation</strong> et <strong>votre mode de vie</strong>.
-                            <br />
-                            <br />
-                            Mon accompagnement en <strong>coaching perte de poids</strong> repose sur une approche complète&nbsp;:
-                        </p>
+                        <h2>Vous manquez de confiance en vous&nbsp;?</h2>
+                        <h3>Vous vous reconnaissez dans ces situations&nbsp;?</h3>
                         <ul className="list-none list-inside fa-ul text-lg leading-8">
                             <li>
                                 <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
-                                Développement de la <strong>motivation pour la perte de poids</strong>
+                                Vous avez <strong>peur du regard des autres ou de vous sentir jugé·e</strong>
                             </li>
                             <li>
                                 <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
-                                <strong>Rééquilibrage alimentaire</strong>
+                                Vous n’arrivez pas à <strong>dire non</strong>
                             </li>
                             <li>
                                 <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
-                                Travail sur le <strong>comportement alimentaire</strong>
+                                Vous ressentez une <strong>difficulté à vous affirmer</strong>
                             </li>
                             <li>
                                 <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
-                                Compréhension du <strong>rapport à la nourriture</strong>
+                                <strong>Votre perfectionniste vous empêche de passer à l’action</strong>
                             </li>
                             <li>
                                 <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
-                                Gestion des <strong>émotions liées à l’alimentation</strong>
+                                Vous vous <strong>comparez sans cesse aux autres</strong>
                             </li>
                             <li>
                                 <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
-                                L’activité physique et le mouvement
+                                Vous avez un <strong>sentiment d’illégitimité</strong>
                             </li>
                             <li>
                                 <span className="fa-li text-tertary-900"><FontAwesomeIcon icon={faCheck} /></span>
-                                L’image de soi
+                                Vos <strong>croyances limitantes</strong> vous freinent
                             </li>
                         </ul>
-                        <p className="text-lg leading-6 mt-6">
-                            L’objectif n’est pas seulement de perdre du poids, mais de <strong>retrouver un rapport apaisé à la nourriture et à son corps</strong>, pour des résultats durables.
+                        <br />
+                        <p className="text-lg leading-6">
+                            Le manque de confiance en soi peut impacter profondément votre vie professionnelle et personnelle.
                         </p>
                     </div>
                 </div>
@@ -83,6 +79,6 @@ export default function Intro({ className = "" }: { className?: string }) {
                     <Calendly text={<>Réserver votre premier échange offert</>} />
                 </div>
             </div>
-        </section >
+        </section>
     )
 }

@@ -17,9 +17,9 @@ export default function MenuOffresParticuliers() {
         <div className="flex flex-col lg:flex-row gap-16 justify-center items-stretch mb-16">
             {offres(
                 Equilibre,
-                "Coaching<br/>Bien-être & équilibre",
-                "/offres-particuliers/coaching-bien-etre-equilibre",
-                "Bien-être & équilibre"
+                "Coaching<br/>Confiance en soi",
+                "/offres-particuliers/coaching-confiance-en-soi",
+                "Confiance en soi"
             )}
             {offres(
                 Balance,

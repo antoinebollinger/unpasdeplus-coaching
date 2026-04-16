@@ -16,7 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
             lastModified: new Date(),
         },
         {
-            url: `${siteData.url}/offres-particuliers/coaching-bien-etre-equilibre`,
+            url: `${siteData.url}/offres-particuliers/coaching-confiance-en-soi`,
             lastModified: new Date(),
         },
         {
@@ -32,7 +32,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
             lastModified: new Date(),
         },
         {
-            url: `${siteData.url}/offres-entreprises/coaching-carriere-parentalite`,
+            url: `${siteData.url}/offres-entreprises/coaching-parentalite-entreprise`,
             lastModified: new Date(),
         },
         {

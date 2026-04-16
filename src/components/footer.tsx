@@ -136,8 +136,8 @@ export default function Footer({
                             <p className="footer-title"><Link href="/offres-particuliers">Je suis un particulier</Link></p>
                             <ul className="footer-link">
                                 <li>
-                                    <Link href="/offres-particuliers/coaching-bien-etre-equilibre">
-                                        Coaching bien-être & équilibre
+                                    <Link href="/offres-particuliers/coaching-confiance-en-soi">
+                                        Coaching confiance en soi
                                     </Link>
                                 </li>
 

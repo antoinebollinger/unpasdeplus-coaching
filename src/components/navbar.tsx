@@ -69,9 +69,9 @@ export default function Navbar() {
                         <Link href="/offres-particuliers">Je suis un <br className="hidden lg:block" />particulier</Link>
                         <div className="dropdown lg:pt-4 pt-0">
                             <ul>
-                                <li className={`nav-item ${pathname == "/offres-particuliers/coaching-bien-etre-equilibre" ? "active" : ""}`}>
-                                    <Link href="/offres-particuliers/coaching-bien-etre-equilibre" className="page-scroll">
-                                        Coaching bien-être & équilibre
+                                <li className={`nav-item ${pathname == "/offres-particuliers/coaching-confiance-en-soi" ? "active" : ""}`}>
+                                    <Link href="/offres-particuliers/coaching-confiance-en-soi" className="page-scroll">
+                                        Coaching confiance en soi
                                     </Link>
                                 </li>
                                 <li className={`nav-item ${pathname == "/offres-particuliers/coaching-perte-de-poids" ? "active" : ""}`}>
