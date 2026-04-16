@@ -9,8 +9,8 @@ import { faCheck } from "@fortawesome/free-solid-svg-icons"
 export default function Methode({ className = "" }: { className?: string }) {
     useEffect(() => {
         reveal({
-            collection: document.querySelectorAll("#methode img, #methode p"),
-            classesToRemove: ["opacity-0", "scale-0"],
+            collection: document.querySelectorAll("#methode .transition"),
+            classesToRemove: ["translate-y-full", "scale-0", "opacity-0"],
             delayIncrement: 50
         })
     }, [])
@@ -27,12 +27,12 @@ export default function Methode({ className = "" }: { className?: string }) {
                             title="Entrainement adapté, alimentation équilibrée"
                         />
                     </div>
-                    <div className="w-full md:w-3/4 flex flex-col gap-6">
+                    <div className="w-full md:w-3/4 flex flex-col gap-12">
                         <h2>Une approche globale du coaching perte de poids</h2>
                         <p className="text-lg leading-6">La perte de poids durable passe par plusieurs dimensions.</p>
-                        <div>
+                        <div className="transition duration-200 opacity-0 translate-y-full">
                             <h3>Le rééquilibrage alimentaire</h3>
-                            <p className="text-lg leading-6 transition duration-200 opacity-0 text">
+                            <p className="text-lg leading-6">
                                 Le rééquilibrage alimentaire consiste à retrouver une alimentation variée et équilibrée, adaptée à votre mode de vie.
                                 <br />
                                 Il ne s’agit pas d’interdire certains aliments, mais d’apprendre à mieux comprendre vos besoins et vos habitudes.
@@ -40,9 +40,9 @@ export default function Methode({ className = "" }: { className?: string }) {
                                 L’objectif est de retrouver un <strong>équilibre alimentaire durable</strong>, sans frustration ni culpabilité.
                             </p>
                         </div>
-                        <div>
+                        <div className="transition duration-200 opacity-0 translate-y-full">
                             <h3>Comprendre son comportement alimentaire</h3>
-                            <p className="text-lg leading-6 transition duration-200 opacity-0 text">
+                            <p className="text-lg leading-6">
                                 Le comportement alimentaire est influencé par de nombreux facteurs&nbsp;: habitudes, émotions, stress ou fatigue.
                                 <br />
                                 Certaines situations peuvent entraîner&nbsp;:
@@ -64,9 +64,9 @@ export default function Methode({ className = "" }: { className?: string }) {
                                 Le coaching permet d’identifier ces mécanismes afin de mieux comprendre votre rapport à la nourriture.
                             </p>
                         </div>
-                        <div>
+                        <div className="transition duration-200 opacity-0 translate-y-full">
                             <h3>La perte de poids émotionnelle</h3>
-                            <p className="text-lg leading-6 transition duration-200 opacity-0 text">
+                            <p className="text-lg leading-6">
                                 Les émotions jouent un rôle important dans notre relation à l’alimentation.
                                 <br />
                                 Stress, ennui, fatigue ou surcharge mentale peuvent conduire à manger sans faim.
@@ -74,9 +74,9 @@ export default function Methode({ className = "" }: { className?: string }) {
                                 Travailler sur la perte de poids émotionnelle permet d’apprendre à reconnaître ces mécanismes et à développer d’autres stratégies pour gérer ses émotions.
                             </p>
                         </div>
-                        <div>
+                        <div className="transition duration-200 opacity-0 translate-y-full">
                             <h3>L’image de soi et la relation au corps</h3>
-                            <p className="text-lg leading-6 transition duration-200 opacity-0 text">
+                            <p className="text-lg leading-6">
                                 La perte de poids est souvent liée à la manière dont on se perçoit.
                                 <br />
                                 Une image de soi fragilisée peut influencer la motivation, la relation à l’alimentation et la confiance en sa capacité à changer.
@@ -100,9 +100,9 @@ export default function Methode({ className = "" }: { className?: string }) {
                                 Améliorer l’image de soi aide souvent à renforcer la motivation pour la perte de poids et à installer des changements durables.
                             </p>
                         </div>
-                        <div>
+                        <div className="transition duration-200 opacity-0 translate-y-full">
                             <h3>Retrouver la motivation pour la perte de poids</h3>
-                            <p className="text-lg leading-6 transition duration-200 opacity-0 text">
+                            <p className="text-lg leading-6">
                                 La motivation peut fluctuer au fil du temps.
                                 <br />
                                 Le coaching permet de renforcer votre motivation pour la perte de poids en clarifiant vos objectifs et en mettant en place des <strong>habitudes progressives et réalistes</strong>.
@@ -110,9 +110,9 @@ export default function Methode({ className = "" }: { className?: string }) {
                                 L’idée est de construire un changement durable, adapté à votre rythme de vie.
                             </p>
                         </div>
-                        <div>
+                        <div className="transition duration-200 opacity-0 translate-y-full">
                             <h3>Remettre du mouvement dans son quotidien</h3>
-                            <p className="text-lg leading-6 transition duration-200 opacity-0 text">
+                            <p className="text-lg leading-6">
                                 L’activité physique joue un rôle essentiel dans l’équilibre global.
                                 <br />
                                 Il ne s’agit pas forcément de pratiquer un sport intensif, mais d’intégrer davantage de mouvement dans votre quotidien.

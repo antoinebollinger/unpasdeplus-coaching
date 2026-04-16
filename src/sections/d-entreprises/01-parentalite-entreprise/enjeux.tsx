@@ -20,7 +20,7 @@ export default function Enjeux({ className = "" }: { className?: string }) {
                     <p className="text-lg leading-6">
                         Les parents salariés doivent souvent jongler entre les obligations professionnelles, la <strong>charge familiale</strong>, la gestion des enfants et le maintien de leur performance au travail. Cette double responsabilité peut générer&nbsp;:
                     </p>
-                    <div className=" transition duration-200 opacity-0 translate-y-full">
+                    <div className="transition duration-200 opacity-0 translate-y-full">
                         <h3>
                             Charge mentale et fatigue
                         </h3>
