@@ -6,7 +6,7 @@ import { review } from "../models/types"
 
 export const reviews: review[] = [
     {
-        author: "Delphine",
+        author: "Delphine, 43 ans - Annecy",
         text: "Sabrina a été une bouffée d'oxygène dans mon chemin du changement.<br/>Elle m'a accompagné pendant plusieurs mois pour m'emmener vers mon objectif de perte de poids, d'atteinte d'un défi sportif, un équilibre mental qui m'aide à continuer d'avancer.<br/>Sans aucune hésitation, son coaching est ce qui m'était nécessaire pour amorcer ce que je n'arrivais pas depuis des années à accomplir. Merci Sabrina pour tout",
         tag: renderToString(<><FontAwesomeIcon icon={faStar} />
             <FontAwesomeIcon icon={faStar} />
@@ -15,7 +15,7 @@ export const reviews: review[] = [
             <FontAwesomeIcon icon={faStar} /></>)
     },
     {
-        author: "Clara",
+        author: "Clara, 46 ans - Paris",
         text: "Je suis ravie d’avoir été accompagnée par Sabrina qui est très professionnelle. C’est une Coach très positive et douce qui rassure et met en confiance ! Sabrina m’a aidé à atteindre mes objectifs de perte de poids en débloquant les barrières psychologiques qui me freinaient dans ma réussite.<br/>Je conseille fortement l’aide d’un coach qui nous aide à « cadrer » nos objectifs afin qu’ils soient atteignables et mesurables dans le temps.<br/>Sabrina est disponible et positive, c’est un plaisir de travailler avec elle ! Elle a su m’acompagner au-delà de mes attentes initiales.",
         tag: renderToString(<><FontAwesomeIcon icon={faStar} />
             <FontAwesomeIcon icon={faStar} />

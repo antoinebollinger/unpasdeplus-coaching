@@ -3,9 +3,10 @@ import Intro from "../../../src/sections/c-particuliers/01-bien-etre-equilibre/i
 import Qui from "../../../src/sections/c-particuliers/01-bien-etre-equilibre/qui"
 import Quoi from "../../../src/sections/c-particuliers/01-bien-etre-equilibre/quoi"
 import Pratique from "../../../src/sections/c-particuliers/01-bien-etre-equilibre/pratique"
+import Temoignages from "../../../src/sections/c-particuliers/01-bien-etre-equilibre/temoignages"
+
 import Banner from "/public/images/banners/bien-etre-equilibre.webp"
 import { siteData } from "../../../src/data/metadata"
-import Temoignages from "../../../src/sections/c-particuliers/01-bien-etre-equilibre/temoignages"
 
 export const metadata = {
     title: `Coaching bien-être & équilibre | ${siteData.title}`,
