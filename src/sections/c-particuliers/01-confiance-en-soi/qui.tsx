@@ -41,7 +41,7 @@ export default function Qui({ className = "" }: { className?: string }) {
                     <ul className="list-none list-inside fa-ul flex flex-col" dangerouslySetInnerHTML={{ __html: text }} />
                 </div >
                 <div className="text-center mt-auto">
-                    <Calendly text="Réserver" />
+                    <Calendly />
                 </div>
             </div >
         )

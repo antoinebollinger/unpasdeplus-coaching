@@ -70,7 +70,7 @@ export default function Possible({ className = "" }: { className?: string }) {
                     </div>
                 </div>
                 <div className="text-center">
-                    <Calendly text={<>Réserver votre premier échange offert</>} />
+                    <Calendly />
                 </div>
             </div>
         </section>

@@ -9,7 +9,7 @@ export default function Calendly({
     className = "main-btn gradient-btn focus:outline-none uppercase cursor-pointer",
     text = (
         <>
-            <FontAwesomeIcon icon={faCalendarDays} />&nbsp;&nbsp;Réserver votre<br />appel découverte offert
+            <FontAwesomeIcon icon={faCalendarDays} />&nbsp;&nbsp;Réserver votre<br />premier échange offert
         </>
     ),
     modalTitle = (

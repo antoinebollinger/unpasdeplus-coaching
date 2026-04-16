@@ -17,7 +17,7 @@ export default function Temoignages({ className = "" }: { className?: string }) 
                     <strong>Prêt(e) à reprendre confiance en vous et à révéler votre potentiel&nbsp;?</strong>
                 </p>
                 <div className="text-center">
-                    <Calendly text={<>Réserver votre premier échange offert</>} />
+                    <Calendly />
                 </div>
             </div>
         </section >

@@ -110,7 +110,7 @@ export default function Contact({ className = "" }: { className?: string }) {
                         <div>
                             <h3><FontAwesomeIcon icon={faCalendarDays} /> Sur Calendar</h3>
                             <p className="text-lg md:text-xl">
-                                <Calendly className="underline hover:text-secondary-700 transition cursor-pointer" text="Réserver un appel découverte offert" />
+                                <Calendly />
                             </p>
                         </div>
                         <div>
