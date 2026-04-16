@@ -4,8 +4,14 @@ import Performance from "../../../src/sections/d-entreprises/02-bien-etre-travai
 import Benefices from "../../../src/sections/d-entreprises/02-bien-etre-travail-performance/benefices"
 import Offres from "../../../src/sections/d-entreprises/02-bien-etre-travail-performance/offres"
 import Approches from "../../../src/sections/d-entreprises/02-bien-etre-travail-performance/approches"
-import Banner from "/public/images/banners/entreprise.webp"
 import Temoignages from "../../../src/sections/d-entreprises/02-bien-etre-travail-performance/temoignages"
+
+import Banner from "/public/images/banners/entreprise.webp"
+import { siteData } from "../../../src/data/metadata"
+
+export const metadata = {
+    title: `Coaching bien-être au travail & performance | ${siteData.title}`
+}
 
 export default function Page() {
     const onThisPage = [

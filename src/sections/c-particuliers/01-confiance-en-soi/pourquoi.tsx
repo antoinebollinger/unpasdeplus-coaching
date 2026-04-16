@@ -58,7 +58,7 @@ export default function Pourquoi({ className = "bg-gray-100" }: { className?: st
                                 </li>
                             </ul>
                         </div>
-                        <div>
+                        <div className="transition duration-200 opacity-0 translate-y-full">
                             <h2>Prêt·e à reprendre confiance en vous&nbsp;?</h2>
                             <p className="text-lg leading-6">
                                 Vous méritez de vous sentir légitime, aligné·e et serein·e.

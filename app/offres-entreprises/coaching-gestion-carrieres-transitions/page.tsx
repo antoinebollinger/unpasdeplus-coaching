@@ -2,8 +2,14 @@ import Layout from "../../../src/layout"
 import Intro from "../../../src/sections/d-entreprises/01-gestion-carrieres-transitions/intro"
 import Pourquoi from "../../../src/sections/d-entreprises/01-gestion-carrieres-transitions/pourquoi"
 import Offre from "../../../src/sections/d-entreprises/01-gestion-carrieres-transitions/offre"
-import Banner from "/public/images/banners/entreprise.webp"
 import Temoignages from "../../../src/sections/d-entreprises/01-gestion-carrieres-transitions/temoignages"
+
+import Banner from "/public/images/banners/entreprise.webp"
+import { siteData } from "../../../src/data/metadata"
+
+export const metadata = {
+    title: `Coaching gestion de carrière & transitions | ${siteData.title}`
+}
 
 export default function Page() {
     const onThisPage = [

@@ -9,7 +9,7 @@ import Banner from "/public/images/banners/entreprise.webp"
 import { siteData } from "../../../src/data/metadata"
 
 export const metadata = {
-    title: `Coaching Carrière & Parentalité | ${siteData.title}`,
+    title: `Coaching parentalité en entreprise | ${siteData.title}`,
     description: "Prendre soin de la santé physique et mentale de vos collaborateurs, c'est être attentif à la qualité de vie au travail et renforcer de meilleures conditions de travail."
 }
 
