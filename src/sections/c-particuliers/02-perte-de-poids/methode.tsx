@@ -18,8 +18,8 @@ export default function Methode({ className = "" }: { className?: string }) {
     return (
         <section id="methode" className={className}>
             <div className="container">
-                <div className="flex flex-col md:flex-row gap-6 justify-center items-start">
-                    <div className="w-1/2 md:w-1/4 order-1 lg:order-0">
+                <div className="flex flex-col lg:flex-row gap-6 justify-center items-center lg:items-start">
+                    <div className="w-1/2 md:w-1/4 order-0 lg:order-1">
                         <Image
                             src={Balance}
                             className="w-full rounded-xl mx-auto transition duration-200 scale-0"

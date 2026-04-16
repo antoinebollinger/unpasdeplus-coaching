@@ -22,8 +22,8 @@ export default function Resultat({ className = "bg-gray-100" }: { className?: st
     return (
         <section id="resultat" className={className}>
             <div className="container">
-                <div className="w-full lg:w-3/4 mx-auto flex flex-col md:flex-row gap-6 justify-center items-start">
-                    <div className="w-1/2 md:w-1/4 order-1 lg:order-0">
+                <div className="w-full lg:w-3/4 mx-auto flex flex-col lg:flex-row gap-6 justify-center items-center lg:items-start">
+                    <div className="w-1/2 md:w-1/4 order-0 lg:order-1">
                         <Image
                             src={Youpi}
                             className="w-full rounded-xl mx-auto transition duration-200 scale-0"

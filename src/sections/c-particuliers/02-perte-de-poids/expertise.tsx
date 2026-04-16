@@ -22,7 +22,7 @@ export default function Expertise({ className = "" }: { className?: string }) {
     return (
         <section id="resultat" className={className}>
             <div className="container">
-                <div className="flex flex-col md:flex-row gap-6 justify-center items-start">
+                <div className="flex flex-col md:flex-row gap-6 justify-center items-center lg:items-start">
                     <div className="w-1/2 md:w-1/4">
                         <Image
                             src={Sabrina}

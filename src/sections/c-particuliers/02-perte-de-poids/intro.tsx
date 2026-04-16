@@ -25,8 +25,8 @@ export default function Intro({ className = "" }: { className?: string }) {
     return (
         <section id="introduction" className={className}>
             <div className="container">
-                <div className="flex flex-col lg:flex-row gap-6 justify-center items-start mb-16">
-                    <div className="w-2/3 lg:w-1/4 order-1 lg:order-0">
+                <div className="flex flex-col lg:flex-row gap-6 justify-center items-center lg:items-start mb-16">
+                    <div className="w-2/3 lg:w-1/4 order-0 lg:order-1">
                         <Image
                             src={IntroImg}
                             className="w-full rounded-xl mx-auto transition duration-200 scale-0"
