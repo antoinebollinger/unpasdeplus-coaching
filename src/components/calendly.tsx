@@ -33,9 +33,10 @@ export default function Calendly({
 
     return (
         <a
-            onClick={handleClick}
+            // onClick={handleClick}
             target="_blank"
-            rel="nofollow"
+            // rel="nofollow"
+            href={process.env.NEXT_PUBLIC_CALENDAR_URL}
             className={className}
         >
             {text}
